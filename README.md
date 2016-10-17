@@ -1,5 +1,5 @@
 # mac-sdk
-MAC SDK 
+MAC SDK (in Beta)
 
 Example App using Zoom mac SDK - https://developer.zoom.us/mac
 
