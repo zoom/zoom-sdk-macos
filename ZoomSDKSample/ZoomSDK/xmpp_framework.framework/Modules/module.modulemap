@@ -1,0 +1,6 @@
+framework module xmpp_framework {
+  umbrella header "xmpp_framework.h"
+
+  export *
+  module * { export * }
+}
