@@ -161,6 +161,7 @@ message MeetingProto {
   optional string inviteHtmlEmail            = 79; // html format template outlook plugin
   optional string vanityJoinUrl              = 80; // use PVU for PMI meeting
   repeated TrackingField trackingField    = 81; //meeting tracking field
+  optional string customized_audio_files    = 82; //account customized_audio_files
 }
 
 message MeetingListProto {
@@ -730,6 +731,7 @@ message Response {
   optional string microServiceEndpoint	      = 40;  //microservice endpoint
   optional CMRStorage cmrStroage      	      = 41;  //Cloud Meeting Recording storage status
   optional ProfileAmendment pAmendment        = 42;  //get profile amendment
+  optional AllDailinNumbersProto dailinNumbers = 43;
 }
 
 message CMRStorage{
@@ -852,6 +854,8 @@ message LaunchConfParameter
 	optional string tokenforenforcelogin = 62;
 	optional string participantid4joinmeeting = 63;
 	optional string trackingCode = 64; //https://zoomvideo.atlassian.net/browse/ZOOM-6458
+	
+	optional int32  prev_phone_id = 65;
 }
 //
 /////////////////////////////
@@ -908,4 +912,15 @@ message RendererOption {
   optional int32 rendererSubType              = 6; // only use for fullscreen/floating video now; 1:self; 2:active; 3:pin
   required bool isFloatingView                = 7;
   optional string ext                         = 8; // key:value;key:value
+}
+message AllDailinNumbersProto {
+  repeated AllDailinNumbers allDailinNumbers = 1;
+}
+message AllDailinNumbers {
+	required string number					  = 1; // contain toll numbers, toll free numbers and dids
+	optional int32 type				  	  	  = 2; // 0:toll, 1: toll free, 3: Premium
+	optional bool is_shared				      = 3; 
+	optional bool is_did				      = 4; 
+	optional string customized_audio_files	  = 5; // welcome|value,hold|value
+	optional string language_list		      = 6; //en-US,zh-CN  (default: en-US)
 }

@@ -2072,6 +2072,18 @@
                                                 <action selector="onBackClicked:" target="Voe-Tx-rLC" id="qXR-wE-zdB"/>
                                             </connections>
                                         </button>
+                                        <button verticalHuggingPriority="750" id="hf5-B5-P2e">
+                                            <rect key="frame" x="387" y="51" width="145" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <animations/>
+                                            <buttonCell key="cell" type="square" title="Hide Setting" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="rcw-W4-zjp">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="hideSettingDlg:" target="Voe-Tx-rLC" id="sjY-ew-72W"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <animations/>
                                 </view>

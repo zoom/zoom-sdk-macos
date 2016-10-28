@@ -557,6 +557,12 @@
 
 }
 
+-(IBAction)hideSettingDlg:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKMeetingUIController* uiController = [meetingService getMeetingUIController];
+    [uiController showMeetingComponent:MeetingComponent_Setting window:nil show:NO InPanel:NO frame:NSZeroRect];
+}
 
 
 - (void)authSDK:(NSString*)key appSecret:(NSString*)secret
