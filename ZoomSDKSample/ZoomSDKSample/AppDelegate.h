@@ -92,8 +92,9 @@
 //audio window
 -(IBAction)showAudioDlg:(id)sender;
 -(IBAction)hideAudioDlg:(id)sender;
-
+//setting window
 -(IBAction)showSettingDlg:(id)sender;
+-(IBAction)hideSettingDlg:(id)sender;
 // toolbar 
 -(IBAction)showConfToolbar:(id)sender;
 -(IBAction)hideConfToolbar:(id)sender;

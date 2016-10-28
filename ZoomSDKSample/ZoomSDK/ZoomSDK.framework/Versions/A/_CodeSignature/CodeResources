@@ -36,6 +36,10 @@
 		<data>
 		lc49ZlVeOOaOCExrciWq04rK98E=
 		</data>
+		<key>Resources/zcacert.pem</key>
+		<data>
+		6OeUOSdmzKFSiFiiKawEaw9dWAE=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -98,6 +102,10 @@
 		<key>Resources/ring.pcm</key>
 		<data>
 		lc49ZlVeOOaOCExrciWq04rK98E=
+		</data>
+		<key>Resources/zcacert.pem</key>
+		<data>
+		6OeUOSdmzKFSiFiiKawEaw9dWAE=
 		</data>
 	</dict>
 	<key>rules</key>
