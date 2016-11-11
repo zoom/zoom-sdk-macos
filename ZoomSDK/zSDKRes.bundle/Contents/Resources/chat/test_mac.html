@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Zipow Chat Test</title>
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        body
+        {
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 50px;
+            padding: 0;
+        }
+        iframe
+        {
+            width:100%;
+            border: 1px solid red;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+
+            function changeIFrameSize() {
+                $('#mainframe').height($(window).height() - 20 - 2 - 50);
+            }
+
+            $(window).resize(function () {
+                changeIFrameSize();
+            });
+
+
+            var itemIndex = 0;
+
+
+            $('#btnAddMessage').click(function () {
+                var addMessage = window.frames[0].AddTextMsgItem;
+
+                var id = itemIndex++, senderName = "Sanshi Zhang", isSelf = true,
+                senderPicUrl = "./photo/user.png", 
+				message = "This&amp;&lt; <strong>alert('ss')</strong>is a message http://www.zoom.us/ The Cocoa frameworks consist of libraries, APIs, and runtimes that form the development layer for all of Mac OS X. By developing with Cocoa, you will be creating applications the same way Mac OS X itself is created. Your application will automatically inherit the great behaviors and appearances of Mac OS X, with full access to the underlying power of the UNIX operating system. Using Cocoa with the Xcode IDE is simply the best way to create native Mac applications.blablahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.",
+                timeStr = new Date().getTime() + '';
+				
+				//message = "hjkshadkjshjk";
+
+                if (Math.random() > 0.5) {
+                    senderName = "Flyer Li";
+                    isSelf = false;
+                    senderPicUrl = "./photo/user.png";
+                    message = "An incoming message.";
+                }
+
+
+                addMessage(id, senderName, isSelf, senderPicUrl, message, timeStr);
+
+            });
+
+
+            $('#btnAddCommand').click(function () {
+
+                var addCmd = window.frames[0].AddCmdItem;
+
+                var id = itemIndex++, message = "This is a message bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.",
+                timeStr = new Date().getTime() + '';
+                cmdType = "invite",
+                cmdText = "Invite",
+                cmdParam1 = "Invite Param1",
+                cmdParam2 = "Invite Param2";
+
+                
+                addCmd(id, message, timeStr, cmdType, cmdText, cmdParam1, cmdParam2);
+            });
+			
+			
+			$('#btnClearAll').click(function () {
+				var clearAll = window.frames[0].ClearAll;
+				
+				clearAll();
+			});
+
+
+            changeIFrameSize();
+        });
+    </script>
+</head>
+<body>
+    <iframe id="mainframe" scrolling="no" src="chat_mac.html"></iframe>
+    <input id="btnAddMessage" type="button" value="Add Message" />
+    <input id="btnAddCommand" type="button" value="Add Command" />
+	<input id="btnClearAll" type="button" value="Clear All" />
+</body>
+</html>
