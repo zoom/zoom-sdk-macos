@@ -1,0 +1,171 @@
+html
+{
+    overflow: hidden;
+}
+body
+{
+	margin: 0 10px;
+	padding: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    font-size: 12px;
+}
+.container
+{
+	
+}
+#title
+{
+    font-size: 14px;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+ul.token-input-list-facebook
+{
+	width: auto;
+	margin-bottom: 5px;
+	min-height: 30px;
+	border-color: #ccc;
+	padding: 1px;
+	background-color: #fff;
+}
+ul.token-input-list-facebook span.token-input-delete-token-facebook
+{
+	font-size: 12px;
+	opacity: 0.5;
+}
+ul.token-input-list-facebook li.hovered span.token-input-delete-token-facebook
+{
+	color: #fff;
+	opacity: 1.0;
+}
+ul.token-input-list-facebook li.token-input-token-facebook
+{
+	font-size: 11px;
+	border-color: #29691D;
+	background-color: #3A8B00;
+	color: #fff;
+	border-radius: 0;
+}
+ul.token-input-list-facebook li input
+{
+	height: 16px;
+	width: 30px;
+	outline: medium none;
+    font-size: 13px;
+    line-height: 13px;
+}
+#tester
+{
+	position: absolute; 
+	top: -9999px; 
+	left: -9999px; 
+	width: auto;
+	display: none;
+}
+ul.userlist
+{
+	border: 1px solid #ccc;
+	min-height: 100px;
+	padding: 5px;
+	margin: 0;
+	list-style-type: none;
+	overflow: auto;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+ul.userlist li
+{
+	float: left;
+	width: 130px;
+	position: relative;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	cursor: pointer;
+	color: #333;
+	/*border-radius: 5px 5px 5px 5px;*/
+}
+ul.userlist li.disabled
+{
+	/*opacity: 0.6;
+	*/
+}
+ul.userlist li.disabled .photo
+{
+	/*opacity: 0.6;
+	*/
+}
+ul.userlist li.selected
+{
+	background-color: #3B5998;
+	color: #fff;
+	opacity: 1.0;
+}
+ul.userlist li.hovered
+{
+	background-color: #ddd;
+	
+}
+ul.userlist li .photo
+{
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-right: 5px;
+}
+ul.userlist li .photo img
+{
+	width: 32px;
+	height: 32px;
+	border: solid 1px #ccc;
+	padding: 1px;
+}
+ul.userlist li div.name
+{
+	float: left;
+	font-size: 11px;
+	height: 35px;
+	overflow: hidden;
+	width: 75px;
+	
+}
+ul.userlist li img.status
+{
+	max-width: 12px;
+	position: absolute;
+	left: 35px;
+	bottom: 3px;
+}
+
+ul.userlist li.hidden
+{
+	display: none;
+}
+
+#meetinginfo
+{
+    display: none;
+    
+}
+#meetinginfo .title
+{
+    font-size: 14px;
+    font-weight: normal;
+}
+#meetinginfo ul
+{
+    padding: 5px 10px 0px 0px;
+    margin: 0;
+    list-style-type: none;
+    font-size: 12px;
+}
+#meetinginfo ul .meetingnumber
+{
+    color: red;
+}
+#meetinginfo ul .meetingurl
+{
+    
+}

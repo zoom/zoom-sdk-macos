@@ -1,0 +1,137 @@
+html 
+{
+} 
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
+}
+#chats
+{
+    list-style-type: none;
+    margin: 10px;
+    margin-top: 0;
+    padding: 0;
+	margin-bottom: 0;
+}
+ul
+{
+    
+}
+li
+{
+    position: relative;
+    color: #333;
+    /* Fix width issue under IE7 */
+    width: 100%; 
+}
+li.command
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+li.command .messagecontainer
+{
+	border: solid 1px #D8D8D8;
+	background-color: #EBEBEB;
+	padding: 5px;
+}
+li.command .message
+{
+	overflow: hidden;
+	word-wrap:break-word;
+	word-break:normal;
+	padding-left: 25px;
+	padding-right: 45px;
+	background: url(../images/SettingVideo.png) no-repeat;
+	background-position: left top;
+}
+li.command .time
+{
+	position: absolute;
+    top: 10px;
+    right: 5px;
+	color: #999;
+}
+
+
+li.date
+{
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+li.normal
+{
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+    margin-top: 5px;
+    min-height: 32px;
+}
+li.normal .photo
+{
+    float: left;
+    height: 36px;
+}
+li.normal .photo img
+{
+    width: 32px;
+    height: 32px;
+    border: solid 1px #ccc;
+	padding: 1px;
+}
+li.normal .time
+{
+    color: #999;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #fff;
+    padding-left: 5px;
+	padding-right: 5px;
+    display: none;
+    font-size: 13px;
+}
+
+.ipad  li.normal .time
+{
+	display: block;
+}
+
+li.normal .messages
+{
+    margin-left: 40px;
+	margin-right: 10px;
+    font-size: 13px;
+    zoom: 1;
+}
+li.normal .message
+{
+	overflow: hidden;
+	word-wrap:break-word;
+	word-break:normal;
+}
+
+
+
+#typing
+{
+	background-image: url(../images/typing.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    display: none;
+    left: 30px;
+	bottom: 0;
+    padding: 2px 5px 2px 20px;
+    position: absolute;
+	/*background-color: #efefef;*/
+	color: #666;
+    /*filter: alpha(opacity=85);
+	-khtml-opacity: 0.85;
+	-moz-opacity: 0.85;
+	opacity: 0.85;*/
+    
+}

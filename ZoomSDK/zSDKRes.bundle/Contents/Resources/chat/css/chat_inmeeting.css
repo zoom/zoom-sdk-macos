@@ -1,0 +1,89 @@
+html 
+{
+	
+} 
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #fff;
+	/*background-color: #565B5C;*/
+	background-color: #fff;
+}
+#chats
+{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+li
+{
+    position: relative;
+    color: #fff;
+     /* Fix width issue under IE7 */
+    width: 100%; 
+}
+
+
+li.normal
+{
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    min-height: 32px;
+}
+li.normal .photo
+{
+    float: left;
+    height: 36px;
+}
+li.normal .photo img
+{
+    width: 32px;
+    height: 32px;
+	border: solid 1px #ccc;
+	padding: 1px;
+}
+li.normal .time
+{
+    color: #999;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    padding-left: 5px;
+	padding-right: 5px;
+    font-size: 13px;
+}
+li.normal .name
+{
+    margin-left: 42px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+	margin-right: 50px;
+	height: 20px; 
+	overflow: hidden;
+	word-wrap:break-word;
+	word-break:normal;
+}
+li.normal .name.private
+{
+    color: #FEB432;
+}
+li.normal .messages
+{
+    margin-left: 42px;
+    font-size: 13px;
+}
+li.normal .message
+{
+	color: #333;
+	overflow: hidden;
+	word-wrap:break-word;
+	word-break:normal;
+}
+
+
+
