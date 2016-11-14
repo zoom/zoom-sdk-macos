@@ -1,7 +1,7 @@
 # mac-sdk
 MAC SDK (in Beta)
 
-Example App using Zoom mac SDK - https://developer.zoom.us/mac
+Example App using the SDK is available inside this repository.
 
 To use it:
 
