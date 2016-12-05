@@ -1,4 +1,4 @@
-# mac-sdk
+# Mac-RTC-Stack
 MAC SDK (in Beta)
 
 Example App using the SDK is available inside this repository.
