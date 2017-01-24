@@ -1,7 +1,7 @@
 # mac-sdk
 MAC SDK (in Beta)
 
-Example App using Zoom mac SDK - https://developer.zoom.us/mac
+Example App using Zoom mac SDK - https://zoom.us/developer/overview/mac-rtc-stack-quickstart
 
 To use it:
 
