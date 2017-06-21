@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ZoomSDKErrors.h"
 #import "ZoomSDKH323Helper.h"
+#import "ZoomSDKPhoneHelper.h"
 
 @interface ZoomSDKChatInfo : NSObject
 {
@@ -48,7 +49,7 @@
 - (BOOL)isHost;
 - (BOOL)isVideoOn;
 - (BOOL)isAudioMuted;
-
+- (UserRole)getUserRole;
 @end
 
 @interface ZoomSDKShareSource :NSObject
@@ -63,6 +64,15 @@
 - (BOOL)isShowInSecondScreen;
 - (BOOL)canBeRemoteControl;
 - (unsigned int)getUserID;
+@end
+
+@interface ZoomSDKBreakoutRoomsInfo : NSObject
+{
+    NSString* _bID;
+    NSString* _roomName;
+}
+-(NSString*)getBID;
+-(NSString*)getBreakoutRoomsName;
 @end
 
 @interface ZoomSDKMeetingConfiguration :NSObject
@@ -87,8 +97,30 @@
     BOOL               _enableChime;
     //direct share desktop or not
     BOOL               _isDirectShareDesktop;
-    
-    
+    //Enable auto adjust the volume of the speaker when you join audio
+    BOOL               _enableAutoAdjustSpeakerVolume;
+    //Enable auto adjust the volume of the mic when you join audio.
+    BOOL                _enableAutoAdjustMicVolume;
+    //Hide Meeting Info on Main window title
+    BOOL                _hideMainWindowMeetingInfo;
+    //new meeting number u want to set
+    unsigned int        _newMeetingID;
+    //disable join meeting popup wrong password window
+    BOOL                _disablePopupWrongPasswordWindow;
+    //Auto adjust speaker volume when join audio after meeting launched
+    BOOL                _autoAdjustSpeakerVolumeWhenJoinAudio;
+    //Auto adjust mic volume when join audio after meeting launched
+    BOOL                _autoAdjustMicVolumeWhenJoinAudio;
+    //disable end other meeting alert u start meeting when u have a meeting aleady in progress
+    BOOL                _disableEndOtherMeetingAlert;
+    //show invitebutton or not
+    BOOL                _showInviteButtonInToolbar;
+    //disable join meeting popup input password window
+    BOOL                _disableInputPasswordWindow;
+    //hide exit full screen button
+    BOOL                _hideExitFullScreenButton;
+    //disable double click to EnterFull screen
+    BOOL                _disableDoubleClickToFullScreen;
 }
 @property(nonatomic, assign)CGDirectDisplayID displayAppID;
 @property(nonatomic, assign)CGDirectDisplayID monitorID;
@@ -100,6 +132,16 @@
 @property(nonatomic, assign)BOOL isDirectShareDesktop;
 @property(nonatomic, assign)BOOL enableChime;
 @property(nonatomic, assign)BOOL mainToolBarVisible;
+@property(nonatomic, assign)BOOL hideMainWindowMeetingInfo;
+@property(nonatomic, assign)unsigned int newMeetingID;
+@property(nonatomic, assign)BOOL disablePopupWrongPasswordWindow;
+@property(nonatomic, assign)BOOL autoAdjustSpeakerVolumeWhenJoinAudio;
+@property(nonatomic, assign)BOOL autoAdjustMicVolumeWhenJoinAudio;
+@property(nonatomic, assign)BOOL disableEndOtherMeetingAlert;
+@property(nonatomic, assign)BOOL showInviteButtonInToolbar;
+@property(nonatomic, assign)BOOL disableInputPasswordWindow;
+@property(nonatomic, assign)BOOL hideExitFullScreenButton;
+@property(nonatomic, assign)BOOL disableDoubleClickToFullScreen;
 - (void)reset;
 
 @end
@@ -128,7 +170,52 @@
 - (ZoomSDKError)minimizeShareFloatVideoWindow:(BOOL)bMin;
 - (ZoomSDKError)switchFloatVideoToActiveSpeakerMode;
 - (ZoomSDKError)switchFloatVideoToGalleryMode;
+/* set newMeetingNum = 0 if u want to hide, set else num to replace.*/
+- (ZoomSDKError)modifyMeetingInfoInMainWindow:(unsigned int)newMeetingNum;
 
+@end
+
+@interface ZoomSDKJoinMeetingHelper :NSObject
+{
+    JoinMeetingReqInfoType   _reqInfoType;
+}
+-(JoinMeetingReqInfoType)getReqInfoType;
+-(ZoomSDKError)inputPassword:(NSString*)password;
+-(ZoomSDKError)cancel;
+@end
+
+@protocol ZoomSDKBreakoutRoomsDelegate <NSObject>
+- (void)onBreakoutRoomsStarted:(NSString*)bID;
+@end
+
+@interface ZoomSDKBreakoutRoomsController:NSObject
+{
+    id<ZoomSDKBreakoutRoomsDelegate> _delegate;
+}
+@property (assign, nonatomic) id<ZoomSDKBreakoutRoomsDelegate> delegate;
+-(ZoomSDKError)joinBreakoutRoom:(NSString*)bID;
+-(ZoomSDKError)leaveBreakoutRoom;
+//input a NSArray, if call ZoomSDKError_Success, infoArray contains ZoomSDKBreakoutRoomsInfo objects.
+-(ZoomSDKError)getBreakoutRoomsInfo:(NSMutableArray**)infoArray;
+@end
+
+@protocol ZoomSDKWaitingRoomDelegate <NSObject>
+-(void)onUserJoinWaitingRoom:(unsigned int)userid;
+-(void)onUserLeftWaitingRoom:(unsigned int)userid;
+@end
+
+@interface ZoomSDKWaitingRoomController : NSObject
+{
+    id<ZoomSDKWaitingRoomDelegate> _delegate;
+}
+@property (assign, nonatomic) id<ZoomSDKWaitingRoomDelegate> delegate;
+- (BOOL)isSupportWaitingRoom;
+- (BOOL)isEnableWaitingRoomOnEntry;
+- (ZoomSDKError)enableWaitingRoomOnEntry:(BOOL)enable;
+- (NSArray*)getWaitRoomUserList;
+- (ZoomSDKUserInfo*)getWaitingRoomUserInfo:(unsigned int)userid;
+- (ZoomSDKError)admitToMeeting:(unsigned int)userid;
+- (ZoomSDKError)putIntoWaitingRoom:(unsigned int)userid;
 @end
 
 @protocol ZoomSDKMeetingServiceDelegate;
@@ -145,9 +232,11 @@
     ZoomSDKAnnotationController* _auxAnnoatationController;
     ZoomSDKMeetingUIController* _meetingUIController;
     ZoomSDKMeetingConfiguration* _meetingConfiguration;
+    ZoomSDKBreakoutRoomsController*  _boController;
     ZoomSDKH323Helper*           _h323Helper;
+    ZoomSDKWaitingRoomController* _waitingRoomController;
+    ZoomSDKPhoneHelper*           _phoneHelper;
     NSArray*             _participantsArray;
-
 }
 /**
  * The object that acts as the delegate of the receiving meeting events.
@@ -255,6 +344,13 @@
 - (ZoomSDKError)startMonitorShare:(CGDirectDisplayID)monitorID;
 
 /**
+ * This method is used to stop current share.
+ *
+ * @return A ZoomSDKError to tell client whether stop current share successful or not.
+ */
+- (ZoomSDKError)stopShare;
+
+/**
  * This method is used to start annotation.
  *
  * @param position, the position of annotation first show.
@@ -322,6 +418,13 @@
 - (ZoomSDKH323Helper*)getH323Helper;
 
 /**
+ * Returns the Zoom meeting service default Breakout Rooms Helper
+ *
+ * @return a ZoomSDKBreakoutRoomsController object of Breakout Rooms Helper
+ */
+
+- (ZoomSDKBreakoutRoomsController*)getBreakoutRoomsController;
+/**
  * This method is used to get meeting property.
  * @param command, user command to get differnt property.
  * @return A meeting configuration when function call successful, or return nil when failed.
@@ -378,6 +481,49 @@
  *
  * @return A BOOL to tell client himself can share or not.
  */
+
+- (BOOL)isShareLocked;
+/**
+ * This method is used to judge whether this meeting's share is locked by host or not.
+ *
+ * @return A BOOL to tell client meeting's share is locked or not.
+ */
+
+- (ZoomSDKError)getWallViewPageInfo:(int*)currentPageNum TotalPageNum:(int*)totalPageNum;
+/**
+ * This method is used to get wall view page info of meeting.
+ * @param currentPageNum, current page number of the wall view.
+ * @param totalPageNum, total page number of wall view.
+ * @return A ZoomSDKError to tell client whether function call successfully or not.
+ */
+
+- (ZoomSDKError)showPreOrNextPageWallView:(BOOL)nextPage;
+/**
+ * This method is used to show previous or next page for video wall view of meeting.
+ * @param nextPage, set YES to show next page of video wall view, set NO to show previous page.
+ * @return A ZoomSDKError to tell client whether function call successfully or not.
+ */
+
+- (MeetingType)getMeetingType;
+/**
+ * This method is used to get meeting type of current meeting.
+ * @return A MeetingType to tell client which kind of meeting is.
+ */
+
+/**
+ * Returns the Zoom meeting service default Waiting Room Controller
+ *
+ * @return a ZoomSDKWaitingRoomController object of Waiting Room Controller
+ */
+- (ZoomSDKWaitingRoomController*)getWaitingRoomController;
+
+/**
+ * Returns the Zoom meeting service default Phone Callout Helper
+ *
+ * @return a ZoomSDKPhoneHelper object of Phone Callout Helper
+ */
+- (ZoomSDKPhoneHelper*)getPhoneHelper;
+
 @end
 
 
@@ -465,6 +611,68 @@
  *
  */
 - (void)onSharingStatus:(ZoomSDKShareStatus)status User:(unsigned int)userID;
+
+
+/**
+ * Designated for Zoom Meeting notify the host change.
+ * @param userID user's identity who becomes host.
+ *
+ */
+- (void)onHostChange:(unsigned int)userID;
+
+/**
+ * Designated for Zoom Meeting notify spotlight video user change .
+ * @param spotlight YES mean get spotlight No means not.
+ * @param userID user's identity whose spotlight status change.
+ *
+ */
+- (void)onSpotlightVideoUserChange:(BOOL)spotlight User:(unsigned int)userID;
+
+/**
+ * Designated for Zoom Meeting notify your record privilege change.
+ * @param canRec mean your record privilege change or not.
+ *
+ */
+- (void)onRecordPrivilegeChange:(BOOL)canRec;
+
+/**
+ * Designated for Zoom Meeting notify specific user video status change.
+ * @param videoOn mean specific user video is On or not.
+ * @param userID user's identity whose video status change.
+ *
+ */
+- (void)onVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID;
+
+/**
+ * Designated for Zoom Meeting notify specific user raise hand or lower hand status change.
+ * @param raise YES mean specific user raise hand ,No means lower hand.
+ * @param userID user's identity who raise hand or lower hand.
+ *
+ */
+- (void)onLowOrRaiseHandStatusChange:(BOOL)raise UserID:(unsigned int)userID;
+
+/**
+ * Designated for Zoom Meeting notify the Invite button be clicked by user if u set showInviteButtonInToolbar =YES;
+ */
+- (void)onToolbarInviteButtonClick;
+
+/**
+ * Designated for Zoom Meeting notify the share is locked by host or not
+ * @param shareLocked YES mean share is locked by host, NO means not locked.
+ */
+- (void)onShareStatusLocked:(BOOL)shareLocked;
+
+/**
+ * Designated for Zoom Meeting notify the share is locked by host or not
+ * @param shareLocked YES mean share is locked by host, NO means not locked.
+ */
+- (void)onJoinMeetingResponse:(ZoomSDKJoinMeetingHelper*)joinMeetingHelper;
+
+/**
+ * Designated for Zoom Meeting notify participants click leave meeting.
+ * @param participantID mean participant ID of the participant who leave meeting.
+ */
+- (void)onClickLeaveMeeting:(unsigned int)participantID;
 @end
 
 

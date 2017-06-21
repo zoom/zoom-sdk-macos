@@ -10,16 +10,16 @@
 #import "ZoomSDKWindowController.h"
 #import <time.h>
 
-#define kZoomSDKAppKey      @""
-#define kZoomSDKAppSecret   @""
-#define kZoomSDKDomain      @""
+#define kZoomSDKAppKey      @"EMXjNaKjSkZzHFmmwM50X6NW6InkYumpf3rK"
+#define kZoomSDKAppSecret   @"jBv7wMcOQbmfWGMp4G9tcGkpLncuZiCoidSl"
+#define kZoomSDKDomain      @"dev.zoom.us"
 
 
-#define kSDKUserID      @""
-#define kSDKUserName    @""
-#define kSDKUserToken   @""
-#define kSDKMeetNumber  @""
-#define kZoomPMINumber  @""
+#define kSDKUserID      @"0yVqVIaPRfq1E-auyi4YVA"
+#define kSDKUserName    @"Totti Totti"
+#define kSDKUserToken   @"R0wiSccvNPKjVAqbed7AJDjvLUc_bCLVW_o-tbCHCFA.BgMgQTYyYzlZdldJWkdaRFRXekZOb3c3QTlzYks0M1BFRVoAAAwzQ0JBdW9pWVMzcz0"
+#define kSDKMeetNumber  @"2486572073"
+#define kZoomPMINumber  @"7171717171"
 const unsigned int displayMainID = 69731458;
 const unsigned int  displayAuxID = 724838613;
 
@@ -63,22 +63,26 @@ const unsigned int  displayAuxID = 724838613;
     _hasLogined = NO;
     _selectDeviceType = H323DeviceType_H323;
     _screenType = ScreenType_First;
-    NSString *bundlePath = [[NSBundle mainBundle] privateFrameworksPath];
-    bundlePath = [bundlePath stringByAppendingPathComponent:@"/ZoomSDK.framework"];
-    [[ZoomSDK sharedSDK] setCustomBundlePath:bundlePath fileName:@"ZoomSDK"];
+    NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+    [[ZoomSDK sharedSDK] setCustomBundlePath:bundlePath fileName:@"ZoomSDK_Test"];
 
 }
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [[ZoomSDK sharedSDK] setZoomDomain:kZoomSDKDomain];
-    
-    
-
-   
+    signal(SIGPIPE, processSignal);
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
+void processSignal(int num)
+{
+    if ( SIGPIPE == num ) {
+        
+    }
+}
+
 
 -(IBAction)clickSDKUser:(id)sender
 {
@@ -283,12 +287,13 @@ const unsigned int  displayAuxID = 724838613;
     config.mainVideoPoint = NSMakePoint(200, 200);
     config.enableChime = YES;
     config.enableMuteOnEntry = YES;
+    config.disablePopupWrongPasswordWindow = YES;
     ZoomSDKError ret = ZoomSDKError_UnKnow;
     if(meetingService)
     {
         if ([authService isAuthorized])
         {   meetingService.delegate = self;
-            ret =[meetingService joinMeeting:ZoomSDKUserType_ZoomUser toke4enfrocelogin:nil webinarToken:nil  participantId:@"10" meetingNumber:@"7171717171" displayName:@"TOTTI" password:@"" isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO];
+            ret =[meetingService joinMeeting:ZoomSDKUserType_APIUser toke4enfrocelogin:nil webinarToken:nil  participantId:@"10" meetingNumber:@"7171717171" displayName:@"TOTTI-Test" password:@"123456" isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO];
         }
         NSLog(@"joinMeeting ret:%d", ret);
     }
@@ -795,7 +800,7 @@ const unsigned int  displayAuxID = 724838613;
             //test for setting camera list
             ZoomSDKSettingService* settingService = [[ZoomSDK sharedSDK] getSettingService];
             NSArray* array =  [settingService getCameraList];
-            for(CameraInfo* info in array)
+            for(SDKDeviceInfo* info in array)
             {
                 NSLog(@"App delegate camera list, deviceID:%@, deviceName:%@, isSelected:%d", [info getDeviceID], [info getDeviceName], [info isSelectedDevice]);
             }
@@ -806,9 +811,15 @@ const unsigned int  displayAuxID = 724838613;
         break;
         case ZoomSDKMeetingStatus_AudioReady:
         {
-
+         
         }
         break;
+        case ZoomSDKMeetingStatus_Failed:
+        {
+            if (error == ZoomSDKMeetingError_PasswordError) {
+                NSLog(@"Password is Wrong!");
+            }
+        }
         default:
         {
             [self switchToMeetingTab];

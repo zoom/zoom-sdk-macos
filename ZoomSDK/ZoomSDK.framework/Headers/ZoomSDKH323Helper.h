@@ -53,6 +53,12 @@
  */
 - (NSArray*)getH323DeviceAddress;
 
+ /**
+ * This method is used to Get h323 password for current meeting.
+ * @return A NSString contains h323 password if function call successfully.
+ */
+- (NSString*)getH323Password;
+
 /**
  * This method is used to send Meeting paring code.
  * @param pairCode pair code for specified meeting.

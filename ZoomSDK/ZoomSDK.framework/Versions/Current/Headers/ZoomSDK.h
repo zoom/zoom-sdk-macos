@@ -23,6 +23,8 @@
 //Zoom SDK PremeetingService
 #import <ZoomSDKPremeetingService.h>
 
+//Zoom SDK NetworkService
+#import <ZoomSDKNetworkService.h>
 
 /**
  * The ZoomSDK class is a class that exposes a Zoom API Rest Client.
@@ -41,6 +43,7 @@
     ZoomSDKAuthService     *_authService;
     ZoomSDKSettingService  *_settingService;
     ZoomSDKPremeetingService *_premeetingService;
+    ZoomSDKNetworkService    *_networkService;
 }
 
 @property (retain, nonatomic) NSString *zoomDomain;
@@ -96,6 +99,13 @@
 - (ZoomSDKPremeetingService*)getPremeetingService;
 
 /**
+ * Returns the ZoomSDK default Network Service
+ *
+ * @return a object of Network Service
+ */
+- (ZoomSDKNetworkService*)getNetworkService;
+
+/**
  * Sets the new prodcut name
  *
  * @param bundlePath: file position of the prodcut customize strings.
@@ -104,6 +114,11 @@
  */
 - (void)setCustomBundlePath:(NSString*)bundlePath fileName:(NSString*)fileName;
 
+/**
+ * Returns the ZoomSDK default Version Number
+ *
+ */
+- (NSString*)getSDKVersionNumber;
 @end
 
 

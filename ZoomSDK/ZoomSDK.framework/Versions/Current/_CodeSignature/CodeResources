@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		hR1s813xrfL/yZz7IsvNYhBXkJA=
+		sklDw05H1z7ql8tNwVkoHMzmh1c=
 		</data>
 		<key>Resources/SettingWindow.nib</key>
 		<data>
@@ -45,7 +45,7 @@
 	<dict>
 		<key>Headers/ZoomSDK.h</key>
 		<data>
-		KBu8b2/Wgxpns68+huqWXE6CNcM=
+		5XRLVIsoLJBB1tn5FE8Wu7iYNIY=
 		</data>
 		<key>Headers/ZoomSDKAuthService.h</key>
 		<data>
@@ -53,15 +53,23 @@
 		</data>
 		<key>Headers/ZoomSDKErrors.h</key>
 		<data>
-		thsAsCu8FzGpdNeztHvUCJVhXHE=
+		0ymuUl1M0IzOmTDUCO8Y4QYxBS0=
 		</data>
 		<key>Headers/ZoomSDKH323Helper.h</key>
 		<data>
-		YaSAQiOYchV7xII/9M1vqjahASU=
+		pARu8fVQtvUCRGUN/jEAEG+oDGk=
 		</data>
 		<key>Headers/ZoomSDKMeetingService.h</key>
 		<data>
-		iuhmQ3MzTKB2nnhob+iEj5IuM4Y=
+		nI7HYxPRYG+Ghfh7Jt/Bv1x55/4=
+		</data>
+		<key>Headers/ZoomSDKNetworkService.h</key>
+		<data>
+		Pwhes0K0E6NtrE/DGbkNWvRgACk=
+		</data>
+		<key>Headers/ZoomSDKPhoneHelper.h</key>
+		<data>
+		hf+hLNTakV55KAY8pq189LhFges=
 		</data>
 		<key>Headers/ZoomSDKPremeetingService.h</key>
 		<data>
@@ -69,7 +77,7 @@
 		</data>
 		<key>Headers/ZoomSDKSettingService.h</key>
 		<data>
-		nrR4Mba04ZA1XeDbNgevP29FS9I=
+		SGpVIm5b9HhPyS+HueidyMUz+3c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +89,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		hR1s813xrfL/yZz7IsvNYhBXkJA=
+		sklDw05H1z7ql8tNwVkoHMzmh1c=
 		</data>
 		<key>Resources/SettingWindow.nib</key>
 		<data>
