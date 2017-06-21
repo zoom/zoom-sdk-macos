@@ -393,6 +393,8 @@ message JoinDirectShareMeetingREQ {
 //  #define TYPE_AUTO_UPGRADE_LOG_FILE            0x0008
 //  #define TYPE_ZRDAEMON_LOG_FILES               0x0010
 //  #define TYPE_SIPCALL_RELATED_LOG_FILES        0x0020
+//  #define TYPE_OS_RES_LOG_FILE                  0x0040
+//  #define TYPE_AIRHOST_RELATED_LOG_FILES        0X0080
 //  #define TYPE_ALL_ZRLOGS_FILES                 0xFFFF
 message UploadZoomLogsREQ {
     optional string email                       = 1; //default ZRC.PR@zoom.us, not for customer, only for login from OP

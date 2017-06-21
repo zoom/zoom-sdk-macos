@@ -44,7 +44,9 @@ enum _userAudioType
     int                                 _userID;
     int                                 _attendeeID;
     NSString*                           _userName;
+#ifndef BUILD_FOR_MIMO
     NSImage*                            _avatar;
+#endif
     NSString*                           _avatarURL;
     BOOL                                _isHost;
     BOOL                                _isCoHost;
@@ -69,7 +71,9 @@ enum _userAudioType
 @property (nonatomic, readwrite, assign)int                                     userID;
 @property (nonatomic, readwrite, assign)int                                     attendeeID;
 @property (nonatomic, readwrite, copy)NSString*                                 userName;
+#ifndef BUILD_FOR_MIMO
 @property (nonatomic, readwrite, retain)NSImage*                                avatar;
+#endif
 @property (nonatomic, readwrite, copy)NSString*                                 avatarURL;
 @property (nonatomic, readwrite, assign)BOOL                                    isHost;
 @property (nonatomic, readwrite, assign)BOOL                                    isCoHost;

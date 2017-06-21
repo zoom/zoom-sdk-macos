@@ -39,6 +39,12 @@ typedef enum{
     //audio cmd
     ActionMeetingCmd_MuteAudio,
     ActionMeetingCmd_UnMuteAudio,
+    //can unmute by self when mute by host
+    ActionMeetingCmd_EnableUnmuteBySelf,
+    ActionMeetingCmd_DisableUnmuteBySelf,
+    //mute/unmute all only for host
+    ActionMeetingCmd_MuteAll,
+    ActionMeetingCmd_UnmuteAll,
     //lock meeting cmd
     ActionMeetingCmd_LockMeeting,
     ActionMeetingCmd_UnLockMeeting,
@@ -62,6 +68,15 @@ typedef enum{
     //spotlight video
     ActionMeetingCmd_SpotlightVideo,
     ActionMeetingCmd_UnSpotlightVideo,
+    //pause share
+    ActionMeetingCmd_PauseShare,
+    //resume share
+    ActionMeetingCmd_ResumeShare,
+    //Join Voip
+    ActionMeetingCmd_JoinVoip,
+    //Leave Voip
+    ActionMeetingCmd_LeaveVoip,
+    
 }ActionMeetingCmd;
 
 typedef enum {
@@ -69,6 +84,7 @@ typedef enum {
     MeetingPropertyCmd_InviteEmailTemplate,
     MeetingPropertyCmd_InviteEmailTitle,
     MeetingPropertyCmd_JoinMeetingUrl,
+    MeetingPropertyCmd_DefaultRecordPath,
 }MeetingPropertyCmd;
 
 //Annotation
@@ -113,6 +129,7 @@ typedef enum{
     MeetingSettingCmd_AutoJoinAudio,
     MeetingSettingCmd_AutoFitToWindowWhenViewShare,
     MeetingSettingCmd_AutoFullScreenWhenJoinMeeting,
+    MeetingSettingCmd_EnableAutoAdjustMic,
 }MeetingSettingCmd;
 
 // SDK Error
@@ -258,6 +275,10 @@ typedef enum {
     ZoomSDKMeetingStatus_Ended            = 7,
     //State
     ZoomSDKMeetingStatus_AudioReady       = 8,
+    //has other meeting in progress
+    ZoomSDKMeetingStatus_OtherMeetingInProgress = 9,
+    ZoomSDKMeetingStatus_InWaitingRoom      = 10,
+
 }ZoomSDKMeetingStatus;
 
 //share status
@@ -360,3 +381,63 @@ typedef enum
   ScreenType_First,
   ScreenType_Second,
 }ScreenType;
+
+//MeetingUI Type
+typedef enum
+{
+   MeetingUIType_None,
+   MeetingUIType_VideoWall,
+   MeetingUIType_ActiveRender,
+}MeetingUIType;
+
+typedef enum
+{
+    JoinMeetingReqInfoType_None,
+    JoinMeetingReqInfoType_Password,
+    JoinMeetingReqInfoType_Password_Wrong,
+}JoinMeetingReqInfoType;
+
+typedef enum
+{
+    MeetingType_None,
+    MeetingType_Normal,
+    MeetingType_BreakoutRoom,
+    MeetingType_Webinar,
+}MeetingType;
+
+typedef enum
+{
+    UserRole_None,
+    UserRole_Host,
+    UserRole_CoHost,
+    UserRole_Attendee,
+    UserRole_Panelist,
+    UserRole_BreakoutRoom_Moderator,
+}UserRole;
+
+typedef enum
+{
+    PhoneStatus_None,
+    PhoneStatus_Calling,
+    PhoneStatus_Ringing,
+    PhoneStatus_Accepted,
+    PhoneStatus_Success,
+    PhoneStatus_Failed,
+    PhoneStatus_Canceling,
+    PhoneStatus_Canceled,
+    PhoneStatus_Cancel_Failed,
+    PhoneStatus_Timeout,
+}PhoneStatus;
+
+typedef enum
+{
+    PhoneFailedReason_None,
+    PhoneFailedReason_Busy,
+    PhoneFailedReason_Not_Available,
+    PhoneFailedReason_User_Hangup,
+    PhoneFailedReason_Other_Fail,
+    PhoneFailedReason_No_Answer,
+    PhoneFailedReason_Block_No_Host,
+    PhoneFailedReason_Block_High_Rate,
+    PhoneFailedReason_Block_Too_Frequent,
+}PhoneFailedReason;
