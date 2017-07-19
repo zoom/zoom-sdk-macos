@@ -10,16 +10,16 @@
 #import "ZoomSDKWindowController.h"
 #import <time.h>
 
-#define kZoomSDKAppKey      @"EMXjNaKjSkZzHFmmwM50X6NW6InkYumpf3rK"
-#define kZoomSDKAppSecret   @"jBv7wMcOQbmfWGMp4G9tcGkpLncuZiCoidSl"
-#define kZoomSDKDomain      @"dev.zoom.us"
+#define kZoomSDKAppKey      @""
+#define kZoomSDKAppSecret   @""
+#define kZoomSDKDomain      @""
 
 
-#define kSDKUserID      @"0yVqVIaPRfq1E-auyi4YVA"
-#define kSDKUserName    @"Totti Totti"
-#define kSDKUserToken   @"R0wiSccvNPKjVAqbed7AJDjvLUc_bCLVW_o-tbCHCFA.BgMgQTYyYzlZdldJWkdaRFRXekZOb3c3QTlzYks0M1BFRVoAAAwzQ0JBdW9pWVMzcz0"
-#define kSDKMeetNumber  @"2486572073"
-#define kZoomPMINumber  @"7171717171"
+#define kSDKUserID      @""
+#define kSDKUserName    @""
+#define kSDKUserToken   @""
+#define kSDKMeetNumber  @""
+#define kZoomPMINumber  @""
 const unsigned int displayMainID = 69731458;
 const unsigned int  displayAuxID = 724838613;
 
