@@ -19,7 +19,6 @@
 #define kSDKUserName    @""
 #define kSDKUserToken   @""
 #define kSDKMeetNumber  @""
-#define kZoomPMINumber  @""
 const unsigned int displayMainID = 69731458;
 const unsigned int  displayAuxID = 724838613;
 
@@ -776,8 +775,8 @@ void processSignal(int num)
             [_mainWindowButton setEnabled:YES];
             [_endMeeting setEnabled:YES];
             [_H323Button setEnabled:YES];
-            /*[meetingService actionMeetingWithCmd:ActionMeetingCmd_MuteVideo userID:0];
-             move main video
+            [meetingService actionMeetingWithCmd:ActionMeetingCmd_MuteVideo userID:0];
+             /*move main video
              ZoomSDKMeetingUIController* UIController = [meetingService getMeetingUIController];
              if (!UIController) {
              return;
