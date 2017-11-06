@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#define SCHEMA_HTTP  (@"http")
+#define SCHEMA_HTTPS (@"https")
+#define SCHEMA_MAILTO   (@"mailto")
+
 #define RGB(r,g,b)      [NSColor colorWithCalibratedRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define RGBA(r,g,b,a)   [NSColor colorWithCalibratedRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define SRGB(r,g,b)     [NSColor colorWithSRGBRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
@@ -43,4 +47,7 @@ typedef enum
 //string width/height
 +(CGFloat)heightForWidth:(CGFloat)inWidth attributeString:(NSAttributedString*)inAttString;
 +(CGFloat)widthForHeight:(CGFloat)inHeight attributeString:(NSAttributedString*)inAttString;
++ (NSMutableArray*)parseHTTPURLs:(NSString*)body;
++ (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
+//+ (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
 @end

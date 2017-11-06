@@ -38,8 +38,18 @@
 @end
 
 @protocol ZoomSDKNetworkSeviceDelegate <NSObject>
-
+/**
+ * @brief Designated for ZoomSDK network proxy setting call back
+ * @param proxyHelper: A ZoomSDKProxySettingHelper object contains proxy info.
+ *
+ */
 - (void)onProxySettingNotification:(ZoomSDKProxySettingHelper*)proxyHelper;
+
+/**
+ * @brief Designated for ZoomSDK network SSL verification setting call back
+ * @param sslHelper: A ZoomSDKSSLVerificationHelper object contains ssl verification info.
+ *
+ */
 - (void)onSSLCertVerifyNotification:(ZoomSDKSSLVerificationHelper*)sslHelper;
 
 @end

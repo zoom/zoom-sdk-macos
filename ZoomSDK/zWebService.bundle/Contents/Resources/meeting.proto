@@ -21,7 +21,7 @@ message CountryCodeProto {
   optional string code   = 3; // country code, such as '+1'
   optional string number = 4; // call-in number (not formatted as zoomconference page), such as '+1 6475580588'
   optional string displayNumber = 5; // call-in display number (formatted as zoomconference page), such as '+1 647 558 0588', new client should use this
-  optional int32 callType  = 6; //0: toll, 1: toll-free, 10: premium
+  optional int32 callType  = 6; //0: toll, 1: toll-free, 10: premium, 999: internal call out
   
 }
 
@@ -163,11 +163,34 @@ message MeetingProto {
   repeated TrackingField trackingField       = 81; // meeting tracking field
   optional string customized_audio_files     = 82; // account customized_audio_files
   optional TSPProto tsp    					 = 83; // TSP Info
-  optional string tspCallInInfo              = 84; // Conference Code:xxxx;Pin:xxxx;Merge Code:#1xxx#
+  optional string tspCallInInfo              = 84; // MC:xxx;Conference Code:xxxx;Pin:xxxx;Merge Code:xxx
   optional int64 pingOptions                 = 85; // start/join ping options
   optional BroadcastMeetingItem broadcast    = 86; // broadcast item
+  optional MeetingSettingForH323 mSettingsForH323    = 87;
+  optional string firstTimeUpgradeToken      = 88; // for free user to upgrade to unlimited meeting for the first time
+  optional string customDSCPVal              = 89; //for custom dscp value,55;41 means custom audio value is 55,custom video is 41
+  optional string closedCaptionUrl           = 90; // the url for 3rd party CC to send closed caption to client
+  repeated CalloutSIPTrunk calloutSIPTrunks  = 91; 
+  optional int64 identityOptions             = 92; // user identity option, e.g: one bit is: isGuestJoin
+  optional string customAccountTag           = 93; // special custom account tag, currently it's for Huawei: huawei
 }
 
+message CalloutSIPTrunk {
+  optional string name                       = 1;
+  optional int32 trunkId                     = 2;
+  optional string sipServerAddr              = 3;
+  optional string sipPort                    = 4;
+  optional string dnis                       = 5;
+  optional string numPrefix                  = 6;
+  optional int32 weight                      = 7;
+  optional string outboundCallID             = 8;
+  optional int64 options                     = 9; //OPTIONA_SUPPORT_DELAY_OFFER = 0x2;
+}
+message MeetingSettingForH323 {
+  optional string dtmfcmd = 1;
+  optional int32 displayNameMode = 2; //1) Only Display Active user, 2) Display All, 3) Hide All
+  optional int32 layoutMode = 3;      //1) Gallay View, 2) Full Screen, 3) Active View
+}
 message MeetingListProto {
   repeated MeetingProto meeting = 1;
 }
@@ -249,6 +272,12 @@ message UserProfile {
   optional OperationTime operationTime = 56;// Zoom rooms operation time
   optional MessengerOptions messengerOptions = 57; //Zoom messenger options
   repeated ZRAlertOptions alertOptions = 58;
+  optional int64 zrOptions1 = 59; // options1 for ZR settings, enable/disable flag, use bit
+  optional int64 zrOptions2 = 60; // options2 for ZR settings, enable/disable flag, use bit
+  optional string zrCalenderResourseId = 61; //Only for Google service calendar
+  optional string customDSCPVal = 62; //for custom dscp value,55;41 means custom audio value is 55,custom video is 41
+  optional string exchangeManageEmail = 63;
+  optional int32 zpGoogleAccessTokenRefreshInterval = 64; //client need refresh zpGoogleAccessToken after xx seconds
 }
 message MessengerOptions{
   optional int32 e2e_cert_expire_time = 1;		//im_certificate_expire_time, in minutes		
@@ -257,14 +286,15 @@ message MessengerOptions{
 
 message OperationTime {
   //options
-  //0x01 : Turn on/off TV
-  //0x02 : Dim Controller
-  //0x04 : Camera
-  //0x08 : Microphone
-  //0x10 : Speaker
-  //0x20 : Ignore High CPU
-  //0x40 : ZRC disconnection
-  //0x80 : ZRC Power
+  //0x01 : on/off this feature
+  //0x02 : Turn on/off TV
+  //0x04 : Dim Controller
+  //0x08 : Camera
+  //0x10 : Microphone
+  //0x20 : Speaker
+  //0x40 : Ignore High CPU
+  //0x80 : ZRC disconnection
+  //0x100 : ZRC Power
 
   //days
   //0x01 : Every Sunday
@@ -296,6 +326,7 @@ message SipPhoneIntegration {
   optional int32 errorCode =                  8; // 0: init, 1: register success, 2: connection failed
   optional string errorString =               9;
   optional int32 protocol =                   10;//0: UDP, 1: TCP, 2: TLS, default is 0 UDP
+  optional int32 registrationExpiry =         11;//Registration Expiry in minutes
 }
 
 message TrackingField {
@@ -318,7 +349,10 @@ message ProfileAmendment {
 }
 
 message ChangedBits {
-  required int32 field =                      1; // 1: UserProfile.featureOptions, 2: UserProfile.featureOptions2, 3: UserProfile.ClientSettings.bitOptions
+// 1: UserProfile.featureOptions, 2: UserProfile.featureOptions2, 3: UserProfile.ClientSettings.bitOptions, 
+// 4: UserProfile.zrOptions1, 5: UserProfile.zrOptions2
+// 20: MeetingProto.scheduleOptions, 21: MeetingProto.scheduleOptions2, 22: MeetingProto.identityOptions
+  required int32 field =                      1; 
   required int64 changedBit =                 2; // long, bit, example 0x80000000000L
   required bool newValue =                    3; // true: set the bit, false: unset the bit
 }
@@ -336,6 +370,8 @@ message MediaDeviceSetting {
 //        START_TEST_DEVICE   = 3;
 //        STOP_TEST_DEVICE    = 4;
 //        DISABLE_AGC         = 5;
+//        CONFIRM_MIC_COUNT   = 6;
+//        ENABLE_HRR          = 7;
 //    }
 
     optional string device_id                   = 1; //in client to web  id-1
@@ -349,6 +385,10 @@ message MediaDeviceSetting {
 	
 	optional bool selected_device               = 9; //in client to web
     optional bool manually_selected_device      = 10;//in client to web, if false, warning to user
+	
+	optional bool   is_combined_device          = 11;
+    optional int32  combined_device_count       = 12;
+    optional bool is_hrr_enabled                = 13; //Highly reverberant room 
 }
 
 message RemoteControlRequestProto {
@@ -358,6 +398,7 @@ message RemoteControlRequestProto {
 //        RC_UPLOAD_LOGS                       = 3;
 //        RC_JOIN_DIRECT_SHARE_MEETING         = 4;
 //        RC_PROFILE_AMENDMENT                 = 5;  // 1: call back /pamendment API in a random delay in 10-70 seconds, return pAmendment in Response 
+//        RC_CALENDAR_EVENT                    = 6;
 //    }
 
 	required string rcRequestId                              = 1;
@@ -368,6 +409,10 @@ message RemoteControlRequestProto {
     optional UploadZoomLogsREQ upload_logs                   = 5;
 	optional JoinDirectShareMeetingREQ  join_share_meeting   = 6;
 	optional ProfileAmendmentREQ profile_amendment           = 7;
+	optional CalendarEvent calendar_event                    = 8;
+}
+message CalendarEvent {
+    optional bool doRefreshMeeting                           = 1;
 }
 
 message ProfileAmendmentREQ {
@@ -375,6 +420,11 @@ message ProfileAmendmentREQ {
 	required int32 randomDelaySecondMax                = 2;
 	repeated int64 longParamsCallAPI                   = 3; //bit set for fields changed
 	repeated string stringParamsCallAPI                = 4; //string name of fields changed
+	repeated ChangedField changedFields                = 5; //Replace stringParamsCallAPI and longParamsCallAPI for changed fileds
+}
+message ChangedField {
+  optional string name =                      1; // name of the changed filed, and may include the prefix for account, location, profile etc.
+  optional int64 bit =                        2; // long, bit, example 0x80000000000L
 }
 
 message RestartZRREQ {
@@ -424,6 +474,18 @@ message ZRSettingsDeviceInfos {                    //Return all device infos tog
     optional bool is_speaker_volume_adjustable  = 10;
     optional bool is_agc_disabled               = 11; //default 
     optional bool can_switch_camera_for_video   = 12; //switch camera in meeting, only for in meeting
+    optional bool is_hrr_enabled                = 13; //Highly reverberant room 
+}
+
+//APP device, which should login with Zoom APP, like ZRC/ZRP, ZR/ZOOM etc.
+message DeviceInfo {
+	optional string device_id   = 1;  // UDID
+	optional string device_name = 2;  // ?
+	optional string os          = 3;  // iOS
+	optional string os_version  = 4;  // 10.3.1
+	optional int32 app_type     = 5;  // 0: ZR, 1: ZRC or 2: ZRP
+	optional string app_version = 6;  // 4.1.12345.0525
+	optional string extJson     = 7;
 }
 
 message VirtualBackground {
@@ -434,8 +496,9 @@ message VirtualBackground {
 }
 
 message Rooms {
-  optional string roomName = 1; //zoom presence room name
-  optional string roomEmail = 2; //zoom presence room email address
+  optional string roomName     = 1; //zoom presence room name
+  optional string roomEmail    = 2; //zoom presence room email address
+  optional string displayName  = 3; //profile first name
 }
 
 message CallProto {
@@ -571,6 +634,7 @@ message ContactProto {
   optional int32 bindWithMobile = 7; // used for IM: if the contact binds with mobile device or not
   optional int32 isSameDomain   = 8; // is in same domain shared group
   optional int32 isSameAccount  = 9; // is in same account shared group
+  optional string sipPhone =10; // User sip phone number
 }
 
 message ContactListProto {
@@ -628,19 +692,19 @@ message ZoomPresence {
   }
   enum AlertName {
     HEARTBEAT                   = 1;  // 1
-    ZRC_CONNECTION              = 2;  // 0/1
+    ZRC_CONNECTION              = 2;  // INT_TYPE, value 0/1
     MICROPHONE                  = 3;  // 0/1
     SPEAKER                     = 4;  // 0/1
     CAMERA                      = 5;  // 0/1
     IM                          = 6;  // int value: 0-ok, other-problem
-    IPAD_CHARGE                 = 7;  // 0/1
-    IPAD_POWER                  = 8;  // 0-100
+    IPAD_CHARGE                 = 7;  // value: 0/1
+    IPAD_POWER                  = 8;  // value: 0-100
     NETWORK_STATUS              = 9;  // 1
     SELECTED_MICROPHONE_REMOVED = 10; // 0/1
     SELECTED_SPEAKER_REMOVED    = 11; // 0/1
     SELECTED_CAMERA_REMOVED     = 12; // 0/1
     HIGH_CPU_USAGE              = 13; // 1
-	CONTROLLER_BATTERY_DYING    = 14; // 0/1
+	CONTROLLER_BATTERY_DYING    = 14; // value: 0/1 not charing and power less than 20%
 	ROBOTIC_AUDIO				= 15; // int value indicates the actions need to be taken: auto_login 2 << 0, auto_restart 2 <<1, manual_reboot = 2<<2
 	OS_ADUIO_ERROR              = 16; // 0 normal; 1 OS audio error 
 	AUTO_LOGIN_ENABLED          = 17; // 0 disabled; 1: enabled
@@ -649,18 +713,23 @@ message ZoomPresence {
 	SELECTED_SPEAKER            = 20;
 	SELECTED_CAMERA             = 21;
 	ZR_PROCESS_STATUS           = 22;
+	DEVICE_CONNECTION           = 23;  // value: 0 online/1 offline
   }
   enum AlertValueType {
     INT_TYPE                 = 1;  
     STRING_TYPE              = 2;
   }
   message Alert {
-    required AlertName name = 1;
-    optional int32 value = 2;
-	optional int64 alertTime = 3;  //seconds of current time
-    optional AlertValueType valueType = 4; //default INT_TYPE
-    optional string strValue = 5;
+    required AlertName name            = 1;
+    optional int32 value               = 2;
+	optional int64 alertTime           = 3;  //seconds of current time
+    optional AlertValueType valueType  = 4; //default INT_TYPE
+    optional string strValue           = 5;
+	
+    optional int32 appType             = 6; // 0: ZR, 1: ZRC or 2: ZRP
+    optional string deviceId           = 7; // device unique id, max len is 64
   }
+  
   required Event event = 1;
   required string userId = 2;
   optional int64 meetingNumber = 3;
@@ -698,6 +767,9 @@ message Request {
   optional ZoomPresence zoomPresence	                = 10; //zoom presence
   optional ZRInfos zrInfos                              = 11; //zoom room report devices settings to web
   optional LocalRecordingListProto localRecordings      = 12; //client report local recording items to web
+  optional RemoteSessionProto remoteSessionProto      	= 13; //remote session proto
+  optional SipPhoneIntegration sipPhoneIntegration		= 14; //sip phone account registration status
+  optional DeviceInfo appDeviceInfo                     = 15;
 }                                                       
                                                         
 message SSODomain {                                     
@@ -781,16 +853,19 @@ message Response {
   optional string ZRKey    	                            = 39;	//ZR key for get room IP
   optional string microServiceEndpoint	                = 40;  //microservice endpoint
   optional CMRStorage cmrStroage      	                = 41;  //Cloud Meeting Recording storage status
-  optional ProfileAmendment pAmendment                  = 42;  //get profile amendment
+  optional ProfileAmendment pAmendment                  = 42;  //get amendment of profile or meeting
   optional AllDailinNumbersProto dailinNumbers          = 43;
   optional string ZRKeyChars   	                        = 44;  //ZR key QWERTYUIOP to represent 1234567890
   optional SDKAuthResp sdkAuthResp						= 45;
+  optional int64 statusCode                             = 46;  //free status code, define by each API self, 0 is no meaning.
+  optional int64 serverTime                             = 47; // Server timestamp in milliseconds
 }                                                       
                                                         
 message CMRStorage{                                     
 	required int64 totalStorageSize                     = 1; // byte of total storage size (plan capacity + free), 0 means no CMR plan
-	required int64 usedStorageSize                      = 2; // byte of used storage size, 0 means no CMR plan
-	required bool isFreeTrialPlan                       = 3; // For free trial plan, it totalStorageSize maybe 1G, but we always allow it to do new recording.
+	required int64 usedStorageSize                      = 2; // byte of used storage size
+	required bool isFreeTrialPlan                       = 3; // Deprecated
+	required bool allowExceedStorage                    = 4; // if allow, even exceed total storage, still be able to do new recording; otherwise, the cloud recording should be disabled for new meeting.
 }                                                       
 message IPInfo{                                         
   optional string ip = 1;                               
@@ -1005,6 +1080,7 @@ message TSPProto {
 	optional bool isSupportHybridAudio		  = 5; //Support hybrid audio(TSP audio with voip)
 	optional string hostPasscode			  = 6;
 	optional string participantPasscode		  = 7;
+	optional int32 passcodeType				  = 8; //default is 1:conference code + leader pin
 }
 
 message BroadcastMeetingItem{
@@ -1020,11 +1096,15 @@ message BroadcastChannel{
 
 message RemoteSessionProto {
 	required string meetingId		= 1; // meeting instance id of remote session
-	required string hostId			= 2; // host id
-	required string customerId		= 3; // controlled attendee id
-	required int64 sessionStart		= 4; // session start time
-	required int64 sessionEnd		= 5; // session end time
-	required int64 sessionRequest	= 6; // session request time
+	optional string controllerId		= 2; // remote controller id
+	optional string controllerName	= 3; // remote controller name
+	optional string controllerEmail	= 4; // remote controller email
+	optional string remoteId			= 5; // remote controlled attendee id
+	optional string remoteName		= 6; // remote controlled attendee name
+	optional string remoteEmail		= 7; // remote controlled attendee email
+	required int64 sessionStart		= 8; // session start time
+	required int64 sessionEnd		= 9; // session end time
+	required int64 sessionRequest	= 10; // session request time
 }  
 
 message RemoteSessionResponse {

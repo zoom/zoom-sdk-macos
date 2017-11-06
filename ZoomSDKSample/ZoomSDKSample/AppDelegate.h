@@ -8,7 +8,7 @@
 #import <Cocoa/Cocoa.h>
 #import "ZoomSDK.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate, ZoomSDKBreakoutRoomsDelegate, ZoomSDKWaitingRoomDelegate, ZoomSDKPhoneHelperDelegate, ZoomSDKNetworkSeviceDelegate, ZoomSDKASControllerDelegate, ZoomSDKMeetingUIControllerDelegate, ZoomSDKMeetingActionControllerDelegate>
 
 {
     IBOutlet NSWindow* _mainWindow;
@@ -16,7 +16,13 @@
     IBOutlet NSTextField*  _authResultFieldWelcome;
     IBOutlet NSButton*    _sdkUserButton;
     IBOutlet NSButton*    _zoomUserButton;
+    IBOutlet NSButton*    _devZoomAuth;
+    //auth
+    IBOutlet NSTextField* _webDomainField;
+    IBOutlet NSTextField* _appKeyField;
+    IBOutlet NSTextField* _appSecretField;
     
+    //main window
     IBOutlet NSButton*    _startMeeting;
     IBOutlet NSButton*    _endMeeting;
     IBOutlet NSButton*    _preMeetingButton;
@@ -25,8 +31,14 @@
     IBOutlet NSButton*    _recordButton;
     IBOutlet NSButton*    _mainWindowButton;
     IBOutlet NSButton*    _logoutButton;
-     IBOutlet NSButton*   _H323Button;
+    IBOutlet NSButton*   _H323Button;
+    IBOutlet NSButton*   _waitingRoomButton;
+    IBOutlet NSButton*    _calloutButton;
+    IBOutlet NSButton*    _boButton;
+    IBOutlet NSButton*   _multiShareButton;
+    IBOutlet NSButton*   _participantsButton;
     
+    //login
     IBOutlet NSTabView*   _tabView;
     IBOutlet NSTextField* _userNameField;
     IBOutlet NSTextField* _passwordField;
@@ -34,6 +46,8 @@
     IBOutlet NSButton*    _loginButton;
     IBOutlet NSButton*    _rememberMeButton;
     IBOutlet NSTextField* _connectLabel;
+    IBOutlet NSTextField* _ssoTokenField;
+    IBOutlet NSButton*    _enableSSOButton;
     //remote control
     IBOutlet NSTextField* _remoteControlMsgField;
 
@@ -55,7 +69,14 @@
     IBOutlet NSButton*    _joinBeforeHost;
     IBOutlet NSTextField* _preMeetingError;
     IBOutlet NSTextField* _listMeetingError;
-
+    //start && join meeting
+    IBOutlet NSTextField* _startMeetingNum;
+    IBOutlet NSTextField* _sdkUserID;
+    IBOutlet NSTextField* _sdkUserToken;
+    IBOutlet NSTextField* _startUserName;
+    
+    IBOutlet NSTextField* _joinMeetingNum;
+    IBOutlet NSTextField* _joinUserName;
     //H323
     IBOutlet NSTextField* _pairCode;
     IBOutlet NSTextField* _meetingNum;
@@ -74,6 +95,7 @@
     IBOutlet NSButton*    _getParticipantsButton;
     IBOutlet NSButton*    _pinVideo;
     IBOutlet NSButton*    _spotlightVideo;
+    IBOutlet NSTextView*  _audioInfoView;
     
     IBOutlet NSImageView* _logoView;
     IBOutlet NSProgressIndicator* _indicator;
@@ -82,8 +104,11 @@
     IBOutlet NSTextField* _receivedMsgContent;
     IBOutlet NSTextField* _sendMsgContent;
 
-    //multi-share
+    //share
+    IBOutlet NSTextField* _selectedScreenField;
     IBOutlet NSTextView*  _shareStatusMsgView;
+    
+    //multi-share
     IBOutlet NSTextField* _sharerUserID;
     IBOutlet NSTextView*  _sharerListView;
     IBOutlet NSButton*    _startAnotationButton;
@@ -95,8 +120,23 @@
     BOOL     _hasLogined;
     H323DeviceType _selectDeviceType;
     ScreenType     _screenType;
+    
+    //Message Info
+    IBOutlet NSTextView* _meetingActionInfo;
+    //Waiting Room
+    IBOutlet NSTextView* _waitingRoomUserInfo;
+    IBOutlet NSTextView* _waitingRoomStatusInfo;
+    IBOutlet NSTextField* _selectedWaitingUser;
+    
+    //Phone Call out
+    IBOutlet NSTextField*  _countryCode;
+    IBOutlet NSTextField*  _phoneNumber;
+    IBOutlet NSTextField*  _userName;
+    IBOutlet NSTextView*  _calloutStatusInfo;
+    
 }
 
+-(IBAction)clickAuthDevZoom:(id)sender;
 -(IBAction)clickSDKUser:(id)sender;
 -(IBAction)clickZoomUser:(id)sender;
 -(IBAction)clickChat:(id)sender;
@@ -107,12 +147,17 @@
 -(IBAction)clickH323:(id)sender;
 -(IBAction)clickModifyParticipants:(id)sender;
 -(IBAction)clickMultiShare:(id)sender;
+-(IBAction)clickWaitingRoom:(id)sender;
+-(IBAction)clickPhoneCallout:(id)sender;
+-(IBAction)clickBO:(id)sender;
 
 -(IBAction)sdkAuth:(id)sender;
 -(IBAction)loginZoom:(id)sender;
+-(IBAction)enableSSO:(id)sender;
 -(IBAction)startMeeting:(id)sender;
 -(IBAction)endMeeting:(id)sender;
 -(IBAction)joinMeeting:(id)sender;
+-(IBAction)joinWebinar:(id)sender;
 -(IBAction)logout:(id)sender;
 //chatWindow
 -(IBAction)showChatDlg:(id)sender;
@@ -133,9 +178,11 @@
 // toolbar 
 -(IBAction)showConfToolbar:(id)sender;
 -(IBAction)hideConfToolbar:(id)sender;
-
+-(IBAction)switchMiniVideoMode:(id)sender;
 -(IBAction)showFitToolBar:(id)sender;
 -(IBAction)hideFitToolBar:(id)sender;
+-(IBAction)showThumbnailVideo:(id)sender;
+-(IBAction)hideThumbnailVideo:(id)sender;
 
 //remote control
 -(IBAction)requestRemoteControl:(id)sender;
@@ -145,9 +192,9 @@
 -(IBAction)declineRemoteControl:(id)sender;
 
 //share
+-(IBAction)getScreenID:(id)sender;
 -(IBAction)lockShare:(id)sender;
 -(IBAction)startShare:(id)sender;
--(IBAction)enterShareFullWindowMode:(id)sender;
 -(IBAction)minimizeFloatWnd:(id)sender;
 -(IBAction)maxFloatWnd:(id)sender;
 -(IBAction)swithFloatWndToActiveSpk:(id)sender;
@@ -187,6 +234,7 @@
 -(IBAction)deleteMeeting:(id)sender;
 -(IBAction)updateMeeting:(id)sender;
 -(IBAction)listMeeting:(id)sender;
+-(IBAction)showScheduleWindow:(id)sender;
 
 //H323 support
 - (IBAction)sendPairCode:(id)sender;
@@ -204,5 +252,13 @@
 - (IBAction)viewShare:(id)sender;
 - (IBAction)getSharerList:(id)sender;
 
+//Waiting Room
+- (IBAction)getWaitingRoomUsers:(id)sender;
+- (IBAction)admitToMeeting:(id)sender;
+- (IBAction)putIntoWaitingRoom:(id)sender;
+
+//Phone Call Out
+- (IBAction)callOutInviteUser:(id)sender;
+- (IBAction)cancelCallOut:(id)sender;
 @end
 

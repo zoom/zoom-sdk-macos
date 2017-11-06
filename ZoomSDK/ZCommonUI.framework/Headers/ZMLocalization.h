@@ -226,4 +226,15 @@
 #define AIRHOST_CABLE                       @"iPhone/iPad via Cable"//[Zoom-16943]
 #define AIRHOST_CONNECT_DEVICE              @"Connect your iPhone or iPad to this computer"//[Zoom-16943]
 #define AIRHOST_SELECT_TRUST                @"When prompted on your iPhone or iPad, select \"Trust\""//[Zoom-16943]
+#define SETTING_SHOW_ZOOM_IN_MENUBAR        @"Show Zoom menu in menu bar"//[Zoom-21260]
+#define ORIGINAL_SOUND_TURN_ON              @"Turn on Original Sound"//[Zoom-17822]
+#define ORIGINAL_SOUND_TURN_OFF             @"Turn off Original Sound"//[Zoom-17822]
+#define ORIGINAL_SOUND_SELECT_DEFAULT       @"Select a microphone to always use original sound"//[Zoom-17822]
+#define GUEST                               @"Guest"//[Zoom-20772]
+
+
+#define QA_ANSWER_VERBALLY                  @"Answered this question verbally."//[Zoom-18899]
+#define QA_DISMISS                          @"Dismiss"//[Zoom-18899]
+#define QA_DISMISSED                        @"Dismissed"//[Zoom-18899]
+#define SETTING_SHOW_ZOOM_IN_MENUBAR        @"Show Zoom menu in menu bar"//[Zoom-21260]
 
