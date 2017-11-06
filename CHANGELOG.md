@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## 2017-11-02
+
+### Added
+
+1. add interface to check sharing content
+
+2. add support for split screen during sharing
+
+3. add interface to inform active speaker
+
+4. add support to change in meeting name
+
+5. add support to minimize video
+
+6. add callback interface for clicking toolbar share button 
+
+7. add support for webinar join window info prefill
+
+8. for code refactor details, please visit : https://developer.zoom.us/docs/macos/mac-sdk-refactor-details/
+
+9. bug fix
+
 ## 2017-06-19
 
 ### Added
