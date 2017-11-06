@@ -16,6 +16,9 @@
 //Account has not enabled SDK feature
 #define kSDKAuthAccountNotEnableSDK     3025
 
+/** 
+ @enum: different user type for sdk
+ */
 typedef enum {
     //API user type
     ZoomSDKUserType_APIUser     = 99,
@@ -25,6 +28,9 @@ typedef enum {
     ZoomSDKUserType_SSOUser     = 101,
 }ZoomSDKUserType;
 
+/**
+ @enum: leave meeting action command
+ */
 typedef enum {
     //Leave meeting
     LeaveMeetingCmd_Leave,
@@ -32,6 +38,9 @@ typedef enum {
     LeaveMeetingCmd_End,
 }LeaveMeetingCmd;
 
+/**
+ @enum: action meetting command
+ */
 typedef enum{
     //video cmd
     ActionMeetingCmd_MuteVideo,
@@ -79,15 +88,22 @@ typedef enum{
     
 }ActionMeetingCmd;
 
+/**
+ @enum: get meeting default info command (NSString type)
+ */
 typedef enum {
     MeetingPropertyCmd_Topic,
     MeetingPropertyCmd_InviteEmailTemplate,
     MeetingPropertyCmd_InviteEmailTitle,
     MeetingPropertyCmd_JoinMeetingUrl,
     MeetingPropertyCmd_DefaultRecordPath,
+    MeetingPropertyCmd_MeetingNumber,
+    MeetingPropertyCmd_HostTag,
 }MeetingPropertyCmd;
 
-//Annotation
+/**
+ @enum: Annotation tool selected command
+ */
 typedef enum{
     AnnotationToolType_None,
     AnnotationToolType_Pen,
@@ -103,13 +119,18 @@ typedef enum{
     AnnotationToolType_ERASER,
 }AnnotationToolType;
 
+/**
+ @enum: Annotation clear type selected command
+ */
 typedef enum{
     AnnotationClearType_All,
     AnnotationClearType_Self,
     AnnotationClearType_Other,
 }AnnotationClearType;
 
-//UI component
+/**
+ @enum: In meeting UI component selected command
+ */
 typedef enum{
     MeetingComponent_MainWindow,
     MeetingComponent_Audio,
@@ -121,18 +142,25 @@ typedef enum{
     MeetingComponent_Setting,
     MeetingComponent_JBHWindow,
     MeetingComponent_ShareOptionWindow,
+    MeetingComponent_ThumbnailVideo,
 }MeetingComponent;
 
-//setting
+/**
+ @enum: meeting setting command
+ */
 typedef enum{
     MeetingSettingCmd_DualScreenMode,
     MeetingSettingCmd_AutoJoinAudio,
     MeetingSettingCmd_AutoFitToWindowWhenViewShare,
     MeetingSettingCmd_AutoFullScreenWhenJoinMeeting,
     MeetingSettingCmd_EnableAutoAdjustMic,
+    MeetingSettingCmd_EnableMuteOnEntry,
+    MeetingSettingCmd_EnablePlayChimeWhenEnterOrExit,
 }MeetingSettingCmd;
 
-// SDK Error
+/**
+ @enum: ZoomSDK common error
+ */
 typedef enum{
     ZoomSDKError_Success,
     ZoomSDKError_Failed,
@@ -145,7 +173,9 @@ typedef enum{
     ZoomSDKError_UnKnow,
 }ZoomSDKError;
 
-//Auth Service Error
+/**
+ @enum: ZoomSDKAuthService auth sdk error
+ */
 typedef enum {
     //Auth Success
     ZoomSDKAuthError_Success,
@@ -159,7 +189,9 @@ typedef enum {
     ZoomSDKAuthError_Unknown,
 }ZoomSDKAuthError;
 
-//Premeeting Service Error
+/**
+ @enum: ZoomSDKPreMeetingService error
+ */
 typedef enum {
     //Success
     ZoomSDKPremeetingError_Success,
@@ -173,7 +205,7 @@ typedef enum {
 }ZoomSDKPremeetingError;
 
 /*
- * ZoomSDKMeetingError
+ * @enum: ZoomSDKMeetingError
  * ============================
  * - ZoomSDKMeetingError_Success: start/join meeting successfully.
  * - ZoomSDKMeetingError_NetworkUnavailable: start/join meeting failed for network issue.
@@ -240,7 +272,9 @@ typedef enum {
 
 
 
-//ZoomSDKLoginStauts
+/**
+ @enum: ZoomSDK login status
+ */
 typedef enum {
     ZoomSDKLoginStatus_Idle, // Not login yet
     ZoomSDKLoginStatus_Success, // Login Success
@@ -250,7 +284,7 @@ typedef enum {
 
 
  /*
- * ZoomSDKMeetingStatus
+ @enum: ZoomSDKMeetingStatus
  * ============================
  * - ZoomSDKMeetingStatus_Idle: idle now, client can start/join meeting if wanted.
  * - ZoomSDKMeetingStatus_Connecting: the client is starting/joining meeting.
@@ -278,10 +312,14 @@ typedef enum {
     //has other meeting in progress
     ZoomSDKMeetingStatus_OtherMeetingInProgress = 9,
     ZoomSDKMeetingStatus_InWaitingRoom      = 10,
+    //for huawei
+    ZoomSDKMeetingStatus_WaitExternalSessionKey =11,
 
 }ZoomSDKMeetingStatus;
 
-//share status
+/**
+ @enum: ZoomSDK share status
+ */
 typedef enum{
     ZoomSDKShareStatus_None,
     ZoomSDKShareStatus_SelfBegin,
@@ -293,7 +331,9 @@ typedef enum{
     ZoomSDKShareStatus_Resume,
 }ZoomSDKShareStatus;
 
-//audio status
+/**
+ @enum: ZoomSDK audio status
+ */
 typedef enum{
     ZoomSDKAudioStatus_None,
     ZoomSDKAudioStatus_Muted,
@@ -304,8 +344,15 @@ typedef enum{
     ZoomSDKAudioStatus_UnMutedAllByHost,
 }ZoomSDKAudioStatus;
 
-
-//remote control status
+typedef enum{
+    ZoomSDKAudioType_None,
+    ZoomSDKAudioType_Voip,
+    ZoomSDKAudioType_Phone,
+    ZoomSDKAudioType_Unknow,
+}ZoomSDKAudioType;
+/**
+ @enum: ZoomSDK remote control status
+ */
 typedef enum{
     ZoomSDKRemoteControlStatus_None,
     //viewer can request remote controll from sharer
@@ -327,7 +374,9 @@ typedef enum{
     ZoomSDKRemoteControlStatus_LostPrivilegeFromWho,
 }ZoomSDKRemoteControlStatus;
 
-//Recording status
+/**
+ @enum: ZoomSDK Recording status
+ */
 typedef enum{
     ZoomSDKRecordingStatus_None,
     ZoomSDKRecordingStatus_Start,
@@ -335,7 +384,9 @@ typedef enum{
     ZoomSDKRecordingStatus_DiskFull,
 }ZoomSDKRecordingStatus;
 
-//Connection quality
+/**
+ @enum: ZoomSDK Connection quality
+ */
 typedef enum{
     ZoomSDKConnectionQuality_Unknow,
     ZoomSDKConnectionQuality_VeryBad,
@@ -346,7 +397,9 @@ typedef enum{
     ZoomSDKConnectionQuality_Excellent,
 }ZoomSDKConnectionQuality;
 
-//H323CalloutStatus
+/**
+ @enum: ZoomSDK H323 device Callout Status
+ */
 typedef enum
 {
     H323CalloutStatus_Unknown,
@@ -356,7 +409,9 @@ typedef enum
     H323CalloutStatus_Failed,
 }H323CalloutStatus;
 
-//H323ParingStatus
+/**
+ @enum: ZoomSDK H323 device pair Status
+ */
 typedef enum
 {
     H323PairingResult_Unknown,
@@ -367,7 +422,9 @@ typedef enum
     H323PairingResult_Other_Error,
 }H323PairingResult;
 
-//H323DeviceType
+/**
+ @enum: ZoomSDK H323 device type
+ */
 typedef enum
 {
     H323DeviceType_Unknown,
@@ -375,14 +432,18 @@ typedef enum
     H323DeviceType_SIP,
 }H323DeviceType;
 
-//Multi-share
+/**
+ @enum: ZoomSDK screen type for multi-share
+ */
 typedef enum
 {
   ScreenType_First,
   ScreenType_Second,
 }ScreenType;
 
-//MeetingUI Type
+/**
+ @enum: ZoomSDK Meeting video UI Type
+ */
 typedef enum
 {
    MeetingUIType_None,
@@ -390,6 +451,9 @@ typedef enum
    MeetingUIType_ActiveRender,
 }MeetingUIType;
 
+/**
+ @enum: Join meeting requrire info type
+ */
 typedef enum
 {
     JoinMeetingReqInfoType_None,
@@ -397,6 +461,9 @@ typedef enum
     JoinMeetingReqInfoType_Password_Wrong,
 }JoinMeetingReqInfoType;
 
+/**
+ @enum: Meeting type
+ */
 typedef enum
 {
     MeetingType_None,
@@ -405,6 +472,9 @@ typedef enum
     MeetingType_Webinar,
 }MeetingType;
 
+/**
+ @enum: User Role type
+ */
 typedef enum
 {
     UserRole_None,
@@ -415,6 +485,9 @@ typedef enum
     UserRole_BreakoutRoom_Moderator,
 }UserRole;
 
+/**
+ @enum: Phone call status
+ */
 typedef enum
 {
     PhoneStatus_None,
@@ -429,6 +502,9 @@ typedef enum
     PhoneStatus_Timeout,
 }PhoneStatus;
 
+/**
+ @enum: Phone call failed reason
+ */
 typedef enum
 {
     PhoneFailedReason_None,
@@ -441,3 +517,66 @@ typedef enum
     PhoneFailedReason_Block_High_Rate,
     PhoneFailedReason_Block_Too_Frequent,
 }PhoneFailedReason;
+
+/**
+ @enum: share content type enum
+ */
+typedef enum
+{
+    ZoomSDKShareContentType_UNKNOWN, //unknown share
+    ZoomSDKShareContentType_AS,	//application share
+    ZoomSDKShareContentType_DS,	//desktop share
+    ZoomSDKShareContentType_WB,	//whiteboard share
+    ZoomSDKShareContentType_AIRHOST,	//mobile device from PC
+    ZoomSDKShareContentType_CAMERA,	//camera share
+    ZoomSDKShareContentType_DATA,	//data share
+    ZoomSDKShareContentType_WIRED_DEVICE //wired device, connect between Mac and iPhone
+}ZoomSDKShareContentType;
+
+/*
+@enum: call in number type
+*/
+typedef enum
+{
+    CallInNumberType_None,
+    CallInNumberType_Toll,
+    CallInNumberType_TollFree,
+}CallInNumberType;
+
+/*
+@enum: hide button on fitbar or toolbar
+*/
+typedef enum
+{
+    ToolBarInviteButton,
+    FitBarAudioButton,
+    FitBarVideoButton,
+    FitBarParticipantButton,
+    FitBarNewShareButton,
+    FitBarRemoteControlButton,
+    FitBarPauseShareButton,
+    FitBarAnnotateButton,
+    FitBarQAButton,
+    FitBarBroadcastButton,
+    FitBarPolling,
+    FitBarMoreButton,
+    MainExitFullScreenButton,
+}SDKButton;
+
+typedef enum
+{
+    SecuritySessionComponet_Unknown,
+    SecuritySessionComponet_Chat,
+    SecuritySessionComponet_FT,
+    SecuritySessionComponet_Audio,
+    SecuritySessionComponet_Video,
+    SecuritySessionComponet_AS,
+}SecuritySessionComponet;
+
+typedef enum
+{
+    StatisticWarningType_None,
+    StatisticWarningType_NetworkBad,
+    StatisticWarningType_CPUHigh,
+    StatisticWarningType_SystemBusy,
+}StatisticWarningType;
