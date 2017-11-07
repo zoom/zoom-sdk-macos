@@ -20,7 +20,9 @@
 
 8. for code refactor details, please visit : https://developer.zoom.us/docs/macos/mac-sdk-refactor-details/
 
-9. bug fix
+9. add support to hide each individual button on fitbar during sharing.
+
+10. bug fix
 
 ## 2017-06-19
 
