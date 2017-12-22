@@ -11,11 +11,11 @@
 #import <time.h>
 
 
-#define kZoomSDKDomain      @"dev.zoom.us"
-//#define kZoomSDKAppKey      @"EMXjNaKjSkZzHFmmwM50X6NW6InkYumpf3rK"
-//#define kZoomSDKAppSecret   @"jBv7wMcOQbmfWGMp4G9tcGkpLncuZiCoidSl"
-#define kZoomSDKAppKey      @"IatnCdAYT12RU_VNZzZP4Q"
-#define kZoomSDKAppSecret   @"XsX9HuvmxUWRopS9PpwSFLeEkSYR5Pt7KK0b"
+#define kZoomSDKDomain      @""
+//#define kZoomSDKAppKey      @""
+//#define kZoomSDKAppSecret   @""
+#define kZoomSDKAppKey      @""
+#define kZoomSDKAppSecret   @""
 @interface AppDelegate ()
 - (void) switchToZoomUserTab;
 - (void) switchToMeetingTab;
