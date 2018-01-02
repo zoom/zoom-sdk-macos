@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.1.18283.1226</string>
+	<string>4.1.12430.1102</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,21 +25,21 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>4.1.18283.1226</string>
+	<string>4.1.12430.1102</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8E3004b</string>
+	<string>8A218a</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>15C43</string>
+	<string>15A278</string>
 	<key>DTSDKName</key>
 	<string>macosx10.11</string>
 	<key>DTXcode</key>
-	<string>0833</string>
+	<string>0800</string>
 	<key>DTXcodeBuild</key>
-	<string>8E3004b</string>
+	<string>8A218a</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright ©2012-2016 Zoom Video Communications, Inc. All rights reserved.</string>
 </dict>

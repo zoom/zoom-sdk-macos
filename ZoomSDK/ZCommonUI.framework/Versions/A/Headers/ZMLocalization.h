@@ -15,25 +15,25 @@
 
 //HotKey
 #define KEY_NAVIGATE_WINDOW     @"Navigate among Zoom popup windows"
-#define KEY_PREVIOUS_GALLERY    @"View the previous 25 video participants in gallery view"
-#define KEY_NEXT_GALLERY        @"View the next 25 video participants in gallery view"
+#define KEY_PREVIOUS_GALLERY    @"View the previous 25 video participants in Gallery View"
+#define KEY_NEXT_GALLERY        @"View the next 25 video participants in Gallery View"
 #define KEY_SWITCH_MINIMAL      @"Switch to minimal window"
-#define KEY_SWITCH_SPEAKER      @"Switch to speaker view"
-#define KEY_SWITCH_GALLERY      @"Switch to gallery view"
+#define KEY_SWITCH_SPEAKER      @"Switch to Speaker View"
+#define KEY_SWITCH_GALLERY      @"Switch to Gallery View"
 #define KEY_ONOFF_VIDEO         @"Start/Stop video"
 #define KEY_ONOFF_AUDIO         @"Mute/Unmute my audio"
 #define KEY_OFF_ALL_AUDIO       @"Mute audio for everyone except host (available only to the host)"
 #define KEY_ON_ALL_AUDIO        @"Unmute audio for everyone except host (available only to the host)"
 #define KEY_ONOFF_SHARE         @"Start/Stop share screen"
-#define KEY_PAUSE_RESUME_SHARE  @"Pause/Resume share (available only when you are sharing your screen)"
+#define KEY_PAUSE_RESUME_SHARE  @"Pause/Resume Share (available only when you are sharing your screen)"
 #define KEY_ONOFF_LOCAL_RECORD  @"Start/Stop local recording"
 #define KEY_ONOFF_CLOUD_RECORD  @"Start/Stop cloud recording"
 #define KEY_PAUSE_RESUME_RECORD @"Pause/Resume recording"
-#define KEY_SWITCH_CAMERA       @"Switch camera"
+#define KEY_SWITCH_CAMERA       @"Switch Camera"
 #define KEY_ENTER_EXIT_FULLSCR  @"Enter/Exit full screen mode"
-#define KEY_ONOFF_CHAT          @"Display/Hide chat"
-#define KEY_ONOFF_PARTICIPANTS  @"Display/Hide manage participants"
-#define KEY_ON_INVITE           @"Open the invite window"
+#define KEY_ONOFF_CHAT          @"Display/Hide Chat"
+#define KEY_ONOFF_PARTICIPANTS  @"Display/Hide Manage Participants"
+#define KEY_ON_INVITE           @"Open the Invite window"
 #define KEY_KEYBOARD_SHORTCUTS  @"Keyboard Shortcuts:"
 #define KEY_DESCRIPTION         @"Description"
 #define KEY_ENABEL_SHORTCUTS    @"Enable shortcuts even when the Zoom app is not in focus"
@@ -237,6 +237,4 @@
 #define QA_DISMISS                          @"Dismiss"//[Zoom-18899]
 #define QA_DISMISSED                        @"Dismissed"//[Zoom-18899]
 #define SETTING_SHOW_ZOOM_IN_MENUBAR        @"Show Zoom menu in menu bar"//[Zoom-21260]
-
-#define STOP_REMOTE_CONTROL                 @"Stop remote control" //[zoom-27176]
 
