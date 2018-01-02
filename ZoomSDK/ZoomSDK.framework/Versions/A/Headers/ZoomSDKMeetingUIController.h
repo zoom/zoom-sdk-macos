@@ -22,6 +22,11 @@
  */
 - (void)onToolbarShareButtonClick;
 
+/**
+ * @brief Designated for Zoom Meeting notify need to show leave meeting window.
+ */
+-(void)onNeedShowLeaveMeetingWindow;
+
 @end
 
 @interface ZoomSDKMeetingUIController :NSObject
@@ -50,11 +55,6 @@
 - (ZoomSDKError)minimizeShareFloatVideoWindow:(BOOL)bMin;
 - (ZoomSDKError)switchFloatVideoToActiveSpeakerMode;
 - (ZoomSDKError)switchFloatVideoToGalleryMode;
-/**
- @note
- set newMeetingNum = 0 if u want to hide, set else num to replace.
- */
-- (ZoomSDKError)modifyMeetingInfoInMainWindow:(unsigned int)newMeetingNum;
 
 /**
  * @brief This method is used to hide or show no video user on video wall view.

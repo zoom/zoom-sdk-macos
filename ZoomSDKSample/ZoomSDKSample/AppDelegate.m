@@ -12,10 +12,10 @@
 
 
 #define kZoomSDKDomain      @""
-//#define kZoomSDKAppKey      @""
-//#define kZoomSDKAppSecret   @""
 #define kZoomSDKAppKey      @""
 #define kZoomSDKAppSecret   @""
+//#define kZoomSDKAppKey      @""
+//#define kZoomSDKAppSecret   @""
 @interface AppDelegate ()
 - (void) switchToZoomUserTab;
 - (void) switchToMeetingTab;
@@ -312,8 +312,10 @@ void processSignal(int num)
     config.enableMuteOnEntry = YES;
     config.disableDoubleClickToFullScreen = YES;
     config.disableRenameInMeeting = YES;
-    [config hideSDKButtons:FitBarNewShareButton];
-   // [config hideSDKButtons:ToolBarInviteButton];
+  //  config.hideLeaveMeetingWindow = YES;
+    [config hideSDKButtons:NO ButtonType:FitBarNewShareButton];
+    [config hideSDKButtons:NO ButtonType:ToolBarInviteButton];
+    [config modifyWindowTitle:YES NewMeetingNum:0];
     ZoomSDKGeneralSetting* setting = [[[ZoomSDK sharedSDK] getSettingService] getGeneralSetting];
     if(setting)
     {
@@ -328,6 +330,15 @@ void processSignal(int num)
          if ([authService isAuthorized])
          {
               meetingService.delegate = self;
+             //action controller delegate
+             ZoomSDKMeetingActionController* actionCtr = [meetingService getMeetingActionController];
+             actionCtr.delegate = self;
+             //waiting room delegate
+             ZoomSDKWaitingRoomController* waitController = [meetingService getWaitingRoomController];
+             waitController.delegate = self;
+             //ui controller
+             ZoomSDKMeetingUIController* uiController = [meetingService getMeetingUIController];
+             uiController.delegate = self;
              if (_hasLogined) {
                  //for zoom user
                  ret =[meetingService startMeeting:ZoomSDKUserType_ZoomUser userID:nil userToken:nil displayName:nil meetingNumber:[_startMeetingNum stringValue] isDirectShare:NO sharedApp:0 isVideoOff:YES isAuidoOff:NO];
@@ -643,10 +654,10 @@ void processSignal(int num)
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    BOOL annotateSelf =[_annotationSelf state] == NSOnState? YES: NO;
-   [asController startAnnotation:annotateSelf Position:NSMakePoint(1000, 500) onScreen:_screenType];
-   // [meetingService startAnnotation:NSMakePoint(800, 500) onScreen:ScreenType_First];
-    ZoomSDKAnnotationController* controller = [asController getAnnotationController:_screenType];
+    //BOOL annotateSelf =[_annotationSelf state] == NSOnState? YES: NO;
+    [asController startAnnotation: NSMakePoint(1000, 500) onScreen:_screenType];
+    // [meetingService startAnnotation:NSMakePoint(800, 500) onScreen:ScreenType_First];
+    ZoomSDKAnnotationController* controller = [asController getAnnotationController];
     [controller setColor:0.8f Green:0.8f Black:0.8f onScreen:_screenType];
     [controller setLineWidth: 5 onScreen:_screenType];
     
@@ -655,10 +666,11 @@ void processSignal(int num)
 -(IBAction)stopAnnotation:(id)sender
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
-    BOOL annotateSelf =[_annotationSelf state] == NSOnState? YES: NO;
+    // BOOL annotateSelf =[_annotationSelf state] == NSOnState? YES: NO;
     ZoomSDKASController* asController = [meetingService getASController];
-    [asController stopAnnotation:annotateSelf onScreen:_screenType];
+    [asController stopAnnotation:_screenType];
 }
+
 
 -(IBAction)showNoVideoUserOnWall:(id)sender
 {
@@ -690,7 +702,7 @@ void processSignal(int num)
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    ZoomSDKAnnotationController* annotation = [asController getAnnotationController:_screenType];
+    ZoomSDKAnnotationController* annotation = [asController getAnnotationController];
     [annotation setTool:AnnotationToolType_ERASER onScreen:_screenType];
 }
 
@@ -698,14 +710,14 @@ void processSignal(int num)
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    ZoomSDKAnnotationController* annotation = [asController getAnnotationController:_screenType];
+    ZoomSDKAnnotationController* annotation = [asController getAnnotationController];
     [annotation setTool:AnnotationToolType_Pen onScreen:_screenType];
 }
 -(IBAction)setNone:(id)sender
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    ZoomSDKAnnotationController* annotation = [asController getAnnotationController:_screenType];
+    ZoomSDKAnnotationController* annotation = [asController getAnnotationController];
     [annotation setTool:AnnotationToolType_None onScreen:_screenType];
 }
 
@@ -713,28 +725,28 @@ void processSignal(int num)
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    ZoomSDKAnnotationController* annotation = [asController getAnnotationController:_screenType];
+    ZoomSDKAnnotationController* annotation = [asController getAnnotationController];
     [annotation clear:AnnotationClearType_All onScreen:_screenType];
 }
 -(IBAction)clearMine:(id)sender
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    ZoomSDKAnnotationController* annotation = [asController getAnnotationController:_screenType];
-   [annotation clear:AnnotationClearType_Self onScreen:_screenType];
+    ZoomSDKAnnotationController* annotation = [asController getAnnotationController];
+    [annotation clear:AnnotationClearType_Self onScreen:_screenType];
 }
 -(IBAction)redo:(id)sender
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    ZoomSDKAnnotationController* annotation = [asController getAnnotationController:_screenType];
+    ZoomSDKAnnotationController* annotation = [asController getAnnotationController];
     [annotation redo:_screenType];
 }
 -(IBAction)undo:(id)sender
 {
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKASController* asController = [meetingService getASController];
-    ZoomSDKAnnotationController* annotation = [asController getAnnotationController:_screenType];
+    ZoomSDKAnnotationController* annotation = [asController getAnnotationController];
     [annotation undo:_screenType];
 }
 
@@ -891,7 +903,7 @@ void processSignal(int num)
 
 #pragma meetingservice delegate
 
-- (void)onMeetingStatusChange:(ZoomSDKMeetingStatus)state meetingError:(ZoomSDKMeetingError)error
+- (void)onMeetingStatusChange:(ZoomSDKMeetingStatus)state meetingError:(ZoomSDKMeetingError)error EndReason:(EndMeetingReason)reason
 {
     NSLog(@"MeetingStatus change %d", state);
     switch (state) {
@@ -920,20 +932,6 @@ void processSignal(int num)
              if (!UIController) {
              return;
              }
-          //   NSRect mainRect = NSMakeRect(100, 100, 200, 200);
-          //   NSWindow* w∑indow = [[NSWindow alloc] init];
-          //   [UIController showMeetingComponent:MeetingComponent_MainWindow window: &window show:YES frame:mainRect];
-          /*
-             NSRect newRect  = NSMakeRect(100, 100, 400, 400);
-             [window setLevel:NSPopUpMenuWindowLevel];
-             [window setStyleMask:NSBorderlessWindowMask];
-             ZoomSDKWindowController* ctrl = [[ZoomSDKWindowController alloc] init];
-             [ctrl.window setLevel:NSPopUpMenuWindowLevel + 2];
-             [ctrl.window setFrameOrigin:NSMakePoint(100, 100)];
-             [ctrl.window addChildWindow:window ordered:NSWindowAbove];
-             [window setFrame:newRect display:YES];
-             [ctrl showWindow:nil];
-            */
             //test for setting camera list
             ZoomSDKSettingService* settingService = [[ZoomSDK sharedSDK] getSettingService];
             [[settingService getVideoSetting] enableBeautyFace:YES];
@@ -944,15 +942,9 @@ void processSignal(int num)
             {
                 NSLog(@"App delegate camera list, deviceID:%@, deviceName:%@, isSelected:%d", [info getDeviceID], [info getDeviceName], [info isSelectedDevice]);
             }
-            //action controller delegate
-            ZoomSDKMeetingActionController* actionCtr = [meetingService getMeetingActionController];
-            actionCtr.delegate = self;
             //h323 delegate
             ZoomSDKH323Helper* h323Helper = [meetingService getH323Helper];
             h323Helper.delegate = self;
-            //waiting room delegate
-            ZoomSDKWaitingRoomController* waitController = [meetingService getWaitingRoomController];
-            waitController.delegate = self;
             //Phone Helper
             ZoomSDKPhoneHelper* phoneHelper = [meetingService getPhoneHelper];
             phoneHelper.delegate = self;
@@ -969,6 +961,21 @@ void processSignal(int num)
         {
             if (error == ZoomSDKMeetingError_PasswordError) {
                 NSLog(@"Password is Wrong!");
+            }
+        }
+            break;
+        case ZoomSDKMeetingStatus_Ended:
+        {
+            switch (reason) {
+                case EndMeetingReason_KickByHost:
+                    NSLog(@"leave meeting kicked by host");
+                    break;
+                
+                case EndMeetingReason_EndByHost:
+                    NSLog(@"leave meeting end by host");
+                    break;
+                default:
+                    break;
             }
         }
         default:
@@ -1058,6 +1065,16 @@ void processSignal(int num)
     NSArray* array = [NSArray arrayWithObjects:sessionkey, nil];
     [service setSecuritySessionKey:array isLeaveMeeting:NO];
 }
+
+- (void)onUserJoin:(NSArray *)array{
+    if([array count]>0)
+    {
+        for (NSNumber* userid in array) {
+            NSLog(@"user %d join the meeting", [userid unsignedIntValue]);
+        }
+    }
+}
+
 - (void)onRecord2MP4Progressing:(int)percentage
 {
     _recordIndicator.doubleValue = percentage;
@@ -1094,6 +1111,10 @@ void processSignal(int num)
     [_preMeetingButton setEnabled:NO];
     [_logoutButton setEnabled:NO];
     _hasLogined = NO;
+}
+
+- (void)onNeedShowLeaveMeetingWindow{
+    NSLog(@"Need draw leave meeting UI yourself!");
 }
 #pragma test share
 
@@ -1303,7 +1324,9 @@ void processSignal(int num)
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     NSArray* participantsList = [[meetingService getMeetingActionController] getParticipantsList];
     NSString* listInfo = @"";
-    for (NSNumber* user in participantsList) {
+   //test for huawei getmeetingid
+   // listInfo = [meetingService getMeetingProperty:MeetingPropertyCmd_MeetingID];
+   for (NSNumber* user in participantsList) {
         ZoomSDKUserInfo* userInfo = [[meetingService getMeetingActionController] getUserByUserID:[user unsignedIntValue]];
         NSString* userName = [userInfo getUserName];
         NSString* userString = [NSString stringWithFormat:@"%@ %@ %C", userName, [user stringValue], (unichar)NSParagraphSeparatorCharacter];
@@ -1464,7 +1487,7 @@ void processSignal(int num)
         default:
             break;
     }
-    _shareStatusMsgView.string = info;
+   // _shareStatusMsgView.string = info;
     
 }
 

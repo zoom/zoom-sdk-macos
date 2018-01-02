@@ -39,6 +39,7 @@
 {
     unsigned int _userID;
 }
+- (BOOL)isMySelf;
 - (NSString*)getUserName;
 - (NSString*)getEmail;
 - (unsigned int)getUserID;
@@ -47,6 +48,7 @@
 - (BOOL)isAudioMuted;
 - (UserRole)getUserRole;
 - (BOOL)isPurePhoneUser;
+- (BOOL)isMySelf;
 @end
 
 @interface ZoomSDKJoinMeetingHelper :NSObject

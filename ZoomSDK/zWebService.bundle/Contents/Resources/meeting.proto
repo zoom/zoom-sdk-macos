@@ -173,6 +173,8 @@ message MeetingProto {
   repeated CalloutSIPTrunk calloutSIPTrunks  = 91; 
   optional int64 identityOptions             = 92; // user identity option, e.g: one bit is: isGuestJoin
   optional string customAccountTag           = 93; // special custom account tag, currently it's for Huawei: huawei
+  optional AvailableDialinCountry availableDialinCountry= 94; // contains all countries, selected countries, is include Tollfree
+  optional string extInfo                    = 95; //For outlook plugin save special info in web.
 }
 
 message CalloutSIPTrunk {
@@ -231,7 +233,7 @@ message UserProfile {
   optional string firstName   = 15;
   optional string lastName    = 16;
   optional int32 enableColocation = 17;
-  optional string coRegion    = 18; // unused
+  optional string coRegion    = 18; // attendee's assigned dc region, such as SC (always return SC for US attendees), CN, HK
   optional string roomName    = 19; // ZoomPresence resource name, such as "Room 403"
   optional int32 bindWithMobile = 20; // bind with mobile devices for XMPP
   optional string zoomJID       = 21; // mobile messenger or desktop IM JID for client, or webinar QA JID
@@ -278,10 +280,38 @@ message UserProfile {
   optional string customDSCPVal = 62; //for custom dscp value,55;41 means custom audio value is 55,custom video is 41
   optional string exchangeManageEmail = 63;
   optional int32 zpGoogleAccessTokenRefreshInterval = 64; //client need refresh zpGoogleAccessToken after xx seconds
+  optional string attendeeLocation = 65; // attendee's ip location country code, such as US, CN, HK
+  optional string attendeeEventLog = 66;
+  repeated KeyValOption keyValOptions = 67;
+  optional int64 featureOptions3 = 68; // features3 enable/disable flag, use bit
+  optional int64 featureOptions4 = 69; // features4 feature lock flag, use bit
+  optional int64 featureOptions5 = 70; // features5 enable/disable flag, use bit
+  optional BillingStatus billingStatus = 71;
+  optional LedHZ ledHZ           = 72; // ZRP use it to indicate room free or busy status
+}
+message LedHZ{
+  optional bool  status  = 1;		// enabled or disabled this function		
+  optional int32 free_hz = 2;		// frequency to show color for free status, like green
+  optional int32 busy_hz = 3;		// frequency to show color for busy status, like red
+  optional int32 off_hz  = 4;		// frequency to trun off the led
+}
+message BillingStatus{
+	required int32 status = 1; // 0: paid, 1 in freeTrial, 2: Join Only
+	optional int32 freeTrialDays = 2;
+}
+message KeyValOption{
+	//key: zrapi_passcode, digital_signage_playlist, digital_signage_settings
+	optional string key                                 = 1;
+	optional string val                                 = 2;
+	optional int32 amendmentFlag                        = 3; // null or 0: update; 1: remove
 }
 message MessengerOptions{
   optional int32 e2e_cert_expire_time = 1;		//im_certificate_expire_time, in minutes		
   optional int32 e2e_key_expire_time = 2;		//im_ciphered_key_expire_time, in minutes	
+  optional string emoji_version = 3;			//emoji package version in json format
+  optional string giphy_key = 4;				//giphy key
+  optional string giphy_preload_list = 5;		//giphy preload list
+  optional string local_storage_time = 6;		//local storage period of time. 
 }
 
 message OperationTime {
@@ -313,7 +343,7 @@ message OperationTime {
 
 message ClientSettings {
   optional int64 bitOptions = 1; // enable/disable flag, use bit
-  optional SipPhoneIntegration sipPhoneIntegration = 2;
+  optional SipPhoneIntegration sipPhoneIntegration = 2; // if enabled, bitOptions set 0x1L
 }
 message SipPhoneIntegration {
   optional string userName =                  1;
@@ -399,6 +429,11 @@ message RemoteControlRequestProto {
 //        RC_JOIN_DIRECT_SHARE_MEETING         = 4;
 //        RC_PROFILE_AMENDMENT                 = 5;  // 1: call back /pamendment API in a random delay in 10-70 seconds, return pAmendment in Response 
 //        RC_CALENDAR_EVENT                    = 6;
+//        RC_JOIN_MEETING                      = 7;
+//        RC_CALL_A_CONTACT                    = 8; // Start an instant meeting and invite contact, if already in meeting, do invite.
+//        RC_SCHEDULE_MEETING                  = 9;
+//        RC_CANCEL_MEETING                    = 10;
+
 //    }
 
 	required string rcRequestId                              = 1;
@@ -410,7 +445,46 @@ message RemoteControlRequestProto {
 	optional JoinDirectShareMeetingREQ  join_share_meeting   = 6;
 	optional ProfileAmendmentREQ profile_amendment           = 7;
 	optional CalendarEvent calendar_event                    = 8;
+    optional JoinMeetingREQ join_meeting                     = 9;
+    optional InviteContactREQ invite_contact                 = 10;
+    optional MeetingREQ schedule_meeting                     = 11;
+    optional MeetingREQ cancel_meeting                       = 12;
+    optional int64 options                                   = 13; //0x1: need_response_when_received, 0x2: need_response_when_handled
 }
+
+message RemoteControlResponseProto {
+	required string rcRequestId                              = 1;
+	
+	//JoinMeetingREQ, InviteContactREQ: 486 Busy Here , 500 Server Internal Error
+    required int32 res_code                                  = 2; // 1: sent by web, 2: recieved by ZR, 200: success, 200+ others are defined by each request event self
+	optional string res_message                              = 3;
+	optional MeetingREQ meeting                              = 4;
+    optional int32 err_code                                  = 5; // client error code
+}
+
+message MeetingREQ {
+	optional string meeting_number              = 1;
+	optional string meeting_name                = 2;
+	optional string password                    = 3;
+    optional int64  start_time                  = 4;
+	optional int32  duration                    = 5; //minutes
+	optional int64 options                      = 6; 
+}
+
+message InviteContactREQ {
+    repeated string jid                        = 1;
+}
+
+message JoinMeetingREQ {
+	//If no meeting number, means start an instant meeting (maybe PMI if enabled Use PMI for instant meeting)
+	optional int64  meeting_number                            = 1;
+	optional string password                                 = 2;
+	
+	// When ZR client is already in meeting, if force, it leave inprogress meeting and join this meeting, if not force, return busy.
+	// Default value is false
+	optional bool force_accept                               = 3;
+}
+
 message CalendarEvent {
     optional bool doRefreshMeeting                           = 1;
 }
@@ -432,6 +506,7 @@ message RestartZRREQ {
 }
 message LeaveMeetingREQ {
     optional bool leave_meeting                = 1;
+    optional bool end_meeting                  = 2; // default false, true means end the meeting if host is self
 }
 message JoinDirectShareMeetingREQ {
     optional string meetingNumber              = 1;
@@ -551,6 +626,7 @@ message MeetingStatusListProto {
     NORMAL        = 0; // normal status event
     ZONE_FAILOVER = 1; // zone failover event
     MMR_FAILOVER  = 2; // mmr failover event
+	SUBZONE       = 3; // sub zone join/leave event
   }
   repeated MeetingStatusProto status = 1; // meeting list to sync status
   optional string zc                 = 2; // zc address
@@ -707,13 +783,14 @@ message ZoomPresence {
 	CONTROLLER_BATTERY_DYING    = 14; // value: 0/1 not charing and power less than 20%
 	ROBOTIC_AUDIO				= 15; // int value indicates the actions need to be taken: auto_login 2 << 0, auto_restart 2 <<1, manual_reboot = 2<<2
 	OS_ADUIO_ERROR              = 16; // 0 normal; 1 OS audio error 
-	AUTO_LOGIN_ENABLED          = 17; // 0 disabled; 1: enabled
+	AUTO_LOGIN_ENABLED          = 17; // 0 disabled; 1: enabled , if ZR program enabled auto login
 	SYSTEM_START_TIME           = 18; // running time of the room since last started (int seconds)
 	SELECTED_MICROPHONE         = 19;
 	SELECTED_SPEAKER            = 20;
 	SELECTED_CAMERA             = 21;
 	ZR_PROCESS_STATUS           = 22;
 	DEVICE_CONNECTION           = 23;  // value: 0 online/1 offline
+	TOUCH_ROOM                  = 24;  // value: 0 disable touch ability/1 enable ability
   }
   enum AlertValueType {
     INT_TYPE                 = 1;  
@@ -770,6 +847,8 @@ message Request {
   optional RemoteSessionProto remoteSessionProto      	= 13; //remote session proto
   optional SipPhoneIntegration sipPhoneIntegration		= 14; //sip phone account registration status
   optional DeviceInfo appDeviceInfo                     = 15;
+  repeated SubscribeData subscribeDataList              = 16; // get data, query update by version, subscribe update
+  optional RemoteControlResponseProto rcResponse        = 17; // response for remote control request
 }                                                       
                                                         
 message SSODomain {                                     
@@ -859,8 +938,27 @@ message Response {
   optional SDKAuthResp sdkAuthResp						= 45;
   optional int64 statusCode                             = 46;  //free status code, define by each API self, 0 is no meaning.
   optional int64 serverTime                             = 47; // Server timestamp in milliseconds
-}                                                       
-                                                        
+  repeated SubscribeData subscribeDataList              = 48; // get data, query update by version, subscribe update
+  optional AvailableDialinCountry availableDialinCountry= 49; // contains all countries, selected countries, is include Tollfree
+  optional string pnsServiceEndpoint	                = 50;  //Push Notification Server endpoint, wss://zpns.zoom.us/ws 
+  optional int64 supportFeatureOptions					= 51; // Current version Web supported features
+  optional string callinBlockNumbers		            = 52; //callin block numbers ZOOM-30911
+  optional int32 timeToLive								= 53; // zr pairing code expired time, unit seconds
+  repeated KeyValOption keyValOptions 					= 54; // key: zr_calendars, zr_locations
+}
+
+message SubscribeData {
+	required string subscribeName                       = 1;
+	repeated SubscribeConfig configList                 = 2; // sort by key alpha char ASC, in request and respose
+	optional string keyhash                             = 3; // sort by key alpha char ASC, BASE64(SHA2(keykey...)), in request only
+	optional string verhash                             = 4; // BASE64(SHA2(verver...)), in request only
+}
+message SubscribeConfig {
+	optional string ver                                 = 1;
+	optional string key                                 = 2;
+	optional string val                                 = 3;
+}
+
 message CMRStorage{                                     
 	required int64 totalStorageSize                     = 1; // byte of total storage size (plan capacity + free), 0 means no CMR plan
 	required int64 usedStorageSize                      = 2; // byte of used storage size
@@ -1118,3 +1216,10 @@ message BroadcastStatus{
 	required int32   status     = 3 ; // broadcast status
 	optional string  message    = 4 ; // error message if existing
 }   
+
+message AvailableDialinCountry {
+	required string hash   		   	   		   = 1; // the current hash of Dial-in country
+	repeated string countries   		   	   = 2; // all countries
+	repeated string selectedCountries   	   = 3; // selected countries
+	optional bool includeTollfree   		   = 4; // is include tollfree number
+}
