@@ -54,10 +54,12 @@
     NSString*           _securityAppName;
     //disable rename in meeting
     BOOL                _disableRenameInMeeting;
-    //disable share button click origin action
+    //disable share button origin click action
     BOOL                _disableShareButtonClickOriginAction;
     //need prefill webinar Join Info
     BOOL                _needPrefillWebinarJoinInfo;
+    //hide leave/end meeting confirm window
+    BOOL                _hideLeaveMeetingWindow;
 }
 @property(nonatomic, assign)CGDirectDisplayID displayAppID;
 @property(nonatomic, assign)CGDirectDisplayID monitorID;
@@ -82,9 +84,18 @@
 @property(nonatomic, assign)BOOL disableRenameInMeeting;
 @property(nonatomic, assign)BOOL disableShareButtonClickOriginAction;
 @property(nonatomic, assign)BOOL needPrefillWebinarJoinInfo;
+@property(nonatomic, assign)BOOL hideLeaveMeetingWindow;
 
 - (ZoomSDKError)prefillWebinarUserName:(NSString*)userName Email:(NSString*)email;
-- (ZoomSDKError)hideSDKButtons:(SDKButton)button;
+- (ZoomSDKError)hideSDKButtons:(BOOL)hide ButtonType:(SDKButton)button;
+
+/**
+ @note
+ @param modify Set YES if u want to change meeting number of window title
+ @meetingnumber  specific number you want to replace
+ set newMeetingNum = 0 if u want to hide the window title just show Zoom, set else num to replace.
+ */
+- (ZoomSDKError)modifyWindowTitle:(BOOL)modify NewMeetingNum:(unsigned int)meetingnumber;
 - (void)reset;
 
 @end

@@ -38,7 +38,7 @@
  * @param state tell client meeting state change.
  *
  */
-- (void)onMeetingStatusChange:(ZoomSDKMeetingStatus)state meetingError:(ZoomSDKMeetingError)error;
+- (void)onMeetingStatusChange:(ZoomSDKMeetingStatus)state meetingError:(ZoomSDKMeetingError)error EndReason:(EndMeetingReason)reason;
 
 /**
  * @brief Designated for Zoom Meeting wait external session key notify.
@@ -181,10 +181,11 @@
 
 /**
  * @brief This method is used to get meeting Connection Quality.
+ * @param component specific service you want to test connection, contains video/audio/share
+ * @param sending set YES to get sending status or NO to get reciving status
  * @return A enum that discribe the Connection Quality when function call successful.
  */
-- (ZoomSDKConnectionQuality)getConnectionQuality;
-
+- (ZoomSDKConnectionQuality)getConnectionQuality:(ConnectionComponent)component Sending:(BOOL)sending;
 /**
  * @brief This method is used to get meeting type of current meeting.
  * @return A MeetingType to tell client which kind of meeting is.
