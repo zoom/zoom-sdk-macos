@@ -9,7 +9,7 @@
 #import "ZoomSDKErrors.h"
 
 @interface ZoomSDKAnnotationController :NSObject
-- (BOOL)isAnnotationDisable;
+
 - (ZoomSDKError)setTool:(AnnotationToolType)type onScreen:(ScreenType)screen;
 - (ZoomSDKError)clear:(AnnotationClearType)type onScreen:(ScreenType)screen;
 - (ZoomSDKError)setColor:(float)red Green:(float)green Black:(float)black onScreen:(ScreenType)screen;
@@ -99,6 +99,7 @@
 {
     id<ZoomSDKASControllerDelegate> _delegate;
     ZoomSDKAnnotationController* _annotationController;
+    ZoomSDKAnnotationController* _auxAnnoatationController;
 }
 @property(nonatomic, assign)id<ZoomSDKASControllerDelegate> delegate;
 /**
@@ -106,7 +107,7 @@
  * @param shareAppWindow, the app window u want to share.
  * @return A ZoomSDKError to tell client whether start app share successful or not.
  */
-- (ZoomSDKError)startAppShare:(CGWindowID)windowID;
+- (ZoomSDKError)startAppShare:(CGWindowID)windowID displayID:(CGDirectDisplayID)displayID;
 
 /**
  * @brief This method is used to select one monitor to share screen.
@@ -156,23 +157,24 @@
 
 /**
  * @brief This method is used to get annotation controller.
+ * @param type, support dual screen mode, modify the selected screen.
  * @return A annotataion controller interface when function call successful, or return nil when failed.
  */
-- (ZoomSDKAnnotationController*)getAnnotationController;
+- (ZoomSDKAnnotationController*)getAnnotationController:(ScreenType)type;
 /**
  * @brief This method is used to start annotation.
  * @param position, the position of annotation first show.
  * @param screen, which screen u want to start annotation.
  * @return A ZoomSDKError to tell client whether start annotation share successful or not.
  */
-- (ZoomSDKError)startAnnotation:(NSPoint)position onScreen:(ScreenType)screen;
+- (ZoomSDKError)startAnnotation:(BOOL)selfShare Position:(NSPoint)position onScreen:(ScreenType)screen;
 
 /**
  * @brief This method is used to stop annotation.
  * @param screen, which screen u want to stop annotation.
  * @return A ZoomSDKError to tell client whether stop annotation share successful or not.
  */
-- (ZoomSDKError)stopAnnotation:(ScreenType)screen;
+- (ZoomSDKError)stopAnnotation:(BOOL)selfShare onScreen:(ScreenType)screen;
 
 /**
  * @brief This method is used to get remote controller userid

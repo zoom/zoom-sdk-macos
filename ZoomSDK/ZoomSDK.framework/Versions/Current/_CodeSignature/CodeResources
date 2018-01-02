@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		kHMzw1qRpo510hx91DT0Sbatbu4=
+		YTTkcXq3t1YUawb0cNgHj1wCZoI=
 		</data>
 		<key>Resources/ZoomSDK.def</key>
 		<data>
-		nd8iKBf2xAqFWbhY23JT/xjx08o=
+		zveqzUCZXs62EIUmgB/kQYxNKfg=
 		</data>
 		<key>Resources/dingdong.pcm</key>
 		<data>
@@ -54,11 +54,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V9cZBKxoEN9+ydnxqqjX7RkPtXc=
+			h9gRfO3rzZSAVeyL/8H1OJgTxRQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kz13ScnaDIOv4OVD2D4u7NuBxHXGvlftGTNN7HZfNfE=
+			1QthFETNkePJX9dfPbGbwJ7aasXaAt7hMmV3w9KsiSc=
 			</data>
 		</dict>
 		<key>Headers/ZoomSDKAuthService.h</key>
@@ -87,11 +87,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mEGNiuW3Al1B5/MJH2FkbcfR71I=
+			PujEmbrHuvCFdbZ/fAb/uzbrLOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			aocMi2bmjoHdsVMyZSdlsaV+SL1yZSHNgldkW31M5yw=
+			mRM1v87XY0NthYJxRontXynJ1DEh8WzbNcOV4PTLM5M=
 			</data>
 		</dict>
 		<key>Headers/ZoomSDKH323Helper.h</key>
@@ -109,44 +109,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			37hVoyT72XRKyI63K4KoJs6/o+E=
+			2LBHKCccAsixYD3g5mbaNux3NKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			4q47NIMd+7Sizd+6wQDbk4Bb7Ujdv8p6szu6nM9V29o=
+			IClgN2jb8+T2v8SknQqzkAu+gt2F2tgVKPSs9td1kTg=
 			</data>
 		</dict>
 		<key>Headers/ZoomSDKMeetingConfiguration.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lY3kTUUdjMVitiGiQa58VPnakwk=
+			8xyJllPo1O33xCC3IF6j296cENg=
 			</data>
 			<key>hash2</key>
 			<data>
-			YUG9ee3xnyQzGSFKlHDPZjo95kQFW8NUwsYAwvddWdk=
+			U+UhZvMtnIGKY5q1XXZR+DOo3LogKZxB5ZW8ASz/2ns=
 			</data>
 		</dict>
 		<key>Headers/ZoomSDKMeetingService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6otTXhHoja+yppSkqSveCu3hiI8=
+			d+Pbwjw+Z4d5BY4Yd211jDxfQ5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yurd2+hRTxMz3xBakkfgw5aAInw3AbRwYZfWrVBMCrA=
+			qU6I67UQZndUwF69lmDL+I+OohZtbAqHSlifQ6FJwjs=
 			</data>
 		</dict>
 		<key>Headers/ZoomSDKMeetingUIController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9AduGYGb/Mp5Ku6080lGBcTQ0KA=
+			KTFdTIGUsoRADk3cTw6jhMJoMgg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Og0V+bLn5g2fHDPC0w7088A27IytZQNP8YDuQwPx5j0=
+			yO/Rthdq+iJdTCSHbMhUxLu5Ys7jMfi/StUEAWOxero=
 			</data>
 		</dict>
 		<key>Headers/ZoomSDKNetworkService.h</key>
@@ -230,22 +230,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kHMzw1qRpo510hx91DT0Sbatbu4=
+			YTTkcXq3t1YUawb0cNgHj1wCZoI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6IooCGGuiGzOFHQtEe0bjcBTQwuI71EiTHZ6M8ck1jc=
+			8y0JLf6AiS/dz0nLTrjk98enb/aTMA4BeHm6UP9I8/8=
 			</data>
 		</dict>
 		<key>Resources/ZoomSDK.def</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nd8iKBf2xAqFWbhY23JT/xjx08o=
+			zveqzUCZXs62EIUmgB/kQYxNKfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fs7Ompm6QHXXhmxiU0TqA2ayJTSCIgRteKbzA5n/McE=
+			/Z+WJysfhr5gu99ppK6wT5yAYjlRRBWT97Md+7mbmMo=
 			</data>
 		</dict>
 		<key>Resources/dingdong.pcm</key>
