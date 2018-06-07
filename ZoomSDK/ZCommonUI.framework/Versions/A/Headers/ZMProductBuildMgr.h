@@ -23,6 +23,7 @@
 + (BOOL)isBuildForHuihui;
 + (BOOL)isBuildForZoomUs;
 + (BOOL)isBuildForSDK;
++ (BOOL)isITPackage;//[Zoom-35382]
 
 
 @end

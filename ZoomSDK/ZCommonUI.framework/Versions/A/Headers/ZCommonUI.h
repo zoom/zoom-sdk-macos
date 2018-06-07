@@ -30,3 +30,6 @@
 #import "ZMUtil.h"
 #import "ZMLocalization.h"
 #import "NSObject+ZMConvenience.h"
+#import "ZMTextField.h"
+#import "ZMMultiLineTextField.h"//ZOOM-33422
+#import "NSUserDefaults+ZMConvenience.h"//ZOOM-542

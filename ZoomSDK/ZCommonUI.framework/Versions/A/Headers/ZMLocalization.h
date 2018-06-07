@@ -15,25 +15,25 @@
 
 //HotKey
 #define KEY_NAVIGATE_WINDOW     @"Navigate among Zoom popup windows"
-#define KEY_PREVIOUS_GALLERY    @"View the previous 25 video participants in Gallery View"
-#define KEY_NEXT_GALLERY        @"View the next 25 video participants in Gallery View"
+#define KEY_PREVIOUS_GALLERY    @"View the previous 25 video participants in gallery view"
+#define KEY_NEXT_GALLERY        @"View the next 25 video participants in gallery view"
 #define KEY_SWITCH_MINIMAL      @"Switch to minimal window"
-#define KEY_SWITCH_SPEAKER      @"Switch to Speaker View"
-#define KEY_SWITCH_GALLERY      @"Switch to Gallery View"
+#define KEY_SWITCH_SPEAKER      @"Switch to speaker view"
+#define KEY_SWITCH_GALLERY      @"Switch to gallery view"
 #define KEY_ONOFF_VIDEO         @"Start/Stop video"
 #define KEY_ONOFF_AUDIO         @"Mute/Unmute my audio"
 #define KEY_OFF_ALL_AUDIO       @"Mute audio for everyone except host (available only to the host)"
 #define KEY_ON_ALL_AUDIO        @"Unmute audio for everyone except host (available only to the host)"
 #define KEY_ONOFF_SHARE         @"Start/Stop share screen"
-#define KEY_PAUSE_RESUME_SHARE  @"Pause/Resume Share (available only when you are sharing your screen)"
+#define KEY_PAUSE_RESUME_SHARE  @"Pause/Resume share (available only when you are sharing your screen)"
 #define KEY_ONOFF_LOCAL_RECORD  @"Start/Stop local recording"
 #define KEY_ONOFF_CLOUD_RECORD  @"Start/Stop cloud recording"
 #define KEY_PAUSE_RESUME_RECORD @"Pause/Resume recording"
-#define KEY_SWITCH_CAMERA       @"Switch Camera"
+#define KEY_SWITCH_CAMERA       @"Switch camera"
 #define KEY_ENTER_EXIT_FULLSCR  @"Enter/Exit full screen mode"
-#define KEY_ONOFF_CHAT          @"Display/Hide Chat"
-#define KEY_ONOFF_PARTICIPANTS  @"Display/Hide Manage Participants"
-#define KEY_ON_INVITE           @"Open the Invite window"
+#define KEY_ONOFF_CHAT          @"Display/Hide chat"
+#define KEY_ONOFF_PARTICIPANTS  @"Display/Hide manage participants"
+#define KEY_ON_INVITE           @"Open the invite window"
 #define KEY_KEYBOARD_SHORTCUTS  @"Keyboard Shortcuts:"
 #define KEY_DESCRIPTION         @"Description"
 #define KEY_ENABEL_SHORTCUTS    @"Enable shortcuts even when the Zoom app is not in focus"
@@ -144,9 +144,7 @@
 #define UNMUTE_MYSELF               @"Unmute Myself"
 #define YOU_ARE_MUTED               @"You are muted."
 #define ENABLE_FACE_BEAUTITY        @"Touch up my appearance"
-#define JOIN_WEBURL                 @"Join from browser"
-#define JOIN_WEBURL_PROMPT          @"Join the meeting using your browser"
-#define JOIN_WEBURL_CONTENT         @"Click “Continue” to join the meeting with limited functionality because of a problem when joining from the Zoom client."
+
 #define ERROR_CODE                  @"error code"
 
 #define MAINMENU_SERVICES           @"Services"
@@ -183,7 +181,6 @@
 //setting
 #define SETTING_LOCAL_RECORD_LABEL          @"Local Recording :"
 #define SETTING_CLOUD_RECORD_LABEL          @"Cloud Recording :"
-#define SETTING_MANAGE_CMR_ON_WEB_BUTTON    @"Manage storage on web"
 #define SETTING_MANAGE_CMR_MORE_BUTTON      @"Manage..."
 #define SETTING_CLOUD_STORAGE               @"You have %@ of cloud record storage"
 #define SETTING_CLOUD_USED_STORAGE          @"%@ used"
@@ -227,8 +224,6 @@
 #define AIRHOST_CONNECT_DEVICE              @"Connect your iPhone or iPad to this computer"//[Zoom-16943]
 #define AIRHOST_SELECT_TRUST                @"When prompted on your iPhone or iPad, select \"Trust\""//[Zoom-16943]
 #define SETTING_SHOW_ZOOM_IN_MENUBAR        @"Show Zoom menu in menu bar"//[Zoom-21260]
-#define ORIGINAL_SOUND_TURN_ON              @"Turn on Original Sound"//[Zoom-17822]
-#define ORIGINAL_SOUND_TURN_OFF             @"Turn off Original Sound"//[Zoom-17822]
 #define ORIGINAL_SOUND_SELECT_DEFAULT       @"Select a microphone to always use original sound"//[Zoom-17822]
 #define GUEST                               @"Guest"//[Zoom-20772]
 
@@ -237,4 +232,6 @@
 #define QA_DISMISS                          @"Dismiss"//[Zoom-18899]
 #define QA_DISMISSED                        @"Dismissed"//[Zoom-18899]
 #define SETTING_SHOW_ZOOM_IN_MENUBAR        @"Show Zoom menu in menu bar"//[Zoom-21260]
+
+#define STOP_REMOTE_CONTROL                 @"Stop remote control" //[zoom-27176]
 

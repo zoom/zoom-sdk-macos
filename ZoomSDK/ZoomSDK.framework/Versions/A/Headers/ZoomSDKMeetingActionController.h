@@ -39,6 +39,7 @@
 {
     unsigned int _userID;
 }
+- (BOOL)isMySelf;
 - (NSString*)getUserName;
 - (NSString*)getEmail;
 - (unsigned int)getUserID;

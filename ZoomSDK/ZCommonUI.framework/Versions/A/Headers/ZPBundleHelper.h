@@ -18,12 +18,14 @@
 + (NSImage *)resBundleImageForResource:(NSString *)resName ofType:(NSString *)typeName;
 + (NSImage*)getAvatarByPath:(NSString*)inPath;
 + (NSImage *)loadRetinaImageByName:(NSString*)resName;
++ (NSImage *)getImageByName:(NSString*)resName;
 
 + (NSString *)resolveImagePath:(NSString *)imagePath;
 + (NSString*)localizedString:(NSString *)theKey;
 + (NSString*)localizedString:(NSString *)theKey value:(NSString*)value;
 + (void)cleanUp;
 + (NSImage*)getRetinaImage:(NSString*)name ofType:(NSString*)type;
++ (NSImage*)getImageByName:(NSString*)name ofType:(NSString*)type;
 + (NSString*)localizedEnString:(NSString *)theKey value:(NSString*)value;
 
 //for sdk

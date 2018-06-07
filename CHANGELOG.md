@@ -1,5 +1,45 @@
 # CHANGELOG
 
+## 2018-05-29
+
+### Added
+
+1. This is an SDK release base on 64bit, won't support 32bit anymore.
+
+2. interface change:
+
+1) Meeting Configuration interface
+
+support to config DSCP for audio video session
+
+support to redirect click event of participant list button
+
+support to hide original leave meeting confirm window.
+
+support to enable hide the full phone number for pure call in user
+
+2) H323 helper interface
+
+support to get h323 device for current meeting
+
+3) Setting Service Interface
+
+support to enable or disable auto join Voip when join meeting
+
+support to enable or disable auto mute mic when join Voip.
+
+support to enable or disable turn off video when join meeting
+
+support to enable or disable original input of mic
+
+support to enable or disable stereo audio
+
+add new interface for statistic setting
+
+4) several bug fixed.
+
+Please refer to Interface_change_4.1.25472.0529.docx for more details.
+
 ## 2017-11-02
 
 ### Added

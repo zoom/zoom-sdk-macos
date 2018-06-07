@@ -134,6 +134,8 @@
     IBOutlet NSTextField*  _userName;
     IBOutlet NSTextView*  _calloutStatusInfo;
     
+    BOOL  canTerminate;
+    BOOL  wantToTerminate;
 }
 
 -(IBAction)clickAuthDevZoom:(id)sender;

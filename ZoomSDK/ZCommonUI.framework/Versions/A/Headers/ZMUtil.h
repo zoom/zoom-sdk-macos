@@ -18,6 +18,34 @@
 #define SRGBA(r,g,b,a)  [NSColor colorWithSRGBRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define DRGB(r,g,b)     [NSColor colorWithDeviceRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define DRGBA(r,g,b,a)  [NSColor colorWithDeviceRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+#define Release_View(x) { if(nil != x) \
+                        {\
+                            if(nil != x.superview) \
+                                [x removeFromSuperview]; \
+                            [x release];              \
+                            x = nil;                  \
+                        }}
+
+#define Release_Button(x) { if(nil != x) \
+                        {\
+                            if(nil != x.superview) \
+                                [x removeFromSuperview]; \
+                            x.action = nil; x.target = nil; \
+                            [x release];              \
+                            x = nil;                  \
+                        }}
+
+#define Release_View_With_CleanUp(x) { if(nil != x) \
+                                    {\
+                                        if(nil != x.superview) \
+                                            [x removeFromSuperview]; \
+                                        [x cleanUp]; \
+                                        [x release];              \
+                                        x = nil;                  \
+                                    }}
+
 typedef enum
 {
     ID_Unknow_Language = 0,
@@ -50,4 +78,8 @@ typedef enum
 + (NSMutableArray*)parseHTTPURLs:(NSString*)body;
 + (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
 //+ (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
++ (NSUInteger)getNormalWindowLevel;//[Zoom-34216]
++ (NSUInteger)getPopupWindowLevel;//[Zoom-34216]
+
++ (NSInteger)getSystemVersion;
 @end
