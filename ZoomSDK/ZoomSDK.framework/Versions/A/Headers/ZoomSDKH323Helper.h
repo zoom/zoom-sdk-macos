@@ -15,12 +15,14 @@
     NSString* _ip;
     NSString* _e164num;
     H323DeviceType _type;
+    EncryptType  _encryptType;
 }
 
 @property(nonatomic, retain)NSString* name;
 @property(nonatomic, retain)NSString* ip;
 @property(nonatomic, retain)NSString* e164num;
 @property(nonatomic, assign)H323DeviceType type;
+@property(nonatomic, assign)EncryptType encryptType;
 @end
 
 @protocol ZoomSDKH323HelperDelegate <NSObject>
@@ -72,6 +74,12 @@
  * @return A ZoomSDKError to tell client whether callout H323 device successfully or not.
  */
 - (ZoomSDKError)calloutH323Device:(H323DeviceInfo*)deviceInfo;
+
+/**
+ * @brief This method is used to get Room H323 device list for current meeting.
+ * @return A NSArray contains H323DeviceInfo objects for current meeting.
+ */
+- (NSArray*)getRoomH323DeviceArray;
 
 /**
  * @brief This method is used to cancel last callout to a H323 device.

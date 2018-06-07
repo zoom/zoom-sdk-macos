@@ -4,3 +4,4 @@
 __ZN11ZoomSDKPTUI10setConfAPIEP14ICmmConfMgrAPI
 __ZN11ZoomSDKPTUI8setPTAPIEP11ISBPTAppAPI
 __ZN11ZoomSDKPTUIC1Ev
+.objc_class_name_PTTranscodeLauncher

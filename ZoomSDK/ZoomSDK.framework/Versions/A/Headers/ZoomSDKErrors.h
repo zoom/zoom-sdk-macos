@@ -99,6 +99,7 @@ typedef enum {
     MeetingPropertyCmd_DefaultRecordPath,
     MeetingPropertyCmd_MeetingNumber,
     MeetingPropertyCmd_HostTag,
+    MeetingPropertyCmd_MeetingID,
 }MeetingPropertyCmd;
 
 /**
@@ -580,3 +581,43 @@ typedef enum
     StatisticWarningType_CPUHigh,
     StatisticWarningType_SystemBusy,
 }StatisticWarningType;
+
+
+typedef enum{
+    ConnectionComponent_None,
+    ConnectionComponent_Share,
+    ConnectionComponent_Video,
+    ConnectionComponent_Audio,
+}ConnectionComponent;
+
+typedef enum{
+    EndMeetingReason_None,
+    EndMeetingReason_KickByHost,
+    EndMeetingReason_EndByHost,
+    EndMeetingReason_JBHTimeOut,
+    EndMeetingReason_NoAttendee,
+    EndMeetingReason_HostStartAnotherMeeting,
+}EndMeetingReason;
+
+typedef enum
+{
+    EncryptType_NO,
+    EncryptType_YES,
+    EncryptType_Auto
+}EncryptType;
+
+typedef enum{
+    SettingConnectionType_Unknow,
+    SettingConnectionType_P2P,
+    SettingConnectionType_Cloud,
+}SettingConnectionType;
+
+typedef enum{
+    SettingNetworkType_Unknow,
+    SettingNetworkType_Wired,
+    SettingNetworkType_WiFi,
+    SettingNetworkType_PPP,
+    SettingNetworkType_3G,
+    SettingNetworkType_Other,
+}SettingNetworkType;
+
