@@ -69,6 +69,9 @@ typedef enum
 //get view rect at screen coordinates
 + (NSRect)getScreenCoordinatesRectForView:(NSView*)inView;
 
+//get popup window location in middle of screen or another window
++ (NSPoint)calcWindowPoint:(NSWindow*)window baseWindow:(NSWindow*)baseWindow baseScreen:(NSScreen*)screen;
+
 //check if email is valid
 + (BOOL)isValidEmail:(NSString*)inEmail;
 
@@ -78,8 +81,13 @@ typedef enum
 + (NSMutableArray*)parseHTTPURLs:(NSString*)body;
 + (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
 //+ (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
-+ (NSUInteger)getNormalWindowLevel;//[Zoom-34216]
-+ (NSUInteger)getPopupWindowLevel;//[Zoom-34216]
+
+#pragma mark - window level
++ (NSInteger)getNormalWindowLevel;//0
++ (NSInteger)getFloatingWindowLevel;//3
++ (NSInteger)getModalPanelWindowLevel;//8
++ (NSInteger)getPopUpWindowLevel;//100
++ (NSInteger)getPopUpMenuLevel;//101
 
 + (NSInteger)getSystemVersion;
 @end

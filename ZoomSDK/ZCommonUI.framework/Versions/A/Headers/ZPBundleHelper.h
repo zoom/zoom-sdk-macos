@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "zoom_client_conf.h"
 
 @interface ZPBundleHelper : NSObject
 
@@ -17,18 +18,17 @@
 + (NSString *)mainResBundlePathForResource:(NSString *)resName ofType:(NSString *)typeName;
 + (NSImage *)resBundleImageForResource:(NSString *)resName ofType:(NSString *)typeName;
 + (NSImage*)getAvatarByPath:(NSString*)inPath;
-+ (NSImage *)loadRetinaImageByName:(NSString*)resName;
-+ (NSImage *)getImageByName:(NSString*)resName;
++ (NSImage *)getImageByName:(NSString*)resName;//[Zoom-33534]
 
 + (NSString *)resolveImagePath:(NSString *)imagePath;
 + (NSString*)localizedString:(NSString *)theKey;
 + (NSString*)localizedString:(NSString *)theKey value:(NSString*)value;
 + (void)cleanUp;
-+ (NSImage*)getRetinaImage:(NSString*)name ofType:(NSString*)type;
-+ (NSImage*)getImageByName:(NSString*)name ofType:(NSString*)type;
 + (NSString*)localizedEnString:(NSString *)theKey value:(NSString*)value;
 
 //for sdk
 + (void)setCustomBundlePath:(NSString*)bundlePath fileName:(NSString*)fileName;
-
+#ifdef BUILD_FOR_SDK
++ (NSString *)resBundlePathForSDKElectron:(NSString *)originPath;
+#endif
 @end

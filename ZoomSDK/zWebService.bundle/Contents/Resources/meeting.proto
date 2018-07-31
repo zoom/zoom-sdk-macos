@@ -214,6 +214,7 @@ message UserGroup {
 
 message BrandingInfo {  
   optional string backgroundImgUrl = 1;
+  optional string zrpBackgroundImgUrl = 2;
 }
 
 message UserProfile {
@@ -289,12 +290,27 @@ message UserProfile {
   optional int64 featureOptions5 = 70; // features5 enable/disable flag, use bit
   optional BillingStatus billingStatus = 71;
   optional LedHZ ledHZ           = 72; // ZRP use it to indicate room free or busy status
+  optional CheckInInfo roomCheckInInfo = 73;  // for zoom room client
+  optional UpgradeInfo upgradeInfo = 74;
+  optional string defaultMeetingTopic = 75; //email subject from email template for outlook plugin
+}
+message UpgradeInfo{
+  optional int32 isShowUpgradeLink = 1;
+  optional string upgradeLink = 2;
+  optional string contactName = 3;
+  optional string contactEmail = 4;
 }
 message LedHZ{
   optional bool  status  = 1;		// enabled or disabled this function		
   optional int32 free_hz = 2;		// frequency to show color for free status, like green
   optional int32 busy_hz = 3;		// frequency to show color for busy status, like red
   optional int32 off_hz  = 4;		// frequency to trun off the led
+}
+message CheckInInfo {  
+	optional bool  status  = 1;		// enabled or disabled this function		
+  optional int32 timeForPriorCheckIn = 2;    // allow participants to check in {} min prior to meeting start time in seconds
+  optional int32 timeForNoCheckInRelease = 3; // release room after {} min of no check in in seconds
+  optional bool  enableNotification = 4; // enabled or disabled check-in notifications on the TV screen
 }
 message BillingStatus{
 	required int32 status = 1; // 0: paid, 1 in freeTrial, 2: Join Only
@@ -536,6 +552,7 @@ message JoinDirectShareMeetingREQ {
 //  #define TYPE_ALL_BASIC_ZRLOGS_FILES           0xFFFF
 //  #define TYPE_AUDIO_RELATED_LOG_FILES          0X10000
 //  #define TYPE_AIRHOST_RELATED_LOG_FILES        0X20000
+//  #define TYPE_CRASH_DUMP_LOG_FILEs             0X40000
 //  #define TYPE_ALL_ZRLOGS_FILES                 0x7FFFFFFF
 message UploadZoomLogsREQ {
     optional string email                       = 1; //default ZRC.PR@zoom.us, not for customer, only for login from OP
@@ -574,9 +591,20 @@ message DeviceInfo {
 	optional string device_name = 2;  // ?
 	optional string os          = 3;  // iOS
 	optional string os_version  = 4;  // 10.3.1
-	optional int32 app_type     = 5;  // 0: ZR, 1: ZRC or 2: ZRP
+	optional int32 app_type     = 5;  // 0: ZR; 1: ZRC ; 2: ZRP; 3: Automation Controller
 	optional string app_version = 6;  // 4.1.12345.0525
 	optional string extJson     = 7;
+    optional string device_model        = 8;   //Computer model, for example Dell 7050, mac mini 2014
+    optional string gpu_info            = 9;
+    optional string cpu_info            = 10;  //CPU info strings, for example: intel i7 7700T
+    optional int32  cpu_cores           = 11;
+    optional float  cpu_frequency_GHz   = 12;  //For example: 2.66
+    optional float  total_memory_GB     = 13;  //Total Memory capacity, in GB
+    optional int32  memory_bank         = 14;  //Count of memory banks
+    optional float  total_disk_GB       = 15;  //In GB
+    optional float  used_disk_GB        = 16;  //In GB
+    optional int32  network_type        = 17;  //0: unknown, 1: wired, 2: wifi, 3: both
+    optional string displays_info       = 18;  //"{{0, 0}, {1920, 1080}}, {{0, 0}, {3840, 2160}}"
 }
 
 message VirtualBackground {
@@ -877,17 +905,23 @@ message SSODomain {
 }                                                       
                                                         
 message ServerDomain {                                  
-  optional string xmpp            = 1; // xmpp           server domain for phone
-  optional string nos             = 2; // nos           server non-SSL domain
-  optional string nosSSL          = 3; // nos           server SSL domain
-  optional string file            = 4; // file           server domain
-  optional string xmppDesktop     = 5;  // xmp          p server domain for desktop IM
-  optional string xmppMobile      = 6;  // xmp          p server domain for mobile messenger
-  optional string pollingService  = 7;  // pol          ling service server domain
-  optional string zpAlert         = 8;  // dom          ain for ZR report monitoring status
+  optional string xmpp            = 1; // xmpp server domain for phone
+  optional string nos             = 2; // nos server non-SSL domain
+  optional string nosSSL          = 3; // nos server SSL domain
+  optional string file            = 4; // file server domain
+  optional string xmppDesktop     = 5;  // xmpp server domain for desktop IM
+  optional string xmppMobile      = 6;  // xmpp server domain for mobile messenger
+  optional string pollingService  = 7;  // polling service server domain
+  optional string zpAlert         = 8;  // domain for ZR report monitoring status
   repeated SSODomain ssoDomains   = 9;                  
-  optional string fileImage       = 10; // fil          e server domain for images and audio files
-  optional string async           = 11; // asy          nc server domain for images and audio files
+  optional string fileImage       = 10; // file server domain for images and audio files
+  optional string async           = 11; // async server domain for images and audio files
+  
+  optional string webDomain       = 12; // zoom.us, web domain, replace conf.webserver in Zoom.us.ini
+  optional string logDomain       = 13; // log.zoom.us, mem log, crash log
+  optional string meetingDomain   = 14; // www3.zoom.us
+  optional string monitorDomain   = 15; // logfile.zoom.us, monitor user behavior data
+  
 }                                                       
 
 //{"notifyZrcDisconnect":true,"notifyDeviceDisconnect":true, "notifyZrHeartbeat":true,"notifyZrcNotCharging":true, "notifyAudioIssue":true ???}
@@ -1202,6 +1236,7 @@ message TSPProto {
 	optional string hostPasscode			  = 6;
 	optional string participantPasscode		  = 7;
 	optional int32 passcodeType				  = 8; //default is 1:conference code + leader pin
+  optional CountryCodeListProto mediaNumber         = 9; //ATT media link phone number
 }
 
 message BroadcastMeetingItem{

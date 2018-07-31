@@ -44,10 +44,10 @@
 		9729EE0F1DD5B9C600DB188D /* zVideoApp.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0B1DD5AF7200DB188D /* zVideoApp.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE101DD5B9C600DB188D /* zVideoUI.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0C1DD5AF7200DB188D /* zVideoUI.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE111DD5B9C600DB188D /* zWebService.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0D1DD5AF7200DB188D /* zWebService.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		975164E420B2C52B009E4861 /* curl64.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 975164E320B2C52A009E4861 /* curl64.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9777F79B1E4AF3B700E2CE59 /* ZoomSDK_Test.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9777F7991E4AF3B700E2CE59 /* ZoomSDK_Test.strings */; };
 		97B35FAD1D76B549006ACC00 /* ZoomSDKWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B35FAB1D76B549006ACC00 /* ZoomSDKWindowController.m */; };
+		97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 97FF5F0520B80B8E00C36776 /* curl64.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,7 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				975164E420B2C52B009E4861 /* curl64.framework in Copy Files */,
+				97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */,
 				9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */,
 				970CBE321E36F25000B1D255 /* airhost.app in Copy Files */,
 				9729EDF71DD5B9C600DB188D /* annoter.bundle in Copy Files */,
@@ -128,13 +128,13 @@
 		9729ED0B1DD5AF7200DB188D /* zVideoApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zVideoApp.bundle; path = ZoomSDK/zVideoApp.bundle; sourceTree = "<group>"; };
 		9729ED0C1DD5AF7200DB188D /* zVideoUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zVideoUI.bundle; path = ZoomSDK/zVideoUI.bundle; sourceTree = "<group>"; };
 		9729ED0D1DD5AF7200DB188D /* zWebService.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zWebService.bundle; path = ZoomSDK/zWebService.bundle; sourceTree = "<group>"; };
-		975164E320B2C52A009E4861 /* curl64.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = curl64.framework; path = ZoomSDK/curl64.framework; sourceTree = "<group>"; };
 		9755A2871D6D8C8300B69E72 /* ZoomLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomLogo.png; sourceTree = "<group>"; };
 		9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomSDKChatUI.framework; path = ZoomSDK/ZoomSDKChatUI.framework; sourceTree = "<group>"; };
 		9777F79A1E4AF3B700E2CE59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ZoomSDK_Test.strings; sourceTree = "<group>"; };
 		97B35FAA1D76B549006ACC00 /* ZoomSDKWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomSDKWindowController.h; sourceTree = "<group>"; };
 		97B35FAB1D76B549006ACC00 /* ZoomSDKWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomSDKWindowController.m; sourceTree = "<group>"; };
 		97B35FAC1D76B549006ACC00 /* ZoomSDKWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomSDKWindowController.xib; sourceTree = "<group>"; };
+		97FF5F0520B80B8E00C36776 /* curl64.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = curl64.framework; path = ZoomSDK/curl64.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +155,7 @@
 		971725E91D3F618A00D5C72D = {
 			isa = PBXGroup;
 			children = (
+				97FF5F0520B80B8E00C36776 /* curl64.framework */,
 				971C0DDA1D40964C0083AD9B /* Framworks */,
 				971725F41D3F618A00D5C72D /* ZoomSDKSample */,
 				971725F31D3F618A00D5C72D /* Products */,
@@ -198,7 +199,6 @@
 		971C0DDA1D40964C0083AD9B /* Framworks */ = {
 			isa = PBXGroup;
 			children = (
-				975164E320B2C52A009E4861 /* curl64.framework */,
 				9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */,
 				970CBE301E36F24200B1D255 /* airhost.app */,
 				9729ECF31DD5AF7100DB188D /* annoter.bundle */,
@@ -435,6 +435,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = zoom.us.ZoomSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "$(SRCROOT)/Bin/Release";
 			};
 			name = Debug;
@@ -460,6 +461,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = zoom.us.ZoomSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "$(SRCROOT)/Bin/Release";
 			};
 			name = Release;

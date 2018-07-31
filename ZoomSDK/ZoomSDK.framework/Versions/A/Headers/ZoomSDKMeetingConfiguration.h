@@ -64,7 +64,14 @@
     BOOL                _disableParticipantButtonClickOriginAction;
     //JD hide full phone number for pure call in user
     BOOL _hideFullPhoneNumber4PureCallinUser;
-
+    //hide telephone in audio info window
+    BOOL _hideTelephoneInAudiowWindow;
+    //hide call me in audio info window
+    BOOL _hideCallMeInAudioWindow;
+    //JD add an option to disable Multi-Share
+    BOOL                _forceDisableMultiShare;
+    //enable global shortcuts in confui
+    BOOL                _enableGlobalShortcuts;
 }
 @property(nonatomic, assign)CGDirectDisplayID displayAppID;
 @property(nonatomic, assign)CGDirectDisplayID monitorID;
@@ -92,6 +99,10 @@
 @property(nonatomic, assign)BOOL hideLeaveMeetingWindow;
 @property(nonatomic, assign)BOOL disableParticipantButtonClickOriginAction;
 @property(nonatomic, assign)BOOL hideFullPhoneNumber4PureCallinUser;
+@property(nonatomic, assign)BOOL hideTelephoneInAudiowWindow;
+@property(nonatomic, assign)BOOL hideCallMeInAudioWindow;
+@property(nonatomic, assign)BOOL forceDisableMultiShare;
+@property(nonatomic, assign)BOOL enableGlobalShortcuts;
 
 - (ZoomSDKError)prefillWebinarUserName:(NSString*)userName Email:(NSString*)email;
 - (ZoomSDKError)hideSDKButtons:(BOOL)hide ButtonType:(SDKButton)button;
