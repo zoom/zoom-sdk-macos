@@ -7,25 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Carbon/Carbon.h>
-#import "ZMHotkey.h"
-#import "ZMHotkeyCombo.h"
+
+@class ZMHotkey;
+@class ZMHotkeyCombo;
 @protocol ZMHotkeyCenterDelegate;
 @interface ZMHotkeyCenter : NSObject
-{
-    id                      _delegate;
-    BOOL                    _isGlobalPaused;
-    NSMutableDictionary*	_globalHotKeys;
-    UInt32                  _globalHotKeyCount;
-    UInt32                  _globalRequiredModifiers;
-    EventHandlerRef         _globalEventHandler;
-    
-    BOOL                    _isLocalPaused;
-    id                      _localEventMonitor;
-    NSMutableDictionary*    _localHotkeys;
-    UInt32                  _localRequiredModifiers;
-    BOOL                    _isSupportNoneModifiers;
-}
+
 @property(nonatomic, readwrite, assign) id<ZMHotkeyCenterDelegate> delegate;
 @property(nonatomic, readonly, assign) BOOL isGlobalPaused;
 @property(nonatomic, readonly, assign) BOOL isLocalPaused;

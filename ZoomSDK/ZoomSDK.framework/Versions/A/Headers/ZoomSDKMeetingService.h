@@ -16,6 +16,7 @@
 #import "ZoomSDKMeetingConfiguration.h"
 #import "ZoomSDKASController.h"
 #import "ZoomSDKMeetingActionController.h"
+#import "ZoomSDKLiveStreamHelper.h"
 
 @interface ZoomSDKSecuritySessionKey : NSObject
 {
@@ -38,7 +39,11 @@
  * @param state tell client meeting state change.
  *
  */
+#ifdef BUILD_FOR_ELECTRON
+- (void)onMeetingStatusChange:(NSNumber*)state meetingError:(NSNumber*)error EndReason:(NSNumber*)reason;
+#else
 - (void)onMeetingStatusChange:(ZoomSDKMeetingStatus)state meetingError:(ZoomSDKMeetingError)error EndReason:(EndMeetingReason)reason;
+#endif
 
 /**
  * @brief Designated for Zoom Meeting wait external session key notify.
@@ -71,6 +76,7 @@
     ZoomSDKPhoneHelper*           _phoneHelper;
     ZoomSDKASController*          _asController;
     ZoomSDKMeetingActionController*  _actionController;
+    ZoomSDKLiveStreamHelper*         _liveStreamHelper;
 }
 /**
  * The object that acts as the delegate of the receiving meeting events.
@@ -128,6 +134,12 @@
 - (ZoomSDKMeetingActionController*)getMeetingActionController;
 
 /**
+ * @brief get the Zoom meeting service default live stream helper
+ * @return a ZoomSDKLiveStreamHelper object u can use to share live stream
+ */
+- (ZoomSDKLiveStreamHelper*)getLiveStreamHelper;
+
+/**
  * @brief This method is used to start a Zoom meeting with meeting number.
  * @note  userId\userToken\username is for API user.
  * @param userType The userType depends on what the client account is.
@@ -139,9 +151,27 @@
  * @param displayID set the display ID of the app you want share.
  * @param noVideo set YES if u want to join a meeting with video off.
  * @param noAuido set YES if u want to join a meeting with audio off.
+ * @param sdkVanityID set meetingNumber to nil if u want to start meeting with vanityID.
  * @return A ZoomSDKError to tell client whether the meeting started or not.
  */
-- (ZoomSDKError)startMeeting:(ZoomSDKUserType)userType userID:(NSString*)userId userToken:(NSString*)userToken displayName:(NSString*)username meetingNumber:(NSString*)meetingNumber isDirectShare:(BOOL)directShare sharedApp:(CGDirectDisplayID)displayID isVideoOff:(BOOL)noVideo isAuidoOff:(BOOL)noAuido;
+- (ZoomSDKError)startMeeting:(ZoomSDKUserType)userType userID:(NSString*)userId userToken:(NSString*)userToken displayName:(NSString*)username meetingNumber:(NSString*)meetingNumber isDirectShare:(BOOL)directShare sharedApp:(CGDirectDisplayID)displayID isVideoOff:(BOOL)noVideo isAuidoOff:(BOOL)noAuido vanityID:(NSString*)sdkVanityID;
+
+/**
+ * @brief This method is used to start a Zoom meeting with ZAK.
+ * @note  this interface just for user isn't login yet.
+ * @param ZAK  security session key for a user get from web.
+ * @param type the user type how to get the ZAK
+ * @param userId The userId received as a result client user account from Zoom site.
+ * @param username The username will be used as display name in the Zoom meeting.
+ * @param meetingNumber The meetingNumber may be generated from a scheduled meeting or a Personal Meeting ID, if u want to start a instant meeting, set meetingNumber to nil.
+ * @param directShare set YES will start share desktop directly when meeting started.
+ * @param displayID set the display ID of the app you want share.
+ * @param noVideo set YES if u want to join a meeting with video off.
+ * @param noAuido set YES if u want to join a meeting with audio off.
+ * @param sdkVanityID set meetingNumber to nil if u want to start meeting with vanityID.
+ * @return A ZoomSDKError to tell client whether the meeting started or not.
+ */
+- (ZoomSDKError)startMeetingWithZAK:(NSString*)zak userType:(SDKUserType)type userID:(NSString*)userId userToken:(NSString*)userToken displayName:(NSString*)username meetingNumber:(NSString*)meetingNumber isDirectShare:(BOOL)directShare sharedApp:(CGDirectDisplayID)displayID isVideoOff:(BOOL)noVideo isAuidoOff:(BOOL)noAuido vanityID:(NSString*)sdkVanityID;
 /**
  * @brief This method is used to join a Zoom meeting.
  * @note toke4enfrocelogin\participantId is for the API user.
@@ -156,9 +186,10 @@
  * @param displayID set the display ID of the app you want share.
  * @param noVideo set YES if u want to start instant meeting with video off.
  * @param noAuido set YES if u want to start instant meeting with audio off.
+ * @param sdkVanityID set meetingNumber to nil if u want to start meeting with vanityID.
  * @return A ZoomSDKError to tell client whether can join the meeting or not.
  */
-- (ZoomSDKError)joinMeeting:(ZoomSDKUserType)userType toke4enfrocelogin:(NSString*)toke4enfrocelogin webinarToken:(NSString*)webinarToken participantId:(NSString*)participantId meetingNumber:(NSString*)meetingNumber displayName:(NSString*)username password:(NSString*)pwd isDirectShare:(BOOL)directShare sharedApp:(CGDirectDisplayID)displayID isVideoOff:(BOOL)noVideo isAuidoOff:(BOOL)noAuido;
+- (ZoomSDKError)joinMeeting:(ZoomSDKUserType)userType toke4enfrocelogin:(NSString*)toke4enfrocelogin webinarToken:(NSString*)webinarToken participantId:(NSString*)participantId meetingNumber:(NSString*)meetingNumber displayName:(NSString*)username password:(NSString*)pwd isDirectShare:(BOOL)directShare sharedApp:(CGDirectDisplayID)displayID isVideoOff:(BOOL)noVideo isAuidoOff:(BOOL)noAuido  vanityID:(NSString*)sdkVanityID;
 
 /**
  * @brief method is used to end/leave an ongoing meeting.

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		KdkBFMwug3ZJxAxz83Nyz00+CEo=
+		w/suDYZEIzLHtmw9o/TYsYH+1b4=
 		</data>
 		<key>Resources/descriptor.proto</key>
 		<data>
@@ -26,26 +26,15 @@
 			A0woqTOTOwpjjqMhpu57pgza2K9CjJ+mWTOlZMKIw8I=
 			</data>
 		</dict>
-		<key>Modules/module.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/+aENhPsFM96ytke7/C27hFL1YI=
-			</data>
-			<key>hash2</key>
-			<data>
-			8LnhMsrl/Ng4NzgGAVn4WwMykNdfIX8D0uCKMr03mTk=
-			</data>
-		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KdkBFMwug3ZJxAxz83Nyz00+CEo=
+			w/suDYZEIzLHtmw9o/TYsYH+1b4=
 			</data>
 			<key>hash2</key>
 			<data>
-			67pmG/tCAyD56A6Syfg21DLCFcatBG2wo2XQANmam3E=
+			sypQAWni59/eHTXREVoAQ3D0jAmLwYqHzTMe9xjtKFo=
 			</data>
 		</dict>
 		<key>Resources/descriptor.proto</key>

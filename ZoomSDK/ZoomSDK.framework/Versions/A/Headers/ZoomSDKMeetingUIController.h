@@ -82,4 +82,5 @@
  * @return A ZoomSDKError to tell client whether function call successfully or not.
  */
 - (ZoomSDKError)showPreOrNextPageWallView:(BOOL)nextPage;
+
 @end
