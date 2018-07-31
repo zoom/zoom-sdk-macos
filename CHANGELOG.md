@@ -34,13 +34,13 @@ API Start Meeting: [meetingService startMeetingWithZAK。。。。]
 Login Start Meeting: [meetingService startMeeting...]
 ```
 
-1) API user start meeting should use ZAK
+2. API user start meeting should use ZAK
 
-2) support live stream
+3. support live stream
 
-3) support make host && cohost 
+4. support make host && cohost 
 
-2. some bugs fix
+5. some bugs fix
 
 ## 2018-05-29
 
