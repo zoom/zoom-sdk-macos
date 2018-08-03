@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ZoomSDKErrors.h"
+#import "ZoomSDKBuildType.h"
 
 @interface ZoomSDKAccountInfo : NSObject
 {
@@ -103,7 +104,11 @@
  * @param returnValue tell user when the auth state changed.
  *
  */
+#ifdef BUILD_FOR_ELECTRON
+- (void)onZoomSDKAuthReturn:(NSNumber*)returnValue;
+#else
 - (void)onZoomSDKAuthReturn:(ZoomSDKAuthError)returnValue;
+#endif
 
 @optional
 /**
@@ -111,12 +116,19 @@
  * @param loginStatus tell user when the login status.
  *
  */
+#ifdef BUILD_FOR_ELECTRON
+- (void)onZoomSDKLogin:(NSNumber*)loginStatus failReason:(NSString*)reason;
+#else
 - (void)onZoomSDKLogin:(ZoomSDKLoginStatus)loginStatus failReason:(NSString*)reason;
-
+#endif
 /**
  * @brief Designated for Zoom SDK Logout response.
  */
 - (void)onZoomSDKLogout;
 
+/**
+ * @brief Designated for Zoom SDK identity expired, logined user will be forced logout.
+ */
+- (void)onZoomIdentityExpired;
 
 @end

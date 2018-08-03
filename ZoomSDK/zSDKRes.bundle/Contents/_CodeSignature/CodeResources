@@ -1046,7 +1046,7 @@
 		</data>
 		<key>Resources/SaasBeeRes-Info.plist</key>
 		<data>
-		y4i/Nh4mAyoTHJQeSGit3nmlD7k=
+		gp63w7QrpyY1bi5zXZU0dVM8rPA=
 		</data>
 		<key>Resources/SaasBeeRes-Prefix.pch</key>
 		<data>
@@ -1122,7 +1122,7 @@
 		</data>
 		<key>Resources/TW.png</key>
 		<data>
-		l2vtWxkto2aor2Iwh108UhlYaUM=
+		pIw14utPqxNgu5aDAuf6H9xZU3g=
 		</data>
 		<key>Resources/TZ.png</key>
 		<data>
@@ -2665,30 +2665,6 @@
 		<data>
 		hnBl/A4rB1olKyDHNLGpXFEOXhg=
 		</data>
-		<key>Resources/invite_defaul_mail_normal.png</key>
-		<data>
-		ynKAB7eYQ1tSn2e8sLY0qDoJgiY=
-		</data>
-		<key>Resources/invite_defaul_mail_pressed.png</key>
-		<data>
-		6duoYbTxlbYdxTqSk379grlzfMQ=
-		</data>
-		<key>Resources/invite_gmail_normal.png</key>
-		<data>
-		cohYN7cW/vPWyh0y1Pex4qyrYxE=
-		</data>
-		<key>Resources/invite_gmail_pressed.png</key>
-		<data>
-		c4JBhyJ+8nG/M8tCmzXqSuNjXPc=
-		</data>
-		<key>Resources/invite_yahoo_mail_normal.png</key>
-		<data>
-		H7ga/Ncv82y2mlBQc6fUum2Whuk=
-		</data>
-		<key>Resources/invite_yahoo_mail_pressed.png</key>
-		<data>
-		8XXqz1ULcZOeSVvCuaunx0A0hZ8=
-		</data>
 		<key>Resources/jbh_close_hover.png</key>
 		<data>
 		Q8zuKAMyBIuH67p+wwRiA4LlJA4=
@@ -2815,11 +2791,11 @@
 		</data>
 		<key>Resources/list_offline.png</key>
 		<data>
-		R59srdC4Pd/MXVh5NEhw/Fks6ho=
+		1tEBTyQaAlIsqWe8QjnhGMxHuKA=
 		</data>
 		<key>Resources/list_offline@2x.png</key>
 		<data>
-		Fch2tFBg+BZDL92LiP/GJ/zh450=
+		FTJ+K5SnlX7SsMjmqUVOIEYyrSs=
 		</data>
 		<key>Resources/list_online.png</key>
 		<data>
@@ -3259,23 +3235,39 @@
 		</data>
 		<key>Resources/share_airplay.png</key>
 		<data>
-		85zDMnN2BfjjyfrvTVRV395EnuU=
+		9wP1OlDG9Z71Tt2R+Rj3JUfVj+g=
 		</data>
 		<key>Resources/share_airplay@2x.png</key>
 		<data>
-		Q0yDn9GPo9HY9JxJ9WrMFAbx6ms=
+		V+lto0Es3k3jrFw2NXtcFsY0Kn4=
 		</data>
 		<key>Resources/share_cable.png</key>
 		<data>
-		QOmXZoE+ML2pjMiQg059M3dvy+8=
+		Gm1y/DBi3oPpht9M0n1vi24px90=
 		</data>
 		<key>Resources/share_cable@2x.png</key>
 		<data>
-		u+cjE0pzdLaJAZF9nS+aCpajdDw=
+		HAC/Yfrsd4InyzJZUAl4Sg4rSOA=
 		</data>
 		<key>Resources/share_camera.png</key>
 		<data>
-		ClHZLJQ8cGXQOmO3eQvckaO/D/w=
+		nxX9fW+jeYIi+qcp2LJTR45AqcQ=
+		</data>
+		<key>Resources/share_help_normal.png</key>
+		<data>
+		NbYVY5G1JHlPjk3twm5dSf3xPLc=
+		</data>
+		<key>Resources/share_help_normal@2x.png</key>
+		<data>
+		Smh7zQh4uhRXfyhr3DNxi8DPpNQ=
+		</data>
+		<key>Resources/share_help_select.png</key>
+		<data>
+		LG6IhSm47LFxY3OiMd64nssNbqY=
+		</data>
+		<key>Resources/share_help_select@2x.png</key>
+		<data>
+		8Ipl5V1D7l9LWf4nCQb1atBcpa8=
 		</data>
 		<key>Resources/share_hover.png</key>
 		<data>
@@ -3324,10 +3316,6 @@
 		<key>Resources/share_press_ondark@2x.png</key>
 		<data>
 		bCwwI+8+VDJ6ZXe4PuHMht0lF7E=
-		</data>
-		<key>Resources/share_whiteboard.png</key>
-		<data>
-		JCA2ybWbW+7e1OhNj2lcDvh5hEo=
 		</data>
 		<key>Resources/sidepanel_manage.png</key>
 		<data>
@@ -7028,11 +7016,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y4i/Nh4mAyoTHJQeSGit3nmlD7k=
+			gp63w7QrpyY1bi5zXZU0dVM8rPA=
 			</data>
 			<key>hash2</key>
 			<data>
-			LF5ZM4gs6XwVGMl9vBWajDnlv2IltMoWfFGk4ZiOTXA=
+			U71To7pvLFZea7eS+mOu7V4MUC23o7tL5+Wj0QXhZOk=
 			</data>
 		</dict>
 		<key>Resources/SaasBeeRes-Prefix.pch</key>
@@ -7237,11 +7225,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l2vtWxkto2aor2Iwh108UhlYaUM=
+			pIw14utPqxNgu5aDAuf6H9xZU3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			jJ3mZNz+fvPFWWDaM6wCFAycatNH5nbEn/aZyc2ivRU=
+			NCaAUMyLNAj6AgsJcDwwEDN8F2JoFzADSK04rz72KLA=
 			</data>
 		</dict>
 		<key>Resources/TZ.png</key>
@@ -11470,72 +11458,6 @@
 			wp+Qn0AaPjN0y/Z3zWCFxM2kjtKJniUQHiSeNxt8fpo=
 			</data>
 		</dict>
-		<key>Resources/invite_defaul_mail_normal.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ynKAB7eYQ1tSn2e8sLY0qDoJgiY=
-			</data>
-			<key>hash2</key>
-			<data>
-			oTUB09Q1kJE4lNrGwb2eZtk0V+/kvecl497KdrPvi/M=
-			</data>
-		</dict>
-		<key>Resources/invite_defaul_mail_pressed.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6duoYbTxlbYdxTqSk379grlzfMQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			M8AqNwoOZ8FBXlhmAeokXEMNdO31HR122RBouu4/Ftc=
-			</data>
-		</dict>
-		<key>Resources/invite_gmail_normal.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cohYN7cW/vPWyh0y1Pex4qyrYxE=
-			</data>
-			<key>hash2</key>
-			<data>
-			OTCuSgOAllF72DdlMLRuz1TozpnVeiFN8l6SXoaPODU=
-			</data>
-		</dict>
-		<key>Resources/invite_gmail_pressed.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c4JBhyJ+8nG/M8tCmzXqSuNjXPc=
-			</data>
-			<key>hash2</key>
-			<data>
-			5whMHYmpYxTuI61mP0j2FdJBqKIhaM1GbNU5VmxNXN8=
-			</data>
-		</dict>
-		<key>Resources/invite_yahoo_mail_normal.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			H7ga/Ncv82y2mlBQc6fUum2Whuk=
-			</data>
-			<key>hash2</key>
-			<data>
-			dQdGHK0mJYrk2EXnyNAjMfAKXXdzM9PKOmto9lxHnG4=
-			</data>
-		</dict>
-		<key>Resources/invite_yahoo_mail_pressed.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8XXqz1ULcZOeSVvCuaunx0A0hZ8=
-			</data>
-			<key>hash2</key>
-			<data>
-			4m5DvTTr1tRi2j22So8Jcw9lycJVzuE6Ba7rQyqzm0o=
-			</data>
-		</dict>
 		<key>Resources/jbh_close_hover.png</key>
 		<dict>
 			<key>hash</key>
@@ -11881,22 +11803,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R59srdC4Pd/MXVh5NEhw/Fks6ho=
+			1tEBTyQaAlIsqWe8QjnhGMxHuKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			n6W+ifkYqkDw9D4Rtxz8TZZJG5FWy2QxRv6KT6QPEOQ=
+			D4CNTiK8h6X095PA463NSWbQDsahj8wdq6dYKtpY4E0=
 			</data>
 		</dict>
 		<key>Resources/list_offline@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fch2tFBg+BZDL92LiP/GJ/zh450=
+			FTJ+K5SnlX7SsMjmqUVOIEYyrSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			FYW8I2zDOoovMND3yAgl78N3mgCLkaQrj8vH75s3OMk=
+			seaVSBPjqj4sH/UzQ1sTv0WzBBQJ38Te+JpFj8LrT/s=
 			</data>
 		</dict>
 		<key>Resources/list_online.png</key>
@@ -13102,55 +13024,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			85zDMnN2BfjjyfrvTVRV395EnuU=
+			9wP1OlDG9Z71Tt2R+Rj3JUfVj+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			3UNwpBQ9JiOjlvga/CVcPqJoANRLBDTjelrNUHRY8PE=
+			awWs0LXEO+Vlg0aA+JdwSPamoOj5tjQbosn59LF2O78=
 			</data>
 		</dict>
 		<key>Resources/share_airplay@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q0yDn9GPo9HY9JxJ9WrMFAbx6ms=
+			V+lto0Es3k3jrFw2NXtcFsY0Kn4=
 			</data>
 			<key>hash2</key>
 			<data>
-			PF59Ez8Wyqo9h1qZvgZc6964u8E9cafBrcaTd9yppU0=
+			fVfvOBp/65AxZTwKLAO3cOSGswjMsYQ3Y7t/cGdqt6g=
 			</data>
 		</dict>
 		<key>Resources/share_cable.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QOmXZoE+ML2pjMiQg059M3dvy+8=
+			Gm1y/DBi3oPpht9M0n1vi24px90=
 			</data>
 			<key>hash2</key>
 			<data>
-			pFYRAp54vzG9KmtbUbm/dEPHheIhFC1X05/Je4Yb9K4=
+			M6HbmNtugF2Xp/zF4Ql0rc3g2SQZGNJXpIRfuacwmTY=
 			</data>
 		</dict>
 		<key>Resources/share_cable@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u+cjE0pzdLaJAZF9nS+aCpajdDw=
+			HAC/Yfrsd4InyzJZUAl4Sg4rSOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			L9ZBxYRoZpR6oHxdFfwV0Z3skNeqfwYXWAAxzkhHb/c=
+			wcLNLRg5BwpkJaQwbaBUlAFnfeUnzsbxhOwZb27I+lw=
 			</data>
 		</dict>
 		<key>Resources/share_camera.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ClHZLJQ8cGXQOmO3eQvckaO/D/w=
+			nxX9fW+jeYIi+qcp2LJTR45AqcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BLOAYzPisajxNIJOAcIwz7CUN/2ALUaoMbA6oA6hzHM=
+			O0zX3mC/P58oxK1vBfdLI9+8+pKTun1VWxNHkyLhKTM=
+			</data>
+		</dict>
+		<key>Resources/share_help_normal.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NbYVY5G1JHlPjk3twm5dSf3xPLc=
+			</data>
+			<key>hash2</key>
+			<data>
+			1pt4nkzUsozona1jyH0RT3h+E5rQkgOSKcn7KtuNvWo=
+			</data>
+		</dict>
+		<key>Resources/share_help_normal@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Smh7zQh4uhRXfyhr3DNxi8DPpNQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			xULS9Bu5TsiFxmaB+JXnU8uw+QbpIn20Tt77PeVlKm8=
+			</data>
+		</dict>
+		<key>Resources/share_help_select.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LG6IhSm47LFxY3OiMd64nssNbqY=
+			</data>
+			<key>hash2</key>
+			<data>
+			yh67/gcg9EdmcU8tmqAdn3cCQoUWaXA1lzelyKEwKMo=
+			</data>
+		</dict>
+		<key>Resources/share_help_select@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8Ipl5V1D7l9LWf4nCQb1atBcpa8=
+			</data>
+			<key>hash2</key>
+			<data>
+			mwmRA/ywCEDip90fIR5RlENe/LpbGvTu7vtEhbofCHQ=
 			</data>
 		</dict>
 		<key>Resources/share_hover.png</key>
@@ -13283,17 +13249,6 @@
 			<key>hash2</key>
 			<data>
 			SFTeDZ8KT7YEQGleIBCIsN/UDEQSSlipz0zhEGTdAps=
-			</data>
-		</dict>
-		<key>Resources/share_whiteboard.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JCA2ybWbW+7e1OhNj2lcDvh5hEo=
-			</data>
-			<key>hash2</key>
-			<data>
-			6r7FiEAi9ekCumuC8RiM77U/l2JVMR+7oI/AjVz2O24=
 			</data>
 		</dict>
 		<key>Resources/sidepanel_manage.png</key>

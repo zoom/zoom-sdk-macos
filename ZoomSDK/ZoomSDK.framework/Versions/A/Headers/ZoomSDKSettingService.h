@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "ZoomSDKErrors.h"
 
+typedef enum{
+    SettingComponent_AdvancedFeatureButton,
+    SettingComponent_AdvancedFeatureTab,
+}SettingComponent;
+
+
 @interface ZoomSDKAudioStatisticsInfo : NSObject
 {
     int _frequencySend;
@@ -94,20 +100,6 @@
 - (ZoomSDKError)selectAudioDevice:(BOOL)mic DeviceID:(NSString *)deviceID DeviceName:(NSString*)deviceName;
 
 /**
- * @brief This method is used to Enable Stero in meeting.
- * @param enable, YES means Enable Stero No means disable.
- * @return A ZoomSDKError to tell client whether enable stero successfully or not.
- */
-- (ZoomSDKError)enableStero:(BOOL)enable;
-
-/**
- * @brief This method is used to Enable using original sound in meeting.
- * @param enable, YES means enable using original sound No means disable.
- * @return A ZoomSDKError to tell client whether enable using original sound successfully or not.
- */
-- (ZoomSDKError)enableUseOriginalSound:(BOOL)enable;
-
-/**
  * @brief This method is used to enable auto join audio by computer.
  * @param enable, YES means enable NO means disable.
  * @return A ZoomSDKError to tell client whether enable auto join voip successfully or not.
@@ -120,6 +112,20 @@
  * @return A ZoomSDKError to tell client whether enable mute mic successfully or not.
  */
 - (ZoomSDKError)enableMuteMicJoinVoip:(BOOL)enable;
+
+/**
+ * @brief This method is used to Enable Stero in meeting.
+ * @param enable, YES means Enable Stero No means disable.
+ * @return A ZoomSDKError to tell client whether enable stero successfully or not.
+ */
+- (ZoomSDKError)enableStero:(BOOL)enable;
+
+/**
+ * @brief This method is used to Enable using original sound in meeting.
+ * @param enable, YES means enable using original sound No means disable.
+ * @return A ZoomSDKError to tell client whether enable using original sound successfully or not.
+ */
+- (ZoomSDKError)enableUseOriginalSound:(BOOL)enable;
 
 @end
 
@@ -169,6 +175,15 @@
  * @return A ZoomSDKError to tell client whether disable video when join meeting successfully or not.
  */
 - (ZoomSDKError)disableVideoJoinMeeting:(BOOL)disable;
+
+/**
+ * @brief This method is used to display username on their video in meeting.
+ * @param display, YES means always show username on video NO means not.
+ * @return A ZoomSDKError to tell client whether this set action works or not.
+ */
+- (ZoomSDKError)displayUserNameOnVideo:(BOOL)display;
+
+
 @end
 
 @interface ZoomSDKRecordSetting: NSObject
@@ -207,6 +222,15 @@
  * @return A ZoomSDKError to tell client whether function call successfully or not.
  */
 - (ZoomSDKError)setCustomFeedbackURL:(NSString*)feedbackURL;
+
+/**
+ * @brief This method is used to hide some component in setting window.
+ * @param component  a enum specify the control
+ * @param hide set YES to hide NO means show.
+ * @return A ZoomSDKError to tell client whether function call successfully or not.
+ */
+- (void)hideSettingComponent:(SettingComponent)component hide:(BOOL)hide;
+
 @end
 
 @interface ZoomSDKStatisticsSetting: NSObject

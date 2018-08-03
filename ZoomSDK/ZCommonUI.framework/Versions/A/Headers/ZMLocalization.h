@@ -11,7 +11,6 @@
 #define AUDIO_WINDOW_TITLE      @"Choose ONE of the audio conference options"
 #define PHONE_CALL              @"Phone Call"
 #define COMPUTER_AUDIO          @"Computer Audio"
-#define TEST_COMPUTER_AUDIO     @"Test Computer Mic & Speakers"
 
 //HotKey
 #define KEY_NAVIGATE_WINDOW     @"Navigate among Zoom popup windows"
@@ -103,7 +102,7 @@
 #define IM_NOT_SUPPORTED_MSG_PROMPT   @"[Upgrade to the latest version to see this message.]"
 
 //toolbar
-#define TIP_SELECE_AUDIO_DEVICE     @"Click if you want to switch microphone or speaker"
+#define TIP_SELECE_AUDIO_DEVICE     @"Click if you want to switch to a different microphone or speaker"
 
 //sip
 #define SIP_NAVIGATEOR_ITEM @"Phone"
@@ -175,7 +174,6 @@
 #define SWITCH_ACCOUNT                  @"Switch Account"
 #define QUIT_ZOOM                       @"Quit Zoom"
 #define PREFERENCES                     @"Preferences..."
-#define TEST_MIC_AND_SPEAKER            @"Test Computer Mic & Speakers"
 #define AUDIO_SETTINGS                  @"Audio Settings"
 
 //setting

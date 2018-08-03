@@ -35,7 +35,7 @@
     [_chatButton setEnabled:NO];
     [_recordButton setEnabled:NO];
     [_shareButton setEnabled:NO];
-    [_mainWindowButton setEnabled:YES];
+    [_mainWindowButton setEnabled:NO];
     [_endMeeting setEnabled:NO];
     [_revokeRemoteControl setEnabled:NO];
     [_declineRemoteControl setEnabled:NO];
@@ -329,6 +329,8 @@ void processSignal(int num)
     config.enableMuteOnEntry = YES;
     config.disableDoubleClickToFullScreen = YES;
     config.disableRenameInMeeting = YES;
+    config.hideCallMeInAudioWindow = YES;
+    config.hideTelephoneInAudiowWindow = YES;
   //  config.hideLeaveMeetingWindow = YES;
     [config hideSDKButtons:NO ButtonType:FitBarNewShareButton];
     [config hideSDKButtons:NO ButtonType:ToolBarInviteButton];
@@ -358,10 +360,10 @@ void processSignal(int num)
              uiController.delegate = self;
              if (_hasLogined) {
                  //for zoom user
-                 ret =[meetingService startMeeting:ZoomSDKUserType_ZoomUser userID:nil userToken:nil displayName:nil meetingNumber:[_startMeetingNum stringValue] isDirectShare:NO sharedApp:0 isVideoOff:YES isAuidoOff:NO];
+                 ret = [meetingService startMeeting:ZoomSDKUserType_ZoomUser userID:nil userToken:nil displayName:nil meetingNumber:[_startMeetingNum stringValue]  isDirectShare:NO sharedApp:0 isVideoOff:YES isAuidoOff:NO vanityID:nil];
              }else{
                  //for api user
-                 ret =[meetingService startMeeting:ZoomSDKUserType_APIUser userID:[_sdkUserID stringValue] userToken:[_sdkUserToken stringValue] displayName:[_startUserName stringValue] meetingNumber:[_startMeetingNum stringValue] isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO];
+                 ret =[meetingService startMeeting:ZoomSDKUserType_APIUser userID:[_sdkUserID stringValue] userToken:[_sdkUserToken stringValue] displayName:[_startUserName stringValue] meetingNumber:[_startMeetingNum stringValue] isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:@"francescototti"];
              }
          }
          NSLog(@"startMeeting ret:%d", ret);
@@ -386,9 +388,9 @@ void processSignal(int num)
         if ([authService isAuthorized])
         {   meetingService.delegate = self;
             if (_hasLogined) {
-                 ret =[meetingService joinMeeting:ZoomSDKUserType_ZoomUser toke4enfrocelogin:nil webinarToken:nil  participantId:@"10" meetingNumber:[_joinMeetingNum stringValue] displayName:[_joinUserName stringValue] password:@"" isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO];
+                ret =[meetingService joinMeeting:ZoomSDKUserType_ZoomUser toke4enfrocelogin:nil webinarToken:nil  participantId:@"10" meetingNumber:[_joinMeetingNum stringValue] displayName:[_joinUserName stringValue] password:@"" isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
             }else{
-                 ret =[meetingService joinMeeting:ZoomSDKUserType_APIUser toke4enfrocelogin:nil webinarToken:nil  participantId:@"10" meetingNumber:[_joinMeetingNum stringValue]  displayName:[_joinUserName stringValue] password:@"" isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO];
+                ret =[meetingService joinMeeting:ZoomSDKUserType_APIUser toke4enfrocelogin:nil webinarToken:nil  participantId:@"10" meetingNumber:[_joinMeetingNum stringValue]  displayName:[_joinUserName stringValue] password:@"" isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:@"francescototti"];
             }
            
         }
@@ -967,6 +969,20 @@ void processSignal(int num)
             phoneHelper.delegate = self;
             ZoomSDKASController* asController = [meetingService getASController];
             asController.delegate = self;
+            ZoomSDKLiveStreamHelper* streamHelper = [meetingService getLiveStreamHelper];
+          //  streamHelper.delegate = self;
+            NSArray* streamarray = [streamHelper getSupportLiveStreamItem];\
+            if (streamarray.count > 0) {
+                for(ZoomSDKLiveStreamItem* item in streamarray)
+                {
+                    NSLog(@"Live stream url: %@, description:%@", [item getLiveStreamURL], [item getLiveStreamURLDescription]);
+                    if([[item getLiveStreamURLDescription] isEqualToString:@"fb_workplace"])
+                    {
+                        [streamHelper startLiveStream:item];
+                    }
+                }
+            }
+          
         }
         break;
         case ZoomSDKMeetingStatus_AudioReady:

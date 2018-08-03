@@ -621,3 +621,20 @@ typedef enum{
     SettingNetworkType_Other,
 }SettingNetworkType;
 
+typedef enum {
+    SDKUserType_APIUser,
+    SDKUserType_EmailLogin,
+    SDKUserType_FaceBook,
+    SDKUserType_GoogleOAuth,
+    SDKUserType_SSO,
+    SDKUserType_Unknown,
+}SDKUserType;
+
+typedef enum{
+    LiveStreamStatus_None,
+    LiveStreamStatus_InProgress,
+    LiveStreamStatus_Connecting,
+    LiveStreamStatus_StartFailedTimeout,
+    LiveStreamStatus_StartFailed,
+    LiveStreamStatus_Ended,
+}LiveStreamStatus;

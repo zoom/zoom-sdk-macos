@@ -1,5 +1,47 @@
 # CHANGELOG
 
+## 2017-07-26
+
+The start meeting logic for API users has changed. Please read below before upgrading to this version.
+
+### Added
+
+1. interface change:
+We added a new parameter, zoom access token (ZAK), which can be retrieved through REST API:
+https://zoom.github.io/api/#retrieve-a-users-permissions
+
+Old API User start meeting logic:
+```
+(ZoomSDKError)startMeeting:(ZoomSDKUserType)userType userID:
+(NSString*)userId userToken:(NSString*)userToken displayName:
+(NSString*)username meetingNumber:(NSString*)meetingNumber isDirectShare:
+(BOOL)directShare sharedApp:(CGDirectDisplayID)displayID isVideoOff:
+(BOOL)noVideo isAuidoOff:(BOOL)noAuido;
+```
+New API User start meeting logic:
+```
+-(ZoomSDKError)startMeetingWithZAK:(NSString*)zak userType:
+(SDKUserType)type userID:(NSString*)userId userToken:
+(NSString*)userToken displayName:(NSString*)username meetingNumber:
+(NSString*)meetingNumber isDirectShare:(BOOL)directShare sharedApp:
+(CGDirectDisplayID)displayID isVideoOff:(BOOL)noVideo isAuidoOff:
+(BOOL)noAuido vanityID:(NSString*)sdkVanityID;
+```
+Usage:
+```
+ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService]
+API Start Meeting: [meetingService startMeetingWithZAK。。。。]
+Login Start Meeting: [meetingService startMeeting...]
+```
+
+2. API user start meeting should use ZAK
+
+3. support live stream
+
+4. support make host && cohost 
+
+5. some bugs fix
+
 ## 2018-05-29
 
 ### Added
