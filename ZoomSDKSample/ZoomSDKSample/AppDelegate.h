@@ -8,7 +8,9 @@
 #import <Cocoa/Cocoa.h>
 #import "ZoomSDK.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate, ZoomSDKBreakoutRoomsDelegate, ZoomSDKWaitingRoomDelegate, ZoomSDKPhoneHelperDelegate, ZoomSDKNetworkSeviceDelegate, ZoomSDKASControllerDelegate, ZoomSDKMeetingUIControllerDelegate, ZoomSDKMeetingActionControllerDelegate>
+@class ZoomSDKWindowController;
+
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate,ZoomSDKRemoteControllerDelegate, ZoomSDKWaitingRoomDelegate, ZoomSDKPhoneHelperDelegate, ZoomSDKNetworkSeviceDelegate, ZoomSDKASControllerDelegate, ZoomSDKMeetingUIControllerDelegate, ZoomSDKMeetingActionControllerDelegate, ZoomSDKCustomizedAnnotationCtrlDelegate, ZoomSDKMeetingRecordDelegate>
 
 {
     IBOutlet NSWindow* _mainWindow;
@@ -34,7 +36,7 @@
     IBOutlet NSButton*   _H323Button;
     IBOutlet NSButton*   _waitingRoomButton;
     IBOutlet NSButton*    _calloutButton;
-    IBOutlet NSButton*    _boButton;
+    IBOutlet NSButton*    _videoContainerButton;
     IBOutlet NSButton*   _multiShareButton;
     IBOutlet NSButton*   _participantsButton;
     
@@ -74,7 +76,7 @@
     IBOutlet NSTextField* _sdkUserID;
     IBOutlet NSTextField* _sdkUserToken;
     IBOutlet NSTextField* _startUserName;
-    
+    IBOutlet NSTextField* _zak;
     IBOutlet NSTextField* _joinMeetingNum;
     IBOutlet NSTextField* _joinUserName;
     //H323
@@ -134,8 +136,21 @@
     IBOutlet NSTextField*  _userName;
     IBOutlet NSTextView*  _calloutStatusInfo;
     
-    BOOL  canTerminate;
-    BOOL  wantToTerminate;
+    //test new sdk
+    ZoomSDKWindowController* _wndCtrl;
+    ZoomSDKWindowController* _shareCtrl;
+
+    IBOutlet NSTextView*                   _videoInfoView;
+    IBOutlet NSTextField*                  _selectedVideoUser;
+    
+    ZoomSDKPreViewVideoElement* previewElement;
+    ZoomSDKNormalVideoElement* newUserVideo1;
+    ZoomSDKNormalVideoElement* newUserVideo2;
+    ZoomSDKNormalVideoElement* newUserVideo3;
+    ZoomSDKActiveVideoElement* activeUserVideo;
+    
+    ZoomSDKShareElement* _shareElement;
+
 }
 
 -(IBAction)clickAuthDevZoom:(id)sender;
@@ -151,7 +166,7 @@
 -(IBAction)clickMultiShare:(id)sender;
 -(IBAction)clickWaitingRoom:(id)sender;
 -(IBAction)clickPhoneCallout:(id)sender;
--(IBAction)clickBO:(id)sender;
+-(IBAction)clickVideoContainer:(id)sender;
 
 -(IBAction)sdkAuth:(id)sender;
 -(IBAction)loginZoom:(id)sender;
@@ -262,5 +277,14 @@
 //Phone Call Out
 - (IBAction)callOutInviteUser:(id)sender;
 - (IBAction)cancelCallOut:(id)sender;
+
+//video container
+- (IBAction)subscribeUser:(id)sender;
+- (IBAction)unSubscribeUser:(id)sender;
+- (IBAction)hideVideoRender:(id)sender;
+- (IBAction)showVideoRender:(id)sender;
+
+//new sdk share
+- (IBAction)viewNewShare:(id)sender;
 @end
 

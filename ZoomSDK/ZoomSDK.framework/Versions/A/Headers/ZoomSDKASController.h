@@ -7,6 +7,10 @@
 //
 
 #import "ZoomSDKErrors.h"
+#import "ZoomSDKBuildType.h"
+#import "ZoomSDKCustomizedAnnotationCtr.h"
+#import "ZoomSDKShareContainer.h"
+#import "ZoomSDKRemoteControllerHelper.h"
 
 @interface ZoomSDKAnnotationController :NSObject
 - (BOOL)isAnnotationDisable;
@@ -67,14 +71,6 @@
 @protocol ZoomSDKASControllerDelegate <NSObject>
 @optional
 /**
- * @brief Designated for Zoom Meeting notify the remote control status.
- * @param status the remote controll user's status.
- * @param userID the remote controll user's identity.
- *
- */
-- (void)onRemoteControlStatus:(ZoomSDKRemoteControlStatus)status User:(unsigned int)userID;
-
-/**
  * @brief Designated for Zoom Meeting notify the sharing status.
  * @param status the sharing user's status.
  * @param userID the sharing user's identity.
@@ -98,7 +94,10 @@
 @interface ZoomSDKASController : NSObject
 {
     id<ZoomSDKASControllerDelegate> _delegate;
+    ZoomSDKShareContainer* _shareContainer;
     ZoomSDKAnnotationController* _annotationController;
+    ZoomSDKCustomizedAnnotationCtr* _customizedAnnotationCtr;
+    ZoomSDKRemoteControllerHelper*  _remoteControllerHelper;
 }
 @property(nonatomic, assign)id<ZoomSDKASControllerDelegate> delegate;
 /**
@@ -159,6 +158,25 @@
  * @return A annotataion controller interface when function call successful, or return nil when failed.
  */
 - (ZoomSDKAnnotationController*)getAnnotationController;
+
+/**
+ * @brief This method is used to get customized annotation controller.
+ * @return A customized annotataion controller interface when function call successful, or return nil when failed.
+ */
+- (ZoomSDKCustomizedAnnotationCtr*)getCustomizedAnnotationCtr;
+
+/**
+ * @brief This method is used to get customized share render container.
+ * @return A ZoomSDKShareContainer object when function call successful, or return nil when failed.
+ */
+- (ZoomSDKShareContainer*)getShareContainer;
+
+/**
+ * @brief This method is used to get remote controller helper.
+ * @return A ZoomSDKRemoteControllerHelper object when function call successful, or return nil when failed.
+ */
+- (ZoomSDKRemoteControllerHelper*)getRemoteControllerHelper;
+
 /**
  * @brief This method is used to start annotation.
  * @param position, the position of annotation first show.

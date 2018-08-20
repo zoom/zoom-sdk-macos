@@ -74,41 +74,13 @@
 #else
 - (void)onUserAudioStatusChange:(NSArray*)userAudioStatusArray;
 #endif
+
 /**
  * @brief Designated for Zoom Meeting User receive chat message notify.
  * @param chatInfo tell client the info of the chat message info user received.
  *
  */
 - (void)onChatMessageNotification:(ZoomSDKChatInfo*)chatInfo;
-
-/**
- * @brief  Designated for Zoom Meeting User notify that meeting record has convorted to mp4 successfully or not.
- * @param success tell client the conversion finish successfully or not .
- * @param recordPath tell client the mp4 file path.
- *
- */
-- (void)onRecord2MP4Done:(BOOL)success Path:(NSString*)recordPath;
-
-/**
- * @brief  Designated for Zoom Meeting User notify the process percentage when meeting record convert to mp4 file.
- * @param percentage tell client the process record convert to mp4 .
- *
- */
-- (void)onRecord2MP4Progressing:(int)percentage;
-
-/**
- * @brief  Designated for Zoom Meeting notify record status.
- * @param status tell client record status.
- *
- */
-- (void)onRecordStatus:(ZoomSDKRecordingStatus)status;
-
-/**
- * @brief Designated for Zoom Meeting notify your record privilege change.
- * @param canRec mean your record privilege change or not.
- *
- */
-- (void)onRecordPrivilegeChange:(BOOL)canRec;
 
 /**
  * @brief Designated for Zoom Meeting new user join notify.
@@ -120,6 +92,7 @@
 #else
 - (void)onUserJoin:(NSArray*)array;
 #endif
+
 /**
  * @brief Designated for Zoom Meeting user left notify.
  * @param array tell client the left user array.
@@ -130,16 +103,17 @@
 #else
 - (void)onUserLeft:(NSArray*)array;
 #endif
+
 /**
- * @brief Designated for Zoom Meeting notify the host change.
- * @param userID user's identity who becomes host.
+ * @brief Designated for Zoom Meeting notify the specific user info change.
+ * @param userID user's identity whose info changed.
  *
  */
 - (void)onUserInfoUpdate:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify the specific user info change.
- * @param userID user's identity whose info changed.
+ * @brief Designated for Zoom Meeting notify the host change.
+ * @param userID user's identity who becomes host.
  *
  */
 #ifdef BUILD_FOR_ELECTRON
@@ -147,6 +121,14 @@
 #else
 - (void)onHostChange:(unsigned int)userID;
 #endif
+
+/**
+ * @brief Designated for Zoom Meeting notify the co-host change.
+ * @param userID user's identity who becomes co-host.
+ *
+ */
+- (void)onCoHostChange:(unsigned int)userID;
+
 /**
  * @brief Designated for Zoom Meeting notify spotlight video user change .
  * @param spotlight YES mean get spotlight No means not.
@@ -166,6 +148,7 @@
 #else
 - (void)onVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID;
 #endif
+
 /**
  * @brief Designated for Zoom Meeting notify specific user raise hand or lower hand status change.
  * @param raise YES mean specific user raise hand ,No means lower hand.
@@ -191,7 +174,7 @@
 @interface ZoomSDKMeetingActionController : NSObject
 {
     id<ZoomSDKMeetingActionControllerDelegate> _delegate;
-    NSArray*             _participantsArray;
+    NSMutableArray*             _participantsArray;
 }
 @property(nonatomic, assign) id<ZoomSDKMeetingActionControllerDelegate> delegate;
 
@@ -218,21 +201,6 @@
 - (ZoomSDKError)sendChat:(NSString*)content toUser:(unsigned int)userID;
 
 /**
- * @brief This method is used to start recording.
- * @param startTimestamp, start recording timestamp.
- * @param filePath, the path u want to save recording file.
- * @return A ZoomSDKError to tell client whether start recording successful or not.
- */
-- (ZoomSDKError)startRecording:(time_t*)startTimestamp saveFilePath:(NSString*)filePath;
-
-/**
- * @brief This method is used to stop recording.
- * @param stopTimestamp, stop recording timestamp.
- * @return A ZoomSDKError to tell client whether stop recording successful or not.
- */
-- (ZoomSDKError)stopRecording:(time_t*)stopTimestamp;
-
-/**
  * @brief This method is used to get user info by the selecetd user.
  * @param userID, userID of the selected user.
  * @return A user info interface when function call successful, or return nil when failed.
@@ -246,6 +214,19 @@
  * @return A ZoomSDKError to tell client function call successful or not.
  */
 - (ZoomSDKError)changeUserName:(unsigned int)userID newName:(NSString*)name;
+
+/**
+ * @brief This method is used for making a participant to be a new host or orignal host to recliam host
+ * @param userID, the identity of the user, set userid = 0 to reclaim host.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)makeHost:(unsigned int)userID;
+
+/**
+ * @brief This method is used to mention client can reclaim host or not.
+ * @return A BOOL, YES means can reclaim NO means not.
+ */
+- (BOOL)canReclaimHost;
 /**
  * @brief This method is used for participant to claim host by hostkey.
  * @param hostKey, the host key of the meeting host.
@@ -265,4 +246,5 @@
  * @return A ZoomSDKError to tell client function call successful or not.
  */
 -(ZoomSDKError)revokeCoHost:(unsigned int)userid;
+
 @end

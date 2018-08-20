@@ -17,7 +17,8 @@
 #import "ZoomSDKASController.h"
 #import "ZoomSDKMeetingActionController.h"
 #import "ZoomSDKLiveStreamHelper.h"
-
+#import "ZoomSDKVideoContainer.h"
+#import "ZoomSDKMeetingRecordController.h"
 @interface ZoomSDKSecuritySessionKey : NSObject
 {
     SecuritySessionComponet _component;
@@ -77,6 +78,9 @@
     ZoomSDKASController*          _asController;
     ZoomSDKMeetingActionController*  _actionController;
     ZoomSDKLiveStreamHelper*         _liveStreamHelper;
+    //customized UI
+    ZoomSDKVideoContainer*           _videoContainer;
+    ZoomSDKMeetingRecordController*  _recordController;
 }
 /**
  * The object that acts as the delegate of the receiving meeting events.
@@ -139,6 +143,17 @@
  */
 - (ZoomSDKLiveStreamHelper*)getLiveStreamHelper;
 
+/**
+ * @brief get the Zoom SDK customized video container
+ * @return a ZoomSDKVideoContainer object u can use to customized your inmeeting UI.
+ */
+- (ZoomSDKVideoContainer*)getVideoContainer;
+
+/**
+ * @brief get the Zoom SDK customized recording object
+ * @return a ZoomSDKMeetingRecordController object u can use to customized record your meeting.
+ */
+- (ZoomSDKMeetingRecordController*)getRecordController;
 /**
  * @brief This method is used to start a Zoom meeting with meeting number.
  * @note  userId\userToken\username is for API user.
@@ -231,19 +246,18 @@
 -(BOOL)isInternalMeeting;
 
 /**
- * @brief This method is used to set security session key and iv for auido/video etc, special for HuaWei.
- * @param keyArray, ZoomSDKSecuritySessionKey object array.
- * @param leaveMeeting, notify leave meeting session or not.
- * @@return A ZoomSDKError to tell client whether set security key successfully or not.
- */
-
-/**
  * @brief This method is used to find out the current meeting is failover or not, special for HuaWei.
  * @return A BOOL value to tell client the current meeting is failover or not.
  */
 
 -(BOOL)isFailoverMeeting;
 
+/**
+ * @brief This method is used to set security session key and iv for auido/video etc, special for HuaWei.
+ * @param keyArray, ZoomSDKSecuritySessionKey object array.
+ * @param leaveMeeting, notify leave meeting session or not.
+ * @@return A ZoomSDKError to tell client whether set security key successfully or not.
+ */
 
 -(ZoomSDKError)setSecuritySessionKey:(NSArray*)keyArray isLeaveMeeting:(BOOL)leaveMeeting;
 @end

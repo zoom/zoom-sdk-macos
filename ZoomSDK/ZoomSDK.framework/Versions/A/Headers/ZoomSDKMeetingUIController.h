@@ -32,7 +32,10 @@
  */
 -(void)onParticipantButtonClicked;
 
-
+/**
+ * @brief Designated for Zoom Meeting notify custom live stream menu button clicked.
+ */
+-(void)onCustomLiveButtonClicked;
 @end
 
 @interface ZoomSDKMeetingUIController :NSObject

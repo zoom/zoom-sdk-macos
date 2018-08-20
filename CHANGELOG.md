@@ -1,6 +1,19 @@
 # CHANGELOG
 
-## 2017-07-26
+## 2018-8-20
+
+* Custom Meeting UI (support basic meeting function, except for Webinar and Breakout Session)
+
+* Interface Changes:
+1. Customized video interface: ZoomSDKVideoContainer.h (support customized video view layout)
+2. Customized share interface: ZoomSDKShareElement.h/ZoomSDKShareContainer.h (support customized share view layout)
+3. Customized remote controller interface: ZoomSDKRemoteControllerHelper.h (support common feature of remote control in sdk layer)
+4. Customized recording interface: ZoomSDKMeetingRecordController.h (support common feature of recording in sdk layer)
+5. Customized recording interface: ZoomSDKCustomizedAnnotationCtr.h (support common feature of annotation in sdk layer)
+
+* Bug fixes
+
+## 2018-07-26
 
 The start meeting logic for API users has changed. Please read below before upgrading to this version.
 
