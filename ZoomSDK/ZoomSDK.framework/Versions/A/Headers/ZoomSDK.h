@@ -26,6 +26,11 @@
 //Zoom SDK NetworkService
 #import <ZoomSDKNetworkService.h>
 
+//Zoom SDK Customized Video UI
+#import <ZoomSDKVideoContainer.h>
+
+//Zoom SDK Customized Share UI
+#import <ZoomSDKShareContainer.h>
 /**
  * The ZoomSDK class is a class that exposes a Zoom API Rest Client.
  *
@@ -41,16 +46,20 @@
     ZoomSDKSettingService  *_settingService;
     ZoomSDKPremeetingService *_premeetingService;
     ZoomSDKNetworkService    *_networkService;
+    NSMutableArray           *_languageArray;
+    BOOL                     _needCustomizedUI;
 }
 
 @property (retain, nonatomic) NSString *zoomDomain;
-
+@property (assign, nonatomic) BOOL needCustomizedUI;
 /**
  * @brief This method is guaranteed to only instantiate one sharedSDK over the lifetime of an app.
  * @note This client must be configured with your client key and client secret.
  * @return a preconfigured ZoomSDK default client
  */
 + (ZoomSDK*)sharedSDK;
+
+- (void)initSDK:(BOOL)customizedFlag;
 /**
  * @brief Sets the Zoom SDK client domain
  * @note the domain should not include protocol "https" or "http", the format is just like "zoom.us" or "www.zoom.us".
@@ -94,12 +103,26 @@
  * @param fileName: file name of customize strings.
  *
  */
-- (void)setCustomBundlePath:(NSString*)bundlePath fileName:(NSString*)fileName;
+//- (void)setCustomBundlePath:(NSString*)bundlePath fileName:(NSString*)fileName;
 
 /**
  * @return the ZoomSDK default Version Number
  */
 - (NSString*)getSDKVersionNumber;
+
+/**
+ * @brief get the supproted localization lanuguages
+ * @param the items in NSArray is the name of the supported lanuguages, which type is NSString.
+ */
+- (NSMutableArray*)getLanguageArray;
+
+/**
+ * @brief set the language of the app
+ * @param preferLanguage: the name the the language, which is get from - (NSMutableArray *)getLanguageArray.
+ * @return ZoomSDKError: return value ZoomSDKError_Success means the prefered language is successfully setted.
+    you can call this api when you first call [ZoomSDK sharedSDk] in the app, otherwise you need restart the app to make the prefered Language work.
+ */
+- (ZoomSDKError)setPreferLanguage:(NSString *)preferLanguage;
 @end
 
 

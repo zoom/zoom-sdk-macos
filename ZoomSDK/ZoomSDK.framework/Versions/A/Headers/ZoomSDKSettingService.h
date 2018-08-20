@@ -100,20 +100,6 @@ typedef enum{
 - (ZoomSDKError)selectAudioDevice:(BOOL)mic DeviceID:(NSString *)deviceID DeviceName:(NSString*)deviceName;
 
 /**
- * @brief This method is used to enable auto join audio by computer.
- * @param enable, YES means enable NO means disable.
- * @return A ZoomSDKError to tell client whether enable auto join voip successfully or not.
- */
-- (ZoomSDKError)enableAutoJoinVoip:(BOOL)enable;
-
-/**
- * @brief This method is used to enable mute mic when join meeting.
- * @param enable, YES means enable NO means disable.
- * @return A ZoomSDKError to tell client whether enable mute mic successfully or not.
- */
-- (ZoomSDKError)enableMuteMicJoinVoip:(BOOL)enable;
-
-/**
  * @brief This method is used to Enable Stero in meeting.
  * @param enable, YES means Enable Stero No means disable.
  * @return A ZoomSDKError to tell client whether enable stero successfully or not.
@@ -127,6 +113,20 @@ typedef enum{
  */
 - (ZoomSDKError)enableUseOriginalSound:(BOOL)enable;
 
+
+/**
+ * @brief This method is used to enable auto join audio by computer.
+ * @param enable, YES means enable NO means disable.
+ * @return A ZoomSDKError to tell client whether enable auto join voip successfully or not.
+ */
+- (ZoomSDKError)enableAutoJoinVoip:(BOOL)enable;
+
+/**
+ * @brief This method is used to enable mute mic when join meeting.
+ * @param enable, YES means enable NO means disable.
+ * @return A ZoomSDKError to tell client whether enable mute mic successfully or not.
+ */
+- (ZoomSDKError)enableMuteMicJoinVoip:(BOOL)enable;
 @end
 
 @interface ZoomSDKVideoSetting: NSObject

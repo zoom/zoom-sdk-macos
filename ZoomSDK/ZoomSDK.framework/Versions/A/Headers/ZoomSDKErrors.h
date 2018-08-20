@@ -28,6 +28,15 @@ typedef enum {
     ZoomSDKUserType_SSOUser     = 101,
 }ZoomSDKUserType;
 
+
+typedef enum {
+    SDKUserType_APIUser,
+    SDKUserType_EmailLogin,
+    SDKUserType_FaceBook,
+    SDKUserType_GoogleOAuth,
+    SDKUserType_SSO,
+    SDKUserType_Unknown,
+}SDKUserType;
 /**
  @enum: leave meeting action command
  */
@@ -330,6 +339,7 @@ typedef enum{
     ZoomSDKShareStatus_ViewOther,
     ZoomSDKShareStatus_Pause,
     ZoomSDKShareStatus_Resume,
+    ZoomSDKShareStatus_ContentTypeChange,
 }ZoomSDKShareStatus;
 
 /**
@@ -599,6 +609,7 @@ typedef enum{
     EndMeetingReason_HostStartAnotherMeeting,
 }EndMeetingReason;
 
+// Huawei setting
 typedef enum
 {
     EncryptType_NO,
@@ -621,14 +632,30 @@ typedef enum{
     SettingNetworkType_Other,
 }SettingNetworkType;
 
-typedef enum {
-    SDKUserType_APIUser,
-    SDKUserType_EmailLogin,
-    SDKUserType_FaceBook,
-    SDKUserType_GoogleOAuth,
-    SDKUserType_SSO,
-    SDKUserType_Unknown,
-}SDKUserType;
+// customized sdk
+typedef enum{
+    VideoRenderElementType_None,
+    VideoRenderElementType_Preview,
+    VideoRenderElementType_Active,
+    VideoRenderElementType_Normal,
+}VideoRenderElementType;
+
+typedef enum{
+    VideoRenderDataType_None,
+    VideoRenderDataType_Video,
+    VideoRenderDataType_Avatar,
+}VideoRenderDataType;
+
+typedef enum{
+    ViewShareMode_FullFill,
+    ViewShareMode_LetterBox,
+}ViewShareMode;
+
+typedef enum{
+    AnnotationStatus_Ready,
+    AnnotationStatus_Close,
+    AnnotationStatus_None,
+}AnnotationStatus;
 
 typedef enum{
     LiveStreamStatus_None,
@@ -638,3 +665,4 @@ typedef enum{
     LiveStreamStatus_StartFailed,
     LiveStreamStatus_Ended,
 }LiveStreamStatus;
+

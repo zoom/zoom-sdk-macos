@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D84A99721102D4B00CE3A14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D84A99521102D4B00CE3A14 /* Localizable.strings */; };
 		970CBE321E36F25000B1D255 /* airhost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 970CBE301E36F24200B1D255 /* airhost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		971725F71D3F618A00D5C72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 971725F61D3F618A00D5C72D /* AppDelegate.m */; };
 		971725FA1D3F618A00D5C72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 971725F91D3F618A00D5C72D /* main.m */; };
@@ -44,8 +45,9 @@
 		9729EE0F1DD5B9C600DB188D /* zVideoApp.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0B1DD5AF7200DB188D /* zVideoApp.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE101DD5B9C600DB188D /* zVideoUI.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0C1DD5AF7200DB188D /* zVideoUI.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE111DD5B9C600DB188D /* zWebService.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0D1DD5AF7200DB188D /* zWebService.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9756968A212518AA00BC8C2D /* ShareContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97569687212518AA00BC8C2D /* ShareContentView.m */; };
+		9756968C21251B1E00BC8C2D /* ZoomSDKVideoUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9756968B21251B1D00BC8C2D /* ZoomSDKVideoUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9777F79B1E4AF3B700E2CE59 /* ZoomSDK_Test.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9777F7991E4AF3B700E2CE59 /* ZoomSDK_Test.strings */; };
 		97B35FAD1D76B549006ACC00 /* ZoomSDKWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B35FAB1D76B549006ACC00 /* ZoomSDKWindowController.m */; };
 		97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 97FF5F0520B80B8E00C36776 /* curl64.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -57,6 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9756968C21251B1E00BC8C2D /* ZoomSDKVideoUI.framework in Copy Files */,
 				97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */,
 				9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */,
 				970CBE321E36F25000B1D255 /* airhost.app in Copy Files */,
@@ -93,6 +96,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D84A99621102D4B00CE3A14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		970CBE301E36F24200B1D255 /* airhost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = airhost.app; path = ZoomSDK/airhost.app; sourceTree = "<group>"; };
 		971725F21D3F618A00D5C72D /* ZoomSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971725F51D3F618A00D5C72D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,8 +133,10 @@
 		9729ED0C1DD5AF7200DB188D /* zVideoUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zVideoUI.bundle; path = ZoomSDK/zVideoUI.bundle; sourceTree = "<group>"; };
 		9729ED0D1DD5AF7200DB188D /* zWebService.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zWebService.bundle; path = ZoomSDK/zWebService.bundle; sourceTree = "<group>"; };
 		9755A2871D6D8C8300B69E72 /* ZoomLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomLogo.png; sourceTree = "<group>"; };
+		97569687212518AA00BC8C2D /* ShareContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareContentView.m; sourceTree = "<group>"; };
+		97569689212518AA00BC8C2D /* ShareContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareContentView.h; sourceTree = "<group>"; };
+		9756968B21251B1D00BC8C2D /* ZoomSDKVideoUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomSDKVideoUI.framework; path = ZoomSDK/ZoomSDKVideoUI.framework; sourceTree = "<group>"; };
 		9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomSDKChatUI.framework; path = ZoomSDK/ZoomSDKChatUI.framework; sourceTree = "<group>"; };
-		9777F79A1E4AF3B700E2CE59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ZoomSDK_Test.strings; sourceTree = "<group>"; };
 		97B35FAA1D76B549006ACC00 /* ZoomSDKWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomSDKWindowController.h; sourceTree = "<group>"; };
 		97B35FAB1D76B549006ACC00 /* ZoomSDKWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomSDKWindowController.m; sourceTree = "<group>"; };
 		97B35FAC1D76B549006ACC00 /* ZoomSDKWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomSDKWindowController.xib; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 		971725E91D3F618A00D5C72D = {
 			isa = PBXGroup;
 			children = (
+				9756968B21251B1D00BC8C2D /* ZoomSDKVideoUI.framework */,
 				97FF5F0520B80B8E00C36776 /* curl64.framework */,
 				971C0DDA1D40964C0083AD9B /* Framworks */,
 				971725F41D3F618A00D5C72D /* ZoomSDKSample */,
@@ -173,7 +180,9 @@
 		971725F41D3F618A00D5C72D /* ZoomSDKSample */ = {
 			isa = PBXGroup;
 			children = (
-				9777F7991E4AF3B700E2CE59 /* ZoomSDK_Test.strings */,
+				97569689212518AA00BC8C2D /* ShareContentView.h */,
+				97569687212518AA00BC8C2D /* ShareContentView.m */,
+				5D84A99521102D4B00CE3A14 /* Localizable.strings */,
 				9755A2871D6D8C8300B69E72 /* ZoomLogo.png */,
 				971725F51D3F618A00D5C72D /* AppDelegate.h */,
 				971725F61D3F618A00D5C72D /* AppDelegate.m */,
@@ -290,10 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D84A99721102D4B00CE3A14 /* Localizable.strings in Resources */,
 				972215FA1DD06C5100C74CE6 /* ZoomLogo.png in Resources */,
 				972215FB1DD06C5100C74CE6 /* Assets.xcassets in Resources */,
 				972215FC1DD06C5100C74CE6 /* MainMenu.xib in Resources */,
-				9777F79B1E4AF3B700E2CE59 /* ZoomSDK_Test.strings in Resources */,
 				972215FD1DD06C5100C74CE6 /* ZoomSDKWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +316,7 @@
 			files = (
 				971725FA1D3F618A00D5C72D /* main.m in Sources */,
 				971725F71D3F618A00D5C72D /* AppDelegate.m in Sources */,
+				9756968A212518AA00BC8C2D /* ShareContentView.m in Sources */,
 				97B35FAD1D76B549006ACC00 /* ZoomSDKWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,20 +324,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5D84A99521102D4B00CE3A14 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D84A99621102D4B00CE3A14 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		971725FD1D3F618A00D5C72D /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				971725FE1D3F618A00D5C72D /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		9777F7991E4AF3B700E2CE59 /* ZoomSDK_Test.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9777F79A1E4AF3B700E2CE59 /* en */,
-			);
-			name = ZoomSDK_Test.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

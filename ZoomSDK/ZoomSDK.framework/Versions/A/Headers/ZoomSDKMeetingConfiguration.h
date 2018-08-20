@@ -72,6 +72,7 @@
     BOOL                _forceDisableMultiShare;
     //enable global shortcuts in confui
     BOOL                _enableGlobalShortcuts;
+    BOOL                _disableCustomLiveStreamAction;
 }
 @property(nonatomic, assign)CGDirectDisplayID displayAppID;
 @property(nonatomic, assign)CGDirectDisplayID monitorID;
@@ -103,6 +104,7 @@
 @property(nonatomic, assign)BOOL hideCallMeInAudioWindow;
 @property(nonatomic, assign)BOOL forceDisableMultiShare;
 @property(nonatomic, assign)BOOL enableGlobalShortcuts;
+@property(nonatomic, assign)BOOL disableCustomLiveStreamAction;
 
 - (ZoomSDKError)prefillWebinarUserName:(NSString*)userName Email:(NSString*)email;
 - (ZoomSDKError)hideSDKButtons:(BOOL)hide ButtonType:(SDKButton)button;

@@ -80,7 +80,7 @@
 - (ZoomSDKAccountInfo*)getAccountInfo;
 
 /**
- * @brief Designated get Zoom login account info.
+ * @brief Designated get SDK Identity.
  * @return ZoomSDKAccountInfo object the function call successfully synchronously.
  */
 - (NSString*)getSDKIdentity;
