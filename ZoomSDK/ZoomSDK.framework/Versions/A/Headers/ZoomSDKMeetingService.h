@@ -19,6 +19,7 @@
 #import "ZoomSDKLiveStreamHelper.h"
 #import "ZoomSDKVideoContainer.h"
 #import "ZoomSDKMeetingRecordController.h"
+#import "ZoomSDKUpgradeAccountHelper.h"
 @interface ZoomSDKSecuritySessionKey : NSObject
 {
     SecuritySessionComponet _component;
@@ -59,6 +60,13 @@
  *
  */
 - (void)onMeetingStatisticWarning:(StatisticWarningType)type;
+
+/**
+ * @brief Designated for notify should upgrade account.
+ * @param upgradeHelper: tell client can upgrade account
+ *
+ */
+- (void)onPaymentReminder:(ZoomSDKUpgradeAccountHelper*)upgradeHelper;
 @end
 
 /**

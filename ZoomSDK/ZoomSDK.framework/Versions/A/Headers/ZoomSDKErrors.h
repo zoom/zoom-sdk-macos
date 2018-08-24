@@ -666,3 +666,11 @@ typedef enum{
     LiveStreamStatus_Ended,
 }LiveStreamStatus;
 
+typedef enum{
+    SDKReminderType_CanFreeTrial, // host
+    SDKReminderType_CanUpgradeAccount, //host
+    SDKReminderType_GuestReminder, //guest
+    SDKReminderType_UpgradeSuccess,
+    SDKReminderType_UpgradeFailed,
+    SDKReminderType_None,
+}SDKReminderType;

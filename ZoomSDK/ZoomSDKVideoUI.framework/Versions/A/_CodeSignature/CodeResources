@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		3Yr2LHBYPwMqItvaAAvH8nhc0k4=
+		UhQq2K9mx1f+LepXedS5pbgY1cA=
 		</data>
 		<key>Resources/LaunchPollWindow.nib</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Resources/ZMCCRecvWndCtrl.nib</key>
 		<data>
-		cI5z14+K8Sq5erJ2R7NvG/MPKJ0=
+		lIXOsN9Uf2J0wQW1qXU29uQeSos=
 		</data>
 		<key>Resources/ZMCMRTipWindowController.nib</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Resources/ZPChatInMeetingWindow.nib</key>
 		<data>
-		q3OoZwPtaOmOm874f0VbhlB4Uxk=
+		Ur9w9KeGnToGjkY+CFhYIkPaBVk=
 		</data>
 		<key>Resources/ZPChatUserView.nib</key>
 		<data>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Yr2LHBYPwMqItvaAAvH8nhc0k4=
+			UhQq2K9mx1f+LepXedS5pbgY1cA=
 			</data>
 			<key>hash2</key>
 			<data>
-			9d3/+K+Z6SzgCtCLCY8wRgQQ7ilTPbI2SRgnqleW7cI=
+			iCwoJ3hr8Fcti14eV111YD5xC17l3JObZbnnEzk7tl0=
 			</data>
 		</dict>
 		<key>Resources/LaunchPollWindow.nib</key>
@@ -309,11 +309,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cI5z14+K8Sq5erJ2R7NvG/MPKJ0=
+			lIXOsN9Uf2J0wQW1qXU29uQeSos=
 			</data>
 			<key>hash2</key>
 			<data>
-			nzVmcclNu1cF+ySZulYlHwwLPB+O7Ka83qwEpU7dIxM=
+			iNM1nXcXchbRDkkuxbwgjqD4MEhPR2TdwleCWFQ7wYU=
 			</data>
 		</dict>
 		<key>Resources/ZMCMRTipWindowController.nib</key>
@@ -474,11 +474,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q3OoZwPtaOmOm874f0VbhlB4Uxk=
+			Ur9w9KeGnToGjkY+CFhYIkPaBVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			svcW6g+Dm/REy5de1xhddpidjKeCStTP4Pm1DTtARKA=
+			ZxkO8CJFnUgklyU0Brx1f2lBhyZ8TOZf9AcV297zNkQ=
 			</data>
 		</dict>
 		<key>Resources/ZPChatUserView.nib</key>
