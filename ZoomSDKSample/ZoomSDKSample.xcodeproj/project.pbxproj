@@ -43,10 +43,9 @@
 		9729EE0D1DD5B9C600DB188D /* ZoomSDK.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED091DD5AF7200DB188D /* ZoomSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE0E1DD5B9C600DB188D /* zSDKRes.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0A1DD5AF7200DB188D /* zSDKRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE0F1DD5B9C600DB188D /* zVideoApp.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0B1DD5AF7200DB188D /* zVideoApp.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9729EE101DD5B9C600DB188D /* zVideoUI.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0C1DD5AF7200DB188D /* zVideoUI.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE111DD5B9C600DB188D /* zWebService.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED0D1DD5AF7200DB188D /* zWebService.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		973CE715212FBB8600B84E5D /* ZoomSDKVideoUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9756968B21251B1D00BC8C2D /* ZoomSDKVideoUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9756968A212518AA00BC8C2D /* ShareContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97569687212518AA00BC8C2D /* ShareContentView.m */; };
-		9756968C21251B1E00BC8C2D /* ZoomSDKVideoUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9756968B21251B1D00BC8C2D /* ZoomSDKVideoUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		97B35FAD1D76B549006ACC00 /* ZoomSDKWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B35FAB1D76B549006ACC00 /* ZoomSDKWindowController.m */; };
 		97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 97FF5F0520B80B8E00C36776 /* curl64.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -59,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9756968C21251B1E00BC8C2D /* ZoomSDKVideoUI.framework in Copy Files */,
+				973CE715212FBB8600B84E5D /* ZoomSDKVideoUI.framework in Copy Files */,
 				97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */,
 				9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */,
 				970CBE321E36F25000B1D255 /* airhost.app in Copy Files */,
@@ -87,7 +86,6 @@
 				9729EE0D1DD5B9C600DB188D /* ZoomSDK.framework in Copy Files */,
 				9729EE0E1DD5B9C600DB188D /* zSDKRes.bundle in Copy Files */,
 				9729EE0F1DD5B9C600DB188D /* zVideoApp.bundle in Copy Files */,
-				9729EE101DD5B9C600DB188D /* zVideoUI.bundle in Copy Files */,
 				9729EE111DD5B9C600DB188D /* zWebService.bundle in Copy Files */,
 			);
 			name = "Copy Files";

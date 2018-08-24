@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 2018-8-24
+
+* This release has patch fixes for the last release v4.1.30458.0820.
+* Critical bug fixed - A user can’t select share source by mouse after click share button on main toolbar (with Zoom meeting UI)
+* Other interface change
+1. -(void)onToolbarInviteButtonClick->  - (void)onToolbarInviteButtonClick:(BOOL*)show
+ in ZoomSDKMeetingUIController.h
+default shows the origin zoom invite window, if you don't want the original action, you can set *show = N0, and do UI action yourself in this callback
+
+2. New add free user callback in ZoomSDKMeetingService.h;
+ - (void)onPaymentReminder:(ZoomSDKUpgradeAccountHelper*)upgradeHelper;
+
+3. New property add for free user callback in ZoomSDKMeetingConfiguration.h
+@property(nonatomic, assign)BOOL disableFreeUserOriginAction;
+set YES before start meeting if u don't want popup zoom free user UI and you will receive above callback.
+
 ## 2018-8-20
 
 * Custom Meeting UI (support basic meeting function, except for Webinar and Breakout Session)
