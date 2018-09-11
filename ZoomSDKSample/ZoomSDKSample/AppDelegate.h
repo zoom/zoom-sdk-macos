@@ -10,7 +10,7 @@
 
 @class ZoomSDKWindowController;
 
-@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate,ZoomSDKRemoteControllerDelegate, ZoomSDKWaitingRoomDelegate, ZoomSDKPhoneHelperDelegate, ZoomSDKNetworkSeviceDelegate, ZoomSDKASControllerDelegate, ZoomSDKMeetingUIControllerDelegate, ZoomSDKMeetingActionControllerDelegate, ZoomSDKCustomizedAnnotationCtrlDelegate, ZoomSDKMeetingRecordDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate,ZoomSDKRemoteControllerDelegate, ZoomSDKWaitingRoomDelegate, ZoomSDKPhoneHelperDelegate, ZoomSDKNetworkSeviceDelegate, ZoomSDKASControllerDelegate, ZoomSDKMeetingUIControllerDelegate, ZoomSDKMeetingActionControllerDelegate, ZoomSDKCustomizedAnnotationCtrlDelegate, ZoomSDKMeetingRecordDelegate, ZoomSDKOutlookPluginDelegate, ZoomSDKDirectShareHelperDelegate>
 
 {
     IBOutlet NSWindow* _mainWindow;
@@ -150,7 +150,7 @@
     ZoomSDKActiveVideoElement* activeUserVideo;
     
     ZoomSDKShareElement* _shareElement;
-
+    ZoomSDKDirectShareHandler* _dsHandler;
 }
 
 -(IBAction)clickAuthDevZoom:(id)sender;
@@ -286,5 +286,9 @@
 
 //new sdk share
 - (IBAction)viewNewShare:(id)sender;
+//direct share
+- (IBAction)startDS:(id)sender;
+- (IBAction)stopDS:(id)sender;
+- (IBAction)cancelDS:(id)sender;
 @end
 

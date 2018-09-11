@@ -11,13 +11,12 @@
 #import "ShareContentView.h"
 #import <time.h>
 #define kZoomSDKDomain      @"https://dev.zoom.us"
-//#define kZoomSDKAppKey      @"EMXjNaKjSkZzHFmmwM50X6NW6InkYumpf3rK"
-//#define kZoomSDKAppSecret   @"jBv7wMcOQbmfWGMp4G9tcGkpLncuZiCoidSl"
+#define kZoomSDKAppKey      @"EMXjNaKjSkZzHFmmwM50X6NW6InkYumpf3rK"
+#define kZoomSDKAppSecret   @"jBv7wMcOQbmfWGMp4G9tcGkpLncuZiCoidSl"
 
 //for IBM test
-#define kZoomSDKAppKey      @"kCbuCejBQrSuMYANeNDNvw"
-#define kZoomSDKAppSecret   @"QZIp3ruajiRUVPlLxZM6q8Nh2yiUOy2I1ncN"
-
+//#define kZoomSDKAppKey      @"S8BRYbBoy5jYOCEO4eE1BJQW6RK4qcY6aJMs"
+//#define kZoomSDKAppSecret   @"rjPqyfIVTe7yoV7emCucS3Lwc0B9YLnwwKky"
 @interface AppDelegate ()
 - (void) switchToZoomUserTab;
 - (void) switchToMeetingTab;
@@ -202,7 +201,8 @@ void processSignal(int num)
     [self switchToPreMeetingTab];
     ZoomSDKPremeetingService *premeetingService = [[ZoomSDK sharedSDK] getPremeetingService];
     premeetingService.delegate = self;
-    
+    ZoomSDKDirectShareHelper* helper = [premeetingService getDirectShareHelper];
+    helper.delegate = self;
 }
 
 -(IBAction)clickMainWindow:(id)sender
@@ -883,6 +883,23 @@ void processSignal(int num)
         [_authResultField setTextColor:[NSColor blueColor]];
         [_authResultField setStringValue:@"Auth SDK Success!"];
         [self switchToUserTab];
+        ZoomSDKOutlookPluginHelper* outlookhelper = [[[ZoomSDK sharedSDK]getPremeetingService] getOutlookPluginHelper];
+        outlookhelper.delegate = self;
+        [outlookhelper start:@"ZoomVideoClientToZoomOutlookPlugin_RINGCENTRAL" IPCNoti:@"ZoomOutlookPluginToZoomVideoClient_RINGCENTRAL" AppName:@"RingCentral Meetings" AppIdentity:@"zoom.us.ringcentral"];
+        ZoomSDKMeetingConfiguration* config = [[[ZoomSDK sharedSDK]getMeetingService] getMeetingConfiguration];
+        // config.floatVideoPoint =  NSMakePoint(300, 300);
+        config.mainToolBarVisible = NO;
+        config.mainVideoPoint = NSMakePoint(500, 500);
+        config.enableChime = YES;
+        config.enableMuteOnEntry = YES;
+        config.disableDoubleClickToFullScreen = YES;
+        config.disableRenameInMeeting = YES;
+        config.hideFullPhoneNumber4PureCallinUser = YES;
+        //  config.hideLeaveMeetingWindow = YES;
+        [config hideSDKButtons:YES ButtonType:FitBarNewShareButton];
+        [config hideSDKButtons:YES ButtonType:ToolBarInviteButton];
+        [config modifyWindowTitle:YES NewMeetingNum:0];
+        config.disableEndOtherMeetingAlert = YES;
     }else{
         [self switchToWelcomeTab];
         [_authResultFieldWelcome setHidden:NO];
@@ -2059,4 +2076,57 @@ void processSignal(int num)
     }
 }
 
+- (void)onOutlookPluginNeedLoginRequest{
+    NSLog(@"request login from outlookplugin!");
+}
+
+- (void)onOutlookPluginScheduleMeetingRequest
+{
+    NSLog(@"request schedule from outlookplugin!");
+}
+
+- (void)onOutlookPluginDefaultMeetingTopicRequest:(NSString *)scheduleForEmail DefaultMeetingTopic:(NSString **)topic
+{
+    *topic = @"Test By TOTTI";
+  //  NSLog(@"default topic come from outlookplugin!, scheduleForEmail:%@, default topic:%@", scheduleForEmail, *topic);
+}
+
+- (IBAction)startDS:(id)sender
+{
+    ZoomSDKDirectShareHelper* helper = [[[ZoomSDK sharedSDK] getPremeetingService] getDirectShareHelper];
+    if(helper)
+    {
+        ZoomSDKError can = [helper canDirectShare];
+        NSLog(@"CAN start direct share %d", can);
+        if(ZoomSDKError_Success == can)
+            [helper startDirectShare];
+    }
+    
+}
+- (IBAction)stopDS:(id)sender
+{
+    ZoomSDKDirectShareHelper* helper = [[[ZoomSDK sharedSDK] getPremeetingService] getDirectShareHelper];
+    if(helper)
+        [helper stopDirectShare];
+}
+- (IBAction)cancelDS:(id)sender
+{
+    //test input meeting number
+    if(_dsHandler)
+       // [_dsHandler inputMeetingNumber:_meetingNumber.stringValue];
+        [_dsHandler inputSharingKey:_meetingNumber.stringValue];
+    
+ /*  ZoomSDKDirectShareHelper* helper = [[[ZoomSDK sharedSDK] getPremeetingService] getDirectShareHelper];
+    if(helper)
+        [helper canDirectShare];*/
+}
+
+- (void)onDirectShareStatusReceived:(DirectShareStatus)status DirectShareReceived:(ZoomSDKDirectShareHandler *)handler
+{
+    NSLog(@"direct share status: %d", status);
+    if(handler)
+    {
+        _dsHandler = handler;
+    }
+}
 @end

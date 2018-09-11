@@ -8,6 +8,100 @@
 
 #import <Foundation/Foundation.h>
 #import "ZoomSDKErrors.h"
+#import "ZoomSDKBuildType.h"
+
+@interface ZoomSDKDirectShareHandler: NSObject
+/**
+ * @brief Designated to input meeting number to direct share
+ * @return an ZoomSDKError to tell client whether fuction call successfully.
+ */
+-(ZoomSDKError)inputMeetingNumber:(NSString*)meetingNumber;
+/**
+ * @brief Designated to input sharing key in Rooms to direct share
+ * @return an ZoomSDKError to tell client whether fuction call successfully.
+ */
+-(ZoomSDKError)inputSharingKey:(NSString*)shareKey;
+/**
+ * @brief Designated to cancel input action.
+ */
+-(ZoomSDKError)cancel;
+@end
+
+@protocol ZoomSDKDirectShareHelperDelegate<NSObject>
+/**
+ * @brief Designated notify directshare status change.
+ * @param status: direct share status
+ * @param handler: a ZoomSDKDirectShareHandler object only work when status is DirectShareStatus_NeedMeetingIDOrSharingKey or DirectShareStatus_WrongMeetingIDOrSharingKey
+ */
+#ifdef BUILD_FOR_ELECTRON
+-(void)onDirectShareStatusReceived:(NSNumber*)status DirectShareReceived:(ZoomSDKDirectShareHandler*)handler;
+#else
+-(void)onDirectShareStatusReceived:(DirectShareStatus)status DirectShareReceived:(ZoomSDKDirectShareHandler*)handler;
+#endif
+@end
+
+@interface ZoomSDKDirectShareHelper: NSObject
+{
+    id<ZoomSDKDirectShareHelperDelegate> _delegate;
+}
+@property(nonatomic, assign) id<ZoomSDKDirectShareHelperDelegate> delegate;
+/**
+ * @brief Designated to notify whether can start direct share by ultrasonic or not.
+ * @return an ZoomSDKError to tell client whether can start direct share, ZoomSDKError_Success means can, else means can't.
+ */
+-(ZoomSDKError)canDirectShare;
+/**
+ * @brief Designated to start direct share by ultrasonic.
+ * @return an ZoomSDKError to tell client whether start direct share successfully or not.
+ */
+-(ZoomSDKError)startDirectShare;
+/**
+ * @brief Designated to stop direct share.
+ * @return an ZoomSDKError to tell client whether stop direct share successfully or not.
+ */
+-(ZoomSDKError)stopDirectShare;
+@end
+
+@protocol ZoomSDKOutlookPluginDelegate <NSObject>
+/**
+ * @brief Designated outlookplugin request login notification.
+ */
+-(void)onOutlookPluginNeedLoginRequest;
+
+/**
+ * @brief Designated outlookplugin request schedule meeting notification.
+ */
+-(void)onOutlookPluginScheduleMeetingRequest;
+
+/**
+ * @brief Designated outlookplugin request defalut meeting topic notification.
+ * @param scheduleForEmail: schedule for email if have
+ * @param topic: if can change default meeting topic in this callback.
+ */
+-(void)onOutlookPluginDefaultMeetingTopicRequest:(NSString*)scheduleForEmail DefaultMeetingTopic:(NSString**)topic;
+@end
+
+
+@interface ZoomSDKOutlookPluginHelper : NSObject
+{
+    id<ZoomSDKOutlookPluginDelegate> _delegate;
+}
+@property(nonatomic, assign)id<ZoomSDKOutlookPluginDelegate> delegate;
+/**
+ * @brief Designated to start outlook plugin helper service.
+ * @param ipcName ipc Name used to connect to outlookplugin
+ * @param ipcNoti ipc notification used by outlookplugin connect with sdk.
+ * @param appName your app name.
+ * @param identity your app identity.
+ * @return an ZoomSDKError to tell client whether fuction call successfully or not.
+ */
+-(ZoomSDKError)start:(NSString*)ipcName IPCNoti:(NSString*)ipcNoti AppName:(NSString*)appName AppIdentity:(NSString*)identity;
+/**
+ * @brief Designated to stop outlook plugin helper service.
+ * @return an ZoomSDKError to tell client whether fuction call successfully or not.
+ */
+-(ZoomSDKError)stop;
+@end
 
 @interface ZoomSDKScheduleMeetingItem : NSObject
 {
@@ -53,6 +147,8 @@
 @interface ZoomSDKPremeetingService : NSObject
 {
     id<ZoomSDKPremeetingServiceDelegate> _delegate;
+    ZoomSDKOutlookPluginHelper* _outlookPluginHelper;
+    ZoomSDKDirectShareHelper* _directShareHelper;
 }
 
 /**
@@ -104,6 +200,18 @@
  * @return A ZoomSDKError to tell client whether list meeting successfully or not.
  */
 - (ZoomSDKError)showScheduleEditMeetingWindow:(BOOL)show Window:(NSWindow**)window MeetingID:(long long)meetingUniqueID;
+
+/**
+ * @brief Designated get a ZoomSDKOutlookPluginHelper object
+ * @return ZoomSDKOutlookPluginHelper object
+ */
+- (ZoomSDKOutlookPluginHelper*)getOutlookPluginHelper;
+
+/**
+ * @brief Designated get a ZoomSDKDirectShareHelper object
+ * @return ZoomSDKDirectShareHelper object
+ */
+- (ZoomSDKDirectShareHelper*)getDirectShareHelper;
 @end
 
 
@@ -132,6 +240,4 @@
  *
  */
 - (void)onDeleteMeeting:(ZoomSDKPremeetingError)error;
-
-
 @end

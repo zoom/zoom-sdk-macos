@@ -81,7 +81,7 @@
 
 /**
  * @brief Designated get SDK Identity.
- * @return ZoomSDKAccountInfo object the function call successfully synchronously.
+ * @return SDK indentity.
  */
 - (NSString*)getSDKIdentity;
 @end
