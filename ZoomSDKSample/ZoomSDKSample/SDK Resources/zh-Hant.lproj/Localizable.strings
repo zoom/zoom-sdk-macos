@@ -1,0 +1,2520 @@
+"%s is calling you from Zoom, click link to join.\r\n%s" = "%s 正在通過Zoom呼叫您，點擊鏈接即可參加會議。\r\n%s";
+"%@ has been invited" = "已邀請%@";
+"%@ and %@ have been invited." = "%@ 和 %@ 已被邀請。";
+"%@, %@ and %@ have been invited." = "已邀請%@， %@ 和 %@ 。";
+"%@, %@ and %d others have been invited." = "已邀請%@, %@ 和其他%d個人已被邀請。";
+"Click to invite participants" = "點擊以邀請與會者";
+"The invitation URL has been copied to the clipboard" = "邀請鏈接已複製到剪貼板。";
+"%@ invited you to join a meeting." = "%@ 邀請您加入會議。";
+
+"You invited %@ to join a meeting." = "您邀請%@加入會議。";
+
+
+
+"is calling..." = "呼叫...";
+"are calling..." = "呼叫...";
+"are calling you. You are already in this meeting." = "正在呼叫您，您已在會中。";
+"is calling you. You are already in this meeting." = "正在呼叫您，您已在會中。";
+"are calling you. You are already in another meeting, do you want to leave and join this meeting?" = "正在呼叫您，您正在另一場會中，是否要離開並加入本場會議？";
+"is calling you. You are already in another meeting, do you want to leave and join this meeting?" = "正在呼叫您，您正在另一場會中，是否要離開並加入本場會議？";
+
+"came online" = "已上線";
+"went offline" = "已離線";
+
+"Start with video" = "視訊會議";
+"Start without video" = "語音會議";
+"Back to Meeting" = "返回會議";
+"Computer audio and video start automatically" = "自動開啟電腦音訊和視訊";
+
+"Invite to Meeting" = "邀請參會";
+"Start Video Meeting" = "召開視訊會議";
+"Video Meeting" = "視訊會議";
+"View Profile" = "查看資料";
+"Join Meeting..." = "加入會議中...";
+
+"Log Out" = "登出";
+"Log In" = "當入";
+
+"Facebook IM" = "Facebook IM";
+"Google IM" = "Google IM";
+"IM" = "IM";
+"Chats" = "對話";
+"Tell Others About Zoom" = "向他人推薦Zoom";
+"Home" = "主頁";
+"Meetings" = "會議";
+
+"Login..." = "登入中...";
+"Connecting..." = "連接中...";
+"Authenticating..." = "驗證中...";
+"Negotiating..." = "處理中...";
+
+"Cannot get your favorite information, Please check your network connection." = "無法獲取您的常用聯絡人資訊，請檢查您的網絡連接。";
+"Login to Facebook was cancelled." = "登入Facebook已經被取消";
+
+"Sign Up" = "註冊";
+"Forgot your password?" = "忘記您的密碼？";
+
+"General" = "一般";
+"Feedback" = "意見回饋";
+"Record" = "錄影";
+"Account" = "帳戶";
+"Video" = "視訊";
+"Statistics" = "統計";
+"The free disk space is less than 1G. Select another folder or delete some files." = "硬碟可用空間小於1G。請選擇其他檔案夾或刪除一些檔案夾中的文件。";
+"%.2f GB remaining" = "剩餘 %.2f GB";
+"Work Email" = "公司Email";
+"Gmail Account" = "Gmail 帳號";
+"Facebook Account" = "Facebook 帳號";
+"Single Sign On" = "單點登錄";
+"Upgrade to Pro" = "升級至付費帳號";
+"Change Subscription Plan" = "更改付費方案";
+"Capture 720p by default" = "默認採集720p視頻";
+
+"1. Go to %@\r\n2. Enter ID: %@" = "1. 請至 %@\r\n2. 輸入 ID: %@";
+"The invitation URL has been copied to Clipboard." = "邀請鏈接已複製至剪貼板。";
+"The invitation Email has been copied to Clipboard." = "邀請郵件已複製至剪貼板。";
+
+"Version:%@" = "版本:%@";
+"Send Feedback" = "送出意見回饋";
+"Sending..." = "傳送中...";
+"Failed to send your feedback. Please try again later." = "發送建議失敗，稍後請重試。";
+"Thanks for your feedback!\r\n\r\nYour feedback is very important to us, and we're working hard to improve our service." = "謝謝您的建議！\r\n\r\n您的建議對我們非常重要，我們將更努力地改善我們的服務。";
+
+"Please join Zoom meeting in progress" = "請加入正在進行的Zoom會議";
+"Please join my meeting.\r\n%@" = "請加入我的會議。\r\n%@";
+
+"Participant ID: %d   Meeting ID: %@" = "參會者ID： %d   會議號：%@";
+"Participant ID: %d   %d-Minutes Meeting ID: %@" = "與會者ID: %d   %d分鐘 會議ID: %@";
+"-Minutes" = "分鐘";
+"Zoom Meeting ID: %@" = "Zoom 會議號：%@";
+"Panelist(%d)  Attendee(%d)" = "嘉賓(%d)  觀眾(%d)";
+"Waiting for %s to join..." = "等待 %s 加入會議...";
+"Please use the Invite button to invite more people" = "請使用邀請按鍵邀請更多人";
+"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation." = "您邀請的人無需預先安裝Zoom即可接受會議邀請";
+"URL: " = "URL: ";
+"Invite people to join meeting" = "邀請人加入會議";
+"Zoom Number: %@" = "Zoom 號碼: %@";
+"Copy" = "複製";
+"Meeting ID" = "會議號";
+"Spotlight Video" = "設為焦點視訊";
+"Cancel the Spotlight Video" = "取消焦點視訊";
+"You are the host now" = "您現已是主持人";
+"%@ is the host now" = "%@現在是主持人";
+"You are the co-host now" = "您現已是聯席主持人";
+"%@ is the co-host now" = "%@現在成为聯席主持人";
+"Less than a minute" = "少於一分鐘";
+"Remaining Meeting Time" = "剩餘會議時間長度";
+
+//join meeting dialog
+"Join Meeting" = "加入會議";
+"Join a Meeting" = "加入一個會議";
+"Please enter your meeting ID and your name" = "請輸入會議號和您的姓名";
+"Your Name" = "您的姓名";
+"Invalid video meeting ID!" = "會議號不存在。";
+"Please input your screen name here" = "請於此輸入您會議中欲顯示的名稱";
+"Please enter your name." = "請輸入您的姓名。";
+
+//leave meeting dialog
+"I'd like to give feedback to Zoom" =  "我想要對Zoom提出意見與回饋";
+"Leave Meeting" = "離開會議";
+"Do you want to leave this meeting?" = "確認離開此次會議？";
+"End Meeting" = "結束會議";
+"If you want to keep this meeting open, please assign another Host before you click Leave Meeting." = "如果您不想中斷會議，請在離開前指定一個主持人。";
+"\nClick Cancel if you want to keep this meeting open." = "\n若您要讓這個會議持續進行，請按 取消 鍵。";
+"Please enter your feedback here" = "請於此輸入您的意見與回饋";
+"End Meeting for All" = "結束全部會議";
+"Join webinar as a panelist" = "作為嘉賓加入網絡研討會";
+"Start your webinar" = "召開您的網路研討會";
+"Switch Account to Join" = "切換帳戶加會";
+"Sign In to Join" = "登入加會";
+
+//join schedual meeting dialog
+"Please enter the meeting password" = "請輸入會議密碼";
+"Password" = "密碼";
+"Password error!" = "密碼錯誤!";
+"LN_Waiting_Host_Meeting_35641" = "請等待主持人開啟會議。";
+"LN_Waiting_Host_Webinar_35641" = "請等待主持人開啟網絡研討會";
+"LN_Waiting_Admit_All_39691" = "允許所有人入會";
+"LN_Meeting_List_Item_Add_Calendar_25869" = "添加日曆";
+"LN_MeetingList_Item_Info_Host_25869" = "主持人：%@\n";
+"LN_Metting_RemoteControl_Abort_Control_28437" = "中斷遠程控制"; //[ZOOM-28437]
+"LN_Metting_RemoteControl_Who_Is_Controlling_28437" =  "（控制）" ;//[ZOOM-28437]
+"LN_Metting_RemoteControl_SearchUser_NOResult_28437" = "沒有結果"; //[ZOOM-28437]
+"LN_Meeting_IsAutoAcceptRemoteControl_28437" = "自動接受所有請求";//[ZOOM-28437]
+"LN_Meeting_QA_Tablist_Dismiss_21381" = "已關閉";
+"LN_Meeting_QA_No_Dismiss_Question_21381" = "沒有被關閉的問題";
+"LN_Meeting_QA_Dismiss_21381" = "忽略問題";
+"LN_Meeting_QA_Open_21381" = "未回答";
+"LN_Call_Accepted_35364" = "來電 - 接受";
+"LN_Call_Incoming_35364" = "來電";
+"LN_Mute_On_Entry_Alert_Title_35357" = "加入會議時靜音";
+"LN_Mute_On_Entry_Alert_Content_35357" = "所有新參會者將被靜音";
+"LN_Schedule_OpenICSFile_ForOtherCal_37779" = "用默認日曆打開（.ics）";
+"LN_Hide_ChatWnd_In_Screenshot_38445" = "在截圖中隱藏聊天窗口";
+"Meeting Detail" = "會議詳情";
+"While waiting, please check your audio and video settings" = "等待時，請檢查您的音頻和視頻設置";
+"Topic" = "主題";
+"Time" = "時間";
+"Date" = "日期";
+"Verifying password..." = "驗證密碼中...";
+"This is a recurring meeting" = "這是一個定期會議";
+"Waiting for Host %@" = "等待會議主持人 %@";
+
+//
+"Stop Screen Share" = "停止螢幕共享";
+"Stop Share"= "停止共享";
+"LN_Share_21795" = "共享螢幕";
+"Share Screen" = "共享螢幕";
+"Share screen" = "共享螢幕";
+"Share" = "共享";
+"Share a New Window" = "共享一個新的視窗";
+"Participants" = "參會者";
+"Manage Participants" = "管理參會者";
+"Chat" = "對話";
+"Chat with All" = "與全體對話";
+"People (%d)" = "(%d)人";
+"End" = "結束";
+"Settings" = "設定";
+"Hide Video Panel" = "隱藏視訊面板";
+"Show Video Panel" = "顯示視訊面板";
+"Show Active Speaker panel" = "顯示演講者視圖";
+"Hide Active Speaker panel" = "隱藏發言人面板";
+"Exit Full Screen. Meeting ID:%@" = "退出全屏，會議號：%@";
+"Gallery View" = "分割視訊畫面";
+"Speaker View" = "發言者視訊畫面";
+"Enter Minimal View" = "進入最小視窗模式";
+"Exit Minimal View" = "離開最小視窗模式";
+"Enter Full Screen" = "進入全螢幕模式";
+"Exit Full Screen" = "退出全螢幕模式";
+"Rename" = "更名";
+"More" = "更多";
+"Meeting Information" = "會議訊息";
+"Meeting" = "會議";
+"Put Attendee On Hold" = "設為等待狀態";
+"Stop attendee on hold" = "停止等待狀態";
+"You are on hold" = "請稍候片刻";
+"On Hold" = "等待狀態";
+"Stop on-hold" = "停止待機";
+"Raise Hand" = "舉手";
+"Lower Hand" = "手放下";
+"Lower All Hands" = "全體手放下";
+"Show Non-Video Participants" = "顯示無視訊的與會者";
+"is talking ..." = "正在發言 ...";
+"Total non-video participants:" = "所有無視訊的與會者:";
+"Connected" = "已連結";
+"Calling..." = "呼叫中...";
+"Ringing..." = "振鈴中...";
+"Call accepted" = "電話已接通";
+"Failed to Call" = "呼叫失敗";
+"Success" = "呼叫成功";
+"Disconnection Call" = "中斷呼叫";
+"Claim Host" = "獲取主持人權限";
+"Attendee List" = "參加者列表";
+"Allow attendees to view the participant counts" = "允許觀眾查看參會人數";
+
+
+"Mute All" = "全體靜音";
+"Unmute All" = "解除全體靜音";
+"Unmute Audio" = "解除音訊靜音";
+"Mute Audio" = "音訊靜音";
+"Audio" = "音訊";
+"Click to join audio" = "點擊連接語音";
+"Unmute Telephone" = "解除電話靜音";
+"Mute Telephone" = "電話靜音";
+"Mute" = "靜音";
+"Unmute" = "解除靜音";
+"muted" = "已靜音";
+"Mute Participants On Entry" = "加入會議時靜音";
+"Play Enter/Exit Chime" = "進出會議時播放提示音";
+"You are muted now. Press Shift+Command+A to unmute your microphone if you want to speak." = "您已被靜音，如需發言，可按 Shift+Command+A 解除靜音。";
+"You are using the computer audio" = "您正使用電腦音訊";
+"You are now using your phone for audio in this meeting" = "您正使用電話";
+"Join Teleconference" = "加入電話語音會議";
+"Current and new participants will be muted" = "全體包括新參會者靜音";
+"All participants are unmuted" = "所有與會者已被解除靜音";
+"Allow participants to unmute themselves" = "允許與會者自我解除靜音";
+"You are muted by host" = "您已被會議主持人靜音";
+"You are unmuted by host" = "您已被會議主持人解除靜音";
+"The host has muted all participants" = "所有人已被主持人靜音";
+"The host has unmuted all participants" = "所有人已被主持人解除靜音";
+"You are using computer mic & speaker now" = "您正使用電腦的麥克風與揚聲器";
+"You are using phone now" = "您正使用電話";
+"Mute My Audio" = "靜音";
+"Unmute My Audio" = "解除靜音";
+"Mute My Phone" = "靜音";
+"Unmute My Phone" = "解除靜音";
+"Join Audio Conference via Mic & Speaker" = "使用麥克風與揚聲器加入語音會議";
+"Leave Audio Conference" = "離開語音會議";
+"Disconnected" = "已中斷";
+"Press Command-Shift-A to mute or unmute your audio" = "請按 Command-Shift-A 以靜音或解除靜音";
+"Audio Options" = "音訊選項";
+"Audio Conference" = "語音會議";
+"Audio Settings" = "音訊設定";
+"Video Settings" = "視訊設定";
+"Use Computer Mic & Speaker" = "使用電腦的麥克風與揚聲器";
+"Use Telephone" = "使用電話";
+"You are not in the audio conference yet." = "您已經不在語音會議中了。";
+"Computer Audio Connected" = "電腦音訊已連結";
+"Phone Connected" = "電話已連結";
+"Test Computer Mic & Speakers" = "電腦語音測試";
+"You may have problem hearing the audio from other participants.\nConsider switching to phone." = "如果無法聽清其他參會者的聲音，\n可以嘗試使用電話加會。";
+"Total %d phone call-in listener" = "共有%d個電話聽眾";
+"Total %d phone call-in listeners" = "共有%d個電話聽眾";
+"Zoom detects a problem with your audio. If you enter your Mac computer password, we will attempt to restart your audio service to fix it.\n\n" = "Zoom 偵測到您的音訊有問題。我們會嘗試重新啟用您的音訊服務來修復這個問題。 \n\n";
+"Follow the instructions below to join audio conference." = "請依照以下的說明加入一個語音會議。";
+"Computer Audio" = "電腦音訊";
+"Dial In" = "撥入";
+"Call Me" = "呼叫我";
+"Hang Up" = "掛斷";
+"Automatically join audio by computer when joining a meeting" = "加入語音會議時使用本機麥克風和揚聲器";
+"Already joined by phone? Enter " = "已通過電話參加會議？請按 ";
+"on your phone." = "。";
+"Dial" = "撥號";
+"Toll free" = "免付費電話";
+"(US or Canda only)" = "(僅支持美國和加拿大地區)";
+"The number you want us to call you" = "您希望我們呼叫的號碼是：";
+"Remember the number on this computer" = "在此電腦上記住該號碼";
+"Failed to disconnect call" = "中斷呼叫連接失敗";
+"Your computer audio is disconnected as we detected an echo." = "由於我們檢測到迴聲，您的電腦音訊將被中斷。";
+"Follow the instructions below to join audio." = "請依照以下的說明加入一個語音會議。";
+"To hear others, please join audio" = "聽到其他人的發言，請加入語音會議。";
+"Phone Call" = "由電話加入";
+"Your audio is connected using Dial In." = "正在使用電話連接音訊";
+"Your audio is connected using Call Me." = "正通過電話與您進行音訊連接。";
+
+//close audio without join audio dialog
+"No Audio" = "無音訊";
+"Do you want to continue without audio?" = "確認在無音頻情況下繼續加會？";
+"You won't be able to hear other participants in the meeting, nor will they hear you." = "您聽不到其他參會者的聲音，他們也無法聽到您。";
+"Join Audio" = "連接語音";
+"Leave Computer Audio" = "停用電腦語音設備";
+
+"Start Video" = "啟用視訊";
+"Stop Video" = "停止視訊";
+"Click to check your video conference options" = "點擊以檢查您的視訊會議選項";
+"Host has stopped your video" = "主持人已關閉您的視訊";
+"Show Video" = "顯示視頻";
+"Hide Video" = "隱藏視頻";
+"Exit Minimal Video" = "離開最小視訊模式";
+"Mute Video" = "關閉視訊";
+
+"Resume" = "恢復";
+"Talking: " = "發言中: ";
+
+"Lock Meeting" = "鎖住會議";
+"Unlock Meeting" = "會議解鎖";
+"Lock screen sharing" = "鎖住螢幕共享";
+"Unlock screen sharing" = "螢幕共享解鎖";
+"Start Recording" = "開始錄影";
+"Resume Recording" = "继续錄影";
+"Pause Recording" = "暂停錄影";
+"Stop Recording" = "停止錄影";
+"Allow Record" = "允許錄影";
+"Forbid Record" = "禁止錄影";
+"Make Host" = "設定為主持人";
+"Remove" = "移除";
+"Select Window" = "選擇視窗";
+"Pause" = "停止";
+"Annotate" = "註記";
+"Share Control to" = "共享控制給";
+"Cancel Remote Control" = "取消遠程控制";
+"Enable Attendee Annotation" = "允許與會者標註";
+"Disable Attendee Annotation" = "禁止與會者標註";
+"Change Role to Attendee" = "變更為觀眾";
+"%@ will be rejoining the webinar as a attendee" = "%@ 將以觀眾身份重新加入網絡研討會";
+"%@ will be rejoining the webinar as a panelist" = "%@ 將以嘉賓身份重新加入網絡研討會";
+
+
+"Show Call In Users" = "顯示電話呼入用戶";
+"Hide Call In Users" = "隱藏電話呼入用戶";
+
+"Double-click to enter full screen mode." = "雙擊進入全螢幕模式。";
+"Press ESC or double-click to exit full screen mode" = "按 ESC 或雙擊退出全螢幕模式。";
+"Login as Host" = "以主持人身份登入";
+
+"to %@ (privately)" = "給 %@ (私密)";
+"from %@ (privately)" = "來自於 %@ (私密)";
+"from %@ to All" = "來自於 %@ 給全體";
+"Host" = "主持人";
+"me" = "我";
+"participant ID" = "與會者 ID";
+"Participant ID:" = "參會者 ID：";
+"To:" = "傳送到:";
+
+"The meeting has problem. Error code : %d" = "這個會議出現錯誤。錯誤代碼 : %d";
+"This meeting ID is not valid. Please check and try again." = "會議號不存在，請檢查並重試。";
+"This meeting has ended." = "此會議已結束。";
+"Our service is currently busy. Please try again later." = "我們的服務目前忙碌中。請稍候再試。";
+"Can't connect to our service, please check your network connection and try again." = "無法連接上我們的服務，請檢查您的網絡連接並重試。";
+"Can't connect to our service, please check your network connection and try again. Error code %d" = "無法連接上我們的服務，請檢查您的網絡連接並重試。 錯誤代碼 %d";
+"This meeting has reached a maximum of %d participants. Please try again later." = "此會議室已達%d人上限，請稍後重試。";
+"This meeting has been locked by host" = "會議已被主持人鎖住無法進入";
+"You have a meeting that is currently in-progress. Please end it to start a new meeting." = "您當前有一場會議正在召開，請結束本場會議後再開始一場新的會議。";
+"The host has a meeting that is currently in-progress. Once that meeting ends, you can join this meeting." = "本場會議的主持人正在召開另一場會議，一旦那場會議結束，您即可進入本場會議。";
+"We're sorry; the registration for this webinar has reached its maximum." = "非常抱歉，本場網絡研討會的報名者已達上限。";
+"Someone has tried to use the host’s email to register for the webinar" = "有人正在嘗試使用主持人郵箱註冊本場網絡研討會";
+"If you are the host, please sign in to start the webinar." = "如果您是主持人，請登錄並開啟網絡研討會。";
+"If you were invited as a panelist, please join the webinar from the link in your email invitation." = "如果您的受邀身份為嘉賓，請通過郵件裡的邀請鏈接加入本場網絡研討會。";
+"The host has declined your webinar registration" = "主持人拒絕了您的網絡研討會註冊請求";
+
+"You are removed by host." = "您已經被會議主持人移除會議外。";
+"Host ended the meeting." = "主持人結束會議";
+"Timed out before host join." = "主持人加入會議前已逾時。";
+"No free time left." = "沒有任何免費的時間了。";
+"End Other Meeting" = "結束其他會議";
+"This meeting has ended as someone has started a new meeting with this account" = "由於他人用此帳號開啟了一場新的會議，本場會議結束";
+"The meeting has ended after 40 minutes idle time." = "系統檢測到您在40分鐘內沒有操作電腦，已結束會議。";
+
+"ID" = "ID";
+"Your screen sharing is paused" = "您的螢幕共享已被暫停";
+"You are viewing %@'s screen" = "您正在看 %@ 的螢幕";
+"You are viewing %@' screen" = "您正在看 %@ 的螢幕";
+"You are controlling %@'s screen" = "您正在控制 %@ 的螢幕";
+"'s screen" = "的螢幕";
+"Sharing is paused. Bring your shared window to the front" = "共享已暫停，請將您共享的窗口置於最上方";
+"Select a Window to Share" = "選擇準備共享的窗口";
+"Click here to change to window view" = "請點擊這裡更改視窗觀看模式";
+"Click here to change to 1:1 view" = "點擊此處將切換至1:1 觀看模式";
+"Fit to Window" = "依視窗大小顯示";
+"Original Size" = "原始大小";
+"View Mode" = "觀看模式";
+"Give Mouse/Keyboard Control to" = "將滑鼠/鍵盤的控制權給";
+"Choose what you want to share" = "選擇您想要共享的視窗或應用程式";
+"Click to Share Screen" = "點擊以共享螢幕";
+"Start Share" = "開始共享";
+"This will stop other\'s screen sharing. Do you want to continue?" = "這將停止他人的螢幕共用，是否繼續？";
+"Select a window or an application that you want to share" = "選擇一個您想共享的視窗或應用程式";
+"Share Screen with Computer Sound" = "共享螢幕和電腦聲音";
+"Share Screen Only" = "僅共享螢幕";
+"Screen sharing has failed to start. Please try again later.\n\nError Code: %d" = "螢幕共享失敗，請稍後重試。\n\n錯誤代碼： %d";
+" has started screen sharing.\n\nDouble-click to enter full screen mode." = " 已開始共享螢幕。\n\n雙擊即可進入全螢幕模式。";
+" has started screen sharing" = " 已開始共享螢幕";
+"Share computer sound" = "共享電腦聲音";
+"Optimize for full-screen video clip" = "視頻流暢度優先";
+"Advanced Options" = "進階選項";
+"Other participants will be able to hear the audio running on your computer as well as see your shared screen." = "在您共享螢幕的同時，其他與會者也能聽到您電腦上的聲音。";
+"Optimize the screen sharing for the best full-screen video clip viewing experience." = "視頻流暢度優先以獲得更好的共享視頻觀看體驗。";
+"Your are viewing a portion of the shared content; To see the fullimage, select \"Fit to Window\" in the menu." = "您現在看到的是整個共享內容的一部分，如果您想看到完整的共享內容，在功能表中選擇\"按窗口大小顯示\"。";
+"The shared content is fit to your screen. To see the original size, click \"Original size\" in the menu." = "您現在看到是依視窗大小顯示的共享內容，如何您想看到原始大小的共享內容，在選單中選擇\"原始大小\"。";
+
+"Share computer audio during screen sharing" = "當螢幕共享時共享電腦音訊";
+"Disable computer audio during screen sharing" = "螢幕共享時禁止共享電腦音訊";
+"Your microphone is muted so others can hear remote audio during screen sharing." = "您的麥克風已靜音，因此其他人只能聽到共享內容的聲音。";
+"Your microphone is muted so you can hear remote audio during screen sharing." = "您的麥克風已靜音，因此其他人只能聽到共享內容的聲音。";
+"Your microphone is unmuted. Screen sharing with remote audio has stopped." = "您的麥克風已解除靜音，已停止遠程音訊的螢幕共享。";
+"You cannot unmute yourself because the host muted you." = "您無法自我解除靜音，因為主持人已將您靜音。";
+"Your speaker is muted for audio sharing. It will recover when audio sharing ends." = "您的揚聲器已經被靜音以進行音訊共享。當音訊共享結束時，會解除揚聲器靜音。";
+"To share your computer audio, please install the Zoom audio device.\n\n" = "為共享您的電腦音訊，請安裝 Zoom 音訊設備。\n\n";
+
+"Your microphone is muted to focus on %@ as the spotlight video" = "您的麥克風已被靜音以鎖定%@為焦點視頻";
+"Your microphone is unmuted. Spotlight video has stopped." = "您的麥克風已解除靜音，焦點視頻已停止。";
+
+"Me" = "我";
+"Pin Video" = "選定視訊";
+"LN_Unpin_Video_30742" = "取消鎖定";
+"Switch to Active Speaker" = "切換到發言人";
+"Pin video on first screen"= "將視頻鎖定在螢幕1上";
+"Pin video on second screen"= "將視頻鎖定在螢幕2上 ";
+"LN_Unpin_First_Screen_34308" = "從螢幕1上取消鎖定";
+"LN_Unpin_Screen_Screen_34308" = "從螢幕2上取消鎖定";
+
+
+
+"Your default microphone has changed to %@ and will now be used." = "您的默認麥克風已被更換成%@。";
+"Default audio device has changed" = "預設音訊設備已變更";
+"Your speaker %@ is not working. Please go to Settings to try a different one." = "您的麥克風 %@ 無法使用。請查看設定並更換麥克風。";
+"Speaker Error" = "揚聲器錯誤";
+"Microphone Error" = "麥克風錯誤";
+"Microphone status" = "麥克風狀態";
+"Your microphone %@ is not working. Please go to Settings to try a different one." = "您的麥克風 %@ 無法使用。請查看設定並更換麥克風。";
+"Zoom can't detect your Microphone. Please check the Microphone setup." = "Zoom無法偵測到您的麥克風。請檢查麥克風設定。";
+"Zoom can't detect your Speaker. Please check the Speaker setup." = "Zoom無法偵測到您的揚聲器。請檢查揚聲器設定。";
+"Zoom can't detect the sound from your Microphone %@." = "Zoom無法偵測到您的麥克風 %@的聲音。";
+"Your default speaker has changed to %@ and will now be used." = "您的默認揚聲器已被更換成%@。";
+
+"Your meeting is scheduled." = "安排會議成功。";
+"Your recurring meetings are scheduled." = "您的周期性會議已經完成設定。";
+"Your meeting is updated." = "您的會議已經更新。";
+"Your recurring meetings are updated." = "您的周期性會議已經更新。";
+"Please join my scheduled meeting.\r\n%@\r\n\r\n" = "請加入我安排的會議。\r\n%@\r\n\r\n";
+"Meeting password: %@\r\n" = "會議密碼: %@\r\n";
+"Meeting time: %@ at %@\r\n" = "會議時間: %@ 於 %@\r\n";
+"Meeting time: Recurring\r\n" = "會議時間：週期的\r\n";
+"Meeting ID: %@\r\n" = "會議號：%@\r\n";
+"Can't schedule meeting. Please check your network connection and try again." = "無法安排會議。請檢查您的網絡連接並重試。";
+"Can't schedule the meeting. Error code : %d" = "無法安排會議。 錯誤代碼 : %d";
+"Zoom meeting invitation - %@" = "Zoom 會議邀請 - %@";
+"Update Meeting Info error for meeting ID: %@, error code: %d." = "會議號為 %@ 的會議資訊更新失敗，錯誤代碼：%d。";
+
+"This meeting is scheduled for %@" = "此會議已經為 %@ 安排好了";
+"This Meeting ID is taken. Please choose a different ID." = "會議號已被佔用，請選擇其它會議號。";
+"Sorry, your request is rejected." = "很抱歉，您的請求已被拒絕。";
+"Failed to apply Personal Meeting ID. Unknown error." = "提交個人會議號失敗，未知的錯誤。";
+"Failed to apply personal meeting ID. Error code: %d." = "提交個人會議號失敗，錯誤代碼：%d 。";
+"Can not edit meeting ID while meeting is in progress." = "會議正在召開，無法編輯會議號。";
+
+
+"My Meeting" = "我的會議";
+"'s Zoom Meeting" = "的 Zoom 會議";
+"' Zoom Meeting" = "的 Zoom 會議";
+
+"%@ wants to be able to chat with you. Okay?" = "%@ 想要能夠與您聊天。同意嗎？";
+"Your invitation has been sent successfully." = "您的邀請已發送成功。";
+"Your invitation failed to sent." = "您的邀請發送失敗。";
+"%@ will be removed from your IM list." = "%@將從您的IM列表中移除。";
+"%@ will be removed from your favorite list." = "%@ 將從您的好友列表中移除。";
+"Test Speaker" = "檢測揚聲器";
+"Test Mic" = "檢測麥克風";
+"Stop" = "停止";
+"Your" = "您的";
+"'s" = "的";
+"%@ network bandwidth is low." = "%@ 網絡頻寬較低。";
+
+"Your free meeting will end in 10 minutes, please upgrade to a paid account at $14.99 per month for unlimited minutes." = "您的免費會議時間僅剩10分鐘，請升級為付費帳戶，享受無時長限制的會議服務。";
+"Meeting Alert" = "會議提醒";
+"This free meeting will end in 10 minutes. The meeting host needs to upgrade to a paid account at $14.99 per month for unlimited minutes." = "本次免費會議時間僅剩10分鐘，會議主持人需要升級為付費帳戶，便可享受無時長限制的會議服務。";
+"This meeting will end in %d minutes because the host has not joined" = "因為主持人沒有加會，此會議將在%d分鐘結束。";
+"This free HD meeting has ended. Thank you for choosing Zoom!" = "這場免費高畫質會議已經結束。謝謝您使用Zoom！";
+"The meeting has ended because the host doesn't show up." = "由於主持人未出席，會議已結束。";
+"You are removed from this meeting." = "您已被移出本場會議。";
+"This meeting has been ended by host" = "會議已被主持人結束";
+"Do you want to upgrade your account?" = "確認升級您的帳號？";
+"Do you want to change the host to %@?" = "確認將主持人更改為 %@？";
+"Do you want to remove %@?" = "確認移除 %@？";
+"No new attendees can join this meeting once locked." = "一旦鎖定會議，新的觀眾將無法進入會議。";
+"New attendees can join this meeting once unlocked." = "會議一旦解鎖，新的觀眾可加入會議。";
+"You have left this meeting." = "您已經離開這場會議";
+"Upgrade Account" = "升級帳號";
+"OK" = "確定";
+"Cancel" = "取消";
+"Continue" = "繼續";
+"Upgrade" = "升級";
+"Search" = "搜尋";
+"Check" = "檢查";
+"Login" = "登入";
+"login" = "登入";
+
+"Host allows you to record the meeting." = "會議主持人允許您進行會議錄影。";
+"Host disallows you to record the meeting." = "會議主持人不允許您進行會議錄影。";
+"Your recording has stopped. The disk space is insufficient." = "您的錄製已停止。磁片空間不足。";
+"The recorded file will be converted to mp4 when the meeting ends" = "當會議結束後，錄影檔案將被轉換成mp4格式";
+"You will get an email notification when the cloud recording is ready." = "雲錄製完成後，您將會收到Email通知。";
+"Please request record permission from the meeting host." = "請向會議主持人要求錄影權限。";
+"No speaker is detected for this recording that is in-progress. Please check your speaker settings." = "在錄影的過程中沒有偵測到您的揚聲器，請檢查您的揚聲器設定。";
+"Record to the Cloud" = "雲錄影";
+"Record on this Computer" = "本機錄影";
+"Connecting to cloud server..." = "正在連結雲端伺服器...";
+"Failed to connect cloud server." = "連結雲端伺服器失敗";
+"Recording" = "錄影";
+
+//transcode
+"Zoom - Converting the meeting recording" = "Zoom - 轉換錄製文件";
+"You have a recording that needs to be converted before viewing" = "觀看前您需要將錄影檔案進行轉換";
+"You may convert your recording later by double clicking .zoom file located in the recording folder." = "您還可以通過雙擊儲存在錄影目錄中的.zoom文件進行轉換。";
+"Save my recordings at:" = "將我的錄製文檔保存在：";
+"Choose a new location..." = "選擇一個新的儲存位置...";
+"Save" = "儲存";
+"Transcode will be stopped. Would you like to continue?" = "轉檔已經停止，請問您要繼續嗎？";
+"Quit" = "退出";
+"Choose" = "選擇";
+
+//
+"No Upcoming Meetings" = "沒有即將開始的會議";
+"The scheduled meetings will be listed here." = "安排好的會議將在這裡顯示。";
+"No Recorded Files" = "沒有錄製完成的檔案";
+"The recorded files will be listed here." = "錄製好的檔案將在此顯示。";
+"No online buddies" = "沒有好友在線";
+"No Favorite Contacts" = "暫無常用聯絡人";
+"Free Account" = "免費帳號";
+"Pro Account" = "Pro 帳號";
+"Corp Account" = "Corp Account";
+"My Profile" = "我的資料";
+"Change My Picture" = "更換我的圖片";
+
+//warning
+"All attendees will be muted to hear the remote computer audio." = "所有人將被靜音，以便能聽到遠端電腦音訊。";
+"This action will allow all attendees to unmute themselves. Do you want to continue?" = "此操作將允許所有觀眾自行解除靜音，你想繼續嗎？";
+"Your account has been upgraded successfully. Your meeting has no time limitation any more." = "您的帳號升級成功，您的會議將不再有時間限制。";
+"The meeting host has upgraded to Pro account. This meeting has no time limitation anymore." = "會議主持人已升級至付費帳號，此會議將不再有時間限制。";
+"Host disabled attendee screen sharing." = "主持人禁止觀眾螢幕共享。";
+"Only host can screen share once locked." = "一旦鎖定將只有主持人有權共享。";
+"Attendee can now screen share once unlocked" = "一旦解鎖觀眾將可進行螢幕共享";
+"You cannot start screen share while the other participant is sharing." = "他人正在共享螢幕時，此時您無法進行螢幕共享。";
+"Meeting host %@ is not in the meeting, please login as %@ to claim the host role." = "會議主持人%@ 尚未進入會議，請以 %@ 身份登入並請求成為主持人。";
+"Meeting host is not in the meeting, please login as host to claim the host role" = "會議主持人尚未進入會議，請以會議主持人身份登入以成為主持人。";
+"Enter new name here:" = "請於此輸入新的姓名:";
+"Finish registration to join the webinar." = "完成網絡研討會註冊。";
+"Join Webinar" = "加入網絡研討會";
+"You can't add more panelists because this meeting has reached its maximum capacity of %d panelists." = "您不能再增加嘉賓了，因為此會議人數已達 %d 人上限，";
+"You need to be signed in with the specified Zoom account to join this meeting. Please contact the host for more information." = "您需要使用指定的Zoom賬號登陸後加會，請聯繫會議主持人了解詳情。";
+
+
+"Mouse" = "滑鼠";
+"Text" = "文字";
+"Pen" = "筆";
+"Highlighter" = "重點";
+"Spotlight" = "焦點";
+"Arrow" = "箭頭";
+"Erase All" = "全部清除";
+"LN_Clear_All_Drawings_34988" = "清除所有批註";
+"LN_Clear_My_Drawings_34988" = "清除我的批註";
+"LN_Clear_Viewers_Drawing_34988" = "清除觀看者的批註";
+"Clear All Drawing" = "清除所有畫圖";
+"Clear My Drawing" = "清除我的畫圖";
+"Clear Other's Drawing" = "清除他人的畫圖";
+"Eraser" = "擦除";
+"Choose Color" = "選擇顏色";
+"Color" = "顏色";
+"Draw" = "畫";
+"Undo" = "撤銷";
+"Redo" = "重做";
+"Whiteboard" = "白板";
+"Whiteboard saved." = "白板已保存。";
+"Screen saved." = "屏幕内容已保存。";
+"Show in Finder" = "在Finder中显示";
+
+"Remote Control"= "遠端控制";
+"Click to start the remote control of the shared screen" = "點擊以啟動已共享之螢幕的遠端控制";
+"%@ is requesting remote control." = "%@ 正在請求遠端控制權。";
+"Request Remote Control" = "請求遠端控制權";
+"Give Up Remote Control" = "放棄遠端控制權";
+"Exit fullscreen will stop your remote control. Do you want to continue?" = "退出全屏將停止遠程控制，是否繼續？";
+"Forbid remote control" = "禁止遠端控制";
+"Allow remote control" = "允許遠端控制";
+
+"Switching to gallery view will degrade the recording quality. Do you want to continue?" = "切換至分割畫面將會降低錄影品量。是否繼續？";
+"Switching to speaker view will improve the recording quality. Do you want to continue?" = "切換至發言者畫面將可改善錄影品質。是否繼續？";
+"You cannot minimize Zoom when you are recording this meeting." = "會議錄影中您無法將Zoom最小化。";
+"This feature requires 2.0 GHz Dual-Core CPU or higher." = "此功能需要至少雙核2.0 Ghz CPU支持。";
+
+"Do you want to delete this meeting?" = "確認刪除此次會議？";
+"Do you want to delete this recorded file?" = "確認刪除此錄製文檔？";
+"Screen sharing has stopped as the shared window is closed." = "由於共享的視窗被關閉，共享螢幕結束。";
+"Click Test Speaker to make sure you can hear others" =  "點擊測試揚聲器以確定您可以聽到他人的聲音";
+"If you can not hear the test sound, select a different speaker" =  "若您無法聽到測試音效，請選擇另一個揚聲器測試。";
+"If you can't make your Speaker or Mic work, click Join Teleconference" = "若您無法使用揚聲器或者麥克風，請點擊加入電話會議。";
+"LN_Invitation_CopiedToClipboard_21232" = "邀請信息已經拷貝到剪貼板。";
+"%@ is controlling your screen" = "%@ 正在控制您的螢幕";
+"Click below to change your picture and name." = "點擊下方以更改您的圖片與姓名。";
+
+"Convert" = "轉換";
+
+"Hide thumbnail video" = "隱藏視訊縮圖";
+"Show active speaker video" = "顯示發言人視頻";
+"Show small active speaker video" = "顯示發言人的小視頻";
+"Show large active speaker video" = "顯示發言人的大視頻";
+"Show thumbnail video" = "顯示視訊縮圖";
+"Previous Page" = "前一頁";
+"Next Page" = "下一頁";
+"Start a Meeting" = "召開一個會議";
+"Start a Group Meeting" = "召開一個群組會議";
+"Cannot delete this meeting. Error code: %d." = "無法刪除此會議。錯誤代碼: %d.";
+
+"Zoom Cloud Meetings" = "Zoom 雲會議";
+"Schedule a new meeting" = "Schedule a new meeting";
+"Edit a Meeting" = "編輯會議";
+
+//PT MENUS STARTS
+"About Zoom" = "關於 Zoom";
+"Preferences..." = "偏好...";
+"Provide Zoom Feedback..." = "提供意見與回饋給 Zoom ...";
+"Hide Zoom" = "隱藏 Zoom";
+"Hide Others" = "隱藏其他";
+"Show All" = "顯示全部";
+"Quit Zoom" = "退出 Zoom";
+
+"Cut" = "剪下";
+"Paste" = "貼上";
+"Paste and Match Style" = "貼上並符合樣式";
+"Select All" = "選擇全部";
+"Find" = "尋找";
+"Find..." = "尋找...";
+"Find and Replace..." = "尋找並取代...";
+"Find Next" = "尋找下一個";
+"Find Previous" = "尋找上一個";
+"Use Selection for Find" = "使用選擇以尋找";
+"Jump to Selection" = "跳到選擇";
+
+"Window" = "視窗";
+"Minimize" = "最小化";
+"Bring All to Front" = "把所有視窗移到最上方";
+
+"Recommend Zoom to Friends" = "推薦 Zoom 給朋友們";
+//PT MENUS ENDS
+
+"Zoom Group Chat" = "Zoom 群聊";
+"Zoom Update" = "Zoom 更新";
+"A new version of Zoom is available!" = "Zoom有新版本可供更新。";
+"A new version of Zoom is available! Please update now." = "Zoom有新版本可供更新。";
+"We also welcome your ideas, requests or comments about Zoom.\nPlease enter your feedback here:" = "我們歡迎任何關於Zoom的意見，想法和建議。請在這裡填寫您的建議:";
+"Zoom is up to date." = "您的 Zoom 已是最新版本了。";
+
+//PT About Window starts
+" All rights reserved." = " All rights reserved.";
+" Terms" = " Terms";
+"Privacy Policy" = "Privacy Policy";
+//PT About Window ends
+
+//Q&A
+"You are logged in from another device. Your Q&A session is inactive." = "由於您已經在其他地方重新連接，所有您當前的問答連接已經被中斷。";
+"Q&A" = "問答";
+"Questions and Answers" = "問答";
+"Send Anonymously" = "匿名發送";
+"LN_Meeting_QA_No_Open_Question_21381" = "沒有（發現）待回復的問題";
+"LN_Meeting_QA_No_Answered_Question_21381" = "沒有（發現）已回復過的問題";
+"All" = "所有";
+"Answered" = "已回答";
+" answered:" = " 已回答:";
+"Please input your question" = "請輸入您的問題";
+"Answer by Text" = "文字回復";
+"Answer Live" = "語音回復";
+"Submit" = "提交";
+"Send privately" = "匿名發送";
+"You would like to answer this question live." = "您想現場回答這個問題。";
+"Done" = "完成";
+"Anonymous Attendee" = "匿名觀眾";
+"You" = "您";
+" asked:" = " 提問:";
+" answered (privately):" = " 已回答 (私下的):";
+"You have" = "您已經";
+" has" = " 已經";
+" answered this question live." = " 已經現場回答這個問題。";
+" is going to answer this question live." = " 正要現場回答這個問題。";
+
+//Polling
+"Polling" = "調查";
+
+//quick start
+"Invitation URL:" = "會議邀請 URL:";
+"Host Name:" = "主人人名稱:";
+"Meeting Topic:" = "會議主題 :";
+"Copy URL" = "複製 URL";
+
+//H323
+"Device connected." = "裝置已經連結。";
+"This meeting is not existed or has expired." = "這個會議不存在或者已經過期。";
+"Invalid pairing code" = "無效的配對碼";
+"The meeting host has not subscribed H.323/SIP Room Connector Plan." = "會議主持人沒有購買H.323/SIP會議室連接服務。";
+"Pair code failed. Error:%d" = "無效的配對碼。 錯誤代碼 :%d";
+"IP address or E.164 number" = "IP地址或E.164號碼";
+"IP address or URL" = "IP地址或 URL";
+
+//add by Ryan for IM
+"You have been removed from this group." = "您已被移出此群組。";
+"Chat History" = "對話記錄";
+"Clear chat history on this computer?" = "清除在本機對話歷史記錄？";
+"Clear" = "清除";
+"Leave this group?" = "離開此群組？";
+"This will also clear your chat history in this group." = "此操作將同時清除您於此群組的對話歷史記錄。";
+"This will also clear your chat history with this user." = "這也會清除您與此用戶的聊天記錄。";
+"Leave" = "離開";
+"You cleared all past messages." = "您清除了所有的歷史消息。";
+"With Video On" = "視訊打開";
+"With Video Off" = "視訊關閉";
+"Capture Screen" = "擷取螢幕";
+"Send Image" = "傳送影像";
+"Edit Group" = "編輯群組";
+"Invite others" = "邀請其他人";
+"Invite Others" = "邀請其他人";
+"Clear History" = "清除對話歷史";
+"Leave Group" = "離開群組";
+"Delete Contact" = "刪除聯絡人";
+"Remove from Contacts" = "從聯繫人列表中移除";
+"On Desktop" = "於電腦上";
+"On Mobile" = "於行動裝置上";
+"Desktop" = "電腦";
+"Mobile" = "行動裝置";
+"Away" = "離開";
+"Busy" = "忙碌";
+"You have reached the Maximum number of group members" = "已經達到了群組成員數的最大值";
+"Group Members" = "群組成員";
+"%@'s group chat" = "%@ 的群組對話";
+"Save Changes" = "儲存更改";
+"Invite" = "邀請";
+"Create Group" = "創建聊天群組";
+"Can't create a new group, please check your network." = "無法建立一個新的群組，請檢查您的網路。";
+"Can't edit the group, please check your network." = "無法編輯此群組，請檢查您的網路。";
+"Voice Message" = "語音訊息";
+"Your message \"%@\" send failed.   Resend" = "您的訊息 \"%@\" 傳送失敗。  請重送";
+"Your message \"%@...\" send failed.   Resend" = "您的訊息 \"%@...\" 傳送失敗。  請重送";
+"Resend" = "請重送";
+"%d new message" = "有%d条新的訊息";
+"%d new messages" = "有%d条新的訊息";
+"%@ is typing..." = "%@ 正在輸入...";
+"Contacts" = "聯絡人";
+"No results" = "無結果";
+"You have logged in from another device. Messenger is now inactive." = "Messenger已停用，因您的帳號已在其他設備上的Zoom登入。";
+"Available" = "在線";
+"(Admin)" = "(管理者)";
+"Not a contact" = "不是聯繫人";
+"(Invite)" = "(邀請)";
+"Add to Contacts List" = "加入聯絡人中";
+"1 contact request" = "1個新加好友請求";
+"%d contact requests" = "%d 個新加好友請求";
+"Your request has been sent successfully!" = "成功發送您的請求！";
+"New Group Chat" = "新的群組對話";
+"Favorites" = "常用聯絡人";
+"Company, Phone, and Other Contacts" = "公司，電話，與其他聯絡人";
+"Company and Phone Contacts" = "公司與電話聯絡人";
+"Company and Other Contacts" = "公司與其他聯絡人";
+"Company Contacts" = "公司聯絡人";
+"Phone and Other Contacts" = "電話與其他聯絡人";
+"Phone Contacts" = "電話聯絡人";
+"Right-click a contact to add to Favorites." = "您可以在一個聯絡人上按右鍵將其加到常用聯繫人列表裡。";
+"Group Meeting" = "群組會議";
+"You are about to start a meeting and invite all members of this group to join. Are you sure?" = "您將要開始會議並邀請所有群組成員，是否確定?";
+
+//audio error for record
+"Audio Error" = "音訊錯誤";
+"No audio is detected. Check audio settings or continue to record with no audio." = "沒有檢測到音訊設備。請檢查您的音訊設定或者繼續錄製沒有聲音的錄影文件。";
+"Check Audio" = "檢查音訊";
+"Continue Recording" = "繼續錄影";
+
+//add by Ryan for L10;
+"Upcoming" = "我的會議";
+"Recorded" = "錄影檔案";
+"Join" = "加入";
+"Open" = "打開";
+"Schedule" = "安排";
+"Update" = "更新";
+"Switch Account" = "切換帳號";
+"Exit" = "退出";
+"Check for Updates..." = "檢查更新...";
+"Please check your network connection. Then click Retry to re-connect." = "請檢查您的網絡連接，然後點擊重試以重新連接。";
+"Install" = "安裝";
+"Manual Update" = "手動更新";
+"Retry" = "重試";
+"Downloading file" = "下載檔案中";
+"Updating" = "更新中";
+"Thanks for joining a Zoom video call!\n\nYou can login to start your own Zoom video call." = "感謝您加入Zoom視頻通話。\n\n請登錄並開始您自己的視頻通話。";
+"Don't remind me again" = "Don't remind me again";
+"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation" = "您邀請的人無需預先安裝Zoom即可加會";
+"Did you know?" = "您知道嗎？";
+"Later" = "稍後";
+"Update now" = "現在更新";
+"Release Notes:" = "更新版本說明:";
+"Join Video Call" = "參加視訊會議";
+"You are already in another meeting. Do you want to leave and then join this one?" = "您正在會議中，是否結束當前會議並加入新會議？";
+"No" = "不";
+"Yes" = "是的";
+"Camera:" = "攝像頭：";
+"Always show name on video window" = "總在視訊視窗中顯示姓名";
+"Update to PRO" = "升級至付費帳戶";
+"Store my recordings at:" = "將我的錄影檔案儲存在 :";
+"Choose a location for recorded files when meeting ends" = "會議結束時選擇一個位置保存您的錄製文件";
+"Open Recordings in Finder" = "在Finder中打開錄製";
+"Select a Speaker" = "選擇揚聲器";
+"Select a Microphone" = "選擇麥克風";
+"Output Level:" = "輸出等級 :";
+"Output Volume:" = "輸出音量 :";
+"Input Level:" = "輸入等級 :";
+"Input Volume:" = "輸入音量 :";
+"Please speak to your microphone. If you can not see the volume indicator blinking, select a different mic." = "請對著麥克風講話。 若您無法看到音量指示器閃爍，請選擇另一個麥克風。";
+"Select Mic" = "選擇麥克風";
+"Automatically adjust microphone settings" = "自動調整麥克風設定";
+"Automatically join audio conference via Mic & Speaker when joining a meeting" = "加入語音會議時自動啟用本地麥克風和揚聲器";
+"Alert me when friends go online" = "當朋友上線時通知我";
+"Alert me when friends go offline" = "當朋友離線時通知我";
+"Pop out the chat window when I receive a chat message" = "當我收到一個對話訊息時，跳出對話視窗。";
+"Show offline contacts" = "顯示離線的聯絡人";
+"Enter full screen automatically when viewing screen shared by others" = "觀看他人螢幕共享時自動進入全屏模式";
+"Maximize Zoom window automatically when viewing screen shared by others" = "觀看他人螢幕共享時自動進入視窗最大模式";
+"Play sound when I receive a chat message" = "收到聊天訊息時播放提示音";
+"Enter full screen automatically when starting or joining a meeting" = "開始或加入會議時自動進入全屏模式";
+"Use dual monitors" = "啟用雙監視器模式";
+"Scale to fit my Zoom window when viewing screen shared by others" = "觀看他人螢幕共享時自動縮放尺寸以適應zoom窗口";
+"Automatically copy Invitation URL to Clipboard after meeting starts" = "會議開始後，自動複製邀請鏈接至剪貼板";
+"Meeting Option" = "會議選項";
+"Instant Message" = "即時消息";
+"For technical support, please visit " = "如需技術支持，請至 ";
+"Support." = "技術支援.";
+"Always use PMI for instant meetings on this computer" = "總在本機上使用個人會議號開會";
+"Delete" = "刪除";
+"Start" = "召開";
+"Edit" = "編輯";
+"Play Video" = "播放視訊";
+"Play Audio Only" = "僅播放音訊";
+"Accept" = "接受";
+"Checking for updates..." = "檢查更新中...";
+"What's new?" = "更新內容";
+"Network error!" = "網路錯誤！";
+
+//hard code string
+"Download failed, please try it again" = "下載失敗，請重試！";
+"Download failed" = "下載失敗";
+"Personal Meeting ID (PMI)" = "個人會議號 (PMI)";
+"Today" = "今天";
+"Recurring - %@" = "週期會議 - %@";
+"Topic: %@\n" = "主題 : %@\n";
+"Meeting ID: %@\n" = "會議號：%@\n";
+"Meeting Password: %@\n" = "會議密碼 : %@\n";
+"%@ to %@" = "%@ 到 %@";
+"Duration: %d minutes" = "會議長度: %d 分鐘";
+"Meeting ID: %@" = "會議號： %@";
+"Meeting Password: %@" = "會議密碼 : %@";
+"Meeting Password:" = "會議密碼 :";
+"New version is available!" = "有新版本可供更新。";
+"New version available!" = "有新版本可供更新。";
+"Last Name" = "姓";
+"First Name" = "名";
+"Change" = "變更";
+"Enter your own audio conference information" = "請輸入您自己的語音會議資訊";
+
+//PT Invite Dialog
+"Invite by Email" = "以Email邀請";
+"Choose your email service to send invitation" = "選擇您的電子郵箱以便發送邀請";
+"Default Email" = "預設 Email";
+"Gmail" = "Gmail";
+"Yahoo Mail" = "Yahoo Mail";
+
+"Facebook Friends" = "Facebook 朋友";
+"Facebook Group" = "Facebook 群組";
+
+"Invite by Phone" = "以電話邀請";
+"Calling" = "呼叫中";
+"Invitee Name:" = "被邀請人姓名:";
+" Name to be displayed in the meeting" = " 顯示在會議中的姓名";
+"Phone Number:" = "電話號碼 :";
+" Input the number you want to call" = " 請輸入您想要撥打的電話號碼";
+
+"Invite a Room System" = "邀請Room System";
+"Enter the pairing code below" = "請在下面輸入配對碼";
+"Or Enter the pairing code below" = "或者在下面輸入配對碼";
+
+"Copy Invitation" = "複製會議邀請";
+"Copy URL to Clipboard" = "複製鏈接至剪貼板";
+"Copy Invitation to Clipboard" = "複製會議邀請到剪貼板";
+
+"Call" = "呼叫";
+
+"From your H.323/SIP Room System" = "由您的 H.323/SIP Room System";
+"Enter Meeting ID: " = "輸入會議號：";
+"Enter Meeting Password: " = "輸入會議密碼 : ";
+
+"Google Friends" = "Google 朋友";
+//PT Invite Dialog end
+
+
+//PT Login Dialog begin
+"(or" = "(或";
+"Email" = "電郵";
+"Email or password error!" = "Email 或者密碼錯誤！";
+"Remember me" = "記住我";
+"Back" = "返回";
+"Or" = "或";
+"Login with Google" = "以 Google 帳號登入";
+"Login with Facebook" = "以 Facebook 帳號登入";
+"Login with SSO" = "以 SSO 登入";
+
+"Connection Failed." = "連結失敗。";
+
+"Sign In" = "登入";
+
+"To schedule a BBM meeting, you need to upgrade to a paid account. You are still able to join BBM Meeting." = "安排一個 BBM 會議，您需要升級到付費帳號。但您仍可以加入一個 BBM 會議。";
+"Not Now" = "不是現在";
+"Upgrade to BBM Meetings" = "升級至 BBM 會議";
+
+//PT SSO Login Dialog begin
+"Login SSO" = "SSO登入";
+"https://companyname.zoom.us" = "https://companyname.zoom.us";
+"SSO URL:" = "SSO 鏈接：";
+"Enter your company domain" = "輸入您的企業域名";
+"company domain" = "企業域名";
+".zoom.us" = ".zoom.us";
+"I don't know the company domain" = "我不知道企業域名";
+"Open in default browser" = "使用默認瀏覽器打開";
+"Find company domain by email address" = "通過電郵地址匹配企業域名";
+"Manually enter domain" = "填寫自定義域名";
+"No matching domain found" = "沒有找到匹配的域名";
+"Network error, please try later" = "網絡錯誤，請稍後重試";
+//PT SSO Login Dialog end
+
+
+//PT Proxy Auth Dialog begin
+"Name:" = "姓名:";
+"Password:" = "密碼:";
+//PT Proxy Auth Dialog end
+
+//copy right string
+"Copyright ©2012-2017 Zoom Video Communications, Inc." = "Copyright ©2012-2017 Zoom Video Communications, Inc.";
+
+//Help url string
+"http://support.zoom.us/" = "http://www.zoomnow.tw/";
+
+
+
+//PT Schedule Dialog begin
+"Topic:" = "主題:";
+"When" = "何時";
+"Start:" = "開始 :";
+"Duration:" = "長度 :";
+"Hr" = "時";
+"Min" = "分";
+"Time Zone:" = "時區：";
+"Please remember to check recurrence or repeat in your calendar invitation to your attendees. " = "請在您的Outlook日曆，Google日曆或者其他日曆中設定重複週期。 ";
+"Recurring meeting" = "週期會議";
+"Host:" = "主持人 :";
+"Participant:" = "與會者 :";
+"Video (when joining a meeting)" = "視訊選項（加入會議時）";
+"On" = "開啟";
+"Off" = "關閉";
+"Telephone Only" = "電話";
+"VoIP Only" = "電腦音頻";
+"Both" = "電話和電腦音頻";
+"3rd Party Audio" = "第三方音訊";
+"Meeting Options" = "會議選項";
+"Require meeting password" = "需要會議密碼";
+"Enable join before host" = "允許在主持人進入會議前加入";
+"Calendar" = "日曆";
+"iCal" = "iCal";
+"Google Calendar" = "Google 日曆";
+"Other Calendars" = "其他日曆";
+"Schedule For:" = "安排給 :";
+"Edit Meeting" = "編輯會議";
+"Scheduling..." = "正在安排會議...";
+"Click the button below to copy the invitation to clipboard." = "點擊下面的按鈕複製邀請訊息到剪貼板。";
+"Copy to Clipboard" = "複製到剪貼板";
+//PT Schedule Dialog end
+
+
+//PT Edit PMI Dialog begin
+"Personal Meeting ID" = "個人會議號";
+"Your Personal Meeting ID is changed." = "您的個人會議號已更改。";
+"Upgrade to Pro to change your Personal Meeting ID" = "升級至付費帳號以便更改您的個人會議號";
+"Change Your Personal Meeting ID" = "變更您的個人會議 ID";
+
+"Choose your 10-digits ID:" = "選擇您的十位數個人會議 ID:";
+"* Your Personal Meeting ID cannot start with 0 or 1" = "* 您的個人會議號不能以0或1開頭";
+"Apply" = "申請";
+
+"Your Personal Meeting option is updated." = "您的個人會議選項已經更新了。";
+
+"Only Pro user can customize your favorite personal meeting ID. Would like to upgrade to Pro account?" = "只有付費帳號的用戶才可自訂個人會議號，您是否要升級至付費帳號？";
+//PT Edit PMI Dialog end
+
+
+"Recording Path:" = "錄影路徑:";
+
+//add for ZOOM3.5
+"Save Chat" = "儲存對話記錄";
+"Chat saved to:" = "對話記錄已儲存在:";
+
+//air host
+"Share an iPhone/iPad screen" = "共享 iPhone/iPad 螢幕";
+"A plugin is required to share an iPhone/iPad screen." = "需要安裝一個套件以共享 iPhone/iPad 螢幕.";
+"Installation failed, please check your network and try again. Or " = "安裝失敗，請檢查您的網路連接並重試。或者 ";
+"download manually" = "手動下載";
+
+//diagnostic
+"Zoom Activity Monitor" = "Zoom 活動偵測器";
+"Item Name" = "統計項目";
+"Frequency" = "頻率";
+"Latency" = "延遲";
+"Jitter" = "Jitter";
+"Packet Loss - Avg(Max)" = "丟包率- 平均（最大）";
+"Frame Per Second" = "幀率";
+"Resolution" = "解析度";
+"Screen Sharing" = "螢幕共享";
+"Overall" = "整體";
+"Send" = "傳送";
+"Receive" = "接收";
+"Bandwidth" = "頻寬";
+"Network Type" = "網路型態";
+"Proxy" = "代理器";
+"CPU" = "CPU";
+"Memory" = "記憶體";
+"Your high CPU usage is affecting the meeting quality" = "您的CPU使用過高會影響會議質量";
+"Your internet connection is unstable" = "您的網絡連接不穩定";
+
+//Conference Remote Camera Control Window
+"Waiting for %@ to approve your request" = "等待%@的批准";
+"%@ requested to control your camera" = "%@請求控制您的攝像頭";
+"%@ declined your request of camera control" = "%@ 拒絕了您控制攝像頭的請求";
+"Request approved. You can now control %@'s camera." = "請求批准，您現在可以控制%@的攝像頭。";
+"%@ no longer controls your camera" = "%@ 不再控制您的攝像頭";
+
+// for accessibility feature
+"Zoom Logo" = "Zoom商標";
+"Status Menu" = "狀態選單";
+"Refresh Meeting List" = "重載會議列表";
+"Add Contact" = "新增聯絡人";
+"button" = "按鍵";
+
+"Auto Answer Group" = "自動回應群組";
+"Remove from Auto Answer Group" = "從自動回應群組中移除";
+"Add to Auto Answer Group" = "添加到自動回應群組";
+
+// for polling
+"Poll" = "問卷調查";
+"Multiple Choice" = "多選";
+"Poll closed" = "調查已關閉";
+"%d voted" = "%d人已投票";
+"Add a Question" = "增加一個問題";
+"Edit Poll" = "編輯問卷調查";
+"Failed to launch poll" = "啟動問卷調查失敗";
+"Failed to end poll" = "停止問卷調查失敗";
+"Failed to share poll result" = "共享調查結果失敗";
+"Failed to fetch poll" = "獲取調查內容失敗";
+"Failed to stop sharing" = "停止問卷調查失敗";
+"Failed to submit poll" = "提交調查結果失敗";
+"Share Results" = "共享調查結果";
+"Launch Poll" = "啟動問卷調查";
+"Polls" = "問卷調查";
+"End Poll" = "終止問卷調查";
+"%@ in Progress" = "%@正在進行中";
+"%d of %d voted" = "%d/%d已投票";
+"Sharing Poll Results" = "共享調查結果";
+"Stop Sharing" = "停止共享";
+"Quick Poll" = "問卷調查主持人正在共享調查結果";
+"Host is sharing poll results" = "主持人正在共享調查結果";
+"Close" = "關閉";
+"Attendees are now viewing questions" = "觀眾正在觀看調查問題";
+"Attendees are now viewing poll results" = "觀眾正在觀看調查結果";
+"Host and panelists can't vote." = "主持人和與談者不能投票。";
+"Allow panelists to vote" = "允許嘉賓投票";
+"Re-launch Poll" = "重置投票";
+"Re-launching the poll will clear existing polling results. Do you want to continue?" = "重置投票會清空當前問卷調查的結果,是否繼續?";
+"%d of %d (%d%%) voted" = "%d of %d (%d%%) voted";
+"The poll was closed before you submitted your answer" = "投票已在您提交前關閉";
+
+//Main Window Title
+"Zoom - %@" = "Zoom - %@";
+"Use Personal Meeting ID" = "使用個人會議號";
+"Zoom" = "Zoom";
+"Always mute microphone when joining meeting" = "加入會議時不開啟麥克風";
+"Always turn off video when joining meeting" = "加入會議不開啟攝影機";
+"(Public to all participants)" = "(Public to all participants)";
+"Topic: %@" = "Topic: %@";
+"Chat saved." = "Chat saved.";
+"Call Out" = "撥出";
+"Dial In from a H.323/SIP Room System" = "从H.323/SIP会议系统拨入";
+"Call a H.323/SIP Room System" = "撥打H.323/SIP Room System";
+"Confirm with me when I leave a meeting" = "離開會議時顯示提示框";
+"Hide Non-Video Participants" = "隱藏沒有視訊的與會者";
+"Ask to Start Video" = "請求開啟視訊";
+
+//broad cast
+"Broadcast" = "啟動廣播";
+"Practice Mode Only: Attendees cannot join until you broadcast" = "現時是會議準備模式：當您準備好並啟動廣播，觀眾才可以加入研討會。";
+"The webinar is now broadcasting to all attendees" = "網絡研討會已經開場。";
+"Not broadcasting" = "尚未開場";
+
+//
+"Audio Options..." = "音訊選項……";
+"Video Settings..." = "視訊設定...";
+"Camera (Shift+Command+N to switch)" = "攝像頭(使用Shift+Command+N切換)";
+"Zoom is using an end to end encrypted connection" = "Zoom正在使用端到端加密連接。";
+"Select a Camera" = "選擇攝像頭";
+"New Share" = "新的共享";
+"Stop Remote Control" = "取消遠端控制";
+"Switch Camera" = "切換攝影機";
+"Locked" = "鎖住";
+"You need to unlock the meeting in order to change the role of a webinar attendee" = "在改變網絡研討會觀眾角色前，請您先解鎖會議";
+"You need to unlock the meeting in order to change the role of a webinar panelist" = "在改變網絡研討會觀眾角色前，請您先解鎖會議";
+"The host has asked you to start your video." = "主持人請您開啟視訊。";
+"Start My Video" = "開啟視訊";
+"Resume Share" = "繼續共享";
+"Pause Share" = "暫停共享";
+"Meeting Locked" = "會議已鎖定";
+"Show floating notification when I receive a chat message" = "收到聊天消息時彈出通知視窗";
+"Options" = "選項";
+"Promote" = "設為嘉賓";
+"Other Contacts" = "聯絡人";
+"Meet" = "開會";
+"Add Other Contacts by Email" = "以Email邀請聯絡人";
+"Meet with Video" = "視訊會議";
+"Meet without Video" = "語音會議";
+"Add to Favorites" = "添加到常用聯繫人";
+"Remove from Favorites" = "從常用聯絡人中移除";
+"Send File" = "發送檔案";
+"You've created this group chat %@" = "您成功建立了聊天群組：%@";
+"%@ invited you and %@ to this group chat" = "%@ 邀請你和 %@ 邀請你到這個聊天群組。";
+"%@ invited you to this group chat" = "%@邀請你到這個聊天群組。";
+"New Chat" = "發起聊天";
+"Start Chat" = "開始聊天";
+"Chat With" = "Zoom網絡研討會聊天";
+"Next" = "下一步";
+"Add" = "添加";
+"New Group" = "建立聊天群組";
+"Screen sharing has failed to start. Please try again later." = "螢幕共享失敗，請稍後重試。";
+"Group Name:" = "群組名稱:";
+"Missed Call" = "未接來電";
+"Incoming Call - Declined" = "來電-已拒絕";
+"Join Audio Conference by Computer" = "連接語音";
+"[You were mentioned] " = "[有人@我] ";
+"%@ left this group chat" = "%@退出了聊天群組。";
+"You've removed %@ from this group chat" = "您將%@從聊天群組中移除。";
+"%@ removed you from this group chat" = "您被%@從聊天群組中移除。";
+"%@ removed %@ from this group chat" = "%@把%@從聊天群組中移除。";
+"You changed the group name to \"%@\"" = "您把聊天群組改名為：%@。";
+"%@ changed the group name to \"%@\"" = "%@將聊天群組改名為：%@。";
+"You've invited %@ to this group chat" = "您邀請%@加入聊天群組。";
+"%@ invited %@ to this group chat" = "%@邀請%@加入聊天群組。";
+"Choose ONE of the audio conference options" = "請選擇會議語音的接入方式";
+"Request Camera Control" = "請求控制攝影機";
+"Give up Camera Control" = "放棄控制攝影機";
+"Type and select a person" = "輸入並選擇一個人";
+"You can't start your video because the host has stopped it" = "主持人禁止您在會議中啟用視訊。";
+"Remember my name for future meetings" = "在以後的會議中使用當前名字";
+"will start video later." = "希望稍後開啟攝像頭";
+
+"Make Co-Host" = "設為聯席主持人";
+"Co-host" = "聯席主持人";
+"co-host" = "聯席主持人";
+"Co-Host" = "聯席主持人";
+"Withdraw Co-Host Permission" = "撤銷聯席主持人";
+"Do you want to make %@ the co-host of this meeting?" = "確認把%@設為本次會議的聯席主持人？";
+"Co-Host has stopped your video" = "聯席主持人禁止您在會議中啟用視訊";
+"Panelists" = "與談人";
+"panelist" = "與談人";
+"host" = "主持人";
+"Type message here..." = "輸入消息...";
+"Send chat to..." = "發消息給...";
+"Attendees" = "觀眾";
+"The co-host has asked you to start your video." = "聯席主持人請您開啟視訊。";
+"Allow Panelist Start Video" = "允許嘉賓開啟視訊";
+"Promote to Panelist" = "設為嘉賓";
+
+//add contact by email
+"Failed to connect to Zoom video conferencing server. If you are behind a firewall, please ask your IT administrator to allow \"*.zoom.us\".  For more information, please visit: https://support.zoom.us/hc/en-us/articles/201362683." = "連接Zoom伺服器失敗，如果您機器上裝有防火牆，請聯繫IT管理員允許Zoom連接。更多資訊，請訪問:https://support.zoom.us/hc/en-us/articles/201362683";
+"Email invitation copied to clipboard" = "郵件邀請函已經複製到剪貼板";
+"Add a Contact" = "添加連絡人";
+"An email invitation has been sent." = "邀請郵件已經送出。";
+"Your request has been sent for approval to:" = "準予請求已經發送給：";
+"Email address not signed up with Zoom." = "這個電子郵箱尚未在Zoom注册。";
+"⟨ Back" = "⟨ 返回";
+"One email address a time" = "一次只能添加一個電子郵箱";
+"Network error, please try again" = "網絡錯誤，請重試";
+"is now your contact." = "已是你的連絡人";
+"Yesterday" = "昨天";
+"System Notification" = "系統通知";
+"requests to add you as a contact" = "請求把您加為聯繫人";
+"contact request sent  - Waiting for approval" = "聯絡人請求已經發送  - 等待對方同意";
+"accepted your contact request" = "已是您的聯繫人";
+"declined your contact request" = "拒絕了您的連絡人請求";
+"has been added to your contact list" = "已被添加到您的連絡人清單";
+"contact request sent" = "聯絡人請求已經發送";
+"  - Declined" = "  - 已拒絕";
+"Invited" = "受邀的";
+"You won't receive message notifications from this group unless you are mentioned." = "您將不再收到消息通知，除非有人@您。";
+"Enable Message Notifications" = "啟用消息提醒";
+"Disable Message Notifications" = "關閉消息提醒";
+
+"Open File" = "打開文件";
+"Shared a file in group." = "分享了一個群文件";
+"Shared a file with you." = "分享一個文檔給您。";
+"Do not prompt joining audio when I join a meeting using 3rd party audio" = "當使用第三方語音會議時,不出現音源選擇對話方塊";
+"You can't start your video because the host has stopped it." = "主持人禁止您在會議中啟用視訊。";
+"Allow attendees to raise hand" = "允許與會者舉手";
+"Don't connect to audio" = "不自動接入音頻";
+"Turn off my video" = "保持視訊關閉";
+
+"Allow Attendee Chat" = "允許觀眾聊天";
+"The host has disabled attendee chat." = "主持人已禁止觀眾聊天。";
+"Zoom Webinar Chat" = "Zoom網絡研討會聊天";
+"Your text can only be seen by panelists" = "消息僅主持人和嘉賓可見";
+"Everyone" = "所有人";
+"All Panelists" = "全體嘉賓";
+"All panelists" = "全體嘉賓";
+"(host)" = "(主持人)";
+"%@ is not in this meeting" = "%@不在此會議中";
+"From Me to Everyone" = "我對所有人說";
+"From Me to All Panelists" = "我對全體嘉賓說";
+"From Me to %@, All Panelists" = "我對%@和全體嘉賓說";
+"From Me to %@ (Privately)" = "我對%@說 (私聊)";
+"From %@ to Everyone" = "%@對每個人說";
+"From %@ to All Panelists" = "%@對全體嘉賓說";
+"From %@ to Me, All Panelists" = "%@對我和全體嘉賓說";
+"From %@ to %@, All Panelists" = "%@對%@和全體嘉賓說";
+"From %@ to Me (Privately)" = "%@對我說 (私聊)";
+"From Me to %@:" = "我對%@說：";
+"From Me to %@, %@:" = "我對%@和%@說：";
+"From Me to %@: (Privately)" = "我對%@說： (私聊)";
+"From %@ to %@:" = "%@對%@說：";
+"From %@ to Me, %@:" = "%@對我和%@說：";
+"From %@ to %@, %@:" = "%@對%@和%@說：";
+"From %@ to Me: (Privately)" = "%@對我說： (私聊)";
+" (Privately)" = " (私聊)";
+"Attendees" = "觀眾";
+"Failed to send chat message" = "聊天消息發送失敗";
+"From" = "";
+"to" = "對";
+", All Panelists" = ", 全體嘉賓";
+
+"Hide Group members" = "隱藏組成員";
+"Show Group members" = "顯示組成員";
+"Send Email Invitation" = "發送邀請郵件";
+"Host meeting in China" = "使用中國專用線路";
+"Only signed-in users can join this meeting" = "僅限已登錄用戶加會";
+"Only signed-in users with specified domains can join this meeting" = "僅限有特定域名的已登錄用戶加會";
+"If no domains specified, any signed-in users can join." = "如果沒有指定特定域名，則可以允許任意登錄用戶加會。";
+
+//Breakout Session
+"Not Started" = "尚未開始";
+"In Progress" = "進行中";
+"Breakout Rooms - %@" = "分組討論 - %@";
+"Assign To" = "分配到";
+"unassigned participants" = "個未分配的參會者";
+"unassigned participant" = "個未分配的參會者";
+"Join Breakout Room" = "加入分組討論";
+"Breakout Room Participants" = "分組討論參會者";
+"Keep Meeting Running for Others" = "保持會議繼續";
+"You are now in the main session" = "您已經返回主會場";
+"You are now in a Breakout Room" = "當前在一個分組討論中";
+"Leave Breakout Room" = "離開分組討論";
+"Do you want to leave this Breakout Room and return to the main session?" = "確認離開分組討論並返回主會場?";
+"Return to Main Session" = "返回主會場";
+"You will be returned to the main session automatically." = "您即將自動返回主會場。";
+"Ask for Help" = "請求幫助";
+"Returning to Main Session..." = "正在返回主會場...";
+"Invite Host" = "邀請主持人";
+"You can invite the host to this Breakout Room for assistance." = "您可以邀請主持人進入分組討論以幫助您。";
+"Breakout Rooms" = "分組討論";
+"Assign %d participants into 5 Rooms:" = "將%d個參會者分配至5個討論群組";
+"Automatically" = "隨機分組";
+"Manually" = "手動分組";
+"%d participants per room" = "每組%d人";
+"%d-%d participants per room" = "每組%d-%d人";
+"Create Breakout Rooms" = "創建分組討論";
+"Recreate All Rooms" = "重建討論群組";
+"All Breakout Rooms will close in %d seconds." = "所有分組討論將在%d秒後結束。";
+"All existing rooms will be replaced." = "所有創建好的討論群組都將被替換。";
+"Recreate" = "重新創建";
+"Add a Room" = "新增討論群組";
+"Open All Rooms" = "分組討論開始";
+"Close All Rooms" = "分組討論結束";
+"Breakout Room %d" = "討論群組 %d";
+"Assign" = "分配";
+"Delete Room" = "刪除討論群組";
+"Move To" = "移動到";
+"Exchange" = "交換";
+"Delete %@?" = "刪除 %@ ？";
+"Join %@?" = "加入 %@ ？";
+"Leave %@?" = "離開 %@ ？";
+"%@ (not joined)" = "%@（沒有加入）";
+"All participants have been assigned to Breakout Rooms." = "所有參會者已分配至分組討論。";
+"%1$@ in %2$@ asked for help." = "%2$@中的%1$@請求幫助。";
+"Ask Host for Help" = "請求幫助";
+"The host is inviting you to join Breakout Rooms." = "主持人邀請您加入分組討論。";
+"You have been assigned to a Breakout Room" = "您已經被分配到一個新的分組討論中";
+"Breakout Rooms will close in %d seconds" = "分組討論將在%d秒後關閉";
+"The host has been invited." = "已向主持人發送了邀請。";
+"The host is currently helping others. Please try again later." = "主持人正忙，請稍後再試。";
+"The host is currently in this room." = "主持人在當前討論群組。";
+"It may take a few moments." = "請稍候片刻。";
+"Joining Breakout Rooms..." = "正在加入分組討論...";
+"All participants have been given 60 seconds to leave their Breakout Rooms." = "所有參會者將於60秒內退出分組討論。";
+"All participants have been invited to join Breakout Rooms." = "已邀請全體參會者加入分組討論。";
+"You can join Breakout Rooms from here." = "點此加入分組討論。";
+"Allow attendee to raise hand" = "允許與會者舉手";
+"Unassigned" = "未分配的";
+"The host has opened Breakout Rooms. Please wait to be assigned." = "主持人已經開始分組討論，請等待被分配。";
+
+"Enable Stereo" = "啟用麥克風身歷聲(當設備支持時)";
+"this will greatly increase all attendee's CPU usage" = "需要消耗更多的CPU";
+"Allow option for using original sound from microphone in meeting" = "啟用麥克風源音輸出";
+"this will turn off audio enhancements such as echo cancellation and noise suppression" = "聲音增强效果例如回聲消除，降噪等將被關閉";
+
+"This file does not exist." = "檔案不存在。";
+"Your text can be seen by everyone" = "消息將為所有人可見";
+"Dock to top" = "懸停在螢幕頂端";
+"Move to bottom" = "移動至螢幕下方";
+"The host has promoted you to a panelist." = "主持人將您設為嘉賓。";
+"The host has changed your role to attendee." = "主持人將您設為觀眾。";
+"Rejoining..." = "重新加入會議";
+"Connection Type" = "連接類型";
+"Cloud" = "雲服務";
+"Direct" = "直連";
+"Stay with Free" = "繼續使用免費帳戶";
+
+"LN_Record_No_Audio_Alert_Title_28459" = "您沒有連接語音";
+"Check My Audio Devices" = "檢測我的語音設備";
+"Your microphone and speaker are not working properly." = "你的麥克風和揚聲器工作狀態不正常";
+"\n\nNo audio will be recorded." = "\n\n無法錄製語音";
+"LN_Record_No_Audio_Alert_Message_28459" = "在錄製中加入音頻，請點擊\“加入音頻\”。";
+"Your microphone is not working properly." = "您的麥克風工作狀態不正常";
+"\n\nThe voice of other participants can still be recorded, but your voice cannot." = "\n\n會議中其他人的聲音可以被錄製，但是您自己的聲音無法被錄製";
+"Your speaker is not working properly." = "您的揚聲器工作狀態不正常";
+"\n\nYour voice can still be recorded, but the voice of other participants cannot." = "\n\n您的聲音可以被錄製，但是會議中其他人的聲音無法被錄製";
+"Check My Microphone" = "檢測我的麥克風";
+"Check My Speaker" = "檢測我的揚聲器";
+"Record Without Audio" = "繼續無聲錄製";
+
+"Closed Caption" = "字幕";
+"Type here, press Enter to broadcast" = "在此輸入，按回車鍵播放";
+"Closed Caption is available" = "本次會議包含字幕";
+"Assign to type Closed Caption" = "分配以輸入字幕";
+"Withdraw Closed Caption permission" = "收回字幕輸入許可權";
+"The host has assigned you to type Closed Caption." = "主持人已分配您輸入字幕";
+"The host has selected another participant to type." = "主持人已分配其他人輸入字幕";
+"Closed Caption is being broadcasted to all participants." = "字幕已向所有參會者播放";
+"Change Closed Caption Editor" = "更換cc字幕編輯";
+"%@ is currently assigned to type Closed Caption, do you want to assign %@ to type instead?" = "您是否需要把%@的輸入字幕許可權分配給%@？";
+"Assign someone to type" = "分配輸入字幕的人";
+"In Manage Participants panel, hover on a participant, in the \"More\" menu, select \"Assign to type Closed Caption\"." = "在管理介面上點選一名參會者，在\"更多\"功能表中找到\"分配以輸入字幕\"";
+"Open Manage Participants" = "打開管理參會者介面";
+"I will type" = "我親自輸入";
+
+// add for e2e
+"Add Group" = "新增聊天群組";
+"[This is an encrypted message]" = "[消息已加密]";
+"[Cannot decrypt message]" = "[消息解密失敗]";
+"Chat encryption has been enabled for this group, offline members cannot see your messages." = "本聊天群組已加密，離線用戶無法查看您的消息。";
+"%@ is using an older version of the Zoom client and cannot see your messages." = "%@的用戶端版本過低，無法查看您的消息";
+"[Encrypted message]" = "[加密消息]";
+"Chat encryption has been enabled for your account." = "您的帳戶已加密。";
+"Chat encryption has been enabled according to %@'s account policy." = "因為%@的帳戶安全要求，已啟用加密聊天。";
+"Chat encryption has been enabled for this group." = "本聊天群組已加密。";
+"Chat encryption has been enabled for your account so you cannot send messages to a person who is not your contact." = "您的帳戶已加密，您只能和聯繫人列表中的人聊天。";
+"Chat encryption has been enabled for your account so you cannot send messages in a group without encryption." = "您的帳戶已加密，您不能在非加密的聊天群組中發送消息。";
+"Chat encryption has been enabled for your account so you need to invite %@ online to start chat." = "您的帳戶已加密，您需要邀請%@上線接受聊天邀請。";
+"Waiting for %@ to get online..." = "等待%@上線接受邀請";
+"Invite %@ to start chat" = "邀請%@聊天";
+"%@ is inviting you to chat." = "%@邀請您聊天";
+"%@ accepted your chat invitation." = "%@接受了您的聊天邀請";
+"You are sending messages too quickly, you need to resend this message." = "消息發送太頻繁，請稍候幾秒。";
+"Already joined by Phone" = "已使用電話撥入";
+"You've been automatically signed out for being inactive %d minutes due to your account security policy." = "因為帳戶安全要求，系統檢測到您在%d分鐘內沒有操作電腦，已經自動登出";
+
+"Keep telephone connected" = "保持通話";
+"Start a meeting without video" = "開始一場語音會議";
+"Start a meeting with video" = "開始一場視訊會議";
+"View More..." = "查看更多";
+"You are about to invite all members of this group to join. Are you sure?" = "您將要邀請所有群組成員加入當前會議，是否確定?";
+"You cannot chat with a Zoom Room." = "你不能發消息給Zoom會議室。";
+"Zoom Chat" = "Zoom Chat";
+"Group Chat" = "群組聊天";
+"is already a contact." = "已經在您的聯絡人清單中。";
+"Room" = "會議室";
+"@Me" = "@我";
+"Groups" = "聊天群組";
+"Download" = "下載";
+
+"The audio cannot be recorded properly. Please check audio settings and restart recording." = "無法錄製音訊，請檢查聲音設定並重新開始錄製。";
+"The video cannot be recorded properly. Please check your video settings and restart recording." = "無法錄製視頻，請檢查視頻設定並重新開始錄製。";
+"The shared screen cannot be recorded properly. Please check your network and restart recording." = "無法共享的螢幕內容，請檢查網絡並重新開始錄製。";
+"The shared screen cannot be recorded properly. Please try to stop and restart sharing to solve this issue." = "無法錄製共享的螢幕內容，為解決此問題，請嘗試停止錄製並重啟共享。";
+"File (%@) sent successfully." = "檔案(%@)發送成功";
+"[File: %@]" = "[檔案:%@]";
+"Swap shared screen with video" = "在共享內容和視頻之間切換";
+
+"Support" = "技術支援";
+"Request Desktop Control" = "請求桌面控制";
+"Request Desktop Control..." = "請求桌面控制...";
+"Request Application Control" = "請求應用控制";
+"Request Application Control..." = "請求應用控制...";
+"Request Computer Restart" = "請求重啓電腦";
+"Request Computer Restart..." = "請求重啓電腦...";
+"Stop Remote Support" = "停止當前支持";
+"Select a participant" = "選擇一個參會者";
+"Request to control your desktop" = "請求控制您的桌面";
+"Request to control your application" = "請求控制您的應用";
+"Request to restart your computer" = "請求重啓您的電腦";
+"%@ is asking for permission to remotely control your desktop." = "%@請求授權以遠程控制您的桌面。";
+"%@ is asking for permission to remotely control your application." = "%@請求授權以遠程控制您的應用程序。";
+"%@ is asking for permission to restart your computer. After your computer restarted, you will be auto rejoined into this meeting again." = "%@請求授權以重啓您的電腦。電腦重啓完成後，您將自動加回當前會議。";
+"Grant Permission" = "授予許可";
+"Deny" = "拒絕";
+"Restart Computer" = "重啓電腦";
+"Confirm" = "確認";
+"Select an application to share" = "選擇共享應用";
+"Select a desktop to share" = "選擇準備共享的桌面";
+"%@ approved your request for desktop control." = "%@允許您控制桌面。";
+"%@ denied your request for desktop control." = "%@拒絕了您的桌面控制請求。";
+"%@ approved your request for application control." = "%@允許您對其應用程式控制的請求。";
+"%@ denied your request for application control." = "%@拒絕了您對其應用程式控制的請求。";
+"%@ approved your request for computer restart." = "%@允許您重啓其電腦。";
+"%@ denied your request for computer restart." = "%@拒絕了您重啓對方電腦的請求。";
+"No one is available to support, you are the only participant in the meeting." = "現時還沒有技術支援的對象。";
+"Those participants who can't accept remote control are not listed" = "不支持遠程協助的參會者不會被列出";
+"Those participants who can't accept computer restart are not listed" = "不支持重啟電腦功能的參會者不會被列出";
+"Support session is not available to the current participant." = "無法對該參會者提供技術支持。";
+"Waiting for %@ to approve your request" = "等待%@的批准";
+"Edit Advanced Settings" = "更改高級設定";
+"Edit My Profile" = "編輯我的資料";
+
+"Sent you a file." = "給您發送了一個檔案。";
+"Shared a file in the meeting." = "在會議中共享了一個文件。";
+"& others" = "和其他人";
+"Meeting ID or Personal Link Name" = "會議號或個人標籤";
+"Screen Name" = "會議中顯示的名字";
+"This personal link name is not valid. Please check and try again." = "這個個人標籤不存在，請檢查後重試。";
+"Type to filter..." = "輸入查找";
+"Find a panelist" = "查找嘉賓";
+"Find a attendee" = "查找觀眾";
+"Mute Me" = "靜音";
+"Unmute Me" = "解除靜音";
+"Merge to meeting window" = "合併到會議主視窗";
+"Expand" = "展開";
+"Pop Out" = "獨立彈出";
+
+" Video " = "視訊";
+" Audio " = "音訊";
+"Accessibility" = "輔助功能";
+"Video Background" = "視頻背景";
+"Fill window" = "填充視窗";
+"Fit to window" = "按窗口大小顯示";
+"Format" = "格式";
+"Font" = "字體";
+"Line Width" = "字體寬度";
+"Spotlight my video when I speak" = "當我在會議中說話的時,在主畫面中顯示自己的視頻";
+"Choose a virtual background" = "選擇一張虛擬背景圖片";
+"Choose a virtual background..." = "選擇一張虛擬背景圖片...";
+"Add Image" = "添加圖片";
+"A solid color video background is required. Green color is preferred." = "您需要一個純色背景，最好是綠色。";
+"Manually pick the color of the background if the detected color is not accurate." = "如果您覺得自動檢測的顏色不準確，您可以手動在視頻背景中選擇一個顏色。";
+"Pick the color" = "選擇顏色";
+"Zoom technology automatically detects the color your video background and replace it with the virtual background image. If the detected color is not accurate, you can manually pick the color from your video background." = " Zoom 會自動檢測當前視頻背景中的主要顏色並替換為您選擇的虛擬背景圖片，如果您覺得自動檢測的顏色不準確，您可以手動在視頻背景中選擇一個顏色。";
+"Your processor (%@) does not meet our recommended specification for virtual background. Learn more." = "您的處理器（%@）不滿足虛擬背景所需的推薦配置。 更多資訊。";
+"Learn more." = "更多資訊。";
+"Enable this feature anyway" = "繼續使用此功能";
+"Connect Kubi" = "連接 Kubi";
+"Disconnect" = "斷開";
+"Security Certificate" = "加密認證";
+"Do you want to trust this connection?" = "確認信任這個連接？";
+"The security certificate presented by this connection was not issued by a trusted authority." = "這個連接提供的安全證書不是由受信任的機構頒發。";
+"Issued to:" = "頒發給：";
+"Issued by:" = "頒發自：";
+"Serial Number:" = "序列號：";
+"Fingerprint:" = "指紋：";
+"Trust" = "信任";
+"Don't Trust" = "不信任";
+"Original size" = "原始大小";
+"16:9 (Widescreen)" = "16:9 (寬屏)";
+"Broadcast a message to all" = "播放一條群體消息";
+"From %@ to everyone: %@" = "從%@到所有人:%@";
+"The host has moved you to %@" = "主持人將您轉入%@";
+"You've been assigned to a new breakout room." = "您已經被分配到一個新的分組討論。";
+
+
+"Login to Claim Host" = "登錄以獲取主持人權限";
+"Enter the Host Key to claim host role" = "輸入主持人驗證碼來獲取主持人權限";
+"Host Key is a 6-digit number" = "主持人驗證碼由六位數字組成";
+"OR" = "或";
+"Verifying Host Key..." = "核驗主持人秘鑰...";
+"The Host Key you entered is invalid." = "您輸入的主持人驗證碼不正確。";
+"Please check your network and try again." = "請檢查網絡連接後重試。";
+"Because annotation is disabled, your participants need to upgrade to the latest version of Zoom to share their screen." = "螢幕標注功能已被禁用，其他參會者需要升級到最新版的Zoom才能使用螢幕共享功能。";
+"Enable Advanced Features" = "查看高級設置";
+"Advanced Features" = "账号";
+"Hide Myself" = "隱藏我的視頻";
+"Show Myself" = "顯示我的視頻";
+"Others could not hear me" = "其他人聽不到我的聲音";
+"I could not hear others" = "我聽不到其他人的聲音";
+"Others could not see me" = "其他人看不到我的視頻";
+"I could not see others" = "我看不見其他人";
+"Poor audio quality" = "音頻質量差";
+"Poor video quality" = "視頻質量差";
+
+"The host is inviting you to join Breakout Room:" = "主持人邀請您加入分組討論:";
+"You have been assigned to Breakout Room:" = "您已經被分配到一個分組討論中。";
+"Failed to expel attendee. Error code:%d" = "移除觀眾失敗。錯誤代碼：%d";
+"Original Ratio" = "原始大小";
+
+"Low system resources may affect your audio quality. Try closing some applications to improve performance." = "系統資源過低可能會導致通話質量下降,請關閉一些暫時不用的程序。";
+"Your network connection is unstable which may impact your audio & video quality." = "網絡不穩定，可能會影響您的語音通話和視頻質量。";
+"Keep me logged in" = "自動登錄";
+"Recording Alert" = "錄製警告";
+"Finish registration to join the meeting." = "完成註冊以參加會議。";
+"Share screen in Zoom Room" = "在Zoom Room中共享螢幕";
+
+"Close Manage Participants" = "關閉管理參會者面板";
+"Show Manage Participants" = "顯示管理參會者";
+"Close Participants" = "關閉參會者面板";
+"Show Participants" = "顯示參會者";
+"Close Chat" = "關閉聊天面板";
+"Show Chat" = "顯示聊天";
+"You are sharing your screen..." = "您正在共享屏幕……";
+"Stop share" = "停止共享";
+
+"Are you sure you want to delete this file?" = "您確定要刪除此文件嗎？";
+"The file will also be removed from shared groups and chats." = "文件同時會從已經共享的群組和聊天中刪除。";
+"Delete this contact?" = "刪除這個聯繫人?";
+"This is a one-way action. The entire message will not be visible to the new members in this group. Continue?" = "這是個不可恢復操作。新組成員將無法訪問整個聊天記錄,是否繼續?";
+"All Files" = "全部文件";
+"My Personal Files" = "我的個人文件";
+"Upload New Files" = "上傳新文件";
+"Show this group on contacts list" = "在聯繫人列表中顯示該群組";
+"Edit Member" = "編輯組成員";
+"New members can access entire message history" = "新群組成員可以訪問完整聊天記錄";
+"Chat Topic:" = "聊天標題：";
+"- Click to open" = "-點擊打開";
+"Shared by " = "共享於";
+"Shared in " = "共享在";
+"Delete from %@" = "從%@中刪除";
+"Are you sure you want to delete \"%@\"" = "您確定要刪除\"%@\"？";
+"%@ of %@ (%@/sec)" = "%@/ %@ (%@/秒)";
+"Retry?" = "重試?";
+"Loading..." = "載入中……";
+"Loading error," = "載入錯誤,";
+"No content." = "沒有內容。";
+"Jump To" = "跳轉到";
+"%@ with " = "%@ 和";
+"Hide Context" = "隱藏上下文";
+"Show Context" = "顯示上下文";
+"[Image]" = "[圖片]";
+"[Voice Message]" = "[語音消息]";
+"[File]" = "[文件]";
+"Press Enter to search content for:" = "按回車鍵搜索內容:";
+"Filter by Contacts" = "按聯繫人過濾";
+"Filter by Groups & Chats" = "按群組,聊天過濾";
+"Messages" = "消息";
+"GROUPS" = "群組";
+"CONTENTS" = "文件";
+"RECENT CHATS" = "最近聊天";
+"(Public)" = "（公開的）";
+"- Room" = "-會議室";
+"You can search messages and files in all of your conversations" = "您可以在您所有的聊天會話中搜索消息和文件";
+"This Chat" = "聊天";
+"Search files or messages" = "搜索文件或消息";
+"This Group" = "聊天群組";
+"Type your message" = "输入信息";
+"has been sent out." = "已經發出";
+"failed to send" = "發送失敗";
+"is not a supported file format." = "的文件格式不支持";
+"%@ is on an older version of Zoom client and may not be able to see your message." = "%@ 正在使用一個舊版本的Zoom客戶端,對方可能無法讀取您發送的消息";
+"Chat encryption has been enabled for your account, so you need to invite %@ online to start chat." = "您的帳戶已加密，所以您需要邀請%@上線才能開始聊天。";
+"Chat encryption has been enabled for your account , so you need to invite %@ online to start chat." = "您的帳戶已加密，所以您需要邀請%@上線才能開始聊天。";
+"Message content has been encrypted." = "消息內容已加密。";
+"Current group chat has enabled E2E encryption and you can't send messages without E2E. Please contact your IT admin for details." = "當前群組聊天已啟用端對端的加密，你無法發送非加密消息，請聯繫IT管理員以獲取詳情。";
+"Find a member" = "查找成員";
+"Screenshot" = "屏幕截圖";
+"Zoom is using an end-to-end encrypted connection" = "Zoom正在使用端到端加密連接";
+"Save as..." = "另存為";
+"@everyone" = "@全體組員";
+"You can start end to end chat with %@ now" = "你正在和%@進行端到端加密聊天";
+"Click to hide members" = "點擊隱藏組成員";
+"Click to show members" = "點擊顯示組成員";
+"Click to hide content" = "點擊隱藏內容";
+"Click to show content" = "點擊顯示內容";
+"The file sent successfully" = "文件成功發送";
+"Failed to send the file" = "發送文件失敗";
+"Group Settings" = "群組設置";
+"Chat Settings" = "聊天設置";
+"Edit Members" = "管理組成員";
+"Leave Chat" = "退出聊天";
+"Open in new window" = "在新窗口中打開";
+"Merge back to main window" = "合併到主窗口";
+"Select groups to join" = "選擇群組並加入";
+"Private (Invited members only)" = "非公開(僅限邀請加入)";
+"Public (Anyone in your organization can join)" = "公開(允許組織中的任何人加入)";
+"Upload files to my Personal Folder" = "上傳文件到我的個人文件夾";
+"Create or join a group" = "創建或加入一個群組";
+"New chat" = "創建聊天";
+"Content - All Files" = "內容-所有文件";
+"Select groups to join (%d in total)" = "選擇群組並加入(共%d個)";
+"Group Type:" = "群組類型:";
+"Invite Members:" = "邀請成員:";
+"Members in your organization only" = "只允許組內成員加入聊天群組";
+"No available public groups to join." = "沒有可加入的公開聊天群組。";
+"You have successfully joined groups:" = "您已經成功加入群組:";
+"Join Failed" = "加入失敗";
+"Share a File" = "共享一個文件";
+"Share with" = "共享給";
+"Share Error" = "共享錯誤";
+"%@  cannot be shared." = "無法共享%@";
+"Uploaded to " = "上傳到";
+"Failed to upload" = "上傳失敗";
+"Failed to download" = "下載失敗";
+"Uploading %d item / downloading %d item" = "%d個文件正在上傳/%d個文件正在下載";
+"%d Uploads / %d downloads complete" = "%d 上傳/ %d 下載完成";
+"%d Uploads complete" = "%d上傳完成";
+"Uploading %d items" = "上傳%d個文件";
+"%d Upload complete" = "%d完成上傳";
+"Upload Files to My Personal Folder" = "上傳文件到我的個人文件夾";
+"Browse" = "瀏覽";
+"Share with others" = "共享給其他人";
+"You can upload up to 5 files at a time." = "你一次最多可以上傳5個文件。";
+"Files are private until they are shared in group." = "文檔分享到群組之前為非公開狀態。";
+"Upload Files(%d file selected)" = "上傳文件(%d文件已選擇)";
+"Upload and Share" = "上傳並共享";
+"Type the name here" = "输入联系人姓名";
+"Zoom Rooms" = "Zoom Rooms";
+"You've changed password on web, please login with your new password." = "您已經在網頁上更改了登錄密碼,請重新使用新密碼登錄。";
+"requests to add you as a contact - Declined" = "請求添加您為聯繫人-已拒絕";
+
+"Share Zoom windows in desktop sharing" = "在桌面共享時不過濾Zoom窗口";
+"The host has another meeting in progress" = "主持人正在開另外一個會。";
+
+"Closed Caption history saved" = "字幕歷史已保存";
+"Save closed caption history" = "保存字幕歷史記錄";
+"Hide history" = "隱藏歷史記錄";
+"Show history" = "顯示歷史消息";
+"Closed caption is turned on" = "字幕打開";
+"Closed Caption - Broadcasting" = "字幕-播放中";
+"Closed Caption Font Size:" = "字幕字體大小：";
+"Small" = "小";
+"Large" = "巨大";
+"Subtitles will look like this." = "字幕顯示效果";
+
+"Playing"  = "播放";
+"There seems to be an issue with your speaker, please select a different device and try again." = "您的揚聲器似乎有問題，請換個設備重試。";
+"Please speak to your microphone." = "請對著麥克風說話。";
+"If you can't hear your voice, select a different microphone." = "如果您聽不見聲音，請更換麥克風。";
+"Click Test Mic to make sure others can hear you" = "點擊\"測試麥克風\"以確保別人能聽到您的聲音";
+
+"Audio Alert" = "音頻警告";
+"Check Microphone & Speaker Settings" = "檢測麥克風和揚聲器設置";
+"Test Microphone & Speaker" = "測試麥克風和揚聲器。";
+"Failed to detect your speaker. Please make sure your speaker is properly connected." = "無法檢測到您的揚聲器。請確保你的揚聲器正確連接。";
+"Your speaker has changed to %@ and will now be used." = "您的麥克風已被更換成 %@ 。";
+"Failed to detect your microphone and speaker. Please make sure your devices are properly connected." = "無法檢測到您的麥克風和揚聲器，請確認您的設備連接正確。";
+"Failed to detect your microphone. Please make sure your microphone is properly connected." = "無法檢測到您的麥克風，請確認您的麥克風連接正確。";
+"Failed to detect your microphone. Please make sure your microphone is properly connected.\nYour speaker has changed to %@ and will now be used." = "無法檢測到您的麥克風，請確保您的麥克風連接正確，\n其已被更換成%@。";
+"Your microphone has changed to %@ and will now be used." = "您的麥克風已被更換成 %@ 。";
+"Your microphone has changed to %@ and will now be used.\nYour speaker has changed to %@ and will now be used." = "您的麥克風已被更換成 %@，您的揚聲器已被更換成 %@。";
+"Failed to detect your speaker. Please make sure your speaker is properly connected.\nYour microphone has changed to %@ and will now be used." = "無法檢測到您的揚聲器，請確保您的揚聲器連接正確，\n其已被更換成%@。";
+
+"Manage cloud storage" = "管理會議雲空間";
+"Cloud recording not started.\n" = "雲錄製未啟動。";
+"Meeting audio may not be fully recorded." = "會議音頻可能沒有被完整錄製。";
+"Same as System" = "系統默認";
+"Record on this computer" = "本地錄製";
+"Your account has used up all of the cloud storage space currently available. To record to the cloud, delete some older recordings or upgrade your cloud recording plan." = "您的帳號可用的雲空間已滿，要記錄到雲端，請刪除一些早期錄製文檔或購買更多空間。";
+"Your account has used up all of the cloud storage space currently available. To record to the cloud, delete some older recordings." = "您的帳號可用的雲空間已滿，請刪除一些早期錄製文檔。";
+"Host has used the maximum storage space available. To record to the cloud, ask the meeting organizer to delete some older recordings or upgrade the cloud recording plan." = "主持人購買的雲空間已滿，要記錄到雲端，請會議組織者刪除一些早期錄製文件或購買更多空間。";
+"Coud storage does not have enough space. Please contact host to upgrade plan or remove some old recording files." = "會議雲空間不足，請聯繫主持人進行升級或者刪除一些舊的錄製文檔。";
+
+"Please enter the Meeting ID or enter the Sharing Code displayed on the Zoom meeting room TV screen." = "請輸入會議號或者Zoom會議室電視屏幕上的共享碼";
+"Cannot connect to Zoom Rooms. Please enter the meeting ID or select Presentation on iPad controller." = "無法連接到Zoom Rooms，請輸入會議號或在iPad控制器上選擇共享。";
+"Network error, please try later." = "網絡錯誤，請稍後重試。";
+
+"Sharing screen to \"%@\"" = "正在共享屏幕到 \"%@\"";
+"The file size exceeds the limitation (512MB) and cannot be uploaded." = "文檔超出限制(512M)無法上傳。";
+
+//ZOOM-6379 TrackingCode
+"(Optional)" = "（可選的）";
+
+"Audio sub menu" = "音頻子菜單";
+"Video sub menu" = "視頻子菜單";
+"Multiple Share sub menu" = "多人共享子菜單";
+"has joined the meeting" = "加入了會議";
+"has left the meeting" = "離開了會議";
+"All panelists can share" = "允許所有嘉賓共享";
+"All panelists can start sharing when someone else is sharing" = "當其他人共享屏幕時,所有嘉賓都可以開始共享";
+"All participants can share" = "允許所有參會者共享";
+"All participants can start sharing when someone else is sharing" = "當其他人共享螢幕時，所有參會者都可以開始共享";
+"Only host can share" = "僅主持人有權共享螢幕";
+"Only host can start sharing when someone else is sharing" = "當其他人共享螢幕時，僅主持人有權開始共享";
+
+"Please wait. The webinar will begin soon." = "請稍候。網絡研討會即將開始。";
+"Allow attendees to ask questions anonymously" = "允許觀眾匿名提問";
+
+"Invite by Contacts" = "邀請Zoom聯繫人";
+"Invite Zoom Rooms" = "邀請Zoom會議室";
+
+"Move focus to next window" = "將焦點切到下一個窗口";
+
+"You can also use the \"Control + \\\" to show/hide meeting controls" = "您可以使用 \"Control + \\\"去顯示或隱藏會議控制欄";
+"Always show meeting controls" = "總是顯示會議控制欄";
+
+"Your account has been locked due to multiple failed login attempts" = "您的賬號在多次嘗試登陸失敗後已經被鎖定";
+"You cannot minimize Zoom when you are sharing Zoom windows" = "您在共享Zoom窗口時不能最小化Zoom";
+"%@ has started screen share, choose Options to view" = "%@開始共享屏幕,選擇選項觀看";
+"[New notification]" = "[新通知]";
+"Advanced Sharing Options..." = "高級共享選項...";
+"Advanced Sharing Options" = "高級共享選項";
+
+"You are the admin of this group. You should transfer admin privileges or delete the group before leaving it." = "您是本群組管理員，您必須在離開群組前移交管理員權限或者刪除本群組。";
+"Continue delete" = "繼續刪除";
+
+"Save emojis from any chat" = "從任何聊天中保存表情";
+"Right click any image in a chat window,\nthen choose \"Add to emoji\"" = "在聊天窗口中按右鍵單擊圖片選擇\"添加到表情\"";
+"Upload your own emoji" = "上傳您自己的表情";
+"Click the menu in the lower right corner" = "點擊右下角的菜單";
+"Syncing emojis..." = "同步表情……";
+"Delete Selected(%d)" = "刪除選中 (%d)";
+"Delete Selected" = "刪除選中";
+"Add more emojis here" = "在這裡添加更多表情";
+"Upload emoji" = "上傳表情";
+"Delete emoji" = "刪除表情";
+"Edit" = "編輯";
+"Added" = "已添加";
+"This emoji already exists." = "此表情已存在。";
+"Add to emoji" = "添加爲表情";
+"Saved emojis" = "我的表情";
+"Common emojis" = "基本表情";
+
+"Navigate among Zoom popup windows" = "在Zoom的弹出窗口中选取";
+"View the previous 25 video participants in gallery view" = "在畫廊模式中查看上一組參會者的視頻";
+"View the next 25 video participants in gallery view" = "在畫廊模式中查看下一組參會者的視頻";
+"Switch to minimal window" = "切換到小窗口模式";
+"Switch to speaker view" = "切換到演講者視圖";
+"Switch to gallery view" = "切換到畫廊模式";
+"Start/Stop video" = "打開/關閉攝像頭";
+"Mute/Unmute my audio" = "將我設為靜音/取消靜音";
+"Mute audio for everyone except host (available only to the host)" = "將除主持人外的所有人靜音((僅主持人/聯席主持人有此功能)";
+"Unmute audio for everyone except host (available only to the host)" = "解除禁言(僅主持人/聯席主持人有此功能)";
+"Start/Stop share screen" = "開始/停止屏幕共享";
+"Pause/Resume share (available only when you are sharing your screen)" = "暫停/恢復共享（僅在您共享屏幕時可用）";
+"Start/Stop local recording" = "打開/停止本地錄製";
+"Start/Stop cloud recording" = "打開/停止雲錄製";
+"Pause/Resume recording" = "暫停/恢復錄製";
+"Enter/Exit full screen mode" = "進入/退出全屏模式";
+"Display/Hide chat" = "顯示/隱藏聊天";
+"Display/Hide manage participants" = "顯示/隱藏參會者管理介面";
+"Open the invite window" = "打開邀請窗口";
+"Keyboard Shortcuts:" = "鍵盤快捷鍵：";
+"Description" = "描述";
+"Enable shortcuts even when the Zoom app is not in focus" = "當Zoom程式後臺運行時，快捷鍵依然可用";
+
+"Group \"%@\" has been deleted by admin." = "管理員刪除了群組 \"%@\"";
+"Transfer Admin" = "移交群管理員";
+"Assign the new group admin" = "分配新的群組管理員";
+"You are permanently removing all group conversations, files, and other related information. There is no way to recover the information."  = "您將永久移除所有群組消息，文檔和其他相關資訊，這些在操作後將無法恢復。";
+
+"Choose the audio conference option" = "選擇會議語音的接入方式";
+
+"Please wait, the meeting host will let you in soon." = "請稍候,會議主持人馬上會請您加入";
+"1 person is waiting" = "1人正在等候";
+"%d people are waiting" = "%d人正在等候";
+"1 participant in the meeting" = "1人在參會";
+"%d participants in the meeting" = "%d人在參會";
+"Admit" = "准入";
+"See waiting room" = "查看人員等候情況";
+"%@ has entered the waiting room for this meeting" = "%@已進入本次會議的等候室";
+"%d people have entered the waiting room for this meeting" = "%d人已在等候室等待加入會議";
+"Put attendee in Waiting Room on Entry" = "觀眾加會時自動進入等候室";
+"Take off hold" = "取消等待狀態";
+"Put in waiting room" = "移至等候室";
+"Put on hold" = "設置為等待狀態";
+"1 person is on hold" = "1人在等待";
+"%d people are on hold"  = "%d人在等待";
+
+"Sharing Key or Meeting ID" = "共享代碼或會議號";
+"Please enter a valid sharing key or meeting ID." = "請輸入一個正確的共享碼或會議號。";
+
+"Stop Live Stream" = "停止直播";
+"Live on" = "直播";
+"Preparing..." = "準備中";
+"Unable to stream your webinar to %@.\nYou need to restart steaming." = "無法在%@上直播網路研討會，\n請重新開始直播。";
+"The streaming link has been copied to the clipboard" = "直播鏈接已經複製到剪貼板";
+"Webinar is now streaming live on %@" = "網絡研討會正在%@上直播";
+"Copy Streaming Link" = "複製直播鏈接";
+"on %@" = "%@";
+"View Stream on %@" = "在%@上觀看直播";
+"Unmute your speaker or increase volume to hear other participants" = "如果聽不見別人說話，請將揚聲器解除靜音或者增大音量";
+"To decrypt the messages, at least one group member must be online." = "解密此消息需要本群中至少一個成員在線。";
+"To decrypt the messages, %@ must be online." = "%@在線才能解密此消息。";
+"[Upgrade to the latest version to see this message.]" = "[需要最新版才能查看此消息]";
+
+"raise hand" = "舉手";
+
+"yes" = "是";
+
+"no" = "否";
+
+"go slower" = "慢一點";
+
+"go faster" = "快一點";
+
+"more" = "更多";
+
+"clear all" = "清除所有";
+
+"dislike" = "不喜歡";
+
+"like" = "喜歡";
+
+"clap" = "鼓掌";
+
+"away" = "離開";
+
+"need a break" = "需要休息一下";
+
+"Clear All Feedback" = "清除所有反饋";
+
+
+"Record the meeting automatically" = "自動錄製會議";
+
+"Record the meeting automatically on the local computer" = "自動錄製會議並保存在本機";
+
+"Record the meeting automatically in the cloud" = "自動錄製會議並保存在雲端";
+
+"Locally" = "在本機";
+
+
+"In the cloud" = "在雲端";
+
+
+"To hear others,\nclick the Join Audio button." = "如需聽見其他人說話，\n請點擊加入音頻按鈕";
+
+
+"Click if you want to switch to a different microphone or speaker" = "如果您需要切換麥克風或揚聲器請點擊這裡";
+
+
+"Add a Personal Note" = "添加個性簽名";
+"Remove Personal Note" = "刪除個性簽名";
+"Share Screen Options" = "共享螢幕選項";
+
+
+"Waiting for approval" = "等待對方同意";
+"Once" = "一次";
+"Continuously" = "持續";
+"Zoom Room" = "Zoom會議室";
+"View Options" = "選項";
+
+"Change my status to Offline when I am inactive for %@ minutes" = "當閒置%@分鐘後，將我的狀態改為離線";
+"Recording..." = "錄影...";
+"Bounce application icon when I receive a chat message" = "收到聊天資訊時跳動程式圖標";
+
+"Unmute Myself" = "解除自己的靜音";
+"You are muted." = "您已靜音";
+
+"Your login attempt was not successful and you need to log in again. If this occurs multiple times, contact IT support." = "登錄失敗，您需要嘗試重新登錄，如果這種情況多次發生，請聯繫IT部門。";
+
+"Services" = "服務";
+"Raise hand/Lower hand" = "舉手/手放下";
+
+"checked" = "檢查";
+"status, available" = "狀態，空閒";
+"status, busy" = "狀態，忙碌";
+"status, offline" = "狀態，離線";
+
+"Enter %@ on your phone\nto associate your phone call with this computer as one participant." = "在電話上輸入%@以加入會議";
+"Show Dial-in Number" = "顯示撥入號碼";
+
+"File cannot be uploaded because it can not be found" = "找不到文檔，無法上傳";
+"File cannot be uploaded because it can not be read" = "文件不可讀，無法上傳";
+
+"count" = "計數";
+"Choose from the list or type to filter" = "從列表中選取或輸入關鍵字來過濾";
+
+"Try an unlimited Zoom meeting\n" = "體驗無時長限制的Zoom會議\n";
+"As a Basic user, your free meeting has a time limit of 40 minutes. Zoom is giving you a one-time offer to extend this meeting, Click \"Continue\" to enjoy your unlimited meeting for free. Thanks for choosing Zoom." = "免費用戶的會議有40分鐘時長限制，Zoom提供您一次把會議升級為無時長限制的機會。點擊\"继续\"享受這次免費升級，感謝選擇Zoom。";
+"Unable to extend this meeting\n" = "無法延長您的會議時長\n";
+"Zoom cannot extend your free meeting at this time. Your meeting will end when the duration reaches 40 minutes.\n\n(ERROR : %d)" = "Zoom無法延長您的免費會議時長。會議將在滿40分鐘後結束。\n\n(ERROR : %d)";
+"This meeting no longer has a time limit" = "本場會議不再有時長限制。";
+
+"Touch up my appearance" = "美顏";
+"Show my connected time" = "顯示我在會議裏的時間";
+
+"No one" = "無";
+"Allow attendees to chat with:" = "允許觀眾聊天範圍：";
+"All panelists and other attendees" = "全體嘉賓和觀眾";
+"Host only" = "僅主持人";
+"Share file in meeting" = "在會議中共享檔案";
+
+"Multiple participants can share simultaneously" = "允許多個參會者同時共享";
+"Multiple panelists can share simultaneously" = "允許多個嘉賓同時共享";
+"One participant can share at a time" = "一次只有一個參會者可以共享";
+"One panelist can share at a time" = "一次只有一個嘉賓可以共享";
+"How many participants can share at the same time?" = "多少參會者可以同時共享？";
+"All Participants" = "全體參會者";
+"Only Host" = "僅主持人";
+"Who can share?" = "誰可以共享?";
+"How many panelists can share at the same time?" = "多少嘉賓可以同時共享？";
+"Multiple participants can share simultaneously (dual monitors recommended)" = "允許多個參會者同時共享（建議使用雙顯示器）";
+"Who can start sharing when someone else is sharing?" = "誰可以在別人共享的同時開始共享?";
+
+"Pause/Stop Recording" = "暫停/停止錄影";
+"Resume/Stop Recording" = "恢復/停止錄影";
+
+"A new version is available!" = "有新版本可供更新！";
+
+"The meeting has been locked by the host" = "會議已被主持人加鎖";
+"You cannot chat with %@ during this meeting" = "在本次會議期間您無法與%@聊天";
+"How was your meeting experience?" = "您對這次會議體驗評價如何？";
+
+"Enable HD" = "啟用高清視頻";
+"Enable mirror effect" = "鏡像視頻";
+"LN_Show_Participant_Name_40473" = "總是在視頻中顯示參會者的名字";
+"Turn off my video when joining meeting" = "加入會議時不開啟攝像頭";
+"My Video:" = "我的視頻:";
+"Meetings:" = "會議:";
+
+"error code" = "錯誤代碼";
+"Continue Without Audio" = "繼續無聲錄製";
+"Recording will not include audio" = "無聲音錄製";
+"All panelists and attendees" = "全體嘉賓和觀眾";
+"and all panelists" = "和全體嘉賓";
+"Your text can be seen by panelists and other attendees" = "消息可為嘉賓和其他觀眾所見";
+"Login is restricted to email addresses that have the following domains:" = "登錄僅限於具有以下域的電子郵件地址：";
+"You are not authorized to start the meeting using the credentials you signed in with." = "您加入會議使用的證書未被授權。";
+
+"Jump to chat..." = "跳轉到聊天……";
+
+"[Mentioned all]" = "[全體消息]";
+
+"[Mentioned me]"  = "[有人@我]";
+"Image" = "圖片";
+"File"  = "文件";
+"Contents" = "文件";
+"Members" = "群組成員";
+"Member" = "組員";
+"Private" = "非公開";
+"Block Contact" = "屏蔽聯繫人";
+"Unblock Contact" = "解除屏蔽";
+"Are you sure you want to block this contact?" = "您確定要遮罩此人嗎？";
+"Are you sure you want to block %@?" = "您確定要屏蔽%@嗎？";
+"%@ will be blocked in your contacts and will not be able to contact you." = "%@將會被您遮罩，您們將互相無法聯繫。";
+"Block" = "遮罩";
+"This meeting now has unlimited minutes." = "此會議現在無時長限制。";
+"This meeting has been upgraded by the host and now includes unlimited minutes." = "此會議已被主持人升級，現在會議已經沒有時長限制了。";
+
+"Record a separate audio file for each participant who speaks" = "為每個發言者單獨錄製音訊文檔";
+
+"Close Manage Participants Panel" = "關閉管理參會者面板";
+"Close Participants Panel" = "關閉參會者面板";
+"Open Manage Participants Panel" = "打開管理參會者介面";
+"Open Participants Panel" = "打開參會者面板";
+"Close Chat Panel" = "關閉聊天面板";
+"Open Chat Panel" = "打開聊天面板";
+
+"Gain remote control" = "獲得遠程式控制制權";
+
+"Phone" = "電話";
+"Contact name or phone number" = "聯繫人姓名或電話號碼";
+"From: %@" = "從: %@";
+"Your audio has been switched to the connected voice call, and your audio will automatically reconnect back after the end of the voice call." = "您的音訊已切換到語音電話，電話掛斷後您的音訊將會自動重新連接。";
+"End phone call and Start a meeting" = "掛斷電話，開始會議";
+"Hold meeting audio and Anwser" = "暫停會議語音並應答";
+"invites you to a 1 on 1 video call..." = "邀請您進行1對1視頻會議";
+"invites you to a 1 on 1 voice call..." = "邀請您進行1對1語音會議";
+"Clear all recents" = "清空記錄";
+"Start a video call" = "開始視頻通話";
+"Start a non-video call" = "開始語音通話";
+"Delete call history" = "刪除所有歷史記錄";
+"Call History" = "呼叫記錄";
+"Zoom Audio" = "Zoom語音會議";
+"Zoom Video" = "Zoom視頻會議";
+"unknown" = "未知";
+"Close Keypad" = "關閉撥號盤";
+"Keypad" = "撥號盤";
+"You have a meeting in progress" = "您正在會議中";
+"If you continue to make a call, your audio will be transferred from the meeting to your phone call." = "如果您繼續撥打電話，您的音頻將從會議轉接到您的電話";
+"You have a phone call in progress" = "您正在通話中";
+"If you continue, your phone call will end and you will join the meeting."  = "如果繼續，您將中斷當前電話並將加入會議。";
+"If you continue, your phone call will end and you will start the meeting." = "如果繼續，您將中斷當前電話並將開始會議。";
+"Calling %@..." = "呼叫%@中...";
+"Accept" = "接受";
+"Decline" = "拒絕";
+"No Recents" = "無記錄";
+"(Internal)" = "(內線)";
+
+"Call Failed" = "呼叫失敗";
+"End call" = "結束通話";
+
+"This meeting is for authorized attendees only" = "此會議只針對被授權的參與人";
+"Click \"Sign In to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "點擊 \"登錄加入\"用授權的郵箱地址來登錄Zoom";
+"Click \"Switch Account to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "點擊 \"切換帳號加入\"用授權的郵箱地址來登錄Zoom";
+
+"Gain remote control" = "獲得遠程式控制制權";
+
+"Assign a participant to type" = "分配一個人輸入字幕";
+"Use a 3rd party CC service" = "使用第三方CC服務";
+"Copy the URL to your clipboard" = "複製鏈接至剪貼板";
+"The URL has been copied to your clipboard" = "此鏈接已被複製到剪貼板";
+"LN_CC_Copy_To_3rd_Party_16893" = "複製這個鏈接並粘貼到第三方字幕輸入設備";
+
+"Local Recording :" = "本地錄製：";
+"Cloud Recording :" = "雲錄製：";
+"LN_Setting_Record_Manage_On_Web_32812" = "在網頁上管理存儲空間";
+"Manage..." = "管理...";
+"You have %@ of cloud record storage" = "您有%@可用雲端存儲空間";
+"%@ used" = "已用%@";
+
+"Hide meeting controls" = "隱藏會議控制欄";
+"Show meeting controls" = "顯示會議控制欄";
+"Lock Webinar" = "網絡研討會加鎖";
+"Unlock Webinar" = "網絡研討會解鎖";
+"No new attendees can join this webinar once locked." = "一旦鎖定會議，新的觀眾將無法進入會議。";
+"New attendees can join this webinar once unlocked." = "會議一旦解鎖，新的觀眾可加入會議。";
+"My connected time is %d hour %d minute" = "我在會議裡的時間%d小時%d分鐘";
+
+"Zoom will decrypt the message when the key becomes available" = "Zoom需要獲得可用的金鑰才可以解密消息";
+"You cannot call any international phone numbers from this meeting until the host joins." = "在主持人加入之前，您不能從會議中撥打任何國際長途。（除美國外）";
+"The number you dialed is not supported" = "您撥打的號碼不支持";
+"The number you dialed to join the meeting is not responding" = "您撥打的加會電話號碼無應答";
+"Current and new participants will be muted" = "全體包括新參會者靜音";
+
+"iPhone/iPad via AirPlay" = "通過AirPlay共享iPhone/iPad螢幕";
+"iPhone/iPad via Cable" = "通過資料線連接iPhone/iPad進行螢幕共用";
+"Connect your iPhone or iPad to this computer" = "把你的iPhone或iPad連接到這臺電腦上";
+"When prompted on your iPhone or iPad, select \"Trust\"" = "當你的iPhone或iPad出現提示時，選擇“信任”";
+
+"Blocked Users:" = "已屏蔽的用户:";
+"Manage Blocked Users..." = "管理已屏蔽的用户...";
+"Blocked Users" = "已屏蔽的用户";
+"Select users below to unblock:" = "選擇以下用戶以取消屏蔽:";
+"Unblock" = "解除屏蔽";
+"Create" = "創建";
+"Create a New Group" = "創建一個新群組";
+"Join a Public Group" = "加入公開聊天群組";
+"Images" = "圖片";
+"All Files" = "全部文件";
+"Add to Emojis" = "添加爲表情";
+"Invite" = "邀請";
+"Speaker" = "揚聲器";
+"Microphone" = "麥克風";
+
+"Previous messages will never be visible to new group members. Do you want to continue?" = "以前的消息將對新組成員永不可見，您要繼續嗎？";
+
+"Your account is not available" = "您的帳戶不可用";
+"Your service is affected by a network issue" = "服務受到網路問題影響";
+"The call recipient is not available" = "呼叫不可用";
+"Your phone has an internal configuration error" = "手機內部配置錯誤";
+
+"What went wrong?" = "出了什麼問題嗎？";
+
+"LN_Disallow_Talk_15291" = "禁止發言";
+"LN_Allow_Talk_15291" = "允許說話";
+"LN_Mute_Audio_15291" = "靜音";
+"LN_Audio_Settings_15291" = "音訊選項";
+"LN_Allow_Talk_Tip_15291" = "主持人允許您在網絡研討會上發言";
+"LN_Talk_Allowed_15291" = "允許發言";
+"LN_Chat_15291" = "聊天";
+"LN_Plist_Allow_Attendee_To_15291" = "允許觀眾：";
+"LN_Plist_Attendee_Raise_Hand_15291" = "舉手";
+"LN_Plist_Attendee_View_Partcipants_Count_15291" = "允許觀眾查看參會人數";
+"LN_Plist_Attendee_Video_Layout_15291" = "設定觀眾視頻佈局：";
+"LN_Plist_Follow_Host_View_Mode_15291" = "與主持人視角一致";
+"LN_Plist_Active_speaker_view_15291" = "演講者視圖";
+"LN_Plist_Gallery_View_15291" = "畫廊視圖";
+"LN_Promote_15291" = "提升為嘉賓";
+"LN_Alert_Unmute_Now_15291" = "解除自己的靜音";
+"LN_Alert_Stay_Muted_15291" = "保持靜音";
+"LN_Alert_Temp_Talk_Title_15291" = "主持人想讓你開啟您的麥克風";
+"LN_Alert_Temp_Talk_Error_15291" = "允許說話不可用，因為%@使用的是舊版本的Zoom，你需要設%@為嘉賓";
+
+"LN_Plist_Accessibility_Recording_20044" = "錄製";
+"LN_Plist_Accessibility_CloseCaption_20044" = "CC字幕輸入者";
+"LN_Plist_Accessibility_HandRaised_20044" = "舉手";
+"LN_Plist_Accessibility_Video_On_20044" = "打開視頻";
+"LN_Plist_Accessibility_Video_Off_20044" = "關閉視頻";
+"LN_Plist_Accessibility_No_Video_20044" = "沒有視頻連接";
+"LN_Plist_Accessibility_Tele_Unmuted_20044" = "解除電話靜音";
+"LN_Plist_Accessibility_Tele_Muted_20044" = "電話靜音";
+"LN_Plist_Accessibility_VoIP_Unmuted_20044" = "電腦音頻開啟";
+"LN_Plist_Accessibility_VoIP_Muted_20044" = "電腦音頻靜音";
+"LN_Plist_Accessibility_No_Audio_20044" = "沒有音頻連接";
+"LN_Plist_Accessibility_Feedback_20044" = "回饋";
+"LN_Plist_Accessibility_YES_20044" = "是";
+"LN_Plist_Accessibility_No_20044" = "否";
+"LN_Plist_Accessibility_Slower_20044" = "慢一點";
+"LN_Plist_Accessibility_Faster_20044" = "快一點";
+"LN_Plist_Accessibility_Like_20044" = "喜歡";
+"LN_Plist_Accessibility_Dislike_20044" = "不喜歡";
+"LN_Plist_Accessibility_Clap_20044" = "鼓掌";
+"LN_Plist_Accessibility_Break_20044" = "需要休息一下";
+"LN_Plist_Accessibility_Away_20044" = "離開";
+"LN_Plist_Accessibility_Share_Audio_21795" = "共用電腦音頻";
+
+
+"Select a microphone to always use original sound" = "選擇一個麥克風始終使用原聲";
+"LN_Schedule_Alternative_Hosts_Label_18144" = "備選主持人：";
+"LN_Schedule_Failed_Incorrect_Alternative_Hosts_Description_18144" = "用戶不能被添加為備選主持人，因為他們不是同一個帳戶的成員。刪除以下用戶以繼續：";
+"LN_Schedule_Input_Alternate_Host_Example_18144" = "例如：john@company.com;peter@school.edu";
+"LN_Unread_Message_22128" = "%d條未讀郵件";
+"LN_Schedule_Mute_Participants_On_Entry_15154" = "加入會議時靜音";
+
+"Show Zoom menu in menu bar" = "在菜單欄上顯示Zoom菜單";
+"Virtual Background" = "虛擬背景";
+"Guest" = "訪客";
+
+"LN_Create_Duplicate_Name_Group_22373" = "群名稱被佔用，請用其它名稱命名本群組。";
+"LN_Alert_Diable_GoogleFacebook_Login_19082" = "您無法使用此方法登錄Zoom帳戶， 請聯繫IT管理員以獲取幫助。";
+
+"LN_Mark_Unread_14489"  = "標記為未讀";
+"LN_Mark_As_Read_14489" = "標記為已讀";
+"LN_Unread_Label_14489" = "未讀";
+"LN_JBH_Login_Label_19439" = "如果你是主持人，%@開啟會議";
+"LN_JBH_Login_URL_19439"   = "登錄";
+"LN_JBH_Login_Test_Audio_23405" = "測試電腦音頻";
+"LN_JBH_Login_Test_Speaker_23405" = "檢測我的揚聲器";
+"LN_JBH_Login_Recuring_Meeting_23405" = "這是一個週期會議";
+"LN_JBH_Login_Recuring_Webinar_23405" = "這是一個週期網路研討會";
+"LN_JBH_Login_Start_23405" = "開始";
+
+"LN_ZOOM-21100_To follow the pointer automatically, choose \"Follow presenter's pointer\" from the menu." = "若要自動跟隨滑鼠，請從菜單中選擇\"滑鼠跟隨\" 。";
+"LN_ZOOM-21100_Follow presenter's pointer" = "鼠標跟隨";
+"LN_ZOOM-21100_Don't follow presenter's pointer" = "不要跟隨共享者的鼠標指針";
+"LN_Giphy_Label_23623" = "Giphy";
+"LN_Giphy_Server_Error_23623" = "此服務目前不可用";
+"LN_Giphy_Net_Error_23623" = "由於網路問題，此服務不可用。";
+"LN_Giphy_No_Matched_23623" = "沒有找到匹配的圖像";
+
+"LN_Emoji_Skin_Tone_Label_23623" = "膚色：";
+
+"LN_Emoji_Cagegory_People_Label_23623" = "表情&人";
+"LN_Emoji_Cagegory_Nature_Label_23623" = "動物&自然";
+"LN_Emoji_Cagegory_Food_Label_23623" = "食物&飲料";
+"LN_Emoji_Cagegory_Activity_Label_23623" = "活動";
+"LN_Emoji_Cagegory_Places_Label_23623" = "旅行&地點";
+"LN_Emoji_Cagegory_Objects_Label_23623" = "對象";
+"LN_Emoji_Cagegory_Symbols_Label_23623" = "符號";
+"LN_Emoji_Cagegory_Flags_Label_23623" = "國旗";
+"LN_Emoji_Cagegory_Frequently_Label_23623" = "經常使用的";
+"LN_Emoji_Cagegory_Custom_Label_23623" = "自定義表情";
+"LN_Emoji_Search_Result_Label_23623" = "搜索結果";
+"LN_LinkPreview_Label_23623" = "包括鏈接預覽";
+
+"LN_You_Delete_File_@_Label_19886" = "您刪除了文件：%@";
+"LN_@_Delete_File_@_Label_19886" = "%@ 刪除了文件: %@";
+"LN_Delete_Message_Label_19886" = "您刪除了一條消息";
+"LN_@_Delete_Message_Label_19886" = "%@刪除了一條消息";
+
+"Select a microphone to always use original sound" = "選擇一個麥克風始終使用原聲";
+"LN_In_Meeting_Label_19901" = "正在開會";
+"LN_In_Zoom_Meeting_Label_19901" = "在Zoom會議中";
+"LN_Do_Not_Disturb_19901" = "請勿打擾";
+"LN_Offline_19901" = "離線";
+"LN_Turn_Off_19901" = "關掉";
+"LN_Snooze_Menu_20_Minutes_19901" = "20分鐘";
+"LN_Snooze_Menu_1_Hour_19901" = "1小時";
+"LN_Snooze_Menu_2_Hours_19901" = "2小時";
+"LN_Snooze_Menu_4_Hours_19901" = "4小時";
+"LN_Snooze_Menu_8_Hours_19901" = "8小時";
+"LN_Time_Period_Label_19901" = "設定時間段";
+"LN_Scheduled_Until_Label_19901" = "安排到";
+"LN_Resume_In_Hour_Minute_19901" = "恢復%lldh %lldm";
+"LN_Resume_In_hour_19901" = "恢復%lldh";
+"LN_Resume_In_Minute_19901" = "恢復%lldm";
+"LN_Resume_In_Seconds_19901" = "恢復%llds";
+"LN_Notification_Settings_19901" = "通知設置";
+"LN_Add_Person_Note_19901" = "添加個性簽名";
+"LN_Remove_Person_Note_19901" = "刪除個性簽名";
+"LN_Notifications_Label_19895" = "通知";
+"LN_Hit_Unread _message_22128" = "——————   以下是新消息   ——————";
+
+"Multi-user chats" = "多人聊天";
+
+"LN_MUTE_NOTIFICATION_ON_CALL_19895"= "當我在開會或內線電話時暫停通知";
+"LN_GROUP_NOTIFY_SETTING_ALL_19895" = "所有消息";
+"LN_GROUP_NOTIFY_SETTING_MENTION_ 19895" = "提到我或所有成員";
+"LN_GROUP_NOTIFY_SETTING_NOTHING_19895" = "不提醒";
+"LN_RECEIVE_PERMISSION_ALLMSG_19895" = "所有消息";
+"LN_RECEIVE_PERMISSION_PARTMSG_19895" = "只有私人資訊或提及";
+"LN_RECEIVE_PERMISSION_NOTHING_19895" = "不提醒";
+"LN_AUTO_NOTIFICATION_TIME_FROM_19895" = "自動停用通知：";
+"LN_RECEIVE_NOTIFICATION_BOUNCE_TIMES_19895" = "收到新消息時程式圖示跳動";
+"LN_RECEIVE_NOTIFICATION_SHOW_FLOATING_19895" = "收到新消息時，顯示浮動的通知";
+"LN_RECEIVE_NOTIFICATION_PLAY_SOUND_19895" = "收到新消息時播放提示音";
+"LN_GROUP_NOTIFY_SEARCH_TXT_19895" = "搜索";
+
+"LN_Group_Setting_Title_19895" = "重要群組";
+"LN_Instant_Message_Title_19895" = "即時消息";
+"LN_Notification_Setting_Title_19895" = "通知設置";
+"LN_With_Exceptions_Label_19895" = "例外設置";
+"LN_Exception_Group_button_19895" = "群組...";
+"LN_Exception_Group_button_small_19895" = "群組...";
+"LN_Group_Setting_Reset_Button_19895" = "重置";
+"LN_Import_Groups_Cell_Groups_Label_19895" = "聊天群組";
+"LN_Preferred_Notification_Label_19895" = "你希望的消息通知設置是";
+"LN_Choose_Exception_Label_19895" = "選擇例外的群組";
+"LN_Setting_Tool_Item_Instant_Messgae_19895" = "即時消息";
+"LN_Reset_Setting_Group_Label_19895" = "將所有自定義組通知設置重置為默認值。您要繼續嗎？";
+
+"LN_SIP_PWD_Err_Tip_25328" = "Zoom檢測到電話密碼不正確或已被更改。請重新輸入內部電話的密碼。";
+"LN_SIP_PWD_PlaceHolder_Tip_25328" = "請輸入內部電話的密碼";
+
+"%@ has been invited." = "已邀請%@。";
+"LN_Meeting_Live_Stream_TimeOut_18924" = "無法在%@上直播此會議。\n您需要重新開啟直播。";
+
+"LN_Meeting_Live_Stream_LiveOn_18924" = "會議正在%@上直播";
+"LN_MSG_Edited_19883" = "(已編輯)";
+
+"LN_Upcoming_Meetings_25955" = "我的會議";
+"LN_Start_A_New_Meeting_25955" = "開始一個新的會議";
+"LN_Accessibility_close_window_25955" = "關閉窗口";
+"LN_View_More_25955" = "查看更多 ...";
+"LN_START_25955" = "開始";
+
+"LN_ZOOM-26329_Side-by-side Mode" = "並排模式";
+"LN_ZOOM-26329_Enable participants to see the shared screen alongside either the Speaker View or Gallery View" = "讓參會者看到共享螢幕旁邊的演講者視圖或畫廊視圖";
+
+"LN_Need_Sign_In_Again_25027" = "會話已過期,請重新登錄。";
+
+"LN_This_File_Will_Be_Removed_27316" = "此文件將僅從- <%@>群組中刪除但不會從您的個人文件中刪除。";
+"LN_Phone_Service_Not_Avaliable_20377" = "電話服務不可用";
+"LN_Reset_Confirm_Button_Title_19895" = "確認";
+"LN_Exception_Group_Singal_Title_19895" = "群組...";
+"LN_Stop_CMR_Warning_25471" = "您確定要停止雲端會議錄影嗎？";//[Zoom-25471]
+"LN_Stop_CMR_Email_Warning_25471" = "如果是的話，当雲會議錄影完成後您將會收到一封郵件通知。";//[Zoom-25471]
+"LN_Share_Desktop_17163" = "共享桌面";
+"LN_Stop_Desktop_17163" = "停止共享";
+"LN_Local_17163" = "本地";
+"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "從%@和其他%d個國家撥入";  // ZOOM-16058
+"LN_Schedule_Selected_Two_DialinCountry_16058" = "從%@和%@撥入";  // ZOOM-16058
+"LN_Schedule_Selected_One_DialinCountry_16058" = "從%@撥入";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "選擇撥入國家";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "所選國家的撥入號碼將列入邀請郵件"; // ZOOM-16058
+"LN_Schedule_EditCountries_Include_Tollfree_Number_16058" = "包含免費電話"; // ZOOM-16058
+"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "已選國家："; // ZOOM-16058
+"LN_Schedule_EditCountries_Search_For_Country_16058" = "搜索國家";  // ZOOM-16058
+"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "您還未選擇國家，請至少選擇一個國家然後保存。"; // ZOOM-16058
+"LN_DockMenu_LanguageItem_24821" = "切換語言";
+"LN_Switch_Language_Alert_24821" = "Zoom客戶端需要重啟以把默認語言更改為%@。";
+"LN_Switch_Language_Alert_System_24821" = "系統語言";
+"LN_DockMenu_System_LanguageItem_24821" = "使用系統語言";
+"LN_Switch_Language_Alert_Change_24821" = "切換到 %@";
+"LN_Switch_Language_Alert_Keep_24821" = "繼續使用%@";     //ZOOM-24821
+"LN_Unable_Detect_Camera_Title_29896" = "Zoom無法檢測到攝像頭";
+"LN_Unable_Detect_Camera_Content_29896" = "請確保您的攝像頭已接通電源並正確連接到電腦";
+
+"Switch camera" = "切換攝影機";
+"Stop remote control" = "取消遠端控制";
+"LN_IM_Delete_Failed_30533" = "刪除消息失敗";
+"LN_IM_Receive_Notification_Exception_For_Others_31155" = "接收通知";
+"LN_IM_Notification_Keywords_31155" = "關鍵字";
+"LN_IM_Notification_Keyword_31155"  = "關鍵字";
+"LN_IM_Notification_Contacts_31155" = "聯繫人";
+"LN_IM_Notification_Contact_31155"  = "聯繫人";
+"LN_Notification_Add_Keywords_31155" = "添加關鍵字";
+"LN_Notification_Add_Keywords_Description_31155" = "當提及這些關鍵字時，您將會收到通知。請使用逗號分隔每個關鍵字（關鍵字不區分大小寫）。";
+"LN_Notification_Search_Contacts_31155" = "搜索聯繫人";
+"LN_Notification_Choose_Contacts_31155" = "選擇始終接收來自以下聯繫人消息的通知：";
+"LN_Notification_Reset_Exception_Contacts_31155" = "您將不會再收到所選聯繫人的通知。是否繼續？";
+"LN_Notification_Search_No_Contact_31155" = "找不到聯繫人。嘗試換個關鍵字";
+"LN_IM_Notification_Title_%@_In_%@_31106" = "%@ 在 %@";
+"LN_IM_Notification_Image_31106" = "向您發送了一張圖片。";
+"LN_IM_Notification_Voice_31106" = "向您發送了一條語音。";
+"LN_IM_Notification_File_31106" = "向您發送了一個文檔。";
+"LN_IM_Notification_Text_31106" = "給您發送了一條消息。";
+"LN_IM_Notification_Encrypted_Text_31106" = "向您發送了一條加密消息。";
+"LN_IM_Notification_Group_Image_31106" = "發送一張圖片。";
+"LN_IM_Notification_Group_Voice_31106" = "發送一條語音。";
+"LN_IM_Notification_Group_File_31106" = "發送一個文檔。";
+"LN_IM_Notification_Group_Text_31106" = "發送消息。";
+"LN_IM_Notification_Group_Encrypted_Text_31106" = "發送一條加密消息。";
+"LN_ACCESSIBILITY_Window_will_close_21244" = "窗口已關閉"; //ZOOM-21244
+"LN_Setting_Record_Optimize_28546" = "針對第三方視頻編輯器進行優化";
+"LN_Setting_Record_Optimize_Info_28546" = "啟用此選項可提高Zoom的錄影文檔與市面上部分視頻編輯軟體的相容性。";
+"LN_Setting_Record_Thumbnails_28544" = "錄製共享內容時顯示視頻縮略圖";
+"LN_Setting_Record_Timestamp_28548" = "在錄製中加入時間戳";
+"LN_Setting_Record_Timestamp_Info_28548" = "啟用該選項可以在錄製視頻的過程中嵌入當前日期和時間。";
+"LN_Select_Record_Path_warning_30336" = "請在本機上選擇保存錄製文檔的文件夾";
+"LN_Code_Snippet_Create_Window_Title_31934" = "創建代碼片段";
+"LN_Code_Snippet_Create_Button_Title_31934" = "創建片段";
+"LN_Code_Snippet_Setting_Title_31934" = "顯示代碼片段按鈕";
+"LN_Code_Snippet_Setting_Title_Locked_31934" = "顯示代碼片段按鈕（管理員鎖定）";
+"LN_Code_Snippet_Button_Title_31934" = "代碼";
+"LN_Code_Snippet_Code_Optional_Title_31934" = "標題（可選）";
+"LN_Code_Snippet_Create_Button_Try_Title_31934" = "請重試";
+"LN_Code_Snippet_Upload_Failed_31934" = "上傳失敗。請重試。";
+"LN_Code_Snippet_Wrap_31934" = "換行";
+"LN_Code_Snippet_Tip_31934" = "[代碼片段]";
+"LN_Code_Snippet_Notification_Group_31934" = "發送了一段代碼片段";
+"LN_Code_Snippet_Notification_31934" = "給您發送了一個代碼片段";
+"LN_Code_Snippet_Download_Title_31934" = "下載代碼片段";
+"LN_Code_Snippet_View_%ld_Lines_31934" = "查看剩餘的%ld行";
+"LN_Code_Snippet_Add_%@_Code_%@_31934" = "添加了此%@代碼片段：%@";
+"LN_Meeting_StatusView_Can_Control_Title_21500" = "您可以控制%@的屏幕";
+"LN_Temporarily_Unmuted_542" = "暫時取消靜音";
+"LN_Enable_Push_To_Talk_542" = "按住空格鍵暫時取消靜音";
+"LN_Mute_Self_Remind_Tip_542" = "您已被靜音，按Shift + Command + A取消靜音，或按住SPACE鍵暫時取消靜音。";
+"LN_Unmute_Audio_Button_Tip_542" = "取消音頻%@的靜音。您可以按住空格鍵暫時取消靜音。";
+"LN_Unmute_Phone_Button_Tip_542" = "取消電話%@的靜音。您可以按住空格鍵暫時取消靜音。";
+"LN_Join_Audio_33542" = "加入音頻";
+"LN_Polling_Conflict_32870" = "由於您的帳號在異地登錄或會議重新連接，投票功能已無法使用。";
+"LN_CopyRight_34145" = "版权所有 ©2012-2018 Zoom Video Communications, Inc.";
+"LN_Enable_49_Wall_View_30742" = "在畫廊模式中，每頁最多顯示49位參會者。";
+"LN_49_Wall_View_Tip_30742" = "您當前設備的CPU僅支持在畫廊模式下單屏顯示25個參會者視頻窗口。欲瞭解更多該功能的使用要求,請參見文章\"畫廊模式下參會者視頻的顯示\"。";
+"LN_TurnOn_OriginalSound_30742" = "打開原聲";
+"LN_Msg_Removed_%@_33477" = "您發送和接收的消息將在%@後被刪除";
+"LN_Changed_Settings_33477" = "更改設置";
+"LN_Or_33477" = "或";
+"LN_Older_%@_Msg_Removed_33477" = "%@前的消息已被刪除";
+"LN_Older_%@_Image_Removed_33477" = "%@以前的圖片已被刪除";
+"LN_Older_%@_File_Removed_33477" = "%@以前的文檔已被刪除";
+"LN_%ld_Years_33477" = "%ld年";
+"LN_1_Year_33477"   =   "1年";
+"LN_%ld_Months_33477"= "%ld個月";
+"LN_1_Month_33477"  =   "1個月";
+"LN_%ld_Days_33477"  = "%ld天";
+"LN_24_Hours_33477"  =  "24小時";
+"LN_Msg_Learn_More_33477" = "瞭解更多";
+"LN_Setting_Config_By_Admin_33477" = "該設置由管理員配置。";
+"LN_Download_Code_Tip_33477" = "下載代碼片段插件包。";
+"LN_TurnOff_OriginalSound_30742" = "關閉原聲";
+"LN_Recording_Paused_30742" = "錄製暫停";
+"LN_Unable_Load_Content_33447" = "無法加載內容。";
+"LN_Unable_Connect_Internet_33447" = "未連接";
+"LN_Try_Again_33447" = "請重試";
+"LN_Waiting_TurnOn_Video_Meeting_35641" = "會議開始時，您的視頻將默認打開。";
+"LN_Waiting_TurnOn_Video_Webinar_35641" = "網路研討會開始時，您的視頻將默認打開。";
+"LN_Waiting_Host_Meeting_35641" = "請等待主持人開啟會議";
+"LN_Waiting_Host_Webinar_35641" = "請等待主持人開啟研討會";
+
+"LN_Join_WebURL_Title_15122" = "使用流覽器加會";
+"LN_Join_WebURL_Content_15122" = "使用Zoom用戶端加會碰到一些問題，按一下\"%@\"使用簡化版加會";
+"LN_Join_WebURL_Button_15122" = "從流覽器加會";
+"LN_Share_Frame_39044" = "螢幕的部分";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "螢幕採集菜單";
+"LN_Annotate_FormatPanel_21222" = "格式面板";
+"LN_Annotate_Diamond_21222" = "菱形";
+"LN_Acessibilty_ClosedCaptionFontSize_%d_39033" = "%d，隱藏字幕文字尺寸，拖動條";
+"LN_Acessibilty_ClosedCaption_Subtitles_%d_39033" = "字幕使用%d號字體";
+"LN_Annotate_AnnotatePanel_21222" = "注釋面板";
+"LN_Annotate_ShapePanel_21222" = "工具面板";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "螢幕採集菜單";
+"LN_Annotate_DoubleArrow_21222" = "雙箭頭";
+"LN_Annotate_FillRect_21222" = "填充矩形";
+"LN_Annotate_FillOval_21222" = "填充橢圓形";
+"LN_Annotate_StampX_21222" = "打叉";
+"LN_Annotate_WideCurve_21222" = "寬曲線";
+"LN_Annotate_ArrowLine_21222" = "箭頭";
+"LN_Annotate_SemiFillRect_21222" = "半透明矩形";
+"LN_Annotate_SemiFillOval_21222" = "半透明橢圓形";
+"LN_Annotate_StampCheck_21222" = "對勾";
+"LN_Annotate_ThinCurve_21222" = "細曲線";
+"LN_Annotate_StraightLine_21222" = "直線";
+"LN_Annotate_StrokeRect_21222" = "畫矩形";
+"LN_Annotate_StrokeOval_21222" = "畫橢圓形";
+"LN_Annotate_StampArrow_21222" = "箭頭";
+"LN_Annotate_Spotlight_21222" = "聚焦";
+"LN_Change_Status_Away_When_InActive_%@_Minutes_40737" = "當閒置%@分鐘後，將我的狀態改為離開";
+"LN_Code_Snippet_Length_Error_40055" = "檔大小不能超過16KB。";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "螢幕採集菜單";
+"LN_Code_Snippet_Download_Msg_31934" = "要創建代碼片段，請先下載插件包(只需要下載一次)。";
+"LN_Create_Code_Tip_33477" = "要創建代碼片段，";
+"LN_Meeting_List_Item_Add_Calendar_Help_25869" = "連接後，您的會議和網路研討會日程將在Zoom客戶端上顯示。您的在會狀態也將在 Zoom 上同步顯示。";
+"LN_Meeting_RemoteControl_UnderControlling" = "被遠程控制"; //[ZOOM-28437]
+"LN_Notification_Keywords_Example_31155" = "例如：Zoom，專案";
+
+"LN_Help_String_40539" = "幫助";
+"LN_Participants_Raised_Hand_39858" = "參會者舉手";
+"LN_Raised_Hand_39858" = "已舉手";
+"LN_Toolbar_Open_Participants_Panel_39047" = "已關閉，打開參會者管理介面，%ld個參會者";
+"LN_Toolbar_Close_Participants_Panel_39047" = "已打開，關閉參會者面板，%ld個參會者";
+"LN_Toolbar_Open_Manage_Participants_Panel_39047" = "已關閉，打開參會者管理介面，%ld參會者";
+"LN_Toolbar_Close_Manage_Participants_Panel_39047" = "已打開，關閉管理參會者面板，%ld參會者";
+"LN_I_Am_Fine_37969" = "我感覺不錯";
+"LN_Switch_To_Phone_37969" = "切換至電話";
+"LN_Dectect_Poor_Audio_Connection_37969" = "偵測到品質差的音訊連接";
+"LN_Participants_Not_Hear_You_37969" = "會議中的其他與會者有可能聽不到您的音訊。\n或者您可以考慮切換到電話";
+"LN_Request_Remote_Control_Title_37969" = "您將要請求控制 %@ 共享的內容。";
+"LN_Wait_For_Approval_37969" = "並等待 %@ 的批准。\n";
+"LN_Remote_Control_Request_37969" = "遠端控制請求";
+"LN_Not_Send_Request_37969" = "若您不想要傳送一個請求。";
+"LN_Request_Remote_Control_37969" = "請求遠端控制權";
+"LN_Requesting_Remote_Control_Shared_Content_37969" = "%@請求遠程控制您共享的內容。";
+"LN_Approve_Request_Alert_37969" = "如果你同意這個請求，%@ 將控制你共享的內容。您可以點擊任何地方來重新獲得控制權。";
+"LN_Select_Request_Try_Again_37969" = "選擇請求以重試";
+"LN_Try_Again_37969" = "再試一次";
+"LN_Declined_Your_Request_37969" = "%@ 拒絕了您的請求。";
+"LN_Hand_Raised_33393" = "舉手";
+"LN_Hand_Lowered_33393" = "手放下";
+"LN_Hand_Has_Been_Raised_33393" = "舉手";
+"LN_Hand_Has_Been_Lowered_33393" = "手放下";
+"LN_Request_37969" = "請求";
+"LN_Select_37969" = "選擇";
+"LN_Decline_37969" = "拒絕";
+"LN_Approve_37969" = "批准";
+"LN_Invite_Room_System_20093" = "會議室系統";
+"LN_Setting_Record_During_Sharing_39256" = "在螢幕共用期間錄製視頻";
+"LN_Setting_Record_Video_Next_To_Share_39256" = "視頻在錄製檔裏將呈現在共用內容的旁邊";
+"LN_Meeting_QA_Type_Question_40651" = "在這裏輸入你的問題...";
+"LN_Meeting_QA_Allow_Anonymous_Questions_40651" = "允許匿名提問";
+"LN_Meeting_QA_Allow_Attendees_View_40651" = "允許參會者查看";
+"LN_Meeting_QA_View_Answered_Questions_40651" = "僅已回答的問題";
+"LN_Meeting_QA_View_All_Questions_40651" = "所有問題";
+"LN_Meeting_QA_Allow_Attendees_Upvote_40651" = "參會者可以點擊贊同";
+"LN_Meeting_QA_Allow_Attendees_Comment_40651" = "參會者可以評論";
+"LN_Meeting_QA_All_Questions_40651" = "所有問題";
+"LN_Meeting_QA_My_Questions_40651" = "我的問題";
+"LN_Meeting_QA_Welcome_Title_40651" = "歡迎";
+"LN_Meeting_QA_Welcome_Message_40651" = "可隨時詢問主持人和嘉賓問題";
+"LN_Meeting_QA_No_Asked_Questions_40651" = "您沒有問過任何問題";
+"LN_Meeting_QA_Private_Answer_40651" = "私密回復";
+"LN_Meeting_QA_Show_40651" = "顯示所有內容";
+"LN_Meeting_QA_Collapse_40651" = "收起所有";
+"LN_Meeting_QA_Attend_Comment_40651" = "評論";
+"LN_Meeting_QA_End_Live_Answer_40651" = "這個問題已被線上回答了";
+"LN_Meeting_QA_Question_Dismissed_40651" = "這個問題已被關閉";
+"LN_Meeting_QA_Type_Answer_40651" = "輸入回答";
+"LN_Meeting_QA_My_Question_40651" = "我的問題";
+"LN_Meeting_QA_Reopen_40651" = "重新打開";
+"LN_Meeting_QA_Add_Answer_40651" = "在這裏輸入你的回答...";
+"LN_Meeting_QA_Add_Comment_40651" = "在這裏輸入你的評論...";
+"LN_Meeting_QA_Unread_Questions_40651" = "問答，%ld條未讀問題";
+"LN_Accessibility_OpenDefaultBrowser_39412" = "在默認流覽器中打開";
+"LN_Accessibility_Link_39412" = "鏈接";
+"LN_Accessibility_VB_Support_39412" = "虛擬背景";
+"LN_Accessibility_Upcoming_meetings_7432" = "即將開始的會議";
+"LN_Accessibility_Recorded_meetings_7432" = "錄製的會議";
+"LN_Accessibility_RemoteControlWondow_43656" = "選中";
+"LN_Plist_Stop_Audio_Share_21795" = "停止音頻共用";
+"LN_Fit_Share_Audio_21795" = "你正在共用電腦音頻";
+"LN_Fit_Viewing_Audio_21795" = "%@正在共用電腦音頻";
+"LN_Share_Sound_Only_21795" = "僅電腦音頻";
+"LN_Share_Camera_21795" = "第二攝像頭的內容";
+"LN_Share_Audio_Error_By_Send_Share_21795" = "其他參會者共用螢幕時，您無法共用電腦聲音。";
+"LN_Share_Screen_Error_By_Share_Auido_21795" = "開始共用螢幕後，其他人的電腦音頻共用將被中斷。您想繼續嗎？";
+"LN_Share_Basic_Type_21795" = "基本";
+"LN_Share_Advance_Type_21795" = "高級";
+"LN_Accessibility_You_Start_Audio_Share_21795" = "您已經開始共用電腦音頻";
+"LN_Accessibility_You_Stop_Audio_Share_21795" = "您已經停止共用電腦音頻";
+"LN_Accessibility_Someone_Start_Aduio_Share_21795" = "%@已開始共用電腦音頻";
+"LN_Accessibility_Someone_Stop_Aduio_Share_21795" = "%@已停止共用電腦音頻";
+"LN_Share_Frame_Tooltip_21795" = "在屏幕上選取一塊區域去共享";
+"LN_Share_Sound_Tooltip_21795" = "僅共享電腦的音頻而不會共享屏幕內容";
+"LN_Accessibility_Select_Country_Code_21342" = "選擇國家代碼";
+"LN_Accessibility_Call_Me_History_21342" = "撥打我的歷史國家";
+"LN_TranferAmdin_From_You_To_%@_42604" = "本群組管理員已從您更改為%@。";
+"LN_TranferAmdin_From_%@_To_%@_42604" = "本群組管理員已從%@更改為%@。";
+"LN_TranferAmdin_From_%@_To_You_42604" = "本群組管理員已從%@更改為您。";
+"LN_Assign_ANewAmdin_42604" = "分配新的管理員";
+"LN_Security_NNot_Verified_Label_42898" = "安全警告：不可信服務器證書";
+"LN_Security_NNot_Verified_Title_42898" = "Zoom";
+"LN_Security_NNot_Verified_Content_42898" = "您無法連接到Zoom，因為所提供的安全證書無法驗證。請聯繫您的IT部門尋求幫助。";
+"LN_Security_Not_Private_Content_42898" = "你的連接不是私密連接。攻擊者可能試圖從Zoom中竊取您的個人或財務資訊。\n\n此伺服器無法證明它是Zoom。其安全證書來自%@。";
+"LN_Security_Trust_Anyway" = "總是信任";
+"LN_Security_Do_Not_Trust" = "不信任";
+"LN_Testing_Speaker_38961" = "正在測試揚聲器...";
+"LN_Do_You_Hear_A_Ringtone_38961" = "你聽到鈴聲了嗎？";
+"LN_Tested_All_Speakers_38961" = "已測試所有揚聲器";
+"LN_Tested_All_Mic_38961" = "已測試所有麥克風";
+"LN_Test_Again_38961" = "重新測試";
+"LN_Join_Audio_By_Phone_38961" = "通過電話加入音頻";
+"LN_Testing_38961" = "正在測試...";
+"LN_Testing_Microphone_38961" = "正在測試麥克風...";
+"LN_Have_%ld_Speakers_Now_Testing_%ld_38961" = "您有%ld揚聲器，現在正在測試揚聲器%ld ...";
+"LN_Have_%ld_Mics_Now_Testing_%ld_38961" = "您有%ld麥克風，現在正在測試麥克風%ld ...";
+"LN_Speak_And_Pause_Do_You_Hear_Replay_38961" = "請說幾句話然後等一會，你聽到剛才的回放了嗎？";
+"LN_Troubleshoot_Speaker_Mic_38961" = "測試揚聲器&麥克風...";
+"LN_Speaker_%ld_38961" = "演講者%ld：";
+"LN_Microphone_%ld_38961" = "麥克風%ld：";
+"LN_Swithch_To_Phone_Audio_38961" = "切換到電話音頻...";
+"LN_Capture_32093" = "截圖";
+"LN_Install_AirHost_With_AdminPrivileges_43112" = "要開始使用AirHost，您需要使用管理員許可權進行安裝。";
+"LN_Install_CodeSnippet_With_AdminPrivileges_43112" = "如需使用代碼片段，您需要使用管理員許可權進行安裝。";
+"LN_Install_ScreenShot_With_AdminPrivileges_43112" = "如需使用螢幕截圖，您需要使用管理員許可權進行安裝";
+"LN_Install_SipCall_With_AdminPrivileges_43112" = "如需使用電話呼叫，您需要使用管理員許可權進行安裝。";
+"LN_Install_RetainaRes_With_AdminPrivileges_43112" = "如需支持 Reitna 顯示器,您需要使用管理員許可權進行安裝。";
+"LN_Copy_link_39867" = "複製鏈接";
+"LN_Join_meeting_39867" = "加入會議";
+"LN_Decrypt_message_39867" = "Zoom需要獲得可用的密鑰才可以解密消息。";
+"LN_You_joined_group_39867" = "您已加入此群組聊天";
+"LN_Hide_Self_View_40266" = "隱藏本人視圖";
+"LN_Show_Self_View_40266" = "顯示本人視圖";
+"LN_Join_With_Computer_Audio_38961" = "使用電腦音頻加入";
+"LN_Tets_Speaker_And_Mic_38961" = "測試揚聲器和麥克風";
+"LN_Accessibility_Dock_Top_40628" = "螢幕共用工具欄位於螢幕頂部，將其移至底部，按鈕";
+"LN_Accessibility_Dock_Bottom_40628" = "螢幕共用工具欄位於螢幕底部，將其移至頂部，按鈕";
+"LN_Remove_Confirm_44293" = "你想刪除%@嗎？刪除後此成員將不能重新加入此會議。";
+"LN_Expel_By_Host_44293" = "主持人已將您從此會議中移除。";
+"LN_Join_Error_For_Expel_44293" = "您無法重新加入此會議，因為您之前已被主持人移除。";
+
+"LN_GDPR_40930_Continue" = "繼續";
+"LN_GDPR_40930_I Agree" = "同意";
+"LN_GDPR_40930_I Disagree" = "不同意";
+"LN_GDPR_40930_Leave Meeting" = "離開會議";
+"LN_GDPR_40930_Privacy Policy" = "隱私政策";
+"LN_GDPR_40930_Terms of Service" = "服務條款";
+"LN_GDPR_40930_To use Zoom, you need to agree to the %1$@ and %2$@." = "使用Zoom前，您需要同意%1$@ 和 %2$@。";
+"LN_GDPR_40930_You cannot join the meeting until you agree to the %1$@ and %2$@." = "加入會議前，您需要同意%1$@ 和 %2$@。";
+
+"LN_%@_Meeting_ID_%@_41652" = "%@ 會議號 : %@";
+"LN_Meeting_ID_%@_41652" = "會議號 : %@";
+"LN_In_%d_Mins_41652" = "在%d分鐘內";
+"LN_In_1_Min_41652" = "在1分鐘內";
+"LN_Now_41652" = "現在";
+"LN_Remind_%@_Minutes_Before_Upcoming_41652" = "會議開始前%@分鐘提醒我";
+
+
+"LN_Hide_ChatWnd_When_ScreenShot_32455" = "截屏時隱藏聊天窗口";
+"LN_To_32455" = "對";
+"LN_GDPR_40930_SIGNIN_TITLE" = "條款和政策已更新";
+"LN_GDPR_40930_SIGNIN_DETAIL_%1$@_%2$@" = "Zoom更新了服務條款和隱私政策，以提高數據收集透明度、說明數據使用方式及增強您對個人數據的控制。如果您選擇繼續使用Zoom，需要接受已更新的%1$@ 和 %2$@。";
+

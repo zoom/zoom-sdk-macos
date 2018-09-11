@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 2018-9-11
+
+* Support Direct share / Outlook plugin integration / Audio Share
+
+* Pre-meeting service interface
+1. Support to direct share use ultrasonic
+2. Support to integrate with outlook plugin
+
+* New files added
+1. Folder Plugins: ZoomAudioDevice.driver and ZoomAudioDevice.kext added for share audio
+2. Folder SDK Resources:  String resources files used for multi-language support
+
+* Bugs fixed
+
 ## 2018-8-24
 
 * This release has patch fixes for the last release v4.1.30458.0820.

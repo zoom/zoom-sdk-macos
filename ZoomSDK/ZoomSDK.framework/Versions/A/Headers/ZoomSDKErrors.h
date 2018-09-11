@@ -674,3 +674,14 @@ typedef enum{
     SDKReminderType_UpgradeFailed,
     SDKReminderType_None,
 }SDKReminderType;
+
+typedef enum{
+    DirectShareStatus_None = 0,
+    DirectShareStatus_Connecting,  //trying to start direct share, just waiting
+    DirectShareStatus_InProgress, //in diret share mode
+    DirectShareStatus_Ended,  //diret share is ended
+    DirectShareStatus_NeedMeetingIDOrSharingKey, // need input a meeting id/sharing key
+    DirectShareStatus_WrongMeetingIDOrSharingKey,
+    DirectShareStatus_NetworkError, // network error. Try again later
+    DirectShareStatus_Unknow,
+}DirectShareStatus;

@@ -1,0 +1,2477 @@
+"%s is calling you from Zoom, click link to join.\r\n%s" = "%s が Zoom からあなたを呼び出しています。参加するには、リンクをクリックしてください。\r\n%s";
+"%@ has been invited" = "%@さんが招待されました";
+"%@ and %@ have been invited." = "%@ と %@ が招待されました。";
+"%@, %@ and %@ have been invited." = "%@、%@、%@は招待されていません。";
+"%@, %@ and %d others have been invited." = "%@ 、%@ および他の %d 人が招待されました。";
+"Click to invite participants" = "クリックして、参加者を招待します";
+"The invitation URL has been copied to the clipboard" = "招待 URL がクリップボードにコピーされました";
+
+"%@ invited you to join a meeting." = "%@ がミーティングに参加するようにあなたを招待しました。";
+"You invited %@ to join a meeting." = "あなたが %@ をミーティングに参加するように招待しました。";
+
+
+"is calling..." = "が呼び出しています...";
+"are calling..." = "が呼び出しています...";
+"are calling you. You are already in this meeting." = "があなたを呼び出しています。あなたはこのミーティングにすでに参加しています。";
+"is calling you. You are already in this meeting." = "があなたを呼び出しています。あなたはこのミーティングにすでに参加しています。";
+"are calling you. You are already in another meeting, do you want to leave and join this meeting?" = "があなたを呼び出しています。あなたはすでに別のミーティングに参加しています。退出してこのミーティングに参加しますか?";
+"is calling you. You are already in another meeting, do you want to leave and join this meeting?" = "があなたを呼び出しています。あなたはすでに別のミーティングに参加しています。退出してこのミーティングに参加しますか?";
+
+"came online" = "がオンラインになりました";
+"went offline" = "がオフラインになりました";
+
+"Start with video" = "ビデオありで開始";
+"Start without video" = "ビデオなしで開始";
+"Back to Meeting" = "ミーティングに戻る";
+"Computer audio and video start automatically" = "コンピューターのオーディオとビデオは自動的に開始します";
+
+"Invite to Meeting" = "ミーティングに招待";
+"Start Video Meeting" = "ビデオ ミーティングの開始";
+"Video Meeting" = "ビデオ ミーティング";
+"View Profile" = "プロファイルの表示";
+"Join Meeting..." = "ミーティングに参加...";
+
+"Log Out" = "ログ アウト";
+"Log In" = "ログイン";
+
+"Facebook IM" = "Facebook IM";
+"Google IM" = "Google IM";
+"IM" = "IM";
+"Chats" = "チャット";
+"Tell Others About Zoom" = "Zoom について他の人に知らせる";
+"Home" = "ホーム";
+"Meetings" = "ミーティング";
+
+"Login..." = "ログインしています...";
+"Connecting..." = "接続しています...";
+"Authenticating..." = "認証しています...";
+"Negotiating..." = "ネゴシエートしています...";
+
+"Cannot get your favorite information, Please check your network connection." = "お気に入り情報を取得できません。ネットワーク接続を確認してください。";
+"Login to Facebook was cancelled." = "Facebook へのログインがキャンセルされました。";
+
+"Sign Up" = "サイン アップ";
+"Forgot your password?" = "パスワードをお忘れですか?";
+
+"General" = "一般";
+"Feedback" = "フィードバック";
+"Record" = "レコーディング";
+"Account" = "アカウント";
+"Video" = "ビデオ";
+"Statistics" = "統計情報";
+"The free disk space is less than 1G. Select another folder or delete some files." = "空きディスク領域が 1GB 未満です。別のフォルダーを選択するか、ファイルをいくつか削除してください.";
+"%.2f GB remaining" = "残り %.2f GB";
+"Work Email" = "勤務先メール";
+"Gmail Account" = "Gmail アカウント";
+"Facebook Account" = "Facebook アカウント";
+"Single Sign On" = "シングル サインオン";
+"Upgrade to Pro" = "プロ仕様にアップグレードします";
+"Change Subscription Plan" = "利用プランの変更";
+"Capture 720p by default" = "デフォルトで 720p でキャプチャ";
+
+"1. Go to %@\r\n2. Enter ID: %@" = "1.%@ \r\n2に移動。ID の入力: %@";
+"The invitation URL has been copied to Clipboard." = "招待 URL がクリップボードにコピーされました。";
+"The invitation Email has been copied to Clipboard." = "招待メールがクリップボードにコピーされました。";
+
+"Version:%@" = "バージョン:%@";
+"Send Feedback" = "フィードバックの送信";
+"Sending..." = "送信しています...";
+"Failed to send your feedback. Please try again later." = "フィードバックの送信に失敗しました。後でもう一度やり直してください。";
+"Thanks for your feedback!\r\n\r\nYour feedback is very important to us, and we're working hard to improve our service." = "フィードバックありがとうございます。\r\n\r\n引き続きサービスの向上に努めますので、よろしくお願いいたします。";
+
+"Please join Zoom meeting in progress" = "進行中の Zoom ミーティングに参加してください";
+"Please join my meeting.\r\n%@" = "自分のミーティングに参加してください。\r\n%@";
+
+"Participant ID: %d   Meeting ID: %@" = "参加者 ID: %d ミーティング ID: %@";
+"Participant ID: %d   %d-Minutes Meeting ID: %@" = "参加者 ID: %d %d 分ミーティング ID: %@";
+"-Minutes" = "分";
+"Zoom Meeting ID: %@" = "Zoom ミーティング ID: %@";
+"Panelist(%d)  Attendee(%d)" = "パネリスト(%d) 視聴者(%d)";
+"Waiting for %s to join..." = "%s が参加するのを待っています...";
+"Please use the Invite button to invite more people" = "さらにユーザーを招待するには [招待] ボタンを使用してください";
+"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation." = "ミーティングの招待を受け入れるために、招待先のユーザーに Zoom がプレインストールされている必要はありません。";
+"URL: " = "URL:";
+"Invite people to join meeting" = "ミーティングに参加するようにユーザーを招待";
+"Zoom Number: %@" = "Zoom 番号: %@";
+"Copy" = "コピー";
+"Meeting ID" = "ミーティング ID";
+"Spotlight Video" = "スポットライト ビデオ";
+"Cancel the Spotlight Video" = "スポットライト ビデオのキャンセル";
+"You are the host now" = "現在ホストになっています";
+"%@ is the host now" = "%@ は現在ホストになっています";
+"You are the co-host now" = "You are the co-host now";
+"%@ is the co-host now" = "%@ は現在共同ホストになっています";
+"Less than a minute" = "1 分未満";
+"Remaining Meeting Time" = "ミーティングの残り時間";
+
+"Join Meeting" = "ミーティングに参加";
+"Join a Meeting" = "ミーティングに参加";
+"Please enter your meeting ID and your name" = "ミーティング ID と名前を入力してください";
+"Your Name" = "名前";
+"Invalid video meeting ID!" = "ビデオ ミーティング ID が無効です。";
+"Please input your screen name here" = "表示名をここに入力してください";
+"Please enter your name." = "名前を入力してください。";
+
+"I'd like to give feedback to Zoom" =  "Zoom にフィードバックを送ります。";
+"Leave Meeting" = "ミーティングから退出";
+"Do you want to leave this meeting?" = "このミーティングから退出しますか?";
+"End Meeting" = "ミーティングの終了";
+"If you want to keep this meeting open, please assign another Host before you click Leave Meeting." = "このミーティングを開催し続ける場合は、[ミーティングから退出] をクリックする前に別のホストを割り当ててください。";
+"\nClick Cancel if you want to keep this meeting open." = "\nこのミーティングを開催し続ける場合は、[キャンセル] をクリックしてください。";
+"Please enter your feedback here" = "ここにフィードバックを入力してください";
+"End Meeting for All" = "全員に対してミーティングを終了";
+"Join webinar as a panelist" = "パネリストとしてWeb セミナーに参加";
+"Start your webinar" = "Web セミナーの開始";
+"Switch Account to Join" = "アカウントを切り替えて参加";
+"Sign In to Join" = "サイン インして参加";
+
+"Please enter the meeting password" = "ミーティングパスワードを入力してください";
+"Password" = "パスワード";
+"Password error!" = "パスワード エラー。";
+"LN_Waiting_Host_Meeting_35641" = "ホストがこのミーティングを開始するのをお待ちください";
+"LN_Waiting_Host_Webinar_35641" = "ホストが本ウェビナーを開始するまでお待ちください";
+"LN_Waiting_Admit_All_39691" = "全員の入室を許可する";
+"LN_Meeting_List_Item_Add_Calendar_25869" = "カレンダーを追加";
+"LN_MeetingList_Item_Info_Host_25869" = "ホスト：%@\n";
+"LN_Metting_RemoteControl_Abort_Control_28437" = "コントロールを停止"; //[ZOOM-28437]
+"LN_Metting_RemoteControl_Who_Is_Controlling_28437" =  "（コントロール中）" ;//[ZOOM-28437]
+"LN_Metting_RemoteControl_SearchUser_NOResult_28437" = "結果なし"; //[ZOOM-28437]
+"LN_Meeting_IsAutoAcceptRemoteControl_28437" = "全てのリクエストを自動で許可する";//[ZOOM-28437]
+"LN_Meeting_RemoteControl_UnderControlling" = "遠隔操作"; //[ZOOM-28437]
+"LN_Meeting_QA_Tablist_Dismiss_21381" = "却下";
+"LN_Meeting_QA_No_Dismiss_Question_21381" = "却下された質問はありません";
+"LN_Meeting_QA_Dismiss_21381" = "却下";
+"LN_Meeting_QA_Open_21381" = "開く";
+"LN_Call_Accepted_35364" = "受信コール － 受け入れられました";
+"LN_Call_Incoming_35364" = "受信コール";
+"LN_Mute_On_Entry_Alert_Title_35357" = "入室時に参加者をミュートにする";
+"LN_Mute_On_Entry_Alert_Content_35357" = "全ての新しい参加者はミュートされます";
+"LN_Schedule_OpenICSFile_ForOtherCal_37779" = "デフォルトのカレンダーで開く（.ics）";
+"LN_Hide_ChatWnd_In_Screenshot_38445" = "スクリーンショットでチャットウィンドウを非表示";
+"Meeting Detail" = "ミーティングの詳細";
+"While waiting, please check your audio and video settings" = "お待ちの間に、音声とビデオの設定を確認してください";
+"Topic" = "トピック";
+"Time" = "時刻";
+"Date" = "日付";
+"Verifying password..." = "パスワードを確認しています...";
+"This is a recurring meeting" = "これは定期的なミーティングです";
+"Waiting for Host %@" = "ホストの %@ を待っています";
+
+//
+"Stop Screen Share" = "画面共有の停止";
+"Stop Share"= "共有の停止";
+"LN_Share_21795" = "画面の共有";
+"Share Screen" = "画面の共有";
+"Share screen" = "画面の共有";
+"Share" = "共有";
+"Share a New Window" = "新しいウィンドウの共有";
+"Participants" = "参加者";
+"Manage Participants" = "参加者の管理";
+"Chat" = "チャット";
+"Chat with All" = "全員とチャット";
+"People (%d)" = "ユーザー (%d)";
+"End" = "終了";
+"Settings" = "設定";
+"Hide Video Panel" = "ビデオ パネルの非表示";
+"Show Video Panel" = "ビデオ パネルの表示";
+"Show Active Speaker panel" = "アクティブなスピーカーパネルを表示する";
+"Hide Active Speaker panel" = "アクティブなスピーカーパネルを非表示にする";
+"Exit Full Screen. Meeting ID:%@" = "全画面表示の終了。ミーティング ID:%@";
+"Gallery View" = "ギャラリー ビュー";
+"Speaker View" = "スピーカー ビュー";
+"Enter Minimal View" = "最小表示の開始";
+"Exit Minimal View" = "最小表示の終了";
+"Enter Full Screen" = "全画面表示の開始";
+"Exit Full Screen" = "全画面表示の終了";
+"Rename" = "名前の変更";
+"More" = "詳細";
+"Meeting Information" = "ミーティング情報";
+"Meeting" = "ミーティング";
+"Put Attendee On Hold" = "出席者の保留";
+"Stop attendee on hold" = "出席者の保留を解除";
+"You are on hold" = "保留されています";
+"On Hold" = "保留中";
+"Stop on-hold" = "保留解除";
+"Raise Hand" = "手を挙げる";
+"Lower Hand" = "手を降ろす";
+"Lower All Hands" = "すべての手を降ろす";
+"Show Non-Video Participants" = "ビデオ以外の参加者の表示";
+"is talking ..." = "が話しています...";
+"Total non-video participants:" = "ビデオ以外の参加者の合計:";
+"Connected" = "接続されました";
+"Calling..." = "発信しています...";
+"Ringing..." = "呼び出しています...";
+"Call accepted" = "通話が受け入れられました";
+"Failed to Call" = "通話に失敗しました";
+"Success" = "成功";
+"Disconnection Call" = "切断通話";
+"Claim Host" = "ホストの要求";
+"Attendee List" = "出席者リスト";
+"Allow attendees to view the participant counts" = "視聴者に参加者数の表示を許可";
+
+
+"Mute All" = "すべてミュート";
+"Unmute All" = "すべてミュート解除";
+"Unmute Audio" = "オーディオのミュート解除";
+"Mute Audio" = "オーディオのミュート";
+"Audio" = "オーディオ";
+"Click to join audio" = "オーディオへ参加するには、クリックしてください";
+"Unmute Telephone" = "電話のミュート解除";
+"Mute Telephone" = "電話のミュート";
+"Mute" = "ミュート";
+"Unmute" = "ミュート解除";
+"muted" = "ミュートされました";
+"Mute Participants On Entry" = "参加者エントリーをミュート";
+"Play Enter/Exit Chime" = "入退出チャイムの再生";
+"You are muted now. Press Shift+Command+A to unmute your microphone if you want to speak." = "現在ミュートされています。話す場合は、Shift+Command+A を押してマイクのミュートを解除してください。";
+"You are using the computer audio" = "コンピューターのオーディオを使用中です";
+"You are now using your phone for audio in this meeting" = "電話を使用中です";
+"Join Teleconference" = "電話会議に参加";
+"Current and new participants will be muted" = "全員および新しい参加者がミュートされました";
+"All participants are unmuted" = "すべの参加者がミュート解除されました";
+"Allow participants to unmute themselves" = "参加者に自分のミュート解除を許可";
+"You are muted by host" = "ホストによってミュートされました";
+"You are unmuted by host" = "ホストによってミュート解除されました";
+"The host has muted all participants" = "ホストがすべての参加者をミュートしました";
+"The host has unmuted all participants" = "ホストがすべての参加者をミュート解除しました";
+"You are using computer mic & speaker now" = "現在コンピューターのマイクとスピーカーを使用中です";
+"You are using phone now" = "現在電話を使用中です";
+"Mute My Audio" = "音声をミュート";
+"Unmute My Audio" = "自分のオーディオをミュート解除";
+"Mute My Phone" = "自分の電話をミュート";
+"Unmute My Phone" = "自分の電話をミュート解除";
+"Join Audio Conference via Mic & Speaker" = "マイクとスピーカーで音声会議に参加";
+"Leave Audio Conference" = "音声会議から退出";
+"Disconnected" = "切断されました";
+"Press Command-Shift-A to mute or unmute your audio" = "オーディオをミュートまたはミュート解除するには Command-Shift-A を押します";
+"Audio Options" = "オーディオ オプション";
+"Audio Conference" = "音声会議";
+"Audio Settings" = "オーディオ設定";
+"Video Settings" = "ビデオ設定";
+"Use Computer Mic & Speaker" = "コンピューターのマイクとスピーカーを使用";
+"Use Telephone" = "電話を使用";
+"You are not in the audio conference yet." = "まだ音声会議に参加していません。";
+"Computer Audio Connected" = "コンピューターのオーディオが接続されました";
+"Phone Connected" = "電話が接続されました";
+"Test Computer Mic & Speakers" = "コンピューターのオーディオをテスト";
+"You may have problem hearing the audio from other participants.\nConsider switching to phone." = "他の参加者の音声を聞きにくい可能性があります。\n電話に切り替えることを検討してください。";
+"Total %d phone call-in listener" = "合計 %d 人の電話によるリスナー";
+"Total %d phone call-in listeners" = "合計 %d 人の電話によるリスナー";
+"Zoom detects a problem with your audio. If you enter your Mac computer password, we will attempt to restart your audio service to fix it.\n\n" = "Zoom でオーディオの問題が検出されました。Mac コンピュータのパスワードを入力すると、オーディオ サービスを再起動して修復を試みます。\n\n";
+"Follow the instructions below to join audio conference." = "次の手順に従って音声会議に参加してください。";
+"Computer Audio" = "コンピューターのオーディオ";
+"Dial In" = "ダイヤル イン";
+"Call Me" = "着信希望";
+"Hang Up" = "切断";
+"Automatically join audio by computer when joining a meeting" = "ミーティングへの参加時に、自動的にコンピューターでオーディオに参加";
+"Already joined by phone? Enter " = "電話ですでに参加していますか?電話で";
+"on your phone." = "を押してください。";
+"Dial" = "ダイヤル";
+"Toll free" = "フリー ダイヤル ";
+"(US or Canda only)" = "(米国またはカナダのみ)";
+"The number you want us to call you" = "着信を希望する電話番号";
+"Remember the number on this computer" = "このコンピューターの番号を記憶";
+"Failed to disconnect call" = "通話の切断に失敗しました";
+"Your computer audio is disconnected as we detected an echo." = "エコーが検出されたたため、コンピューターのオーディオが切断されました";
+"Follow the instructions below to join audio." = "次の手順に従ってオーディオに参加してください。";
+"To hear others, please join audio" = "他のユーザーの音声を聞くには、オーディオに参加してください";
+"Phone Call" = "電話で参加";
+"Your audio is connected using Dial In." = "オーディオはダイヤル インで接続されました";
+"Your audio is connected using Call Me." = "オーディオは着信希望で接続されました";
+
+"No Audio" = "オーディオなし";
+"Do you want to continue without audio?" = "オーディオなしで続行しますか?";
+"You won't be able to hear other participants in the meeting, nor will they hear you." = "ミーティングの他の参加者の音声は聞こえず、他の参加者もあなたの音声が聞こえなくなります。";
+"Join Audio" = "オーディオに参加";
+"Leave Computer Audio" = "コンピューターのオーディオから退出";
+
+"Start Video" = "ビデオの開始";
+"Stop Video" = "ビデオの停止";
+"Click to check your video conference options" = "クリックして、ビデオ会議オプションを確認します";
+"Host has stopped your video" = "ホストがあなたのビデオを停止しました";
+"Show Video" = "ビデオの表示";
+"Hide Video" = "ビデオの非表示";
+"Exit Minimal Video" = "最小ビデオの終了";
+"Mute Video" = "ビデオのミュート";
+
+"Resume" = "再開";
+"Talking: " = "発言中:";
+
+"Lock Meeting" = "ミーティングのロック";
+"Unlock Meeting" = "ミーティングのロック解除";
+"Lock screen sharing" = "画面共有のロック";
+"Unlock screen sharing" = "画面共有のロック解除";
+"Start Recording" = "レコーディングの開始";
+"Resume Recording" = "録音を再開";
+"Pause Recording" = "録音を一時停止";
+"Stop Recording" = "レコーディングの停止";
+"Allow Record" = "レコーディングの許可";
+"Forbid Record" = "レコーディングの禁止";
+"Make Host" = "ホストにする";
+"Remove" = "削除";
+"Select Window" = "ウィンドウの選択";
+"Pause" = "一時停止";
+"Annotate" = "コメントを付ける";
+"Share Control to" = "次に対する制御の共有";
+"Cancel Remote Control" = "リモート制御のキャンセル";
+"Enable Attendee Annotation" = "出席者のコメント追加を有効にする";
+"Disable Attendee Annotation" = "出席者のコメント追加を無効にする";
+"Change Role to Attendee" = "役割を視聴者に変更";
+"%@ will be rejoining the webinar as a attendee" = "%@ は視聴者としてWeb セミナーに参加し直します";
+"%@ will be rejoining the webinar as a panelist" = "%@ はパネリストとしてWeb セミナーに参加し直します";
+
+
+"Show Call In Users" = "電話によるユーザーを表示";
+"Hide Call In Users" = "電話によるユーザーを非表示";
+
+"Double-click to enter full screen mode." = "ダブルクリックすると、全画面モードになります。";
+"Press ESC or double-click to exit full screen mode" = "ESC を押すかダブルクリックすると、全画面モードが終了します";
+"Login as Host" = "ホストとしてログイン";
+
+"to %@ (privately)" = "%@ に (プライベート)";
+"from %@ (privately)" = "%@ から (プライベート)";
+"from %@ to All" = "%@ から全員に";
+"Host" = "ホスト";
+"me" = "私";
+"participant ID" = "参加者 ID";
+"Participant ID:" = "参加者 ID:";
+"To:" = "宛先：";
+
+"The meeting has problem. Error code : %d" = "ミーティングに問題があります。エラー コード: %d";
+"This meeting ID is not valid. Please check and try again." = "このミーティング ID は無効です。確認してやり直してください。";
+"This meeting has ended." = "このミーティングは終了しました。";
+"Our service is currently busy. Please try again later." = "サービスは現在ビジー状態です。後でもう一度やり直してください。";
+"Can't connect to our service, please check your network connection and try again." = "サービスに接続できません。ネットワーク接続を確認して、もう一度やり直してください。";
+"Can't connect to our service, please check your network connection and try again. Error code %d" = "サービスに接続できません。ネットワーク接続を確認して、もう一度やり直してください。エラー コード %d";
+"This meeting has reached a maximum of %d participants. Please try again later." = "このミーティングの参加者は最大数の %d 人に達しました。後でもう一度やり直してください。";
+"This meeting has been locked by host" = "このミーティングはホストによってロックされました";
+"You have a meeting that is currently in-progress. Please end it to start a new meeting." = "現在進行中のミーティングがあります。新しいミーティングを開始するには、それを終了してください。";
+"The host has a meeting that is currently in-progress. Once that meeting ends, you can join this meeting." = "ホストには現在進行中のミーティングがあります。そのミーティングが終了すると、このミーティングに参加できます。";
+"We're sorry; the registration for this webinar has reached its maximum." = "申し訳ございません。このWeb セミナーの登録は最大数に達しました。";
+"Someone has tried to use the host’s email to register for the webinar" = "ウェビナーに登録するのに誰かがホストのメールアドレスの使用を試みました";
+"If you are the host, please sign in to start the webinar." = "ホストの場合は、サイン インして Web セミナーを開始してください。";
+"If you were invited as a panelist, please join the webinar from the link in your email invitation." = "パネリストとして招待された場合は、招待メールにあるリンクから Web セミナーに参加してください。";
+"The host has declined your webinar registration" = "ホストは、あなたのウェビナー登録を却下しました";
+
+"You are removed by host." = "ホストによって削除されました。";
+"Host ended the meeting." = "ホストがミーティングを終了しました。";
+"Timed out before host join." = "ホストが参加する前にタイムアウトしました。";
+"No free time left." = "無料の時間は残っていません。";
+"End Other Meeting" = "その他のミーティングを終了";
+"This meeting has ended as someone has started a new meeting with this account" = "このミーティングは、このアカウントで新しいミーティングが開始されたため終了しました";
+"The meeting has ended after 40 minutes idle time." = "40 分のアイドル時間が経過したため、ミーティングは終了しました。";
+
+"ID" = "ID";
+"Your screen sharing is paused" = "画面共有は一時停止しました";
+"You are viewing %@'s screen" = "%@ の画面を表示しています";
+"You are viewing %@' screen" = "%@ の画面を表示しています";
+"You are controlling %@'s screen" = "%@ の画面を制御しています";
+"'s screen" = "の画面";
+"Sharing is paused. Bring your shared window to the front" = "共有が一時停止されました。共有ウィンドウを手前に表示";
+"Select a Window to Share" = "共有するウィンドウの選択";
+"Click here to change to window view" = "ここをクリックして、ウィンドウ表示を変更します";
+"Click here to change to 1:1 view" = "ここをクリックして、1:1 表示に変更します。";
+"Fit to Window" = "ウィンドウに合わせる";
+"Original Size" = "元のサイズ";
+"View Mode" = "表示モード";
+"Give Mouse/Keyboard Control to" = "マウス/キーボード制御の付与先";
+"Choose what you want to share" = "共有対象の選択";
+"Click to Share Screen" = "クリックして画面共有";
+"Start Share" = "共有の開始";
+"This will stop other\'s screen sharing. Do you want to continue?" = "この操作は他の人の画面共有を終了します。続行しますか？";
+"Select a window or an application that you want to share" = "共有するウィンドウまたはアプリケーションの選択";
+"Share Screen with Computer Sound" = "コンピューターの音声ありの画面共有";
+"Share Screen Only" = "画面共有のみ";
+"Screen sharing has failed to start. Please try again later.\n\nError Code: %d" = "画面共有の開始に失敗しました。後でもう一度やり直してください。\n\nエラー コード: %d";
+" has started screen sharing.\n\nDouble-click to enter full screen mode." = "が画面共有を開始しました。\n\nダブルクリックすると、全画面モードになります。";
+" has started screen sharing" = "が画面共有を開始しました";
+"Share computer sound" = "コンピューターの音声を共有";
+"Optimize for full-screen video clip" = "全画面ビデオ クリップ用に最適化";
+"Advanced Options" = "詳細オプション";
+"Other participants will be able to hear the audio running on your computer as well as see your shared screen." = "他の参加者が、あなたのコンピューターで実行中の音声を聞き、あなたの共有画面を表示できます。";
+"Optimize the screen sharing for the best full-screen video clip viewing experience." = "全画面のビデオ クリップ表示用に画面共有を最適化します。";
+"Your are viewing a portion of the shared content; To see the fullimage, select \"Fit to Window\" in the menu." = "共有コンテンツの一部を表示しています。イメージ全体を表示するには、メニューの [ウィンドウに合わせる] を選択してください。";
+"The shared content is fit to your screen. To see the original size, click \"Original size\" in the menu." = "元のサイズで表示するには、メニューの [元のサイズ] をクリックしてください。共有コンテンツが画面に合わせて表示されます。";
+
+"Share computer audio during screen sharing" = "画面共有時にコンピューターのオーディオを共有します";
+"Disable computer audio during screen sharing" = "画面共有時にコンピューターのオーディオを無効にする";
+"Your microphone is muted so others can hear remote audio during screen sharing." = "マイクがミュートされて、画面共有時に他のユーザーがリモート オーディオを聞けるようになります。";
+"Your microphone is muted so you can hear remote audio during screen sharing." = "マイクがミュートされて、画面共有時に自分がリモートのオーディオを聞けるようになります。";
+"Your microphone is unmuted. Screen sharing with remote audio has stopped." = "マイクはミュート解除されています。リモート オーディオありの画面共有が停止されました。";
+"You cannot unmute yourself because the host muted you." = "ホストによりミュートされため、ミュートを解除することはできません。";
+"Your speaker is muted for audio sharing. It will recover when audio sharing ends." = "オーディオ共有のためにスピーカーがミュートされました。オーディオ共有終了時に回復します。";
+"To share your computer audio, please install the Zoom audio device.\n\n" = "コンピューターのオーディオを共有するには、Zoom オーディオ デバイスをインストールしてください。\n\n";
+
+"Your microphone is muted to focus on %@ as the spotlight video" = "スポットライト ビデオとして %@ を重点的に取り扱うため、マイクはミュートされています";
+"Your microphone is unmuted. Spotlight video has stopped." = "マイクはミュート解除されています。スポットライト ビデオが停止されました。";
+
+"Me" = "私";
+"Pin Video" = "ビデオの固定";
+"LN_Unpin_Video_30742" = "ビデオのピン留めを解除";
+"Switch to Active Speaker" = "アクティブなスピーカーに切り替え";
+"Pin video on first screen" = "最初の画面にビデオを固定";
+"LN_Unpin_First_Screen_34308" = "最初の画面からビデオのピン止めを解除";
+"Pin video on second screen" = "2 番目の画面にビデオを固定";
+"LN_Unpin_Screen_Screen_34308" = "2番目の画面からビデオのピン留めを解除";
+
+"Your default microphone has changed to %@ and will now be used." = "デフォルトのマイクが %@ に変更されて今から使用されます。";
+"Default audio device has changed" = "デフォルトのオーディオ デバイスが変更されました";
+"Your speaker %@ is not working. Please go to Settings to try a different one." = "スピーカー %@ が動作していません。設定に移動して別のものを試してください。";
+"Speaker Error" = "スピーカーのエラー";
+"Microphone Error" = "マイクのエラー";
+"Microphone status" = "マイクのステータス";
+"Your microphone %@ is not working. Please go to Settings to try a different one." = "マイク %@ が動作していません。設定に移動して別のものを試してください。";
+"Zoom can't detect your Microphone. Please check the Microphone setup." = "Zoom でマイクを検出できません。マイクの設定を確認してください。";
+"Zoom can't detect your Speaker. Please check the Speaker setup." = "Zoom でスピーカーを検出できません。スピーカーの設定を確認してください。";
+"Zoom can't detect the sound from your Microphone %@." = "Zoom でマイク %@ からの音声を検出できません。";
+"Your default speaker has changed to %@ and will now be used." = "デフォルト スピーカーが %@ に変更されて今から使用されます。";
+
+"Your meeting is scheduled." = "ミーティングがスケジュールされました。";
+"Your recurring meetings are scheduled." = "定期的なミーティングがスケジュールされました。";
+"Your meeting is updated." = "ミーティングが更新されました。";
+"Your recurring meetings are updated." = "定期的なミーティングが更新されました。";
+"Please join my scheduled meeting.\r\n%@\r\n\r\n" = "私のスケジュールされたミーティングに参加してください。\r\n%@\r\n\r\n";
+"Meeting password: %@\r\n" = "ミーティングのパスワード: %@\r\n";
+"Meeting time: %@ at %@\r\n" = "ミーティングの時刻: %@ 時刻 %@\r\n";
+"Meeting time: Recurring\r\n" = "ミーティングの時刻:定期的\r\n";
+"Meeting ID: %@\r\n" = "ミーティング ID: %@\r\n";
+"Can't schedule meeting. Please check your network connection and try again." = "ミーティングをスケジュールできません。ネットワーク接続を確認して、もう一度やり直してください。";
+"Can't schedule the meeting. Error code : %d" = "ミーティングをスケジュールできません。エラー コード: %d";
+"Zoom meeting invitation - %@" = "Zoom のミーティング招待 - %@";
+"Update Meeting Info error for meeting ID: %@, error code: %d." = "次のミーティング ID のミーティング情報の更新エラー: %@、エラー コード: %d。";
+
+"This meeting is scheduled for %@" = "このミーティングは %@ のためにスケジュールされています。";
+"This Meeting ID is taken. Please choose a different ID." = "このミーティング ID は使用されています。別の ID を選択してください。";
+"Sorry, your request is rejected." = "申し訳ございません。リクエストは拒否されました。";
+"Failed to apply Personal Meeting ID. Unknown error." = "個人ミーティング ID を適用できませんでした。不明なエラーが発生しました。";
+"Failed to apply personal meeting ID. Error code: %d." = "個人ミーティング ID を適用できませんでした。エラー コード: %d。";
+"Can not edit meeting ID while meeting is in progress." = "ミーティングの進行中はミーティング ID を編集できません。";
+
+
+"My Meeting" = "自分のミーティング";
+"'s Zoom Meeting" = "の Zoom ミーティング";
+"' Zoom Meeting" = "の Zoom ミーティング";
+
+"%@ wants to be able to chat with you. Okay?" = "%@ があなたとのチャットを希望しています。よろしいですか?";
+"Your invitation has been sent successfully." = "招待が正常に送信されました。";
+"Your invitation failed to sent." = "招待の送信に失敗しました。";
+"%@ will be removed from your IM list." = "%@ は IM リストから削除されます。";
+"%@ will be removed from your favorite list." = "%@ はお気に入りリストから削除されます。";
+"Test Speaker" = "スピーカーのテスト";
+"Test Mic" = "マイクのテスト";
+"Stop" = "停止";
+"Your" = "あなたの";
+"'s" = "の";
+"%@ network bandwidth is low." = "%@ のネットワーク帯域幅が低くなっています。";
+
+"Your free meeting will end in 10 minutes, please upgrade to a paid account at $14.99 per month for unlimited minutes." = "無料ミーティングはあと 10 分で終了します。制限時間なしにするには、月額 14.99 ドルの有料アカウントにアップグレードしてください。";
+"Meeting Alert" = "ミーティング アラート";
+"This free meeting will end in 10 minutes. The meeting host needs to upgrade to a paid account at $14.99 per month for unlimited minutes." = "この無料ミーティングはあと 10 分で終了します。制限時間なしにするには、ミーティング ホストが月額 14.99 ドルの有料アカウントにアップグレードする必要があります。";
+"This meeting will end in %d minutes because the host has not joined" = "ホストが参加していないため、このミーティングは後%d分で終了します";
+"This free HD meeting has ended. Thank you for choosing Zoom!" = "無料 HD ミーティングは終了しました。Zoom をお選びいただきありがとうございます。";
+"The meeting has ended because the host doesn't show up." = "ホストが参加しなかったたため、ミーティングは終了しました。";
+"You are removed from this meeting." = "あなたはこのミーティングから削除されています。";
+"This meeting has been ended by host" = "このミーティングはホストによって終了されました";
+"Do you want to upgrade your account?" = "アカウントをアップグレードしますか?";
+"Do you want to change the host to %@?" = "ホストを %@ に変更しますか? ";
+"Do you want to remove %@?" = "%@ を削除しますか?";
+"No new attendees can join this meeting once locked." = "このミーティングをロックすると、新しい出席者は参加できなくなります。";
+"New attendees can join this meeting once unlocked." = "ロックが解除されると、新規出席者がこのミーティングに参加できるようになります。";
+"You have left this meeting." = "このミーティングから退出しました。";
+"Upgrade Account" = "アカウントのアップグレード";
+"OK" = "OK";
+"Cancel" = "キャンセル";
+"Continue" = "続行";
+"Upgrade" = "アップグレード";
+"Search" = "検索";
+"Check" = "確認";
+"Login" = "ログイン";
+"login" = "ログイン";
+
+"Host allows you to record the meeting." = "ホストはミーティングのレコーディングを許可しています。";
+"Host disallows you to record the meeting." = "ホストはミーティングのレコーディングを許可していません。";
+"Your recording has stopped. The disk space is insufficient." = "記録が停止しました。ディスク容量が十分ではありません。";
+"The recorded file will be converted to mp4 when the meeting ends" = "ミーティングが終了すると、レコーディング ファイルは mp4 に変換されます";
+"You will get an email notification when the cloud recording is ready." = "クラウドのレコーディングが使用可能になると、メール通知が届きます。";
+"Please request record permission from the meeting host." = "ミーティングのホストにレコーディングの許可をリクエストしてください。";
+"No speaker is detected for this recording that is in-progress. Please check your speaker settings." = "進行中のこのレコーディングに対して、スピーカーが検出されませんでした。スピーカーの設定を確認してください。";
+"Record to the Cloud" = "クラウドにレコーディング";
+"Record on this Computer" = "このコンピューターにレコーディング";
+"Connecting to cloud server..." = "クラウド サーバーに接続しています...";
+"Failed to connect cloud server." = "クラウド サーバーへの接続に失敗しました。";
+"Recording" = "レコーディング";
+
+"Zoom - Converting the meeting recording" = "Zoom - ミーティングの記録を変換しています";
+"You have a recording that needs to be converted before viewing" = "表示する前に変換する必要があるレコーディングがあります。";
+"You may convert your recording later by double clicking .zoom file located in the recording folder." = "レコーディング フォルダーにある .zoom ファイルをダブルクリックすれば、後でレコーディングを変換できます。";
+"Save my recordings at:" = "レコーディングの保存場所:";
+"Choose a new location..." = "新しい場所の選択...";
+"Save" = "保存";
+"Transcode will be stopped. Would you like to continue?" = "コード変換は停止されます。続行しますか?";
+"Quit" = "終了";
+"Choose" = "選択";
+
+//
+"No Upcoming Meetings" = "予定されているミーティングはありません";
+"The scheduled meetings will be listed here." = "スケジュールされたミーティングはここに一覧表示されます。";
+"No Recorded Files" = "レコーディング ファイルがありません";
+"The recorded files will be listed here." = "レコーディング ファイルはここにリストされます。";
+"No online buddies" = "オンラインの仲間はいません";
+"No Favorite Contacts" = "お気に入りの連絡先がありません";
+"Free Account" = "無料アカウント";
+"Pro Account" = "Pro アカウント";
+"Corp Account" = "法人アカウント";
+"My Profile" = "自分のプロファイル";
+"Change My Picture" = "自分の画像を変更";
+
+"All attendees will be muted to hear the remote computer audio." = "リモート コンピューターの音声を聞くために、すべての出席者がミュートされます。";
+"This action will allow all attendees to unmute themselves. Do you want to continue?" = "このアクションで、参加者全員が自分自身をミュート解除できるようになります。続行しますか？";
+"Your account has been upgraded successfully. Your meeting has no time limitation any more." = "招待が正常に送信されました。ミーティングの時間制限はなくなりました。";
+"The meeting host has upgraded to Pro account. This meeting has no time limitation anymore." = "ミーティング ホストが Pro アカウントにアップグレードしました。このミーティングの時間制限はなくなりました。";
+"Host disabled attendee screen sharing." = "ホストが出席者の画面共有を無効にしました。";
+"Only host can screen share once locked." = "ロックされると、ホストのみが画面を共有できるようになります。";
+"Attendee can now screen share once unlocked" = "ロックが解除されると、出席者が画面を共有できるようになります";
+"You cannot start screen share while the other participant is sharing." = "他の参加者が共有中は、画面共有を開始できません。";
+"Meeting host %@ is not in the meeting, please login as %@ to claim the host role." = "ミーティングのホストの %@ がミーティングに参加していません。%@ としてログインして、ホストの役割を要求してください。";
+"Meeting host is not in the meeting, please login as host to claim the host role" = "ミーティングのホストがミーティングに参加していません。ホストとしてログインして、ホストの役割を要求してください。";
+"Enter new name here:" = "新しい名前をここに入力:";
+"Finish registration to join the webinar." = "Web セミナーに参加するための登録を終了してください。";
+"Join Webinar" = "Web セミナーに参加";
+"You can't add more panelists because this meeting has reached its maximum capacity of %d panelists." = "このミーティングは %d 人のパネリストの最大数に達したため、これ以上パネリストを追加できません。";
+"You need to be signed in with the specified Zoom account to join this meeting. Please contact the host for more information." = "このミーティングに参加するには、指定された Zoom アカウントでサイン インする必要があります。詳細については、ホストにお問い合わせください。";
+
+
+"Mouse" = "マウス";
+"Text" = "テキスト";
+"Pen" = "ペン";
+"Highlighter" = "蛍光ペン";
+"Spotlight" = "スポットライト";
+"Arrow" = "矢印";
+"Erase All" = "すべて消去";
+"LN_Clear_All_Drawings_34988" = "すべてのドローイングを消去";
+"LN_Clear_My_Drawings_34988" = "マイドローイングを消去";
+"LN_Clear_Viewers_Drawing_34988" = "ビューアーを消去：ドローイング";
+"Clear All Drawing" = "すべての描画を消去";
+"Clear My Drawing" = "自分の描画を消去";
+"Clear Other's Drawing" = "他のユーザーの描画を消去";
+"Eraser" = "消しゴム";
+"Choose Color" = "色の選択";
+"Color" = "色";
+"Draw" = "絵を描く";
+"Undo" = "元に戻す";
+"Redo" = "やり直し";
+"Whiteboard" = "ホワイトボード";
+"Whiteboard saved." = "ホワイトボードは保存されました。";
+"Screen saved." = "画面は保存されました。";
+"Show in Finder" = "Finder に表示";
+
+"Remote Control"= "リモート制御";
+"Click to start the remote control of the shared screen" = "クリックして、共有画面のリモート制御を開始";
+"%@ is requesting remote control." = "%@ がリモート制御をリクエストしています。";
+"Request Remote Control" = "リモートコントロールを要求する";
+"Give Up Remote Control" = "遠隔操作を放棄";
+"Exit fullscreen will stop your remote control. Do you want to continue?" = "全画面を終了すると、リモート制御が停止します。続行しますか?";
+"Forbid remote control" = "リモート制御の禁止";
+"Allow remote control" = "リモート制御の許可";
+
+"Switching to gallery view will degrade the recording quality. Do you want to continue?" = "ギャラリー表示に切り替えると、レコーディングの品質が低下します。続行しますか?";
+"Switching to speaker view will improve the recording quality. Do you want to continue?" = "スピーカー表示に切り替えると、レコーディングの品質が向上します。続行しますか?";
+"You cannot minimize Zoom when you are recording this meeting." = "このミーティングのレコーディング中に Zoom を最小化することはできません。";
+"This feature requires 2.0 GHz Dual-Core CPU or higher." = "この機能は、2.0GHz以上のデュアルコアCPUが必要です。";
+
+"Do you want to delete this meeting?" = "このミーティングを削除しますか?";
+"Do you want to delete this recorded file?" = "このレコーディング ファイルを削除しますか?";
+"Screen sharing has stopped as the shared window is closed." = "共有ウィンドウが閉じられたため、画面共有が停止しました。";
+"Click Test Speaker to make sure you can hear others" =  "[スピーカーのテスト] をクリックして、他の人の音声が聞こえることを確認してください。";
+"If you can not hear the test sound, select a different speaker" =  "テストの音声が聞こえない場合は、別のスピーカーを選択してください";
+"If you can't make your Speaker or Mic work, click Join Teleconference" = "スピーカーまたはマイクが動作しない場合は、[電話会議に参加] をクリックしてください";
+"LN_Invitation_CopiedToClipboard_21232" = "招待がクリップボードにコピーされました。";
+"%@ is controlling your screen" = "%@ があなたの画面を制御しています";
+"Click below to change your picture and name." = "次をクリックして画像と名前を変更してください。";
+
+"Convert" = "変換";
+
+"Hide thumbnail video" = "サムネイル ビデオの非表示";
+"Show active speaker video" = "アクティブ スピーカー ビデオの表示";
+"Show small active speaker video" = "小さなアクティブ スピーカー ビデオの表示";
+"Show large active speaker video" = "大きなアクティブ スピーカー ビデオの表示";
+"Show thumbnail video" = "サムネイル ビデオの表示";
+"Previous Page" = "前のページ";
+"Next Page" = "次のページ";
+"Start a Meeting" = "ミーティングの開始";
+"Start a Group Meeting" = "グループ ミーティングの開始";
+"Cannot delete this meeting. Error code: %d." = "このミーティングを削除できません。エラー コード: %d。";
+
+"Zoom Cloud Meetings" = "Zoom クラウド ミーティング";
+"Schedule a new meeting" = "Schedule a new meeting";
+"Edit a Meeting" = "Edit a Meeting";
+
+"About Zoom" = "Zoom について";
+"Preferences..." = "設定...";
+"Provide Zoom Feedback..." = "Zoom にフィードバックを送る...";
+"Hide Zoom" = "Zoom の非表示";
+"Hide Others" = "その他の非表示";
+"Show All" = "すべて表示";
+"Quit Zoom" = "Zoom の終了";
+
+"Cut" = "切り取り";
+"Paste" = "貼り付け";
+"Paste and Match Style" = "貼り付けてスタイルを一致";
+"Select All" = "すべて選択";
+"Find" = "検索";
+"Find..." = "検索...";
+"Find and Replace..." = "検索・置き換え";
+"Find Next" = "次を検索";
+"Find Previous" = "前を検索";
+"Use Selection for Find" = "選択内容を検索に使用";
+"Jump to Selection" = "選択内容に移動";
+
+"Window" = "ウィンドウ";
+"Minimize" = "最小化";
+"Bring All to Front" = "すべてを手前に移動";
+
+"Recommend Zoom to Friends" = "Zoom を友達に勧める";
+
+"Zoom Group Chat" = "Zoom グループ チャット";
+"Zoom Update" = "Zoom の更新";
+"A new version of Zoom is available!" = "新しいバージョンの Zoom を利用できます。";
+"A new version of Zoom is available! Please update now." = "新しいバージョンの Zoom を利用できます。今すぐ更新してください。";
+"We also welcome your ideas, requests or comments about Zoom.\nPlease enter your feedback here:" = "Zoom に関するアイデア、リクエスト、コメントもお寄せください。.\nフィードバックをここに入力してください:";
+"Zoom is up to date." = "Zoom は最新です。";
+
+" All rights reserved." = " All rights reserved.";
+" Terms" = "利用規約";
+"Privacy Policy" = "プライバシーポリシー";
+
+//Q&A
+"You are logged in from another device. Your Q&A session is inactive." = "別のデバイスからログインしています。Q&A セッションはアクティブではありません。";
+"Q&A" = "Q&A";
+"Questions and Answers" = "質問と回答";
+"Send Anonymously" = "匿名で送信";
+"LN_Meeting_QA_No_Open_Question_21381" = "未回答の質問はありません";
+"LN_Meeting_QA_No_Answered_Question_21381" = "回答済みの質問はありません";
+"All" = "すべて";
+"Answered" = "回答済み";
+" answered:" = "回答済み:";
+"Please input your question" = "質問を入力してください";
+"Answer by Text" = "テキストで回答";
+"Answer Live" = "ライブで回答";
+"Submit" = "送信";
+"Send privately" = "プライベートに送信";
+"You would like to answer this question live." = "この質問にはライブでの回答を希望します。";
+"Done" = "完了";
+"Anonymous Attendee" = "匿名視聴者";
+"You" = "あなた";
+" asked:" = " 送信元：";
+" answered (privately):" = "回答済み(プライベート):";
+"You have" = "あなたは";
+" has" = "は";
+" answered this question live." = "はこの質問にライブで回答しました。";
+" is going to answer this question live." = "はこの質問にライブで回答します。";
+
+"Polling" = "投票";
+
+"Invitation URL:" = "招待 URL:";
+"Host Name:" = "ホスト名:";
+"Meeting Topic:" = "ミーティング トピック:";
+"Copy URL" = "URL のコピー";
+
+//H323
+"Device connected." = "デバイスが接続されました。";
+"This meeting is not existed or has expired." = "このミーティングは存在しないか、期限が切れています。";
+"Invalid pairing code" = "ペアリング コードが無効です";
+"The meeting host has not subscribed H.323/SIP Room Connector Plan." = "ミーティングのホストが H.323/SIP ルーム コネクタ プランを利用していません。";
+"Pair code failed. Error:%d" = "コードのペアリングに失敗しました。エラー:%d";
+"IP address or E.164 number" = "IP アドレスまたは E.164 番号";
+"IP address or URL" = "IP アドレスまたは URL";
+
+"You have been removed from this group." = "このグループから削除されました。";
+"Chat History" = "チャット履歴";
+"Clear chat history on this computer?" = "このコンピューターのチャット履歴を削除しますか?";
+"Clear" = "削除";
+"Leave this group?" = "このグループから退出しますか?";
+"This will also clear your chat history in this group." = "実行すると、このグループでのチャット履歴も削除されます。";
+"This will also clear your chat history with this user." = "実行すると、このユーザーとのチャット履歴も削除されます。";
+"Leave" = "退出";
+"You cleared all past messages." = "過去のすべてのメッセージを削除しました。";
+"With Video On" = "ビデオ オン";
+"With Video Off" = "ビデオ オフ";
+"Capture Screen" = "画面のキャプチャ";
+"Send Image" = "イメージの送信";
+"Edit Group" = "グループの編集";
+"Invite others" = "他のユーザーを招待";
+"Invite Others" = "他のユーザーを招待";
+"Clear History" = "履歴をクリア";
+"Leave Group" = "グループから退出";
+"Delete Contact" = "連絡先の削除";
+"Remove from Contacts" = "連絡先から削除";
+"On Desktop" = "デスクトップ上";
+"On Mobile" = "携帯電話上";
+"Desktop" = "デスクトップ";
+"Mobile" = "携帯電話";
+"Away" = "退席中";
+"Busy" = "取り込み中";
+"You have reached the Maximum number of group members" = "グループ メンバーの最大数に達しました";
+"Group Members" = "グループ メンバー";
+"%@'s group chat" = "%@ のグループ チャット";
+"Save Changes" = "変更の保存";
+"Invite" = "招待";
+"Create Group" = "グループの作成";
+"Can't create a new group, please check your network." = "新しいグループを作成できません。ネットワークを確認してください。";
+"Can't edit the group, please check your network." = "グループを編集できません。ネットワークを確認してください。";
+"Voice Message" = "音声メッセージ";
+"Your message \"%@\" send failed.   Resend" = "メッセージ \"%@\" の送信に失敗しました。   再送信してください";
+"Your message \"%@...\" send failed.   Resend" = "メッセージ \"%@...\" の送信に失敗しました。   再送信してください";
+"Resend" = "再送信してください";
+"%d new message" = "%d 件の新規メッセージ";
+"%d new messages" = "%d 件の新規メッセージ";
+"%@ is typing..." = "%@ が入力しています...";
+"Contacts" = "連絡先";
+"No results" = "結果なし";
+"You have logged in from another device. Messenger is now inactive." = "別のデバイスからログインしました。メッセンジャーは現在アクティブではありません。";
+"Available" = "利用可能";
+"(Admin)" = "(管理者)";
+"Not a contact" = "連絡先でない";
+"(Invite)" = "(招待)";
+"Add to Contacts List" = "連絡先リストに追加";
+"1 contact request" = "1 件の連絡先リクエスト";
+"%d contact requests" = "%d 件の連絡先リクエスト";
+"Your request has been sent successfully!" = "リクエストが正常に送信されました。";
+"New Group Chat" = "新しいグループ チャット";
+"Favorites" = "お気に入り";
+"Company, Phone, and Other Contacts" = "会社、電話および他の連絡先";
+"Company and Phone Contacts" = "会社および電話の連絡先";
+"Company and Other Contacts" = "会社および他の連絡先";
+"Company Contacts" = "会社の連絡先";
+"Phone and Other Contacts" = "電話および他の連絡先";
+"Phone Contacts" = "電話の連絡先";
+"Right-click a contact to add to Favorites." = "連絡先を右クリックすると、お気に入りに追加できます。";
+"Group Meeting" = "グループ ミーティング";
+"You are about to start a meeting and invite all members of this group to join. Are you sure?" = "ミーティングを開始して、このグループのすべてのメンバーが参加するように招待しようとしています。よろしいですか?";
+
+"Audio Error" = "音声エラー";
+"No audio is detected. Check audio settings or continue to record with no audio." = "音声が検出されません。音声設定を確認するか、音声なしでレコーディングを続行してください。";
+"Check Audio" = "音声の確認";
+"Continue Recording" = "レコーディングの続行";
+
+"Upcoming" = "予定";
+"Recorded" = "レコーディング済み";
+"Join" = "参加";
+"Open" = "開く";
+"Schedule" = "スケジュール";
+"Update" = "更新";
+"Switch Account" = "アカウントの切り替え";
+"Exit" = "終了";
+"Check for Updates..." = "アップデートの確認...";
+"Please check your network connection. Then click Retry to re-connect." = "ネットワーク接続を確認してください。次に [再試行] をクリックして再接続してください。";
+"Install" = "インストール";
+"Manual Update" = "手動更新";
+"Retry" = "再試行";
+"Downloading file" = "ファイルをダウンロードしています";
+"Updating" = "更新しています";
+"Thanks for joining a Zoom video call!\n\nYou can login to start your own Zoom video call." = "Zoom ビデオ通話にご参加ありがとうございます。\n\nログインして、Zoom ビデオ通話を開始できます。";
+"Don't remind me again" = "今後はこのメッセージを表示しない";
+"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation" = "ミーティングの招待を受け入れるために、招待先のユーザーに Zoom がプレインストールされている必要はありません";
+"Did you know?" = "ご存じですか?";
+"Later" = "後で";
+"Update now" = "今すぐ更新";
+"Release Notes:" = "リリース ノート:";
+"Join Video Call" = "ビデオ通話に参加";
+"You are already in another meeting. Do you want to leave and then join this one?" = "すでに他のミーティングに参加しています。退室して、このミーティングに参加しますか？";
+"No" = "いいえ";
+"Yes" = "はい";
+"Camera:" = "カメラ:";
+"Always show name on video window" = "ビデオ ウィンドウに常に名前を表示";
+"Update to PRO" = "Pro に更新";
+"Store my recordings at:" = "レコーディングの保存場所:";
+"Choose a location for recorded files when meeting ends" = "ミーティング終了時のレコーディング ファイルの場所を選択します";
+"Open Recordings in Finder" = "Finder でレコーディングを開く";
+"Select a Speaker" = "スピーカー";
+"Select a Microphone" = "マイク";
+"Output Level:" = "出力レベル:";
+"Output Volume:" = "出力音量:";
+"Input Level:" = "入力レベル:";
+"Input Volume:" = "入力音量:";
+"Please speak to your microphone. If you can not see the volume indicator blinking, select a different mic." = "マイクに向かって話してください。音声インジケータが点滅しない場合は、別のマイクを選択してください。";
+"Select Mic" = "マイクの選択";
+"Automatically adjust microphone settings" = "マイク設定を自動調整";
+"Automatically join audio conference via Mic & Speaker when joining a meeting" = "ミーティング参加時にマイクとスピーカーで音声会議に自動参加";
+"Alert me when friends go online" = "友達がオンラインになったらアラートを表示";
+"Alert me when friends go offline" = "友達がオフラインになったらアラートを表示";
+"Pop out the chat window when I receive a chat message" = "チャット メッセージの受信時にチャット ウィンドウを表示";
+"Show offline contacts" = "オフラインの連絡先を表示";
+"Enter full screen automatically when viewing screen shared by others" = "他のユーザーと共有する画面を表示するときに、自動的に全画面を開始";
+"Maximize Zoom window automatically when viewing screen shared by others" = "他のユーザーによって共有された画面を見る時に、自動的にズームウィンドウを最大化";
+"Play sound when I receive a chat message" = "チャット メッセージの受信時にサウンドを再生";
+"Enter full screen automatically when starting or joining a meeting" = "ミーティングの開始または参加するときに、自動的に全画面を開始";
+"Use dual monitors" = "デュアル モニターの使用";
+"Scale to fit my Zoom window when viewing screen shared by others" = "他のユーザーと共有する画面を表示するときに、Zoom ウィンドウに合わせて表示";
+"Automatically copy Invitation URL to Clipboard after meeting starts" = "ミーティング開始後に招待 URL をクリップボードに自動的にコピー";
+"Meeting Option" = "ミーティング ??オプション";
+"Instant Message" = "インスタント メッセージ";
+"For technical support, please visit " = "技術サポートについては、次を参照してください:";
+"Support." = "サポート。";
+"Always use PMI for instant meetings on this computer" = "このコンピューターでは、インスタントミーティングに常に PMI を使用";
+"Delete" = "削除";
+"Start" = "開始";
+"Edit" = "編集";
+"Play Video" = "ビデオの再生";
+"Play Audio Only" = "オーディオのみの再生";
+"Accept" = "承諾";
+"Checking for updates..." = "更新を確認しています...";
+"What's new?" = "新機能";
+"Network error!" = "ネットワーク エラー。";
+
+"Download failed, please try it again" = "ダウンロードに失敗しました。再試行してください";
+"Download failed" = "ダウンロードに失敗しました";
+"Personal Meeting ID (PMI)" = "個人ミーティング ID (PMI)";
+"Today" = "今日";
+"Recurring - %@" = "定期的 - %@";
+"Topic: %@\n" = "トピック: %@\n";
+"Meeting ID: %@\n" = "ミーティング ID: %@\n";
+"Meeting Password: %@\n" = "ミーティングのパスワード: %@\n";
+"%@ to %@" = "%@ から %@";
+"Duration: %d minutes" = "経過時間: %d 分";
+"Meeting ID: %@" = "ミーティング ID: %@";
+"Meeting Password: %@" = "ミーティングのパスワード: %@";
+"Meeting Password:" = "ミーティングのパスワード:";
+"New version is available!" = "新しいバージョンを使用できます。";
+"New version available!" = "新しいバージョンを使用できます。";
+"Last Name" = "姓";
+"First Name" = "名";
+"Change" = "変更";
+"Enter your own audio conference information" = "自分の音声会議情報を入力してください";
+
+"Invite by Email" = "メールで招待";
+"Choose your email service to send invitation" = "招待を送信するメール サービスを選択します";
+"Default Email" = "デフォルト メール";
+"Gmail" = "Gmail";
+"Yahoo Mail" = "Yahoo メール";
+
+"Facebook Friends" = "Facebook の友達";
+"Facebook Group" = "Facebook グループ";
+
+"Invite by Phone" = "電話で招待";
+"Calling" = "発信中";
+"Invitee Name:" = "招待先の名前:";
+" Name to be displayed in the meeting" = "ミーティングに表示される名前";
+"Phone Number:" = "電話番号:";
+" Input the number you want to call" = "発信先の電話番号を入力します";
+
+"Invite a Room System" = "ルーム システムの招待";
+"Enter the pairing code below" = "ペアリング コードを次に入力します";
+"Or Enter the pairing code below" = "またはペアリング コードを次に入力します";
+
+"Copy Invitation" = "招待のコピー";
+"Copy URL to Clipboard" = "URL をクリップボードにコピー";
+"Copy Invitation to Clipboard" = "招待をクリップボードにコピー";
+
+"Call" = "発信";
+
+"From your H.323/SIP Room System" = "H.323/SIP ルーム システムから";
+"Enter Meeting ID: " = "ミーティング ID の入力:";
+"Enter Meeting Password: " = "ミーティング パスワードの入力:";
+
+"Google Friends" = "Google の友達";
+
+
+"(or" = "(または";
+"Email" = "メール";
+"Email or password error!" = "メールまたはパスワード エラー。";
+"Remember me" = "このユーザー名を記憶する";
+"Back" = "戻る";
+"Or" = "または";
+"Login with Google" = "Google を使用してログイン";
+"Login with Facebook" = "Facebook でログイン";
+"Login with SSO" = "SSO でログイン";
+
+"Connection Failed." = "接続に失敗しました。 ";
+
+"Sign In" = "サイン イン";
+
+"To schedule a BBM meeting, you need to upgrade to a paid account. You are still able to join BBM Meeting." = "BBM ミーティングをスケジュールするには、有料アカウントにアップグレードする必要があります。BBM ミーティングには引き続き参加できます。";
+"Not Now" = "後で";
+"Upgrade to BBM Meetings" = "BBM ミーティングにアップグレード";
+
+"Login SSO" = "SSO にログイン";
+"https://companyname.zoom.us" = "https://companyname.zoom.us";
+"SSO URL:" = "SSO URL:";
+"Enter your company domain" = "会社のドメインを入力してください";
+"company domain" = "会社のドメイン";
+".zoom.us" = ".zoom.us";
+"I don't know the company domain" = "会社のドメインを知りません";
+"Open in default browser" = "デフォルトブラウザーで開く";
+"Find company domain by email address" = "メールアドレスで会社のドメインを検索します";
+"Manually enter domain" = "手動でドメインを入力します";
+"No matching domain found" = "一致するドメインが見つかりませんでした";
+"Network error, please try later" = "ネットワークエラー、しばらくしてからお試しください";
+
+
+"Name:" = "名前:";
+"Password:" = "パスワード:";
+
+"http://support.zoom.us/" = "http://support.zoom.us/";
+
+
+
+"Topic:" = "トピック:";
+"When" = "日時";
+"Start:" = "開始:";
+"Duration:" = "経過時間:";
+"Hr" = "時間";
+"Min" = "分";
+"Time Zone:" = "タイム ゾーン:";
+"Please remember to check recurrence or repeat in your calendar invitation to your attendees. " = "出席者に対するカレンダーの招待で、繰り返しを必ず確認してください。";
+"Recurring meeting" = "定期的なミーティング";
+"Host:" = "ホスト:";
+"Participant:" = "参加者:";
+"Video (when joining a meeting)" = "ビデオ (ミーティングの参加時)";
+"On" = "オン";
+"Off" = "オフ";
+"Telephone Only" = "電話";
+"VoIP Only" = "コンピューターオーディオ";
+"Both" = "電話とコンピューターのオーディオ";
+"3rd Party Audio" = "サード パーティ製オーディオ";
+"Meeting Options" = "ミーティング オプション";
+"Require meeting password" = "ミーティング パスワード必須";
+"Enable join before host" = "ホストより前の参加を有効にする";
+"Calendar" = "カレンダー";
+"iCal" = "iCal";
+"Google Calendar" = "Google カレンダー";
+"Other Calendars" = "他のカレンダー";
+"Schedule For:" = "スケジュール対象:";
+"Edit Meeting" = "ミーティングの編集";
+"Scheduling..." = "スケジュール設定しています...";
+"Click the button below to copy the invitation to clipboard." = "招待をクリップボードにコピーするには、下のボタンをクリックしてください。";
+"Copy to Clipboard" = "クリップボードにコピー";
+
+
+"Personal Meeting ID" = "個人ミーティング ID";
+"Your Personal Meeting ID is changed." = "個人ミーティング ID が変更されました。";
+"Upgrade to Pro to change your Personal Meeting ID" = "Pro にアップグレードして個人ミーティング ID を変更してください";
+"Change Your Personal Meeting ID" = "個人ミーティング ID の変更";
+
+"Choose your 10-digits ID:" = "10 桁の ID の選択:";
+"* Your Personal Meeting ID cannot start with 0 or 1" = "* 個人ミーティング ID を 0 または 1 で始めることはできません";
+"Apply" = "適用";
+
+"Your Personal Meeting option is updated." = "個人ミーティングオプションが更新されました。";
+
+"Only Pro user can customize your favorite personal meeting ID. Would like to upgrade to Pro account?" = "お気に入りの個人ミーティング ID をカスタマイズできるのは Pro のユーザーのみです。Pro アカウントにアップグレードしますか?";
+
+
+"Recording Path:" = "レコーディング パス:";
+
+"Save Chat" = "チャットを保存";
+"Chat saved to:" = "チャットの保存先:";
+
+"Share an iPhone/iPad screen" = "iPhone/iPad 画面の共有";
+"A plugin is required to share an iPhone/iPad screen." = "iPhone/iPad の画面を共有するにはプラグインが必要です。";
+"Installation failed, please check your network and try again. Or " = "インストールに失敗しました。ネットワークを確認して、もう一度やり直してください。または";
+"download manually" = "手動でダウンロード";
+
+"Zoom Activity Monitor" = "Zoom アクティビティ モニター";
+"Item Name" = "アイテム名";
+"Frequency" = "頻度";
+"Latency" = "レイテンシ";
+"Jitter" = "ジッター";
+"Packet Loss - Avg(Max)" = "パケット損失 - 平均 (最大)";
+"Frame Per Second" = "フレーム/秒";
+"Resolution" = "解像度";
+"Screen Sharing" = "画面の共有";
+"Overall" = "全体";
+"Send" = "送信";
+"Receive" = "受信";
+"Bandwidth" = "帯域幅";
+"Network Type" = "ネットワークの種類";
+"Proxy" = "プロキシ";
+"CPU" = "CPU";
+"Memory" = "メモリ";
+"Your high CPU usage is affecting the meeting quality" = "CPU 使用率が高いため、ミーティングの品質に影響しています";
+"Your internet connection is unstable" = "インターネット接続が不安定です";
+
+"Waiting for %@ to approve your request" = "%@ がリクエストを承認するのを待っています";
+"%@ requested to control your camera" = "%@ があなたのカメラの制御をリクエストしています";
+"%@ declined your request of camera control" = "%@ がカメラ制御のリクエストを辞退しました";
+"Request approved. You can now control %@'s camera." = "リクエストが承認されました。%@ のカメラを制御できるようになりました。";
+"%@ no longer controls your camera" = "%@ はもうあなたのカメラを制御していません";
+
+"Zoom Logo" = "Zoom のロゴ";
+"Status Menu" = "ステータス メニュー";
+"Refresh Meeting List" = "ミーティング リストの更新";
+"Add Contact" = "連絡先の追加";
+"button" = "ボタン";
+
+"Auto Answer Group" = "自動回答グループ";
+"Remove from Auto Answer Group" = "自動回答グループから削除";
+"Add to Auto Answer Group" = "自動回答グループに追加";
+
+"Poll" = "アンケート";
+"Multiple Choice" = "複数選択";
+"Poll closed" = "投票は終了しました";
+"%d voted" = "%d 人が投票しました";
+"Add a Question" = "質問の追加";
+"Edit Poll" = "投票の編集";
+"Failed to launch poll" = "投票の起動に失敗しました";
+"Failed to end poll" = "投票の終了に失敗しました";
+"Failed to share poll result" = "投票結果の共有に失敗しました";
+"Failed to fetch poll" = "投票のフェッチに失敗しました";
+"Failed to stop sharing" = "共有の停止に失敗しました";
+"Failed to submit poll" = "投票の送信に失敗しました";
+"Share Results" = "結果の共有";
+"Launch Poll" = "投票の起動";
+"Polls" = "投票";
+"End Poll" = "投票の終了";
+"%@ in Progress" = "%@ が進行中";
+"%d of %d voted" = "%d/%d 人が投票しました";
+"Sharing Poll Results" = "投票結果の共有";
+"Stop Sharing" = "共有の停止";
+"Quick Poll" = "クイック投票";
+"Host is sharing poll results" = "ホストが投票結果を共有しています";
+"Close" = "閉じる";
+"Attendees are now viewing questions" = "出席者が現在質問を表示しています";
+"Attendees are now viewing poll results" = "出席者が現在投票結果を表示しています";
+"Host and panelists can't vote." = "ホストとパネリストは投票できません";
+"Allow panelists to vote" = "パネリストが投票できるようにする";
+"Re-launch Poll" = "ポーリングを再開";
+"Re-launching the poll will clear existing polling results. Do you want to continue?" = "再開すると現在のポーリングの結果が消去されます。続けますか？";
+"%d of %d (%d%%) voted" = "%d of %d (%d%%) voted";
+"The poll was closed before you submitted your answer" = "回答を送信する前に、投票が締め切られました。";
+
+"Zoom - %@" = "Zoom - %@";
+"Use Personal Meeting ID" = "個人ミーティング ID の使用";
+"Zoom" = "Zoom";
+"Always mute microphone when joining meeting" = "ミーティング参加時は常にマイクをミュート";
+"Always turn off video when joining meeting" = "ミーティング参加時は常にビデオをオフ";
+"(Public to all participants)" = "(すべての参加者に公開)";
+"Topic: %@" = "トピック: %@";
+"Chat saved." = "チャットが保存されました。";
+"Call Out" = "呼び出し";
+"Dial In from a H.323/SIP Room System" = "H.323/SIP ルーム システムからダイヤル イン";
+"Call a H.323/SIP Room System" = "H.323/SIP ルーム システムを呼び出す";
+"Confirm with me when I leave a meeting" = "ミーティングの退出時に確認";
+"Hide Non-Video Participants" = "ビデオ以外の参加者を非表示";
+"Ask to Start Video" = "ビデオの開始を依頼";
+
+"Broadcast" = "ブロードキャスト";
+"Practice Mode Only: Attendees cannot join until you broadcast" = "練習モード専用:ブロードキャストするまで視聴者は参加できません";
+"The webinar is now broadcasting to all attendees" = "Web セミナーは現在すべての視聴者にブロードキャストされています";
+"Not broadcasting" = "ブロードキャストされていません";
+
+//
+"Audio Options..." = "オーディオ オプション...";
+"Video Settings..." = "ビデオ設定...";
+"Camera (Shift+Command+N to switch)" = "カメラ (Shift+Command+N で切り替え)";
+"Zoom is using an end to end encrypted connection" = "Zoom ではエンド ツー エンドの暗号化接続が使用されています";
+"Select a Camera" = "カメラ";
+"New Share" = "新しい共有";
+"Stop Remote Control" = "リモート制御の停止";
+"Switch Camera" = "カメラの切り換え";
+"Locked" = "ロック済み";
+"You need to unlock the meeting in order to change the role of a webinar attendee" = "Web セミナーの出席者の役割を変更するには、ミーティングをロック解除する必要があります";
+"You need to unlock the meeting in order to change the role of a webinar panelist" = "Web セミナーのパネリストの役割を変更するには、ミーティングをロック解除する必要があります";
+"The host has asked you to start your video." = "ホストがあなたにビデオの開始を依頼しています。";
+"Start My Video" = "自分のビデオを開始";
+"Resume Share" = "共有の再開";
+"Pause Share" = "共有の一時停止";
+"Meeting Locked" = "ミーティングがロックされました";
+"Show floating notification when I receive a chat message" = "チャット メッセージの受信時に通知をフロート表示";
+"Options" = "オプション";
+"Promote" = "昇格";
+"Other Contacts" = "他の連絡先";
+"Meet" = "ミーティング";
+"Add Other Contacts by Email" = "メールで他の連絡先を追加";
+"Meet with Video" = "ビデオありでミーティング";
+"Meet without Video" = "ビデオなしでミーティング";
+"Add to Favorites" = "お気に入りに追加";
+"Remove from Favorites" = "お気に入りから削除";
+"Send File" = "ファイルの送信";
+"You've created this group chat %@" = "このグループ チャット %@ を作成しました";
+"%@ invited you and %@ to this group chat" = "%@ があなたと %@ をこのグループ チャットに招待しました";
+"%@ invited you to this group chat" = "%@ があなたをこのグループ チャットに招待しました";
+"New Chat" = "新しいチャット";
+"Start Chat" = "チャットの開始";
+"Chat With" = "チャットの相手";
+"Next" = "次へ";
+"Add" = "追加";
+"New Group" = "新しいグループ";
+"Screen sharing has failed to start. Please try again later." = "画面共有の開始に失敗しました。後でもう一度やり直してください。";
+"Group Name:" = "グループ名";
+"Missed Call" = "不在着信";
+"Incoming Call - Declined" = "着信 - 辞退";
+"Join Audio Conference by Computer" = "コンピューターでオーディオに参加";
+"[You were mentioned] " = "[名前が挙がっています] ";
+"%@ left this group chat" = "%@ がこのグループ チャットを退出しました";
+"You've removed %@ from this group chat" = "%@ をこのグループ チャットから削除しました";
+"%@ removed you from this group chat" = "%@ があなたをこのグループ チャットから削除しました";
+"%@ removed %@ from this group chat" = "%@ が %@ をこのグループ チャットから削除しました";
+"You changed the group name to \"%@\"" = "グループ名を %@ に変更しました。";
+"%@ changed the group name to \"%@\"" = "%@ がグループ名を %@ に変更しました。";
+"You've invited %@ to this group chat" = "%@ をこのグループ チャットに招待しました";
+"%@ invited %@ to this group chat" = "%@ が %@ をこのグループ チャットに招待しました";
+"Choose ONE of the audio conference options" = "どのように音声会議に参加しますか?";
+"Request Camera Control" = "カメラ制御のリクエスト";
+"Give up Camera Control" = "カメラ制御の放棄";
+"Type and select a person" = "入力して個人を選択";
+"You can't start your video because the host has stopped it" = "ホストがビデオを停止したため、ビデオを開始できません";
+"Remember my name for future meetings" = "将来のミーティングのためにこの名前を記憶する";
+"will start video later." = "はビデオを後で開始します。";
+
+"Make Co-Host" = "共同ホストにする";
+"Co-host" = "共同ホスト";
+"co-host" = "共同ホスト";
+"Co-Host" = "共同ホスト";
+"Withdraw Co-Host Permission" = "共同ホスト権限の取り下げ";
+"Do you want to make %@ the co-host of this meeting?" = "%@ をこのミーティングの共同ホストにしますか?";
+"Co-Host has stopped your video" = "共同ホストがあなたのビデオを停止しました";
+"Panelists" = "パネルリスト";
+"panelist" = "パネリスト";
+"host" = "ホスト";
+"Type message here..." = "ここにメッセージを入力します...";
+"Send chat to..." = "...にチャットを送信します";
+"Attendees" = "視聴者";
+"The co-host has asked you to start your video." = "共同ホストがビデオの開始を依頼しています。";
+"Allow Panelist Start Video" = "パネリストのビデオの開始を許可";
+"Promote to Panelist" = "パネリストに昇格";
+
+"Failed to connect to Zoom video conferencing server. If you are behind a firewall, please ask your IT administrator to allow \"*.zoom.us\".  For more information, please visit: https://support.zoom.us/hc/en-us/articles/201362683." = "Zoom ビデオ会議サーバーへの接続に失敗しました。ファイアウォールで保護されている場合は、IT 管理者に *.zoom.us を許可するように依頼してください。詳細は､ https://support.zoom.us/hc/en-us/articles/201362683 を参照してください。";
+"Email invitation copied to clipboard" = "メールの招待状がクリップボードにコピーされました";
+"Add a Contact" = "連絡先の追加";
+"An email invitation has been sent." = "メールの招待状が送信されました。";
+"Your request has been sent for approval to:" = "リクエストが次の宛先に承認用に送信されました:";
+"Email address not signed up with Zoom." = "メール アドレスが Zoom でサインアップされていません。";
+"⟨ Back" = "⟨ 戻る";
+"One email address a time" = "1 回に 1 つのメール アドレス";
+"Network error, please try again" = "ネットワーク エラー。もう一度やり直してください";
+"is now your contact." = "が現在あなたの連絡先です。";
+"Yesterday" = "昨日";
+"System Notification" = "システム通知";
+"requests to add you as a contact" = "があなたを連絡先として追加することをリクエストしています";
+"contact request sent  - Waiting for approval" = "連絡先追加リクエストが送信されました - 承認を待っています";
+"accepted your contact request" = "があなたの連絡先リクエストを受け入れました";
+"declined your contact request" = "があなたの連絡先リクエストを辞退しました";
+"has been added to your contact list" = "が連絡先リストに追加されました";
+"contact request sent" = "連絡先追加リクエストが送信されました";
+"  - Declined" = " - 辞退されました";
+"Invited" = "招待されました";
+"You won't receive message notifications from this group unless you are mentioned." = "自分に言及されない限り、このグループからのメッセージ通知は受信しません。";
+"Enable Message Notifications" = "メッセージ通知を有効にする";
+"Disable Message Notifications" = "メッセージ通知を無効にする";
+
+"Open File" = "ファイルを開く";
+"Shared a file in group." = "グループでファイルを共有しました。";
+"Shared a file with you." = "あなたとファイルを共有しました。";
+"Do not prompt joining audio when I join a meeting using 3rd party audio" = "サード パーティ製オーディオを使用してミーティングに参加する際に、オーディオに参加することを促すメッセージを表示しない";
+"You can't start your video because the host has stopped it." = "ホストがビデオを停止したため、ビデオを開始できません。";
+"Allow attendees to raise hand" = "視聴者が手を挙げることを許可する";
+"Don't connect to audio" = "オーディオに接続しない";
+"Turn off my video" = "自分のビデオをオフにする";
+
+"Allow Attendee Chat" = "視聴者にチャットを許可";
+"The host has disabled attendee chat." = "ホストが視聴者のチャットを無効にしました。";
+"Zoom Webinar Chat" = "Zoom Web セミナー チャット";
+"Your text can only be seen by panelists" = "あなたのテキストはパネリストのみが表示可能です";
+"Everyone" = "皆様";
+"All Panelists" = "すべてのパネリスト";
+"All panelists" = "すべてのパネリスト";
+"(host)" = "(ホスト)";
+"%@ is not in this meeting" = "%@ はセッションにいません。";
+"From Me to Everyone" = "自分から全員";
+"From Me to All Panelists" = "自分からすべてのパネリスト";
+"From Me to %@, All Panelists" = "自分から %@ 、すべてのパネリスト";
+"From Me to %@ (Privately)" = "自分から %@  (プライベート)";
+"From %@ to Everyone" = "%@ から全員";
+"From %@ to All Panelists" = "%@ からすべてのパネリスト";
+"From %@ to Me, All Panelists" = "%@ から自分、すべてのパネリスト";
+"From %@ to %@, All Panelists" = "%@ から %@ 、すべてのパネリスト";
+"From %@ to Me (Privately)" = "%@ から自分 (プライベート)";
+"From Me to %@:" = "自分から %@ :";
+"From Me to %@, %@:" = "自分から %@ 、%@ :";
+"From Me to %@: (Privately)" = "自分から %@ :(プライベート)";
+"From %@ to %@:" = "%@ から %@ :";
+"From %@ to Me, %@:" = "%@ から自分、%@ :";
+"From %@ to %@, %@:" = "%@ から %@、%@ :";
+"From %@ to Me: (Privately)" = "%@ から自分:(プライベート)";
+" (Privately)" = "(プライベート)";
+"Attendees" = "視聴者";
+"Failed to send chat message" = "チャット メッセージの送信に失敗しました";
+"From" = "開始";
+"to" = "終了";
+", All Panelists" = "、すべてのパネリスト";
+
+"Hide Group members" = "グループ メンバーの非表示";
+"Show Group members" = "グループ メンバーの表示";
+"Send Email Invitation" = "メール招待の送信";
+"Host meeting in China" = "中国でのミーティングをホスト";
+"Only signed-in users can join this meeting" = "サインインしているユーザーのみミーティングに参加可能";
+"Only signed-in users with specified domains can join this meeting" = "指定したドメインでサインインしたユーザーのみがこのミーティングに参加できます";
+"If no domains specified, any signed-in users can join." = "ドメインが指定されていない場合は、サインインしたすべてのユーザーが参加できます。";
+
+"Not Started" = "未開始";
+"In Progress" = "進行中";
+"Breakout Rooms - %@" = "ブレイクアウトルーム-%@";
+"Assign To" = "割り当て先";
+"unassigned participants" = "未割り当ての参加者";
+"unassigned participant" = "未割り当ての参加者";
+"Join Breakout Room" = "ブレイクアウトルームに参加する";
+"Breakout Room Participants" = "ブレイクアウトルーム参加者";
+"Keep Meeting Running for Others" = "他のユーザーに対してミーティングを続行";
+"You are now in the main session" = "現在メイン セッションに参加しています";
+"You are now in a Breakout Room" = "ブレイクアウトルームに参加中";
+"Leave Breakout Room" = "ブレイクアウトルームを退出する";
+"Do you want to leave this Breakout Room and return to the main session?" = "ブレイクアウトルームを退出して、メインセッションに戻りますか？";
+"Return to Main Session" = "メイン セッションに戻る";
+"You will be returned to the main session automatically." = "メイン セッションに自動的に戻ります。";
+"Ask for Help" = "ヘルプを求める";
+"Returning to Main Session..." = "メイン セッションに戻っています...";
+"Invite Host" = "ホストを招待";
+"You can invite the host to this Breakout Room for assistance." = "ブレイクアウトルームにホストを招待してアシストしてもらうこともできます。";
+"Breakout Rooms" = "ブレイクアウトルーム";
+"Assign %d participants into 5 Rooms:" = "参加者の%dを5つのルームに割り当てる：";
+"Automatically" = "自動";
+"Manually" = "手動";
+"%d participants per room" = "ルームあたり%dの参加者";
+"%d-%d participants per room" = "ルームあたり%dから%dの参加者";
+"Create Breakout Rooms" = "ブレイクアウトルームを作成する";
+"Recreate All Rooms" = "すべてのルームをもう一度作成する";
+"All Breakout Rooms will close in %d seconds." = "%d秒ですべてのブレイクアウトルームが閉じられます。";
+"All existing rooms will be replaced." = "すべての現在のルームが置き換えられます。";
+"Recreate" = "再作成";
+"Add a Room" = "ルームを追加";
+"Open All Rooms" = "すべてのルームを開ける";
+"Close All Rooms" = "すべてのルームを閉じる";
+"Breakout Room %d" = "ブレイクアウトルーム%d";
+"Assign" = "割り当て";
+"Delete Room" = "ルームを削除する";
+"Move To" = "移動先";
+"Exchange" = "交換";
+"Delete %@?" = "%@ を削除しますか?";
+"Join %@?" = "%@ に参加しますか?";
+"Leave %@?" = "%@ から退出しますか?";
+"%@ (not joined)" = "%@ (未参加)";
+"All participants have been assigned to Breakout Rooms." = "全参加者はブレイクアウトルームに割り当てわれました。";
+"%1$@ in %2$@ asked for help." = "%2$@ の %1$@ が助けを求めました。";
+"Ask Host for Help" = "ホストに助けを求める";
+"The host is inviting you to join Breakout Rooms." = "ホストがあなたをブレイクアウトルームに招待しています。";
+"You have been assigned to a Breakout Room" = "ブレイクアウトルームに割り当てられました";
+"Breakout Rooms will close in %d seconds" = "ブレイクアウトルームは%d秒で閉じられます";
+"The host has been invited." = "ホストが招待されました。";
+"The host is currently helping others. Please try again later." = "ホストは現在他のユーザーにヘルプを提供しています。後でもう一度やり直してください。";
+"The host is currently in this room." = "ホストは現在このルームにいます。";
+"It may take a few moments." = "少し時間がかかる場合があります。";
+"Joining Breakout Rooms..." = "ブレイクアウトルームに参加する…";
+"All participants have been given 60 seconds to leave their Breakout Rooms." = "参加者全員に、ブレイクアウトルームを退出するのに60秒が与えられます。";
+"All participants have been invited to join Breakout Rooms." = "参加者は全員、ブレイクアウトルームに招待されました。";
+"You can join Breakout Rooms from here." = "ここからブレイクアウトルームに参加できます。";
+"Allow attendee to raise hand" = "出席者が手を挙げることを許可";
+"Unassigned" = "未割り当て";
+"The host has opened Breakout Rooms. Please wait to be assigned." = "ホストはブレイクアウトルームを開けています。割り当てられるまでお待ちください。";
+
+"Enable Stereo" = "ステレオを有効にする";
+"this will greatly increase all attendee's CPU usage" = "実行すると、出席者の CPU 使用率が大幅に増えます";
+"Allow option for using original sound from microphone in meeting" = "マイクからの元の音声を変更しない";
+"this will turn off audio enhancements such as echo cancellation and noise suppression" = "実行すると、エコー キャンセルやノイズ抑制などのオーディオ拡張機能がオフになります";
+
+"This file does not exist." = "このファイルは存在しません。";
+"Your text can be seen by everyone" = "あなたのテキストは全員が表示可能です";
+"Dock to top" = "上部にドッキング";
+"Move to bottom" = "下部に移動";
+"The host has promoted you to a panelist." = "ホストがあなたをパネリストに昇格しました。";
+"The host has changed your role to attendee." = "ホストがあなたの役割を視聴者に変更しました。";
+"Rejoining..." = "参加し直しています...";
+"Connection Type" = "接続の種類";
+"Cloud" = "クラウド";
+"Direct" = "直接";
+"Stay with Free" = "無料のまま変更しない";
+
+"LN_Record_No_Audio_Alert_Title_28459" = "オーディオに接続されていません。";
+"Check My Audio Devices" = "自分のオーディオ デバイスを確認";
+"Your microphone and speaker are not working properly." = "マイクとスピーカーが正しく動作していません。";
+"\n\nNo audio will be recorded." = "\n\n音声はレコーディングされません。";
+"LN_Record_No_Audio_Alert_Message_28459" = "音声を記録に組み込むには\"音声を入れる\"をクリックします";
+"Your microphone is not working properly." = "マイクが正しく動作していません。";
+"\n\nThe voice of other participants can still be recorded, but your voice cannot." = "\n\n他の参加者の音声は引き続きレコーディングできますが、あなたの音声は録音できません。";
+"Your speaker is not working properly." = "スピーカーが正しく動作していません。";
+"\n\nYour voice can still be recorded, but the voice of other participants cannot." = "\n\nあなたの音声は引き続きレコーディングできますが、他の参加者の音声は録音できません。";
+"Check My Microphone" = "自分のマイクを確認";
+"Check My Speaker" = "自分のスピーカーを確認";
+"Record Without Audio" = "音声なしでレコーディング";
+
+"Closed Caption" = "字幕";
+"Type here, press Enter to broadcast" = "ここに入力し、Enter を押せばブロードキャストされます";
+"Closed Caption is available" = "字幕を利用できます";
+"Assign to type Closed Caption" = "字幕入力の割り当て";
+"Withdraw Closed Caption permission" = "字幕権限の取り下げ";
+"The host has assigned you to type Closed Caption." = "字幕を入力するようにホストがあなたを割り当てました。";
+"The host has selected another participant to type." = "別の参加者が入力するようにホストが選択しました。";
+"Closed Caption is being broadcasted to all participants." = "字幕はすべての参加者にブロードキャストされています。";
+"Change Closed Caption Editor" = "字幕編集者の変更";
+"%@ is currently assigned to type Closed Caption, do you want to assign %@ to type instead?" = "%@ が現在字幕を入力するように割り当てられています。%@ がかわりに入力するように割り当てますか?";
+"Assign someone to type" = "入力するユーザーの割り当て";
+"In Manage Participants panel, hover on a participant, in the \"More\" menu, select \"Assign to type Closed Caption\"." = "[参加者の管理] パネルで、参加者の上にマウスカーソルを合わせて、[詳細] メニューで、[字幕の入力に割り当て] を選択します。";
+"Open Manage Participants" = "[参加者の管理] を開きます";
+"I will type" = "私が入力します";
+
+"Add Group" = "グループの追加";
+"[This is an encrypted message]" = "[これは暗号化されたメッセージです]";
+"[Cannot decrypt message]" = "[メッセージの復号化に失敗しました]";
+"Chat encryption has been enabled for this group, offline members cannot see your messages." = "このグループに対してチャットの暗号化が有効になっています。オフラインのメンバーはあなたのメッセージを表示できません。";
+"%@ is using an older version of the Zoom client and cannot see your messages." = "%@ は、古いバージョンの Zoom クライアントを使用しているため、あなたのメッセージを表示できません。";
+"[Encrypted message]" = "[暗号化されたメッセージ]";
+"Chat encryption has been enabled for your account." = "あなたのアカウントに対してチャットの暗号化が有効になっています。";
+"Chat encryption has been enabled according to %@'s account policy." = "%@ のアカウント ポリシーに従って、チャットの暗号化が有効になっています。";
+"Chat encryption has been enabled for this group." = "このグループに対してチャットの暗号化が有効になっています。";
+"Chat encryption has been enabled for your account so you cannot send messages to a person who is not your contact." = "あなたのアカウントに対してチャットの暗号化が有効になっているため、連絡先にない個人にメッセージを送信できません。";
+"Chat encryption has been enabled for your account so you cannot send messages in a group without encryption." = "あなたのアカウントに対してチャットの暗号化が有効になっているため、暗号化せずにグループ内にメッセージを送信できません。";
+"Chat encryption has been enabled for your account so you need to invite %@ online to start chat." = "あなたのアカウントに対してチャットの暗号化が有効になっているため、チャットを開始するには、%@ をオンラインで招待する必要があります。";
+"Waiting for %@ to get online..." = "%@ がオンラインになるのを待っています...";
+"Invite %@ to start chat" = "チャットを開始するように %@ を招待";
+"%@ is inviting you to chat." = "%@ があなたをチャットに招待しています。";
+"%@ accepted your chat invitation." = "%@ があなたのチャットの招待を受け入れました。";
+"You are sending messages too quickly, you need to resend this message." = "送信頻度が高すぎます。後でもう一度やり直してください。";
+"Already joined by Phone" = "電話ですでに参加しています";
+"You've been automatically signed out for being inactive %d minutes due to your account security policy." = "お使いのセキュリティポリシーの関係上、あなたは%d分間非アクティブであったため自動的にサインアウトされました。";
+
+"Keep telephone connected" = "電話をそのまま接続しておいてください";
+"Start a meeting without video" = "画像無しのミーティングを開始";
+"Start a meeting with video" = "画像付きのミーティングを開始";
+"View More..." = "もっと見る...";
+"You are about to invite all members of this group to join. Are you sure?" = "このグループのすべてのメンバーが参加するよう招待しようとしています。 よろしいですか？";
+"You cannot chat with a Zoom Room." = "ズームルームでチャットできません。";
+"Zoom Chat" = "ズームチャット";
+"Group Chat" = "グループチャット";
+"is already a contact." = "はすでに連絡先に登録されています。";
+"Room" = "ルーム ";
+"@Me" = "@私";
+"Groups" = "グループ";
+"Download" = "ダウンロード";
+
+"The audio cannot be recorded properly. Please check audio settings and restart recording." = "オーディオは、正しく記録できません。オーディオの設定を確認し、記録を再起動してください。";
+"The video cannot be recorded properly. Please check your video settings and restart recording." = "ビデオは、正しく記録できません。ビデオの設定を確認し、記録を再起動してください。";
+"The shared screen cannot be recorded properly. Please check your network and restart recording." = "共有した画面を正しく記録できません。ネットワークを確認し、記録を再起動してください。";
+"The shared screen cannot be recorded properly. Please try to stop and restart sharing to solve this issue." = "共有されたスクリーンは正しく記録されません。この問題を解決するため、いったん停止し、再度共有してください。";
+"File (%@) sent successfully." = "ファイル(%@)を正常に送信しました。";
+"[File: %@]" = "[ファイル：%@]";
+"Swap shared screen with video" = "共有スクリーンをビデオでスワップします";
+
+"Support" = "サポート";
+"Request Desktop Control" = "デスクトップの制御を要求します";
+"Request Desktop Control..." = "デスクトップの制御を要求します...";
+"Request Application Control" = "アプリケーションの制御を要求します";
+"Request Application Control..." = "アプリケーションの制御を要求します...";
+"Request Computer Restart" = "コンピュータの再起動を要求します";
+"Request Computer Restart..." = "コンピュータの再起動を要求します...";
+"Stop Remote Support" = "リモートサポートを停止します";
+"Select a participant" = "参加者を選択します";
+"Request to control your desktop" = "あなたのデスクトップの制御を要求しています";
+"Request to control your application" = "あなたのアプリケーションの制御を要求しています";
+"Request to restart your computer" = "あなたのコンピュータの再起動を要求しています";
+"%@ is asking for permission to remotely control your desktop." = "%@は、あなたのデスクトップを制御する許可を求めています。";
+"%@ is asking for permission to remotely control your application." = "%@はあなたのアプリを遠隔操作するための許可を求めています。";
+"%@ is asking for permission to restart your computer. After your computer restarted, you will be auto rejoined into this meeting again." = "%@はあなたのコンピューターを再起動するための許可を求めています。コンピューターの再起動後、このミーティングに自動的に参加します。";
+"Grant Permission" = "権限を付与";
+"Deny" = "否定";
+"Restart Computer" = "コンピュータを再起動します";
+"Confirm" = "確認";
+"Select an application to share" = "共有するアプリケーションを選択してください";
+"Select a desktop to share" = "選択するデスクトップを選択してください";
+"%@ approved your request for desktop control." = "%@は、あなたのデスクトップ管理のための要求を承認しました。";
+"%@ denied your request for desktop control." = "%@は、あなたのデスクトップ管理のための要求を拒否しました。";
+"%@ approved your request for application control." = "%@は、あなたのアプリケーション管理のための要求を承認しました。";
+"%@ denied your request for application control." = "%@は、あなたのアプリケーション管理のための要求を拒否しました。";
+"%@ approved your request for computer restart." = "%@は、あなたのコンピュータの再起動のための要求を承認しました。";
+"%@ denied your request for computer restart." = "%@は、あなたのコンピュータの再起動のための要求を拒否しました。";
+"No one is available to support, you are the only participant in the meeting." = "サポートするものがいません、あなたは会議で唯一の参加者です。";
+"Those participants who can't accept remote control are not listed" = "リモートコントロールを受け入れることができない参加者が表示されていません";
+"Those participants who can't accept computer restart are not listed" = "コンピュータの再起動を受け入れることができない参加者が表示されていません";
+"Support session is not available to the current participant." = "サポートセッションは、現在の参加者には使用できません。";
+"Waiting for %@ to approve your request" = "%@ がリクエストを承認するのを待っています";
+"Edit Advanced Settings" = "詳細設定編集";
+"Edit My Profile" = "プロファイルを編集します";
+
+"Sent you a file." = "あなた宛てにファイルを送信しました。";
+"Shared a file in the meeting." = "ミーティングでのファイルを共有しました。";
+"& others" = "＆その他";
+"Meeting ID or Personal Link Name" = "会議IDまたは会議室名";
+"Screen Name" = "スクリーン名";
+"This personal link name is not valid. Please check and try again." = "この会議室名が無効です。もう一度確認して、お試しください。";
+"Type to filter..." = "フィルター条件を入力…";
+"Find a panelist" = "パネリストを探す";
+"Find a attendee" = "閲覧者を探す";
+"Mute Me" = "ミュート";
+"Unmute Me" = "ミュートを解除します";
+"Merge to meeting window" = "会議ウィンドウにマージ";
+"Expand" = "拡大";
+"Pop Out" = "飛び出る";
+
+" Video " = " ビデオ ";
+" Audio " = " オーディオ ";
+"Accessibility" = "接近性";
+"Video Background" = "ビデオの背景";
+"Fill window" = "ウィンドウに記入";
+"Fit to window" = "ウィンドウに合わせる";
+"Format" = "フォーマット";
+"Font" = "フォント";
+"Line Width" = "ライン幅";
+"Spotlight my video when I speak" = "話すとき、私のビデオをスポットライトします";
+"Choose a virtual background" = "仮想背景を選択します";
+"Choose a virtual background..." = "バーチャルバックグラウンドを選択...";
+"Add Image" = "画像を追加";
+"A solid color video background is required. Green color is preferred." = "特色ビデオの背景が必要です。緑色が好ましいです。";
+"Manually pick the color of the background if the detected color is not accurate." = "検出された色は正確ではない場合、手動で背景の色を選択します。";
+"Pick the color" = "色を選択します";
+"Zoom technology automatically detects the color your video background and replace it with the virtual background image. If the detected color is not accurate, you can manually pick the color from your video background." = "ズーム技術は、あなたのビデオの背景の色を自動的に検出し、仮想背景画像に置き換えます。検出された色が正確でない場合は、手動でビデオ背景から色を選ぶことができます。";
+"Your processor (%@) does not meet our recommended specification for virtual background. Learn more." = "あなたのプロセッサ(%@)は、仮想背景のための推奨仕様を満たしていません。詳細はこちらへ";
+"Learn more." = "さらに詳しく学ぶ。";
+"Enable this feature anyway" = "この機能を有効にします";
+"Connect Kubi" = "Kubiを接続します";
+"Disconnect" = "切断";
+"Security Certificate" = "セキュリティ証明書";
+"Do you want to trust this connection?" = "この接続を信用しますか？";
+"The security certificate presented by this connection was not issued by a trusted authority." = "この接続によって提示されたセキュリティ証明書は信頼された機関によって発行されていませんでした。";
+"Issued to:" = "発行を受けたもの：";
+"Issued by:" = "発行をしたもの";
+"Serial Number:" = "シリアル番号：";
+"Fingerprint:" = "指紋：";
+"Trust" = "信用";
+"Don't Trust" = "信用しないでください";
+"Original size" = "オリジナルサイズ";
+"16:9 (Widescreen)" = "16:9 (ワイドスクリーン)";
+"Broadcast a message to all" = "全員宛てのメッセージを送信";
+"From %@ to everyone: %@" = "%@から皆様へ：%@";
+"The host has moved you to %@" = "ホストはあなたを%@へ移動させました";
+"You've been assigned to a new breakout room." = "新しいブレイクアウトルームに割り当てられました。";
+
+
+"Login to Claim Host" = "クレームホストにログインする";
+"Enter the Host Key to claim host role" = "ホストキーを入力してホスト役割を申し込む";
+"Host Key is a 6-digit number" = "ホストキーは6桁の番号です";
+"OR" = "又は";
+"Verifying Host Key..." = "ホストキーの確認中…";
+"The Host Key you entered is invalid." = "入力したホストキーは無効です。";
+"Please check your network and try again." = "ネットワークを確認してからお試しください。";
+"Because annotation is disabled, your participants need to upgrade to the latest version of Zoom to share their screen." = "注釈は無効であるため、参加者は、スクリーンを共有するには最新バージョンのズームにアップグレードする必要があります。";
+"Enable Advanced Features" = "拡張機能を有効化する";
+"Advanced Features" = "アカウント";
+"Hide Myself" = "自分を隠す";
+"Show Myself" = "自分を表示する";
+"Others could not hear me" = "他の人は自分の声が聞こえなかった";
+"I could not hear others" = "他の人の声が聞こえなかった";
+"Others could not see me" = "他の人は自分を見ることができなかった";
+"I could not see others" = "他の人を見ることができなかった";
+"Poor audio quality" = "低音質";
+"Poor video quality" = "低画質";
+
+"The host is inviting you to join Breakout Room:" = "ホストはブレイクアウトルームにあなたを招待しています：";
+"You have been assigned to Breakout Room:" = "ブレイクアウトルームに割り当てられました：";
+"Failed to expel attendee. Error code:%d" = "視聴者を退出させることに失敗しました。エラーコード：%d";
+"Original Ratio" = "オリジナル割合";
+
+"Low system resources may affect your audio quality. Try closing some applications to improve performance." = "システムリソース不足は音声の品質を影響する可能性があります。パフォーマンスを改善するには他のアプリをお閉じください。";
+"Your network connection is unstable which may impact your audio & video quality." = "ネットワーク接続が不安定で、オーディオやビデオの質に影響を与えている可能性があります。";
+"Keep me logged in" = "ログインしたままにする";
+"Recording Alert" = "警告を記録する";
+"Finish registration to join the meeting." = "登録を完了し、ミーティングに参加する。";
+"Share screen in Zoom Room" = "Zoom Roomで画面を共有する";
+
+"Close Manage Participants" = "参加者管理を閉じる";
+"Show Manage Participants" = "参加者管理を表示";
+"Close Participants" = "参加者を閉じる";
+"Show Participants" = "参加者表示";
+"Close Chat" = "チャットを閉じる";
+"Show Chat" = "チャット表示";
+"You are sharing your screen..." = "画面を共有しています...";
+"Stop share" = "共有を中止";
+
+"Are you sure you want to delete this file?" = "本当にこのファイルを削除しますか？";
+"The file will also be removed from shared groups and chats." = "このファイルは共有されたグループやチャットからも削除されます。";
+"Delete this contact?" = "この連絡先を削除しますか？";
+"This is a one-way action. The entire message will not be visible to the new members in this group. Continue?" = "一方向のみの動作です。このメッセージはグループの新メンバーには全て表示されません。続行しますか？";
+"All Files" = "全ファイル";
+"My Personal Files" = "マイ・パーソナルファイル";
+"Upload New Files" = "新しいファイルをアップロード";
+"Show this group on contacts list" = "このグループを連絡者リストに表示する";
+"Edit Member" = "メンバーを変更する";
+"New members can access entire message history" = "新メンバー全てのメッセージ履歴をアクセスできます";
+"Chat Topic:" = "チャット題目：";
+"- Click to open" = "- 開くにはクリックしてください";
+"Shared by " = "　により共有 ";
+"Shared in " = "　にて共有 ";
+"Delete from %@" = "%@から削除する";
+"Are you sure you want to delete \"%@\"" = "本当に\"%@\"を削除しますか";
+"%@ of %@ (%@/sec)" = "%@ / %@ (%@/秒)";
+"Retry?" = "再度試みますか？";
+"Loading..." = "読み込んでいます...";
+"Loading error," = "ロードエラー　、";
+"No content." = "内容無し。";
+"Jump To" = "　にジャンプする";
+"%@ with " = "%@ ";
+"Hide Context" = "コンテクストを隠す";
+"Show Context" = "コンテクストを表示";
+"[Image]" = "[画像]";
+"[Voice Message]" = "[ボイス・メッセージ]";
+"[File]" = "[ファイル]";
+"Press Enter to search content for:" = "エンターキーを押して次の内容を探す：";
+"Filter by Contacts" = "連絡先によるフィルタリング";
+"Filter by Groups & Chats" = "グループとチャットによるフィルタリング";
+"Messages" = "メッセージ";
+"GROUPS" = "グループ";
+"CONTENTS" = "内容";
+"RECENT CHATS" = "最近のチャット";
+"(Public)" = "（公開）";
+"- Room" = "- ルーム";
+"You can search messages and files in all of your conversations" = "全ての会話におけるメッセージやファイルを検索できます";
+"This Chat" = "このチャット";
+"Search files or messages" = "ファイル又はメッセージを検索";
+"This Group" = "このグループ";
+"Type your message" = "メッセージを入力してください";
+"has been sent out." = "　を送りました。";
+"failed to send" = "送信が失敗しました";
+"is not a supported file format." = "は、サポートされているファイル形式ではありません。";
+"%@ is on an older version of Zoom client and may not be able to see your message." = "%@は旧バージョンのZoomクライアントを使用しているため、メッセージをご覧になれない可能性があります。";
+"Chat encryption has been enabled for your account, so you need to invite %@ online to start chat." = "アカウントのチャット暗号化が起動中であるため、%@とのチャットを開始するには誘う必要があります。";
+"Chat encryption has been enabled for your account , so you need to invite %@ online to start chat." = "アカウントのチャット暗号化が起動中であるため、%@とのチャットを開始するには誘う必要があります。";
+"Message content has been encrypted." = "メッセージ内容は暗号化されています。";
+"Current group chat has enabled E2E encryption and you can't send messages without E2E. Please contact your IT admin for details." = "このグループチャットはE2E暗号化を使用しているため、E2E無しではメッセージを送れません。詳細情報を得るには、IT管理者へお問い合わせください。";
+"Find a member" = "メンバーを探す";
+"Screenshot" = "スクリーンショット";
+"Zoom is using an end-to-end encrypted connection" = "Zoomはエンドツーエンド暗号化された接続を使用してます";
+"Save as..." = "名前を付けてセーブ・・・";
+"@everyone" = "@皆様";
+"You can start end to end chat with %@ now" = "%@とエンドツーエンドを開始できます";
+"Click to hide members" = "クリックしてメンバーを隠す";
+"Click to show members" = "クリックしてメンバーを表示する";
+"Click to hide content" = "クリックして内容を隠す";
+"Click to show content" = "クリックして内容を表示する";
+"The file sent successfully" = "ファイルの送信に成功しました";
+"Failed to send the file" = "グループへのファイル送信失敗";
+"Group Settings" = "グループ設定";
+"Chat Settings" = "チャット設定";
+"Edit Members" = "メンバーを変更する";
+"Leave Chat" = "チャットから退席";
+"Open in new window" = "新しいウィンドウで開く";
+"Merge back to main window" = "メインウィンドウに戻す";
+"Select groups to join" = "参加するグループを選択";
+"Private (Invited members only)" = "非効果（招待されたメンバーのみ）";
+"Public (Anyone in your organization can join)" = "公開（組織内の全てのユーザーが参加可能）";
+"Upload files to my Personal Folder" = "パーソナルフォルダにファイルをアップロード";
+"Create or join a group" = "グループに参加する又は設立する";
+"New chat" = "新規チャット";
+"Content - All Files" = "内容 – 全てのファイル";
+"Select groups to join (%d in total)" = "参加するグループを選択(合計%d)";
+"Group Type:" = "グループタイプ：";
+"Invite Members:" = "メンバーを招待：";
+"Members in your organization only" = "組織内のメンバーのみ";
+"No available public groups to join." = "参加可能な公開ルームがありません。";
+"You have successfully joined groups:" = "次のグループに追加されました：";
+"Join Failed" = "参加失敗";
+"Share a File" = "ファイル共有";
+"Share with" = "　と共有";
+"Share Error" = "共有エラー";
+"%@  cannot be shared." = "%@は共有できません。";
+"Uploaded to " = "　へアップロードされました ";
+"Failed to upload" = "アップロード失敗";
+"Failed to download" = "ダウンロード失敗";
+"Uploading %d item / downloading %d item" = "%dアイテムをアップロード中/%dアイテムをダウンロード中";
+"%d Uploads / %d downloads complete" = "%d アップロード / %d ダウンロード完了";
+"%d Uploads complete" = "%d アップロード完了";
+"Uploading %d items" = "%dのアイテムをアップロード中";
+"%d Upload complete" = "%d アップロード完了";
+"Upload Files to My Personal Folder" = "パーソナルフォルダにファイルをアップロード";
+"Browse" = "ブラウズ";
+"Share with others" = "他のユーザーと共有";
+"You can upload up to 5 files at a time." = "同時に5ファイルまでアップロードできます。";
+"Files are private until they are shared in group." = "ファイルはグループ共有されるまで非公開です。";
+"Upload Files(%d file selected)" = "ファイルをアップロード（%dファイル選択中）";
+"Upload and Share" = "アップロードし共有する";
+"Type the name here" = "名前を入力してください";
+"Zoom Rooms" = "ズームルーム";
+"You've changed password on web, please login with your new password." = "サイト上でパスワードを変更したので、新しいパスワードでログインしてください。";
+"requests to add you as a contact - Declined" = "は、連絡先としての追加を申し込みました – 拒否しました";
+
+"Share Zoom windows in desktop sharing" = "デスクトップ共有中にZoomウィンドウを共有";
+"The host has another meeting in progress" = "このホストは既にミーティングに参加中です";
+
+"Closed Caption history saved" = "字幕履歴セーブ完了";
+"Save closed caption history" = "字幕履歴をセーブ";
+"Hide history" = "履歴を隠す";
+"Show history" = "履歴表示";
+"Closed caption is turned on" = "字幕オン";
+"Closed Caption - Broadcasting" = "字幕 – 放送中";
+"Closed Caption Font Size:" = "字幕文字サイズ：";
+"Small" = "スモール";
+"Large" = "ラージ";
+"Subtitles will look like this." = "字幕はこの様に表示されます。";
+
+"Playing"  = "再生中";
+"There seems to be an issue with your speaker, please select a different device and try again." = "スピーカーに問題が生じました、違うデバイスを選択し、再度お試しください。";
+"Please speak to your microphone." = "マイクに声をかけてください。";
+"If you can't hear your voice, select a different microphone." = "声が聞こえない場合、別のマイクを選択してください。";
+"Click Test Mic to make sure others can hear you" = "クリックしてマイク作動テスト";
+
+"Audio Alert" = "音声通告";
+"Check Microphone & Speaker Settings" = "マイクとスピーカー設定をチェック";
+"Test Microphone & Speaker" = "マイクとスピーカーをテストする";
+"Failed to detect your speaker. Please make sure your speaker is properly connected." = "スピーカー発見失敗スピーカーが正しく接続されているか確認してください。";
+"Your speaker has changed to %@ and will now be used." = "使用中のスピーカーを%@に変更しました。";
+"Failed to detect your microphone and speaker. Please make sure your devices are properly connected." = "マイク及びスピーカー発見失敗デバイスが正しく接続されているか確認してください。";
+"Failed to detect your microphone. Please make sure your microphone is properly connected." = "マイク発見失敗マイクが正しく接続されているか確認してください。";
+"Failed to detect your microphone. Please make sure your microphone is properly connected.\nYour speaker has changed to %@ and will now be used." = "マイク発見失敗マイクが正しく接続されているか確認してください。\n使用中のスピーカーを%@に変更しました。";
+"Your microphone has changed to %@ and will now be used." = "使用中のマイクを%@に変更しました。";
+"Your microphone has changed to %@ and will now be used.\nYour speaker has changed to %@ and will now be used." = "使用中のマイクを%@に変更しました。\n使用中のスピーカーを%@に変更しました。";
+"Failed to detect your speaker. Please make sure your speaker is properly connected.\nYour microphone has changed to %@ and will now be used." = "スピーカー発見失敗スピーカーが正しく接続されているか確認してください。\n使用中のマイクを%@に変更しました。";
+
+"Manage cloud storage" = "クラウド管理";
+"Cloud recording not started.\n" = "クラウド録画、開始前。\n";
+"Meeting audio may not be fully recorded." = "ミーティングの音声は完全に録音されない場合もあります。";
+"Same as System" = "システムと同じ";
+"Record on this computer" = "このコンピューターに記録";
+"Your account has used up all of the cloud storage space currently available. To record to the cloud, delete some older recordings or upgrade your cloud recording plan." = "ご使用のアカウントは、現在利用可能なすべてのクラウドストレージの容量を使い切っています。クラウドに記録するには、古い記録をいくつか削除するか、クラウド記録プランをアップグレードしてください。";
+"Your account has used up all of the cloud storage space currently available. To record to the cloud, delete some older recordings." = "ご使用のアカウントは、現在利用可能なすべてのクラウドストレージの容量を使い切っています。クラウドに記録するには、古い記録をいくつか削除してください。";
+"Host has used the maximum storage space available. To record to the cloud, ask the meeting organizer to delete some older recordings or upgrade the cloud recording plan." = "ホストは、現在利用可能なすべてのクラウドストレージの容量を使い切っています。クラウドに記録するには、古い記録をいくつか削除するか、クラウド記録プランをアップグレードするようミーティングの主催者に依頼してください。";
+"Coud storage does not have enough space. Please contact host to upgrade plan or remove some old recording files." = "クラウドストレージに十分なスペースがありません。ホストに連絡して、プランをアップグレードするか古い記録ファイルをいくつか削除するよう依頼してください。";
+
+"Please enter the Meeting ID or enter the Sharing Code displayed on the Zoom meeting room TV screen." = "ミーティングID又はZoomミーティングルームのスクリーンに表示されている共有コードを入力してください。";
+"Cannot connect to Zoom Rooms. Please enter the meeting ID or select Presentation on iPad controller." = "Zoomルームに接続できません。ミーティングIDを入力する又はiPadコントローラでプレゼンテーションを選択してください。";
+"Network error, please try later." = "ネットワークエラーなので、後ほどもう一度お試しください。";
+
+"Sharing screen to \"%@\"" = "%@と画面を共有";
+"The file size exceeds the limitation (512MB) and cannot be uploaded." = "ファイルは制限サイズ（512MB）を超えているため、アップロードできません。";
+
+//ZOOM-6379 TrackingCode
+"(Optional)" = "(オプション)";
+
+"Audio sub menu" = "音声サブメニュー";
+"Video sub menu" = "映像サブメニュー";
+"Multiple Share sub menu" = "マルチ共有サブメニュー";
+"has joined the meeting" = "はミーティングに参加しました";
+"has left the meeting" = "はミーティングから退席しました";
+"All panelists can share" = "全てのパネリストが共有できます";
+"All panelists can start sharing when someone else is sharing" = "他の人が共有中でも全てのパネリストが共有を開始できます";
+"All participants can share" = "全ての参加者が共有できます";
+"All participants can start sharing when someone else is sharing" = "他の人が共有中でも全ての参加者が共有を開始できます";
+"Only host can share" = "ホストのみ共有可能";
+"Only host can start sharing when someone else is sharing" = "他人が共有中の場合、ホストのみ共有を開始できます";
+
+"Please wait. The webinar will begin soon." = "お待ちください。ウェビナーはまもなく開始します。";
+"Allow attendees to ask questions anonymously" = "視聴者に匿名での質問を許可";
+
+"Invite by Contacts" = "Zoomの連絡先を招待する";
+"Invite Zoom Rooms" = "Zoomルームを招待";
+
+"Move focus to next window" = "次のウィンドウに焦点を移す";
+
+"You can also use the \"Control + \\\" to show/hide meeting controls" = "\"Control + \\\"を使用することでミーティングのコントロールの表示を切り替えることができます";
+"Always show meeting controls" = "ミーティングコントロールを常に表示する";
+
+"Your account has been locked due to multiple failed login attempts" = "ログインへの失敗回数が多すぎるため、あなたのアカウントがロックされました";
+"You cannot minimize Zoom when you are sharing Zoom windows" = "Zoomウィンドウを共有中をZoomを最小化できません";
+"%@ has started screen share, choose Options to view" = "%@は画面共有を開始しました、ご覧になるにはオプションを選択してください";
+"[New notification]" = "[新しい通知]";
+"Advanced Sharing Options..." = "高度な共有オプション...";
+"Advanced Sharing Options" = "アドバンス共有オプション";
+
+"You are the admin of this group. You should transfer admin privileges or delete the group before leaving it." = "あなたはこのグループの運営者です。グループを退会する前に、運営者権限を移動またはグループを削除してください。";
+"Continue delete" = "削除を続行する";
+
+"Save emojis from any chat" = "チャットから絵文字を保存";
+"Right click any image in a chat window,\nthen choose \"Add to emoji\"" = "チャットウィンドーに表示されているイメージを右クリックし、\n \"新しい絵文字を追加する\"を選択してください";
+"Upload your own emoji" = "自分の絵文字をアップロード";
+"Click the menu in the lower right corner" = "右下隅のメニューをクリック";
+"Syncing emojis..." = "絵文字をシンクロ中・・・";
+"Delete Selected(%d)" = "選択した(%d)を削除する";
+"Delete Selected" = "選択を削除";
+"Add more emojis here" = "ここに絵文字をさらに追加";
+"Upload emoji" = "絵文字をアップロードする";
+"Delete emoji" = "絵文字を削除する";
+"Edit" = "編集";
+"Added" = "追加済み";
+"This emoji already exists." = "この絵文字はすでに存在しています。";
+"Add to emoji" = "絵文字に追加";
+"Saved emojis" = "保存されている絵文字";
+"Common emojis" = "共通絵文字";
+
+"Navigate among Zoom popup windows" = "Zoomポップアップウインドウをナビゲート";
+"View the previous 25 video participants in gallery view" = "前の25の動画参加者をギャラリービューに表示";
+"View the next 25 video participants in gallery view" = "次の25の動画参加者をギャラリービューに表示";
+"Switch to minimal window" = "最小ウィンドウに切り替える";
+"Switch to speaker view" = "スピーカービューに切り替え";
+"Switch to gallery view" = "ギャラリービューに切り替え";
+"Start/Stop video" = "動画を開始/停止";
+"Mute/Unmute my audio" = "オーディオをミュート/ミュート解除";
+"Mute audio for everyone except host (available only to the host)" = "ホスト以外の音声を消音状態にする（ホストのみ利用可能）";
+"Unmute audio for everyone except host (available only to the host)" = "ホスト以外の音声の消音を解除する（ホストのみ利用可能）";
+"Start/Stop share screen" = "画面の共有を開始/停止";
+"Pause/Resume share (available only when you are sharing your screen)" = "共有の一時停止/再開 (画面を共有中のみ有効)";
+"Start/Stop local recording" = "ローカルレコーディングを開始/停止";
+"Start/Stop cloud recording" = "クラウドレコーディングを開始/停止";
+"Pause/Resume recording" = "録画の一時停止/再開";
+"Enter/Exit full screen mode" = "全画面モードを開始/終了";
+"Display/Hide chat" = "チャットを表示/非表示";
+"Display/Hide manage participants" = "参加者の管理を表示/非表示";
+"Open the invite window" = "[招待] ウィンドウを開く";
+"Keyboard Shortcuts:" = "キーボードショートカット:";
+"Description" = "説明";
+"Enable shortcuts even when the Zoom app is not in focus" = "Zoomアプリがフォーカス中でない場合でもショートカットを利用可能にする";
+
+"Group \"%@\" has been deleted by admin." = "\"%@\"グループが管理者により削除されました。";
+"Transfer Admin" = "運営者を移動";
+"Assign the new group admin" = "新しいグループ運営者を割り当て";
+"You are permanently removing all group conversations, files, and other related information. There is no way to recover the information."  = "グループのすべての会話、ファイル、その他の関連情報を永続的に削除しようとしています。この情報を元に戻す方法はありません。";
+
+"Choose the audio conference option" = "音声会議オプションを選択する";
+
+"Please wait, the meeting host will let you in soon." = "ミーティングのホストは間もなくミーティングへの参加を許可します、もうしばらくお待ちください。";
+"1 person is waiting" = "一人待機中です";
+"%d people are waiting" = "%d人が待機中です";
+"1 participant in the meeting" = "ミーティングに一人参加中";
+"%d participants in the meeting" = "ミーティングに%d人参加中です";
+"Admit" = "許可する";
+"See waiting room" = "待機室を表示する";
+"%@ has entered the waiting room for this meeting" = "%@が本ミーティングの待機室に参加しました";
+"%d people have entered the waiting room for this meeting" = "%d人が本ミーティングの待機室に参加しました";
+"Put attendee in Waiting Room on Entry" = "参加時に参加者を待機室に送る";
+"Take off hold" = "ホールドを解除する";
+"Put in waiting room" = "待機室に送る";
+"Put on hold" = "ホールド状態にする";
+"1 person is on hold" = "一人が現在ホールド中です";
+"%d people are on hold"  = "%d人が現在ホールド中です";
+
+"Sharing Key or Meeting ID" = "共有キー又はミーティングID";
+"Please enter a valid sharing key or meeting ID." = "有効な共有キー又はミーティングIDを入力してください。";
+
+"Stop Live Stream" = "ライブストリームを止める";
+"Live on" = "ライブ中";
+"Preparing..." = "準備中…";
+"Unable to stream your webinar to %@.\nYou need to restart steaming." = "%@にウェビナーをストリーミングできません。\nストリーミングを再起動する必要があります。";
+"The streaming link has been copied to the clipboard" = "ストリームリンクはクリップボードにコピーされました";
+"Webinar is now streaming live on %@" = "ウェビナーは%@においてライブストリーム中です";
+"Copy Streaming Link" = "ストリーミングリンクをコピーする";
+"on %@" = "%@に参加中";
+"View Stream on %@" = "%@においてストリームを観る";
+"Unmute your speaker or increase volume to hear other participants" = "他の参加者の音声を聞くにはスピーカーのミュートを解除するか、音量を上げてください";
+"To decrypt the messages, at least one group member must be online." = "メッセージを解読するには、グループメンバーが最低でも人るログインされている必要があります。";
+"To decrypt the messages, %@ must be online." = "メッセージを解読するには、%@がログインする必要があります。";
+"[Upgrade to the latest version to see this message.]" = "【このメッセージを見るには最新バージョンにアップグレードしてください。】";
+
+"raise hand" = "挙手";
+
+"yes" = "はい";
+
+"no" = "いいえ";
+
+"go slower" = "ゆっくり進む";
+
+"go faster" = "早く進む";
+
+"more" = "その他";
+
+"clear all" = "全て消去";
+
+"dislike" = "嫌い";
+
+"like" = "好き";
+
+"clap" = "拍手";
+
+"away" = "不在";
+
+"need a break" = "休憩が必要";
+
+"Clear All Feedback" = "全てのマイフィードバックの消去";
+
+
+"Record the meeting automatically" = "ミーティングを自動記録";
+
+"Record the meeting automatically on the local computer" = "ローカルコンピューターにミーティングを自動記録";
+
+"Record the meeting automatically in the cloud" = "クラウドにミーティングを自動記録";
+
+"Locally" = "ローカル";
+
+
+"In the cloud" = "クラウド";
+
+
+"To hear others,\nclick the Join Audio button." = "他の人の意見を聞くには、\n【音声に参加する】ボタンをクリックしてください。";
+
+
+"Click if you want to switch to a different microphone or speaker" = "別のマイクまたはスピーカーに切り替える場合にクリックする";
+
+
+"Add a Personal Note" = "個人メモを追加";
+"Remove Personal Note" = "個人メモを削除";
+"Share Screen Options" = "画面オプションの共有";
+
+
+"Waiting for approval" = "承認待ち";
+"Once" = "一度";
+"Continuously" = "継続的";
+"Zoom Room" = "ズームルーム";
+"View Options" = "オプションを表示";
+
+"Change my status to Offline when I am inactive for %@ minutes" = "%@ 分間活動がない場合は、ステータスをオフラインに変更する";
+"Recording..." = "レコーディング...";
+"Bounce application icon when I receive a chat message" = "チャットメッセージを受信したら、アプリケーションアイコンを揺らす";
+
+"Unmute Myself" = "自分自身をミュート解除する";
+"You are muted." = "ミュートされています。";
+
+"Your login attempt was not successful and you need to log in again. If this occurs multiple times, contact IT support." = "ログイン試行に失敗しました。もう一度ログインしてください。この状況が何度も発生する場合、IT サポートまでお問い合わせください。";
+
+"Services" = "サービス";
+"Raise hand/Lower hand" = "挙手する/手をおろす";
+
+"checked" = "チェック済み";
+"status, available" = "ステータス、利用可能";
+"status, busy" = "ステータス、ビジー";
+"status, offline" = "ステータス、オフライン";
+
+"Enter %@ on your phone\nto associate your phone call with this computer as one participant." = "参加者としてこのコンピューターと通話を関連付けるには、電話で %@ を入力してください。";
+"Show Dial-in Number" = "ダイヤルイン番号を表示する";
+
+"File cannot be uploaded because it can not be found" = "ファイルが見つからないため、アップロードできません";
+"File cannot be uploaded because it can not be read" = "ファイルを読み込めないため、アップロードできません";
+
+"count" = "カウント";
+"Choose from the list or type to filter" = "フィルタリングする一覧またはタイプを選択してください";
+
+"Try an unlimited Zoom meeting\n" = "無制限 Zoom ミーティングをお試しください\n";
+"As a Basic user, your free meeting has a time limit of 40 minutes. Zoom is giving you a one-time offer to extend this meeting, Click \"Continue\" to enjoy your unlimited meeting for free. Thanks for choosing Zoom." = "ベーシックユーザーの無料ミーティングの時間制限は 40 分です。無料で時間無制限のミーティングをお楽しみいただくには、\"続行\" をクリックしてください。Zoom のご利用ありがとうございました。";
+"Unable to extend this meeting\n" = "このミーティングを延長できません\n";
+"Zoom cannot extend your free meeting at this time. Your meeting will end when the duration reaches 40 minutes.\n\n(ERROR : %d)" = "Zoom は開催中の無料ミーティングを延長できません。40 分に到達すると、ミーティングが終了します。\n\n（エラー: %d）";
+"This meeting no longer has a time limit" = "このミーティングには時間制限がなくなりました。";
+
+"Touch up my appearance" = "ビデオフィルタを適用する";
+"Show my connected time" = "接続時間を表示";
+
+"No one" = "該当者なし";
+"Allow attendees to chat with:" = "出席者が次の参加者とチャットするのを許可する:";
+"All panelists and other attendees" = "すべてのパネリストおよび他の出席者";
+"Host only" = "ホストのみ";
+"Share file in meeting" = "ミーティング内でファイルを共有する";
+
+"Multiple participants can share simultaneously" = "複数の参加者が同時に共有可能";
+"Multiple panelists can share simultaneously" = "同時に複数のパネリストが共有できます";
+"One participant can share at a time" = "同時に1名の参加者が共有可能";
+"One panelist can share at a time" = "一度に 1 人のパネリストが共有できます";
+"How many participants can share at the same time?" = "同時に共有できる参加者は何名ですか？";
+"All Participants" = "全参加者";
+"Only Host" = "ホストのみ";
+"Who can share?" = "共有できるのは誰ですか？";
+"How many panelists can share at the same time?" = "同時に共有できるパネリストは何名ですか？";
+"Multiple participants can share simultaneously (dual monitors recommended)" = "複数の参加者が同時に共有可能 (デュアルモニターを推奨)";
+"Who can start sharing when someone else is sharing?" = "他の人が共有している場合に共有を開始できるのは誰ですか？";
+
+"Pause/Stop Recording" = "録音を一時停止／停止";
+"Resume/Stop Recording" = "録音を再開／停止";
+
+"A new version is available!" = "新バージョンが利用できます!";
+
+"The meeting has been locked by the host" = "ミーティングはホストによってロックされました";
+"You cannot chat with %@ during this meeting" = "このミーティング中は、%@ とチャットできません";
+"How was your meeting experience?" = "ミーティング体験はどうでしたか?";
+
+"Enable HD" = "HD を有効にする";
+"Enable mirror effect" = "ミラー効果を有効にする";
+"LN_Show_Participant_Name_40473" = "ビデオで参加者の名前を常に表示する";
+"Turn off my video when joining meeting" = "ミーティングに参加する際、ビデオをオフにする";
+"My Video:" = "マイビデオ：";
+"Meetings:" = "会議：";
+
+"error code" = "エラーコード";
+"Continue Without Audio" = "音声なしで続行";
+"Recording will not include audio" = "記録に音声は含まれません";
+"All panelists and attendees" = "すべてのパネリストおよび出席者";
+"and all panelists" = "およびすべてのパネリスト";
+"Your text can be seen by panelists and other attendees" = "入力したテキストは、パネリストおよび他の出席者が閲覧できます。";
+"Login is restricted to email addresses that have the following domains:" = "ログインは次のドメインを含むメールアドレスに制限されます:";
+"You are not authorized to start the meeting using the credentials you signed in with." = "サインインに使用した認証情報には、ミーティングを開始する権限がありません。";
+
+"Jump to chat..." = "チャットにジャンプ…";
+
+"[Mentioned all]" = "[全員へのメンション]";
+
+"[Mentioned me]"  = "[私へのメンション]";
+"Image" = "画像";
+"File"  = "ファイル";
+"Contents" = "内容";
+"Members" = "メンバー";
+"Member" = "メンバー";
+"Private" = "プライベート";
+"Block Contact" = "連絡先をブロック";
+"Unblock Contact" = "連絡先のブロック解除";
+"Are you sure you want to block this contact?" = "この連絡先を本当にブロックしてよろしいですか？";
+"Are you sure you want to block %@?" = "%@を本当にブロックしてよろしいですか？";
+"%@ will be blocked in your contacts and will not be able to contact you." = "%@ さんは連絡先内でブロックされ、あなたに連絡することができなくなります。";
+"Block" = "ブロック";
+"This meeting now has unlimited minutes." = "このミーティングの制限時間がなくなりました。";
+"This meeting has been upgraded by the host and now includes unlimited minutes." = "このミーティングはホストによりアップグレードされ、時間の制限がなくなりました。";
+
+"Record a separate audio file for each participant who speaks" = "各話者の音声トラックを記録";
+
+"Close Manage Participants Panel" = "[参加者の管理] パネルを閉じる";
+"Close Participants Panel" = "[参加者] パネルを閉じる";
+"Open Manage Participants Panel" = "[参加者の管理] パネルを開く";
+"Open Participants Panel" = "[参加者] パネルを開く";
+"Close Chat Panel" = "[チャット] パネルを閉じる";
+"Open Chat Panel" = "[チャット] パネルを開く";
+
+"Gain remote control" = "リモートコントロールを取得";
+
+"Phone" = "電話番号";
+"Contact name or phone number" = "連絡先名または電話番号";
+"From: %@" = "送信元: %@";
+"Your audio has been switched to the connected voice call, and your audio will automatically reconnect back after the end of the voice call." = "オーディオは、接続された音声通話に切り替えられ、音声通話の終了後に自動的にオーディオが再接続されます。";
+"End phone call and Start a meeting" = "通話を終了してミーティングを始める";
+"Hold meeting audio and Anwser" = "ミーティングの音声を保留にして応答";
+"invites you to a 1 on 1 video call..." = "さんから 1 対 1 のビデオ通話に招待されました";
+"invites you to a 1 on 1 voice call..." = "さんから 1 対 1 の音声通話に招待されました";
+"Clear all recents" = "すべての最近の記録を消去";
+"Start a video call" = "ビデオ通話を開始";
+"Start a non-video call" = "ビデオ以外の通話を開始";
+"Delete call history" = "通話履歴を削除";
+"Keypad" = "キーパッド";
+"Call History" = "通話履歴";
+"Zoom Audio" = "Zoom のオーディオ";
+"Zoom Video" = "Zoom のビデオ";
+"unknown" = "不明";
+"Close Keypad" = "キーパッドを閉じる";
+"You have a meeting in progress" = "開催中のミーティングがあります";
+"If you continue to make a call, your audio will be transferred from the meeting to your phone call." = "引き続き通話する場合は、音声がミーティングから電話に転送されます。";
+"You have a phone call in progress" = "通話中の電話があります";
+"If you continue, your phone call will end and you will join the meeting."  = "続行する場合は、通話が終了し、ミーティングに参加します。";
+"If you continue, your phone call will end and you will start the meeting." = "続行する場合は、通話が終了し、ミーティングが開始されます。";
+"Calling %@..." = "%@ を呼び出しています";
+"Accept" = "承諾";
+"Decline" = "辞退";
+"No Recents" = "最近の記録はありません";
+"(Internal)" = "（内部）";
+
+"Call Failed" = "通話失敗";
+"End call" = "通話を終了";
+
+"This meeting is for authorized attendees only" = "このミーティングの対象者は権限のある参加者のみです";
+"Click \"Sign In to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "\"サインインして参加\"をクリックして、このミーティングへの参加の権限があるメールアドレスを使用して Zoom にサインインします。";
+"Click \"Switch Account to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "\"アカウントを切り替えて参加\"をクリックして、このミーティングへの参加の権限があるメールアドレスを使用して Zoom にサインインします。";
+
+"Gain remote control" = "リモートコントロールを取得";
+
+"Assign a participant to type" = "参加者をタイプに割り当てる";
+"Use a 3rd party CC service" = "サードパーティの CC サービスを利用する";
+"Copy the URL to your clipboard" = "URL をクリップボードにコピー";
+"The URL has been copied to your clipboard" = "URL がクリップボードにコピーされました。";
+"LN_CC_Copy_To_3rd_Party_16893" = "このリンクをコピーして、サードパーティのCC製品に貼り付けます";
+
+"Local Recording :" = "ローカル記録:";
+"Cloud Recording :" = "クラウド記録: ";
+"LN_Setting_Record_Manage_On_Web_32812" = "ウェブでストレージを管理";
+"Manage..." = "管理...";
+"You have %@ of cloud record storage" = "%@ のクラウド記録ストレージがあります";
+"%@ used" = "%@ が使用済み";
+
+"Hide meeting controls" = "ミーティングコントロールを非表示";
+"Show meeting controls" = "ミーティングコントロールを表示";
+"Lock Webinar" = "ウェビナーをロック";
+"Unlock Webinar" = "ウェビナーのロックを解除する";
+"No new attendees can join this webinar once locked." = "ロックされると、新しい参加者はこのウェビナーに参加できません。";
+"New attendees can join this webinar once unlocked." = "ロックが解除されると、新しい参加者はこのウェビナーに参加できます。";
+"My connected time is %d hour %d minute" = "%d時間%d分接続していました";
+
+"Zoom will decrypt the message when the key becomes available" = "キーが利用可能な場合、Zoomがメッセージを復号します";
+"You cannot call any international phone numbers from this meeting until the host joins." = "ホストが参加するまで、このミーティングから国際電話にかけられません。";
+"The number you dialed is not supported" = "ダイヤルした番号はサポートされていません";
+"The number you dialed to join the meeting is not responding" = "ミーティングに参加するためにダイヤルした番号から応答がありません";
+"Current and new participants will be muted" = "現在と新規の参加者はミュートされます";
+
+"iPhone/iPad via AirPlay" = "iPhone/iPad（AirPlay使用）";
+"iPhone/iPad via Cable" = "iPhone/iPad（ケーブル使用）";
+"Connect your iPhone or iPad to this computer" = "このコンピューターにiPhoneまたはiPadを接続";
+"When prompted on your iPhone or iPad, select \"Trust\"" = "iPhoneまたはiPad上に指示が表示されたら、\"Trust\"を選択します。";
+
+"Blocked Users:" = "ブロック済みユーザー:";
+"Manage Blocked Users..." = "ブロックされているユーザーを管理...";
+"Blocked Users" = "ブロック済みユーザー";
+"Select users below to unblock:" = "以下のユーザーのブロック解除を選択:";
+"Unblock" = "ブロック解除";
+"Create" = "作成";
+"Create a New Group" = "新しいグループを作成する";
+"Join a Public Group" = "公開グループに参加";
+"Images" = "画像";
+"All Files" = "全ファイル";
+"Add to Emojis" = "絵文字に追加";
+"Invite" = "招待";
+"Speaker" = "Speaker";
+"Microphone" = "Microphone";
+
+"Previous messages will never be visible to new group members. Do you want to continue?" = "以前のメッセージは、新しいグループメンバーには表示されません。続行しますか？";
+
+"Your account is not available" = "アカウントはご利用いただけません";
+"Your service is affected by a network issue" = "サービスはネットワークエラーの影響を受けています";
+"The call recipient is not available" = "着信は利用できません";
+"Your phone has an internal configuration error" = "電話の内部構成にエラーが発生しました";
+
+"What went wrong?" = "何が問題だったでしょうか。";
+
+"LN_Disallow_Talk_15291" = "会話を無効にする";
+"LN_Allow_Talk_15291" = "トークを許可";
+"LN_Mute_Audio_15291" = "ミュート";
+"LN_Audio_Settings_15291" = "オーディオ設定";
+"LN_Allow_Talk_Tip_15291" = "ホストは、あなたがこのウェビナーで発言することを許可しています";
+"LN_Talk_Allowed_15291" = "許可された会話";
+"LN_Chat_15291" = "チャット";
+"LN_Plist_Allow_Attendee_To_15291" = "出席者に次を許可する：";
+"LN_Plist_Attendee_Raise_Hand_15291" = "挙手";
+"LN_Plist_Attendee_View_Partcipants_Count_15291" = "参加人数を表示する";
+"LN_Plist_Attendee_Video_Layout_15291" = "参加者のビデオレイアウトを設定：";
+"LN_Plist_Follow_Host_View_Mode_15291" = "ホストのビューをフォローモード";
+"LN_Plist_Active_speaker_view_15291" = "アクティブスピーカーの表示";
+"LN_Plist_Gallery_View_15291" = "ギャラリービュー";
+"LN_Promote_15291" = "パネリストに昇進";
+"LN_Alert_Unmute_Now_15291" = "自分自身をミュート解除する";
+"LN_Alert_Stay_Muted_15291" = "ミュートのままにする";
+"LN_Alert_Temp_Talk_Title_15291" = "ホストはあなたがマイクをミュート解除するよう希望しています";
+"LN_Alert_Temp_Talk_Error_15291" = "%@さんは古いバージョンのZoomを使用しているため、トークの許可が出来ません。会話を許可するためには%@さんをパネリストに昇進させる必要があります";
+
+"LN_Plist_Accessibility_Recording_20044" = "レコーディング";
+"LN_Plist_Accessibility_CloseCaption_20044" = "クローズドキャプション";
+"LN_Plist_Accessibility_HandRaised_20044" = "挙がった手";
+"LN_Plist_Accessibility_Video_On_20044" = "ビデオをオンにする";
+"LN_Plist_Accessibility_Video_Off_20044" = "ビデオをオフにする";
+"LN_Plist_Accessibility_No_Video_20044" = "接続されているビデオはありません";
+"LN_Plist_Accessibility_Tele_Unmuted_20044" = "電話がミュート解除されました";
+"LN_Plist_Accessibility_Tele_Muted_20044" = "電話がミュートされました";
+"LN_Plist_Accessibility_VoIP_Unmuted_20044" = "ミュート解除されたコンピューター音声";
+"LN_Plist_Accessibility_VoIP_Muted_20044" = "ミュートされたコンピューター音声";
+"LN_Plist_Accessibility_No_Audio_20044" = "接続されている音声はありません";
+"LN_Plist_Accessibility_Feedback_20044" = "フィードバック";
+"LN_Plist_Accessibility_YES_20044" = "はい";
+"LN_Plist_Accessibility_No_20044" = "いいえ";
+"LN_Plist_Accessibility_Slower_20044" = "ゆっくり進む";
+"LN_Plist_Accessibility_Faster_20044" = "速く進む";
+"LN_Plist_Accessibility_Like_20044" = "いいね";
+"LN_Plist_Accessibility_Dislike_20044" = "いいねを解除";
+"LN_Plist_Accessibility_Clap_20044" = "拍手";
+"LN_Plist_Accessibility_Break_20044" = "休憩が必要";
+"LN_Plist_Accessibility_Away_20044" = "退席中";
+"LN_Plist_Accessibility_Share_Audio_21795" = "コンピューターオーディオ共有";
+
+
+"Select a microphone to always use original sound" = "オリジナルの音声を常に使用するマイクを選択する";
+"LN_Unread_Message_22128" = "%d件の未読メッセージ";
+"LN_Schedule_Mute_Participants_On_Entry_15154" = "エントリー時に参加者をミュート";
+
+"Show Zoom menu in menu bar" = "メニューバーにZoomメニューを表示する";
+"Virtual Background" = "バーチャル背景";
+"Guest" = "ゲスト";
+
+"LN_Create_Duplicate_Name_Group_22373" = "この名前は他のグループによりすでに使用されています。このグループには違う名前を使用してください。";
+"LN_Alert_Diable_GoogleFacebook_Login_19082" = "この方法でZoomアカウントにログインできません。指示はIT管理者に問い合わせてください。";
+
+"LN_Mark_Unread_14489"  = "未読としてマーク";
+"LN_Mark_As_Read_14489" = "既読としてマーク";
+"LN_Unread_Label_14489" = "未読";
+"LN_JBH_Login_Label_19439" = "ホストは、%@してミーティングを開始してください";
+"LN_JBH_Login_URL_19439"   = "サインイン";
+"LN_JBH_Login_Test_Audio_23405" = "コンピューター音声をテストする";
+"LN_JBH_Login_Test_Speaker_23405" = "スピーカーをテストする";
+"LN_JBH_Login_Recuring_Meeting_23405" = "これは定期的なミーティングです";
+"LN_JBH_Login_Recuring_Webinar_23405" = "これは定期開催ウェビナーです";
+"LN_JBH_Login_Start_23405" = "開始";
+
+"LN_ZOOM-21100_To follow the pointer automatically, choose \"Follow presenter's pointer\" from the menu." = "ポインタを自動でフォローするには、メニューから\"Follow presenter's pointer\"を選択します。";
+"LN_ZOOM-21100_Follow presenter's pointer" = "プレゼンターのポインタをフォロー";
+"LN_ZOOM-21100_Don't follow presenter's pointer" = "プレゼンターのポインタをフォローしない";
+"LN_Giphy_Label_23623" = "Giphy";
+"LN_Giphy_Server_Error_23623" = "このサービスは現在ご利用いただけません";
+"LN_Giphy_Net_Error_23623" = "このサービスはネットワークの問題のためご利用いただけません";
+"LN_Giphy_No_Matched_23623" = "一致する画像は見つかりませんでした";
+
+"LN_Emoji_Skin_Tone_Label_23623" = "スキントーン：";
+
+"LN_Emoji_Cagegory_People_Label_23623" = "スマイリーと人";
+"LN_Emoji_Cagegory_Nature_Label_23623" = "動物と自然";
+"LN_Emoji_Cagegory_Food_Label_23623" = "フードとドリンク";
+"LN_Emoji_Cagegory_Activity_Label_23623" = "アクティビティ";
+"LN_Emoji_Cagegory_Places_Label_23623" = "旅行と場所";
+"LN_Emoji_Cagegory_Objects_Label_23623" = "目的";
+"LN_Emoji_Cagegory_Symbols_Label_23623" = "記号";
+"LN_Emoji_Cagegory_Flags_Label_23623" = "フラグ";
+"LN_Emoji_Cagegory_Frequently_Label_23623" = "頻繁に使用";
+"LN_Emoji_Cagegory_Custom_Label_23623" = "カスタム";
+"LN_Emoji_Search_Result_Label_23623" = "検索結果";
+"LN_LinkPreview_Label_23623" = "リンクのプレビューを含める";
+
+"LN_You_Delete_File_@_Label_19886" = "次のファイルを削除しました：%@";
+"LN_@_Delete_File_@_Label_19886" = "%@さんが次のファイルを削除しました：%@";
+"LN_Delete_Message_Label_19886" = "メッセージを削除しました";
+"LN_@_Delete_Message_Label_19886" = "%@さんがメッセージを削除しました";
+
+"Select a microphone to always use original sound" = "オリジナルの音声を常に使用するマイクを選択する";
+"LN_Schedule_Alternative_Hosts_Label_18144" = "代替ホスト：";
+"LN_Schedule_Failed_Incorrect_Alternative_Hosts_Description_18144" = "ユーザーが、同じアカウントのメンバーではないため、代替ホストとして追加できませんでした。続行するには以下のユーザーを削除してください： ";
+
+
+"LN_Schedule_Input_Alternate_Host_Example_18144" = "例：john@company.com;peter@school.edu";
+
+
+"LN_In_Meeting_Label_19901" = "ミーティング中";
+"LN_In_Zoom_Meeting_Label_19901" = "Zoomミーティング中";
+"LN_Do_Not_Disturb_19901" = "着信拒否";
+"LN_Offline_19901" = "オフライン";
+"LN_Turn_Off_19901" = "オフにする";
+"LN_Snooze_Menu_20_Minutes_19901" = "20分";
+"LN_Snooze_Menu_1_Hour_19901" = "1時間";
+"LN_Snooze_Menu_2_Hours_19901" = "2時間";
+"LN_Snooze_Menu_4_Hours_19901" = "4時間";
+"LN_Snooze_Menu_8_Hours_19901" = "8時間";
+"LN_Time_Period_Label_19901" = "時間枠を設定";
+"LN_Scheduled_Until_Label_19901" = "スケジュール済み期限";
+"LN_Resume_In_Hour_Minute_19901" = "%lldh %lldm後に再開";
+"LN_Resume_In_hour_19901" = "%lldh後に再開";
+"LN_Resume_In_Minute_19901" = "%lldm後に再開";
+"LN_Resume_In_Seconds_19901" = "%llds後に再開";
+"LN_Notification_Settings_19901" = "通知設定";
+"LN_Add_Person_Note_19901" = "個人メモを追加";
+"LN_Remove_Person_Note_19901" = "個人メモを削除";
+"LN_Notifications_Label_19895" = "通知";
+"LN_Hit_Unread _message_22128" = "——————   以下は新しいメッセージです   ——————";
+
+"Multi-user chats" = "複数ユーザーのチャット";
+
+"LN_MUTE_NOTIFICATION_ON_CALL_19895"= "ミーティング中または社内通話中には通知を一時停止する";
+"LN_GROUP_NOTIFY_SETTING_ALL_19895" = "全部の種類のアクティビティ";
+"LN_GROUP_NOTIFY_SETTING_MENTION_ 19895" = "私またはメンバー全員をメンション";
+"LN_GROUP_NOTIFY_SETTING_NOTHING_19895" = "なし";
+"LN_RECEIVE_PERMISSION_ALLMSG_19895" = "すべてのメッセージ";
+"LN_RECEIVE_PERMISSION_PARTMSG_19895" = "プライベートメッセージまたはメンションのみ";
+"LN_RECEIVE_PERMISSION_NOTHING_19895" = "なし";
+"LN_AUTO_NOTIFICATION_TIME_FROM_19895" = "次からの通知を自動的に無効にする：";
+"LN_RECEIVE_NOTIFICATION_BOUNCE_TIMES_19895" = "新規メッセージを受信したら、アプリケーションアイコンを揺らす";
+"LN_RECEIVE_NOTIFICATION_SHOW_FLOATING_19895" = "新しいメッセージの受信時にフローティング通知を表示する";
+"LN_RECEIVE_NOTIFICATION_PLAY_SOUND_19895" = "チャット メッセージの受信時にサウンドを再生";
+"LN_GROUP_NOTIFY_SEARCH_TXT_19895" = "フィルタリング条件を入力してください";
+
+"LN_Group_Setting_Title_19895" = "重要なグループ";
+"LN_Instant_Message_Title_19895" = "インスタントメッセージング";
+"LN_Notification_Setting_Title_19895" = "通知設定";
+"LN_With_Exceptions_Label_19895" = "以下の例外";
+"LN_Exception_Group_button_19895" = "グループ";
+"LN_Exception_Group_button_small_19895" = "グループ";
+"LN_Group_Setting_Reset_Button_19895" = "リセット";
+"LN_Import_Groups_Cell_Groups_Label_19895" = "グループ";
+"LN_Preferred_Notification_Label_19895" = "選択された通知設定";
+"LN_Choose_Exception_Label_19895" = "特定のグループの例外を選択する";
+"LN_Setting_Tool_Item_Instant_Messgae_19895" = "インスタントメッセージング";
+"LN_Reset_Setting_Group_Label_19895" = "全カスタムグループ通知設定を初期設定に戻します。開始してよろしいですか？";
+
+"LN_SIP_PWD_Err_Tip_25328" = "Zoomはパスワードが変更されたか不正確であることを検出しました。この電話番号に設定したパスワードを入力してください。";
+"LN_SIP_PWD_PlaceHolder_Tip_25328" = "国内電話のパスワードを入力してください ";
+
+"%@ has been invited." = "%@ が招待されました。";
+"LN_Meeting_Live_Stream_TimeOut_18924" = "ミーティングを%@.\nにストリーミングできません。ストリーミングを再開する必要があります。";
+
+"LN_Meeting_Live_Stream_LiveOn_18924" = "ミーティングは現在%@でグライブストリーミン中です";
+"LN_MSG_Edited_19883" = "編集済み";
+
+"LN_Upcoming_Meetings_25955" = "次回のミーティング";
+"LN_Start_A_New_Meeting_25955" = "新しいミーティングを開始する";
+"LN_Accessibility_close_window_25955" = "ウィンドウを閉じる";
+"LN_View_More_25955" = "さらに表示";
+"LN_START_25955" = "開始";
+
+"LN_ZOOM-26329_Side-by-side Mode" = "左右表示モード";
+"LN_ZOOM-26329_Enable participants to see the shared screen alongside either the Speaker View or Gallery View" = "参加者がスピーカービューまたはギャラリービューの横にある共有画面を表示できるようにする";
+
+"LN_Need_Sign_In_Again_25027" = "セッションが終了しました。もう一度サインインする必要があります。";
+
+"LN_This_File_Will_Be_Removed_27316" = "このファイルは、- <%@>グループからのみ削除されますが、「Personal Files」からは削除されません";
+"LN_Phone_Service_Not_Avaliable_20377" = "電話サービスはご利用いただけません";
+"LN_Reset_Confirm_Button_Title_19895" = "確認";
+"LN_Exception_Group_Singal_Title_19895" = "グループ…";
+"LN_Stop_CMR_Warning_25471" = "クラウド レコーディングを停止しますか?";//[Zoom-25471]
+"LN_Stop_CMR_Email_Warning_25471" = "If Yes, you will receive an email notification when the cloud recording is ready";//[Zoom-25471]
+"LN_Share_Desktop_17163" = "デスクトップを共有する";
+"LN_Stop_Desktop_17163" = "共有の停止";
+"LN_Local_17163" = "ローカル";
+"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "%@と%dの他の国々からダイヤルイン";  // ZOOM-16058
+"LN_Schedule_Selected_Two_DialinCountry_16058" = "%@と%@からダイヤルイン";  // ZOOM-16058
+"LN_Schedule_Selected_One_DialinCountry_16058" = "%@からダイヤルイン";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "ダイヤルイン国を選択する";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "選択された国ダイヤルイン番号は招待状メールにリストで掲載されます"; // ZOOM-16058
+"LN_Schedule_EditCountries_Include_Tollfree_Number_16058" = "フリーダイヤル番号を含める"; // ZOOM-16058
+"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "選択済みの国："; // ZOOM-16058
+"LN_Schedule_EditCountries_Search_For_Country_16058" = "国を検索する";  // ZOOM-16058
+"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "国が選択されていません。保存の前に国を少なくとも1つ選択してください。"; // ZOOM-16058
+"LN_DockMenu_LanguageItem_24821" = "言語を切り替える";
+"LN_Switch_Language_Alert_24821" = "Zoomで使用されるデフォルト言語を%@に変更するには、Zoomクライアントを再起動する必要があります。";
+"LN_Switch_Language_Alert_System_24821" = "システム言語";
+"LN_DockMenu_System_LanguageItem_24821" = "システム言語を使用する";
+"LN_Switch_Language_Alert_Change_24821" = "%@に切り替える";
+"LN_Switch_Language_Alert_Keep_24821" = "%@を使用し続ける";     //ZOOM-24821
+"LN_Unable_Detect_Camera_Title_29896" = "Zoomはカメラを検出できません";
+"LN_Unable_Detect_Camera_Content_29896" = "カメラの電源がオンになっていてコンピューターに接続されていることを確認する";
+
+"Switch camera" = "カメラの切り換え";
+"Stop remote control" = "リモート制御の停止";
+"LN_IM_Delete_Failed_30533" = "メッセージを削除できませんでした";
+"LN_IM_Receive_Notification_Exception_For_Others_31155" = "通知を受け取る";
+"LN_IM_Notification_Keywords_31155" = "キーワード";
+"LN_IM_Notification_Keyword_31155"  = "キーワード";
+"LN_IM_Notification_Contacts_31155" = "連絡先";
+"LN_IM_Notification_Contact_31155"  = "連絡";
+"LN_Notification_Add_Keywords_31155" = "キーワードを追加";
+"LN_Notification_Add_Keywords_Description_31155" = "これらのキーワードが言及された時に通知を受け取ります。コンマを使って各キーワードを区別してください（キーワードには大文字小文字の区分がありません）。";
+"LN_Notification_Search_Contacts_31155" = "連絡先を検索";
+"LN_Notification_Choose_Contacts_31155" = "以下の連絡先からのメッセージ受信時に必ず通知を受け取ることを選択：";
+"LN_Notification_Reset_Exception_Contacts_31155" = "選択した連絡先から通知を受け取ることはありません。続行しますか？";
+"LN_Notification_Search_No_Contact_31155" = "連絡先が見つかりません。別の名前で検索してください";
+"LN_IM_Notification_Title_%@_In_%@_31106" = "%@（%@中）";
+"LN_IM_Notification_Image_31106" = "写真が送られてきました。";
+"LN_IM_Notification_Voice_31106" = "音声メッセージが送られてきました。";
+"LN_IM_Notification_File_31106" = "あなた宛てにファイルを送信しました。";
+"LN_IM_Notification_Text_31106" = "メッセージを送信しました。";
+"LN_IM_Notification_Encrypted_Text_31106" = "暗号化されたメッセージが送られてきました。";
+"LN_IM_Notification_Group_Image_31106" = "写真が送信されました。";
+"LN_IM_Notification_Group_Voice_31106" = "音声メッセージが送信されました。";
+"LN_IM_Notification_Group_File_31106" = "ファイルが送信されました。";
+"LN_IM_Notification_Group_Text_31106" = "メッセージが送信されました。";
+"LN_IM_Notification_Group_Encrypted_Text_31106" = "暗号化されたメッセージが送信されました。";
+"LN_ACCESSIBILITY_Window_will_close_21244" = "ウィンドウが閉じられます"; //ZOOM-21244
+"LN_Setting_Record_Optimize_28546" = "サードパーティビデオエディター用に最適化する";
+"LN_Setting_Record_Optimize_Info_28546" = "このオプションは、Zoomで作成した記録ファイルが、記録ファイルの修正に使用できるビデオ編集ソフトに対応できるようにする場合に有効にします。";
+"LN_Setting_Record_Thumbnails_28544" = "サムネールを共有時に記録する";
+"LN_Setting_Record_Timestamp_28548" = "記録にタイムスタンプを追加する";
+"LN_Setting_Record_Timestamp_Info_28548" = "このオプションは、実際にミーティングが行われた日時を録画に埋め込む場合に有効にします。";
+"LN_Select_Record_Path_warning_30336" = "記録したファイルを保存したいフォルダーをローカルコンピューター上で選択します";
+"LN_Code_Snippet_Create_Window_Title_31934" = "コードスニペットを作成";
+"LN_Code_Snippet_Create_Button_Title_31934" = "スニペットを作成";
+"LN_Code_Snippet_Setting_Title_31934" = "コードスニペットボタンを表示";
+"LN_Code_Snippet_Setting_Title_Locked_31934" = "コードスニペットボタン（管理者がロック済み）を表示";
+"LN_Code_Snippet_Button_Title_31934" = "コード";
+"LN_Code_Snippet_Code_Optional_Title_31934" = "タイトル（任意）";
+"LN_Code_Snippet_Create_Button_Try_Title_31934" = "再度お試しください";
+"LN_Code_Snippet_Upload_Failed_31934" = "アップロードに失敗しました。再度お試しください。";
+"LN_Code_Snippet_Wrap_31934" = "ラップ";
+"LN_Code_Snippet_Tip_31934" = "[コードスニペット]";
+"LN_Code_Snippet_Notification_Group_31934" = "コードスニペットが送信されました";
+"LN_Code_Snippet_Notification_31934" = "コードスニペットを送信しました";
+"LN_Code_Snippet_Download_Title_31934" = "コードスニペットをダウンロード";
+"LN_Code_Snippet_View_%ld_Lines_31934" = "さらに%ldライン表示する";
+"LN_Code_Snippet_Add_%@_Code_%@_31934" = "この%@スニペットを追加しました：%@";
+"LN_Meeting_StatusView_Can_Control_Title_21500" = "%@の画面をコントロールできます"; //[zoom-21500]
+"LN_Temporarily_Unmuted_542" = "一時的にミュートが解除されました";
+"LN_Enable_Push_To_Talk_542" = "スペースキーを長押しして、一時的に自分をミュート解除できます";
+"LN_Mute_Self_Remind_Tip_542" = "現在ミュート中です。Shift+Command+Aを押して、お使いのマイクのミュートを解除するか、スペースキーを長押しして、一時的にミュートを解除できます。";
+"LN_Unmute_Audio_Button_Tip_542" = "オーディオ%@のミュートを解除します。スペースキーを長押しして、一時的にミュートを解除できます。";
+"LN_Unmute_Phone_Button_Tip_542" = "電話%@のミュートを解除します。スペースキーを長押しして、一時的にミュートを解除できます。";
+"LN_Join_Audio_33542" = "音声をつなぐ";
+"LN_Polling_Conflict_32870" = "別のデバイスからログイン中です。ポーリングセッションは無効です。";
+"LN_CopyRight_34145" = "Copyright ©2012-2018 Zoom Video Communications, Inc.";
+"LN_Enable_49_Wall_View_30742" = "ギャラリービューで1ページに最大49人の参加者を表示する";
+"LN_49_Wall_View_Tip_30742" = "お使いのコンピューターのCPUでサポートされる参加者は、ギャラリービューの画面1つあたり最大25人です。\"ギャラリービューで参加者を表示する\"という記事を参照して、この機能を使用するための最小要件を確認してください。";
+"LN_TurnOn_OriginalSound_30742" = "オリジナル・サウンドをオンにする";
+"LN_Msg_Removed_%@_33477" = "あなたが送受信したメッセージは%@日以内に消去されます";
+"LN_Changed_Settings_33477" = "設定を変更";
+"LN_Or_33477" = "または";
+"LN_Older_%@_Msg_Removed_33477" = "%@よりも古いメッセージは消去されました";
+"LN_Older_%@_Image_Removed_33477" = "%@よりも古い画像は消去されました";
+"LN_Older_%@_File_Removed_33477" = "%@よりも古いファイルは消去されました";
+"LN_%ld_Years_33477" = "%ld年";
+"LN_1_Year_33477"   =   "1年";
+"LN_%ld_Months_33477"= "%ldか月";
+"LN_1_Month_33477"  =   "1か月";
+"LN_%ld_Days_33477"  = "%ld日";
+"LN_24_Hours_33477"  =  "24時間";
+"LN_Msg_Learn_More_33477" = "詳細を見る";
+"LN_Setting_Config_By_Admin_33477" = "この設定は管理者が設定しました。";
+"LN_Download_Code_Tip_33477" = "コードスニペットパッケージをダウンロード。";
+"LN_TurnOff_OriginalSound_30742" = "オリジナル・サウンドをオフにする";
+"LN_Recording_Paused_30742" = "記録が一時停止されました";
+"LN_Unable_Load_Content_33447" = "内容をロードできません。";
+"LN_Unable_Connect_Internet_33447" = "接続されていません";
+"LN_Try_Again_33447" = "再度お試しください";
+"LN_Waiting_TurnOn_Video_Meeting_35641" = "会議の開始と同時に、ご使用のビデオがオンになります。";
+"LN_Waiting_TurnOn_Video_Webinar_35641" = "ウェビナーの開始と同時に、ご使用のビデオがオンになります。";
+
+"LN_Join_WebURL_Title_15122" = "ブラウザを使ってミーティングに参加する";
+"LN_Join_WebURL_Content_15122" = "ミーティングに参加するには\"%@\"をクリックしてください。Zoom クライアントから参加する際に発生する問題のため、機能は制限されます。";
+"LN_Join_WebURL_Button_15122" = "ブラウザから参加";
+"LN_Share_Frame_39044" = "画面の部分";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "画面キャプチャーメニュー";
+"LN_Acessibilty_ClosedCaptionFontSize_%d_39033" = "%d、字幕のサイズを非表示中、スライダー";
+"LN_Acessibilty_ClosedCaption_Subtitles_%d_39033" = "これらは%dポイントサイズの字幕です";
+"LN_Annotate_AnnotatePanel_21222" = "注釈パネル";
+"LN_Annotate_ShapePanel_21222" = "ツールパネル";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "画面キャプチャーメニュー";
+"LN_Annotate_FormatPanel_21222" = "フォーマットパネル";
+"LN_Annotate_Diamond_21222" = "ダイヤモンド";
+"LN_Annotate_DoubleArrow_21222" = "二重矢印";
+"LN_Annotate_FillRect_21222" = "塗りつぶし 長方形";
+"LN_Annotate_FillOval_21222" = "塗りつぶし 楕円";
+"LN_Annotate_StampX_21222" = "スタンプX";
+"LN_Annotate_WideCurve_21222" = "ワイドカーブ";
+"LN_Annotate_ArrowLine_21222" = "矢印";
+"LN_Annotate_SemiFillRect_21222" = "半分塗りつぶし 長方形";
+"LN_Annotate_SemiFillOval_21222" = "半分塗りつぶし 楕円";
+"LN_Annotate_StampCheck_21222" = "スタンプチェック";
+"LN_Annotate_ThinCurve_21222" = "細いカーブ";
+"LN_Annotate_StraightLine_21222" = "直線";
+"LN_Annotate_StrokeRect_21222" = "ストローク 長方形";
+"LN_Annotate_StrokeOval_21222" = "ストローク 楕円";
+"LN_Annotate_StampArrow_21222" = "スタンプ矢印";
+"LN_Annotate_Spotlight_21222" = "スポットライト";
+"LN_Change_Status_Away_When_InActive_%@_Minutes_40737" = "%@分間活動がない場合は、ステータスを不在に変更する";
+"LN_Code_Snippet_Length_Error_40055" = "ファイル容量は16KB以内にしてください。";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "画面キャプチャーメニュー";
+
+"LN_Code_Snippet_Download_Msg_31934" = "コードスニペットを作成するには、コードスニペットパッケージをダウンロードしてください。ダウンロードは一度だけ行う必要があります。";
+"LN_Create_Code_Tip_33477" = "コードスニペットを作成するには、";
+"LN_Meeting_List_Item_Add_Calendar_Help_25869" = "接続時、会議とウェビナーがZoomクライアントに表示され、あなたの在席ステータスも同期されます。";
+"LN_Notification_Keywords_Example_31155" = "例：Zoom、プロジェクト";
+"LN_Help_String_40539" = "ヘルプ";
+"LN_Participants_Raised_Hand_39858" = "参加者が手を挙げました";
+"LN_Raised_Hand_39858" = "が手を挙げました";
+"LN_Toolbar_Open_Participants_Panel_39047" = "非表示中、参加者パネルを開く、%ld参加者";
+"LN_Toolbar_Close_Participants_Panel_39047" = "表示中、参加者パネルを閉じる、%ld参加者";
+"LN_Toolbar_Open_Manage_Participants_Panel_39047" = "非表示中、参加者を管理パネルを開く、%ld参加者";
+"LN_Toolbar_Close_Manage_Participants_Panel_39047" = "表示中、参加者を管理パネルを閉じる、%ld参加者";
+"LN_I_Am_Fine_37969" = "問題ありません";
+"LN_Switch_To_Phone_37969" = "電話に切り替え";
+"LN_Dectect_Poor_Audio_Connection_37969" = "オーディオ接続の品質が良くありません";
+"LN_Participants_Not_Hear_You_37969" = "ミーティングの参加者はあなたの音声を聞きにくい可能性があります。\n電話に切り替えることを検討してください";
+"LN_Request_Remote_Control_Title_37969" = "%@ の共有コンテンツのリモート制御をリクエストしようとしています。";
+"LN_Wait_For_Approval_37969" = "、 %@ の承認を待ちます。\n";
+"LN_Remote_Control_Request_37969" = "リモート制御リクエスト";
+"LN_Not_Send_Request_37969" = "リクエストを送信しない場合。";
+"LN_Request_Remote_Control_37969" = "リモート制御のリクエスト";
+"LN_Requesting_Remote_Control_Shared_Content_37969" = "%@ があなたの共有コンテンツのリモート制御をリクエストしています。";
+"LN_Approve_Request_Alert_37969" = "リクエストを承認すると、%@ があなたの共有コンテンツすべてにアクセスできるようになります。どこかをクリックすると、いつでも制御を取り戻せます。";
+"LN_Select_Request_Try_Again_37969" = "リクエストを選択して再試行";
+"LN_Try_Again_37969" = "再試行するには";
+"LN_Declined_Your_Request_37969" = "%@ はリクエストを辞退しました。";
+"LN_Hand_Raised_33393" = "手が挙がりました";
+"LN_Hand_Lowered_33393" = "手が下がりました";
+"LN_Hand_Has_Been_Raised_33393" = "手が挙がりました";
+"LN_Hand_Has_Been_Lowered_33393" = "手が下がりました";
+"LN_Request_37969" = "リクエスト";
+"LN_Select_37969" = "選択";
+"LN_Decline_37969" = "辞退";
+"LN_Approve_37969" = "承認";
+"LN_Invite_Room_System_20093" = "ルームシステム";
+"LN_Setting_Record_During_Sharing_39256" = "画面共有時のビデオを記録";
+"LN_Setting_Record_Video_Next_To_Share_39256" = "録画中に共有された画面のとなりにビデオを移動してください";
+"LN_Meeting_QA_Type_Question_40651" = "質問をここに入力してください...";
+"LN_Meeting_QA_Allow_Anonymous_Questions_40651" = "匿名での質問を許可する";
+"LN_Meeting_QA_Allow_Attendees_View_40651" = "出席者に閲覧を許可する";
+"LN_Meeting_QA_View_Answered_Questions_40651" = "回答済みの質問のみ";
+"LN_Meeting_QA_View_All_Questions_40651" = "全ての質問";
+"LN_Meeting_QA_Allow_Attendees_Upvote_40651" = "出席者は賛成できます";
+"LN_Meeting_QA_Allow_Attendees_Comment_40651" = "参加者はコメントできます";
+"LN_Meeting_QA_All_Questions_40651" = "全ての質問";
+"LN_Meeting_QA_My_Questions_40651" = "自分の質問";
+"LN_Meeting_QA_Welcome_Title_40651" = "ようこそ";
+"LN_Meeting_QA_Welcome_Message_40651" = "ホストとパネリストに気軽に質問してください";
+"LN_Meeting_QA_No_Asked_Questions_40651" = "何の質問もしていません";
+"LN_Meeting_QA_Private_Answer_40651" = "プライベート回答";
+"LN_Meeting_QA_Show_40651" = "全てを表示";
+"LN_Meeting_QA_Collapse_40651" = "全て折りたたむ";
+"LN_Meeting_QA_Attend_Comment_40651" = "コメント";
+"LN_Meeting_QA_End_Live_Answer_40651" = "この質問はライブで回答されました";
+"LN_Meeting_QA_Question_Dismissed_40651" = "この質問は却下されました";
+"LN_Meeting_QA_Type_Answer_40651" = "回答を入力";
+"LN_Meeting_QA_My_Question_40651" = "自分の質問";
+"LN_Meeting_QA_Reopen_40651" = "再開する";
+"LN_Meeting_QA_Add_Answer_40651" = "回答をここに入力してください...";
+"LN_Meeting_QA_Add_Comment_40651" = "コメントをここに入力してください...";
+"LN_Meeting_QA_Unread_Questions_40651" = "Q&A、未読の質問%ld件";
+"LN_Accessibility_OpenDefaultBrowser_39412" = "お使いのデフォルトブラウザーで開きます";
+"LN_Accessibility_Link_39412" = "リンク";
+"LN_Accessibility_VB_Support_39412" = "バーチャル背景サポート";
+"LN_Accessibility_Upcoming_meetings_7432" = "次回のミーティング";
+"LN_Accessibility_Recorded_meetings_7432" = "ミーティングの記録";
+"LN_Accessibility_RemoteControlWondow_43656" = "選択済み";
+"LN_Plist_Stop_Audio_Share_21795" = "オーディオ共有を停止";
+"LN_Fit_Share_Audio_21795" = "コンピューターサウンドを共有しています";
+"LN_Fit_Viewing_Audio_21795" = "%@がコンピューターサウンドを共有しています";
+"LN_Share_Sound_Only_21795" = "コンピューターサウンドのみ";
+"LN_Share_Camera_21795" = "第2カメラのコンテンツ";
+"LN_Share_Audio_Error_By_Send_Share_21795" = "他の参加者が画像共有中の場合、コンピューターサウンド共有は使用できません";
+"LN_Share_Screen_Error_By_Share_Auido_21795" = "画面共有を開始すると、他のコンピューターサウンド共有が停止します。続行しますか。";
+"LN_Share_Basic_Type_21795" = "ベーシック";
+"LN_Share_Advance_Type_21795" = "詳細";
+"LN_Accessibility_You_Start_Audio_Share_21795" = "お客様の操作でコンピューターオーディオ共有を開始しました";
+"LN_Accessibility_You_Stop_Audio_Share_21795" = "お客様の操作でコンピューターオーディオ共有が停止しました";
+"LN_Accessibility_Someone_Start_Aduio_Share_21795" = "%@がコンピューターオーディオ共有を開始しました";
+"LN_Accessibility_Someone_Stop_Aduio_Share_21795" = "%@がコンピューターオーディオ共有を停止しました";
+"LN_Share_Frame_Tooltip_21795" = "サイズを変更できる四角形ウィンドウを使用して画面の一部を共有する";
+"LN_Share_Sound_Tooltip_21795" = "画面を共有せずコンピューターの音声を共有する";
+"LN_Share_Camera_Tooltip_21795" = "ドキュメントカメラなどの第2カメラのコンテンツを共有する";
+"LN_Accessibility_Select_Country_Code_21342" = "国名コードの選択";
+"LN_Accessibility_Call_Me_History_21342" = "履歴にある国で発信";
+"LN_TranferAmdin_From_You_To_%@_42604" = "このグループの管理者は、あなたから%@に変更されました。";
+"LN_TranferAmdin_From_%@_To_%@_42604" = "このグループの管理者は、%@から%@に変更されました。";
+"LN_TranferAmdin_From_%@_To_You_42604" = "このグループの管理者は、%@からあなたに変更されました。";
+"LN_Assign_ANewAmdin_42604" = "新しい管理者を割り当てる";
+"LN_Security_NNot_Verified_Label_42898" = "セキュリティー警告：信頼できないサーバー認証";
+"LN_Security_NNot_Verified_Title_42898" = "Zoom";
+"LN_Security_NNot_Verified_Content_42898" = "提出されたセキュリティー証明は無効であったためZoomに接続することはできません。IT部門に連絡してサポートを受けてください。";
+"LN_Security_Not_Private_Content_42898" = "接続がプライベート接続ではありません。攻撃者がお客様の個人情報や金融情報をZoomから盗もうとしている可能性があります。 \n\nこのサーバーがZoomだと証明できませんでした。このセキュリティー認証は%@のものです。";
+"LN_Security_Trust_Anyway" = "それでも信頼する";
+"LN_Security_Do_Not_Trust" = "信頼しない";
+"LN_Testing_Speaker_38961" = "スピーカーをテスト中...";
+"LN_Do_You_Hear_A_Ringtone_38961" = "着信音が聞こえますか。";
+"LN_Tested_All_Speakers_38961" = "お客様のスピーカーをすべてテストしました";
+"LN_Tested_All_Mic_38961" = "お客様のマイクをすべてテストしました";
+"LN_Test_Again_38961" = "再度テストしてください";
+"LN_Join_Audio_By_Phone_38961" = "電話でオーディオに参加";
+"LN_Testing_38961" = "テスト中...";
+"LN_Testing_Microphone_38961" = "マイクをテスト中...";
+"LN_Have_%ld_Speakers_Now_Testing_%ld_38961" = "%ldスピーカーをお持ちです、現在スピーカー%ldをテスト中です...";
+"LN_Have_%ld_Mics_Now_Testing_%ld_38961" = "%ldマイクをお持ちです、現在マイク%ldをテスト中です...";
+"LN_Speak_And_Pause_Do_You_Hear_Replay_38961" = "話してから話をやめます、返答が聞こえますか。";
+"LN_Troubleshoot_Speaker_Mic_38961" = "スピーカー&マイクをテストする...";
+"LN_Speaker_%ld_38961" = "スピーカー%ld：";
+"LN_Microphone_%ld_38961" = "マイク%ld：";
+"LN_Swithch_To_Phone_Audio_38961" = "電話のオーディオに切り替える...";
+"LN_Capture_32093" = "キャプチャー";
+"LN_Install_AirHost_With_AdminPrivileges_43112" = "AirHostの使用を開始するには、管理者権限でインストールする必要があります。";
+"LN_Install_CodeSnippet_With_AdminPrivileges_43112" = "コードスニペットの使用を開始するには、管理者権限でインストールする必要があります。";
+"LN_Install_ScreenShot_With_AdminPrivileges_43112" = "スクリーンショットの使用を開始するには、管理者権限でインストールする必要があります。";
+"LN_Install_SipCall_With_AdminPrivileges_43112" = "通話の使用を開始するには、管理者権限でインストールする必要があります。";
+"LN_Install_RetainaRes_With_AdminPrivileges_43112" = "Retinaディスプレイをサポートするには、管理者権限でインストールする必要があります。";
+"LN_Copy_link_39867" = "リンクをコピーする";
+"LN_Join_meeting_39867" = "ミーティングに参加する";
+"LN_Decrypt_message_39867" = "キーが利用可能な場合、Zoomがメッセージを復号します。";
+"LN_You_joined_group_39867" = "お客様はこのグループチャットに参加しました";
+"LN_Hide_Self_View_40266" = "セルフビューを非表示";
+"LN_Show_Self_View_40266" = "セルフビューを表示";
+"LN_Join_With_Computer_Audio_38961" = "コンピューターオーディオに参加する";
+"LN_Tets_Speaker_And_Mic_38961" = "スピーカーとマイクをテストする";
+"LN_Accessibility_Dock_Top_40628" = "画面共有ツールバーは画面上部にあり、下部に移動できます、ボタン";
+"LN_Accessibility_Dock_Bottom_40628" = "画面共有ツールバーは画面の下部にあり、上部に移動できます、ボタン";
+"LN_Remove_Confirm_44293" = "%@を削除しますか？参加者はこのミーティングに再参加できません。";
+"LN_Expel_By_Host_44293" = "ホストはあなたをこのミーティングから削除しました。";
+"LN_Join_Error_For_Expel_44293" = "お客様は以前ホストによって削除されているため、このミーティングに再参加できません。";
+
+"LN_GDPR_40930_Continue" = "続ける";
+"LN_GDPR_40930_I Agree" = "同意する";
+"LN_GDPR_40930_I Disagree" = "同意しない";
+"LN_GDPR_40930_Leave Meeting" = "ミーティングを退出";
+"LN_GDPR_40930_Privacy Policy" = "個人情報保護方針";
+"LN_GDPR_40930_Terms of Service" = "サービス規約";
+"LN_GDPR_40930_To use Zoom, you need to agree to the %1$@ and %2$@." = "Zoomを使用するには、%1$@と%2$@に同意する必要があります。";
+"LN_GDPR_40930_You cannot join the meeting until you agree to the %1$@ and %2$@." = "%1$@と%2$@に同意するまで、ミーティングに参加することはできません。";
+
+"LN_%@_Meeting_ID_%@_41652" = "%@ミーティングID：%@";
+"LN_Meeting_ID_%@_41652" = "ミーティングID：%@";
+"LN_In_%d_Mins_41652" = "%d分で";
+"LN_In_1_Min_41652" = "1分で";
+"LN_Now_41652" = "今";
+"LN_Remind_%@_Minutes_Before_Upcoming_41652" = "次回ミーティングの%@分前にお知らせください";
+
+"LN_Hide_ChatWnd_When_ScreenShot_32455" = "スクリーンショットでチャットウィンドウを非表示";
+"LN_To_32455" = "に";
+"LN_GDPR_40930_SIGNIN_TITLE" = "当社の規約と方針を更新する予定です";
+"LN_GDPR_40930_SIGNIN_DETAIL_%1$@_%2$@" = "Zoomでは、Zoomが収集するデータとその用途を透明化し、お客様ご自身によるご自身の個人データの管理をさらに強化するために、サービス規約と個人情報保護方針を更新させていただきます。Zoomの使用を続けることで、更新された%1$@と%2$@に同意したことになります。";
+
