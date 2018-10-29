@@ -36,6 +36,13 @@
 - (ZoomSDKAudioType)getType;
 @end
 
+@interface ZoomSDKWebinarAttendeeStatus : NSObject
+{
+    BOOL _isAttendeeCanTalk;
+}
+@property(nonatomic, assign)BOOL  isAttendeeCanTalk;
+@end
+
 @interface ZoomSDKUserInfo :NSObject
 {
     unsigned int _userID;
@@ -50,6 +57,7 @@
 - (UserRole)getUserRole;
 - (BOOL)isPurePhoneUser;
 - (BOOL)canBeCoHost;
+- (ZoomSDKWebinarAttendeeStatus*)GetWebinarAttendeeStatus;
 @end
 
 @interface ZoomSDKJoinMeetingHelper :NSObject

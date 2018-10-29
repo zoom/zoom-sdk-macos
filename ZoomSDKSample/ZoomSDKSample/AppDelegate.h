@@ -7,10 +7,12 @@
 //
 #import <Cocoa/Cocoa.h>
 #import "ZoomSDK.h"
+#import "ZSDKSettingWindowController.h"
 
 @class ZoomSDKWindowController;
+@class ZoomSDKScheduleWindowCtr;
 
-@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate,ZoomSDKRemoteControllerDelegate, ZoomSDKWaitingRoomDelegate, ZoomSDKPhoneHelperDelegate, ZoomSDKNetworkSeviceDelegate, ZoomSDKASControllerDelegate, ZoomSDKMeetingUIControllerDelegate, ZoomSDKMeetingActionControllerDelegate, ZoomSDKCustomizedAnnotationCtrlDelegate, ZoomSDKMeetingRecordDelegate, ZoomSDKOutlookPluginDelegate, ZoomSDKDirectShareHelperDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,ZoomSDKAuthDelegate, ZoomSDKMeetingServiceDelegate, ZoomSDKPremeetingServiceDelegate, ZoomSDKH323HelperDelegate,ZoomSDKRemoteControllerDelegate, ZoomSDKWaitingRoomDelegate, ZoomSDKPhoneHelperDelegate, ZoomSDKNetworkSeviceDelegate, ZoomSDKASControllerDelegate, ZoomSDKMeetingUIControllerDelegate, ZoomSDKMeetingActionControllerDelegate, ZoomSDKCustomizedAnnotationCtrlDelegate, ZoomSDKMeetingRecordDelegate, ZoomSDKOutlookPluginDelegate, ZoomSDKDirectShareHelperDelegate, ZoomSDKWebinarControllerDelegate>
 
 {
     IBOutlet NSWindow* _mainWindow;
@@ -60,17 +62,11 @@
     IBOutlet NSButton*    _updateMeeting;
     IBOutlet NSButton*    _deleteMeeting;
     IBOutlet NSButton*    _listMeeting;
-    IBOutlet NSTextField* _meetingTopic;
-    IBOutlet NSTextField* _meetingPassword;
-    IBOutlet NSTextField* _meetingDuration;
     IBOutlet NSTextField* _meetingNumber;
     IBOutlet NSTextView*  _meetingListContent;
-    IBOutlet NSButton*    _usePMI;
-    IBOutlet NSButton*    _turnOffVideoForHost;
-    IBOutlet NSButton*    _turnOffVideoForAttende;
-    IBOutlet NSButton*    _joinBeforeHost;
     IBOutlet NSTextField* _preMeetingError;
     IBOutlet NSTextField* _listMeetingError;
+    
     //start && join meeting
     IBOutlet NSTextField* _startMeetingNum;
     IBOutlet NSTextField* _sdkUserID;
@@ -136,9 +132,32 @@
     IBOutlet NSTextField*  _userName;
     IBOutlet NSTextView*  _calloutStatusInfo;
     
+    //webinar customized ui
+    IBOutlet NSTabView*  _webinarTabView;
+    IBOutlet NSButton*  _promoteAttendee2Panelist;
+    IBOutlet NSButton*  _depromotePanelist2Attendee;
+    IBOutlet NSButton*  _allowAttendeeTalk;
+    IBOutlet NSButton*  _disallowAttendeeTalk;
+    IBOutlet NSButton*  _allowPanelistStartVideo;
+    IBOutlet NSButton*  _disallowPanelistStartVideo;
+    IBOutlet NSButton*  _allowAttendeeChat;
+    IBOutlet NSButton*  _disallowAttendeeChat;
+    
+    IBOutlet NSButton*  _isSupportAttendeeTalk;
+    IBOutlet NSButton*  _isAllowAttendeeChat;
+    IBOutlet NSButton*  _isAllowPanelistStartVideo;
+    IBOutlet NSTextField*  _selectedUser;
+    
+    IBOutlet NSTextView*  _panelistListView;
+    IBOutlet NSTextView*  _attendeeListView;
+    IBOutlet NSTextView*  _waitingRoomListView;
+    IBOutlet NSButton*    _WebinarControlButton;
+    IBOutlet NSButton*    _refreshUserListButton;
+
     //test new sdk
     ZoomSDKWindowController* _wndCtrl;
     ZoomSDKWindowController* _shareCtrl;
+    ZoomSDKWindowController* _shareCameraWindowCtrl;
 
     IBOutlet NSTextView*                   _videoInfoView;
     IBOutlet NSTextField*                  _selectedVideoUser;
@@ -151,7 +170,28 @@
     
     ZoomSDKShareElement* _shareElement;
     ZoomSDKDirectShareHandler* _dsHandler;
+
+    //new schedule
+    ZoomSDKScheduleWindowCtr*     _scheduleEditWindow;
+    
+    IBOutlet NSMenuItem*   _settingMenuItem;
+    ZSDKSettingWindowController* _sdkSettingWindowController;
 }
+@property(nonatomic, retain) ZSDKSettingWindowController* sdkSettingWindowController;
+-(IBAction)onShowCustomizedSetting:(id)sender;
+
+//webinar
+-(IBAction)promoteAttendee2Panelist:(id)sender;
+-(IBAction)depromotePanelist2Attendee:(id)sender;
+-(IBAction)allowAttendeeTalk:(id)sender;
+-(IBAction)disallowAttendeeTalk:(id)sender;
+-(IBAction)allowPanelistStartVideo:(id)sender;
+-(IBAction)disallowPanelistStartVideo:(id)sender;
+-(IBAction)allowAttendeeChat:(id)sender;
+-(IBAction)disallowAttendeeChat:(id)sender;
+-(IBAction)navigatorToWebinarControTab:(id)sender;
+-(IBAction)refreshUserList:(id)sender;
+
 
 -(IBAction)clickAuthDevZoom:(id)sender;
 -(IBAction)clickSDKUser:(id)sender;
@@ -290,5 +330,9 @@
 - (IBAction)startDS:(id)sender;
 - (IBAction)stopDS:(id)sender;
 - (IBAction)cancelDS:(id)sender;
+- (IBAction)startShareWhiteBoard:(id)sender;
+- (IBAction)startShareFrame:(id)sender;
+- (IBAction)startShareAudio:(id)sender;
+- (IBAction)stopShare:(id)sender;
 @end
 

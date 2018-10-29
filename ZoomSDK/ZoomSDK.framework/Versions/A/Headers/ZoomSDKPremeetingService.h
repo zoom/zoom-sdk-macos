@@ -103,44 +103,113 @@
 -(ZoomSDKError)stop;
 @end
 
+@interface IMeetingDateOption : NSObject
+-(time_t) getMeetingStartTime;
+-(unsigned int)getMeetingDuration;
+-(BOOL) isRecurringMeeting;
+@end
+
+@interface ScheduleMeetingDateOption : IMeetingDateOption
+- (void)setMeetingStartTime:(time_t)starttime;
+- (void)setMeetingDuration:(unsigned int)duration;
+- (void)enableRecurringMeeting:(BOOL)recurring;
+@end
+
+@interface IMeetingAudioOption: NSObject
+- (ScheduleMeetingAudioType)getScheduleMeetingAudioType:(int*)availableAudioType;
+- (BOOL)canGetDialinInfo;
+/*
+ * @return a NSArray contains NSString of country code
+*/
+- (NSArray*)getAvailableDialinCountry;
+- (NSArray*)getSelectedDialinCountry;
+- (BOOL)enableIncludeTollFreeNum;
+@end
+
+@interface ScheduleMeetingAudioOption :IMeetingAudioOption
+
+- (ZoomSDKError)setScheduleMeetingAudioType:(ScheduleMeetingAudioType)type;
+- (ZoomSDKError)selectDialinCountry:(NSArray*)array;
+- (ZoomSDKError)selectIncludeTollFreeNum:(BOOL)include;
+@end
+
+@interface IMeetingVideoOption :NSObject
+- (BOOL)isHostVideoOn;
+- (BOOL)isParticipantVideoOn;
+@end
+
+@interface ScheduleMeetingVideoOption: IMeetingVideoOption
+- (void)setHostVideoOn:(BOOL)on;
+- (void)setParticipantVideoOn:(BOOL)on;
+@end
+
+@interface IScheduleForUser: NSObject
+{
+    NSString* _email;
+    NSString* _displayName;
+}
+@property(nonatomic, readwrite, retain) NSString* email;
+@property(nonatomic, readwrite, retain) NSString* displayName;
+@end
+
+@interface IMeetingConfigOption : NSObject
+-(NSString*)getMeetingTopic;
+-(BOOL)enableRequiredPassword;
+-(NSString*)getMeetingPassword;
+-(BOOL)enableJBH;
+-(BOOL)enableMuteOnEntry;
+-(BOOL)enableUsePMI;
+-(BOOL)enableHostInChina:(BOOL*)canModify;
+-(BOOL)enableOnlySignedUserJoin:(BOOL*)canModify;
+-(BOOL)enableSpecialDomainUserJoin:(BOOL*)canModify;
+-(NSString*)getSpecialDomains;
+-(BOOL)enableAutoRecord:(int*)supportRecordType;
+-(ScheduleMeetingRecordType)getMeetingRecordType;
+-(NSArray*)getScheduleForUser:(BOOL*)canModify; // return a array contains IScheduleForUser object
+@end
+
+@interface ScheduleMeetingConfigOption: IMeetingConfigOption
+-(void)setMeetingTopic:(NSString*)topic;
+-(void)setRequirePassword:(BOOL)require;
+-(void)setMeetingPassword:(NSString*)password;
+-(void)setEnableJBH:(BOOL)enable;
+-(void)setEnableMuteOnEntry:(BOOL)enable;
+-(void)setUsePMI:(BOOL)use;
+-(ZoomSDKError)setEnableHostInChina:(BOOL)enable;
+-(ZoomSDKError)setEnableOnlySignedUserJoin:(BOOL)enable;
+-(ZoomSDKError)setEnableSpecialDomainUserJoin:(BOOL)enable;
+-(ZoomSDKError)selectSpecialDomains:(NSString*)domains;
+-(ZoomSDKError)setEnableAutoRecord:(BOOL)enable;
+-(ZoomSDKError)setRecordType:(ScheduleMeetingRecordType)type;
+-(ZoomSDKError)selectScheduleForUser:(NSArray*)users;
+@end
+
 @interface ZoomSDKScheduleMeetingItem : NSObject
 {
-    NSString*  _meetingTopic;
-    NSString*  _meetingPassword;
-    time_t     _meetingStartTime;
-    time_t     _meetingDuration;
-    BOOL       _joinBeforeHost;
-    BOOL       _usePMI;
-    BOOL       _turnOffVideoForHost;
-    BOOL       _turnOffVideoForAttendee;
+    ScheduleMeetingDateOption* _dateOption;
+    ScheduleMeetingAudioOption* _audioOption;
+    ScheduleMeetingVideoOption* _videoOption;
+    ScheduleMeetingConfigOption* _configOption;
 }
-@property(nonatomic, retain) NSString* meetingTopic;
-@property(nonatomic, retain) NSString* meetingPassword;
-@property(nonatomic, assign) time_t    meetingStartTime;
-@property(nonatomic, assign) time_t    meetingDuration;
-@property(nonatomic, assign) BOOL      joinBeforeHost;
-@property(nonatomic, assign) BOOL      usePMI;
-@property(nonatomic, assign) BOOL      turnOffVideoForHost;
-@property(nonatomic, assign) BOOL      turnOffVideoForAttendee;
-
+@property(nonatomic, retain) ScheduleMeetingDateOption* dateOption;
+@property(nonatomic, retain) ScheduleMeetingAudioOption* audioOption;
+@property(nonatomic, retain) ScheduleMeetingVideoOption* videoOption;
+@property(nonatomic, retain) ScheduleMeetingConfigOption* configOption;
 @end
 
 @interface ZoomSDKMeetingItem : NSObject
 {
-    long long _meetingUniqueID;
+    IMeetingDateOption*  _dateOption;
+    IMeetingAudioOption*  _audioOption;
+    IMeetingVideoOption*  _videoOption;
+    IMeetingConfigOption* _configOption;
+    long long             _meetingUniqueID;
 }
-- (BOOL)isValidMeeting;
-- (BOOL)isPersonalMeeting;
-- (BOOL)isWebinarMeeting;
-- (BOOL)isRecurringMeeting;
-- (BOOL)isAllowJoinBeforeHost;
-- (BOOL)isUsePMIAsMeetingID;
-- (long long) getMeetingUniqueID;
-- (long long) getMeetingNumber;
-- (time_t) getMeetingStartTime;
-- (time_t) getMeetingDuration;
-- (NSString*) getMeetingTopic;
-- (NSString*) getMeetingPassword;
+-(IMeetingDateOption*)getDateOption;
+-(IMeetingAudioOption*)getAudioOption;
+-(IMeetingVideoOption*)getVideoOption;
+-(IMeetingConfigOption*)getConfigOption;
+-(long long)getMeetingUniqueID;
 @end
 
 @protocol ZoomSDKPremeetingServiceDelegate;
@@ -155,7 +224,9 @@
  * The object that acts as the delegate of the premeeting events.
  */
 @property (assign, nonatomic) id<ZoomSDKPremeetingServiceDelegate> delegate;
+- (ZoomSDKScheduleMeetingItem*)createScheduleMeetingItem;
 
+- (ZoomSDKError)destoryScheduleMeetingItem:(ZoomSDKScheduleMeetingItem*)meetingItem;
 /**
  * @brief This method is used to schedule a Zoom meeting with meeting item you created.
  * @param meetingItem the specified meeting user want to schedule.
@@ -206,6 +277,42 @@
  * @return ZoomSDKOutlookPluginHelper object
  */
 - (ZoomSDKOutlookPluginHelper*)getOutlookPluginHelper;
+
+/**
+ * @brief Enable force auto start my video when join meeting, default is follow meeting behavior.
+ * @param enable means enable or not.
+ */
+- (void)enableForceAutoStartMyVideoWhenJoinMeeting:(BOOL)enable;
+
+/**
+ * @brief Enable force auto stop to send video when join meeting, default is follow meeting behavior.
+ * @param enable means enable or not.
+ */
+- (void)enableForceAutoStopMyVideoWhenJoinMeeting:(BOOL)enable;
+
+/**
+ * @brief Disable auto show select join audio select dialog when join meeting, default is enabled.
+ * @param disable means disable or not.
+ */
+- (void)disableAutoShowSelectJoinAudioDlgWhenJoinMeeting:(BOOL)disable;
+
+/**
+ * @brief This method is used to get user's option of force start video when join meeting is enabled or not.
+ * @return A BOOL to tell user whether user's video is forced started when join meeting.
+ */
+- (BOOL)isUserForceStartMyVideoWhenInMeeting;
+
+/**
+ * @brief This method is used to get user's option of force stop video when join meeting is enabled or not.
+ * @return A BOOL to tell user whether user's video is forced stopped when join meeting.
+ */
+- (BOOL)isUserForceStopMyVideoWhenInMeeting;
+
+/**
+ * @brief This method is used to get user's option of show join audio dialog when join meeting is disabled or not.
+ * @return A BOOL to tell user whether the join audio dialog is disabled.
+ */
+- (BOOL)isUserForceDisableShowJoinAudioDlgWhenInMeeting;
 
 /**
  * @brief Designated get a ZoomSDKDirectShareHelper object

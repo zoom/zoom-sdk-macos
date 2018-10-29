@@ -26,7 +26,7 @@
 		</data>
 		<key>Resources/ChatEmojiWindow.nib</key>
 		<data>
-		BBcoumuRFrkUfkt8YX2ZKCpbXXQ=
+		8qnnXeMye0dWh6cyAGYQV5WMgBQ=
 		</data>
 		<key>Resources/ChatNotificationWindow.nib</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Resources/GroupListWindow.nib</key>
 		<data>
-		y0w40dIxxuKpZXhA4DvehOttNyY=
+		kj0ZhI7zuQLdIHiy3f0AULeGVEE=
 		</data>
 		<key>Resources/HUDWindow.nib</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Resources/IMContentView.nib</key>
 		<data>
-		jQYbhQn8P2alEnkMDwH2M86tG/w=
+		7vA4jN/EIoIQw3m7dF8H1onpN4w=
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		2ZBnM4OVDNUZ4LwhF1/c7hq2e6c=
+		GXjI3MBBqvwdW5Cn7RWDyECJ4uA=
 		</data>
 		<key>Resources/InviteCollectionViewItem.nib</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Resources/MainWindow.nib</key>
 		<data>
-		dspW9Jz0uCpgVCzR6yGUWn+pGOw=
+		YiT8eus4cJgvEqxtVbuZeOVSQ9Y=
 		</data>
 		<key>Resources/NewVersionWindow.nib</key>
 		<data>
-		oQQVg+ETj3rwgbCpVbPlrRLHLZs=
+		4INy6nBkxH+Z246Fkjuh/rfnX/Y=
 		</data>
 		<key>Resources/RequestNotificationWindow.nib</key>
 		<data>
@@ -98,15 +98,15 @@
 		</data>
 		<key>Resources/ScheduleWindow.nib</key>
 		<data>
-		LQ7BE8rTnDwgeherAW2BHZxkM9U=
+		qQYhzqGx7OqWiwrYuJ11qD6Splw=
 		</data>
 		<key>Resources/SearchListWindow.nib</key>
 		<data>
-		MXeMZA+1515FImQweFpQ16aDV0o=
+		b174l/gd8Biq0a4QWxMFPBPJvKY=
 		</data>
 		<key>Resources/SettingWindow.nib</key>
 		<data>
-		4jAEoJpiDPVWrcXwVeLu2havvHA=
+		DKSyZMRIghWCLxY7AJzYa8JFwZ0=
 		</data>
 		<key>Resources/UpdateDownloadWindow.nib</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Resources/ZMAlternateHostSearchListWindow.nib</key>
 		<data>
-		cx7hULhBjQGqABTJMr39r4QuFhA=
+		USvkoGGzWAmELXAFfRKnmjqyYMI=
 		</data>
 		<key>Resources/ZMCalendarWindowController.nib</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Resources/ZMChatEditingViewController.nib</key>
 		<data>
-		2uIqnofUSriw0aHGH2Dj+y3alt4=
+		imM+yOAyk95h4vGUf6xGwlRKB4w=
 		</data>
 		<key>Resources/ZMChatViewController.nib</key>
 		<data>
@@ -138,19 +138,19 @@
 		</data>
 		<key>Resources/ZMChatWindowController.nib</key>
 		<data>
-		7TCiYnGxtwua8qafEg9ou28hbTA=
+		UZYB1T9cA/4+rj3hoElRATQ4CDE=
 		</data>
 		<key>Resources/ZMDiagnosticViewController.nib</key>
 		<data>
-		w/FLAziBbAuqf+twFSHJ56WClk8=
+		V/rlJzBZm2ulYe68VikRF4gIjzs=
 		</data>
 		<key>Resources/ZMEditCountriesWindowController.nib</key>
 		<data>
-		Dic5ts8vOazeblWJ62sI2KkxYSA=
+		+RSlkxQfmPFclOvrsOMnU/wqk9Y=
 		</data>
 		<key>Resources/ZMEditPMIWindowController.nib</key>
 		<data>
-		XsfncqyOKGM5AwsyO6zQM9M2YE0=
+		xpSpQiwXDYzx79tpEUOCJbl3jPw=
 		</data>
 		<key>Resources/ZMFavoriteAddUserWindowController.nib</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Resources/ZMGroupSettingWindow.nib</key>
 		<data>
-		AJx4hbcfRdLYrd7LlxhzcARSL+0=
+		QqlvxZMKfZvBCLo1ciedFr4+4Oc=
 		</data>
 		<key>Resources/ZMMeetingErrorWindowController.nib</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Resources/ZMShareTokenFieldController.nib</key>
 		<data>
-		GT/tnjQugKZB4hwcQjIvhTVKNaA=
+		51LxYxf5/aIBeI/CMd9DwA2ShTw=
 		</data>
 		<key>Resources/ZMWaitingPromoteWindowController.nib</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Resources/ZPStartMeetingConfirmWindowController.nib</key>
 		<data>
-		hxmpsLCYPkKsxNa+zNMLvUs6qHg=
+		enO+uwSrINCyxhRpZhvGr8ewHiY=
 		</data>
 		<key>Resources/ZoomSDKChatUI.def</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>Resources/contentView.nib</key>
 		<data>
-		PCkZoBqSHSoCvsk0gzlYa6KamwA=
+		vPfSEdywaz0GXOcQ5QjLcSMG+VY=
 		</data>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -251,7 +251,7 @@
 		</dict>
 		<key>Resources/groupContentView.nib</key>
 		<data>
-		9xPgP1JLAjlESRqz7uuQZbxLZk8=
+		R2qRDCGvw3WBm87N8BQAx1E02iU=
 		</data>
 		<key>Resources/loadingInfoView.nib</key>
 		<data>
@@ -263,7 +263,7 @@
 		</data>
 		<key>Resources/searchResultView.nib</key>
 		<data>
-		KK4wtRS7fqRQp4N73m97/XslVRE=
+		i2ALClS6rGhgT7ijIviu4qsJP3I=
 		</data>
 		<key>Resources/singleChatWindow.nib</key>
 		<data>
@@ -350,11 +350,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BBcoumuRFrkUfkt8YX2ZKCpbXXQ=
+			8qnnXeMye0dWh6cyAGYQV5WMgBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			oMRIjZRnACV5OXE0Ek3aIegdc35evHR+rIF2H0EK71s=
+			OYDJ2V4YJW9BOQjRDSaJt6gFP4ZmtbgEQoqLk0loRw4=
 			</data>
 		</dict>
 		<key>Resources/ChatNotificationWindow.nib</key>
@@ -416,11 +416,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y0w40dIxxuKpZXhA4DvehOttNyY=
+			kj0ZhI7zuQLdIHiy3f0AULeGVEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZspQYB8gPaFDilLEIrAtNvt6MRn4GTJTigZkaJH8ykA=
+			5Ezj3z6gtdeg0isI3MmXOITiL6J94xL4gU8ay2b0zC0=
 			</data>
 		</dict>
 		<key>Resources/HUDWindow.nib</key>
@@ -449,22 +449,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jQYbhQn8P2alEnkMDwH2M86tG/w=
+			7vA4jN/EIoIQw3m7dF8H1onpN4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			2AZFbkxPieJe/vgDXbWow6heG9ldvr/sPShbod+fz2E=
+			+9+QJgDc7ufiffcKtbGQpaQCSFmB5ONK+veWZYV+SsM=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2ZBnM4OVDNUZ4LwhF1/c7hq2e6c=
+			GXjI3MBBqvwdW5Cn7RWDyECJ4uA=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ujURESsI/YOu5TVKrmQLQTZKzMWISU7+DDKLoIP190=
+			dvI4ycdt2gbZW/bs3zyoGnYX1pOdfvDJ7makTf+I0Yw=
 			</data>
 		</dict>
 		<key>Resources/InviteCollectionViewItem.nib</key>
@@ -504,22 +504,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dspW9Jz0uCpgVCzR6yGUWn+pGOw=
+			YiT8eus4cJgvEqxtVbuZeOVSQ9Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ri3PLoFCDaxTr5soVjsvtNaeO5rSU04UfEp5zcO7pOY=
+			NFnzKyYc0kFjqBQ/pNEHWjv5I5rMiTT6bMbeRApStXo=
 			</data>
 		</dict>
 		<key>Resources/NewVersionWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oQQVg+ETj3rwgbCpVbPlrRLHLZs=
+			4INy6nBkxH+Z246Fkjuh/rfnX/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			2qOVEkwxDN3wOugjHU6eTu/XLyfBd8fH5zW2G4JP4tU=
+			XGTnzKoQBYWntlT5x0gnhR5wgEwYVyzKD70SDRESUDQ=
 			</data>
 		</dict>
 		<key>Resources/RequestNotificationWindow.nib</key>
@@ -548,33 +548,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LQ7BE8rTnDwgeherAW2BHZxkM9U=
+			qQYhzqGx7OqWiwrYuJ11qD6Splw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pkZpTyr2KkweBl7qy3eEDsKhl8PkhxszKL6POIAIsLU=
+			FwPyEIGZqaWV72hEhQ8Z/N6nRYzu64halMm6d8zC1ZA=
 			</data>
 		</dict>
 		<key>Resources/SearchListWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MXeMZA+1515FImQweFpQ16aDV0o=
+			b174l/gd8Biq0a4QWxMFPBPJvKY=
 			</data>
 			<key>hash2</key>
 			<data>
-			WN8phpH5FO7pwfBQJqnSnh/TZ4QzcvQaZrIWbl4c07E=
+			A0KPehGzfoVA1PEjXuDN7wbldoEWxUOq5+ulBQGJNmE=
 			</data>
 		</dict>
 		<key>Resources/SettingWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4jAEoJpiDPVWrcXwVeLu2havvHA=
+			DKSyZMRIghWCLxY7AJzYa8JFwZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/qg6ybDT23JIXNR/CyJ2E5OUgdnn2CZC/9fXseJ8u5E=
+			SUtQzH0+gyK+pm3JrO3GfP153qZflUnP2EtZFd92Mtc=
 			</data>
 		</dict>
 		<key>Resources/UpdateDownloadWindow.nib</key>
@@ -603,11 +603,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cx7hULhBjQGqABTJMr39r4QuFhA=
+			USvkoGGzWAmELXAFfRKnmjqyYMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			QVsJwMiRhxE2AK9pUD/pNosi4hZGyLO6dJyfCZ40cQ8=
+			atovLHHYfQwsygs57Pfa9DQvKKFb+my12mbFa673MpU=
 			</data>
 		</dict>
 		<key>Resources/ZMCalendarWindowController.nib</key>
@@ -636,11 +636,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2uIqnofUSriw0aHGH2Dj+y3alt4=
+			imM+yOAyk95h4vGUf6xGwlRKB4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			RuWJJCoJDaasYr3SxmRMfqyqKRM/H52akNu8EDsEPt0=
+			rsw2Xu+qYxnerav6L8WkeK/ez3Kw7QXbVnrosoSxIss=
 			</data>
 		</dict>
 		<key>Resources/ZMChatViewController.nib</key>
@@ -658,44 +658,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7TCiYnGxtwua8qafEg9ou28hbTA=
+			UZYB1T9cA/4+rj3hoElRATQ4CDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			1DBTvNrp1rgA4/xGi4mk1bPsz1rkw+LGecgzE613a44=
+			tSSl4Avr/zX9I0ebACrxWxCCxI9bUlKlWjTalpZ8EFU=
 			</data>
 		</dict>
 		<key>Resources/ZMDiagnosticViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w/FLAziBbAuqf+twFSHJ56WClk8=
+			V/rlJzBZm2ulYe68VikRF4gIjzs=
 			</data>
 			<key>hash2</key>
 			<data>
-			TQB4mo/lI8d1o+uzOG5ne0AWpyEJneCROKsk5gjzQxQ=
+			vra31G2c5MePXdjeVirM9DB5nO1m1AIRAty+Zq1WAfo=
 			</data>
 		</dict>
 		<key>Resources/ZMEditCountriesWindowController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dic5ts8vOazeblWJ62sI2KkxYSA=
+			+RSlkxQfmPFclOvrsOMnU/wqk9Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			0LJ47gvpUehnK0rIfYzzzyQFOjRFRaxCNfrgMOX2D1M=
+			Aw0D9gxKS+5vtWBv90cr6ZDSlZ2fQ1jlmtc3KHmdIgw=
 			</data>
 		</dict>
 		<key>Resources/ZMEditPMIWindowController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XsfncqyOKGM5AwsyO6zQM9M2YE0=
+			xpSpQiwXDYzx79tpEUOCJbl3jPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PaWLuNdAesGfWRxtnrL/qnpgSfoLOUaHv+xI+mpoKZY=
+			ZNFp4Jv7sOWXl8EeAJMB5HA7oT1DJ1Hk2YQg+J0TrC8=
 			</data>
 		</dict>
 		<key>Resources/ZMFavoriteAddUserWindowController.nib</key>
@@ -768,11 +768,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AJx4hbcfRdLYrd7LlxhzcARSL+0=
+			QqlvxZMKfZvBCLo1ciedFr4+4Oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			nR4R9ORisbw5b2u4j+4B8mH6nn1S0PxUb1kOBrYBecE=
+			6WejOmkx/Pe7wuDL1W7cdLgVJKBdf3SNOM2v/1pemiI=
 			</data>
 		</dict>
 		<key>Resources/ZMMeetingErrorWindowController.nib</key>
@@ -845,11 +845,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GT/tnjQugKZB4hwcQjIvhTVKNaA=
+			51LxYxf5/aIBeI/CMd9DwA2ShTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			n4w5BnwhVaL+OqdUqI0Wh1MBNf10Jxtooh0Py47Yu5c=
+			tpY+DF/Jf+6o2eMqhIwzPon0bE7KP9osKmSfmVffsn4=
 			</data>
 		</dict>
 		<key>Resources/ZMWaitingPromoteWindowController.nib</key>
@@ -900,11 +900,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hxmpsLCYPkKsxNa+zNMLvUs6qHg=
+			enO+uwSrINCyxhRpZhvGr8ewHiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mjUdr6epC8Sx5N2Qdomkem96n5EvbvqF0Z5KZOrjDio=
+			5Cf/bnYXw0KG8acxSgZow8kbSwW4XjaGPcGOg/xlxAI=
 			</data>
 		</dict>
 		<key>Resources/ZoomSDKChatUI.def</key>
@@ -933,11 +933,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PCkZoBqSHSoCvsk0gzlYa6KamwA=
+			vPfSEdywaz0GXOcQ5QjLcSMG+VY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sj8GolxpNNV3VG8+ZVnUDQ9BRvjNEberNvA1WEWpp14=
+			SvQqLkWk6SwsXHPeCDiBZFfoxgTIAzNwBViAdfhv+qo=
 			</data>
 		</dict>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
@@ -957,11 +957,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9xPgP1JLAjlESRqz7uuQZbxLZk8=
+			R2qRDCGvw3WBm87N8BQAx1E02iU=
 			</data>
 			<key>hash2</key>
 			<data>
-			JVD/NVNObPiGtmMqm3hHuo+zSCqjzmdPXKEzlP40seU=
+			pX5gb0sjsJ0Rm9IFUMvN2czWPcLJThm2fugt4B8rtNM=
 			</data>
 		</dict>
 		<key>Resources/loadingInfoView.nib</key>
@@ -990,11 +990,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KK4wtRS7fqRQp4N73m97/XslVRE=
+			i2ALClS6rGhgT7ijIviu4qsJP3I=
 			</data>
 			<key>hash2</key>
 			<data>
-			K4UFXaFfVCAr+HUoNqKhWOaw3dAMfdRwB8Z35jeYcq0=
+			NUzyVy4b61weaq+FrcW8MXDvhLvpKt6Mw7x5gpA48HM=
 			</data>
 		</dict>
 		<key>Resources/singleChatWindow.nib</key>

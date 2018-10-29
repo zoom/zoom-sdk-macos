@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D2B4A2C215C81B100F66DC7 /* ZSDKSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B4A2A215C81B100F66DC7 /* ZSDKSettingWindowController.m */; };
+		5D2B4A2D215C81B100F66DC7 /* ZSDKSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2B4A2B215C81B100F66DC7 /* ZSDKSettingWindowController.xib */; };
+		5DC47DDC2179B0D300172BBC /* SDK_Transcode.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 5DC47DDB2179B0D300172BBC /* SDK_Transcode.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5DE85975213E6E9600B9E2B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DE85973213E6E9600B9E2B6 /* Localizable.strings */; };
 		970CBE321E36F25000B1D255 /* airhost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 970CBE301E36F24200B1D255 /* airhost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		970F79162178698600771BD6 /* ZoomSDKScheduleWindowCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 970F79142178698600771BD6 /* ZoomSDKScheduleWindowCtr.m */; };
+		970F79172178698600771BD6 /* ZoomSDKScheduleWindowCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970F79152178698600771BD6 /* ZoomSDKScheduleWindowCtr.xib */; };
 		971725F71D3F618A00D5C72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 971725F61D3F618A00D5C72D /* AppDelegate.m */; };
 		971725FA1D3F618A00D5C72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 971725F91D3F618A00D5C72D /* main.m */; };
 		972215FA1DD06C5100C74CE6 /* ZoomLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9755A2871D6D8C8300B69E72 /* ZoomLogo.png */; };
@@ -30,7 +35,6 @@
 		9729EE001DD5B9C600DB188D /* protobuf.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECFC1DD5AF7200DB188D /* protobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE011DD5B9C600DB188D /* ssb_sdk.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECFD1DD5AF7200DB188D /* ssb_sdk.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE021DD5B9C600DB188D /* tp.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECFE1DD5AF7200DB188D /* tp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9729EE031DD5B9C600DB188D /* Transcode.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECFF1DD5AF7200DB188D /* Transcode.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9729EE041DD5B9C600DB188D /* util.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED001DD5AF7200DB188D /* util.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE051DD5B9C600DB188D /* viper.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED011DD5AF7200DB188D /* viper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE061DD5B9C600DB188D /* xmpp_framework.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ED021DD5AF7200DB188D /* xmpp_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -58,6 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5DC47DDC2179B0D300172BBC /* SDK_Transcode.app in Copy Files */,
 				973CE715212FBB8600B84E5D /* ZoomSDKVideoUI.framework in Copy Files */,
 				97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */,
 				9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */,
@@ -73,7 +78,6 @@
 				9729EE001DD5B9C600DB188D /* protobuf.framework in Copy Files */,
 				9729EE011DD5B9C600DB188D /* ssb_sdk.bundle in Copy Files */,
 				9729EE021DD5B9C600DB188D /* tp.framework in Copy Files */,
-				9729EE031DD5B9C600DB188D /* Transcode.app in Copy Files */,
 				9729EE041DD5B9C600DB188D /* util.framework in Copy Files */,
 				9729EE051DD5B9C600DB188D /* viper.framework in Copy Files */,
 				9729EE061DD5B9C600DB188D /* xmpp_framework.framework in Copy Files */,
@@ -94,6 +98,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D2B4A29215C81B100F66DC7 /* ZSDKSettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSDKSettingWindowController.h; sourceTree = "<group>"; };
+		5D2B4A2A215C81B100F66DC7 /* ZSDKSettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSDKSettingWindowController.m; sourceTree = "<group>"; };
+		5D2B4A2B215C81B100F66DC7 /* ZSDKSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSDKSettingWindowController.xib; sourceTree = "<group>"; };
+		5DC47DDB2179B0D300172BBC /* SDK_Transcode.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = SDK_Transcode.app; path = ZoomSDK/SDK_Transcode.app; sourceTree = "<group>"; };
 		5DE85974213E6E9600B9E2B6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "ZoomSDKSample/SDK Resources/de.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5DE85976213E6EEE00B9E2B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "ZoomSDKSample/SDK Resources/en.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5DE85977213E6EF100B9E2B6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "ZoomSDKSample/SDK Resources/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -105,6 +113,9 @@
 		5DE8597D213E6F0100B9E2B6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "ZoomSDKSample/SDK Resources/ru.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5DE8597E213E6F0300B9E2B6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "ZoomSDKSample/SDK Resources/es.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		970CBE301E36F24200B1D255 /* airhost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = airhost.app; path = ZoomSDK/airhost.app; sourceTree = "<group>"; };
+		970F79132178698500771BD6 /* ZoomSDKScheduleWindowCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomSDKScheduleWindowCtr.h; sourceTree = "<group>"; };
+		970F79142178698600771BD6 /* ZoomSDKScheduleWindowCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomSDKScheduleWindowCtr.m; sourceTree = "<group>"; };
+		970F79152178698600771BD6 /* ZoomSDKScheduleWindowCtr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomSDKScheduleWindowCtr.xib; sourceTree = "<group>"; };
 		971725F21D3F618A00D5C72D /* ZoomSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971725F51D3F618A00D5C72D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		971725F61D3F618A00D5C72D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,7 +135,6 @@
 		9729ECFC1DD5AF7200DB188D /* protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = protobuf.framework; path = ZoomSDK/protobuf.framework; sourceTree = "<group>"; };
 		9729ECFD1DD5AF7200DB188D /* ssb_sdk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ssb_sdk.bundle; path = ZoomSDK/ssb_sdk.bundle; sourceTree = "<group>"; };
 		9729ECFE1DD5AF7200DB188D /* tp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tp.framework; path = ZoomSDK/tp.framework; sourceTree = "<group>"; };
-		9729ECFF1DD5AF7200DB188D /* Transcode.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Transcode.app; path = ZoomSDK/Transcode.app; sourceTree = "<group>"; };
 		9729ED001DD5AF7200DB188D /* util.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = util.framework; path = ZoomSDK/util.framework; sourceTree = "<group>"; };
 		9729ED011DD5AF7200DB188D /* viper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = viper.framework; path = ZoomSDK/viper.framework; sourceTree = "<group>"; };
 		9729ED021DD5AF7200DB188D /* xmpp_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xmpp_framework.framework; path = ZoomSDK/xmpp_framework.framework; sourceTree = "<group>"; };
@@ -187,6 +197,12 @@
 		971725F41D3F618A00D5C72D /* ZoomSDKSample */ = {
 			isa = PBXGroup;
 			children = (
+				970F79132178698500771BD6 /* ZoomSDKScheduleWindowCtr.h */,
+				970F79142178698600771BD6 /* ZoomSDKScheduleWindowCtr.m */,
+				970F79152178698600771BD6 /* ZoomSDKScheduleWindowCtr.xib */,
+				5D2B4A29215C81B100F66DC7 /* ZSDKSettingWindowController.h */,
+				5D2B4A2A215C81B100F66DC7 /* ZSDKSettingWindowController.m */,
+				5D2B4A2B215C81B100F66DC7 /* ZSDKSettingWindowController.xib */,
 				5DE85973213E6E9600B9E2B6 /* Localizable.strings */,
 				97569689212518AA00BC8C2D /* ShareContentView.h */,
 				97569687212518AA00BC8C2D /* ShareContentView.m */,
@@ -215,6 +231,7 @@
 		971C0DDA1D40964C0083AD9B /* Framworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DC47DDB2179B0D300172BBC /* SDK_Transcode.app */,
 				9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */,
 				970CBE301E36F24200B1D255 /* airhost.app */,
 				9729ECF31DD5AF7100DB188D /* annoter.bundle */,
@@ -228,7 +245,6 @@
 				9729ECFC1DD5AF7200DB188D /* protobuf.framework */,
 				9729ECFD1DD5AF7200DB188D /* ssb_sdk.bundle */,
 				9729ECFE1DD5AF7200DB188D /* tp.framework */,
-				9729ECFF1DD5AF7200DB188D /* Transcode.app */,
 				9729ED001DD5AF7200DB188D /* util.framework */,
 				9729ED011DD5AF7200DB188D /* viper.framework */,
 				9729ED021DD5AF7200DB188D /* xmpp_framework.framework */,
@@ -315,10 +331,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970F79172178698600771BD6 /* ZoomSDKScheduleWindowCtr.xib in Resources */,
 				5DE85975213E6E9600B9E2B6 /* Localizable.strings in Resources */,
 				972215FA1DD06C5100C74CE6 /* ZoomLogo.png in Resources */,
 				972215FB1DD06C5100C74CE6 /* Assets.xcassets in Resources */,
 				972215FC1DD06C5100C74CE6 /* MainMenu.xib in Resources */,
+				5D2B4A2D215C81B100F66DC7 /* ZSDKSettingWindowController.xib in Resources */,
 				972215FD1DD06C5100C74CE6 /* ZoomSDKWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2B4A2C215C81B100F66DC7 /* ZSDKSettingWindowController.m in Sources */,
 				971725FA1D3F618A00D5C72D /* main.m in Sources */,
+				970F79162178698600771BD6 /* ZoomSDKScheduleWindowCtr.m in Sources */,
 				971725F71D3F618A00D5C72D /* AppDelegate.m in Sources */,
 				9756968A212518AA00BC8C2D /* ShareContentView.m in Sources */,
 				97B35FAD1D76B549006ACC00 /* ZoomSDKWindowController.m in Sources */,

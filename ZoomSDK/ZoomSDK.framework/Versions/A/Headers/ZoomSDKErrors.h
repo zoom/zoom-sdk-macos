@@ -160,10 +160,8 @@ typedef enum{
  */
 typedef enum{
     MeetingSettingCmd_DualScreenMode,
-    MeetingSettingCmd_AutoJoinAudio,
     MeetingSettingCmd_AutoFitToWindowWhenViewShare,
     MeetingSettingCmd_AutoFullScreenWhenJoinMeeting,
-    MeetingSettingCmd_EnableAutoAdjustMic,
     MeetingSettingCmd_EnableMuteOnEntry,
     MeetingSettingCmd_EnablePlayChimeWhenEnterOrExit,
 }MeetingSettingCmd;
@@ -324,6 +322,10 @@ typedef enum {
     ZoomSDKMeetingStatus_InWaitingRoom      = 10,
     //for huawei
     ZoomSDKMeetingStatus_WaitExternalSessionKey =11,
+    //for webinar promote
+    ZoomSDKMeetingStatus_Webinar_Promote = 12,
+    //for webinar depromote
+    ZoomSDKMeetingStatus_Webinar_Depromote = 13,
 
 }ZoomSDKMeetingStatus;
 
@@ -340,6 +342,10 @@ typedef enum{
     ZoomSDKShareStatus_Pause,
     ZoomSDKShareStatus_Resume,
     ZoomSDKShareStatus_ContentTypeChange,
+    ZoomSDKShareStatus_SelfStartAudioShare,
+    ZoomSDKShareStatus_SelfStopAudioShare,
+    ZoomSDKShareStatus_OtherStartAudioShare,
+    ZoomSDKShareStatus_OtherStopAudioShare,
 }ZoomSDKShareStatus;
 
 /**
@@ -541,7 +547,10 @@ typedef enum
     ZoomSDKShareContentType_AIRHOST,	//mobile device from PC
     ZoomSDKShareContentType_CAMERA,	//camera share
     ZoomSDKShareContentType_DATA,	//data share
-    ZoomSDKShareContentType_WIRED_DEVICE //wired device, connect between Mac and iPhone
+    ZoomSDKShareContentType_WIRED_DEVICE, //wired device, connect between Mac and iPhone
+    ZoomSDKShareContentType_FRAME, //share a selected region area of desktop
+    ZoomSDKShareContentType_DOCUMENT, //share document
+    ZoomSDKShareContentType_COMPUTER_AUDIO //pure computer audio share, note: this type is different with
 }ZoomSDKShareContentType;
 
 /*
@@ -685,3 +694,46 @@ typedef enum{
     DirectShareStatus_NetworkError, // network error. Try again later
     DirectShareStatus_Unknow,
 }DirectShareStatus;
+
+typedef enum{
+    ScheduleMeetingAudioType_None = 0,
+    ScheduleMeetingAudioType_Telephone = 1,  //only use telephone
+    ScheduleMeetingAudioType_Voip = 1<<1, //only use computer audio
+    ScheduleMeetingAudioType_Both = 1<<2, //can use both computer audio and telephone
+    ScheduleMeetingAudioType_3rd= 1<<3, // use 3rd audio
+}ScheduleMeetingAudioType;
+
+typedef enum{
+    ScheduleMeetingRecordType_None =0,
+    ScheduleMeetingRecordType_Local = 1,
+    ScheduleMeetingRecordType_Cloud = 1<<1,
+}ScheduleMeetingRecordType;
+
+/**
+ @enum: Webinar need Register Type
+ **/
+typedef enum
+{
+    WebinarRegisterType_None,
+    WebinarRegisterType_URL,
+    WebinarRegisterType_Email,
+}WebinarRegisterType;
+
+
+typedef enum{
+    testMic_Normal = 0,
+    testMic_Recording,
+    testMic_RecrodingStoped,
+    testMic_Playing,
+}ZoomSDKTestMicStatus;
+
+typedef enum{
+    Device_Error_Unknow,
+    New_Device_Found,
+    Device_Error_Found,//need selected new one
+    No_Device,
+    Audio_No_Input,//can't detect the sound from microphone
+    Audio_Error_Be_Muted,//is muted, press Command+Shift+A to unmute
+    Device_List_Update,
+    Audio_Disconnect_As_Detected_Echo,
+}ZoomSDKDeviceStatus;

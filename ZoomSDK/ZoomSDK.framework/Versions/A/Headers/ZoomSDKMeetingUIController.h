@@ -7,10 +7,9 @@
 //
 @protocol ZoomSDKMeetingUIControllerDelegate <NSObject>
 /**
- * @brief Designated for Zoom Meeting notify the Invite button be clicked by user if u set showInviteButtonInToolbar =YES;
- * @param show, default show origin zoom invite window, if u don't want original action, u can set *show = N0, and do UI action yourself in this callback
+ * @brief Designated for Zoom Meeting notify the Invite button be clicked by user. Default show original zoom invite window, if u don't want original action, please set property _disableToolbarInviteButtonClickOriginAction = YES in ZoomSDKMeetingConfiguration.h and do UI action yourself in this callback.
  */
-- (void)onToolbarInviteButtonClick:(BOOL*)show;
+- (void)onToolbarInviteButtonClick;
 
 /**
  * @brief Designated for Zoom Meeting notify participants click leave meeting.

@@ -7,6 +7,7 @@
 //
 
 #import "ZoomSDKWindowController.h"
+#import "ZoomSDK.h"
 
 @interface ZoomSDKWindowController ()
 
@@ -27,6 +28,18 @@
     }
     return nil;
 }
+- (void)windowWillClose:(NSNotification *)notification
+{
+    if([self.window.title isEqualToString:@"Share Camera"])
+    {
+        ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+        ZoomSDKASController* asController = [meetingService getASController];
+        if(!asController)
+            return;
 
+        [asController stopShare];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowMeetingMainWindow" object:nil];
+    }
+}
 
 @end
