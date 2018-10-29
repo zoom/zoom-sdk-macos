@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2018-10-29
+
+* Support schedule meeting feature
+* Support custom live stream strings
+* Support to pair a non-active meeting to H323-mac
+* Support advanced share feature
+* Support webinar common feature
+* Support setting audio/video feature
+* Bug fixes 
+
 ## 2018-9-11
 
 * Support Direct share / Outlook plugin integration / Audio Share

@@ -39,7 +39,7 @@
  * @param pairResult tell user when the pair status changed.
  *
  */
-- (void) onPairCodeResult:(H323PairingResult)pairResult;
+- (void) onPairCodeResult:(H323PairingResult)pairResult MeetingNumber:(long long)meetingNum;
 @end
 
 

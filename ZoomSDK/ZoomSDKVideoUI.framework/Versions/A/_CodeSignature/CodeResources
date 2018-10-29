@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		6pBFCKir0cDlGm40qG8JpATW4LA=
+		y9CPHa4ew7CtKkZjwqE2QIyyL3g=
 		</data>
 		<key>Resources/LaunchPollWindow.nib</key>
 		<data>
@@ -22,15 +22,15 @@
 		</data>
 		<key>Resources/LeaveConfConfirmWindow.nib</key>
 		<data>
-		1k/u6K2isu/LeuKhF7pX98nXOZ0=
+		iTYMjOvCyLC+XpmKMfXp/MM96/g=
 		</data>
 		<key>Resources/PollProgressWindow.nib</key>
 		<data>
-		9sEAaVkCzUYBaaZbjJ1bYDneTI4=
+		sRb0U7LBEKg5lxEIkOYygA2t8SM=
 		</data>
 		<key>Resources/RemoteControlUserListForLion.nib</key>
 		<data>
-		NiHsV/IpKOP/QokqCvTcJWd4FEc=
+		QqzxBJo2X4B4v8z+4q5Vs/pVplU=
 		</data>
 		<key>Resources/ShareSelectWindow.nib</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Resources/ZMRemoteControlUserListWindowController.nib</key>
 		<data>
-		AMtSlNOIsN03N9qHQwemtWzcdVU=
+		rI42G02zeCMiI4fuycarni3ryw8=
 		</data>
 		<key>Resources/ZMRenameWindowController.nib</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Resources/ZoomSDKVideoUI.def</key>
 		<data>
-		VCLM1BULIzOALziD1TWUxMcY6Hk=
+		D4OVxiEaBr5376N2R4LnFA0Txoc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6pBFCKir0cDlGm40qG8JpATW4LA=
+			y9CPHa4ew7CtKkZjwqE2QIyyL3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			c4fnG1+cVzMPnfGJFDBlWswj+ZAFNk3z4uGwlocWV6s=
+			AD+NE6uiVYT19Dy96e51qbAT+dXH1r+6bSJh9PRb+DY=
 			</data>
 		</dict>
 		<key>Resources/LaunchPollWindow.nib</key>
@@ -210,33 +210,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1k/u6K2isu/LeuKhF7pX98nXOZ0=
+			iTYMjOvCyLC+XpmKMfXp/MM96/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			AriL2NU4Nvj1dhcp3+f/2P9Xgp9nVXRR3CizHfzAigY=
+			+hVJ/pwj5HxV+8ciC7cLcsin9rYwFfKweORQawlALcU=
 			</data>
 		</dict>
 		<key>Resources/PollProgressWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9sEAaVkCzUYBaaZbjJ1bYDneTI4=
+			sRb0U7LBEKg5lxEIkOYygA2t8SM=
 			</data>
 			<key>hash2</key>
 			<data>
-			mbvQGDCsufO2J7ttEtY8ACXMbnEyRQAEBm10/N2CNXc=
+			J6xDjyWv9TMZXgElgSi+SW6WfFWhXjfz9rIHeDPjreA=
 			</data>
 		</dict>
 		<key>Resources/RemoteControlUserListForLion.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NiHsV/IpKOP/QokqCvTcJWd4FEc=
+			QqzxBJo2X4B4v8z+4q5Vs/pVplU=
 			</data>
 			<key>hash2</key>
 			<data>
-			H93xBMIcCqCIbh/ShxJQhsQ1A7FcxY4jvoqAavKUJl4=
+			hNDO+dUrC9fcILpJaIGGxjeSCEgG2fB/+uS/BqY3nbo=
 			</data>
 		</dict>
 		<key>Resources/ShareSelectWindow.nib</key>
@@ -441,11 +441,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AMtSlNOIsN03N9qHQwemtWzcdVU=
+			rI42G02zeCMiI4fuycarni3ryw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Msdz8Ql2rRAhy007no51fM8Ujy0AxsP4D908khOkTSs=
+			12YypKgqzJ6vCbuFLdhamB6gJmG6NV+37x4N/iJ8bW4=
 			</data>
 		</dict>
 		<key>Resources/ZMRenameWindowController.nib</key>
@@ -551,11 +551,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VCLM1BULIzOALziD1TWUxMcY6Hk=
+			D4OVxiEaBr5376N2R4LnFA0Txoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			wcLhJyf+RuK3mqjmN6jFTiTS038hiwgjGXA6ROzXvSk=
+			Qv1ugrP5cecO2D6lqDHkiwWPouU1JlM3pTHhcYyHrr0=
 			</data>
 		</dict>
 	</dict>

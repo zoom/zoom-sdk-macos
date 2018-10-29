@@ -46,7 +46,7 @@
 }
 - (ZoomSDKShareContentType) getShareType;
 /**
- * @brief Designated for get share window ID when meeting is sharing whiteboard or application.
+ * @brief Designated for get share window ID when meeting is sharing application.
  * @param windowID: A pointer of CGWindowID, if function call successfully it will return the shared app window id.
  */
 - (ZoomSDKError)getWindowID:(CGWindowID*)windowID;
@@ -215,6 +215,53 @@
  * @brief This method is used to clean up ascontroller
  */
 - (void)cleanUp;
+
+/**
+ * @brief This method is used to start share whiteboard.
+ * @return A ZoomSDKError to tell client whether start whiteboard share successful or not.
+ */
+- (ZoomSDKError)startWhiteBoardShare;
+
+/**
+ * @brief This method is used to start share part frame of screen.
+ * @return A ZoomSDKError to tell client whether start frame share successful or not.
+ */
+- (ZoomSDKError)startFrameShare;
+
+/**
+ * @brief This method is used to start share audio.
+ * @return A ZoomSDKError to tell client whether start audio share successful or not.
+ */
+- (ZoomSDKError)startAudioShare;
+
+/**
+ * @brief This method is used to share camera.
+ * @param deviceID, the camera's device ID.
+ * @param window, which window u want to show camera content. if use zoom ui, set window param to be nil.
+ * @return A ZoomSDKError to tell client whether share camera successful or not.
+ */
+- (ZoomSDKError)startShareCamera:(NSString*)deviceID displayWindow:(NSWindow*)window;
+
+/**
+ * @brief This method is used to judge whether user self can start share whiteboard or not.
+ * @return A BOOL to tell client can share whiteboard or not.
+ */
+- (BOOL)isAbleToShareWhiteBoard;
+/**
+ * @brief This method is used to judge whether user self can start share frame or not.
+ * @return A BOOL to tell client can share frame or not.
+ */
+- (BOOL)isAbleToShareFrame;
+/**
+ * @brief This method is used to judge whether user self can start share computer audio or not.
+ * @return A BOOL to tell client can share computer audio or not.
+ */
+- (BOOL)isAbleToShareComputerAudio;
+/**
+ * @brief This method is used to judge whether user self can start share camera or not.
+ * @return A BOOL to tell client can share camera or not.
+ */
+- (BOOL)isAbleToShareCamera;
 @end
 
 

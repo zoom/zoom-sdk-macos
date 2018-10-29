@@ -9,20 +9,27 @@
 #import "AppDelegate.h"
 #import "ZoomSDKWindowController.h"
 #import "ShareContentView.h"
-#import <time.h>
-#define kZoomSDKDomain      @"https://dev.zoom.us"
-#define kZoomSDKAppKey      @"EMXjNaKjSkZzHFmmwM50X6NW6InkYumpf3rK"
-#define kZoomSDKAppSecret   @"jBv7wMcOQbmfWGMp4G9tcGkpLncuZiCoidSl"
+#import "ZoomSDKScheduleWindowCtr.h"
 
+#import <time.h>
+#import "ZoomSDKWebinarController.h"
+
+#define kZoomSDKDomain      @"https://www.zoom.us"
+//#define kZoomSDKAppKey      @"EMXjNaKjSkZzHFmmwM50X6NW6InkYumpf3rK"
+//#define kZoomSDKAppSecret   @"jBv7wMcOQbmfWGMp4G9tcGkpLncuZiCoidSl"
 //for IBM test
-//#define kZoomSDKAppKey      @"S8BRYbBoy5jYOCEO4eE1BJQW6RK4qcY6aJMs"
-//#define kZoomSDKAppSecret   @"rjPqyfIVTe7yoV7emCucS3Lwc0B9YLnwwKky"
+#define kZoomSDKAppKey      @"S8BRYbBoy5jYOCEO4eE1BJQW6RK4qcY6aJMs"
+#define kZoomSDKAppSecret   @"rjPqyfIVTe7yoV7emCucS3Lwc0B9YLnwwKky"
+
+//#define kZoomSDKAppKey      @"kCbuCejBQrSuMYANeNDNvw"
+//#define kZoomSDKAppSecret   @"QZIp3ruajiRUVPlLxZM6q8Nh2yiUOy2I1ncN"
 @interface AppDelegate ()
 - (void) switchToZoomUserTab;
 - (void) switchToMeetingTab;
 @end
 
 @implementation AppDelegate
+@synthesize sdkSettingWindowController = _sdkSettingWindowController;
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
@@ -65,7 +72,7 @@
     _hasLogined = NO;
     _selectDeviceType = H323DeviceType_H323;
     _screenType = ScreenType_First;
-    [[ZoomSDK sharedSDK]initSDK:NO];
+    [[ZoomSDK sharedSDK]initSDK:YES];
     ZoomSDKNetworkService* networkService = [[ZoomSDK sharedSDK] getNetworkService];
     networkService.delegate = self;
     //video window init
@@ -79,7 +86,33 @@
     [_shareCtrl.window setTitle:@"Share Window"];
     [_shareCtrl.window orderOut:nil];
     _wndCtrl.window.delegate = self;
+    
+    [self initUI];
+    [self initNotification];
 }
+- (void)initUI
+{
+    [_WebinarControlButton setEnabled:NO];
+    [_settingMenuItem setHidden:YES];
+}
+-  (void)initService
+{
+    ZoomSDKMeetingService *meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    meetingService.delegate = self;
+    ZoomSDKWebinarController *webinarController = [meetingService getWebinarController];
+    webinarController.delegate = self;
+    ZoomSDKWaitingRoomController* waitController = [meetingService getWaitingRoomController];
+    waitController.delegate = self;
+    
+    ZoomSDKMeetingActionController* actionCtr = [meetingService getMeetingActionController];
+    actionCtr.delegate = self;
+    
+    ZoomSDKMeetingUIController* uiController = [meetingService getMeetingUIController];
+    uiController.delegate = self;
+    
+    _sdkSettingWindowController = [[ZSDKSettingWindowController alloc] init];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     signal(SIGPIPE, processSignal);
 }
@@ -94,7 +127,33 @@
     [_shareCtrl release];
     _wndCtrl = nil;
     _shareCtrl = nil;
+    if (_scheduleEditWindow) {
+        [_scheduleEditWindow release];
+        _scheduleEditWindow = nil;
+    }
+    if(_sdkSettingWindowController)
+    {
+        [_sdkSettingWindowController cleanUp];
+        [_sdkSettingWindowController release];
+        _sdkSettingWindowController = nil;
+    }
+    if(_shareCameraWindowCtrl)
+    {
+        [_shareCameraWindowCtrl release];
+        _shareCameraWindowCtrl = nil;
+    }
+    [self uninitNotification];
 }
+- (void)uninitNotification
+{
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc removeObserver:self];
+}
+-(void)initNotification
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showMeetingMainWindow) name:@"ShowMeetingMainWindow" object:nil];
+}
+
 //for pipe error
 void processSignal(int num)
 {
@@ -327,7 +386,7 @@ void processSignal(int num)
 {
     //Test customized UI
     [_wndCtrl.window makeKeyAndOrderFront:nil];
-    [self drawUserVideoView];
+    [self drawPreviewVideoView];
     ZoomSDKAuthService* authService = [[ZoomSDK sharedSDK] getAuthService];
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     ZoomSDKMeetingConfiguration* config = [meetingService getMeetingConfiguration];
@@ -350,7 +409,6 @@ void processSignal(int num)
     {
     [setting enableMeetingSetting:NO SettingCmd:MeetingSettingCmd_AutoFitToWindowWhenViewShare];
     [setting enableMeetingSetting:NO SettingCmd:MeetingSettingCmd_AutoFullScreenWhenJoinMeeting];
-    [setting enableMeetingSetting:YES SettingCmd:MeetingSettingCmd_AutoJoinAudio];
     [setting enableMeetingSetting:YES SettingCmd:MeetingSettingCmd_DualScreenMode];
     [setting setCustomInviteURL:@"Hello TOTTI"];
         //[setting hideSettingComponent:SettingComponent_AdvancedFeatureButton hide:YES];
@@ -372,7 +430,7 @@ void processSignal(int num)
              uiController.delegate = self;
              if (_hasLogined) {
                  //for zoom user
-                 ret = [meetingService startMeeting:ZoomSDKUserType_ZoomUser userID:nil userToken:nil displayName:nil meetingNumber:[_startMeetingNum stringValue]  isDirectShare:NO sharedApp:0 isVideoOff:YES isAuidoOff:NO vanityID:@"francescototti"];
+                 ret = [meetingService startMeeting:ZoomSDKUserType_ZoomUser userID:nil userToken:nil displayName:nil meetingNumber:[_startMeetingNum stringValue]  isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
              }else{
                  //for api user
                  ret =[meetingService startMeeting:ZoomSDKUserType_APIUser userID:[_sdkUserID stringValue] userToken:[_sdkUserToken stringValue] displayName:[_startUserName stringValue] meetingNumber:[_startMeetingNum stringValue] isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:@"francescototti"];
@@ -430,13 +488,13 @@ void processSignal(int num)
     config.enableMuteOnEntry = YES;
     config.disablePopupWrongPasswordWindow = YES;
     config.disableDoubleClickToFullScreen = YES;
-    config.needPrefillWebinarJoinInfo = YES;
-    [config prefillWebinarUserName:[_joinUserName stringValue] Email:@"t@t.com"];
+    config.needPrefillWebinarJoinInfo = NO;
+    //[config prefillWebinarUserName:[_joinUserName stringValue] Email:@"t@t.com"];
     ZoomSDKError ret = ZoomSDKError_UnKnow;
     if(meetingService)
     {
         if ([authService isAuthorized])
-        {   meetingService.delegate = self;
+        {
             if (_hasLogined) {
                 ret =[meetingService joinMeeting:ZoomSDKUserType_ZoomUser toke4enfrocelogin:nil webinarToken:nil  participantId:@"10" meetingNumber:[_joinMeetingNum stringValue] displayName:[_joinUserName stringValue] password:@"" isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
             }else{
@@ -875,6 +933,7 @@ void processSignal(int num)
 - (void)onZoomSDKAuthReturn:(ZoomSDKAuthError)returnValue
 {
     NSLog(@"onZoomSDKAuthReturn %d", returnValue);
+    [self initService];
     if(returnValue == ZoomSDKAuthError_Success)
     {
         ZoomSDKSettingService* setService = [[ZoomSDK sharedSDK] getSettingService];
@@ -900,6 +959,7 @@ void processSignal(int num)
         [config hideSDKButtons:YES ButtonType:ToolBarInviteButton];
         [config modifyWindowTitle:YES NewMeetingNum:0];
         config.disableEndOtherMeetingAlert = YES;
+        [_settingMenuItem setHidden:NO];
     }else{
         [self switchToWelcomeTab];
         [_authResultFieldWelcome setHidden:NO];
@@ -907,6 +967,31 @@ void processSignal(int num)
     }
 
     
+}
+-(void)drawPreviewVideoView //when start meeting call drawPreviewVideoView, join meeting don't
+{
+    previewElement = [[ZoomSDKPreViewVideoElement alloc] initWithFrame:NSMakeRect(0, 0, 320, 240)];
+    ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+    [videoContainer createVideoElement:&previewElement];
+    [_wndCtrl.window.contentView addSubview:[previewElement getVideoView] positioned:NSWindowAbove relativeTo:nil];
+}
+-(void)drawUsersVideoView
+{
+    newUserVideo1 = [[ZoomSDKNormalVideoElement alloc] initWithFrame:NSMakeRect(0, 0, 320, 240)];
+    newUserVideo2 = [[ZoomSDKNormalVideoElement alloc] initWithFrame:NSMakeRect(0, 240, 320, 240)];
+    newUserVideo3 = [[ZoomSDKNormalVideoElement alloc] initWithFrame:NSMakeRect(0, 480, 320, 240)];
+    activeUserVideo = [[ZoomSDKActiveVideoElement alloc] initWithFrame:NSMakeRect(320,0,960,720)];
+    
+    ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+    [videoContainer createVideoElement:&newUserVideo1];
+    [videoContainer createVideoElement:&newUserVideo2];
+    [videoContainer createVideoElement:&newUserVideo3];
+   // [videoContainer createVideoElement:&activeUserVideo];
+    [_wndCtrl.window.contentView addSubview:[newUserVideo1 getVideoView]];
+    [_wndCtrl.window.contentView addSubview:[newUserVideo2 getVideoView]];
+    [_wndCtrl.window.contentView addSubview:[newUserVideo3 getVideoView]];
+   //[_wndCtrl.window.contentView addSubview:[activeUserVideo getVideoView]];
+    [_wndCtrl showWindow:nil];
 }
 
 - (void)onZoomSDKLogin:(ZoomSDKLoginStatus)loginStatus failReason:(NSString *)reason
@@ -1012,9 +1097,11 @@ void processSignal(int num)
         case ZoomSDKMeetingStatus_Connecting:
         {
             //test new sdk preview
-            [videoContainer createVideoElement:&previewElement];
-            [_wndCtrl.window.contentView addSubview:[previewElement getVideoView] positioned:NSWindowAbove relativeTo:nil];
-            [previewElement startPreview:YES];
+            /*[videoContainer createVideoElement:&previewElement];
+            [_wndCtrl.window.contentView addSubview:[previewElement getVideoView] positioned:NSWindowAbove relativeTo:nil];*/
+            if(previewElement)
+                [previewElement startPreview:YES];
+            [self drawUsersVideoView];
            // [_wndCtrl.window.contentView setNeedsDisplay:YES];
         }
             break;
@@ -1047,6 +1134,7 @@ void processSignal(int num)
             [_videoContainerButton setEnabled:YES];
             [_participantsButton setEnabled:YES];
             [_multiShareButton setEnabled:YES];
+            [_WebinarControlButton setEnabled:YES];
             //[meetingService actionMeetingWithCmd:ActionMeetingCmd_MuteVideo userID:0];
              //move main video
              ZoomSDKMeetingUIController* UIController = [meetingService getMeetingUIController];
@@ -1077,14 +1165,29 @@ void processSignal(int num)
             rchelper.delegate = self;
             ZoomSDKMeetingRecordController* recordCtrl = [meetingService getRecordController];
             recordCtrl.delegate =self;
-            
+            [self updateWebinarUI];
         }
-        break;
+            break;
+        case ZoomSDKMeetingStatus_Webinar_Promote:
+        {
+            NSLog(@"my role is changed to panelist!");
+            if([_sdkSettingWindowController.window isVisible])
+                [_sdkSettingWindowController close];
+        }
+            break;
+        case ZoomSDKMeetingStatus_Webinar_Depromote:
+        {
+            NSLog(@"my role is changed to attendee!");
+            if([_sdkSettingWindowController.window isVisible])
+                [_sdkSettingWindowController close];
+        }
+            break;
+
         case ZoomSDKMeetingStatus_AudioReady:
         {
          
         }
-        break;
+            break;
         case ZoomSDKMeetingStatus_Failed:
         {
             if (error == ZoomSDKMeetingError_PasswordError) {
@@ -1095,7 +1198,7 @@ void processSignal(int num)
         case ZoomSDKMeetingStatus_Ended:
         {
             
-            if(newUserVideo1)
+           if(newUserVideo1)
             {
                 [videoContainer cleanVideoElement:newUserVideo1];
                 NSView* videoview = [newUserVideo1 getVideoView];
@@ -1150,6 +1253,9 @@ void processSignal(int num)
                 default:
                     break;
             }
+            if([_sdkSettingWindowController.window isVisible])
+                [_sdkSettingWindowController close];
+            //[self joinMeeting:nil];
         }
         default:
         {
@@ -1165,6 +1271,7 @@ void processSignal(int num)
             [_videoContainerButton setEnabled:NO];
             [_participantsButton setEnabled:NO];
             [_multiShareButton setEnabled:NO];
+            [_WebinarControlButton setEnabled:NO];
         }
         break;
     }
@@ -1247,6 +1354,7 @@ void processSignal(int num)
         ZoomSDKUserInfo* userInfo = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getUserByUserID:user];
         NSLog(@"New user join, userid: %d, %@", user, [userInfo getUserName]);
     }
+    [self updateWebinarUI];
 }
 
 - (void)onRecord2MP4Progressing:(int)percentage
@@ -1313,20 +1421,26 @@ void processSignal(int num)
 {
     [_preMeetingError setHidden:YES];
     [_listMeetingError setHidden:YES];
-    NSDate* now = [NSDate date];
+    if (_scheduleEditWindow) {
+        [_scheduleEditWindow release];
+        _scheduleEditWindow = nil;
+    }
+    if ([_scheduleEditWindow.window isVisible]) {
+        [_scheduleEditWindow close];
+    }
+    if (_scheduleEditWindow) {
+        [_scheduleEditWindow release];
+        _scheduleEditWindow = nil;
+    }
+    _scheduleEditWindow = [[ZoomSDKScheduleWindowCtr alloc] initWithUniqueID:0];
+    [_scheduleEditWindow.window makeKeyAndOrderFront:nil];
+   /* NSDate* now = [NSDate date];
     NSDate* startDate = [self getMeetingStartDateFromDate:now];
     time_t startTime  = (long)[startDate timeIntervalSince1970];
     ZoomSDKPremeetingService* premeetingService = [[ZoomSDK sharedSDK] getPremeetingService];
     ZoomSDKScheduleMeetingItem* scheduleItem = [[[ZoomSDKScheduleMeetingItem alloc]init] autorelease];
-    scheduleItem.meetingStartTime = startTime;
-    scheduleItem.meetingTopic = [_meetingTopic stringValue];
-    scheduleItem.meetingDuration = [[_meetingDuration stringValue] intValue];
-    scheduleItem.meetingPassword = [_meetingPassword stringValue];
-    scheduleItem.usePMI = ([_usePMI state] == NSOnState)? YES:NO;
-    scheduleItem.joinBeforeHost = ([_joinBeforeHost state] == NSOnState)? YES:NO;
-    scheduleItem.turnOffVideoForAttendee = ([_turnOffVideoForAttende state] == NSOnState)? YES:NO;
-    scheduleItem.turnOffVideoForHost = ([_turnOffVideoForHost state] == NSOnState)? YES:NO;
-    [premeetingService  scheduleMeeting:scheduleItem];
+    */
+    
 }
 -(IBAction)deleteMeeting:(id)sender
 {
@@ -1339,21 +1453,15 @@ void processSignal(int num)
 {
     [_preMeetingError setHidden:YES];
     [_listMeetingError setHidden:YES];
-    NSDate* now = [NSDate date];
-    NSDate* startDate = [self getMeetingStartDateFromDate:now];
-    time_t startTime  = (long)[startDate timeIntervalSince1970];
-    ZoomSDKPremeetingService* premeetingService = [[ZoomSDK sharedSDK] getPremeetingService];
-    ZoomSDKScheduleMeetingItem* scheduleItem = [[[ZoomSDKScheduleMeetingItem alloc]init] autorelease];
-    scheduleItem.meetingStartTime = startTime;
-    scheduleItem.meetingTopic = [_meetingTopic stringValue];
-    scheduleItem.meetingDuration = [[_meetingDuration stringValue] intValue];
-    scheduleItem.meetingPassword = [_meetingPassword stringValue];
-    scheduleItem.usePMI = ([_usePMI state] == NSOnState)? YES:NO;
-    scheduleItem.joinBeforeHost = ([_joinBeforeHost state] == NSOnState)? YES:NO;
-    scheduleItem.turnOffVideoForAttendee = ([_turnOffVideoForAttende state] == NSOnState)? YES:NO;
-    scheduleItem.turnOffVideoForHost = ([_turnOffVideoForHost state] == NSOnState)? YES:NO;
-    [premeetingService editMeeting:scheduleItem MeetingUniqueID:[[_meetingNumber stringValue] longLongValue]];
-
+    if ([_scheduleEditWindow.window isVisible]) {
+        [_scheduleEditWindow close];
+    }
+    if (_scheduleEditWindow) {
+        [_scheduleEditWindow release];
+        _scheduleEditWindow = nil;
+    }
+    _scheduleEditWindow = [[ZoomSDKScheduleWindowCtr alloc] initWithUniqueID:_meetingNumber.stringValue.longLongValue];
+    [_scheduleEditWindow.window makeKeyAndOrderFront:nil];
 }
 -(IBAction)listMeeting:(id)sender
 {
@@ -1408,12 +1516,13 @@ void processSignal(int num)
         int index = 1;
         for(ZoomSDKMeetingItem* item in meetingList)
         {
-            time_t startTime = item.getMeetingStartTime;
-            NSString* topic = item.getMeetingTopic;
-            NSString* password = item.getMeetingPassword;
-            time_t duration = item.getMeetingDuration;
-            long long meetingNumber = item.getMeetingUniqueID;
             
+            time_t startTime = [[item getDateOption] getMeetingStartTime];
+            NSString* topic = [[item getConfigOption] getMeetingTopic];
+            NSString* password = [[item getConfigOption] getMeetingPassword];
+            time_t duration = [[item getDateOption] getMeetingDuration];
+            long long meetingNumber = [item getMeetingUniqueID];
+        
             struct tm timeStruct;
             localtime_r(&startTime, &timeStruct);
             char buffer[20];
@@ -1428,7 +1537,6 @@ void processSignal(int num)
         [_meetingListContent setString:meetingListContent];
         [_listMeetingError setStringValue:@"List Meeting Success"];
     }else{
-       
         [_listMeetingError setStringValue:[NSString stringWithFormat:@"List Meeting Error, Error Code:%d", error]];
     }
 }
@@ -1735,10 +1843,9 @@ void processSignal(int num)
     _shareStatusMsgView.string = info;
 }
 
-- (void)onToolbarInviteButtonClick:(BOOL*)show
+- (void)onToolbarInviteButtonClick
 {
     NSLog(@"Invite Button Clicked by User, Do something!!!");
-    //*show = NO;
 }
 
 
@@ -1783,12 +1890,14 @@ void processSignal(int num)
 {
     NSString* statusInfo = [NSString stringWithFormat:@"%d, %@", userid,@"Join Waiting Room"];
     [_waitingRoomStatusInfo setString:statusInfo];
+    [self updateWebinarUI];
 }
 
 -(void)onUserLeftWaitingRoom:(unsigned int)userid
 {
     NSString* statusInfo = [NSString stringWithFormat:@"%d, %@", userid,@"Left Waiting Room"];
     [_waitingRoomStatusInfo setString:statusInfo];
+    [self updateWebinarUI];
 }
 
 //Phone Call Out
@@ -1932,33 +2041,15 @@ void processSignal(int num)
 
 #pragma mark - new sdk feature
 
--(void)drawUserVideoView
-{
-    previewElement = [[ZoomSDKPreViewVideoElement alloc] initWithFrame:NSMakeRect(0, 0, 320, 240)];
-    newUserVideo1 = [[ZoomSDKNormalVideoElement alloc] initWithFrame:NSMakeRect(0, 0, 320, 240)];
-    newUserVideo2 = [[ZoomSDKNormalVideoElement alloc] initWithFrame:NSMakeRect(0, 240, 320, 240)];
-    newUserVideo3 = [[ZoomSDKNormalVideoElement alloc] initWithFrame:NSMakeRect(0, 480, 320, 240)];
-    activeUserVideo = [[ZoomSDKActiveVideoElement alloc] initWithFrame:NSMakeRect(320,0,960,720)];
-    ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
-    NSString* meetingNum = [[[ZoomSDK sharedSDK] getMeetingService] getMeetingProperty:MeetingPropertyCmd_MeetingNumber];
-    NSLog(@"Meeting Number:%@", meetingNum);
-    [videoContainer createVideoElement:&newUserVideo1];
-    [videoContainer createVideoElement:&newUserVideo2];
-    [videoContainer createVideoElement:&newUserVideo3];
-    [videoContainer createVideoElement:&activeUserVideo];
-    [_wndCtrl.window.contentView addSubview:[newUserVideo1 getVideoView]];
-    [_wndCtrl.window.contentView addSubview:[newUserVideo2 getVideoView]];
-    [_wndCtrl.window.contentView addSubview:[newUserVideo3 getVideoView]];
-    [_wndCtrl.window.contentView addSubview:[activeUserVideo getVideoView]];
-    [_wndCtrl showWindow:nil];
-    
-}
-
 - (void)onVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID
 {
     ZoomSDKUserInfo* userInfo = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getUserByUserID:userID];
-    if ([userInfo isMySelf]) {
-        newUserVideo1.userid = userID;
+    /*if ([userInfo isMySelf]) {
+        //newUserVideo1.userid = userID; */
+        
+    if(newUserVideo1.userid == 0 || newUserVideo1.userid == userID)
+    {
+         newUserVideo1.userid = userID;
     }else if(newUserVideo2.userid == 0 || newUserVideo2.userid == userID)
     {
         newUserVideo2.userid = userID;
@@ -1973,31 +2064,39 @@ void processSignal(int num)
 
 - (IBAction)subscribeUser:(id)sender
 {
-    if([_selectedVideoUser.stringValue isEqualToString:@"1"])
+    if([_joinUserName.stringValue isEqualToString:@"1"])
         [newUserVideo1 subscribeVideo:YES];
-    else
+    else if([_joinUserName.stringValue isEqualToString:@"2"])
         [newUserVideo2 subscribeVideo:YES];
+    else
+        [newUserVideo3 subscribeVideo:YES];
 }
 - (IBAction)unSubscribeUser:(id)sender
 {
-    if([_selectedVideoUser.stringValue isEqualToString:@"1"])
+    if([_joinUserName.stringValue isEqualToString:@"1"])
         [newUserVideo1 subscribeVideo:NO];
-    else
+    else if([_joinUserName.stringValue isEqualToString:@"2"])
         [newUserVideo2 subscribeVideo:NO];
+    else
+        [newUserVideo3 subscribeVideo:NO];
 }
 - (IBAction)hideVideoRender:(id)sender
 {
-    if([_selectedVideoUser.stringValue isEqualToString:@"1"])
-        [newUserVideo1 showVideo:NO];
+    if([_joinUserName.stringValue isEqualToString:@"1"])
+         [newUserVideo1 showVideo:NO];
+    else if([_joinUserName.stringValue isEqualToString:@"2"])
+         [newUserVideo2 showVideo:NO];
     else
-        [newUserVideo2 showVideo:NO];
+        [newUserVideo3 showVideo:NO];
 }
 - (IBAction)showVideoRender:(id)sender
 {
-    if([_selectedVideoUser.stringValue isEqualToString:@"1"])
+    if([_joinUserName.stringValue isEqualToString:@"1"])
         [newUserVideo1 showVideo:YES];
-    else
+    else if([_joinUserName.stringValue isEqualToString:@"2"])
         [newUserVideo2 showVideo:YES];
+    else
+        [newUserVideo3 showVideo:YES];
 }
 
 - (IBAction)viewNewShare:(id)sender
@@ -2128,5 +2227,361 @@ void processSignal(int num)
     {
         _dsHandler = handler;
     }
+}
+
+-(void)onUserLeft:(NSArray *)array
+{
+    [self updateWebinarUI];
+    ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+    if([array count] > 0)
+    {
+        for (NSNumber* userid in array) {
+            unsigned int user = [userid unsignedIntValue];
+            if(newUserVideo1.userid == user)
+            {
+                [videoContainer cleanVideoElement:newUserVideo1];
+                NSView* videoview = [newUserVideo1 getVideoView];
+                [videoview removeFromSuperview];
+                [newUserVideo1 release];
+                newUserVideo1 = nil;
+            }
+            if(newUserVideo2.userid == user)
+            {
+                [videoContainer cleanVideoElement:newUserVideo2];
+                NSView* videoview = [newUserVideo2 getVideoView];
+                [videoview removeFromSuperview];
+                [newUserVideo2 release];
+                newUserVideo2 = nil;
+            }
+            if(newUserVideo3.userid == user)
+            {
+                [videoContainer cleanVideoElement:newUserVideo3];
+                NSView* videoview = [newUserVideo3 getVideoView];
+                [videoview removeFromSuperview];
+                [newUserVideo3 release];
+                newUserVideo3 = nil;
+            }
+        }
+    }
+}
+
+- (ZoomSDKError)onWebinarNeedRegisterResponse:(ZoomSDKWebinarRegisterHelper*)webinarRegisterHelper
+{
+    NSLog(@"[AppDelegat onWebinarNeedRegisterResponse:]");
+    WebinarRegisterType type = [webinarRegisterHelper getWebinarRegisterType];
+    if(![[ZoomSDK sharedSDK] needCustomizedUI])
+        return ZoomSDKError_Failed;
+    if(WebinarRegisterType_URL == type)
+    {
+        NSURL* url = [webinarRegisterHelper getWebinarRegisterURL];
+        if(url)
+            NSLog(@"%@", url);
+        [[NSWorkspace sharedWorkspace] openURL:url];
+        return ZoomSDKError_Success;
+    }
+    else if(WebinarRegisterType_Email == type)
+    {
+        NSString* email = @"deraintest@zoom.us";
+        NSString* displayName = @"test Webinar Register";
+        [webinarRegisterHelper inputEmail:email screenName:displayName];
+        return ZoomSDKError_Success;
+    }
+    return ZoomSDKError_Failed;
+}
+-(void)updateWebinarUI
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    if (!meetingService) {
+        return;
+    }
+    [_promoteAttendee2Panelist setEnabled:NO];
+    [_depromotePanelist2Attendee setEnabled:NO];
+    [_allowAttendeeTalk setEnabled:NO];
+    [_disallowAttendeeTalk setEnabled:NO];
+    [_allowPanelistStartVideo setEnabled:NO];
+    [_disallowPanelistStartVideo setEnabled:NO];
+    [_allowAttendeeChat setEnabled:NO];
+    [_disallowAttendeeChat setEnabled:NO];
+    
+    if(MeetingType_Webinar == [meetingService getMeetingType])
+    {
+        [_tabView selectTabViewItemWithIdentifier:@"WebinarContainer"];
+        ZoomSDKWebinarController *webinarController = [meetingService getWebinarController];
+        webinarController.delegate = self;
+        
+        NSString* listInfo = @"";
+        NSArray* userlist = [[meetingService getMeetingActionController] getParticipantsList];
+        ZoomSDKUserInfo *myself = nil;
+        for (NSNumber*user in userlist)
+        {
+            NSLog(@"user list:%d", [user unsignedIntValue]);
+            ZoomSDKUserInfo* userInfo = [[meetingService getMeetingActionController] getUserByUserID:[user unsignedIntValue]];
+            
+            NSString* userName = [userInfo getUserName];
+            NSString* userString = [NSString stringWithFormat:@"%@   %u   %C", userName, [userInfo getUserID], (unichar)NSParagraphSeparatorCharacter];
+            listInfo = [listInfo stringByAppendingString:userString];
+            if([userInfo isMySelf])
+                myself = userInfo;
+            if ([userInfo isHost] && [userInfo isMySelf])
+            {
+                [_promoteAttendee2Panelist setEnabled:YES];
+                [_depromotePanelist2Attendee setEnabled:YES];
+                [_allowAttendeeTalk setEnabled:YES];
+                [_disallowAttendeeTalk setEnabled:YES];
+                [_allowPanelistStartVideo setEnabled:YES];
+                [_disallowPanelistStartVideo setEnabled:YES];
+                [_allowAttendeeChat setEnabled:YES];
+                [_disallowAttendeeChat setEnabled:YES];
+            }
+        }
+        _panelistListView.string = listInfo;
+        [_panelistListView setEditable:NO];
+        NSArray* attendeelist = [webinarController getAttendeeList];
+        NSString* attendeeListInfo = @"";
+        for (int i=0;i< attendeelist.count;i++)
+        {
+            NSNumber* userNum = [attendeelist objectAtIndex:i];
+            ZoomSDKUserInfo* userInfo = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getUserByUserID:[userNum unsignedIntValue]];
+            NSString* userName = [userInfo getUserName];
+            NSString* userString = [NSString stringWithFormat:@"%@   %@   %C", userName, [userNum stringValue], (unichar)NSParagraphSeparatorCharacter];
+            attendeeListInfo = [attendeeListInfo stringByAppendingString:userString];
+            
+        }
+        _attendeeListView.string = attendeeListInfo;
+        [_attendeeListView setEditable:NO];
+        NSLog(@"_attendeeListView: %@", _attendeeListView.string);
+        
+        ZoomSDKWaitingRoomController* waitController = [meetingService getWaitingRoomController];
+        waitController.delegate = self;
+        NSArray* waitUserArray = [waitController getWaitRoomUserList];
+        
+        NSString* userString = @"";
+        for (int i=0;i< waitUserArray.count;i++) {
+            NSNumber* userNum = [waitUserArray objectAtIndex:i];
+            ZoomSDKUserInfo* userInfo = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getUserByUserID:[userNum unsignedIntValue]];
+            NSString* userName = [userInfo getUserName];
+            userString = [userString stringByAppendingString:[NSString stringWithFormat:@"%@   %@   %C", userName, [userNum stringValue], (unichar)NSParagraphSeparatorCharacter]];
+        }
+        _waitingRoomListView.string = userString;
+        [_waitingRoomListView setEditable:NO];
+        NSLog(@"_waitingRoomListView: %@", _waitingRoomListView.string);
+        
+        [_isSupportAttendeeTalk setState:[[webinarController getZoomSDKWebinarMeetingStatus] isSupportAttendeeTalk]];
+        [_isAllowAttendeeChat setState:[[webinarController getZoomSDKWebinarMeetingStatus] isAllowAttendeeChat]];
+        [_isAllowPanelistStartVideo setState:[[webinarController getZoomSDKWebinarMeetingStatus] isAllowPanellistStartVideo]];
+        [_isSupportAttendeeTalk setEnabled:NO];
+        [_isAllowAttendeeChat setEnabled:NO];
+        [_isAllowPanelistStartVideo setEnabled:NO];
+        
+        if(myself && (UserRole_Attendee == [myself getUserRole]))
+        {
+            _panelistListView.string = @"Attendee can't get user list";
+            _attendeeListView.string = @"Attendee can't get attendee list";
+            _waitingRoomListView.string = @"Attendee can't get waiting list";
+        }
+    }
+}
+-(IBAction)navigatorToWebinarControTab:(id)sender
+{
+    [_tabView selectTabViewItemWithIdentifier:@"WebinarContainer"];
+}
+-(IBAction)refreshUserList:(id)sender
+{
+    [self updateWebinarUI];
+}
+//webinar
+- (IBAction)putOnHold:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWaitingRoomController* waitController = [meetingService getWaitingRoomController];
+    if ([_selectedUser.stringValue isEqualToString:@""]) {
+        return;
+    }
+    NSString* selectedUser = [_selectedUser stringValue];
+    NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+    NSNumber * number = [formatter numberFromString:selectedUser];
+    unsigned int userid = [number unsignedIntValue];
+    [formatter release];
+    [waitController putIntoWaitingRoom:userid];
+}
+- (IBAction)putIntoMeeting:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWaitingRoomController* waitController = [meetingService getWaitingRoomController];
+    if ([_selectedUser.stringValue isEqualToString:@""]) {
+        return;
+    }
+    NSString* selectedUser = [_selectedUser stringValue];
+    NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+    NSNumber * number = [formatter numberFromString:selectedUser];
+    unsigned int userid = [number unsignedIntValue];
+    [formatter release];
+    [waitController admitToMeeting:userid];
+}
+-(IBAction)promoteAttendee2Panelist:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        NSString* selectedUser = [_selectedUser stringValue];
+        NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+        NSNumber * number = [formatter numberFromString:selectedUser];
+        unsigned int userid = [number unsignedIntValue];
+        [formatter release];
+        [webinarController PromoteAttendee2Panelist:userid];
+    }
+}
+-(IBAction)depromotePanelist2Attendee:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        NSString* selectedUser = [_selectedUser stringValue];
+        NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+        NSNumber * number = [formatter numberFromString:selectedUser];
+        unsigned int userid = [number unsignedIntValue];
+        [formatter release];
+        [webinarController DepromotePanelist2Attendee:userid];
+    }
+}
+-(IBAction)allowAttendeeTalk:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        NSString* selectedUser = [_selectedUser stringValue];
+        NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+        NSNumber * number = [formatter numberFromString:selectedUser];
+        unsigned int userid = [number unsignedIntValue];
+        [formatter release];
+        [webinarController AllowAttendeeTalk:userid];
+    }
+}
+-(IBAction)disallowAttendeeTalk:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        NSString* selectedUser = [_selectedUser stringValue];
+        NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+        NSNumber * number = [formatter numberFromString:selectedUser];
+        unsigned int userid = [number unsignedIntValue];
+        [formatter release];
+        [webinarController DisallowAttendeeTalk:userid];
+    }
+}
+-(IBAction)allowPanelistStartVideo:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        [webinarController AllowPanelistStartVideo];
+    }
+}
+-(IBAction)disallowPanelistStartVideo:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        [webinarController DisallowPanelistStartVideo];
+    }
+}
+-(IBAction)allowAttendeeChat:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        [webinarController AllowAttendeeChat];
+    }
+}
+-(IBAction)disallowAttendeeChat:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKWebinarController* webinarController = [meetingService getWebinarController];
+    if(webinarController)
+    {
+        [webinarController DisallowAttendeeChat];
+    }
+}
+-(IBAction)onShowCustomizedSetting:(id)sender
+{
+    if (self.sdkSettingWindowController)
+    {
+        NSArray* subviews = _sdkSettingWindowController.window.contentView.subviews;
+        for (NSView* item in subviews) {
+            NSLog(@"%@", item.className);
+        }
+        
+        [self.sdkSettingWindowController showWindow:nil];
+        [self.sdkSettingWindowController relayoutWindowPosition];
+    }
+}
+-(IBAction)onShareCamera:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKASController* asController = [meetingService getASController];
+    if(!asController)
+        return;
+    
+    ZoomSDKVideoSetting* _videoSetting = [[[ZoomSDK sharedSDK] getSettingService] getVideoSetting];
+    NSArray* cameraList = [_videoSetting getCameraList];
+    NSUInteger count = cameraList.count;
+    if(count <= 0)
+        return;
+    SDKDeviceInfo* selectedDevice = nil;
+    for(SDKDeviceInfo* info in cameraList)
+    {
+        if(!info)
+            continue;
+        if(info.isSelectedDevice)
+            selectedDevice = info;
+    }
+    /****for share customized camera window begin****/
+    _shareCameraWindowCtrl = [[ZoomSDKWindowController alloc] init];
+    [_shareCameraWindowCtrl.window setFrame:NSMakeRect(300, 300, 800, 720) display:YES];
+    [_shareCameraWindowCtrl.window setTitle:@"Share Camera"];
+    [_wndCtrl.window orderOut:nil];
+    /****for share customized camera window end****/
+    
+    [_shareCameraWindowCtrl showWindow:nil];
+    [asController startShareCamera:[selectedDevice getDeviceID] displayWindow:_shareCameraWindowCtrl.window];
+}
+- (void)showMeetingMainWindow
+{
+    [_wndCtrl.window orderFront:nil];
+}
+
+- (IBAction)startShareWhiteBoard:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKASController* asController = [meetingService getASController];
+    [asController startWhiteBoardShare];
+}
+- (IBAction)startShareFrame:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKASController* asController = [meetingService getASController];
+    [asController startFrameShare];
+}
+- (IBAction)startShareAudio:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKASController* asController = [meetingService getASController];
+    [asController startAudioShare];
+}
+- (IBAction)stopShare:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    ZoomSDKASController* asController = [meetingService getASController];
+    [asController stopShare];
+    if(_shareCameraWindowCtrl)
+       [_shareCameraWindowCtrl.window close];
 }
 @end

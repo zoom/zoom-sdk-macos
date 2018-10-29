@@ -16,8 +16,13 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="_H323Button" destination="eqK-0M-Y0K" id="t3y-WG-Zz6"/>
+                <outlet property="_WebinarControlButton" destination="kJi-Rk-Eks" id="b1s-BF-2JU"/>
+                <outlet property="_allowAttendeeChat" destination="rcH-ax-277" id="Xak-MD-0pY"/>
+                <outlet property="_allowAttendeeTalk" destination="wZm-1m-MKJ" id="qlC-rT-DzN"/>
+                <outlet property="_allowPanelistStartVideo" destination="wHA-4i-5oh" id="wry-Tn-2rw"/>
                 <outlet property="_appKeyField" destination="uFg-dU-lZB" id="LgP-5v-aLc"/>
                 <outlet property="_appSecretField" destination="ufz-fh-lps" id="Czo-LM-5zt"/>
+                <outlet property="_attendeeListView" destination="y5r-KC-390" id="3oQ-gz-Xh1"/>
                 <outlet property="_audioInfoView" destination="Dxs-3j-SwZ" id="ZEg-Gn-mbi"/>
                 <outlet property="_authResultField" destination="YWg-8q-Qt1" id="kXS-i9-8UR"/>
                 <outlet property="_authResultFieldWelcome" destination="nch-y1-Cgb" id="wtF-Qh-Odq"/>
@@ -30,18 +35,24 @@
                 <outlet property="_connectLabel" destination="TGt-8l-IUd" id="5WN-lG-hGY"/>
                 <outlet property="_countryCode" destination="aKn-WF-y3F" id="X0m-nq-9H6"/>
                 <outlet property="_deleteMeeting" destination="1ry-UW-42n" id="VlD-7N-ENH"/>
+                <outlet property="_depromotePanelist2Attendee" destination="iYT-to-XNG" id="Uza-BB-Tnb"/>
                 <outlet property="_devZoomAuth" destination="y4s-Uc-7zs" id="3jw-SZ-51L"/>
                 <outlet property="_deviceAddress" destination="q1w-HO-E95" id="VhO-WO-pU1"/>
                 <outlet property="_deviceE164Num" destination="C7k-Ch-k2d" id="gqL-Oi-JiH"/>
                 <outlet property="_deviceIP" destination="rFm-0g-Y05" id="YqW-4A-nlP"/>
                 <outlet property="_deviceName" destination="FC8-b4-MDq" id="drJ-cR-CKm"/>
                 <outlet property="_deviceTypeButton" destination="c7o-6L-mp8" id="N3l-3d-io0"/>
+                <outlet property="_disallowAttendeeChat" destination="Hic-Ns-yjl" id="GaW-bt-Yam"/>
+                <outlet property="_disallowAttendeeTalk" destination="cqj-1e-zTp" id="RKM-9y-GeP"/>
+                <outlet property="_disallowPanelistStartVideo" destination="oiM-yt-AJf" id="Gxm-yS-62w"/>
                 <outlet property="_enableSSOButton" destination="PoK-Os-LKJ" id="zQq-dk-d8z"/>
                 <outlet property="_endMeeting" destination="hSS-oJ-EIR" id="tON-G1-ri9"/>
                 <outlet property="_getDeviceAddress" destination="1qJ-vP-5Va" id="1dR-dm-2Js"/>
                 <outlet property="_getParticipantsButton" destination="vwU-KF-pv9" id="Nck-1i-xNe"/>
                 <outlet property="_indicator" destination="L4d-9X-lFO" id="K3N-h9-ohJ"/>
-                <outlet property="_joinBeforeHost" destination="6PE-uB-Uwr" id="sc9-8f-PkT"/>
+                <outlet property="_isAllowAttendeeChat" destination="ozT-IH-1HC" id="Xqh-mt-sgx"/>
+                <outlet property="_isAllowPanelistStartVideo" destination="ptT-1J-V9n" id="EKo-76-iJV"/>
+                <outlet property="_isSupportAttendeeTalk" destination="MFJ-MQ-pPe" id="PUh-OJ-cIQ"/>
                 <outlet property="_joinMeetingNum" destination="mA5-Rj-nEV" id="ped-Lg-sqO"/>
                 <outlet property="_joinUserName" destination="atL-8z-yHU" id="Czc-XG-Kra"/>
                 <outlet property="_listMeeting" destination="2jw-kC-b8i" id="K1n-89-B0i"/>
@@ -53,15 +64,13 @@
                 <outlet property="_mainWindow" destination="QvC-M9-y7g" id="Jhv-D7-wPh"/>
                 <outlet property="_mainWindowButton" destination="VYn-rd-913" id="Jnq-aB-xFw"/>
                 <outlet property="_meetingActionInfo" destination="dBR-gO-No1" id="y9J-FF-7Yd"/>
-                <outlet property="_meetingDuration" destination="Ani-yF-1fT" id="v7V-Db-Tp0"/>
                 <outlet property="_meetingListContent" destination="n4o-VC-9ZJ" id="Rhj-D6-vSO"/>
                 <outlet property="_meetingNum" destination="LeO-8Q-QrE" id="QTU-Zn-DyX"/>
                 <outlet property="_meetingNumber" destination="b9C-O5-v6V" id="uxx-QC-66F"/>
-                <outlet property="_meetingPassword" destination="a3O-Ns-fAt" id="zl4-Xm-fNF"/>
-                <outlet property="_meetingTopic" destination="AV3-U0-tcg" id="7Dy-XQ-oDZ"/>
                 <outlet property="_multiShareButton" destination="GfR-wv-ici" id="R3g-YV-MaT"/>
                 <outlet property="_pairButton" destination="Vn5-nm-ZA9" id="6un-KW-PEe"/>
                 <outlet property="_pairCode" destination="JQx-4d-EES" id="EgS-20-BS2"/>
+                <outlet property="_panelistListView" destination="tGx-14-ngf" id="f49-Si-hnb"/>
                 <outlet property="_participantsButton" destination="uyP-2B-och" id="VZA-Tx-5FR"/>
                 <outlet property="_participantsListView" destination="zAJ-S5-heY" id="Cft-ie-qRj"/>
                 <outlet property="_passwordField" destination="CGs-0J-UkO" id="aTc-Zx-r2v"/>
@@ -69,10 +78,12 @@
                 <outlet property="_pinVideo" destination="8UG-Du-RBO" id="lfg-xN-AJb"/>
                 <outlet property="_preMeetingButton" destination="HUP-tc-csV" id="pYm-tj-1aL"/>
                 <outlet property="_preMeetingError" destination="tb2-9a-fgH" id="p0L-fq-Kjl"/>
+                <outlet property="_promoteAttendee2Panelist" destination="ZYs-TM-SWN" id="64x-OI-Gbq"/>
                 <outlet property="_receivedMsgContent" destination="yyP-x8-vK5" id="DLi-80-nds"/>
                 <outlet property="_recordButton" destination="XQP-of-dYj" id="O9m-ma-7dY"/>
                 <outlet property="_recordConvertFinishLabel" destination="WQO-1A-BzB" id="rm2-0I-8ob"/>
                 <outlet property="_recordIndicator" destination="VDb-uj-01j" id="wQN-3p-RJt"/>
+                <outlet property="_refreshUserListButton" destination="mQo-lz-LqC" id="Z8X-Wd-gPl"/>
                 <outlet property="_rememberMeButton" destination="icJ-iu-DPH" id="cLg-xO-km8"/>
                 <outlet property="_remoteControlMsgField" destination="372-dV-Hi7" id="oP6-i2-hqF"/>
                 <outlet property="_scheduleMeeting" destination="XgL-5b-MKa" id="wjf-qF-MGX"/>
@@ -81,9 +92,11 @@
                 <outlet property="_sdkUserID" destination="NNE-Dh-2qC" id="qmk-oY-4JL"/>
                 <outlet property="_sdkUserToken" destination="FQ4-NU-dhL" id="h9r-Bo-qZ0"/>
                 <outlet property="_selectedScreenField" destination="HwR-WQ-Gci" id="QSe-jb-tOQ"/>
+                <outlet property="_selectedUser" destination="k93-06-8a5" id="BPb-Zw-59B"/>
                 <outlet property="_selectedUserID" destination="G7y-5G-ChB" id="yuc-72-f9l"/>
                 <outlet property="_selectedWaitingUser" destination="LUX-2o-FSO" id="QPH-vO-2HH"/>
                 <outlet property="_sendMsgContent" destination="GWu-ip-PEB" id="Mp5-0D-2ia"/>
+                <outlet property="_settingMenuItem" destination="fax-qY-TMH" id="Rjz-ZT-Uxm"/>
                 <outlet property="_shareButton" destination="Q32-6V-FKg" id="I73-CT-oja"/>
                 <outlet property="_shareOnSecondScreenButton" destination="AJM-Oh-MFr" id="kDR-1g-TDA"/>
                 <outlet property="_shareStatusMsgView" destination="RG8-1t-TVg" id="fL1-Mq-fAV"/>
@@ -96,17 +109,16 @@
                 <outlet property="_startMeetingNum" destination="liu-xE-DAj" id="FaV-Hj-1Bm"/>
                 <outlet property="_startUserName" destination="oyW-qW-vNb" id="9DI-Up-RBc"/>
                 <outlet property="_tabView" destination="PsX-rZ-NQH" id="5Xi-oI-Nkd"/>
-                <outlet property="_turnOffVideoForAttende" destination="XUX-zf-WIb" id="bu8-Gd-BjY"/>
-                <outlet property="_turnOffVideoForHost" destination="UVu-el-Wiy" id="KCG-cZ-vDo"/>
                 <outlet property="_updateMeeting" destination="dRL-x4-KSh" id="b4x-zF-hAJ"/>
-                <outlet property="_usePMI" destination="WCa-oP-BrL" id="fFr-LQ-lOw"/>
                 <outlet property="_userName" destination="KBZ-yI-Ndt" id="aUJ-Me-GTb"/>
                 <outlet property="_userNameField" destination="txc-xL-fNj" id="gEL-aP-1iB"/>
                 <outlet property="_viewShareButton" destination="KVx-gD-S9w" id="oy6-iK-1i3"/>
                 <outlet property="_waitingRoomButton" destination="lEp-In-U8B" id="ADK-wU-MTC"/>
+                <outlet property="_waitingRoomListView" destination="ZX6-cf-xCp" id="Weu-Ov-3Ax"/>
                 <outlet property="_waitingRoomStatusInfo" destination="cCZ-jZ-IID" id="Fbx-Da-lmQ"/>
                 <outlet property="_waitingRoomUserInfo" destination="UUB-cu-lxf" id="iOq-cg-ep6"/>
                 <outlet property="_webDomainField" destination="pTE-cr-h5s" id="o3B-Gl-r67"/>
+                <outlet property="_webinarTabView" destination="3NU-5K-moK" id="GPX-2m-TOp"/>
                 <outlet property="_zoomUserButton" destination="wrR-Fq-vQp" id="1FS-wi-Ayk"/>
             </connections>
         </customObject>
@@ -125,6 +137,11 @@
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                             <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                            <menuItem title="Setting" keyEquivalent="s" id="fax-qY-TMH" userLabel="Setting">
+                                <connections>
+                                    <action selector="onShowCustomizedSetting:" target="Voe-Tx-rLC" id="SsL-ym-T83"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                             <menuItem title="Services" id="NMo-om-nkz">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -1361,6 +1378,61 @@
                                                 <action selector="joinWebinar:" target="Voe-Tx-rLC" id="ufb-jY-yd9"/>
                                             </connections>
                                         </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="kJi-Rk-Eks">
+                                            <rect key="frame" x="274" y="119" width="145" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" title="Webinar" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="UxG-gd-KCG">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="navigatorToWebinarControTab:" target="Voe-Tx-rLC" id="rfI-n3-3G1"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="QkZ-CN-btm">
+                                            <rect key="frame" x="472" y="45" width="64" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Sub" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="icn-fR-8rj">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="subscribeUser:" target="Voe-Tx-rLC" id="5GW-or-3MQ"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="93e-UU-Y8c">
+                                            <rect key="frame" x="545" y="45" width="80" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Unsub" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="n1l-Os-MnO">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="unSubscribeUser:" target="Voe-Tx-rLC" id="yKf-FF-IUC"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="EJw-YO-cL9">
+                                            <rect key="frame" x="467" y="12" width="74" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Show" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4f6-sU-vIt">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="showVideoRender:" target="Voe-Tx-rLC" id="T0P-NA-Frc"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="CKp-vq-vmb">
+                                            <rect key="frame" x="551" y="12" width="68" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Hide" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1u9-oP-Tkg">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="hideVideoRender:" target="Voe-Tx-rLC" id="Wwg-96-Nlw"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -1567,8 +1639,8 @@
                                             <rect key="frame" x="20" y="182" width="615" height="5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </box>
-                                        <button verticalHuggingPriority="750" id="J8U-eY-vmX">
-                                            <rect key="frame" x="140" y="99" width="177" height="32"/>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="J8U-eY-vmX">
+                                            <rect key="frame" x="237" y="99" width="177" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" title="Start Share" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="0Rl-Bm-wNW">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1578,8 +1650,41 @@
                                                 <action selector="startShare:" target="Voe-Tx-rLC" id="snB-yP-7KO"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" id="3Kb-4g-OJl">
-                                            <rect key="frame" x="142" y="50" width="177" height="32"/>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="2NN-WW-ESI">
+                                            <rect key="frame" x="32" y="99" width="177" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" title="Share WhiteBoard" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="heb-uy-Zdq">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="startShareWhiteBoard:" target="Voe-Tx-rLC" id="rvc-tH-wdB"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="OJK-nT-ZYP">
+                                            <rect key="frame" x="32" y="50" width="177" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" title="Share Frame" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="cm7-Wo-65P">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="startShareFrame:" target="Voe-Tx-rLC" id="h6G-bU-UDe"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="YNE-sr-kZS">
+                                            <rect key="frame" x="32" y="8" width="177" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" title="Share Audio" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="Ndx-pz-7ZP">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="startShareAudio:" target="Voe-Tx-rLC" id="fkH-qg-ZL1"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="3Kb-4g-OJl">
+                                            <rect key="frame" x="237" y="50" width="177" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" title="Max Float Video" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="DNJ-Vt-F1m">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1589,8 +1694,8 @@
                                                 <action selector="maxFloatWnd:" target="Voe-Tx-rLC" id="p6F-W1-BXc"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" id="D89-aQ-ugV">
-                                            <rect key="frame" x="345" y="50" width="177" height="32"/>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="D89-aQ-ugV">
+                                            <rect key="frame" x="442" y="50" width="177" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" title="Float Window Active SPK" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="8Bw-ey-r5k">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1600,8 +1705,19 @@
                                                 <action selector="swithFloatWndToActiveSpk:" target="Voe-Tx-rLC" id="xRG-Gj-N7r"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" id="1cH-hn-t36">
-                                            <rect key="frame" x="142" y="8" width="177" height="32"/>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="SjB-7p-SJG">
+                                            <rect key="frame" x="442" y="8" width="177" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" title="Share Camera" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="u6J-wb-mg6">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="onShareCamera:" target="Voe-Tx-rLC" id="yzI-Oe-YNw"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="1cH-hn-t36">
+                                            <rect key="frame" x="237" y="8" width="177" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" title="Float Window Gallery" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="CFa-4t-Xfx">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1611,8 +1727,8 @@
                                                 <action selector="swithFloatWndToGallery:" target="Voe-Tx-rLC" id="Y5S-LG-h1P"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" id="XX4-57-TjL">
-                                            <rect key="frame" x="345" y="99" width="177" height="32"/>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="XX4-57-TjL">
+                                            <rect key="frame" x="442" y="99" width="177" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="square" title="Min Float Video" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="kFp-rO-Ymo">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1741,6 +1857,17 @@
                                                 <action selector="hideThumbnailVideo:" target="Voe-Tx-rLC" id="Evr-gH-uwf"/>
                                             </connections>
                                         </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="8nY-NX-O6o">
+                                            <rect key="frame" x="476" y="204" width="177" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" title="Stop Share" bezelStyle="shadowlessSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="fXj-69-MMW">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="stopShare:" target="Voe-Tx-rLC" id="gfn-12-fk6"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -1865,110 +1992,6 @@
                                                 <action selector="deleteMeeting:" target="Voe-Tx-rLC" id="37U-8a-xcp"/>
                                             </connections>
                                         </button>
-                                        <textField verticalHuggingPriority="750" id="AV3-U0-tcg">
-                                            <rect key="frame" x="186" y="379" width="133" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="tOa-3X-LQX">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="GCa-J1-fGa">
-                                            <rect key="frame" x="97" y="382" width="50" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Topic:" id="VqP-vo-rsU">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField verticalHuggingPriority="750" id="a3O-Ns-fAt">
-                                            <rect key="frame" x="186" y="344" width="133" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ncv-rb-Ru8">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="uHn-Et-YtR">
-                                            <rect key="frame" x="97" y="347" width="63" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password:" id="ZZe-GD-NXe">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField verticalHuggingPriority="750" id="Ani-yF-1fT">
-                                            <rect key="frame" x="186" y="314" width="133" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Szj-4U-Lhp">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="qdb-Pt-eus">
-                                            <rect key="frame" x="97" y="317" width="63" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Duration:" id="2AB-an-4vL">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <button verticalHuggingPriority="750" id="WCa-oP-BrL">
-                                            <rect key="frame" x="354" y="371" width="143" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="usePMI" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="VPM-c7-ooK">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button verticalHuggingPriority="750" id="6PE-uB-Uwr">
-                                            <rect key="frame" x="354" y="345" width="143" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="joinBeforeHost" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="A53-3e-UHh">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button verticalHuggingPriority="750" id="UVu-el-Wiy">
-                                            <rect key="frame" x="354" y="315" width="184" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="turnOffVideoForHost" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="abH-lt-MaX">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button verticalHuggingPriority="750" id="XUX-zf-WIb">
-                                            <rect key="frame" x="354" y="288" width="184" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="turnOffVideoForAttende" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="dXM-5N-ZY1">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <textField verticalHuggingPriority="750" id="b9C-O5-v6V">
-                                            <rect key="frame" x="186" y="278" width="133" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="EpB-dX-kr6">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="17s-wx-Ic3">
-                                            <rect key="frame" x="97" y="281" width="83" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MeetingNum:" id="EBY-P4-dgS">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="InN-nz-xuz">
                                             <rect key="frame" x="97" y="126" width="80" height="23"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -2078,6 +2101,24 @@
                                                 <action selector="cancelDS:" target="Voe-Tx-rLC" id="vMf-RZ-4e4"/>
                                             </connections>
                                         </button>
+                                        <textField verticalHuggingPriority="750" misplaced="YES" id="b9C-O5-v6V">
+                                            <rect key="frame" x="134" y="327" width="133" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="EpB-dX-kr6">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="17s-wx-Ic3">
+                                            <rect key="frame" x="45" y="330" width="83" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MeetingNum:" id="EBY-P4-dgS">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -3306,6 +3347,300 @@ Gw
                                             </buttonCell>
                                             <connections>
                                                 <action selector="onBackClicked:" target="Voe-Tx-rLC" id="vZW-Nx-fN4"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="WebinarContainer" identifier="WebinarContainer" id="TB5-bG-K0e" userLabel="Webinar">
+                                <view key="view" id="bcO-8O-NqX">
+                                    <rect key="frame" x="0.0" y="0.0" width="662" height="470"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" id="ZYs-TM-SWN">
+                                            <rect key="frame" x="414" y="380" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="PromoteAttendee2Panelist" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tgs-rQ-kYg">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="promoteAttendee2Panelist:" target="Voe-Tx-rLC" id="Fkk-Il-9dw"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="iYT-to-XNG">
+                                            <rect key="frame" x="414" y="347" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="DepromotePanelist2Attendee" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0b3-aL-ABu">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="depromotePanelist2Attendee:" target="Voe-Tx-rLC" id="iOe-t5-j6I"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="wZm-1m-MKJ">
+                                            <rect key="frame" x="414" y="314" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="AllowAttendeeTalk" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RBc-s2-aJ8">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="allowAttendeeTalk:" target="Voe-Tx-rLC" id="8AH-Z2-Acz"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="cqj-1e-zTp">
+                                            <rect key="frame" x="414" y="283" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="DisallowAttendeeTalk" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hn6-Ri-k78">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="disallowAttendeeTalk:" target="Voe-Tx-rLC" id="GqT-Bn-nOm"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="wHA-4i-5oh">
+                                            <rect key="frame" x="414" y="250" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="AllowPanelistStartVideo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nR7-Hc-3Lv">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="allowPanelistStartVideo:" target="Voe-Tx-rLC" id="xhh-KU-4PN"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="oiM-yt-AJf">
+                                            <rect key="frame" x="414" y="217" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="DisallowPanelistStartVideo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="x7t-O7-cQm">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="disallowPanelistStartVideo:" target="Voe-Tx-rLC" id="N8O-7h-BcV"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="Hic-Ns-yjl">
+                                            <rect key="frame" x="414" y="151" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="DisallowAttendeeChat" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VHh-7F-Y9u">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="disallowAttendeeChat:" target="Voe-Tx-rLC" id="ZJf-f5-sUs"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="vnF-J3-9Ii">
+                                            <rect key="frame" x="414" y="119" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Put on hold" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jQ0-IG-cUf">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="putOnHold:" target="Voe-Tx-rLC" id="2z9-P8-R1u"/>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" id="k93-06-8a5">
+                                            <rect key="frame" x="129" y="113" width="156" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="MYI-G1-6XO">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="2dh-bT-wAT">
+                                            <rect key="frame" x="40" y="113" width="83" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select User:" id="Nb2-0z-R9E">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" id="rcH-ax-277">
+                                            <rect key="frame" x="414" y="184" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="AllowAttendeeChat" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hh6-xP-KuA">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="allowAttendeeChat:" target="Voe-Tx-rLC" id="Jew-nu-E1R"/>
+                                            </connections>
+                                        </button>
+                                        <button id="MFJ-MQ-pPe">
+                                            <rect key="frame" x="418" y="100" width="167" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="IsSupportAttendeeTalk" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ttu-vw-4Ov">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button id="ozT-IH-1HC">
+                                            <rect key="frame" x="418" y="79" width="167" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="IsAllowAttendeeChat" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Ssa-vY-PNC">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button id="ptT-1J-V9n">
+                                            <rect key="frame" x="418" y="58" width="167" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="IsAllowPanelistStartVideo" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Dg7-TS-Ntw">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="BWD-bk-tst">
+                                            <rect key="frame" x="36" y="418" width="132" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Back to Meeting" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5RC-e7-YFL">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="onBackClicked:" target="Voe-Tx-rLC" id="gvR-sx-VbJ"/>
+                                            </connections>
+                                        </button>
+                                        <tabView id="3NU-5K-moK">
+                                            <rect key="frame" x="35" y="190" width="353" height="218"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <tabViewItems>
+                                                <tabViewItem label="Userlist" identifier="panelist" id="A9J-mM-fpB">
+                                                    <view key="view" id="68x-E3-mLJ">
+                                                        <rect key="frame" x="10" y="33" width="333" height="172"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="at6-vo-hlA">
+                                                                <rect key="frame" x="-2" y="-3" width="336" height="176"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <clipView key="contentView" id="QIU-O3-UYL">
+                                                                    <rect key="frame" x="1" y="1" width="319" height="174"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="tGx-14-ngf">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="174"/>
+                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <size key="minSize" width="319" height="174"/>
+                                                                            <size key="maxSize" width="463" height="10000000"/>
+                                                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </clipView>
+                                                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="5G8-Bg-P8K">
+                                                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </scroller>
+                                                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="XaK-Q0-SJR">
+                                                                    <rect key="frame" x="320" y="1" width="15" height="174"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </scroller>
+                                                            </scrollView>
+                                                        </subviews>
+                                                    </view>
+                                                </tabViewItem>
+                                                <tabViewItem label="Attendee" identifier="attendee" id="fZp-X2-9KL">
+                                                    <view key="view" id="zDU-wA-DZk">
+                                                        <rect key="frame" x="10" y="33" width="333" height="172"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="ECh-8K-52b">
+                                                                <rect key="frame" x="-2" y="-3" width="336" height="176"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <clipView key="contentView" id="HUy-Pe-afD">
+                                                                    <rect key="frame" x="1" y="1" width="319" height="174"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="y5r-KC-390">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="174"/>
+                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <size key="minSize" width="319" height="174"/>
+                                                                            <size key="maxSize" width="463" height="10000000"/>
+                                                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </clipView>
+                                                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="o6M-ld-bog">
+                                                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </scroller>
+                                                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="uVx-mV-343">
+                                                                    <rect key="frame" x="320" y="1" width="15" height="174"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </scroller>
+                                                            </scrollView>
+                                                        </subviews>
+                                                    </view>
+                                                </tabViewItem>
+                                                <tabViewItem label="Waiting room" identifier="waiting" id="Zze-dn-WJ7">
+                                                    <view key="view" id="TIW-ja-0VL">
+                                                        <rect key="frame" x="10" y="33" width="333" height="172"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="7cu-hf-Ajc">
+                                                                <rect key="frame" x="-2" y="-3" width="336" height="176"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <clipView key="contentView" id="egw-mg-mcf">
+                                                                    <rect key="frame" x="1" y="1" width="319" height="174"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="ZX6-cf-xCp">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="174"/>
+                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <size key="minSize" width="319" height="174"/>
+                                                                            <size key="maxSize" width="463" height="10000000"/>
+                                                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </clipView>
+                                                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="BZ4-mm-PP8">
+                                                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </scroller>
+                                                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Ifg-Te-1hj">
+                                                                    <rect key="frame" x="319" y="1" width="16" height="174"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </scroller>
+                                                            </scrollView>
+                                                        </subviews>
+                                                    </view>
+                                                </tabViewItem>
+                                            </tabViewItems>
+                                        </tabView>
+                                        <button verticalHuggingPriority="750" id="mQo-lz-LqC">
+                                            <rect key="frame" x="258" y="151" width="129" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="refresh user list" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mpC-RS-tf4">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="refreshUserList:" target="Voe-Tx-rLC" id="iHH-Og-8iC"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" id="ieU-e2-A59">
+                                            <rect key="frame" x="414" y="23" width="218" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Admit to meeting" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nKu-GH-bno">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="cellTitle"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="putIntoMeeting:" target="Voe-Tx-rLC" id="jUJ-Pr-X5S"/>
                                             </connections>
                                         </button>
                                     </subviews>

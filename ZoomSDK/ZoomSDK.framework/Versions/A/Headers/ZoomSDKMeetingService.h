@@ -20,6 +20,8 @@
 #import "ZoomSDKVideoContainer.h"
 #import "ZoomSDKMeetingRecordController.h"
 #import "ZoomSDKUpgradeAccountHelper.h"
+#import "ZoomSDKWebinarController.h"
+
 @interface ZoomSDKSecuritySessionKey : NSObject
 {
     SecuritySessionComponet _component;
@@ -67,6 +69,12 @@
  *
  */
 - (void)onPaymentReminder:(ZoomSDKUpgradeAccountHelper*)upgradeHelper;
+
+/**
+ * @brief Designated for notify the remain time for free meeting.
+ * @param seconds: the remain seconds for this free meeting. seconds is 0 means leass than 1 minute.
+ */
+- (void)onFreeMeetingRemainTime:(unsigned int)seconds;
 @end
 
 /**
@@ -89,6 +97,7 @@
     //customized UI
     ZoomSDKVideoContainer*           _videoContainer;
     ZoomSDKMeetingRecordController*  _recordController;
+    ZoomSDKWebinarController*  _webinarController;
 }
 /**
  * The object that acts as the delegate of the receiving meeting events.
@@ -162,6 +171,12 @@
  * @return a ZoomSDKMeetingRecordController object u can use to customized record your meeting.
  */
 - (ZoomSDKMeetingRecordController*)getRecordController;
+/**
+ * @brief get the Zoom SDK customized webinar controller
+ * @return a ZoomSDKWebinarController object u can use to customized webinar meeting.
+ */
+- (ZoomSDKWebinarController*)getWebinarController;
+
 /**
  * @brief This method is used to start a Zoom meeting with meeting number.
  * @note  userId\userToken\username is for API user.
