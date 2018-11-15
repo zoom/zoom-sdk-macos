@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04026F67219D356400A7C181 /* ZoomSDKVideoUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04026F66219D356300A7C181 /* ZoomSDKVideoUI.framework */; };
 		5D2B4A2C215C81B100F66DC7 /* ZSDKSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B4A2A215C81B100F66DC7 /* ZSDKSettingWindowController.m */; };
 		5D2B4A2D215C81B100F66DC7 /* ZSDKSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2B4A2B215C81B100F66DC7 /* ZSDKSettingWindowController.xib */; };
 		5DC47DDC2179B0D300172BBC /* SDK_Transcode.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 5DC47DDB2179B0D300172BBC /* SDK_Transcode.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -98,6 +99,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04026F66219D356300A7C181 /* ZoomSDKVideoUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomSDKVideoUI.framework; path = ../ZoomSDK/ZoomSDKVideoUI.framework; sourceTree = "<group>"; };
 		5D2B4A29215C81B100F66DC7 /* ZSDKSettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSDKSettingWindowController.h; sourceTree = "<group>"; };
 		5D2B4A2A215C81B100F66DC7 /* ZSDKSettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSDKSettingWindowController.m; sourceTree = "<group>"; };
 		5D2B4A2B215C81B100F66DC7 /* ZSDKSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSDKSettingWindowController.xib; sourceTree = "<group>"; };
@@ -147,7 +149,6 @@
 		9729ED091DD5AF7200DB188D /* ZoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomSDK.framework; path = ZoomSDK/ZoomSDK.framework; sourceTree = "<group>"; };
 		9729ED0A1DD5AF7200DB188D /* zSDKRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zSDKRes.bundle; path = ZoomSDK/zSDKRes.bundle; sourceTree = "<group>"; };
 		9729ED0B1DD5AF7200DB188D /* zVideoApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zVideoApp.bundle; path = ZoomSDK/zVideoApp.bundle; sourceTree = "<group>"; };
-		9729ED0C1DD5AF7200DB188D /* zVideoUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zVideoUI.bundle; path = ZoomSDK/zVideoUI.bundle; sourceTree = "<group>"; };
 		9729ED0D1DD5AF7200DB188D /* zWebService.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = zWebService.bundle; path = ZoomSDK/zWebService.bundle; sourceTree = "<group>"; };
 		9755A2871D6D8C8300B69E72 /* ZoomLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomLogo.png; sourceTree = "<group>"; };
 		97569687212518AA00BC8C2D /* ShareContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareContentView.m; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04026F67219D356400A7C181 /* ZoomSDKVideoUI.framework in Frameworks */,
 				9729EDF61DD5B9A900DB188D /* Cocoa.framework in Frameworks */,
 				9729ED141DD5AF7200DB188D /* libssl.1.0.0.dylib in Frameworks */,
 				9729ED131DD5AF7200DB188D /* libcrypto.1.0.0.dylib in Frameworks */,
@@ -231,6 +233,7 @@
 		971C0DDA1D40964C0083AD9B /* Framworks */ = {
 			isa = PBXGroup;
 			children = (
+				04026F66219D356300A7C181 /* ZoomSDKVideoUI.framework */,
 				5DC47DDB2179B0D300172BBC /* SDK_Transcode.app */,
 				9756C51B1FEBAF0A00609247 /* ZoomSDKChatUI.framework */,
 				970CBE301E36F24200B1D255 /* airhost.app */,
@@ -257,7 +260,6 @@
 				9729ED091DD5AF7200DB188D /* ZoomSDK.framework */,
 				9729ED0A1DD5AF7200DB188D /* zSDKRes.bundle */,
 				9729ED0B1DD5AF7200DB188D /* zVideoApp.bundle */,
-				9729ED0C1DD5AF7200DB188D /* zVideoUI.bundle */,
 				9729ED0D1DD5AF7200DB188D /* zWebService.bundle */,
 				9717274E1D3F702800D5C72D /* Cocoa.framework */,
 			);

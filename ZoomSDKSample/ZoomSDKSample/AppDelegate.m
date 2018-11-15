@@ -72,7 +72,7 @@
     _hasLogined = NO;
     _selectDeviceType = H323DeviceType_H323;
     _screenType = ScreenType_First;
-    [[ZoomSDK sharedSDK]initSDK:YES];
+    [[ZoomSDK sharedSDK]initSDK:NO];
     ZoomSDKNetworkService* networkService = [[ZoomSDK sharedSDK] getNetworkService];
     networkService.delegate = self;
     //video window init
