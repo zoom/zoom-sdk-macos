@@ -2,7 +2,7 @@
 
 macOS SDK (in Beta)
 
-Example App using Zoom macOS SDK - https://zoom.us/developer/overview/mac-rtc-stack-quickstart
+Example App using Zoom macOS SDK - https://marketplace.zoom.us/docs/guides/zoom-sdks/macos
 
 To use it:
 
