@@ -3,7 +3,7 @@
 //  ZoomSDKSample
 //
 //  Created by TOTTI on 2018/7/26.
-//  Copyright © 2018 TOTTI. All rights reserved.
+//  Copyright © 2018 zoom.us. All rights reserved.
 //
 
 #import "ShareContentView.h"

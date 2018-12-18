@@ -3,7 +3,7 @@
 //  ZoomSDKSample
 //
 //  Created by TOTTI on 31/08/2016.
-//  Copyright © 2016 TOTTI. All rights reserved.
+//  Copyright © 2016 zoom.us. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
