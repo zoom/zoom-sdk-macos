@@ -147,10 +147,10 @@
 "LN_Meeting_QA_Open_21381" = "Ouvrir";
 "LN_Call_Accepted_35364" = "Appel entrant – accepté";
 "LN_Call_Incoming_35364" = "Appel entrant";
+"LN_Call_Canceled_46215" = "Appel entrant - Annulé";
 "LN_Mute_On_Entry_Alert_Title_35357" = "Mettre en sourdine le participant dès qu'il rejoint la réunion";
 "LN_Mute_On_Entry_Alert_Content_35357" = "Tous les nouveaux participants seront mis en sourdine";
 "LN_Schedule_OpenICSFile_ForOtherCal_37779" = "Ouvrir avec le calendrier par défaut (.ics)";
-"LN_Hide_ChatWnd_In_Screenshot_38445" = "Masquer la fenêtre de discussion dans la capture d'écran";
 "Meeting Detail" = "Détail de la réunion";
 "While waiting, please check your audio and video settings" = "Pendant que vous attendez, profitez-en pour vérifier vos paramètres audio et vidéo";
 "Topic" = "Sujet";
@@ -161,7 +161,7 @@
 "Waiting for Host %@" = "En attente de l’animateur %@";
 
 "Stop Screen Share" = "Arrêter le partage d’écran";
-"Stop Share"= "Arrêter de partager";
+"Stop Share" = "Arrêter de partager";
 "LN_Share_21795" = "Partager l’écran";
 "Share Screen" = "Partager l’écran";
 "Share screen" = "Partager l’écran";
@@ -255,7 +255,6 @@
 "You are not in the audio conference yet." = "Vous n’êtes pas encore en conférence audio.";
 "Computer Audio Connected" = "Son de l’ordinateur connecté";
 "Phone Connected" = "Téléphone connecté";
-"Test Computer Mic & Speakers" = "Tester le son de l’ordinateur";
 "You may have problem hearing the audio from other participants.\nConsider switching to phone." = "Vous pouvez avoir des difficultés à entendre le son des autres participants.\nEnvisagez de passer au téléphone.";
 "Total %d phone call-in listener" = "Au total %d auditeur téléphonique";
 "Total %d phone call-in listeners" = "Au total %d auditeurs téléphoniques";
@@ -411,7 +410,6 @@
 "Me" = "Moi";
 "Pin Video" = "Épingler la vidéo";
 "LN_Unpin_Video_30742" = "Détacher la vidéo";
-"Switch to Active Speaker" = "Passer en mode haut-parleur actif";
 "Pin video on first screen" = "Épingler la vidéo sur le premier écran";
 "LN_Unpin_First_Screen_34308" = "Détacher la vidéo du premier écran";
 "Pin video on second screen" = "Épingler la vidéo sur le deuxième écran";
@@ -477,7 +475,6 @@
 "This meeting has been ended by host" = "Cette réunion a été terminée par son animateur";
 "Do you want to upgrade your account?" = "Voulez-vous surclasser votre compte ?";
 "Do you want to change the host to %@?" = "Souhaitez-vous changer l’animateur à %@ ?";
-"Do you want to remove %@?" = "Souhaitez-vous exclure %@ ?";
 "No new attendees can join this meeting once locked." = "Une fois qu’elle est verrouillée, cette réunion n’admet pas de nouveaux participants.";
 "New attendees can join this meeting once unlocked." = "Les nouveaux participants peuvent rejoindre cette réunion une fois qu’elle est déverrouillée.";
 "You have left this meeting." = "Vous avez quitté cette réunion.";
@@ -556,9 +553,6 @@
 "LN_Clear_All_Drawings_34988" = "Effacer tous les dessins";
 "LN_Clear_My_Drawings_34988" = "Effacer mes dessins";
 "LN_Clear_Viewers_Drawing_34988" = "Effacer Viewers&apos; dessins";
-"Clear All Drawing" = "Effacer tout le dessin";
-"Clear My Drawing" = "Effacer mon dessin";
-"Clear Other's Drawing" = "Effacer le dessin de l’autre";
 "Eraser" = "Gomme";
 "Choose Color" = "Choisir la couleur";
 "Color" = "Couleur";
@@ -570,7 +564,7 @@
 "Screen saved." = "Écran enregistré.";
 "Show in Finder" = "Afficher dans le Finder";
 
-"Remote Control"= "Contrôle à distance";
+"Remote Control" = "Contrôle à distance";
 "Click to start the remote control of the shared screen" = "Cliquez pour démarrer le contrôle à distance de l’écran partagé.";
 "%@ is requesting remote control." = "%@ demande le contrôle à distance.";
 "Request Remote Control" = "Demander le contrôle à distance";
@@ -1117,7 +1111,6 @@
 "Group Name:" = "Nom du groupe:";
 "Missed Call" = "Appel manqué";
 "Incoming Call - Declined" = "Appel entrant – refusé";
-"Join Audio Conference by Computer" = "Rejoindre l’audio par ordinateur";
 "[You were mentioned] " = "[Vous avez été mentionné] ";
 "%@ left this group chat" = "%@ a quitté cette conversation de groupe";
 "You've removed %@ from this group chat" = "Vous avez exclu %@ de cette conversation de groupe";
@@ -1969,7 +1962,7 @@
 "(Internal)" = "(Interne)";
 
 "Call Failed" = "Échec de l'appel";
-"End call" = "Finir l’appel";
+"End call" = "Terminer";
 
 "This meeting is for authorized attendees only" = "Cette réunion est réservée aux participants autorisés";
 "Click \"Sign In to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "Cliquez sur \"Sign In to Join\" pour vous identifier à Zoom avec une adresse électronique autorisée pour rejoindre cette réunion";
@@ -1979,7 +1972,6 @@
 
 "Assign a participant to type" = "Affecter un participant à la saisie";
 "Use a 3rd party CC service" = "Utiliser un service de sous-titres tiers";
-"Copy the URL to your clipboard" = "Copier l'URL dans votre presse-papiers";
 "The URL has been copied to your clipboard" = "L’URL a été copiée dans votre presse-papiers";
 "LN_CC_Copy_To_3rd_Party_16893" = "Copiez ce lien et collez-le dans un produit tiers en CC";
 
@@ -2159,7 +2151,7 @@
 
 "Multi-user chats" = "Conversations multi-utilisateurs";
 
-"LN_MUTE_NOTIFICATION_ON_CALL_19895"= "Mettre les notifications sur pause que je suis en réunion ou en appel interne";
+"LN_MUTE_NOTIFICATION_ON_CALL_19895" = "Mettre les notifications sur pause que je suis en réunion ou en appel interne";
 "LN_GROUP_NOTIFY_SETTING_ALL_19895" = "Activité de toute sorte";
 "LN_GROUP_NOTIFY_SETTING_MENTION_ 19895" = "Me mentionner ou mentionner tous les membres";
 "LN_GROUP_NOTIFY_SETTING_NOTHING_19895" = "Rien";
@@ -2213,17 +2205,19 @@
 "LN_Share_Desktop_17163" = "Partager l'ordinateur de bureau";
 "LN_Stop_Desktop_17163" = "Arrêter";
 "LN_Local_17163" = "Localement";
-"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "Composer de %@ et autres pays %d"; // ZOOM-16058
+"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "Téléphoner depuis %@ et %d autres pays/régions";  // ZOOM-16058
 "LN_Schedule_Selected_Two_DialinCountry_16058" = "Composer de %@ et %@"; // ZOOM-16058
 "LN_Schedule_Selected_One_DialinCountry_16058" = "Composer de %@";  // ZOOM-16058
-"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "Sélectionner le pays à appeler";  // ZOOM-16058
-"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "Les numéros à composer des pays sélectionnés seront indiqués sur l’e-mail d’invitation."; // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "Sélectionner des pays/régions à numérotation internationale";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "Les numéros à composer des pays/régions sélectionnés seront indiqués dans l'e-mail d'invitation"; // ZOOM-16058
 "LN_Schedule_EditCountries_Include_Tollfree_Number_16058" = "Inclut les numéros sans frais"; // ZOOM-16058
-"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "Pays sélectionnés :"; // ZOOM-16058
-"LN_Schedule_EditCountries_Search_For_Country_16058" = "Rechercher un pays";  // ZOOM-16058
-"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "Vous n'avez pas sélectionné de pays. Veuillez sélectionner au moins un pays avant d'enregistrer."; // ZOOM-16058
+"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "Pays/régions sélectionnés :"; // ZOOM-16058
+"LN_Schedule_EditCountries_Search_For_Country_16058" = "Chercher un(e) pays/région";  // ZOOM-16058
+"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "Vous n'avez sélectionné aucun(e) pays/région. Sélectionnez au moins un(e) pays/région avant de sauvegarder."; // ZOOM-16058
 "LN_DockMenu_LanguageItem_24821" = "Changer de langue";
 "LN_Switch_Language_Alert_24821" = "Pour modifier la langue par défaut utilisée par Zoom par %@, le client Zoom doit redémarrer.";
+"LN_Meeting_RemoteControl_Select_Which_Screen_To_Control_47315" = "Sélectionnez quel écran contrôler";//[ZOOM-47315]
+"LN_Meeting_FitStatus_Select_Screen_To_Control_47315" = "Sélectionnez un écran à contrôler…";//[ZOOM-47315]
 "LN_Switch_Language_Alert_System_24821" = "langue du système";
 "LN_DockMenu_System_LanguageItem_24821" = "Utiliser la langue du système";
 "LN_Switch_Language_Alert_Change_24821" = "Passer à %@";
@@ -2298,7 +2292,7 @@
 "LN_Older_%@_File_Removed_33477" = "Les dossiers datant de plus de %@ ont été supprimés";
 "LN_%ld_Years_33477" = "%ld ans";
 "LN_1_Year_33477"   =   "1 an";
-"LN_%ld_Months_33477"= "%ld mois";
+"LN_%ld_Months_33477" = "%ld mois";
 "LN_1_Month_33477"  =   "1 mois";
 "LN_%ld_Days_33477"  = "%ld jours";
 "LN_24_Hours_33477"  =  "24 heures";
@@ -2345,8 +2339,6 @@
 "LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "Menu de capture d’écran";
 
 
-"LN_SEETING_NOTIFICATION_KEYWORDS_PLACEHOLDER_31152" = "Par exemple : Zoom, projet";
-"LN_SEETING_NOTIFICATION_REMOVE_CONTACT_31152" = "Vous ne recevrez plus de notifications de la part des contacts sélectionnés. Souhaitez-vous continuer ?";
 "LN_Code_Snippet_Download_Msg_31934" = "Pour créer un extrait de code, télécharger le paquet d'extrait de code. Vous n'aurez besoin que de le télécharger une seule fois.";
 "LN_Create_Code_Tip_33477" = "Pour créer un extrait de code,";
 "LN_Meeting_List_Item_Add_Calendar_Help_25869" = "Lorsque vous serez connecté, vos réunions et webinaires s'afficheront dans le client Zoom. Votre statut de présence sera également synchronisé.";
@@ -2354,6 +2346,7 @@
 "LN_Help_String_40539" = "Aide";
 "LN_Participants_Raised_Hand_39858" = "participants ont levé la main";
 "LN_Raised_Hand_39858" = "a levé la main";
+"LN_Limit_Your_Screen_Share_To_%@_Frames_Per_Second_47718" = "Limitez votre partage d'écran à %@ images par seconde";//ZOOM-47718
 "LN_Toolbar_Open_Participants_Panel_39047" = "Fermé : ouvrez le panneau des participants, %ld participants";
 "LN_Toolbar_Close_Participants_Panel_39047" = "Ouvert : fermez le panneau des participants, %ld participants";
 "LN_Toolbar_Open_Manage_Participants_Panel_39047" = "Fermé : ouvrez le panneau de gestion des participants, %ld participants";
@@ -2475,6 +2468,136 @@
 "LN_Remove_Confirm_44293" = "Voulez-vous supprimer %@? Le participant ne peut pas rejoindre cette réunion.";
 "LN_Expel_By_Host_44293" = "L'animateur vous a retiré de cette réunion.";
 "LN_Join_Error_For_Expel_44293" = "Vous ne pouvez pas rejoindre cette réunion car vous avez été précédemment supprimé par l'animateur.";
+"LN_Audio_Plugin_Restart_Audio_App" = "Pour partager le son de votre ordinateur, veuillez installer l'appareil audio Zoom.\n\nAprès l'installation, veuillez redémarrer votre application de partage audio, par exemple le lecteur multimédia, pour continuer à partager le son de l'ordinateur.\n\n";
+"LN_FREE_TRIAL_EXTEND_TITLE_47442" = "Voilà un cadeau\n\n";
+"LN_FREE_TRIAL_EXTEND_DETAIL_47442" = "Nous avons supprimé la durée limite de 40 minutes sur votre première réunion de groupe.";
+"LN_FREE_TRIAL_EXTEND_OK_47442" = "J'adore !";
+"LN_Email_Sign_In_Disabled_47270" = "Votre e-mail d'identification est désactivé.";
+"LN_TryAgain_in_%d_Min_46210" = "Vous avez dépassé le nombre de tentatives autorisé. Réessayez dans %d minutes.";
+"LN_TryAgain_in_1_Min_46210"  = "Vous avez dépassé le nombre de tentatives autorisé. Réessayez dans 1 minute.";
+"LN_Meeting_Error_Expired_Message_41530" = "Votre session a expiré. Veuillez vous reconnecter pour continuer.";
+"LN_Meeting_Error_Expired_Title_41530" = "Impossible de démarrer la réunion";
+"LN_Sign_In_41530" = "Se connecter";
+"Type in closed caption here, press Enter key to broadcast" = "Saisissez le sous-titrage codé, appuyez sur la touche Entrée pour diffuser";
+"LN_SipCall_AddCall_27110" = "Ajouter un appel";
+"LN_SipCall_Transfer_31431" = "Transférer";
+"LN_SipCall_Record_37978" = "Enregistrer";
+"LN_SipCall_Hold_26674" = "Mettre en attente";
+"LN_SipCall_OnHold_26674" = "En attente";
+"LN_SipCall_Mute_27110" = "Désactiver le son";
+"LN_SipCall_Unmute_27110" = "Réactiver le son";
+"LN_SipCall_AddCall_Tilte_27110" = "Ajouter un appel";
+"LN_AddCall_Button_Title_27110" = "Ajouter un appel";
+"LN_Income_Call_Answer_End_27110" = "Terminer &amp; accepter";
+"LN_Income_Call_Answer_Hold_26674" = "Mettre en attente et accepter";
+"LN_Multiple_Call_Hold_TiTle_26674" = "En attente";
+"LN_Remind_Multiple_Call_On_Hold_26674" = "appels téléphoniques sont en attente";
+"LN_Remind_Signal_Call_On_Hold_26674" = "appel téléphonique en attente";
+"LN_Phone_Setting_Number_31438" = "Numéro direct :";
+"LN_Company_Number_31438" = "Numéro de la société :";
+"LN_Review_Setting_31438" = "Pour consulter ou modifier vos paramètres, veuillez accéder à";
+"LN_Access_Web_Page_31438" = " mon compte en ligne";
+"LN_Local_Dial_Area_31438" = "Numérotation locale :";
+"LN_Area_Code_Label_31438" = "Indicatif :";
+"LN_Local_Call_Prompt_31438" = "Faire appels locaux sans préfixe de numérotation (pays ou région)";
+"LN_Warm_Transfer_Button_31431" = "Transfert\nassisté";
+"LN_Blind_Transfer_Button_31431" = "Transfert sans préavis";
+"LN_Transfer_Label_Title_31431" = "Transférer vers";
+"LN_Tranfer_Change_Button_Title_31431" = "Changer";
+"LN_Complete_Transfer_Button_31431" = "Terminer\nle transfert";
+"LN_On_Transferring_Txt_31431" = "Transfert en cours…";
+"LN_Transfer_Fail_Txt_31431" = "Échec";
+"LN_Sip_Dial_Hold_Status_31365" = "En attente";
+"LN_Setting_Phone_ToolBar_Item_31438" = "Téléphone";
+"LN_Setting_Phone_DirectNum_Txt_31438" = "Numéro direct :";
+"LN_Setting_Phone_CompanyNum_Txt_31438" = "Numéro de la société :";
+"LN_Setting_Phone_LocalDial_Txt_31438" = "Appel local :";
+"LN_Setting_Phone_AreaCode_Txt_31438" = "Indicatif :";
+"LN_Setting_Phone_LocalCall_Txt_31438" = "Faire appels locaux sans préfixe de numérotation (pays ou région)";
+"LN_Setting_Phone_Review_Profile_31438" = "Pour consulter ou modifier vos paramètres, veuillez accéder à";
+"LN_Setting_Phone_Account_Online_31438" = "mon compte en ligne";
+"LN_Setting_Phone_No_DirectNumber_31438" = "Pas encore configuré";
+"LN_Phone_Network_Unavailible_27110" = "Désactiver l'accès au serveur";
+"LN_Phone_Register_Account_Error_27110" = "Votre compte ne prend plus en charge Zoom Cloud Phone, veuillez contacter votre administrateur";
+"LN_Phone_Fail_Service_Unvailable_27110" = "Service indisponible";
+"LN_Phone_Call_Fail_486_Error_27110" = "L'homologue est occupé";
+"LN_Phone_Decline_603_Error_27110" = "L'homologue a refusé votre appel";
+"LN_CallFrom_Button_Title_31443" = "Appel depuis : ";
+"LN_Segement_Voicemail_31454" = "Messagerie vocale";
+"LN_Vcard_Personal_Link_35371" = "Lien personnel";
+"LN_Record_CallBack_35371" = "Rappeler";
+"LN_Phone_History_Record_35371" = "Enregistrement disponible";
+"LN_Phone_History_VoiceMail_35371" = "Laissé un message vocal";
+"LN_Phone_History_RecordPrepare_35371" = "Préparation de l'enregistrement en cours…";
+"LN_Phone_History_Delete_Call_35371" = "Voulez-vous supprimer ce journal d'appels de votre compte ?";
+"LN_Phone_History_Menu_Save_48678" = "Enregistrer dans le dossier";
+"LN_Phone_History_Menu_Clear_48678" = "Supprimer";
+"LN_Phone_History_Menu_ClearAll_48678" = "Supprimer l'intégralité de l'historique d'appels";
+"LN_Sip_Call_InvalidNum_Action_Error_27110" = "Numéro de téléphone non valide";
+"LN_Sip_Call_Server_Error_%ld_27110" = "Erreur de serveur (code : %ld)";
+"LN_Sip_Call_Recording_Download_Fail_48678" = "Échec du chargement de l'enregistrement téléphonique, veuillez réessayer";
+"LN_Sip_Call_Transfer_Success_31431" = "Transfert terminé avec succès";
+"LN_Sip_Call_Transfer_Fail_31431" = "Échec du transfert";
+"LN_Sip_Call_Start_Recording_Fail_31431" = "Échec du démarrage de l'enregistrement";
+"LN_Sip_Call_Stop_Recording_Fail_31431" = "Échec de l'arrêt de l'enregistrement";
+"LN_Sip_Call_Hold_Fail_27710" = "Échec de la mise en attente";
+"LN_Sip_Call_UnHold_Fail_27710" = "Échec de l'annulation de la mise en attente";
+"LN_Sip_Callout_Fail_27710" = "Échec de l'appel";
+"LN_Phone_History_Recording_Available_48678" = "Enregistrement disponible";
+"LN_phone_Search_No_Result_27110" = "Aucun résultat";
+"LN_Phone_Call_History_Unknown_27110" = "Inconnu";
+"LN_Vcard_Extension_35371" = "Poste";
+"LN_Vcard_DirectNum_35371" = "Numéro direct";
+"LN_Phone_SDK_Unavailable_27710" = "Le service Zoom Cloud Phone n'est pas disponible pour le moment";
+"LN_Phone_Audio_Device_Unavailble_27710" = "Appareil audio indisponible";
+"LN_Phone_Voicemail_DeleteAll_Record_31454" = "Voulez-vous supprimer tous les messages vocaux de votre compte ?";
+"LN_Phone_Voicemail_DeleteSingle_Record_31454" = "Voulez-vous supprimer ce message vocal de votre compte ?";
+"LN_Phone_Voicemail_Download_Fail_31454" = "Échec du chargement du message vocal, veuillez réessayer";
+"LN_Phone_Voicemail_SaveLocal_31454" = "Enregistrer dans le dossier";
+"LN_Phone_Voicemail_ClearAll_31454" = "Supprimer tous les messages vocaux";
+"LN_Phone_Record_Preparing_37978" = "Préparation en cours...";
+"LN_Phone_Record_Stop_37978" = "Arrêter l'enregistrement";
+"LN_Phone_History_Delete_Call_Inform_48678" = "Tous les journaux d'appels seront supprimés localement, du Cloud et de tous vos appareils";
+"LN_Phone_History_Clean_All_Log_48678" = "Voulez-vous supprimer la totalité de votre historique d'appels de votre compte ?";
+"LN_Phone_History_Clean_All_Inform_48678" = "Tous les journaux d'appels seront supprimés localement, du Cloud et de tous vos appareils.";
+"LN_Phone_Clean_CallHistory_Footer_35371" = "Supprimer l'intégralité de l'historique d'appels";
+"LN_Audiooption_CountryName_Country_49437" = "Pays/région";
+"LN_Audiooption_CountryName_HongKong_49437" = "Hong Kong, Chine";
+"LN_Audiooption_CountryName_TaiWan_49437" = "Taïwan, Chine";
+"LN_Audiooption_CountryName_Macau_49437" = "Macao, Chine";
+"LN_Audio_Wizard_Test_Finish_47788" = "le haut-parleur et le microphone fonctionnent";
+"LN_Join_With_Computer_Audio_47788" = "Participer avec le son de l'ordinateur";
+"LN_Finish_47788" = "Terminer";
+"LN_New_Folder_Detail_5820" = "Nom du nouveau dossier:";
+"LN_New_Folder_Name_5820" = "dossier sans titre";
+"LN_New_Folder_Warning_5820" = "Ce nom est déjà utilisé.";
+"LN_New_Folder_Cancel_5820" = "Annuler";
+"LN_New_Folder_Create_5820" = "Créer";
+"LN_Phone_Error_String_NumbetNotAvailable_27710" = "Le numéro appelé n'est pas disponible";
+"LN_Group_MaxAllowed_Failed_%u_50730" = "Ce canal ne peut comporter que %u membres maximum.";
+"LN_Phone_Add_Number_Button_48757" = "Ajouter un numéro";
+"LN_Phone_Create_New_Contact_48757" = "Créer un contact";
+"LN_Phone_First_Name_48757" = "Prénom";
+"LN_Phone_Last_Name_48757" = "Nom";
+"LN_Phone_Number_title_48757" = "Numéro de téléphone";
+"LN_Sip_Contact_Group_Name_48757" = "Contact téléphonique Zoom";
+"LN_Phone_History_Menu_Create_Contact_48757" = "Créer un contact";
+"LN_Vcard_Phone_Num_52057" = "Numéro personnel";
+"LN_Schedule_Limitation_BasicUser_Des_45329" = "Pour les réunions avec au moins trois participants, votre abonnement de base est limité à 40 minutes.";
+"LN_Schedule_Limitation_BasicUser_UpgradeInfo_45329" = "Besoin de réunions de groupe illimitées ? Contactez";
+"LN_Schedule_Limitation_FreeUser_UpgradeInfo_45329" = "Profiter de réunions illimitées en passant à la version supérieure ?";
+"LN_Schedule_Limitation_FreeUser_Link_45329" = "Passer à la version Pro";
+"LN_Schedule_Limitation_NotShowMeAgain_45329" = "Ne plus afficher ce message";
+"LN_Audio_Tsp_Both_45801" = "Les deux";
+"LN_Back_To_Revious_41410" = "Retour à la fenêtre précédente";
+"LN_Incorrect_Email_Password_41410" = "Adresse e-mail ou mot de passe incorrect";
+"LN_Signed_Out_Security_Policy_41410" = "Vous avez été déconnecté, car vous avez été inactif pendant %d minutes, comme convenu dans la politique de sécurité de votre compte.";
+"LN_Signed_Out_SSO_41410" = "Vous avez été déconnecté de votre compte Zoom. Connectez-vous à nouveau pour reprendre votre utilisation de Zoom.";
+"LN_Account_Locked_41410" = "Votre compte a été verrouillé suite à plusieurs échecs de tentatives de connexion.";
+"LN_43393_Enter new sharing key" = "Entrez une nouvelle clé de partage";
+"LN_43393_This step is required for users on a different network for additional security measures." = "Cette étape est requise pour les utilisateurs sur un autre réseau par mesure de sécurité supplémentaire.";
+"LN_LinkedIn_Loading_35020" = "chargement";
+"LN_Plist_LinkedIn_35020" = "LinkedIn";
 
 "LN_GDPR_40930_Continue" = "Continuer";
 "LN_GDPR_40930_I Agree" = "Je suis d'accord";
@@ -2497,3 +2620,12 @@
 "LN_GDPR_40930_SIGNIN_TITLE" = "Nous mettons à jour nos conditions et politiques.";
 "LN_GDPR_40930_SIGNIN_DETAIL_%1$@_%2$@" = "Zoom met à jour ses conditions d’utilisation et sa politique de confidentialité pour vous fournir plus de transparence sur les données collectées par Zoom, sur leur utilisation et sur les contrôles que vous avez sur vos données personnelles. En continuant à utiliser Zoom, vous acceptez les mises à jour %1$@ et %2$@.";
 
+"LN_Vcrad_Internal_Num_54073" = "Numéro interne";
+
+"LN_Alert_Auth_Title_57569" = "Important";
+"LN_Alert_Auth_Go_Settings_57569" = "Allez à Paramètres";
+"LN_Alert_Auth_Detail_Camera&Mic_57569" = "Veuillez activer l'accès à la caméra et au microphone pour Zoom dans Sécurité et confidentialité sous Préférences Système.";
+"LN_Alert_Auth_Detail_Camera_57569" = "Activer l'accès à la caméra pour Zoom dans Sécurité et confidentialité sous Préférences Système";
+"LN_Alert_Auth_Detail_Mic_57569" = "Activer l'accès au microphone pour Zoom dans Sécurité et confidentialité sous Préférences Système";
+"LN_Toolbar_Video_Warning_Tooltip_57569" = "Activer l'accès à la caméra pour Zoom dans Sécurité et confidentialité sous Préférences Système";
+"LN_Toolbar_Audio_Warning_Tooltip_57569" = "Activer l'accès au microphone pour Zoom dans Sécurité et confidentialité sous Préférences Système";

@@ -3,10 +3,22 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 9/1/17.
-//  Copyright © 2017 TOTTI. All rights reserved.
+//  Copyright © 2017 zoom.us. All rights reserved.
 //
 #import "ZoomSDKErrors.h"
-#import "ZoomSDKBuildType.h"
+
+@interface ZoomSDKMultiToSingleShareConfirmHandler : NSObject
+/**
+ * @brief Designated to cancel switch multi-share to single share. All the sharings are remained.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)cancelSwitch;
+/**
+ * @brief Designated to confirm switch multi-share to single share. All the sharings will be stopped.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)confirmSwitch;
+@end
 
 @interface ZoomSDKChatInfo : NSObject
 {
@@ -77,11 +89,7 @@
  * @param userAudioStatusArray a array contains ZoomSDKUserAudioStauts elements tell client audio stauts change of each user.
  *
  */
-#ifdef BUILD_FOR_ELECTRON
-- (void)onUserAudioStatusChange:(NSString*)userAudioStatusJasonString;
-#else
 - (void)onUserAudioStatusChange:(NSArray*)userAudioStatusArray;
-#endif
 
 /**
  * @brief Designated for Zoom Meeting User receive chat message notify.
@@ -95,22 +103,14 @@
  * @param array tell client the joined user array.
  *
  */
-#ifdef BUILD_FOR_ELECTRON
-- (void)onUserJoin:(NSString*)arrayJsonString;
-#else
 - (void)onUserJoin:(NSArray*)array;
-#endif
 
 /**
  * @brief Designated for Zoom Meeting user left notify.
  * @param array tell client the left user array.
  *
  */
-#ifdef BUILD_FOR_ELECTRON
-- (void)onUserLeft:(NSString*)arrayJsonString;
-#else
 - (void)onUserLeft:(NSArray*)array;
-#endif
 
 /**
  * @brief Designated for Zoom Meeting notify the specific user info change.
@@ -124,11 +124,7 @@
  * @param userID user's identity who becomes host.
  *
  */
-#ifdef BUILD_FOR_ELECTRON
-- (void)onHostChange:(NSNumber*)userID;
-#else
 - (void)onHostChange:(unsigned int)userID;
-#endif
 
 /**
  * @brief Designated for Zoom Meeting notify the co-host change.
@@ -151,11 +147,7 @@
  * @param userID user's identity whose video status change.
  *
  */
-#ifdef BUILD_FOR_ELECTRON
-- (void)onVideoStatusChange:(NSNumber*)videoOn UserID:(NSNumber*)userID;
-#else
 - (void)onVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID;
-#endif
 
 /**
  * @brief Designated for Zoom Meeting notify specific user raise hand or lower hand status change.
@@ -177,6 +169,14 @@
  */
 - (void)onActiveSpeakerChanged:(unsigned int)userID;
 
+/**
+ * @brief Designated for Zoom Meeting notify need user confirm when switch multishare to single share.
+ * @param confirmHandle: the object that used to handle the switch multi-share to single share action.
+ */
+- (void)onMultiToSingleShareNeedConfirm:(ZoomSDKMultiToSingleShareConfirmHandler*)confirmHandle;
+
+- (void)onActiveVideoUserChanged:(unsigned int)userID;
+- (void)onActiveSpeakerVideoUserChanged:(unsigned int)userID;
 @end
 
 @interface ZoomSDKMeetingActionController : NSObject
@@ -254,5 +254,12 @@
  * @return A ZoomSDKError to tell client function call successful or not.
  */
 -(ZoomSDKError)revokeCoHost:(unsigned int)userid;
+
+/**
+ * @brief This method is used for host to set the share type in meeting.
+ * @param ZoomSDKShareSettingType, the share setting type u want to set.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+-(ZoomSDKError)setShareSettingType:(ZoomSDKShareSettingType)shareType;
 
 @end

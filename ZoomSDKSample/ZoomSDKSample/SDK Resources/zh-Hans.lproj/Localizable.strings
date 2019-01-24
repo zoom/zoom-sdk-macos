@@ -146,10 +146,10 @@
 "LN_Meeting_QA_Open_21381" = "未回答";
 "LN_Call_Accepted_35364" = "来电 - 接受";
 "LN_Call_Incoming_35364" = "来电";
+"LN_Call_Canceled_46215" = "来电 - 已取消";
 "LN_Mute_On_Entry_Alert_Title_35357" = "加入会议时静音";
 "LN_Mute_On_Entry_Alert_Content_35357" = "所有新参会者将被静音";
 "LN_Schedule_OpenICSFile_ForOtherCal_37779" = "用默认日历打开（.ics）";
-"LN_Hide_ChatWnd_In_Screenshot_38445" = "在截图中隐藏聊天窗口";
 "Meeting Detail" = "会议详情";
 "While waiting, please check your audio and video settings" = "等待时，请检查您的音频和视频设置";
 "Topic" = "主题";
@@ -161,7 +161,7 @@
 
 //
 "Stop Screen Share" = "停止屏幕共享";
-"Stop Share"= "停止共享";
+"Stop Share" = "停止共享";
 "LN_Share_21795" = "共享屏幕";
 "Share Screen" = "共享屏幕";
 "Share screen" = "共享屏幕";
@@ -255,7 +255,6 @@
 "You are not in the audio conference yet." = "您已经不在语音会议中了。";
 "Computer Audio Connected" = "电脑音频已连接";
 "Phone Connected" = "电话已连接";
-"Test Computer Mic & Speakers" = "电脑语音测试";
 "You may have problem hearing the audio from other participants.\nConsider switching to phone." = "如果无法听清其他参会者的声音，\n可以尝试使用电话加会。";
 "Total %d phone call-in listener" = "共有%d电话听众";
 "Total %d phone call-in listeners" = "共有%d电话听众";
@@ -411,7 +410,6 @@
 "Me" = "我";
 "Pin Video" = "选定视频";
 "LN_Unpin_Video_30742" = "取消锁定";
-"Switch to Active Speaker" = "切换到发言人";
 "Pin video on first screen" = "将视频锁定在屏幕1上";
 "Pin video on second screen" = "将视频锁定在屏幕2上 ";
 "LN_Unpin_First_Screen_34308" = "从屏幕1上取消锁定";
@@ -477,7 +475,6 @@
 "This meeting has been ended by host" = "会议已被主持人结束";
 "Do you want to upgrade your account?" = "确认升级您的账号？";
 "Do you want to change the host to %@?" = "确认将主持人更改为 %@？";
-"Do you want to remove %@?" = "确认移除 %@？";
 "No new attendees can join this meeting once locked." = "一旦锁定会议，新的观众将无法进入会议。";
 "New attendees can join this meeting once unlocked." = "会议一旦解锁，新的观众可加入会议。";
 "You have left this meeting." = "您已离开会议。";
@@ -556,9 +553,6 @@
 "LN_Clear_All_Drawings_34988" = "清除所有批注";
 "LN_Clear_My_Drawings_34988" = "清除我的批注";
 "LN_Clear_Viewers_Drawing_34988" = "清除观看者的批注";
-"Clear All Drawing" = "清除所有画图";
-"Clear My Drawing" = "清除我的画图";
-"Clear Other's Drawing" = "清除他人的画图";
 "Eraser" = "擦除";
 "Choose Color" = "选择颜色";
 "Color" = "颜色";
@@ -570,7 +564,7 @@
 "Screen saved." = "屏幕内容已保存。";
 "Show in Finder" = "在Finder中显示";
 
-"Remote Control"= "远程控制";
+"Remote Control" = "远程控制";
 "Click to start the remote control of the shared screen" = "在屏幕共享时点击开始远程控制";
 "%@ is requesting remote control." = "%@ 申请远程控制。";
 "Request Remote Control" = "请求远程控制";
@@ -1134,7 +1128,6 @@
 "Group Name:" = "群组名称:";
 "Missed Call" = "未接来电";
 "Incoming Call - Declined" = "来电-已拒绝";
-"Join Audio Conference by Computer" = "使用电脑语音设备";
 "[You were mentioned] " = "[有人@我] ";
 "%@ left this group chat" = "%@退出了聊天群组。";
 "You've removed %@ from this group chat" = "您将%@从聊天群组中移除。";
@@ -1987,7 +1980,7 @@
 "(Internal)" = "(内线)";
 
 "Call Failed" = "呼叫失败";
-"End call" = "结束通话";
+"End call" = "结束";
 
 "This meeting is for authorized attendees only" = "此会议只针对被授权的参与人";
 "Click \"Sign In to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "点击 \"登录加入\"用授权的邮箱地址来登录Zoom";
@@ -1997,7 +1990,6 @@
 
 "Assign a participant to type" = "分配一个人输入字幕";
 "Use a 3rd party CC service" = "使用第三方CC服务";
-"Copy the URL to your clipboard" = "复制链接至剪贴板";
 "The URL has been copied to your clipboard" = "此链接已被复制到剪贴板";
 "LN_CC_Copy_To_3rd_Party_16893" = "复制这个链接并粘贴到第三方字幕输入设备";
 
@@ -2174,7 +2166,7 @@
 
 "Multi-user chats" = "多人聊天";
 
-"LN_MUTE_NOTIFICATION_ON_CALL_19895"= "当我在开会或内线电话时暂停通知";
+"LN_MUTE_NOTIFICATION_ON_CALL_19895" = "当我在开会或内线电话时暂停通知";
 "LN_GROUP_NOTIFY_SETTING_ALL_19895" = "所有消息";
 "LN_GROUP_NOTIFY_SETTING_MENTION_ 19895" = "提到我或所有成员";
 "LN_GROUP_NOTIFY_SETTING_NOTHING_19895" = "不提醒";
@@ -2229,17 +2221,19 @@
 "LN_Share_Desktop_17163" = "共享桌面";
 "LN_Stop_Desktop_17163" = "停止共享";
 "LN_Local_17163" = "本地";
-"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "从%@和其他%d个国家拨入";  // ZOOM-16058
+"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "从 %@ 和其他 %d 个国家/地区拨入";  // ZOOM-16058
 "LN_Schedule_Selected_Two_DialinCountry_16058" = "从%@和%@拨入";  // ZOOM-16058
 "LN_Schedule_Selected_One_DialinCountry_16058" = "从%@拨入";  // ZOOM-16058
-"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "选择拨入国家";  // ZOOM-16058
-"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "所选国家的拨入电话号码将列入邀请邮件"; // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "选择全球拨号国家/地区";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "所选国家/地区的拨入号码将列在电子邮件邀请中"; // ZOOM-16058
 "LN_Schedule_EditCountries_Include_Tollfree_Number_16058" = "包含免费电话"; // ZOOM-16058
-"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "已选国家："; // ZOOM-16058
-"LN_Schedule_EditCountries_Search_For_Country_16058" = "搜索国家";  // ZOOM-16058
-"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "您还未选择国家，请至少选择一个国家然后保存。"; // ZOOM-16058
+"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "选定国家/地区："; // ZOOM-16058
+"LN_Schedule_EditCountries_Search_For_Country_16058" = "搜索国家/地区";  // ZOOM-16058
+"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "您尚未选择任何国家/地区。保存前至少选择一个国家/地区。"; // ZOOM-16058
 "LN_DockMenu_LanguageItem_24821" = "切换语言";
 "LN_Switch_Language_Alert_24821" = "Zoom客户端需要重启以把默认语言更改为%@。";
+"LN_Meeting_RemoteControl_Select_Which_Screen_To_Control_47315" = "选择要控制的屏幕";//[ZOOM-47315]
+"LN_Meeting_FitStatus_Select_Screen_To_Control_47315" = "选择要控制的屏幕...";//[ZOOM-47315]
 "LN_Switch_Language_Alert_System_24821" = "系统语言";
 "LN_DockMenu_System_LanguageItem_24821" = "使用系统语言";
 "LN_Switch_Language_Alert_Change_24821" = "切换到 %@";
@@ -2314,7 +2308,7 @@
 "LN_Older_%@_File_Removed_33477" = "%@以前的文件已被删除";
 "LN_%ld_Years_33477" = "%ld年";
 "LN_1_Year_33477"   =   "1年";
-"LN_%ld_Months_33477"= "%ld个月";
+"LN_%ld_Months_33477" = "%ld个月";
 "LN_1_Month_33477"  =   "1个月";
 "LN_%ld_Days_33477"  = "%ld天";
 "LN_24_Hours_33477"  =  "24小时";
@@ -2368,6 +2362,7 @@
 "LN_Help_String_40539" = "帮助";
 "LN_Participants_Raised_Hand_39858" = "参会者举手";
 "LN_Raised_Hand_39858" = "举手";
+"LN_Limit_Your_Screen_Share_To_%@_Frames_Per_Second_47718" = "将您的屏幕共享限制为 %@ 帧/秒";//ZOOM-47718
 "LN_Toolbar_Open_Participants_Panel_39047" = "已关闭，打开参会者管理界面，%ld个参会者";
 "LN_Toolbar_Close_Participants_Panel_39047" = "已打开，关闭参会者面板，%ld个参会者";
 "LN_Toolbar_Open_Manage_Participants_Panel_39047" = "已关闭，打开参会者管理界面，%ld参会者";
@@ -2442,6 +2437,7 @@
 "LN_Accessibility_Someone_Stop_Aduio_Share_21795" = "%@已停止共享电脑音频";
 "LN_Share_Frame_Tooltip_21795" = "在屏幕上选取一块区域去共享";
 "LN_Share_Sound_Tooltip_21795" = "仅共享电脑的音频而不会共享屏幕内容";
+"LN_Share_Camera_Tooltip_21795" = "通过另一台摄影机（例如实物投影机）分享内容";
 "LN_Accessibility_Select_Country_Code_21342" = "选择国家代码";
 "LN_Accessibility_Call_Me_History_21342" = "拨打我的历史国家";
 "LN_TranferAmdin_From_You_To_%@_42604" = "本群组管理员已从您更改为%@。";
@@ -2488,6 +2484,100 @@
 "LN_Remove_Confirm_44293" = "你想删除%@吗？删除后此成员将不能重新加入此会议。";
 "LN_Expel_By_Host_44293" = "主持人已将您从此会议中移除。";
 "LN_Join_Error_For_Expel_44293" = "您无法重新加入此会议，因为您之前已被主持人移除。";
+"LN_Audio_Plugin_Restart_Audio_App" = "要共享您的计算机音频，请安装 Zoom 音频设备。\n\n请在安装后重新启动音频共享应用程序（如媒体播放器）以继续共享计算机声音。\n\n";
+"LN_FREE_TRIAL_EXTEND_TITLE_47442" = "有件礼物\n\n";
+"LN_FREE_TRIAL_EXTEND_DETAIL_47442" = "我们已取消首次群组会议的 40 分钟时间限制。";
+"LN_FREE_TRIAL_EXTEND_OK_47442" = "太棒了！";
+"LN_Email_Sign_In_Disabled_47270" = "您的电子邮件登录已禁用。";
+"LN_TryAgain_in_%d_Min_46210" = "尝试错误次数过多。请在 %d 分钟后重试。";
+"LN_TryAgain_in_1_Min_46210"  = "尝试错误次数过多。请在 1 分钟后重试。";
+"LN_Meeting_Error_Expired_Message_41530" = "您的登录会话已过期。请再次登录以继续操作。";
+"LN_Meeting_Error_Expired_Title_41530" = "会议无法开始";
+"LN_Sign_In_41530" = "登录";
+"Type in closed caption here, press Enter key to broadcast" = "在此输入隐藏式字幕，按 Enter 键群发";
+"LN_SipCall_AddCall_27110" = "添加通话";
+"LN_SipCall_Transfer_31431" = "转接";
+"LN_SipCall_Record_37978" = "录音";
+"LN_SipCall_Hold_26674" = "保持";
+"LN_SipCall_OnHold_26674" = "保持";
+"LN_SipCall_Mute_27110" = "静音";
+"LN_SipCall_Unmute_27110" = "取消静音";
+"LN_SipCall_AddCall_Tilte_27110" = "添加通话";
+"LN_AddCall_Button_Title_27110" = "添加通话";
+"LN_Income_Call_Answer_End_27110" = "结束并接受";
+"LN_Income_Call_Answer_Hold_26674" = "保持并接受";
+"LN_Multiple_Call_Hold_TiTle_26674" = "保持";
+"LN_Remind_Multiple_Call_On_Hold_26674" = "个通话已保持";
+"LN_Remind_Signal_Call_On_Hold_26674" = "个通话已保持";
+"LN_Phone_Setting_Number_31438" = "直线号码：";
+"LN_Company_Number_31438" = "公司号码：";
+"LN_Review_Setting_31438" = "要查看或更改您的设置，请访问";
+"LN_Access_Web_Page_31438" = " 我的在线账户";
+"LN_Local_Dial_Area_31438" = "本地拨号：";
+"LN_Area_Code_Label_31438" = "地区代码：";
+"LN_Local_Call_Prompt_31438" = "拨打本地电话时无需先拨国家和地区代码";
+"LN_Warm_Transfer_Button_31431" = "协助\n转接";
+"LN_Blind_Transfer_Button_31431" = "盲转接";
+"LN_Transfer_Label_Title_31431" = "转接至";
+"LN_Tranfer_Change_Button_Title_31431" = "更改";
+"LN_Complete_Transfer_Button_31431" = "完成\n转接";
+"LN_On_Transferring_Txt_31431" = "转接中...";
+"LN_Transfer_Fail_Txt_31431" = "失败";
+"LN_Sip_Dial_Hold_Status_31365" = "保持";
+"LN_Setting_Phone_ToolBar_Item_31438" = "电话";
+"LN_Setting_Phone_DirectNum_Txt_31438" = "直线号码：";
+"LN_Setting_Phone_CompanyNum_Txt_31438" = "公司号码：";
+"LN_Setting_Phone_LocalDial_Txt_31438" = "本地通话：";
+"LN_Setting_Phone_AreaCode_Txt_31438" = "地区代码：";
+"LN_Setting_Phone_LocalCall_Txt_31438" = "拨打本地电话时无需先拨国家和地区代码";
+"LN_Setting_Phone_Review_Profile_31438" = "要查看或更改您的设置，请访问";
+"LN_Setting_Phone_Account_Online_31438" = "我的在线账户";
+"LN_Setting_Phone_No_DirectNumber_31438" = "尚未设置";
+"LN_Phone_Network_Unavailible_27110" = "无法访问服务器";
+"LN_Phone_Register_Account_Error_27110" = "您的账户不再支持 Zoom Cloud Phone，请联系管理员";
+"LN_Phone_Fail_Service_Unvailable_27110" = "服务不可用";
+"LN_Phone_Call_Fail_486_Error_27110" = "对方正忙";
+"LN_Phone_Decline_603_Error_27110" = "对方已拒绝您的通话";
+"LN_CallFrom_Button_Title_31443" = "来电方： ";
+"LN_Segement_Voicemail_31454" = "语音邮件";
+"LN_Vcard_Personal_Link_35371" = "个人链接";
+"LN_Record_CallBack_35371" = "回电";
+"LN_Phone_History_Record_35371" = "录音可用";
+"LN_Phone_History_VoiceMail_35371" = "留了一封语音邮件";
+"LN_Phone_History_RecordPrepare_35371" = "正在准备录音...";
+"LN_Phone_History_Delete_Call_35371" = "是否要从您的账户中删除此通话记录？";
+"LN_Phone_History_Menu_Save_48678" = "保存到文件夹";
+"LN_Phone_History_Menu_Clear_48678" = "删除";
+"LN_Phone_History_Menu_ClearAll_48678" = "删除所有通话记录";
+"LN_Sip_Call_InvalidNum_Action_Error_27110" = "无效电话号码";
+"LN_Sip_Call_Server_Error_%ld_27110" = "服务器错误（代码：%ld）";
+"LN_Sip_Call_Recording_Download_Fail_48678" = "电话录音无法下载，请重试";
+"LN_Sip_Call_Transfer_Success_31431" = "已成功完成转接";
+"LN_Sip_Call_Transfer_Fail_31431" = "转接失败";
+"LN_Sip_Call_Start_Recording_Fail_31431" = "开始录音失败";
+"LN_Sip_Call_Stop_Recording_Fail_31431" = "停止录音失败";
+"LN_Sip_Call_Hold_Fail_27710" = "无法保持";
+"LN_Sip_Call_UnHold_Fail_27710" = "无法取消保持";
+"LN_Sip_Callout_Fail_27710" = "呼叫失败";
+"LN_Phone_History_Recording_Available_48678" = "录音可用";
+"LN_phone_Search_No_Result_27110" = "无结果";
+"LN_Phone_Call_History_Unknown_27110" = "未知";
+"LN_Vcard_Extension_35371" = "分机";
+"LN_Vcard_DirectNum_35371" = "直线号码";
+"LN_Phone_SDK_Unavailable_27710" = "Zoom Cloud Phone 服务当前不可用";
+"LN_Phone_Audio_Device_Unavailble_27710" = "无可用音频设备";
+"LN_Phone_Voicemail_DeleteAll_Record_31454" = "是否要从您的账户中删除所有语音邮件？";
+"LN_Phone_Voicemail_DeleteSingle_Record_31454" = "是否要从您的账户中删除此语音邮件？";
+"LN_Phone_Voicemail_Download_Fail_31454" = "语音邮件无法下载，请重试";
+"LN_Phone_Voicemail_SaveLocal_31454" = "保存到文件夹";
+"LN_Phone_Voicemail_ClearAll_31454" = "删除所有语音邮件";
+"LN_Phone_Record_Preparing_37978" = "准备中...";
+"LN_Phone_Record_Stop_37978" = "停止录音";
+"LN_Phone_History_Delete_Call_Inform_48678" = "将在本地、云端以及所有设备上删除所有通话记录";
+"LN_Phone_History_Clean_All_Log_48678" = "是否要从您的账户中删除所有通话记录？";
+"LN_Phone_History_Clean_All_Inform_48678" = "将在本地、云端以及所有设备上删除所有通话记录。";
+"LN_Phone_Clean_CallHistory_Footer_35371" = "删除所有通话记录";
+"LN_Vcrad_Internal_Num_54073" = "内部号码";
 
 "LN_GDPR_40930_I Agree" = "同意";
 "LN_GDPR_40930_I Disagree" = "不同意";
@@ -2510,4 +2600,51 @@
 
 "LN_GDPR_40930_SIGNIN_TITLE" = "条款和政策已更新";
 "LN_GDPR_40930_SIGNIN_DETAIL_%1$@_%2$@" = "Zoom更新了服务条款和隐私政策，以提高数据收集透明度、说明数据使用方式及增强您对个人数据的控制。如果您选择继续使用Zoom，需要接受已更新的%1$@ 和 %2$@。";
+
+
+"LN_Audiooption_CountryName_Country_49437" = "国家/地区";
+"LN_Audiooption_CountryName_HongKong_49437" = "中国香港";
+"LN_Audiooption_CountryName_TaiWan_49437" = "中国台湾";
+"LN_Audiooption_CountryName_Macau_49437" = "中国澳门";
+"LN_Audio_Wizard_Test_Finish_47788" = "扬声器和麦克风工作正常";
+"LN_Join_With_Computer_Audio_47788" = "使用计算机音频加入";
+"LN_Finish_47788" = "完成";
+"LN_New_Folder_Detail_5820" = "新文件夹名称：";
+"LN_New_Folder_Name_5820" = "未命名文件夹";
+"LN_New_Folder_Warning_5820" = "此名称已被占用。";
+"LN_New_Folder_Cancel_5820" = "取消";
+"LN_New_Folder_Create_5820" = "创建";
+"LN_Phone_Error_String_NumbetNotAvailable_27710" = "您拨打的号码无法接通";
+"LN_Group_MaxAllowed_Failed_%u_50730" = "此频道最多可具有 %u 个成员。";
+"LN_Phone_Add_Number_Button_48757" = "添加号码";
+"LN_Phone_Create_New_Contact_48757" = "新建联系人";
+"LN_Phone_First_Name_48757" = "名";
+"LN_Phone_Last_Name_48757" = "姓";
+"LN_Phone_Number_title_48757" = "电话号码";
+"LN_Sip_Contact_Group_Name_48757" = "Zoom 电话联系人";
+"LN_Phone_History_Menu_Create_Contact_48757" = "新建联系人";
+"LN_Vcard_Phone_Num_52057" = "个人号码";
+"LN_Schedule_Limitation_BasicUser_Des_45329" = "与三个或更多与会者召开会议时，您的基本计划时间限制为 40 分钟。";
+"LN_Schedule_Limitation_BasicUser_UpgradeInfo_45329" = "是否需要取消群组会议的时间限制？请联系";
+"LN_Schedule_Limitation_FreeUser_UpgradeInfo_45329" = "是否通过升级取消会议时间限制？";
+"LN_Schedule_Limitation_FreeUser_Link_45329" = "升级到专业版";
+"LN_Schedule_Limitation_NotShowMeAgain_45329" = "不再显示此消息";
+"LN_Audio_Tsp_Both_45801" = "两者";
+"LN_Back_To_Revious_41410" = "返回上一窗口";
+"LN_Incorrect_Email_Password_41410" = "电子邮件或密码不正确";
+"LN_Signed_Out_Security_Policy_41410" = "根据账户安全政策，由于 %d 分钟未操作，您已退出账户。";
+"LN_Signed_Out_SSO_41410" = "您已退出 Zoom 账户。请再次登录以继续使用 Zoom。";
+"LN_Account_Locked_41410" = "登录失败次数过多，您的账户已锁定。";
+"LN_43393_Enter new sharing key" = "输入新的共享密钥";
+"LN_43393_This step is required for users on a different network for additional security measures." = "对于使用其他网络的用户，必须采用这一步骤，以实施其他安全措施。";
+"LN_LinkedIn_Loading_35020" = "加载中";
+"LN_Plist_LinkedIn_35020" = "LinkedIn";
+"LN_Alert_Auth_Title_57569" = "重要";
+"LN_Alert_Auth_Go_Settings_57569" = "请转到设置";
+"LN_Alert_Auth_Detail_Camera&Mic_57569" = "请在系统偏好设置下的安全性与隐私中为 Zoom 启用摄像头和麦克风访问。";
+"LN_Alert_Auth_Detail_Camera_57569" = "请在系统偏好设置下的安全性与隐私中为 Zoom 启用摄像头访问";
+"LN_Alert_Auth_Detail_Mic_57569" = "请在系统偏好设置下的安全性与隐私中为 Zoom 启用麦克风访问";
+"LN_Toolbar_Video_Warning_Tooltip_57569" = "请在系统偏好设置下的安全性与隐私中为 Zoom 启用摄像头访问";
+"LN_Toolbar_Audio_Warning_Tooltip_57569" = "请在系统偏好设置下的安全性与隐私中为 Zoom 启用麦克风访问";
+"Options are not available when multiple people can share at the same time" = "当多人可以同时共享时，选项不可用";
 

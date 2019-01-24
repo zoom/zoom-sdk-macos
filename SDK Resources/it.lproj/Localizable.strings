@@ -1207,3 +1207,11 @@
 "BTN_REFRESH_MEETING_LIST" = "Refresh Meeting List";
 "BTN_ADD_CONTACT" = "Add Contact";
 "DESCRIPTION_BUTTON" = "button";
+
+"LN_Alert_Auth_Title_57569" = "Important";
+"LN_Alert_Auth_Go_Settings_57569" = "Go To Settings";
+"LN_Alert_Auth_Detail_Camera&Mic_57569" = "Please enable camera and microphone access for Zoom under security & Privacy in System Preferences.";
+"LN_Alert_Auth_Detail_Camera_57569" = "Enable camera access for Zoom under Security & Privacy in System Preferences";
+"LN_Alert_Auth_Detail_Mic_57569" = "Enable microphone access for Zoom under Security & Privacy in System Preferences";
+"LN_Toolbar_Video_Warning_Tooltip_57569" = "Enable camera access for Zoom under Security & Privacy in System Preferences";
+"LN_Toolbar_Audio_Warning_Tooltip_57569" = "Enable microphone access for Zoom under Security & Privacy in System Preferences";

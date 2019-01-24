@@ -3,7 +3,7 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 8/4/17.
-//  Copyright © 2017 TOTTI. All rights reserved.
+//  Copyright © 2017 zoom.us. All rights reserved.
 //
 #import "ZoomSDKErrors.h"
 @interface ZoomSDKMeetingConfiguration :NSObject
@@ -75,7 +75,7 @@
     //enable global shortcuts in confui
     BOOL                _enableGlobalShortcuts;
     BOOL                _disableCustomLiveStreamAction;
-    //free user
+    //diable free user payment Reminder
     BOOL                _disableFreeUserOriginAction;
     //disable free meeting remain time notify in confui
     BOOL                _disableFreeMeetingRemainTimeNotify;

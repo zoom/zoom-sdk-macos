@@ -176,6 +176,10 @@ message MeetingProto {
   optional AvailableDialinCountry availableDialinCountry= 94; // contains all countries, selected countries, is include Tollfree
   optional string extInfo                    = 95; //For outlook plugin save special info in web.
   optional SplashPageForWaitingRoom splashPageForWaitingRoom = 97;  // splash Page For waiting Room
+  optional int32 linkedinSalesNavState       = 98; // Support Linkedin Sales Navigator Wedgit Plugin 
+  optional string linkedinSalesNavUrl        = 99; // Linkedin Sales Navigator Wedgit URL
+  repeated TSPAccountProto tspAccount        = 100; // tsp account info
+  optional string selectedTspAccount          = 101; // tsp1 tsp2
 }
 
 message CalloutSIPTrunk {
@@ -293,7 +297,20 @@ message UserProfile {
   optional CheckInInfo roomCheckInInfo = 73;  // for zoom room client
   optional UpgradeInfo upgradeInfo = 74;
   optional string defaultMeetingTopic = 75; //email subject from email template for outlook plugin
+  optional int64 opClientOptions = 76; //Client options that configured in op web system properties, key: op_client_options. Web pass it to client directly.
+  optional TSPProto tsp    		 = 77; // TSP Info
+  repeated TSPAccountProto tspAccount        = 78; // tsp account info
+  optional string ewsAccessToken = 79; //office oauth2 accessToken
+  optional int32 ewsAccessTokenRefreshInterval = 80;
+  optional ZREncryptionInfo zrEncryption = 81; // ZOOM-46999 - Encryption information for zr and zrc communication
+  optional string zrSecretKey = 82; // zoom room secret key for multi-share
 }
+
+message ZREncryptionInfo {
+  optional string aesKey = 1;
+  optional string aesIV = 2;
+}
+
 message UpgradeInfo{
   optional int32 isShowUpgradeLink = 1;
   optional string upgradeLink = 2;
@@ -317,7 +334,8 @@ message BillingStatus{
 	optional int32 freeTrialDays = 2;
 }
 message KeyValOption{
-	//key: zrapi_passcode, digital_signage_playlist, digital_signage_settings
+	//key: zrapi_passcode, digital_signage_playlist, digital_signage_settings, calendar_config_url
+	//key: app_es(es = encrypted sed)
 	optional string key                                 = 1;
 	optional string val                                 = 2;
 	optional int32 amendmentFlag                        = 3; // null or 0: update; 1: remove
@@ -362,6 +380,7 @@ message OperationTime {
 message ClientSettings {
   optional int64 bitOptions = 1; // enable/disable flag, use bit
   optional SipPhoneIntegration sipPhoneIntegration = 2; // if enabled, bitOptions set 0x1L
+  optional CloudPBX cloudPBX = 3; // CloudPBX info, if enabled, bitOptions set 0x2L
 }
 message SipPhoneIntegration {
   optional string userName =                  1;
@@ -411,7 +430,7 @@ message MediaDeviceSetting {
 //        SPEAKER                                 = 1;
 //        CAMERA                                  = 2;
 //    }
-//    enum OperationType {
+//    enum OperationType {      // Operation type will transfer to type 'ZP_PT_SETTING_OPERATION_TYPE'
 //        SET_VOLUME          = 0;
 //        SELECT_DEVICE       = 1;
 //        DISABLE_AEC         = 2;
@@ -420,6 +439,11 @@ message MediaDeviceSetting {
 //        DISABLE_AGC         = 5;
 //        CONFIRM_MIC_COUNT   = 6;
 //        ENABLE_HRR          = 7;
+//   	  SET_PTZ_COM_ID              = 8;  // web not support
+//        TEST_RECORD_START           = 9;  // web not support 
+//        TEST_RECORD_END             = 10; // web not support 
+//        DISABLE_SUPPRESS_NOISE      = 11;
+//        SET_MIC_PICKUP_RANGE        = 12;
 //    }
 
     optional string device_id                   = 1; //in client to web  id-1
@@ -437,7 +461,11 @@ message MediaDeviceSetting {
 	optional bool   is_combined_device          = 11;
     optional int32  combined_device_count       = 12;
     optional bool is_hrr_enabled                = 13; //Highly reverberant room 
+    optional bool  is_suppress_noise_disable    = 14;   // suppress excessive noise.
+    optional int32 mic_pickup_range             = 15;   // 0 = none, 1 = small, 2 = middle, 3 = big.
 }
+
+
 
 message RemoteControlRequestProto {
 //    enum ControlEvent {
@@ -470,6 +498,12 @@ message RemoteControlRequestProto {
     optional MeetingREQ cancel_meeting                       = 12;
     optional int64 options                                   = 13; //0x1: need_response_when_received, 0x2: need_response_when_handled
     optional AutoLoginREQ auto_login                         = 14;
+    optional RestartOSREQ restart_os                         = 15;
+}
+
+message RestartOSREQ {
+
+     optional bool restart                      = 1;
 }
 
 //res_code: 200: success, other failed, set res_message
@@ -583,6 +617,8 @@ message ZRSettingsDeviceInfos {                    //Return all device infos tog
     optional bool is_agc_disabled               = 11; //default 
     optional bool can_switch_camera_for_video   = 12; //switch camera in meeting, only for in meeting
     optional bool is_hrr_enabled                = 13; //Highly reverberant room 
+    optional bool is_suppress_noise_disable     = 14;
+    optional int32 mic_pickup_range             = 15; // 0 = none, 1 = small, 2 = middle, 3 = big.
 }
 
 //APP device, which should login with Zoom APP, like ZRC/ZRP, ZR/ZOOM etc.
@@ -596,15 +632,18 @@ message DeviceInfo {
 	optional string extJson     = 7;
     optional string device_model        = 8;   //Computer model, for example Dell 7050, mac mini 2014
     optional string gpu_info            = 9;
-    optional string cpu_info            = 10;  //CPU info strings, for example: intel i7 7700T
+    optional string cpu_info            = 10;  //CPU info string, for example: intel i7 7700T
     optional int32  cpu_cores           = 11;
     optional float  cpu_frequency_GHz   = 12;  //For example: 2.66
-    optional float  total_memory_GB     = 13;  //Total Memory capacity, in GB
+    optional float  total_memory_GB     = 13;  //Total memory capacity, in GB
     optional int32  memory_bank         = 14;  //Count of memory banks
     optional float  total_disk_GB       = 15;  //In GB
     optional float  used_disk_GB        = 16;  //In GB
     optional int32  network_type        = 17;  //0: unknown, 1: wired, 2: wifi, 3: both
     optional string displays_info       = 18;  //"{{0, 0}, {1920, 1080}}, {{0, 0}, {3840, 2160}}"
+    optional string serial_number       = 19;
+    optional int32  is_iot_device       = 20;  // 0: normal device; 1: IoT device
+    optional string app_display_version = 21; //4.1.1 (12345.0525)
 }
 
 message VirtualBackground {
@@ -838,6 +877,10 @@ message ZoomPresence {
 	AUTO_AUDIO_TEST             = 25; // value: 0 normal, 1 failed, 2 failed likely
 	AUTO_LOGIN_USER_NAME        = 26; // STRING_TYPE value: strValue: current OS login user name
 	AUTO_LOGIN_SUPPORT_SET      = 27; // INT_TYPE    value: 0 disabled, 1: support enable auto login from Web
+	SIPPHONE_INTEGRATION        = 28; // value: 0 normal, 1 failed
+	AUDIO_ECHO_TEST             = 29; // value: 0:AEC_NOT_DETERMINE, 1:AEC_LEVEL_BAD,2:AEC_LEVEL_POOR,3:AEC_LEVEL_FAIR,4:AEC_LEVEL_GOOD,5:AEC_LEVEL_EXCELLENT
+    MICROPHONE_AUTHORIZATION    = 30; //value: 0 normal, 1 failed
+    CAMERA_AUTHORIZATION        = 31; //value: 0 normal, 1 failed
   }
   enum AlertValueType {
     INT_TYPE                 = 1;  
@@ -896,6 +939,7 @@ message Request {
   optional DeviceInfo appDeviceInfo                     = 15;
   repeated SubscribeData subscribeDataList              = 16; // get data, query update by version, subscribe update
   optional RemoteControlResponseProto rcResponse        = 17; // response for remote control request
+  optional CloudPBXCallLog cloudPBXCallLog              = 18; // Cloud PBX call log
   repeated string optionKeys        					= 19; // For API /profile/get, key to retrive the options value from Web, empty for old client
 }                                                       
                                                         
@@ -921,7 +965,7 @@ message ServerDomain {
   optional string logDomain       = 13; // log.zoom.us, mem log, crash log
   optional string meetingDomain   = 14; // www3.zoom.us
   optional string monitorDomain   = 15; // logfile.zoom.us, monitor user behavior data
-  
+  optional string contactDomain   = 16;	// Private Address book for PBX, contact server domain
 }                                                       
 
 //{"notifyZrcDisconnect":true,"notifyDeviceDisconnect":true, "notifyZrHeartbeat":true,"notifyZrcNotCharging":true, "notifyAudioIssue":true ???}
@@ -1002,6 +1046,8 @@ message Response {
   optional int32 timeToLive								= 53; // zr pairing code expired time, unit seconds
   repeated KeyValOption keyValOptions 					= 54; // key: zr_calendars, zr_locations
   optional string entCalloutBlockNumbers		        = 55; //enterprice accout's callout block numbers
+  optional string rcMessageAttachmentUri 				= 56; // message attachment uri in RC
+  optional PBXSyncResponse pbxSyncResponse 				= 57; // return pbx sync record
 }
 
 message SubscribeData {
@@ -1197,6 +1243,7 @@ message PACMeeting {
   repeated CountryCodeProto tollFreeNumberList           = 3;
   optional string invitationEmail = 4;                  
   optional string invitationHtmlEmail = 5; //           for outlook plugin use
+  optional string dedicatedDailinNumber = 6;
 }                                                       
 message RoomRendererOptions {                           
   required RendererGlobalOption   global    =           1;
@@ -1237,6 +1284,14 @@ message TSPProto {
 	optional string participantPasscode		  = 7;
 	optional int32 passcodeType				  = 8; //default is 1:conference code + leader pin
   optional CountryCodeListProto mediaNumber         = 9; //ATT media link phone number
+}
+
+message TSPAccountProto {
+	optional string tspAccountIndex			  = 1; //Tsp Account Index, example: tsp1 tsp2
+	optional string hostPasscode			  = 2; //
+	optional string participantPasscode		  = 3; //
+	optional int32 passcodeType			  	  = 4; //
+	repeated string tspNumber      			  = 5;
 }
 
 message BroadcastMeetingItem{
@@ -1280,6 +1335,89 @@ message AvailableDialinCountry {
 	repeated string countries   		   	   = 2; // all countries
 	repeated string selectedCountries   	   = 3; // selected countries
 	optional bool includeTollfree   		   = 4; // is include tollfree number
+}
+message CloudPBX {
+  optional string rcSettingsLink =            1; // click to login RC setting page
+  repeated string directNumber   =            2; // (080) 123-2345
+  optional string mainCompanyNumber   =       3; // (080) 123-2345
+  optional string extension =                 4; // 010
+  optional string countryCode =               5; // local dialing country code, sample: +1
+  optional string countryName =               6; // local dialing country name, sample: United States
+  optional string areaCode =                  7; // local dialing area code
+  optional string voiceMailLink =             8; // click to login RC voice mail page
+  repeated PBXNumber callerID =               9; // include directNumber, mainCompanyNumber, ......
+  optional SipPhoneIntegration sipPhoneIntegration =                 10; // PBX sip phone integration
+  optional int32 type =                 11; // PBX source from 0-RC, 1-Zoom
+}
+message PBXNumber {
+  optional string name  =               1; // number description
+  optional string number   =            2; // (080) 123-2345
+}
+message CloudPBXCallLog {
+  enum CallLogAction {
+    INCOMING_CALL  = 1;
+    ACCEPT   = 2;
+    TRANSFER  = 3;
+    HANG_UP  = 4;
+    CALL_OUT  = 5;
+  }
+  optional string userId =            1; // user id
+  optional CallLogAction action   =            2; // log action, sample: incomingCall, accept, transfer, hangUp, callOut
+  optional PBXNumber callerID   =       3; // current user PBX info
+  optional string incomingNumber   =       4; // incoming number, (080) 123-2345
+  optional string extension =                 5; // 010
+  optional int64 clientTime =                 6; // client log time, milliseconds
+  optional string remark =                 7; // remark info for this log
+  optional string companyNumber =                 8; // 
+}
+message PBXSyncResponse {
+  repeated PBXCallLog callLog =            1; // call Log list
+  repeated PBXVoiceMail voiceMail =            2; // voice message list
+  optional string syncToken   =   3; // sync token, used for ISync request
+  optional int32 forceFSync   =   4; // 0-don't care, 1-must clear local DB first and use FSync 
+}
+
+message PBXCallLog {
+  required string id =            1; 
+  optional string startTime =            2; // example:2017-09-04T12:03:24.842Z
+  optional int32 duration = 3 ; // unit second.
+  optional string type = 4; // 'Voice'
+  optional string direction = 5; // Outbound, Inbound
+  optional string action = 6; // stay
+  optional string result = 7; // 'Missed'
+  optional string toPhoneNumber = 8; 
+  optional string toName = 9; // display name
+  optional string toLocation = 10; // city name + state name
+  optional string fromPhoneNumber = 11;
+  optional string fromName = 12;
+  optional string fromLocation = 13; // city name + state name
+  optional PBXAttachment recording = 14;
+  optional PBXVoiceMail voiceMail = 15;
+}
+
+message PBXVoiceMail {
+  required string id =            1; 
+  optional string createTime =            2; // example:2017-09-04T12:03:24.842Z
+  optional string toName = 3; // name
+  optional string toPhoneNumber = 4; 
+  optional string fromPhoneNumber = 5;
+  optional string fromName = 6;
+  optional string type= 7; // 'VoiceMail'
+  optional string readStatus= 8;// Read, Unread
+  optional string priority= 9; // Normal, High
+  optional string direction= 10; // Inbound
+  optional string availability= 11;// 'Alive' | 'Deleted'
+  optional string messageStatus= 12; // 'Received'
+  optional string vmTranscriptionStatus= 13; // stay
+  repeated PBXAttachment attachment = 14; // attachment  list
+}
+message PBXAttachment {
+  required string id =            1; 
+  optional string uri = 2; // client  access this uri can download message, and client need contains seesion id to support authentication
+  optional string type= 3; // voicemail-AudioRecording, recording-Automatic|OnDemand
+  optional string contentType= 4;// audio/x-wav
+  optional string priority= 5; // Normal, High. just for voice mail
+  optional int32 duration= 6; // unit second
 }
 
 message SplashPageForWaitingRoom {

@@ -153,6 +153,7 @@ typedef enum{
     MeetingComponent_JBHWindow,
     MeetingComponent_ShareOptionWindow,
     MeetingComponent_ThumbnailVideo,
+    MeetingComponent_InviteWindow,
 }MeetingComponent;
 
 /**
@@ -186,15 +187,15 @@ typedef enum{
  */
 typedef enum {
     //Auth Success
-    ZoomSDKAuthError_Success,
+    ZoomSDKAuthError_Success = 0,
     //Key or Secret is wrong
-    ZoomSDKAuthError_KeyOrSecretWrong,
+    ZoomSDKAuthError_KeyOrSecretWrong = 1,
     //Client Account does not support
-    ZoomSDKAuthError_AccountNotSupport,
+    ZoomSDKAuthError_AccountNotSupport = 2,
     //Client account does not enable SDK
-    ZoomSDKAuthError_AccountNotEnableSDK,
+    ZoomSDKAuthError_AccountNotEnableSDK = 3,
     //Auth Unknown error
-    ZoomSDKAuthError_Unknown,
+    ZoomSDKAuthError_Unknown = 4,
 }ZoomSDKAuthError;
 
 /**
@@ -273,6 +274,7 @@ typedef enum {
     ZoomSDKMeetingError_ZCCertificateChanged            = 24,
     //Failed to write to config file
     ZoomSDKMeetingError_ConfigFileWriteFailed           = 50,
+    ZoomSDKMeetingError_RemovedByHost                   = 61,
     //Unknown error
     ZoomSDKMeetingError_Unknown                         = 100,
     ZoomSDKMeetingError_None                            = 101,
@@ -284,10 +286,10 @@ typedef enum {
  @enum: ZoomSDK login status
  */
 typedef enum {
-    ZoomSDKLoginStatus_Idle, // Not login yet
-    ZoomSDKLoginStatus_Success, // Login Success
-    ZoomSDKLoginStatus_Failed,// Login Failed
-    ZoomSDKLoginStatus_Processing // Login in progress
+    ZoomSDKLoginStatus_Idle = 0, // Not login yet
+    ZoomSDKLoginStatus_Success = 1, // Login Success
+    ZoomSDKLoginStatus_Failed = 2,// Login Failed
+    ZoomSDKLoginStatus_Processing = 3 // Login in progress
 }ZoomSDKLoginStatus;
 
 
@@ -352,20 +354,20 @@ typedef enum{
  @enum: ZoomSDK audio status
  */
 typedef enum{
-    ZoomSDKAudioStatus_None,
-    ZoomSDKAudioStatus_Muted,
-    ZoomSDKAudioStatus_UnMuted,
-    ZoomSDKAudioStatus_MutedByHost,
-    ZoomSDKAudioStatus_UnMutedByHost,
-    ZoomSDKAudioStatus_MutedAllByHost,
-    ZoomSDKAudioStatus_UnMutedAllByHost,
+    ZoomSDKAudioStatus_None = 0,
+    ZoomSDKAudioStatus_Muted = 1,
+    ZoomSDKAudioStatus_UnMuted = 2,
+    ZoomSDKAudioStatus_MutedByHost = 3,
+    ZoomSDKAudioStatus_UnMutedByHost = 4,
+    ZoomSDKAudioStatus_MutedAllByHost = 5,
+    ZoomSDKAudioStatus_UnMutedAllByHost = 6,
 }ZoomSDKAudioStatus;
 
 typedef enum{
-    ZoomSDKAudioType_None,
-    ZoomSDKAudioType_Voip,
-    ZoomSDKAudioType_Phone,
-    ZoomSDKAudioType_Unknow,
+    ZoomSDKAudioType_None = 0,
+    ZoomSDKAudioType_Voip = 1,
+    ZoomSDKAudioType_Phone = 2,
+    ZoomSDKAudioType_Unknow = 3,
 }ZoomSDKAudioType;
 /**
  @enum: ZoomSDK remote control status
@@ -581,6 +583,7 @@ typedef enum
     FitBarPolling,
     FitBarMoreButton,
     MainExitFullScreenButton,
+    ClaimHostButton,
 }SDKButton;
 
 typedef enum
@@ -610,12 +613,12 @@ typedef enum{
 }ConnectionComponent;
 
 typedef enum{
-    EndMeetingReason_None,
-    EndMeetingReason_KickByHost,
-    EndMeetingReason_EndByHost,
-    EndMeetingReason_JBHTimeOut,
-    EndMeetingReason_NoAttendee,
-    EndMeetingReason_HostStartAnotherMeeting,
+    EndMeetingReason_None = 0,
+    EndMeetingReason_KickByHost = 1,
+    EndMeetingReason_EndByHost = 2,
+    EndMeetingReason_JBHTimeOut = 3,
+    EndMeetingReason_NoAttendee = 4,
+    EndMeetingReason_HostStartAnotherMeeting = 5,
 }EndMeetingReason;
 
 // Huawei setting
@@ -686,13 +689,13 @@ typedef enum{
 
 typedef enum{
     DirectShareStatus_None = 0,
-    DirectShareStatus_Connecting,  //trying to start direct share, just waiting
-    DirectShareStatus_InProgress, //in diret share mode
-    DirectShareStatus_Ended,  //diret share is ended
-    DirectShareStatus_NeedMeetingIDOrSharingKey, // need input a meeting id/sharing key
-    DirectShareStatus_WrongMeetingIDOrSharingKey,
-    DirectShareStatus_NetworkError, // network error. Try again later
-    DirectShareStatus_Unknow,
+    DirectShareStatus_Connecting = 1,  //trying to start direct share, just waiting
+    DirectShareStatus_InProgress = 2, //in diret share mode
+    DirectShareStatus_Ended = 3,  //diret share is ended
+    DirectShareStatus_NeedMeetingIDOrSharingKey = 4, // need input a meeting id/sharing key
+    DirectShareStatus_WrongMeetingIDOrSharingKey = 5,
+    DirectShareStatus_NetworkError = 6, // network error. Try again later
+    DirectShareStatus_Unknow = 7,
 }DirectShareStatus;
 
 typedef enum{
@@ -737,3 +740,10 @@ typedef enum{
     Device_List_Update,
     Audio_Disconnect_As_Detected_Echo,
 }ZoomSDKDeviceStatus;
+
+typedef enum{
+    ShareSettingType_OnlyHostCanShare = 1,//Only host can share, the same as "lock share"
+    ShareSettingType_OnlyHostCanGrab = 0,//Anyone can share, but one sharing only at one moment, and only host can grab other's sharing
+    ShareSettingType_AnyoneCanGrab = 2,//Anyone can share, but one sharing only at one moment, and anyone can grab other's sharing
+    ShareSettingType_MutiShare = 3,
+}ZoomSDKShareSettingType;

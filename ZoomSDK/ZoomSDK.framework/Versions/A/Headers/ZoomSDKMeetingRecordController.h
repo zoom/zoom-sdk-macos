@@ -3,7 +3,7 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 2018/8/6.
-//  Copyright © 2018 TOTTI. All rights reserved.
+//  Copyright © 2018 zoom.us. All rights reserved.
 //
 #import "ZoomSDKErrors.h"
 typedef enum
@@ -84,8 +84,8 @@ typedef enum
  * @param userid, the specific user identity.
  * @return A ZoomSDKError, ZoomSDKError_Success means have, other will tell failed reason.
  */
-- (ZoomSDKError)canStartRecording:(BOOL)isCloud User:(unsigned int)userid;
-
+- (ZoomSDKError)canStartRecording:(BOOL)isCloud User:(unsigned int)userid NS_DEPRECATED_MAC(4.1, 4.3);
+- (ZoomSDKError)canStartRecording:(BOOL)isCloud NS_AVAILABLE_MAC(4.3);
 /**
  * @brief This method is used to check whether I have have privilege to allow or disallow other user to start local recording.
  * @return A ZoomSDKError, ZoomSDKError_Success means can, other will tell failed reason.

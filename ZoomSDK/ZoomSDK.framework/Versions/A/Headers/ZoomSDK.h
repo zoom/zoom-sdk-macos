@@ -59,6 +59,10 @@
  */
 + (ZoomSDK*)sharedSDK;
 
+/**
+* @brief This method is used to init Zoom SDK.
+* @param customizedFlag: YES means use Customized UI, No means use Zoom native UI.
+*/
 - (void)initSDK:(BOOL)customizedFlag;
 /**
  * @brief Sets the Zoom SDK client domain
@@ -98,14 +102,6 @@
 - (ZoomSDKNetworkService*)getNetworkService;
 
 /**
- * @brief Sets the customized bundle path
- * @param bundlePath: file position of the prodcut customize strings.
- * @param fileName: file name of customize strings.
- *
- */
-//- (void)setCustomBundlePath:(NSString*)bundlePath fileName:(NSString*)fileName;
-
-/**
  * @return the ZoomSDK default Version Number
  */
 - (NSString*)getSDKVersionNumber;
@@ -114,7 +110,7 @@
  * @brief get the supproted localization lanuguages
  * @param the items in NSArray is the name of the supported lanuguages, which type is NSString.
  */
-- (NSMutableArray*)getLanguageArray;
+- (NSArray*)getLanguageArray;
 
 /**
  * @brief set the language of the app
@@ -123,6 +119,13 @@
     you can call this api when you first call [ZoomSDK sharedSDk] in the app, otherwise you need restart the app to make the prefered Language work.
  */
 - (ZoomSDKError)setPreferLanguage:(NSString *)preferLanguage;
+
+/**
+ * @brief enable default 5M log or not
+ * @param enable: YES mean enable default 5M log, NO means doesn't.
+ * @note you need call this api before you first call [[ZoomSDK sharedSDK]initSDK:NO/YES] in the app.
+ */
+- (void)enableDefaultLog:(BOOL)enable;
 @end
 
 

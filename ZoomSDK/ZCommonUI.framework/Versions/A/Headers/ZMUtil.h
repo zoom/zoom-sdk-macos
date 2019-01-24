@@ -57,6 +57,8 @@ typedef enum
     ID_German_Language,
     ID_Spanish_Language,
     ID_Japanese_Language,
+    ID_Portuguese_Language,
+    ID_Russian_Language
 } ID_CLIENT_LANGUAGE;
 
 @interface ZMUtil : NSObject

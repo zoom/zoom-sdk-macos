@@ -3,7 +3,7 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 12/07/2018.
-//  Copyright © 2018 TOTTI. All rights reserved.
+//  Copyright © 2018 zoom.us. All rights reserved.
 //  [Used for Customized UI]
 
 #import <Foundation/Foundation.h>

@@ -3,7 +3,7 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 8/10/16.
-//  Copyright © 2016 TOTTI. All rights reserved.
+//  Copyright © 2016 zoom.us. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -505,6 +505,7 @@ typedef enum{
 /**
  * @brief This method is used to set default recording saved path for meeting.
  * @param path, default recording saved path for meeting.
+ * @note the parameter path must already exist, otherwise the path cannot be set successfully.
  * @return A ZoomSDKError to tell client whether function call successfully or not.
  */
 - (ZoomSDKError)setRecordingPath:(NSString*)path;

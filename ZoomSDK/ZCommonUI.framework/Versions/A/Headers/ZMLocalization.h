@@ -153,8 +153,8 @@
 
 #define TAB_ACCESSIBILITY_COUNT @"count"
 //free trial extend ZOOM-15607
-#define FREE_TRIAL_EXTEND_TITLE         @"Try an unlimited Zoom meeting\n"
-#define FREE_TRIAL_EXTEND_DETAIL        @"As a Basic user, your free meeting has a time limit of 40 minutes. Zoom is giving you a one-time offer to extend this meeting, Click \"Continue\" to enjoy your unlimited meeting for free. Thanks for choosing Zoom."
+#define FREE_TRIAL_EXTEND_TITLE         @"Here's a gift\n\n"//ZOOM-47442
+#define FREE_TRIAL_EXTEND_DETAIL        @"We've removed the 40-minute time limit on your first group meeting."//ZOOM-47442
 #define FREE_TRIAL_EXTEND_ERROR_TITLE   @"Unable to extend this meeting\n"
 #define FREE_TRIAL_EXTEND_ERROR_DETAIL  @"Zoom cannot extend your free meeting at this time. Your meeting will end when the duration reaches 40 minutes.\n\n(ERROR : %d)"
 #define HOST_MEETING_UNLIMITED          @"This meeting now has unlimited minutes." //[Zoom-17617]

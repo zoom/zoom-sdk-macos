@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "zoom_client_conf.h"
 
 @interface ZPBundleHelper : NSObject
 
@@ -25,10 +24,4 @@
 + (NSString*)localizedString:(NSString *)theKey value:(NSString*)value;
 + (void)cleanUp;
 + (NSString*)localizedEnString:(NSString *)theKey value:(NSString*)value;
-
-//for sdk
-+ (void)setCustomBundlePath:(NSString*)bundlePath fileName:(NSString*)fileName;
-#ifdef BUILD_FOR_SDK
-+ (NSString *)resBundlePathForSDKElectron:(NSString *)originPath;
-#endif
 @end

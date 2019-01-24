@@ -3,11 +3,10 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 8/4/17.
-//  Copyright © 2017 TOTTI. All rights reserved.
+//  Copyright © 2017 zoom.us. All rights reserved.
 //
 
 #import "ZoomSDKErrors.h"
-#import "ZoomSDKBuildType.h"
 #import "ZoomSDKCustomizedAnnotationCtr.h"
 #import "ZoomSDKShareContainer.h"
 #import "ZoomSDKRemoteControllerHelper.h"

@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## 2019-01-23
+
+Added
+*	A new refactorized demo project that provides clear instructions on how to implement major features.
+*	Support for multi-share setting
+*	Support for closed caption
+*	Proper error message for the case when a participant has been removed by the host at joining the meeting
+*	Support for hiding “Claim Host” button in the meeting.
+*	New logging feature that stores logs with the maximum size of 5MB.
+*	A new method to join/start meeting directly via url, such as zoommtg://zoom.us/join?action=....
+
+Changed & Fixed
+*	An issue that the transcode does not work when enable setting of “Choose a location for recorded files when meeting ends”
+*	Audio/Video does not work on Mac OS 10.14
+*	Setting preferred language feature does not work
+*	Waiting for host window does not show when joining a meeting that hasn’t started yet.
+*	Loading tab always displayed when scheduling a meeting twice
+
+Deprecated
+*	- (ZoomSDKError)canStartRecording:(BOOL)isCloud User:(unsigned int)userid NS_DEPRECATED_MAC(4.1, 4.3);
+*	- (ZoomSDKError)canStartRecording:(BOOL)isCloud NS_AVAILABLE_MAC(4.3); in ZoomSDKMeetingRecordController.h
+*	- (ZoomSDKError)loginSSO:(NSString*)ssoToken NS_DEPRECATED_MAC(1.0, 4.3);
+*	- (ZoomSDKError)loginSSO:(NSString*)ssoToken RememberMe:(BOOL)rememberMe NS_AVAILABLE_MAC(4.3);
+
+
+
 ## 2018-10-29
 
 * Support schedule meeting feature
@@ -8,7 +34,7 @@
 * Support advanced share feature
 * Support webinar common feature
 * Support setting audio/video feature
-* Bug fixes 
+* Bug fixes
 
 ## 2018-9-11
 
@@ -91,7 +117,7 @@ Login Start Meeting: [meetingService startMeeting...]
 
 3. support live stream
 
-4. support make host && cohost 
+4. support make host && cohost
 
 5. some bugs fix
 
@@ -149,7 +175,7 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
 5. add support to minimize video
 
-6. add callback interface for clicking toolbar share button 
+6. add callback interface for clicking toolbar share button
 
 7. add support for webinar join window info prefill
 
@@ -174,49 +200,49 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 3. add join/leave audio api
 
    ActionMeetingCmd_JoinVoip
-    
+
    ActionMeetingCmd_LeaveVoip
 
 4. Custom input meeting password feature
 
    (ZoomSDKError)inputPassword:(NSString*)password;
 
-5. add config for hide "exit full screen” button and disable double click to enter fullscreen 
+5. add config for hide "exit full screen” button and disable double click to enter fullscreen
 
    BOOL _hideExitFullScreenButton;
-   
+
    BOOL _disableDoubleClickToFullScreen;
 
 6. add get meeting type api and user role api
 
    (UserRole)getUserRole;
-   
+
    (MeetingType)getMeetingType;
 
 7. join/leave bo support
 
    (ZoomSDKError)joinBreakoutRoom:(NSString*)bID;
-   
+
    (ZoomSDKError)leaveBreakoutRoom;
 
 8. allow or disallow "can unmute by self if mute by host”config
 
     //can unmute by self when mute by host
-    
+
     ActionMeetingCmd_EnableUnmuteBySelf,
-    
+
     ActionMeetingCmd_DisableUnmuteBySelf,
 
     //mute/unmute all only for host
-    
+
     ActionMeetingCmd_MuteAll,
-    
+
     ActionMeetingCmd_UnmuteAll,
 
 9. Call out/Invite by phone support
 
    (ZoomSDKError)inviteCalloutUser:(NSString*)userName PhoneNumber:(NSString*)number CountryCode:(NSString*)countryCode;
-    
+
 
 10. Waiting room:admit attendee into the meeting
 
@@ -234,10 +260,10 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
 3. Support H.323/SIP callout directly
 
-4. Add watermark “Powered by Zoom” 
+4. Add watermark “Powered by Zoom”
 
 5. Support to start/join meeting without audio;
-  
+
 6. Support to start/join meeting without video;
-  
+
 7. Support Multi-share;

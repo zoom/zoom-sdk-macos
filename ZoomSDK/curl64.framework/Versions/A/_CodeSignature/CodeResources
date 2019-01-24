@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		f/ToEv5LhSned2rNbu6Lydp+JtQ=
+		IvaaH4Z25zaB/8/fJXOyCRTBo1A=
 		</data>
 		<key>Resources/curl64-Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/curl_openssl_framework.plist</key>
 		<data>
-		t9alMbXjUxxb+mCLjyI/imulRZ0=
+		rAgEOz+musi8S6BTatpVqM5ueWw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -34,11 +34,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f/ToEv5LhSned2rNbu6Lydp+JtQ=
+			IvaaH4Z25zaB/8/fJXOyCRTBo1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			gREz9kjPXez68sfIgT4hBZPzKOVyqVq+sS/kEnnAfQ8=
+			dCx/rdmXFRHrCMVFbX/eOnvUHy6JvlTnaKOKJyy30bA=
 			</data>
 		</dict>
 		<key>Resources/curl64-Info.plist</key>
@@ -56,11 +56,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t9alMbXjUxxb+mCLjyI/imulRZ0=
+			rAgEOz+musi8S6BTatpVqM5ueWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ygKoDlQsPe1JaMfssSdhNCqODz01bc4fgSh1HpzYZDA=
+			G8DK9fbWxTPBkra/lIycS10/clco7/zED8Q8Uyylczc=
 			</data>
 		</dict>
 	</dict>

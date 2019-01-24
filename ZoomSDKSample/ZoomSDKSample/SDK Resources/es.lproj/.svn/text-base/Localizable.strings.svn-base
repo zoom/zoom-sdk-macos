@@ -1,0 +1,2514 @@
+"%s is calling you from Zoom, click link to join.\r\n%s" = "%s le está llamando desde Zoom, pulse en un enlace para entrar.\r\n%s";
+"%@ has been invited" = "%@ ha sido invitado";
+"%@ and %@ have been invited." = "%@ y %@ han sido invitados.";
+"%@, %@ and %@ have been invited." = "%@, %@ y %@ han sido invitados.";
+"%@, %@ and %d others have been invited." = "%@, %@ y otros %d han sido invitados.";
+"Click to invite participants" = "Pulse para invitar participantes";
+"The invitation URL has been copied to the clipboard" = "La dirección de la invitación se ha copiado al portapapeles";
+
+"%@ invited you to join a meeting." = "%@ le invitó a entrar a una reunión.";
+"You invited %@ to join a meeting." = "Usted invitó a %@ a entrar a una reunión.";
+
+
+"is calling..." = "está llamando...";
+"are calling..." = "están llamando...";
+"are calling you. You are already in this meeting." = "le están llamando. Usted ya está en esta reunión.";
+"is calling you. You are already in this meeting." = "le está llamando. Usted ya está en esta reunión.";
+"are calling you. You are already in another meeting, do you want to leave and join this meeting?" = "le están llamando. Usted ya está en otra reunión, ¿quiere salir y entrar a esta reunión?";
+"is calling you. You are already in another meeting, do you want to leave and join this meeting?" = "le está llamando. Usted ya está en otra reunión, ¿quiere salir y entrar a esta reunión?";
+
+"came online" = "se conectó";
+"went offline" = "se desconectó";
+
+"Start with video" = "Iniciar con video";
+"Start without video" = "Iniciar sin video";
+"Back to Meeting" = "Volver a la Reunión";
+"Computer audio and video start automatically" = "El audio y video de la computadora se inician automáticamente";
+
+"Invite to Meeting" = "Invitar a una Reunión";
+"Start Video Meeting" = "Iniciar Reunión con video";
+"Video Meeting" = "Reunión con video";
+"View Profile" = "Ver perfil";
+"Join Meeting..." = "Entrar a la Reunión...";
+
+"Log Out" = "Cerrar sesión";
+"Log In" = "Iniciar sesión";
+
+"Facebook IM" = "Mensajería instantánea de Facebook";
+"Google IM" = "Mensajería instantánea de Google";
+"IM" = "Mensajería instantánea (IM)";
+"Chats" = "Chats";
+"Tell Others About Zoom" = "Comentar a los demás sobre Zoom";
+"Home" = "Empezar";
+"Meetings" = "Reuniones";
+
+"Login..." = "Iniciar sesión...";
+"Connecting..." = "Conectando...";
+"Authenticating..." = "Autenticando...";
+"Negotiating..." = "Negociando...";
+
+"Cannot get your favorite information, Please check your network connection." = "No se puede obtener su información favorita; compruebe su conexión a la red.";
+"Login to Facebook was cancelled." = "El acceso a Facebook fue cancelado.";
+
+"Sign Up" = "Inscribirse";
+"Forgot your password?" = "¿Olvidó su contraseña?";
+
+"General" = "General";
+"Feedback" = "Comentarios";
+"Record" = "Grabar";
+"Account" = "Cuenta";
+"Video" = "Video";
+"Statistics" = "Estadísticas";
+"The free disk space is less than 1G. Select another folder or delete some files." = "El espacio libre en el disco es menor a 1 GB. Seleccione otra carpeta o borre algunos archivos.";
+"%.2f GB remaining" = "%.2f GB restantes";
+"Work Email" = "E-mail del trabajo";
+"Gmail Account" = "Cuenta de Gmail";
+"Facebook Account" = "Cuenta de Facebook";
+"Single Sign On" = "Inicio de sesión individual";
+"Upgrade to Pro" = "Actualizar a PRO";
+"Change Subscription Plan" = "Cambiar plan de suscripción";
+"Capture 720p by default" = "Capturar 720p de forma predeterminada";
+
+"1. Go to %@\r\n2. Enter ID: %@" = "1. Ir a %@\r\n2. Introducir la ID: %@";
+"The invitation URL has been copied to Clipboard." = "La dirección de la invitación se ha copiado al portapapeles.";
+"The invitation Email has been copied to Clipboard." = "El e-mail de invitación se ha copiado al portapapeles.";
+
+"Version:%@" = "Versión:%@";
+"Send Feedback" = "Enviar comentarios";
+"Sending..." = "Enviando...";
+"Failed to send your feedback. Please try again later." = "No se pudieron enviar sus comentarios. Inténtelo de nuevo más tarde.";
+"Thanks for your feedback!\r\n\r\nYour feedback is very important to us, and we're working hard to improve our service." = "¡Gracias por sus comentarios!\r\n\r\nSu opinión es muy importante para nosotros, y estamos haciendo todo lo posible para mejorar nuestro servicio.";
+
+"Please join Zoom meeting in progress" = "Favor entrar a la reunión de Zoom en curso";
+"Please join my meeting.\r\n%@" = "Favor entrar a mi reunión.\r\n%@";
+
+"Participant ID: %d   Meeting ID: %@" = "ID de el participante: %d   ID de la reunión: %@";
+"Participant ID: %d   %d-Minutes Meeting ID: %@" = "ID de el participante: %d   %d-minutos ID de la reunión: %@";
+"-Minutes" = "Minutos";
+"Zoom Meeting ID: %@" = "ID de la reunión de Zoom: %@";
+"Panelist(%d)  Attendee(%d)" = "Panelista(%d)  Espectador(%d)";
+"Waiting for %s to join..." = "A la espera de que entre %s...";
+"Please use the Invite button to invite more people" = "Utilice el botón Invitar para invitar a más personas";
+"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation." = "Sus invitados no necesitan tener la aplicación Zoom instalada previamente para poder aceptar su invitación a la reunión.";
+"URL: " = "Dirección de la página web: ";
+"Invite people to join meeting" = "Invitar personas a entrar a la reunión";
+"Zoom Number: %@" = "Número de Zoom: %@";
+"Copy" = "Copiar";
+"Meeting ID" = "ID de la reunión";
+"Spotlight Video" = "Video Spotlight";
+"Cancel the Spotlight Video" = "Cancelar Video Spotlight";
+"You are the host now" = "Usted es el anfitrión ahora";
+"%@ is the host now" = "%@ es el anfitrión ahora";
+"You are the co-host now" = "You are the co-host now";
+"%@ is the co-host now" = "%@ es el coanfitrión ahora";
+"Less than a minute" = "Menos de un minuto";
+"Remaining Meeting Time" = "Tiempo restante de la reunión";
+
+//join meeting dialog
+"Join Meeting" = "Entrar a la reunión";
+"Join a Meeting" = "Entrar a una reunión";
+"Please enter your meeting ID and your name" = "Introduzca su ID de la reunión y su nombre";
+"Your Name" = "Su nombre";
+"Invalid video meeting ID!" = "¡ID de la reunión con video no válida!";
+"Please input your screen name here" = "Introduzca su nombre en pantalla aquí";
+"Please enter your name." = "Introduzca su nombre.";
+
+//leave meeting dialog
+"I'd like to give feedback to Zoom" = "Me gustaría enviar comentarios a Zoom";
+"Leave Meeting" = "Salir de la reunión";
+"Do you want to leave this meeting?" = "¿Quiere salir de esta reunión?";
+"End Meeting" = "Finalizar reunión";
+"If you want to keep this meeting open, please assign another Host before you click Leave Meeting." = "Si desea mantener abierta esta sesión, asigne otro anfitrión antes de pulsar en Salir de la reunión.";
+"\nClick Cancel if you want to keep this meeting open." = "\nPulse Cancelar si desea mantener abierta esta reunión.";
+"Please enter your feedback here" = "Escriba aquí sus comentarios";
+"End Meeting for All" = "Finalizar reunión para todos";
+"Join webinar as a panelist" = "Entrar al seminario web como panelista";
+"Start your webinar" = "Iniciar su seminario web";
+"Switch Account to Join" = "Cambiar cuenta para entrar";
+"Sign In to Join" = "Inicie sesión para entrar";
+
+//join schedual meeting dialog
+"Please enter the meeting password" = "Introduzca la contraseña de la reunión";
+"Password" = "Contraseña";
+"Password error!" = "¡Error de contraseña!";
+"LN_Waiting_Host_Meeting_35641" = "Espere a que el anfitrión inicie esta reunión";
+"LN_Waiting_Host_Webinar_35641" = "Por favor espere a que el anfitrión inicie este webinar";
+"LN_Waiting_Admit_All_39691" = "Admitir todo";
+"LN_Meeting_List_Item_Add_Calendar_25869" = "Agregar un calendario";
+"LN_MeetingList_Item_Info_Host_25869" = "Anfitrión: %@\n";
+"LN_Metting_RemoteControl_Abort_Control_28437" = "Abortar control"; //[ZOOM-28437]
+"LN_Metting_RemoteControl_Who_Is_Controlling_28437" =  "(Controlando)" ;//[ZOOM-28437]
+"LN_Metting_RemoteControl_SearchUser_NOResult_28437" = "No hay resultado"; //[ZOOM-28437]
+"LN_Meeting_IsAutoAcceptRemoteControl_28437" = "Aceptar automática todas las solicitudes";//[ZOOM-28437]
+"LN_Meeting_RemoteControl_UnderControlling" = "Controlado de forma remota"; //[ZOOM-28437]
+"LN_Meeting_QA_Tablist_Dismiss_21381" = "Descartado";
+"LN_Meeting_QA_No_Dismiss_Question_21381" = "No hay preguntas descartadas";
+"LN_Meeting_QA_Dismiss_21381" = "Descartar";
+"LN_Meeting_QA_Open_21381" = "Abrir";
+"LN_Call_Accepted_35364" = "Llamada entrante - aceptada";
+"LN_Call_Incoming_35364" = "Llamada entrante";
+"LN_Mute_On_Entry_Alert_Title_35357" = "Silenciar participante al entrar";
+"LN_Mute_On_Entry_Alert_Content_35357" = "Se silenciará a todos los participantes nuevos";
+"LN_Schedule_OpenICSFile_ForOtherCal_37779" = "Abrir con calendario predeterminado (.ics)";
+"LN_Hide_ChatWnd_In_Screenshot_38445" = "Ocultar ventana de chat en captura de pantalla";
+"Meeting Detail" = "Detalles de la reunión";
+"While waiting, please check your audio and video settings" = "Mientras espera, por favor revise su configuración de audio y video";
+"Topic" = "Tema";
+"Time" = "Hora";
+"Date" = "Fecha";
+"Verifying password..." = "Verificando contraseña...";
+"This is a recurring meeting" = "Esta es una reunión recurrente";
+"Waiting for Host %@" = "Esperando al anfitrión %@";
+
+//
+"Stop Screen Share" = "Dejar de compartir pantalla";
+"Stop Share"= "Deja de";
+"LN_Share_21795" = "Compartir";
+"Share Screen" = "Compartir";
+"Share screen" = "Compartir";
+"Share" = "Compartir";
+"Share a New Window" = "Compartir una nueva ventana";
+"Participants" = "Participantes";
+"Manage Participants" = "Participantes";
+"Chat" = "Chatear";
+"Chat with All" = "Chatear con todos";
+"People (%d)" = "Gente (%d)";
+"End" = "Fin";
+"Settings" = "Configuración";
+"Hide Video Panel" = "Ocultar panel de video";
+"Show Video Panel" = "Mostrar panel de video";
+"Show Active Speaker panel" = "Mostrar panel del Hablante activo";
+"Hide Active Speaker panel" = "Ocultar panel del Hablante activo";
+"Exit Full Screen. Meeting ID:%@" = "Salir de pantalla completa. ID de la reunión:%@";
+"Gallery View" = "Vista de galería";
+"Speaker View" = "Vista del hablante";
+"Enter Minimal View" = "Cambiar a vista mínima";
+"Exit Minimal View" = "Salir de vista mínima";
+"Enter Full Screen" = "Cambiar a pantalla completa";
+"Exit Full Screen" = "Salir de pantalla completa";
+"Rename" = "Renombrar";
+"More" = "Más";
+"Meeting Information" = "Información sobre la reunión";
+"Meeting" = "Reunión";
+"Put Attendee On Hold" = "Poner al participante en espera";
+"Stop attendee on hold" = "Detener espera del participante";
+"You are on hold" = "Usted está en espera";
+"On Hold" = "En espera";
+"Stop on-hold" = "Detener la espera";
+"Raise Hand" = "Levantar la mano";
+"Lower Hand" = "Bajar la mano";
+"Lower All Hands" = "Bajar todas las manos";
+"Show Non-Video Participants" = "Mostrar participantes que no tienen video";
+"is talking ..." = "está hablando...";
+"Total non-video participants:" = "Total de participantes que no tienen video:";
+"Connected" = "Conectado";
+"Calling..." = "Llamando...";
+"Ringing..." = "Timbrando...";
+"Call accepted" = "Llamada aceptada";
+"Failed to Call" = "No se pudo llamar";
+"Success" = "Llamada efectuada";
+"Disconnection Call" = "Llamada de desconexión";
+"Claim Host" = "Hacerse cargo como anfitrión";
+"Attendee List" = "Lista de participantes";
+"Allow attendees to view the participant counts" = "Permitir que los espectadores puedan ver la cantidad de participantes";
+
+
+"Mute All" = "Silenciar a todos";
+"Unmute All" = "Activar todos";
+"Unmute Audio" = "Cancelar silenciar el audio";
+"Mute Audio" = "Silenciar el audio";
+"Audio" = "Audio";
+"Click to join audio" = "Hacer clic para incorporar audio";
+"Unmute Telephone" = "Cancelar silenciar teléfono";
+"Mute Telephone" = "Silenciar teléfono";
+"Mute" = "Silenciar";
+"Unmute" = "Re-Iniciar Audio";
+"muted" = "silenciado";
+"Mute Participants On Entry" = "Silenciar a los participantes en el ingreso";
+"Play Enter/Exit Chime" = "Tocar un timbre al entrar/salir";
+"You are muted now. Press Shift+Command+A to unmute your microphone if you want to speak." = "Usted está silenciado ahora. Pulse Comando+Mayúsculas+A para activar su micrófono si desea hablar.";
+"You are using the computer audio" = "Está utilizando el audio del equipo";
+"You are now using your phone for audio in this meeting" = "Está utilizando el teléfono";
+"Join Teleconference" = "Entrar a teleconferencia";
+"Current and new participants will be muted" = "Se ha silenciado a todos los participantes, incluidos los nuevos";
+"All participants are unmuted" = "Se ha cancelado silenciar a todos los participantes";
+"Allow participants to unmute themselves" = "Permitir que los participantes reactiven su micrófono ellos mismos";
+"You are muted by host" = "Usted está silenciado por el anfitrión";
+"You are unmuted by host" = "Usted ya no está silenciado por el anfitrión";
+"The host has muted all participants" = "El anfitrión ha silenciado a todos los participantes";
+"The host has unmuted all participants" = "El anfitrión ha cancelado silenciar a todos los participantes";
+"You are using computer mic & speaker now" = "Ahora usted está utilizando el micrófono y el altavoz de la computadora";
+"You are using phone now" = "Usted está utilizando el teléfono ahora";
+"Mute My Audio" = "Silenciar mi audio";
+"Unmute My Audio" = "Cancelar silenciar mi audio";
+"Mute My Phone" = "Silenciar mi teléfono";
+"Unmute My Phone" = "Cancelar silenciar mi teléfono";
+"Join Audio Conference via Mic & Speaker" = "Entrar a la conferencia de audio vía micrófono y altavoz";
+"Leave Audio Conference" = "Salir de la conferencia de audio";
+"Disconnected" = "Desconectado";
+"Press Command-Shift-A to mute or unmute your audio" = "Pulse Comando+Mayúsculas+A para silenciar o activar su audio";
+"Audio Options" = "Opciones de audio";
+"Audio Conference" = "Conferencia de audio";
+"Audio Settings" = "Configuración del audio";
+"Video Settings" = "Configuración de video";
+"Use Computer Mic & Speaker" = "Usar micrófono y altavoz de la computadora";
+"Use Telephone" = "Usar el teléfono";
+"You are not in the audio conference yet." = "Usted todavía no está en la conferencia de audio.";
+"Computer Audio Connected" = "Audio de la computadora conectado";
+"Phone Connected" = "Teléfono conectado";
+"Test Computer Mic & Speakers" = "Probar el audio de la computadora";
+"You may have problem hearing the audio from other participants.\nConsider switching to phone." = "Es posible que usted tenga problemas para escuchar el audio de los otros participantes.\nConsidere cambiarse al teléfono.";
+"Total %d phone call-in listener" = "Total de %d oyente por llamada telefónica entrante";
+"Total %d phone call-in listeners" = "Total de %d oyentes por llamada telefónica entrante";
+"Zoom detects a problem with your audio. If you enter your Mac computer password, we will attempt to restart your audio service to fix it.\n\n" = "Zoom detecta problemas con su audio. Si introduce su contraseña de la Mac, reiniciaremos el servicio de audio para trata de repararlo.\n\n";
+"Follow the instructions below to join audio conference." = "Siga las instrucciones a continuación para entrar a la conferencia de audio.";
+"Computer Audio" = "Audio de la computadora";
+"Dial In" = "Marcar";
+"Call Me" = "Favor llamarme";
+"Hang Up" = "Colgar";
+"Automatically join audio by computer when joining a meeting" = "Seleccionar automáticamente el audio de la computadora al entrar a una reunión";
+"Already joined by phone? Enter " = "¿Ya entró por teléfono? Pulsar ";
+"on your phone." = "en su teléfono.";
+"Dial" = "Marcar";
+"Toll free" = "Llamada gratuita";
+"(US or Canda only)" = "(EE.UU. y Canadá únicamente)";
+"The number you want us to call you" = "El número al que desea que le llamemos";
+"Remember the number on this computer" = "Recordar el número en esta computadora";
+"Failed to disconnect call" = "No se pudo desconectar la llamada";
+"Your computer audio is disconnected as we detected an echo." = "El audio de su computadora está desconectado debido a que detectamos un eco.";
+"Follow the instructions below to join audio." = "Siga las instrucciones a continuación para entrar al audio.";
+"To hear others, please join audio" = "Para escuchar a los demás, entre al audio";
+"Phone Call" = "Entrar por teléfono";
+"Your audio is connected using Dial In." = "Su audio se conecta utilizando Marcar.";
+"Your audio is connected using Call Me." = "Su audio se conecta utilizando Favor llamarme.";
+
+//close audio without join audio dialog
+"No Audio" = "Sin audio";
+"Do you want to continue without audio?" = "¿Desea continuar sin audio?";
+"You won't be able to hear other participants in the meeting, nor will they hear you." = "No podrá oír a los otros participantes en la reunión, ni ellos le van a oír.";
+"Join Audio" = "Entrar al audio";
+"Leave Computer Audio" = "Dejar el audio de la computadora";
+
+"Start Video" = "Iniciar Video";
+"Stop Video" = "Parar Video";
+"Click to check your video conference options" = "Pulse para ver sus opciones de videoconferencia";
+"Host has stopped your video" = "El anfitrión ha detenido su video";
+"Show Video" = "Mostrar video";
+"Hide Video" = "Ocultar video";
+"Exit Minimal Video" = "Salir de video mínimo";
+"Mute Video" = "Silenciar video";
+
+"Resume" = "Reanudar";
+"Talking: " = "Hablando: ";
+
+"Lock Meeting" = "Bloquear reunión";
+"Unlock Meeting" = "Desbloquear reunión";
+"Lock screen sharing" = "Bloquear función de compartir la pantalla";
+"Unlock screen sharing" = "Desbloquear función de compartir la pantalla";
+"Start Recording" = "Iniciar grabación";
+"Resume Recording" = "Reanudar grabación";
+"Pause Recording" = "Pausar grabación";
+"Stop Recording" = "Detener grabación";
+"Allow Record" = "Permitir grabar";
+"Forbid Record" = "Prohibir grabar";
+"Make Host" = "Hacer anfitrión";
+"Remove" = "Quitar";
+"Select Window" = "Seleccionar ventana";
+"Pause" = "Pausa";
+"Annotate" = "Anotar";
+"Share Control to" = "Compartir el control a";
+"Cancel Remote Control" = "Cancelar control remoto";
+"Enable Attendee Annotation" = "Habilitar anotación de los participantes";
+"Disable Attendee Annotation" = "Inhabilitar anotación de los participantes";
+"Change Role to Attendee" = "Cambiar rol a Espectador";
+"%@ will be rejoining the webinar as a attendee" = "%@ volverá a entrar al seminario web como espectador";
+"%@ will be rejoining the webinar as a panelist" = "%@ volverá a entrar al seminario web como panelista";
+
+
+"Show Call In Users" = "Mostrar usuarios por llamada entrante";
+"Hide Call In Users" = "Ocultar usuarios por llamada entrante";
+
+"Double-click to enter full screen mode." = "Pulse dos veces para entrar al modo de pantalla completa.";
+"Press ESC or double-click to exit full screen mode" = "Presione ESC o pulse dos veces para salir del modo de pantalla completa.";
+"Login as Host" = "Iniciar sesión como anfitrión";
+
+"to %@ (privately)" = "para %@ (en privado)";
+"from %@ (privately)" = "de %@ (en privado)";
+"from %@ to All" = "de %@ para todos";
+"Host" = "Anfitrión";
+"me" = "yo";
+"participant ID" = "ID de el participante";
+"Participant ID:" = "ID de el participante:";
+"To:" = "Para:";
+
+"The meeting has problem. Error code : %d" = "La reunión tiene un problema. Código de error: %d";
+"This meeting ID is not valid. Please check and try again." = "Esta ID de reunión no es válida. Revise e intente de nuevo.";
+"This meeting has ended." = "Esta reunión ha terminado.";
+"Our service is currently busy. Please try again later." = "Nuestro servicio está ocupado en este momento. Inténtelo de nuevo más tarde.";
+"Can't connect to our service, please check your network connection and try again." = "No se puede conectar a nuestro servicio; compruebe la conexión de red y vuelva a intentarlo.";
+"Can't connect to our service, please check your network connection and try again. Error code %d" = "No se puede conectar a nuestro servicio; compruebe la conexión de red y vuelva a intentarlo. Código de error %d";
+"This meeting has reached a maximum of %d participants. Please try again later." = "Esta reunión ha alcanzado un máximo de %d participantes. Inténtelo de nuevo más tarde.";
+"This meeting has been locked by host" = "Esta reunión ha sido bloqueada por el anfitrión";
+"You have a meeting that is currently in-progress. Please end it to start a new meeting." = "Tiene una reunión que está en curso actualmente. Termínela para iniciar una nueva reunión.";
+"The host has a meeting that is currently in-progress. Once that meeting ends, you can join this meeting." = "El anfitrión tiene una reunión que está en curso actualmente. Una vez que termine esa reunión, usted podrá entrar a esta reunión.";
+"We're sorry; the registration for this webinar has reached its maximum." = "Lo sentimos; la inscripción a este seminario web ha alcanzado el máximo de cupos.";
+"Someone has tried to use the host’s email to register for the webinar" = "Alguien intenta utilizar el e-mail del anfitrión para registrar el seminario web";
+"If you are the host, please sign in to start the webinar." = "Si usted es el anfitrión, ingrese para iniciar el seminario web.";
+"If you were invited as a panelist, please join the webinar from the link in your email invitation." = "Si usted fue invitado como panelista, entre al seminario web desde el enlace de su invitación por e-mail.";
+"The host has declined your webinar registration" = "El anfitrión ha rechazado su inscripción en el seminario web";
+
+"You are removed by host." = "Usted ha sido retirado por el anfitrión.";
+"Host ended the meeting." = "El anfitrión finalizó la reunión.";
+"Timed out before host join." = "Se agotó el tiempo para que entre el anfitrión.";
+"No free time left." = "No queda tiempo libre.";
+"End Other Meeting" = "Finalizar la otra reunión";
+"This meeting has ended as someone has started a new meeting with this account" = "Esta reunión ha terminado debido a que alguien ha iniciado una nueva reunión con esta cuenta";
+"The meeting has ended after 40 minutes idle time." = "La reunión ha terminado después de 40 minutos de inactividad.";
+
+"ID" = "ID";
+"Your screen sharing is paused" = "Su función de compartir las pantallas está en pausa";
+"You are viewing %@'s screen" = "Usted está viendo la pantalla de %@";
+"You are viewing %@' screen" = "Usted está viendo la pantalla de %@";
+"You are controlling %@'s screen" = "Usted está controlando la pantalla de %@";
+"'s screen" = "pantalla de";
+"Sharing is paused. Bring your shared window to the front" = "La función de compartir está en pausa. Traer su ventana compartida al frente";
+"Select a Window to Share" = "Seleccionar una ventana para compartir";
+"Click here to change to window view" = "Pulse aquí para cambiar a la vista de ventana";
+"Click here to change to 1:1 view" = "Pulse aquí para cambiar a la vista de 1:1";
+"Fit to Window" = "Ajustar a la ventana";
+"Original Size" = "Tamaño original";
+"View Mode" = "Modo de visualización";
+"Give Mouse/Keyboard Control to" = "Dar control del mouse/teclado a";
+"Choose what you want to share" = "Elija lo que desea compartir";
+"Click to Share Screen" = "Pulse para compartir la pantalla";
+"Start Share" = "Iniciar compartir";
+"This will stop other\'s screen sharing. Do you want to continue?" = "Esto detendrá la función de compartir las pantallas de los demás. ¿Desea continuar?";
+"Select a window or an application that you want to share" = "Seleccionar la ventana o la aplicación que usted desea compartir";
+"Share Screen with Computer Sound" = "Compartir la pantalla con el sonido de la computadora";
+"Share Screen Only" = "Compartir únicamente la pantalla";
+"Screen sharing has failed to start. Please try again later.\n\nError Code: %d" = "No se pudo iniciar la función de compartir pantallas. Inténtelo de nuevo más tarde.\n\nCódigo de error: %d";
+" has started screen sharing.\n\nDouble-click to enter full screen mode." = " ha iniciado la función de compartir pantallas.\n\nPulse dos veces para entrar en el modo de pantalla completa.";
+" has started screen sharing" = " ha iniciado la función de compartir pantallas";
+"Share computer sound" = "Compartir sonido de la computadora";
+"Optimize for full-screen video clip" = "Optimizar clip de video para pantalla completa";
+"Advanced Options" = "Opciones avanzadas";
+"Other participants will be able to hear the audio running on your computer as well as see your shared screen." = "Otros participantes podrán escuchar el audio que se reproduce en la computadora de usted, además de ver su pantalla compartida.";
+"Optimize the screen sharing for the best full-screen video clip viewing experience." = "Optimizar la función de compartir pantallas para una óptima experiencia de visualización de clips de video a pantalla completa.";
+"Your are viewing a portion of the shared content; To see the fullimage, select \"Fit to Window\" in the menu." = "Está viendo una parte del contenido compartido; para ver la imagen completa, seleccione “Ajustar a la ventana” en el menú.";
+"The shared content is fit to your screen. To see the original size, click \"Original size\" in the menu." = "El contenido compartido está ajustado a su pantalla. Para ver el tamaño original, pulse “Tamaño original” en el menú.";
+
+"Share computer audio during screen sharing" = "Compartir el audio de la computadora durante la función de compartir pantallas";
+"Disable computer audio during screen sharing" = "Inhabilitar el audio de la computadora durante la función de compartir pantallas";
+"Your microphone is muted so others can hear remote audio during screen sharing." = "Su micrófono está silenciado para que los demás puedan escuchar el audio a distancia durante la función de compartir pantallas.";
+"Your microphone is muted so you can hear remote audio during screen sharing." = "Su micrófono está silenciado para que usted pueda escuchar el audio a distancia durante la función de compartir pantallas.";
+"Your microphone is unmuted. Screen sharing with remote audio has stopped." = "Su micrófono no está silenciado. Se ha detenido la función de compartir pantallas con audio a distancia.";
+"You cannot unmute yourself because the host muted you." = "Usted no puede reactivar su propio micrófono porque el anfitrión lo silenció.";
+"Your speaker is muted for audio sharing. It will recover when audio sharing ends." = "Su altavoz está silenciado mientras se comparte el audio. Se recuperará cuando termine de compartirse el audio.";
+"To share your computer audio, please install the Zoom audio device.\n\n" = "Para compartir el audio de su computadora, instale el dispositivo de audio de Zoom.\n\n";
+
+"Your microphone is muted to focus on %@ as the spotlight video" = "Su micrófono está silenciado para centrarse en %@ como el video Spotlight";
+"Your microphone is unmuted. Spotlight video has stopped." = "Su micrófono no está silenciado. El video Spotlight se ha detenido.";
+
+"Me" = "Yo";
+"Pin Video" = "Fijar el video";
+"LN_Unpin_Video_30742" = "Quitar el video";
+"Switch to Active Speaker" = "Cambiar a hablante activo";
+"Pin video on first screen" = "Fijar el video en la primera pantalla";
+"LN_Unpin_First_Screen_34308" = "Quitar el video de la primera pantalla";
+"Pin video on second screen" = "Fijar el video en la segunda pantalla";
+"LN_Unpin_Screen_Screen_34308" = "Quitar el video de la segunda pantalla";
+
+"Your default microphone has changed to %@ and will now be used." = "Su micrófono predeterminado ha cambiado a %@ y será utilizado ahora.";
+"Default audio device has changed" = "El dispositivo de audio predeterminado ha cambiado";
+"Your speaker %@ is not working. Please go to Settings to try a different one." = "Su altavoz %@ no está funcionando. Favor ir a Configuración para probar uno diferente.";
+"Speaker Error" = "Error del altavoz";
+"Microphone Error" = "Error del micrófono";
+"Microphone status" = "Estado del micrófono";
+"Your microphone %@ is not working. Please go to Settings to try a different one." = "Su micrófono %@ no está funcionando. Favor ir a Configuración para probar uno diferente.";
+"Zoom can't detect your Microphone. Please check the Microphone setup." = "Zoom no puede detectar su micrófono. Revise la configuración del micrófono.";
+"Zoom can't detect your Speaker. Please check the Speaker setup." = "Zoom no puede detectar su altavoz. Revise la configuración del altavoz.";
+"Zoom can't detect the sound from your Microphone %@." = "Zoom no puede detectar el sonido de su micrófono %@.";
+"Your default speaker has changed to %@ and will now be used." = "Su altavoz predeterminado ha cambiado a %@ y será utilizado ahora.";
+
+"Your meeting is scheduled." = "Su reunión está programada.";
+"Your recurring meetings are scheduled." = "Sus reuniones recurrentes están programadas.";
+"Your meeting is updated." = "Su reunión está actualizada.";
+"Your recurring meetings are updated." = "Sus reuniones recurrentes están actualizadas.";
+"Please join my scheduled meeting.\r\n%@\r\n\r\n" = "Favor entrar a mi reunión programada.\r\n%@\r\n\r\n";
+"Meeting password: %@\r\n" = "Contraseña de la reunión: %@\r\n";
+"Meeting time: %@ at %@\r\n" = "Hora de la reunión: %@ a las %@\r\n";
+"Meeting time: Recurring\r\n" = "Hora de la reunión: Recurrente\r\n";
+"Meeting ID: %@\r\n" = "ID de la reunión: %@\r\n";
+"Can't schedule meeting. Please check your network connection and try again." = "No se puede programar la reunión. Compruebe su conexión de red y vuelva a intentarlo.";
+"Can't schedule the meeting. Error code : %d" = "No se puede programar la reunión. Código de error: %d";
+"Zoom meeting invitation - %@" = "Invitación a una reunión de Zoom - %@";
+"Update Meeting Info error for meeting ID: %@, error code: %d." = "Error de Actualización de información de la reunión para la reunión con ID: %@, código de error: %d.";
+
+"This meeting is scheduled for %@" = "Esta reunión está programada para el %@";
+"This Meeting ID is taken. Please choose a different ID." = "Esta ID de reunión ya está tomada. Elija una ID diferente.";
+"Sorry, your request is rejected." = "Lo sentimos, se rechazó su solicitud.";
+"Failed to apply Personal Meeting ID. Unknown error." = "No se pudo aplicar la ID personal de la reunión. Error desconocido.";
+"Failed to apply personal meeting ID. Error code: %d." = "No se pudo aplicar la ID personal de la reunión. Código de error: %d.";
+"Can not edit meeting ID while meeting is in progress." = "No se puede editar la ID de la reunión mientras la reunión está en curso.";
+
+
+"My Meeting" = "Mi reunión";
+"'s Zoom Meeting" = "reunión Zoom de";
+"' Zoom Meeting" = "reunión Zoom de";
+
+"%@ wants to be able to chat with you. Okay?" = "%@ quiere poder chatear con usted. ¿De acuerdo?";
+"Your invitation has been sent successfully." = "Su invitación se ha enviado correctamente.";
+"Your invitation failed to sent." = "No se pudo enviar su invitación.";
+"%@ will be removed from your IM list." = "%@ será retirado de su lista de mensajería instantánea.";
+"%@ will be removed from your favorite list." = "%@ será retirado de su lista de favoritos.";
+"Test Speaker" = "Probar altavoz";
+"Test Mic" = "Micrófono";
+"Stop" = "Detener";
+"Your" = "Su";
+"'s" = "";
+"%@ network bandwidth is low." = "El ancho de banda de la red de%@ es muy bajo.";
+
+"Your free meeting will end in 10 minutes, please upgrade to a paid account at $14.99 per month for unlimited minutes." = "Su reunión gratuita terminará en 10 minutos; por favor actualice a una cuenta de pago de $14.99 al mes para tener minutos ilimitados.";
+"Meeting Alert" = "Alerta de reunión";
+"This free meeting will end in 10 minutes. The meeting host needs to upgrade to a paid account at $14.99 per month for unlimited minutes." = "Esta reunión gratuita terminará en 10 minutos. El anfitrión de la reunión tiene que actualizar a una cuenta de pago de $14.99 al mes para tener minutos ilimitados.";
+"This meeting will end in %d minutes because the host has not joined" = "Esta reunión se terminará en %d minutos, ya que todavía no ha entrado el anfitrión";
+"This free HD meeting has ended. Thank you for choosing Zoom!" = "Esta reunión gratuita en HD ha terminado. ¡Gracias por elegir a Zoom!";
+"The meeting has ended because the host doesn't show up." = "La reunión ha terminado porque el anfitrión no está presente.";
+"You are removed from this meeting." = "Usted ha sido retirado de esta reunión.";
+"This meeting has been ended by host" = "El anfitrión ha finalizado esta reunión";
+"Do you want to upgrade your account?" = "¿Desea actualizar su cuenta?";
+"Do you want to change the host to %@?" = "¿Quiere cambiar el anfitrión a %@?";
+"Do you want to remove %@?" = "¿Quiere retirar a %@?";
+"No new attendees can join this meeting once locked." = "No pueden entrar nuevos participantes a esta reunión una vez bloqueada.";
+"New attendees can join this meeting once unlocked." = "Pueden entrar nuevos participantes a esta reunión una vez desbloqueada.";
+"You have left this meeting." = "Usted ha salido de esta reunión.";
+"Upgrade Account" = "Actualizar cuenta";
+"OK" = "OK";
+"Cancel" = "Cancelar";
+"Continue" = "Continuar";
+"Upgrade" = "Actualizar";
+"Search" = "Buscar";
+"Check" = "Comprobar";
+"Login" = "Iniciar sesión";
+"login" = "iniciar sesión";
+
+"Host allows you to record the meeting." = "El anfitrión le permite grabar la reunión.";
+"Host disallows you to record the meeting." = "El anfitrión no le permite grabar la reunión.";
+"Your recording has stopped. The disk space is insufficient." = "Su grabación se ha detenido. El espacio en disco es insuficiente.";
+"The recorded file will be converted to mp4 when the meeting ends" = "El archivo grabado se convertirá a mp4 cuando termine la reunión";
+"You will get an email notification when the cloud recording is ready." = "Usted recibirá una notificación por e-mail cuando esté lista la grabación en la nube.";
+"Please request record permission from the meeting host." = "Solicite permiso al anfitrión de la reunión para grabar.";
+"No speaker is detected for this recording that is in-progress. Please check your speaker settings." = "No se detecta hablante para esta grabación que está en curso. Compruebe la configuración de su altavoz.";
+"Record to the Cloud" = "Grabar en la nube";
+"Record on this Computer" = "Grabar en esta computadora";
+"Connecting to cloud server..." = "Conectando al servidor en la nube...";
+"Failed to connect cloud server." = "No se pudo conectar con el servidor en la nube.";
+"Recording" = "Grabando";
+
+//transcode
+"Zoom - Converting the meeting recording" = "Zoom - Convirtiendo la grabación de la reunión";
+"You have a recording that needs to be converted before viewing" = "Usted tiene una grabación que necesita ser convertida antes de verla";
+"You may convert your recording later by double clicking .zoom file located in the recording folder." = "Puede convertir su grabación más tarde pulsando dos veces el archivo .zoom ubicado en la carpeta de grabación.";
+"Save my recordings at:" = "Guardar mis grabaciones en:";
+"Choose a new location..." = "Elija una nueva ubicación...";
+"Save" = "Guardar";
+"Transcode will be stopped. Would you like to continue?" = "Se detendrá la transcodificación. ¿Desea continuar?";
+"Quit" = "Salir";
+"Choose" = "Escoger";
+
+//
+"No Upcoming Meetings" = "No hay reuniones próximas";
+"The scheduled meetings will be listed here." = "Se mostrarán aquí las reuniones programadas.";
+"No Recorded Files" = "No hay archivos grabados";
+"The recorded files will be listed here." = "Los archivos grabados se enumeran aquí.";
+"No online buddies" = "No hay amigos en línea";
+"No Favorite Contacts" = "No hay contactos favoritos";
+"Free Account" = "Cuenta gratuita";
+"Pro Account" = "Cuenta Pro";
+"Corp Account" = "Cuenta corporativa";
+"My Profile" = "Mi perfil";
+"Change My Picture" = "Cambiar mi imagen";
+
+//warning
+"All attendees will be muted to hear the remote computer audio." = "Todos los participantes serán silenciados para escuchar el audio de la computadora remota.";
+"This action will allow all attendees to unmute themselves. Do you want to continue?" = "Esta acción permitirá que los participantes cancelen silenciar. ¿Desea continuar?";
+"Your account has been upgraded successfully. Your meeting has no time limitation any more." = "Su cuenta se ha actualizado con éxito. Su reunión ya no tiene ninguna limitación de tiempo.";
+"The meeting host has upgraded to Pro account. This meeting has no time limitation anymore." = "El anfitrión de la reunión se ha actualizado a una cuenta Pro. Esta reunión ya no tiene limitaciones de tiempo.";
+"Host disabled attendee screen sharing." = "El anfitrión inhabilitó la función de compartir las pantallas de los participantes.";
+"Only host can screen share once locked." = "Solamente el anfitrión puede compartir la pantalla una vez bloqueada.";
+"Attendee can now screen share once unlocked" = "El participante puede ahora compartir la pantalla una vez desbloqueada";
+"You cannot start screen share while the other participant is sharing." = "Usted no puede iniciar la función de compartir pantallas mientras el otro participante está compartiendo.";
+"Meeting host %@ is not in the meeting, please login as %@ to claim the host role." = "El anfitrión de la reunión %@ no está en la reunión; por favor ingrese como %@ para reclamar el rol de anfitrión.";
+"Meeting host is not in the meeting, please login as host to claim the host role" = "El anfitrión de la reunión no está en la reunión; por favor ingrese como anfitrión para reclamar el rol de anfitrión";
+"Enter new name here:" = "Introducir nuevo nombre aquí:";
+"Finish registration to join the webinar." = "Finalizar inscripción para entrar al seminario web.";
+"Join Webinar" = "Entrar al seminario web";
+"You can't add more panelists because this meeting has reached its maximum capacity of %d panelists." = "No puede agregar más panelistas ya que esta reunión ha alcanzado su capacidad máxima de %d panelistas.";
+"You need to be signed in with the specified Zoom account to join this meeting. Please contact the host for more information." = "Es necesario haber iniciado sesión con la cuenta Zoom especificada para entrar a esta reunión. Póngase en contacto con el anfitrión para obtener más información.";
+
+
+"Mouse" = "Ratón";
+"Text" = "Texto";
+"Pen" = "Bolígrafo";
+"Highlighter" = "Resaltador";
+"Spotlight" = "Spotlight";
+"Arrow" = "Flecha";
+"Erase All" = "Borrar todo";
+"LN_Clear_All_Drawings_34988" = "Borrar todos los dibujos";
+"LN_Clear_My_Drawings_34988" = "Borrar mis dibujos";
+"LN_Clear_Viewers_Drawing_34988" = "Borrar el dibujo del espectador";
+"Clear All Drawing" = "Borrar todos los dibujos";
+"Clear My Drawing" = "Borrar mi dibujo";
+"Clear Other's Drawing" = "Borrar el dibujo de la otra persona";
+"Eraser" = "Borrador";
+"Choose Color" = "Elegir color";
+"Color" = "Color";
+"Draw" = "Dibujar";
+"Undo" = "Deshacer";
+"Redo" = "Rehacer";
+"Whiteboard" = "Pizarra";
+"Whiteboard saved." = "Se guardó la pizarra.";
+"Screen saved." = "Se guardó la pantalla.";
+"Show in Finder" = "Mostrar en el buscador";
+
+"Remote Control"= "Control remoto";
+"Click to start the remote control of the shared screen" = "Pulse para iniciar el control remoto de la pantalla compartida";
+"%@ is requesting remote control." = "%@ está solicitando control remoto.";
+"Request Remote Control" = "Solicitar control remoto";
+"Give Up Remote Control" = "Renunciar al control remoto";
+"Exit fullscreen will stop your remote control. Do you want to continue?" = "Salir de pantalla completa detendrá su control remoto. ¿Desea continuar?";
+"Forbid remote control" = "Prohibir el control remoto";
+"Allow remote control" = "Permitir el control remoto";
+
+"Switching to gallery view will degrade the recording quality. Do you want to continue?" = "Cambiar a la vista de galería degradará la calidad de grabación. ¿Desea continuar?";
+"Switching to speaker view will improve the recording quality. Do you want to continue?" = "Cambiar a la vista de hablante mejorará la calidad de grabación. ¿Desea continuar?";
+"You cannot minimize Zoom when you are recording this meeting." = "No se puede minimizar a Zoom durante la grabación de esta reunión.";
+"This feature requires 2.0 GHz Dual-Core CPU or higher." = "Esta función requiere un CPU de doble núcleo de 2.0 GHz o superior.";
+
+"Do you want to delete this meeting?" = "¿Quiere eliminar esta reunión?";
+"Do you want to delete this recorded file?" = "¿Quiere eliminar este archivo grabado?";
+"Screen sharing has stopped as the shared window is closed." = "Se ha detenido la función de compartir pantallas porque la ventana compartida está cerrada.";
+"Click Test Speaker to make sure you can hear others" = "Pulse en Probar altavoz para asegurarse de que puede oír a los demás";
+"If you can not hear the test sound, select a different speaker" = "Si no puede oír el sonido de prueba, seleccione un altavoz diferente";
+"If you can't make your Speaker or Mic work, click Join Teleconference" = "Si no puede hacer que funcione su altavoz o micrófono, pulse Entrar a teleconferencia";
+"LN_Invitation_CopiedToClipboard_21232" = "La invitación se ha copiado al portapapeles.";
+"%@ is controlling your screen" = "%@ está controlando su pantalla";
+"Click below to change your picture and name." = "Pulse a continuación para cambiar su imagen y nombre.";
+
+"Convert" = "Convertir";
+
+"Hide thumbnail video" = "Ocultar video en miniatura";
+"Show active speaker video" = "Mostrar video del hablante activo";
+"Show small active speaker video" = "Mostrar video pequeño del hablante activo";
+"Show large active speaker video" = "Mostrar video grande del hablante activo";
+"Show thumbnail video" = "Mostrar video en miniatura";
+"Previous Page" = "Página anterior";
+"Next Page" = "Página siguiente";
+"Start a Meeting" = "Iniciar una reunión";
+"Start a Group Meeting" = "Iniciar una reunión de grupo";
+"Cannot delete this meeting. Error code: %d." = "No se puede eliminar esta reunión. Código de error: %d.";
+
+"Zoom Cloud Meetings" = "Reuniones de Zoom en la nube";
+"Schedule a new meeting" = "Schedule a new meeting";
+"Edit a Meeting" = "Edit a Meeting";
+
+//PT MENUS STARTS
+"About Zoom" = "Acerca de Zoom";
+"Preferences..." = "Preferencias...";
+"Provide Zoom Feedback..." = "Enviar comentarios a Zoom...";
+"Hide Zoom" = "Ocultar a Zoom";
+"Hide Others" = "Ocultar a los demás";
+"Show All" = "Mostrar todo";
+"Quit Zoom" = "Salir de Zoom";
+
+"Cut" = "Cortar";
+"Paste" = "Pegar";
+"Paste and Match Style" = "Pegar con el mismo estilo";
+"Select All" = "Seleccionar todo";
+"Find" = "Buscar";
+"Find..." = "Buscar...";
+"Find and Replace..." = "Buscar y reemplazar...";
+"Find Next" = "Buscar siguiente";
+"Find Previous" = "Buscar anterior";
+"Use Selection for Find" = "Usar selección para buscar";
+"Jump to Selection" = "Ir a la selección";
+
+"Window" = "Ventana";
+"Minimize" = "Minimizar";
+"Bring All to Front" = "Traer todo al frente";
+
+"Recommend Zoom to Friends" = "Recomendar Zoom a los amigos";
+//PT MENUS ENDS
+
+"Zoom Group Chat" = "Chat de grupo de Zoom";
+"Zoom Update" = "Actualización de Zoom";
+"A new version of Zoom is available!" = "¡Está disponible una nueva versión de Zoom!";
+"A new version of Zoom is available! Please update now." = "¡Está disponible una nueva versión de Zoom! Haga la actualización ahora.";
+"We also welcome your ideas, requests or comments about Zoom.\nPlease enter your feedback here:" = "Agradecemos sus ideas, peticiones o comentarios sobre Zoom.\nEscribanos aquí sus sugerencias:";
+"Zoom is up to date." = "Zoom está actualizado.";
+
+//PT About Window starts
+" All rights reserved." = " Todos los derechos reservados.";
+" Terms" = " Condiciones";
+"Privacy Policy" = "Política de privacidad";
+//PT About Window ends
+
+//Q&A
+"You are logged in from another device. Your Q&A session is inactive." = "Usted inició sesión desde otro dispositivo. Su sesión de preguntas y respuestas está inactiva.";
+"Q&A" = "Preguntas y respuestas";
+"Questions and Answers" = "Preguntas y respuestas";
+"Send Anonymously" = "Enviar de forma anónima";
+"LN_Meeting_QA_No_Open_Question_21381" = "No hay preguntas abiertas";
+"LN_Meeting_QA_No_Answered_Question_21381" = "No hay preguntas respondidas";
+"All" = "Todas";
+"Answered" = "Respondió/respondieron";
+" answered:" = " respondió/respondieron:";
+"Please input your question" = "Escriba su pregunta";
+"Answer by Text" = "Responder vía texto";
+"Answer Live" = "Responder en vivo";
+"Submit" = "Enviar";
+"Send privately" = "Enviar en privado";
+"You would like to answer this question live." = "Usted desea responder esta pregunta en vivo.";
+"Done" = "Listo";
+"Anonymous Attendee" = "Espectador anónimo";
+"You" = "Usted";
+" asked:" = " preguntó:";
+" answered (privately):" = " respondió/respondieron (en privado):";
+"You have" = "Usted ha";
+" has" = " ha";
+" answered this question live." = " respondido esta pregunta en vivo.";
+" is going to answer this question live." = " va a responder esta pregunta en vivo.";
+
+//Polling
+"Polling" = "Votación";
+
+//quick start
+"Invitation URL:" = "URL de la Reunión:";
+"Host Name:" = "Nombre del anfitrión:";
+"Meeting Topic:" = "Tema de la reunión:";
+"Copy URL" = "Copiar la dirección de la página web";
+
+//H323
+"Device connected." = "Dispositivo conectado.";
+"This meeting is not existed or has expired." = "Esta reunión no existe o ha caducado.";
+"Invalid pairing code" = "Código de sincronización no válido";
+"The meeting host has not subscribed H.323/SIP Room Connector Plan." = "El anfitrión de la reunión no ha suscrito el Room Connector Plan del H.323/SIP.";
+"Pair code failed. Error:%d" = "Falló el código de sincronización. Error:%d";
+"IP address or E.164 number" = "Dirección de IP o número de E.164";
+"IP address or URL" = "Dirección de IP o dirección de la página web";
+
+//add by Ryan for IM
+"You have been removed from this group." = "Se lo ha retirado de este grupo.";
+"Chat History" = "Historial del chat";
+"Clear chat history on this computer?" = "¿Borrar el historial del chat de este equipo?";
+"Clear" = "Borrar";
+"Leave this group?" = "¿Salir de este grupo?";
+"This will also clear your chat history in this group." = "Esto también borrará su historial del chat en este grupo.";
+"This will also clear your chat history with this user." = "Esto también borrará su historial del chat con este usuario.";
+"Leave" = "Salir";
+"You cleared all past messages." = "Usted ha borrado todos los mensajes anteriores.";
+"With Video On" = "Con video encendido";
+"With Video Off" = "Con video apagado";
+"Capture Screen" = "Capturar pantalla";
+"Send Image" = "Enviar imagen";
+"Edit Group" = "Editar grupo";
+"Invite others" = "Invitar a otros";
+"Invite Others" = "Invitar a otros";
+"Clear History" = "Borrar historial";
+"Leave Group" = "Salir del grupo";
+"Delete Contact" = "Eliminar contacto";
+"Remove from Contacts" = "Retirar de los contactos";
+"On Desktop" = "En el escritorio";
+"On Mobile" = "En el móvil";
+"Desktop" = "Escritorio";
+"Mobile" = "Móvil";
+"Away" = "Alejado";
+"Busy" = "Ocupado";
+"You have reached the Maximum number of group members" = "Usted ha alcanzado el número máximo de miembros del grupo";
+"Group Members" = "Miembros del grupo";
+"%@'s group chat" = "Chat de grupo de %@";
+"Save Changes" = "Guardar cambios";
+"Invite" = "Invitar";
+"Create Group" = "Crear un grupo";
+"Can't create a new group, please check your network." = "No se puede crear un nuevo grupo; revise su conexión de red.";
+"Can't edit the group, please check your network." = "No se puede editar el grupo; revise su conexión de red.";
+"Voice Message" = "Mensaje de voz";
+"Your message \"%@\" send failed.   Resend" = "No se pudo enviar su mensaje \"%@\".   Reenviar";
+"Your message \"%@...\" send failed.   Resend" = "No se pudo enviar su mensaje \"%@...\".   Reenviar";
+"Resend" = "Reenviar";
+"%d new message" = "%d nuevo mensaje";
+"%d new messages" = "%d nuevos mensajes";
+"%@ is typing..." = "%@ está escribiendo...";
+"Contacts" = "Contactos";
+"No results" = "No hay resultados";
+"You have logged in from another device. Messenger is now inactive." = "Usted ha iniciado sesión desde otro dispositivo. Ahora Messenger está inactivo.";
+"Available" = "Disponible";
+"(Admin)" = "(Administración)";
+"Not a contact" = "No es un contacto";
+"(Invite)" = "(Invitar)";
+"Add to Contacts List" = "Añadir a la lista de contactos";
+"1 contact request" = "1 solicitud de contacto";
+"%d contact requests" = "%d solicitudes de contacto";
+"Your request has been sent successfully!" = "¡Su solicitud se ha enviado satisfactoriamente!";
+"New Group Chat" = "Nuevo chat de grupo";
+"Favorites" = "Favoritos";
+"Company, Phone, and Other Contacts" = "Contactos empresariales, del teléfono y otros contactos";
+"Company and Phone Contacts" = "Contactos empresariales y del teléfono";
+"Company and Other Contacts" = "Contactos empresariales y otros contactos";
+"Company Contacts" = "Contactos empresariales";
+"Phone and Other Contacts" = "Contactos del teléfono y otros contactos";
+"Phone Contacts" = "Contactos del teléfono";
+"Right-click a contact to add to Favorites." = "Pulse con el botón derecho en un contacto para agregarlo a Favoritos.";
+"Group Meeting" = "Reunión de grupo";
+"You are about to start a meeting and invite all members of this group to join. Are you sure?" = "Usted está a punto de comenzar una reunión e invitar a todos los miembros de este grupo a entrar. ¿Está seguro?";
+
+//audio error for record
+"Audio Error" = "Error de audio";
+"No audio is detected. Check audio settings or continue to record with no audio." = "No se detecta el audio. Compruebe la configuración del audio o continúe para grabar sin audio.";
+"Check Audio" = "Comprobar el audio";
+"Continue Recording" = "Continuar grabando";
+
+//add by Ryan for L10;
+"Upcoming" = "Próximas";
+"Recorded" = "Grabaciones";
+"Join" = "Entrar";
+"Open" = "Abrir";
+"Schedule" = "Agendar";
+"Update" = "Actualizar";
+"Switch Account" = "Cambiar de cuenta";
+"Exit" = "Salir";
+"Check for Updates..." = "Buscar actualizaciones...";
+"Please check your network connection. Then click Retry to re-connect." = "Compruebe su conexión de red. Luego pulse Reintentar para volver a conectarse.";
+"Install" = "Instalar";
+"Manual Update" = "Actualización manual";
+"Retry" = "Reintentar";
+"Downloading file" = "Descargando archivo";
+"Updating" = "Actualizando";
+"Thanks for joining a Zoom video call!\n\nYou can login to start your own Zoom video call." = "¡Gracias por entrar a una videollamada de Zoom!\n\nPuede iniciar sesión para iniciar su propia videollamada de Zoom.";
+"Don't remind me again" = "No recordarme de nuevo";
+"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation" = "Sus invitados no necesitan tener la aplicación Zoom instalada previamente para poder aceptar su invitación a la reunión";
+"Did you know?" = "¿Lo sabía?";
+"Later" = "Más adelante";
+"Update now" = "Actualizar ahora";
+"Release Notes:" = "Notas de la versión:";
+"Join Video Call" = "Entrar a videollamada";
+"You are already in another meeting. Do you want to leave and then join this one?" = "Usted ya está en otra reunión. ¿Quiere salir y luego entrar a esta reunión?";
+"No" = "No";
+"Yes" = "Sí";
+"Camera:" = "Cámara:";
+"Always show name on video window" = "Siempre mostrar nombre en la ventana de video";
+"Update to PRO" = "Actualizar a PRO";
+"Store my recordings at:" = "Almacenar mis grabaciones en:";
+"Choose a location for recorded files when meeting ends" = "Seleccionar la ubicación para los archivos grabados";
+"Open Recordings in Finder" = "Abrir grabaciones en el Finder";
+"Select a Speaker" = "Altavoz";
+"Select a Microphone" = "Micrófono";
+"Output Level:" = "Nivel de salida:";
+"Output Volume:" = "Volumen de salida:";
+"Input Level:" = "Nivel de entrada:";
+"Input Volume:" = "Volumen de entrada:";
+"Please speak to your microphone. If you can not see the volume indicator blinking, select a different mic." = "Hable cerca del micrófono. Si el indicador de volumen no parpadea, seleccione un micrófono diferente.";
+"Select Mic" = "Seleccionar micrófono";
+"Automatically adjust microphone settings" = "Ajustar automáticamente la configuración del micrófono";
+"Automatically join audio conference via Mic & Speaker when joining a meeting" = "Unirse a la conferencia de audio automáticamente vía micrófono y altavoz al entrar a una reunión";
+"Alert me when friends go online" = "Mostrarme alertas cuando se conecten amigos";
+"Alert me when friends go offline" = "Mostrarme alertas cuando se desconecten amigos";
+"Pop out the chat window when I receive a chat message" = "Presentar la ventana de chat cuando yo reciba un mensaje de chat";
+"Show offline contacts" = "Mostrar a contactos sin conexión";
+"Enter full screen automatically when viewing screen shared by others" = "Al compartir el contenido, cambiar a la pantalla completa";
+"Maximize Zoom window automatically when viewing screen shared by others" = "Maximizar ventana de Zoom automáticamente al ver la pantalla compartida con otros usuarios";
+"Play sound when I receive a chat message" = "Al recibir un mensaje de chat, reproducir un sonido";
+"Enter full screen automatically when starting or joining a meeting" = "Al iniciar o entrar a una reunión, cambiar a pantalla completa";
+"Use dual monitors" = "Utilizar doble monitor";
+"Scale to fit my Zoom window when viewing screen shared by others" = "Al recibir el contenido, permitir ajustar mi pantalla";
+"Automatically copy Invitation URL to Clipboard after meeting starts" = "Al entrar, copiar automáticamente el URL de la reunión al portapapeles";
+"Meeting Option" = "Opción de reunión";
+"Instant Message" = "Mensaje instantáneos";
+"For technical support, please visit " = "Para obtener asistencia técnica, visite ";
+"Support." = "Soporte.";
+"Always use PMI for instant meetings on this computer" = "Usar simpre el ID Personal al iniciar reuniones";
+"Delete" = "Eliminar";
+"Start" = "Iniciar";
+"Edit" = "Editar";
+"Play Video" = "Reproducir video";
+"Play Audio Only" = "Reproducir audio únicamente";
+"Accept" = "Aceptar";
+"Checking for updates..." = "Comprobando actualizaciones...";
+"What's new?" = "¿Qué hay de nuevo?";
+"Network error!" = "¡Error de red!";
+
+//hard code string
+"Download failed, please try it again" = "Error al descargar; inténtelo de nuevo";
+"Download failed" = "Error al descargar";
+"Personal Meeting ID (PMI)" = "ID Personal Para Reuniones (PMI)";
+"Today" = "Hoy";
+"Recurring - %@" = "Recurrente - %@";
+"Topic: %@\n" = "Tema: %@\n";
+"Meeting ID: %@\n" = "ID de la reunión: %@\n";
+"Meeting Password: %@\n" = "Contraseña de la reunión: %@\n";
+"%@ to %@" = "%@ a %@";
+"Duration: %d minutes" = "Duración: %d minutos";
+"Meeting ID: %@" = "ID de la reunión: %@";
+"Meeting Password: %@" = "Contraseña de la reunión: %@";
+"Meeting Password:" = "Contraseña de la reunión:";
+"New version is available!" = "¡Está disponible una nueva versión!";
+"New version available!" = "¡Nueva versión disponible!";
+"Last Name" = "Apellido";
+"First Name" = "Primer nombre";
+"Change" = "Cambiar";
+"Enter your own audio conference information" = "Introduzca su propia información de audioconferencia";
+
+//PT Invite Dialog
+"Invite by Email" = "Invitar por e-mail";
+"Choose your email service to send invitation" = "Elija su servicio de e-mail para enviar la invitación";
+"Default Email" = "E-mail predeterminado";
+"Gmail" = "Gmail";
+"Yahoo Mail" = "Yahoo Mail";
+
+"Facebook Friends" = "Amigos de Facebook";
+"Facebook Group" = "Grupo de Facebook";
+
+"Invite by Phone" = "Invitar por teléfono";
+"Calling" = "Llamando";
+"Invitee Name:" = "Nombre del invitado:";
+" Name to be displayed in the meeting" = " Nombre que se mostrará en la reunión";
+"Phone Number:" = "Número de teléfono:";
+" Input the number you want to call" = " Introduzca el número al que desea llamar";
+
+"Invite a Room System" = "Invitar un Room System";
+"Enter the pairing code below" = "Introduzca el código de sincronización a continuación";
+"Or Enter the pairing code below" = "O introduzca el código de sincronización a continuación";
+
+"Copy Invitation" = "Copiar invitación";
+"Copy URL to Clipboard" = "Copiar la dirección de la página web al portapapeles";
+"Copy Invitation to Clipboard" = "Copiar la invitación al portapapeles";
+
+"Call" = "Llamar";
+
+"From your H.323/SIP Room System" = "Desde su Room System de H.323/SIP";
+"Enter Meeting ID: " = "Introduzca la ID de la reunión: ";
+"Enter Meeting Password: " = "Introduzca la contraseña de la reunión: ";
+
+"Google Friends" = "Amigos de Google";
+//PT Invite Dialog end
+
+
+//PT Login Dialog begin
+"(or" = "(o";
+"Email" = "E-mail";
+"Email or password error!" = "¡Error con el e-mail o con la contraseña!";
+"Remember me" = "Recordarme";
+"Back" = "Regresar";
+"Or" = "O";
+"Login with Google" = "Iniciar sesión con Google";
+"Login with Facebook" = "Iniciar sesión con Facebook";
+"Login with SSO" = "Ingresar con SSO";
+
+"Connection Failed." = "Falló la conexión.";
+
+"Sign In" = "Ingresar";
+
+"To schedule a BBM meeting, you need to upgrade to a paid account. You are still able to join BBM Meeting." = "Para programar una reunión de BBM, es necesario actualizar a una cuenta de pago. Todavía puede entrar a una reunión de BBM.";
+"Not Now" = "Ahora no";
+"Upgrade to BBM Meetings" = "Actualizar a reuniones de BBM";
+
+//PT SSO Login Dialog begin
+"Login SSO" = "Ingreso con inicio único de sesión (SSO)";
+"https://companyname.zoom.us" = "https://nombreempresa.zoom.us";
+"SSO URL:" = "Dirección de la página web para el inicio único de sesión (SSO):";
+"Enter your company domain" = "Introducir el dominio de su compañía";
+"company domain" = "dominio de la compañía";
+".zoom.us" = ".zoom.us";
+"I don't know the company domain" = "No conozco el dominio de la compañía";
+"Open in default browser" = "Abrir en un navegador predeterminado";
+"Find company domain by email address" = "Buscar dominio de la compañía por dirección de correo electrónico";
+"Manually enter domain" = "Introducir manualmente el dominio";
+"No matching domain found" = "No se encontraron dominios coincidentes";
+"Network error, please try later" = "Error de la red; por favor, inténtelo de nuevo más tarde";
+//PT SSO Login Dialog end
+
+
+//PT Proxy Auth Dialog begin
+"Name:" = "Nombre:";
+"Password:" = "Contraseña:";
+//PT Proxy Auth Dialog end
+
+//Help url string
+"http://support.zoom.us/" = "http://support.zoom.us/";
+
+
+
+//PT Schedule Dialog begin
+"Topic:" = "Tema:";
+"When" = "Cuándo";
+"Start:" = "Inicio:";
+"Duration:" = "Duración:";
+"Hr" = "Hora";
+"Min" = "Min.";
+"Time Zone:" = "Zona horaria:";
+"Please remember to check recurrence or repeat in your calendar invitation to your attendees. " = "No olvide revisar la frecuencia o repetición de la invitación a sus participantes en el calendario. ";
+"Recurring meeting" = "Reunión recurrente";
+"Host:" = "Anfitrión:";
+"Participant:" = "Participante:";
+"Video (when joining a meeting)" = "Video (al entrar a una reunión)";
+"On" = "Encendido";
+"Off" = "Apagado";
+"Telephone Only" = "Teléfono";
+"VoIP Only" = "Audio de la computadora";
+"Both" = "Teléfono y audio de la computadora";
+"3rd Party Audio" = "Audio de terceros";
+"Meeting Options" = "Opciones de la reunión";
+"Require meeting password" = "Requerir contraseña de reunión";
+"Enable join before host" = "Habilitar entrar antes que el anfitrión";
+"Calendar" = "Calendario";
+"iCal" = "iCal";
+"Google Calendar" = "Calendario de Google";
+"Other Calendars" = "Otros calendarios";
+"Schedule For:" = "Horario para:";
+"Edit Meeting" = "Editar la reunión";
+"Scheduling..." = "Programando...";
+"Click the button below to copy the invitation to clipboard." = "Pulse el siguiente botón para copiar la invitación al portapapeles.";
+"Copy to Clipboard" = "Copiar al portapapeles";
+//PT Schedule Dialog end
+
+
+//PT Edit PMI Dialog begin
+"Personal Meeting ID" = "ID personal de la reunión";
+"Your Personal Meeting ID is changed." = "Su ID personal de la reunión ha cambiado.";
+"Upgrade to Pro to change your Personal Meeting ID" = "Actualícese a Pro para cambiar su ID personal de la reunión";
+"Change Your Personal Meeting ID" = "Cambiar su ID personal de la reunión";
+
+"Choose your 10-digits ID:" = "Elija su ID de 10 dígitos:";
+"* Your Personal Meeting ID cannot start with 0 or 1" = "*Su ID personal de la reunión no puede iniciar con 0 ni con 1";
+"Apply" = "Aplicar";
+
+"Your Personal Meeting option is updated." = "Su opción de reunión personal está actualizada.";
+
+"Only Pro user can customize your favorite personal meeting ID. Would like to upgrade to Pro account?" = "Únicamente un usuario Pro puede personalizar su ID de reunión personal favorita. ¿Le gustaría actualizar a una cuenta Pro?";
+//PT Edit PMI Dialog end
+
+
+"Recording Path:" = "Ubicación física de la grabación:";
+
+//add for ZOOM3.5
+"Save Chat" = "Guardar el chat";
+"Chat saved to:" = "El chat se guardó en:";
+
+//air host
+"Share an iPhone/iPad screen" = "Compartir una pantalla de iPhone o iPad";
+"A plugin is required to share an iPhone/iPad screen." = "Se requiere un plug-in para compartir una pantalla de iPhone o iPad.";
+"Installation failed, please check your network and try again. Or " = "Error en la instalación; compruebe su conexión de red y vuelva a intentarlo. O ";
+"download manually" = "descargar manualmente";
+
+//diagnostic
+"Zoom Activity Monitor" = "Monitor de actividad de Zoom";
+"Item Name" = "Nombre del elemento";
+"Frequency" = "Frecuencia";
+"Latency" = "Latencia";
+"Jitter" = "Variación de retardo";
+"Packet Loss - Avg(Max)" = "Pérdida de paquetes - promedio(máx)";
+"Frame Per Second" = "Cuadros por segundo";
+"Resolution" = "Resolución";
+"Screen Sharing" = "Compartir Pantalla";
+"Overall" = "En general";
+"Send" = "Enviar";
+"Receive" = "Recibir";
+"Bandwidth" = "Ancho de banda";
+"Network Type" = "Tipo de red";
+"Proxy" = "Servidor intermedio (proxy)";
+"CPU" = "CPU";
+"Memory" = "Memoria";
+"Your high CPU usage is affecting the meeting quality" = "Su uso intensivo del CPU está afectando la calidad de la reunión";
+"Your internet connection is unstable" = "Su conexión a Internet es inestable";
+
+//Conference Remote Camera Control Window
+"Waiting for %@ to approve your request" = "En espera de que %@ apruebe su solicitud";
+"%@ requested to control your camera" = "%@ solicitó controlar la cámara de usted";
+"%@ declined your request of camera control" = "%@ declinó su petición de controlar la cámara";
+"Request approved. You can now control %@'s camera." = "Petición aprobada. Ahora usted puede controlar la cámara de %@.";
+"%@ no longer controls your camera" = "%@ ya no controla la cámara de usted";
+
+// for accessibility feature
+"Zoom Logo" = "Logotipo de Zoom";
+"Status Menu" = "Menú de estado";
+"Refresh Meeting List" = "Actualizar lista de reuniones";
+"Add Contact" = "Agregar contacto";
+"button" = "botón";
+
+"Auto Answer Group" = "Grupo de respuesta automática";
+"Remove from Auto Answer Group" = "Retirar del grupo de respuesta automática";
+"Add to Auto Answer Group" = "Agregar al grupo de respuesta automática";
+
+// for polling
+"Poll" = "Votación";
+"Multiple Choice" = "Opción múltiple";
+"Poll closed" = "Votación cerrada";
+"%d voted" = "%d votó/votaron";
+"Add a Question" = "Añadir una pregunta";
+"Edit Poll" = "Editar la votación";
+"Failed to launch poll" = "No se pudo iniciar la votación";
+"Failed to end poll" = "No se puedo finalizar la votación";
+"Failed to share poll result" = "No se pudo compartir el resultado de la votación";
+"Failed to fetch poll" = "No se pudo obtener la votación";
+"Failed to stop sharing" = "No se pudo detener el uso compartido";
+"Failed to submit poll" = "No se pudo enviar la votación";
+"Share Results" = "Compartir los resultados";
+"Launch Poll" = "Iniciar votación";
+"Polls" = "Votaciones";
+"End Poll" = "Finalizar votación";
+"%@ in Progress" = "%@ en curso";
+"%d of %d voted" = "%d de %d votó/votaron";
+"Sharing Poll Results" = "Compartiendo los resultados de la votación";
+"Stop Sharing" = "Dejar de compartir";
+"Quick Poll" = "Votación rápida";
+"Host is sharing poll results" = "El anfitrión está compartiendo los resultados de la votación";
+"Close" = "Cerrar";
+"Attendees are now viewing questions" = "Los participantes están viendo las preguntas ahora";
+"Attendees are now viewing poll results" = "Los participantes están viendo los resultados de la votación ahora";
+"Host and panelists can't vote." = "El anfitrión y los panelistas no pueden votar.";
+"Allow panelists to vote" = "Permitir que los panelistas voten";
+"Re-launch Poll" = "Relanzar la votación";
+"Re-launching the poll will clear existing polling results. Do you want to continue?" = "El relanzamiento borrará el resultado de la votación actual, ¿desea continuar?";
+"%d of %d (%d%%) voted" = "%d of %d (%d%%) voted";
+"The poll was closed before you submitted your answer" = "La votación se cerró antes de que enviara su respuesta";
+
+//Main Window Title
+"Zoom - %@" = "Zoom - %@";
+"Use Personal Meeting ID" = "Usar ID personal de la reunión";
+"Zoom" = "Zoom";
+"Always mute microphone when joining meeting" = "Siempre silenciar micrófono al entrar a una reunión";
+"Always turn off video when joining meeting" = "Siempre apagar video al entrar a una reunión";
+"(Public to all participants)" = "(Público para todos los participantes)";
+"Topic: %@" = "Tema: %@";
+"Chat saved." = "Chat guardado.";
+"Call Out" = "Llamar";
+"Dial In from a H.323/SIP Room System" = "Marcar desde un Room System de H.323/SIP";
+"Call a H.323/SIP Room System" = "Llamar a un Room System de H.323/SIP";
+"Confirm with me when I leave a meeting" = "Confirmar cuando yo salga de una reunión";
+"Hide Non-Video Participants" = "Ocultar participantes que no tienen video";
+"Ask to Start Video" = "Preguntar para iniciar video";
+
+//broad cast
+"Broadcast" = "Transmitir";
+"Practice Mode Only: Attendees cannot join until you broadcast" = "Modo de práctica únicamente: Los espectadores no pueden entrar hasta que usted empiece a transmitir";
+"The webinar is now broadcasting to all attendees" = "Ahora este seminario web se está transmitiendo a todos los espectadores";
+"Not broadcasting" = "No está transmitiendo";
+
+//
+"Audio Options..." = "Opciones del audio...";
+"Video Settings..." = "Configuración del video...";
+"Camera (Shift+Command+N to switch)" = "Cámara (Comando+Mayúsculas+N para intercambiar)";
+"Zoom is using an end to end encrypted connection" = "Zoom está utilizando una conexión de cifrado completo";
+"Select a Camera" = "Cámara";
+"New Share" = "Nueva función";
+"Stop Remote Control" = "Detener control remoto";
+"Switch Camera" = "Intercambiar cámara";
+"Locked" = "Bloqueada";
+"You need to unlock the meeting in order to change the role of a webinar attendee" = "Es necesario desbloquear la reunión para cambiar el rol de un participante del seminario web";
+"You need to unlock the meeting in order to change the role of a webinar panelist" = "Es necesario desbloquear la reunión para cambiar el rol de un panelista del seminario web";
+"The host has asked you to start your video." = "El anfitrión le ha pedido que inicie su video.";
+"Start My Video" = "Iniciar mi video";
+"Resume Share" = "Reanudar función de compartir";
+"Pause Share" = "Poner en pausa";
+"Meeting Locked" = "Reunión bloqueada";
+"Show floating notification when I receive a chat message" = "Al recibir un mensaje de chat, mostrar un notificación flotante";
+"Options" = "Opciones";
+"Promote" = "Ascender";
+"Other Contacts" = "Otros contactos";
+"Meet" = "Reunirse";
+"Add Other Contacts by Email" = "Añadir otros contactos por e-mail";
+"Meet with Video" = "Reunirse con video";
+"Meet without Video" = "Reunirse sin video";
+"Add to Favorites" = "Agregar a Favoritos";
+"Remove from Favorites" = "Eliminar de Favoritos";
+"Send File" = "Enviar archivo";
+"You've created this group chat %@" = "Usted ha creado este chat de grupo%@";
+"%@ invited you and %@ to this group chat" = "%@ invitó a usted y a %@ a este chat de grupo";
+"%@ invited you to this group chat" = "%@ le invitó a este chat de grupo";
+"New Chat" = "Chat Nuevo";
+"Start Chat" = "Iniciar chat";
+"Chat With" = "Chatear con";
+"Next" = "Siguiente";
+"Add" = "Agregar";
+"New Group" = "Nuevo grupo";
+"Screen sharing has failed to start. Please try again later." = "No se pudo iniciar la función de compartir pantallas. Inténtelo de nuevo más tarde.";
+"Group Name:" = "Nombre del grupo";
+"Missed Call" = "Llamada perdida";
+"Incoming Call - Declined" = "Llamada entrante - declinada";
+"Join Audio Conference by Computer" = "Entrar al audio por computadora";
+"[You were mentioned] " = "[Lo mencionaron] ";
+"%@ left this group chat" = "%@ se retiró de este chat de grupo";
+"You've removed %@ from this group chat" = "Usted ha retirado a %@ de este chat de grupo";
+"%@ removed you from this group chat" = "%@ le retiró de este chat de grupo";
+"%@ removed %@ from this group chat" = "%@ retiró a %@ de este chat de grupo";
+"You changed the group name to \"%@\"" = "Usted cambió el nombre del grupo a \"%@\"";
+"%@ changed the group name to \"%@\"" = "%@ cambió el nombre del grupo a \"%@\"";
+"You've invited %@ to this group chat" = "Usted ha invitado a %@ a este chat de grupo";
+"%@ invited %@ to this group chat" = "%@ invitó a %@ a este chat de grupo";
+"Choose ONE of the audio conference options" = "¿Que opción de audio desea para entrar a la reunión?";
+"Request Camera Control" = "Solicitar control de la cámara";
+"Give up Camera Control" = "Ceder el control de la cámara";
+"Type and select a person" = "Escriba y seleccione a una persona";
+"You can't start your video because the host has stopped it" = "No puede iniciar su video porque el anfitrión lo detuvo";
+"Remember my name for future meetings" = "Recordar mi nombre para futuras reuniones";
+"will start video later." = "iniciará el video más tarde.";
+
+"Make Co-Host" = "Hacer coanfitrión";
+"Co-host" = "coanfitrión";
+"co-host" = "coanfitrión";
+"Co-Host" = "Coanfitrión";
+"Withdraw Co-Host Permission" = "Retirar permiso de coanfitrión";
+"Do you want to make %@ the co-host of this meeting?" = "¿Quiere hacer a %@ coanfitrión de esta reunión?";
+"Co-Host has stopped your video" = "El coanfitrión ha detenido su video";
+"Panelists" = "Panelistas";
+"panelist" = "panelista";
+"host" = "anfitrión";
+"Type message here..." = "Escribir mensaje aquí...";
+"Send chat to..." = "Enviar chat a...";
+"Attendees" = "Espectadores";
+"The co-host has asked you to start your video." = "El coanfitrión le ha pedido que inicie su video.";
+"Allow Panelist Start Video" = "Permitir que el panelista inicie el video";
+"Promote to Panelist" = "Ascender a panelista";
+
+//add contact by email
+"Failed to connect to Zoom video conferencing server. If you are behind a firewall, please ask your IT administrator to allow \"*.zoom.us\".  For more information, please visit: https://support.zoom.us/hc/en-us/articles/201362683." = "No se pudo conectar al servidor de videoconferencias de Zoom. Si usted tiene un firewall de protección, pídale a su administrador de informática que autorice a \"*. zoom.us\".  Para obtener más información, visite: https://support.zoom.us/hc/en-us/articles/201362683.";
+"Email invitation copied to clipboard" = "La invitación por e-mail se copió al portapapeles";
+"Add a Contact" = "Añadir un contacto";
+"An email invitation has been sent." = "Se ha enviado una invitación por e-mail.";
+"Your request has been sent for approval to:" = "Su solicitud se ha enviado para aprobación a:";
+"Email address not signed up with Zoom." = "Dirección de e-mail no registrada con Zoom.";
+"⟨ Back" = "⟨ Regresar";
+"One email address a time" = "Una dirección de e-mail a la vez";
+"Network error, please try again" = "Error de la red; inténtelo de nuevo";
+"is now your contact." = "ahora es contacto de usted.";
+"Yesterday" = "Ayer";
+"System Notification" = "Notificación del sistema";
+"requests to add you as a contact" = "solicita añadirle a usted como contacto";
+"contact request sent  - Waiting for approval" = "solicitud de contacto enviada - a la espera de aprobación";
+"accepted your contact request" = "aceptó/aceptaron su solicitud de contacto";
+"declined your contact request" = "declinó/declinaron su solicitud de contacto";
+"has been added to your contact list" = "se ha añadido a su lista de contactos";
+"contact request sent" = "solicitud de contacto enviada";
+"  - Declined" = "  - declinó/declinaron";
+"Invited" = "Invitó/invitaron";
+"You won't receive message notifications from this group unless you are mentioned." = "No recibirá notificaciones de mensajes de este grupo, a menos que se le mencione.";
+"Enable Message Notifications" = "Habilitar notificaciones de mensajes";
+"Disable Message Notifications" = "Inhabilitar notificaciones de mensajes";
+
+"Open File" = "Abrir un archivo";
+"Shared a file in group." = "Compartió un archivo en el grupo.";
+"Shared a file with you." = "Compartió un archivo con usted.";
+"Do not prompt joining audio when I join a meeting using 3rd party audio" = "No pedir que entre al audio cuando entro a una reunión usando audio de terceros";
+"You can't start your video because the host has stopped it." = "No puede iniciar su video porque el anfitrión lo detuvo.";
+"Allow attendees to raise hand" = "Permitir que los espectadores levanten la mano";
+"Don't connect to audio" = "Conectar Sin Audio";
+"Turn off my video" = "Conectar Sin Video";
+
+"Allow Attendee Chat" = "Permitir chat de los espectadores";
+"The host has disabled attendee chat." = "El anfitrión ha inhabilitado el chat de los espectadores.";
+"Zoom Webinar Chat" = "Chat del seminario web de Zoom";
+"Your text can only be seen by panelists" = "Únicamente los panelistas pueden ver el texto de usted";
+"Everyone" = "Todos";
+"All Panelists" = "Todos los panelistas";
+"All panelists" = "Todos los panelistas";
+"(host)" = "(anfitrión)";
+"%@ is not in this meeting" = "%@ no está en la sesión.";
+"From Me to Everyone" = "De mí para todos";
+"From Me to All Panelists" = "De mí para todos los panelistas";
+"From Me to %@, All Panelists" = "De mí para %@, todos los panelistas";
+"From Me to %@ (Privately)" = "De mí para %@ (en privado)";
+"From %@ to Everyone" = "De %@ para todos";
+"From %@ to All Panelists" = "De %@ para todos los panelistas";
+"From %@ to Me, All Panelists" = "De %@ para mí, todos los panelistas";
+"From %@ to %@, All Panelists" = "De %@ para %@, todos los panelistas";
+"From %@ to Me (Privately)" = "De %@ para mí (en privado)";
+"From Me to %@:" = "De mí para %@:";
+"From Me to %@, %@:" = "De mí para %@, %@:";
+"From Me to %@: (Privately)" = "De mí para %@: (En privado)";
+"From %@ to %@:" = "De %@ para %@:";
+"From %@ to Me, %@:" = "De %@ para mí, %@:";
+"From %@ to %@, %@:" = "De %@ para %@, %@:";
+"From %@ to Me: (Privately)" = "De %@ para mí: (En privado)";
+" (Privately)" = " (En privado)";
+"Attendees" = "Espectadores";
+"Failed to send chat message" = "No se pudo enviar el mensaje de chat";
+"From" = "De";
+"to" = "para";
+", All Panelists" = ", todos los panelistas";
+
+"Hide Group members" = "Ocultar a los miembros del grupo";
+"Show Group members" = "Mostrar a los miembros del grupo";
+"Send Email Invitation" = "Enviar invitación por e-mail";
+"Host meeting in China" = "Llevar a cabo reunión en China";
+"Only signed-in users can join this meeting" = "Solamente los usuarios que se registraron pueden entrar a esta reunión";
+"Only signed-in users with specified domains can join this meeting" = "Solamente los usuarios que se registraron con dominios específicos pueden entrar a esta reunión";
+"If no domains specified, any signed-in users can join." = "Si no hay dominios especificados, cualquier usuario suscrito puede entrar.";
+
+//Breakout Session
+"Not Started" = "No iniciada";
+"In Progress" = "En curso";
+"Breakout Rooms - %@" = "Salas para grupos pequeños - %@";
+"Assign To" = "Asignar a";
+"unassigned participants" = "participantes no asignados";
+"unassigned participant" = "participante no asignado";
+"Join Breakout Room" = "Unirse a la sesión para grupos pequeños";
+"Breakout Room Participants" = "Participantes en la sesión para grupos pequeños";
+"Keep Meeting Running for Others" = "Mantener la reunión activa para los demás";
+"You are now in the main session" = "Usted se encuentra ahora en la sesión principal";
+"You are now in a Breakout Room" = "Ahora se encuentra en una sesión para grupos pequeños";
+"Leave Breakout Room" = "Salir de la sesión para grupos pequeños";
+"Do you want to leave this Breakout Room and return to the main session?" = "¿Desea salir de esta sesión para grupos pequeños y volver a la sesión principal?";
+"Return to Main Session" = "Volver a la sesión principal";
+"You will be returned to the main session automatically." = "Se le reintegrará a la sesión principal automáticamente.";
+"Ask for Help" = "Pedir ayuda";
+"Returning to Main Session..." = "Regresando a la sesión principal...";
+"Invite Host" = "Invitar al anfitrión";
+"You can invite the host to this Breakout Room for assistance." = "Puede invitar al anfitrión a esta sesión para grupos pequeños para que lo ayude.";
+"Breakout Rooms" = "Sección de Grupos";
+"Assign %d participants into 5 Rooms:" = "Asignar a %d participantes en 5 sesiones:";
+"Automatically" = "Automáticamente";
+"Manually" = "Manualmente";
+"%d participants per room" = "%d participantes por sesión";
+"%d-%d participants per room" = "%d-%d participantes por sesión";
+"Create Breakout Rooms" = "Crear la sesión para grupos pequeños";
+"Recreate All Rooms" = "Recrear todas las sesiones";
+"All Breakout Rooms will close in %d seconds." = "Todas las sesiones para grupos pequeños se cerrarán en %d segundos.";
+"All existing rooms will be replaced." = "Todas las sesiones existentes se reemplazarán.";
+"Recreate" = "Volver a crear";
+"Add a Room" = "Adicione una sesión";
+"Open All Rooms" = "Abrir todas las sesiones";
+"Close All Rooms" = "Cerrar todas las sesiones";
+"Breakout Room %d" = "%d de sesiones para grupos pequeños";
+"Assign" = "Asignar";
+"Delete Room" = "Eliminar una sesión";
+"Move To" = "Mover a";
+"Exchange" = "Intercambiar";
+"Delete %@?" = "¿Eliminar %@?";
+"Join %@?" = "¿Unirse a %@?";
+"Leave %@?" = "¿Salir de %@?";
+"%@ (not joined)" = "%@ (no ha entrado)";
+"All participants have been assigned to Breakout Rooms." = "Todos los participantes han sido asignados a sesiones para grupos pequeños.";
+"%1$@ in %2$@ asked for help." = "%1$@ en %2$@ solicitó ayuda.";
+"Ask Host for Help" = "Pedir ayuda al anfitrión";
+"The host is inviting you to join Breakout Rooms." = "El anfitrión lo invita a unirse a una sesión para grupos pequeños.";
+"You have been assigned to a Breakout Room" = "Lo asignaron a una Sala de conexión";
+"Breakout Rooms will close in %d seconds" = "Las sesiones para grupos pequeños se cerrarán en %d segundos";
+"The host has been invited." = "Se ha invitado al anfitrión.";
+"The host is currently helping others. Please try again later." = "En este momento el anfitrión está ayudando a otros. Inténtelo de nuevo más tarde.";
+"The host is currently in this room." = "El anfitrión se encuentra actualmente en esta sesión.";
+"It may take a few moments." = "Esto puede tardar un momento.";
+"Joining Breakout Rooms..." = "Unirse a las sesiones para grupos pequeños...";
+"All participants have been given 60 seconds to leave their Breakout Rooms." = "A todos los participantes se les ha dado 60 segundos para salir de sus sesiones para grupos pequeños.";
+"All participants have been invited to join Breakout Rooms." = "A todos los participantes los han invitado a unirse a las sesiones para grupos pequeños.";
+"You can join Breakout Rooms from here." = "Puede unirse a las sesiones para grupos pequeños desde aquí.";
+"Allow attendee to raise hand" = "Permitir que el participante levante la mano";
+"Unassigned" = "Sin asignar";
+"The host has opened Breakout Rooms. Please wait to be assigned." = "El anfitrión abrió las sesiones para grupos pequeños. Por favor espere para ser asignado.";
+
+"Enable Stereo" = "Habilitar estéreo";
+"this will greatly increase all attendee's CPU usage" = "esto aumentará en gran medida el uso de CPU de todos los participantes";
+"Allow option for using original sound from microphone in meeting" = "Preservar el sonido original del micrófono";
+"this will turn off audio enhancements such as echo cancellation and noise suppression" = "esto apagará mejoras de audio, como cancelación de eco y supresión de ruidos";
+
+"This file does not exist." = "Este archivo no existe.";
+"Your text can be seen by everyone" = "Todos pueden ver los textos de usted";
+"Dock to top" = "Fijar en la parte superior";
+"Move to bottom" = "Mover a la parte inferior";
+"The host has promoted you to a panelist." = "El anfitrión le ha ascendido a panelista.";
+"The host has changed your role to attendee." = "El anfitrión ha cambiado su rol a espectador.";
+"Rejoining..." = "Entrando de nuevo...";
+"Connection Type" = "Tipo de conexión";
+"Cloud" = "Nube";
+"Direct" = "Directa";
+"Stay with Free" = "Quedarse con la opción gratuita";
+
+"LN_Record_No_Audio_Alert_Title_28459" = "Usted no está conectado al audio.";
+"Check My Audio Devices" = "Comprobar mis dispositivos de audio";
+"Your microphone and speaker are not working properly." = "Su micrófono y altavoz no están funcionando correctamente.";
+"\n\nNo audio will be recorded." = "\n\nNo se grabará el audio.";
+"LN_Record_No_Audio_Alert_Message_28459" = "Para incluir audio en la grabación, haga clic en \"Entrar al audio\"";
+"Your microphone is not working properly." = "Su micrófono no está funcionando correctamente.";
+"\n\nThe voice of other participants can still be recorded, but your voice cannot." = "\n\nAún se puede grabar la voz de otros participantes, pero no la de usted.";
+"Your speaker is not working properly." = "Su altavoz no está funcionando correctamente.";
+"\n\nYour voice can still be recorded, but the voice of other participants cannot." = "\n\nAún se puede grabar la voz de usted, pero no la de otros participantes.";
+"Check My Microphone" = "Comprobar mi micrófono";
+"Check My Speaker" = "Comprobar mi altavoz";
+"Record Without Audio" = "Grabar sin audio";
+
+"Closed Caption" = "Subtítulos";
+"Type here, press Enter to broadcast" = "Escriba aquí, presione la tecla de Entrada para empezar a transmitir";
+"Closed Caption is available" = "Los subtítulos están disponibles";
+"Assign to type Closed Caption" = "Asignar para escribir subtítulos";
+"Withdraw Closed Caption permission" = "Retirar el permiso de subtítulos";
+"The host has assigned you to type Closed Caption." = "El anfitrión le ha asignado para que escriba los subtítulos.";
+"The host has selected another participant to type." = "El anfitrión ha seleccionado a otro participante para que escriba.";
+"Closed Caption is being broadcasted to all participants." = "Los subtítulos se están transmitiendo a todos los participantes.";
+"Change Closed Caption Editor" = "Cambiar editor de subtítulos";
+"%@ is currently assigned to type Closed Caption, do you want to assign %@ to type instead?" = "%@ está asignado actualmente para escribir subtítulos; ¿desea asignar a %@ para que escriba los subtítulos en su lugar?";
+"Assign someone to type" = "Asignar a alguien para que escriba";
+"In Manage Participants panel, hover on a participant, in the \"More\" menu, select \"Assign to type Closed Caption\"." = "En el panel de Control de participantes, pase el cursor sobre un participante; en el menú \"Más\", seleccione \"Asignar para escribir subtítulos\".";
+"Open Manage Participants" = "Abrir Control de participantes";
+"I will type" = "Yo voy a escribir";
+
+// add for e2e
+"Add Group" = "Agregar Grupo";
+"[This is an encrypted message]" = "[Este es un mensaje cifrado]";
+"[Cannot decrypt message]" = "[No se puede descifrar el mensaje]";
+"Chat encryption has been enabled for this group, offline members cannot see your messages." = "El cifrado de chat se ha habilitado para este grupo; los miembros no conectados no pueden ver los mensajes de usted.";
+"%@ is using an older version of the Zoom client and cannot see your messages." = "%@ está utilizando una versión desactualizada del cliente Zoom y no puede ver los mensajes de usted.";
+"[Encrypted message]" = "[Mensaje cifrado]";
+"Chat encryption has been enabled for your account." = "Se ha habilitado el cifrado de chat para su cuenta.";
+"Chat encryption has been enabled according to %@'s account policy." = "Se ha habilitado el cifrado de chat de acuerdo a la política de cuentas de %@.";
+"Chat encryption has been enabled for this group." = "Se ha habilitado el cifrado de chat para este grupo.";
+"Chat encryption has been enabled for your account so you cannot send messages to a person who is not your contact." = "El cifrado de chat se ha habilitado para su cuenta, por lo tanto no puede enviar mensajes a una persona que no sea contacto suyo.";
+"Chat encryption has been enabled for your account so you cannot send messages in a group without encryption." = "El cifrado de chat se ha habilitado para su cuenta, por lo tanto no puede enviar mensajes en un grupo sin cifrado.";
+"Chat encryption has been enabled for your account so you need to invite %@ online to start chat." = "El cifrado de chat se ha habilitado para su cuenta, por lo tanto necesita invitar a %@ a conectarse para iniciar el chat.";
+"Waiting for %@ to get online..." = "A la espera de que %@ se conecte...";
+"Invite %@ to start chat" = "Invitar a %@ para iniciar el chat";
+"%@ is inviting you to chat." = "%@ le está invitando al chat.";
+"%@ accepted your chat invitation." = "%@ aceptó su invitación al chat.";
+"You are sending messages too quickly, you need to resend this message." = "Enviar con demasiada frecuencia; inténtelo de nuevo más tarde.";
+"Already joined by Phone" = "Ya entró por teléfono";
+"You've been automatically signed out for being inactive %d minutes due to your account security policy." = "Usted ha sido desconectado automáticamente por estar inactivo durante %d minutos, de acuerdo a la política de seguridad de su cuenta.";
+
+"Keep telephone connected" = "Mantener conectado el teléfono";
+"Start a meeting without video" = "Iniciar Reunión Sin Video";
+"Start a meeting with video" = "Iniciar una reunión con video";
+"View More..." = "Ver más...";
+"You are about to invite all members of this group to join. Are you sure?" = "Está a punto de invitar a todos los miembros de este grupo a incorporarse. ¿Está seguro?";
+"You cannot chat with a Zoom Room." = "No puede iniciar un chat con una Zoom Room.";
+"Zoom Chat" = "Chat de Zoom";
+"Group Chat" = "Chat del grupo";
+"is already a contact." = "ya es un contacto.";
+"Room" = "Sala";
+"@Me" = "@Me";
+"Groups" = "Grupos";
+"Download" = "Descargar";
+
+"The audio cannot be recorded properly. Please check audio settings and restart recording." = "No se puede grabar correctamente el audio. Compruebe la configuración de audio y reinicie la grabación.";
+"The video cannot be recorded properly. Please check your video settings and restart recording." = "No se puede grabar correctamente el video. Compruebe la configuración de video y reinicie la grabación.";
+"The shared screen cannot be recorded properly. Please check your network and restart recording." = "No se puede grabar correctamente la pantalla compartida. Compruebe la red y reinicie la grabación.";
+"The shared screen cannot be recorded properly. Please try to stop and restart sharing to solve this issue." = "No se puede grabar correctamente la pantalla compartida. Por favor trate de cancelar y reiniciar la opción de compartir para resolver este problema.";
+"File (%@) sent successfully." = "Se envió correctamente el archivo (%@).";
+"[File: %@]" = "[Archivo: %@]";
+"Swap shared screen with video" = "Intercambiar pantalla compartida con video";
+
+"Support" = "Soporte";
+"Request Desktop Control" = "Solicitar control de escritorio";
+"Request Desktop Control..." = "Solicitar control de escritorio...";
+"Request Application Control" = "Solicitar control de la aplicación";
+"Request Application Control..." = "Solicitar control de la aplicación...";
+"Request Computer Restart" = "Solicitar reinicio del equipo";
+"Request Computer Restart..." = "Solicitar reinicio del equipo...";
+"Stop Remote Support" = "Detener soporte remoto";
+"Select a participant" = "Seleccionar un participante";
+"Request to control your desktop" = "Solicitud para controlar su escritorio";
+"Request to control your application" = "Solicitud para controlar su aplicación";
+"Request to restart your computer" = "Solicitud para reiniciar su equipo";
+"%@ is asking for permission to remotely control your desktop." = "%@ le solicita permiso para controlar de modo remoto su escritorio.";
+"%@ is asking for permission to remotely control your application." = "%@ le solicita permiso para controlar a distancia su aplicación.";
+"%@ is asking for permission to restart your computer. After your computer restarted, you will be auto rejoined into this meeting again." = "%@ le solicita permiso para reiniciar su equipo. Después de que su equipo se reinicie, lo reincorporarán a esta reunión nuevamente.";
+"Grant Permission" = "Otorgar permiso";
+"Deny" = "Denegar";
+"Restart Computer" = "Reiniciar equipo";
+"Confirm" = "Confirmar";
+"Select an application to share" = "Seleccionar una aplicación para compartir";
+"Select a desktop to share" = "Seleccionar un escritorio para compartir";
+"%@ approved your request for desktop control." = "%@ aprobó su solicitud de control del escritorio.";
+"%@ denied your request for desktop control." = "%@ denegó su solicitud de control del escritorio.";
+"%@ approved your request for application control." = "%@ aprobó su solicitud de control de las aplicaciones.";
+"%@ denied your request for application control." = "%@ denegó su solicitud de control de la aplicación.";
+"%@ approved your request for computer restart." = "%@ aprobó su solicitud de reinicio del equipo.";
+"%@ denied your request for computer restart." = "%@ denegó su solicitud de reinicio del equipo.";
+"No one is available to support, you are the only participant in the meeting." = "No hay nadie disponible para brindar soporte, usted es el único participante en la reunión.";
+"Those participants who can't accept remote control are not listed" = "Los participantes que no pueden aceptar el control remoto no se incluyen en la lista";
+"Those participants who can't accept computer restart are not listed" = "Los participantes que no pueden aceptar el reinicio del equipo no se incluyen en la lista";
+"Support session is not available to the current participant." = "La sesión de soporte no está disponible para el participante actual.";
+"Waiting for %@ to approve your request" = "En espera de que %@ apruebe su solicitud";
+"Edit Advanced Settings" = "Edit Advanced Settings";
+"Edit My Profile" = "Editar mi perfil";
+
+"Sent you a file." = "Le envió un archivo.";
+"Shared a file in the meeting." = "Compartió un archivo en la reunión.";
+"& others" = "y otros";
+"Meeting ID or Personal Link Name" = "ID de reunión o nombre de sala de reunión";
+"Screen Name" = "Nombre de pantalla";
+"This personal link name is not valid. Please check and try again." = "Este nombre de sala de reunión no es válido. Revise e intente de nuevo.";
+"Type to filter..." = "Escribir para filtrar...";
+"Find a panelist" = "Buscar un panelista";
+"Find a attendee" = "Buscar un espectador";
+"Mute Me" = "Desactivar mi micrófono";
+"Unmute Me" = "Reactivar mi micrófono";
+"Merge to meeting window" = "Combinar con ventana de reunión";
+"Expand" = "Expandir";
+"Pop Out" = "Emergente";
+
+" Video " = " Video ";
+" Audio " = " Audio ";
+"Accessibility" = "Accesibilidad";
+"Video Background" = "Fondo de video";
+"Fill window" = "Fill window";
+"Fit to window" = "Fit to window";
+"Format" = "Formato";
+"Font" = "Fuente";
+"Line Width" = "Ancho de línea";
+"Spotlight my video when I speak" = "Destacar mi video cuando hable";
+"Choose a virtual background" = "Elegir un fondo virtual";
+"Choose a virtual background..." = "Elegir un fondo virtual...";
+"Add Image" = "Agregar imagen";
+"A solid color video background is required. Green color is preferred." = "Se requiere un fondo de video de color sólido. Se prefiere el color verde.";
+"Manually pick the color of the background if the detected color is not accurate." = "Elegir manualmente el color de fondo si el color detectado no es preciso.";
+"Pick the color" = "Elegir el color";
+"Zoom technology automatically detects the color your video background and replace it with the virtual background image. If the detected color is not accurate, you can manually pick the color from your video background." = "La tecnología de Zoom detecta automáticamente el color del fondo de video y lo reemplaza por la imagen de fondo virtual. Si el color detectado no es preciso, puede elegir manualmente el color del fondo de video.";
+"Your processor (%@) does not meet our recommended specification for virtual background. Learn more." = "Su procesador (%@) no cumple con nuestra especificación recomendada para fondo virtual. Más información";
+"Learn more." = "Más información.";
+"Enable this feature anyway" = "Activar esta función de todas formas";
+"Connect Kubi" = "Conectar Kubi";
+"Disconnect" = "Desconectar";
+"Security Certificate" = "Certificado de seguridad";
+"Do you want to trust this connection?" = "¿Desea confiar en esta conexión?";
+"The security certificate presented by this connection was not issued by a trusted authority." = "El certificado de seguridad presentado por esta conexión no fue emitido por una autoridad de confianza.";
+"Issued to:" = "Emitido para:";
+"Issued by:" = "Emitido por:";
+"Serial Number:" = "Número de serie:";
+"Fingerprint:" = "Huella dactilar:";
+"Trust" = "Confiar";
+"Don't Trust" = "No confiar";
+"Original size" = "Tamaño original";
+"16:9 (Widescreen)" = "16:9 (Panorámica)";
+"Broadcast a message to all" = "Transmitir el mensaje a todos";
+"From %@ to everyone: %@" = "De %@ a todos: %@";
+"The host has moved you to %@" = "El anfitrión lo ha trasladado a %@";
+"You've been assigned to a new breakout room." = "A usted lo asignaron a una nueva sesión para grupos pequeños.";
+
+
+"Login to Claim Host" = "Ingrese para solicitar ser el anfitrión";
+"Enter the Host Key to claim host role" = "Ingrese la clave del anfitrión para solicitar el rol de anfitrión";
+"Host Key is a 6-digit number" = "La clave del anfitrión es un número de 6 dígitos";
+"OR" = "O";
+"Verifying Host Key..." = "Verificando la clave del anfitrión...";
+"The Host Key you entered is invalid." = "La clave de anfitrión que ingresó es inválida.";
+"Please check your network and try again." = "Por favor compruebe su conexión de red y vuelva a intentarlo.";
+"Because annotation is disabled, your participants need to upgrade to the latest version of Zoom to share their screen." = "Debido a que las notificaciones están desactivadas, sus participantes necesitan actualizar la última versión de Zoom para compartir sus pantallas.";
+"Enable Advanced Features" = "Editar opciones avanzadas";
+"Advanced Features" = "Cuenta";
+"Hide Myself" = "Ocultarme";
+"Show Myself" = "Mostrarme";
+"Others could not hear me" = "Las otras personas no me podían escuchar";
+"I could not hear others" = "No podía escuchar a las otras personas";
+"Others could not see me" = "Las otras personas no podían verme";
+"I could not see others" = "No podía ver a las otras personas";
+"Poor audio quality" = "Calidad de audio deficiente";
+"Poor video quality" = "Calidad de video deficiente";
+
+"The host is inviting you to join Breakout Room:" = "El anfitrión lo invita a unirse a una sesión para grupos pequeños:";
+"You have been assigned to Breakout Room:" = "Lo asignaron a la Sala de conexión:";
+"Failed to expel attendee. Error code:%d" = "No se pudo expulsar al espectador. Código de error:%d";
+"Original Ratio" = "Tamaño original";
+
+"Low system resources may affect your audio quality. Try closing some applications to improve performance." = "Los recursos deficientes del sistema pueden afectar la calidad de su audio. Trate de cerrar algunas aplicaciones para mejorar el desempeño.";
+"Your network connection is unstable which may impact your audio & video quality." = "Su conexión de red es inestable lo que puede afectar la calidad de su audio y video.";
+"Keep me logged in" = "Mantenerme conectado";
+"Recording Alert" = "Alerta para la grabación";
+"Finish registration to join the meeting." = "Finalizar inscripción para unirse a la reunión.";
+"Share screen in Zoom Room" = "Compartir pantalla en Zoom Room";
+
+"Close Manage Participants" = "Cerrar el control de participantes";
+"Show Manage Participants" = "Mostrar el control de participantes";
+"Close Participants" = "Cerrar participantes";
+"Show Participants" = "Mostrar participantes";
+"Close Chat" = "Cerrar el chat";
+"Show Chat" = "Mostrar chat";
+"You are sharing your screen..." = "Está compartiendo la pantalla...";
+"Stop share" = "Dejar de compartir";
+
+"Are you sure you want to delete this file?" = "¿Está seguro de que desea eliminar este archivo?";
+"The file will also be removed from shared groups and chats." = "El archivo también se eliminará de todos los grupos y chats compartidos.";
+"Delete this contact?" = "¿Eliminar este contacto?";
+"This is a one-way action. The entire message will not be visible to the new members in this group. Continue?" = "Esta es una acción unilateral. El mensaje completo no será visible para los miembros nuevos de este grupo. ¿Continuar?";
+"All Files" = "Todos los archivos";
+"My Personal Files" = "Mis archivos personales";
+"Upload New Files" = "Cargar archivos nuevos";
+"Show this group on contacts list" = "Mostrar este grupo en la lista de contactos";
+"Edit Member" = "Editar miembro";
+"New members can access entire message history" = "Los miembros nuevos pueden acceder al historial completo de mensajes.";
+"Chat Topic:" = "Tema del chat:";
+"- Click to open" = "- Haga clic para abrir";
+"Shared by " = "Compartido por ";
+"Shared in " = "Compartido en ";
+"Delete from %@" = "Eliminar de %@";
+"Are you sure you want to delete \"%@\"" = "¿Está seguro de que desea eliminar \"%@\"?";
+"%@ of %@ (%@/sec)" = "%@ de %@ (%@/segundo)";
+"Retry?" = "¿Reintentar?";
+"Loading..." = "Cargando...";
+"Loading error," = "No se pudo cargar,";
+"No content." = "No hay contenidos.";
+"Jump To" = "Saltar a";
+"%@ with " = "%@ con ";
+"Hide Context" = "Ocultar contexto";
+"Show Context" = "Mostrar contexto";
+"[Image]" = "[Imagen]";
+"[Voice Message]" = "[Mensaje de voz]";
+"[File]" = "[Archivo]";
+"Press Enter to search content for:" = "Pulse Enter para buscar contenido de:";
+"Filter by Contacts" = "Filtrar por contactos";
+"Filter by Groups & Chats" = "Filtrar por grupos y chats";
+"Messages" = "Mensajes";
+"GROUPS" = "GRUPOS";
+"CONTENTS" = "CONTENIDOS";
+"RECENT CHATS" = "CHATS RECIENTES";
+"(Public)" = "(Público)";
+"- Room" = "- Sala";
+"You can search messages and files in all of your conversations" = "Puede buscar mensajes y archivos en todas sus conversaciones.";
+"This Chat" = "Este chat";
+"Search files or messages" = "Buscar archivos o mensajes";
+"This Group" = "Este grupo";
+"Type your message" = "Escriba su mensaje";
+"has been sent out." = "se ha enviado.";
+"failed to send" = "no se pudo enviar.";
+"is not a supported file format." = "no es un formato de archivo compatible.";
+"%@ is on an older version of Zoom client and may not be able to see your message." = "%@ está utilizando una versión anterior del cliente Zoom y es posible que no pueda ver sus mensajes.";
+"Chat encryption has been enabled for your account, so you need to invite %@ online to start chat." = "El cifrado de chat se ha habilitado para su cuenta, por lo tanto necesita invitar a %@ a conectarse para iniciar el chat.";
+"Chat encryption has been enabled for your account , so you need to invite %@ online to start chat." = "El cifrado de chat se ha habilitado para su cuenta, por lo tanto necesita invitar a %@ a conectarse para iniciar el chat.";
+"Message content has been encrypted." = "El contenido del mensaje se ha cifrado.";
+"Current group chat has enabled E2E encryption and you can't send messages without E2E. Please contact your IT admin for details." = "El chat actual del grupo ha habilitado el cifrado completo y no puede enviar mensajes sin el cifrado. Contacte a su administrador de TI para obtener más información.";
+"Find a member" = "Buscar un miembro";
+"Screenshot" = "Captura de pantalla";
+"Zoom is using an end-to-end encrypted connection" = "Zoom está utilizando una conexión de cifrado completo.";
+"Save as..." = "Guardar como...";
+"@everyone" = "@everyone";
+"You can start end to end chat with %@ now" = "Usted puede iniciar un chat de cifrado completo con %@ ahora.";
+"Click to hide members" = "Haga clic para ocultar los miembros";
+"Click to show members" = "Haga clic para mostrar los miembros";
+"Click to hide content" = "Haga clic para ocultar el contenido";
+"Click to show content" = "Haga clic para mostrar el contenido";
+"The file sent successfully" = "Archivo enviado con éxito";
+"Failed to send the file" = "No se pudo enviar el archivo";
+"Group Settings" = "Configuración del grupo";
+"Chat Settings" = "Configuración del chat";
+"Edit Members" = "Editar miembros";
+"Leave Chat" = "Abandonar chat";
+"Open in new window" = "Abrir en una ventana nueva";
+"Merge back to main window" = "Volver a integrar en la ventana principal";
+"Select groups to join" = "Seleccionar grupos a los que unirse";
+"Private (Invited members only)" = "Privado (solo miembros invitados)";
+"Public (Anyone in your organization can join)" = "Público (cualquier persona de su organización se puede unir)";
+"Upload files to my Personal Folder" = "Cargar archivos a mi carpeta personal";
+"Create or join a group" = "Crear o unirse a un grupo";
+"New chat" = "Nuevo chat";
+"Content - All Files" = "Contenido - Todos los archivos";
+"Select groups to join (%d in total)" = "Seleccionar grupos a los que unirse (%d en total)";
+"Group Type:" = "Tipo de grupo:";
+"Invite Members:" = "Invitar a miembros:";
+"Members in your organization only" = "Solo los miembros en su organización";
+"No available public groups to join." = "No hay grupos públicos disponibles para unirse.";
+"You have successfully joined groups:" = "Se ha unido con éxito a los grupos:";
+"Join Failed" = "No pudo unirse";
+"Share a File" = "Compartir un archivo";
+"Share with" = "Compartir con";
+"Share Error" = "No se pudo compartir";
+"%@  cannot be shared." = "%@ no puede compartirse.";
+"Uploaded to " = "Cargado a ";
+"Failed to upload" = "No se pudo cargar";
+"Failed to download" = "No se pudo descargar.";
+"Uploading %d item / downloading %d item" = "Cargando %d elemento/descargando %d elemento";
+"%d Uploads / %d downloads complete" = "%d cargas/%d descargas completas";
+"%d Uploads complete" = "%d cargas completas";
+"Uploading %d items" = "Cargando %d elementos";
+"%d Upload complete" = "%d carga completa";
+"Upload Files to My Personal Folder" = "Cargar archivos a mi carpeta personal";
+"Browse" = "Buscar";
+"Share with others" = "Compartir con otros";
+"You can upload up to 5 files at a time." = "Puede cargar hasta 5 archivos a la vez.";
+"Files are private until they are shared in group." = "Los archivos son privados hasta que se comparten en un grupo.";
+"Upload Files(%d file selected)" = "Cargar archivos (%d archivo seleccionado)";
+"Upload and Share" = "Cargar y compartir";
+"Type the name here" = "Escriba el nombre aquí";
+"Zoom Rooms" = "Zoom Rooms";
+"You've changed password on web, please login with your new password." = "Ha modificado la contraseña en la Web, inicie sesión con la nueva contraseña.";
+"requests to add you as a contact - Declined" = "solicita añadirle como contacto - declinado";
+
+"Share Zoom windows in desktop sharing" = "Compartir la ventana de Zoom mientras se comparte el escritorio";
+"The host has another meeting in progress" = "El anfitrión ya tiene otras reuniones en curso.";
+
+"Closed Caption history saved" = "Historial de subtítulos guardado";
+"Save closed caption history" = "Guardar el historial de subtítulos";
+"Hide history" = "Ocultar historial";
+"Show history" = "Mostrar historial";
+"Closed caption is turned on" = "Los subtítulos están activados";
+"Closed Caption - Broadcasting" = "Subtítulos - Emisión";
+"Closed Caption Font Size:" = "Tamaño de la fuente de los subtítulos:";
+"Small" = "Pequeño";
+"Large" = "Grandes";
+"Subtitles will look like this." = "Los subtítulos serán así.";
+
+"Playing"  = "Reproduciendo";
+"There seems to be an issue with your speaker, please select a different device and try again." = "Parece haber un problema con su altavoz. Seleccione otro dispositivo y vuelva a intentarlo.";
+"Please speak to your microphone." = "Hable cerca del micrófono.";
+"If you can't hear your voice, select a different microphone." = "Si no puede escuchar su voz, seleccione un micrófono diferente.";
+"Click Test Mic to make sure others can hear you" = "Haga clic en Probar micrófono para asegurarse de que los demás puedan oírlo.";
+
+"Audio Alert" = "Alerta de audio";
+"Check Microphone & Speaker Settings" = "Compruebe la configuración del micrófono y del altavoz.";
+"Test Microphone & Speaker" = "Test de micrófono y altavoz";
+"Failed to detect your speaker. Please make sure your speaker is properly connected." = "No se pudo detectar su altavoz. Asegúrese de que su altavoz esté conectado correctamente.";
+"Your speaker has changed to %@ and will now be used." = "Su altavoz ha cambiado a %@ y será utilizado ahora.";
+"Failed to detect your microphone and speaker. Please make sure your devices are properly connected." = "No se pudieron detectar su micrófono ni su altavoz. Asegúrese de que sus dispositivos estén conectados correctamente.";
+"Failed to detect your microphone. Please make sure your microphone is properly connected." = "No se pudo detectar su micrófono. Asegúrese de que su micrófono esté conectado correctamente.";
+"Failed to detect your microphone. Please make sure your microphone is properly connected.\nYour speaker has changed to %@ and will now be used." = "No se pudo detectar su micrófono. Asegúrese de que su micrófono esté conectado correctamente.\nSu altavoz ha cambiado a %@ y será utilizado ahora.";
+"Your microphone has changed to %@ and will now be used." = "Su micrófono ha cambiado a %@ y será utilizado ahora.";
+"Your microphone has changed to %@ and will now be used.\nYour speaker has changed to %@ and will now be used." = "Su micrófono ha cambiado a %@ y será utilizado ahora.\nSu altavoz ha cambiado a %@ y será utilizado ahora.";
+"Failed to detect your speaker. Please make sure your speaker is properly connected.\nYour microphone has changed to %@ and will now be used." = "No se pudo detectar su altavoz. Asegúrese de que su altavoz esté conectado correctamente.\nSu micrófono ha cambiado a %@ y será utilizado ahora.";
+
+"Manage cloud storage" = "Administrar el almacenamiento en la nube";
+"Cloud recording not started.\n" = "No se ha iniciado la grabación en la nube.\n";
+"Meeting audio may not be fully recorded." = "Puede que el audio de la reunión no se grabe por completo.";
+"Same as System" = "Igual que el Sistema";
+"Record on this computer" = "Grabar en esta computadora";
+"Your account has used up all of the cloud storage space currently available. To record to the cloud, delete some older recordings or upgrade your cloud recording plan." = "Su cuenta ha utilizado todo el espacio de almacenamiento en la nube actualmente disponible. Para grabar en la nube, elimine grabaciones más antiguas o actualice su plan de grabaciones en la nube.";
+"Your account has used up all of the cloud storage space currently available. To record to the cloud, delete some older recordings." = "Su cuenta ha utilizado todo el espacio de almacenamiento en la nube actualmente disponible. Para grabar en la nube, elimine grabaciones más antiguas.";
+"Host has used the maximum storage space available. To record to the cloud, ask the meeting organizer to delete some older recordings or upgrade the cloud recording plan." = "El anfitrión ha utilizado el máximo de espacio de almacenamiento en la nube disponible. Para grabar en la nube, pida al organizador de la reunión que elimine grabaciones más antiguas o que actualice su plan de grabaciones en la nube.";
+"Coud storage does not have enough space. Please contact host to upgrade plan or remove some old recording files." = "El almacenamiento en la nube no tiene suficiente espacio. Comuníquese con el anfitrión para actualizar el plan o elimine archivos de grabaciones antiguas.";
+
+"Please enter the Meeting ID or enter the Sharing Code displayed on the Zoom meeting room TV screen." = "Introduzca la ID de la reunión o el código para compartir que se muestra en la pantalla de la televisión de la sala de reuniones de Zoom.";
+"Cannot connect to Zoom Rooms. Please enter the meeting ID or select Presentation on iPad controller." = "No se pudo conectar a Zoom Rooms. Introduzca la ID de la reunión o seleccione Presentación en el controlador del iPad.";
+"Network error, please try later." = "Error de la red; inténtelo de nuevo más tarde.";
+
+"Sharing screen to \"%@\"" = "Pantalla compartida con \"%@\"";
+"The file size exceeds the limitation (512MB) and cannot be uploaded." = "El tamaño de este archivo supera el límite (512 MB) y no se puede cargar.";
+
+//ZOOM-6379 TrackingCode
+"(Optional)" = "(Opcional)";
+
+"Audio sub menu" = "Submenú del audio";
+"Video sub menu" = "Submenú del video";
+"Multiple Share sub menu" = "Submenú de la función compartir a varios";
+"has joined the meeting" = "se ha unido a la reunión";
+"has left the meeting" = "ha abandonado la reunión";
+"All panelists can share" = "Todos los panelistas pueden compartir";
+"All panelists can start sharing when someone else is sharing" = "Todos los panelistas pueden comenzar a compartir cuando otro está compartiendo";
+"All participants can share" = "Todos los participantes pueden compartir";
+"All participants can start sharing when someone else is sharing" = "Todos los participantes pueden comenzar a compartir cuando otro está compartiendo";
+"Only host can share" = "Únicamente el anfitrión puede compartir";
+"Only host can start sharing when someone else is sharing" = "Únicamente el anfitrión puede comenzar a compartir cuando otro está compartiendo";
+
+"Please wait. The webinar will begin soon." = "Por favor espere. El seminario web comenzará pronto.";
+"Allow attendees to ask questions anonymously" = "Permitir que los espectadores hagan preguntas de forma anónima";
+
+"Invite by Contacts" = "Invitar a los Contactos de Zoom";
+"Invite Zoom Rooms" = "Invitar a Zoom Rooms";
+
+"Move focus to next window" = "Mover el foco a la siguiente ventana";
+
+"You can also use the \"Control + \\\" to show/hide meeting controls" = "También puede usar \"Control + \\\" para mostrar/ocultar los controles de reunión";
+"Always show meeting controls" = "Mostrar siempre los controles de reunión";
+
+"Your account has been locked due to multiple failed login attempts" = "Su cuenta se ha bloqueado debido a múltiples intentos de inicio de sesión fallidos";
+"You cannot minimize Zoom when you are sharing Zoom windows" = "No se puede minimizar a Zoom mientras comparte las ventanas de Zoom.";
+"%@ has started screen share, choose Options to view" = "%@ ha comenzado a compartir pantalla; elija opciones de visualización";
+"[New notification]" = "[Nueva notificación]";
+"Advanced Sharing Options..." = "Opciones avanzadas de la función compartir...";
+"Advanced Sharing Options" = "Opciones avanzadas de la función compartir";
+
+"You are the admin of this group. You should transfer admin privileges or delete the group before leaving it." = "Usted es el administrador del grupo. Debe transferir privilegios de administrador o eliminar el grupo antes de abandonarlo.";
+"Continue delete" = "Continuar eliminar";
+
+"Save emojis from any chat" = "Guardar emojis de cualquier chat";
+"Right click any image in a chat window,\nthen choose \"Add to emoji\"" = "Hacer clic con el botón derecho en cualquier imagen en la ventana del chat,\nluego elegir \"Añadir un emoji\"";
+"Upload your own emoji" = "Cargar su propio emoji";
+"Click the menu in the lower right corner" = "Hacer clic en el menú en la esquina inferior derecha";
+"Syncing emojis..." = "Sincronizando emojis...";
+"Delete Selected(%d)" = "Eliminar seleccionado(%d)";
+"Delete Selected" = "Eliminar Seleccionado";
+"Add more emojis here" = "Añadir más emojis aquí";
+"Upload emoji" = "Cargar emoji";
+"Delete emoji" = "Eliminar emoji";
+"Edit" = "Editar";
+"Added" = "Agregado";
+"This emoji already exists." = "Este emoji ya existe.";
+"Add to emoji" = "Añadir un emoji";
+"Saved emojis" = "Emojis guardados";
+"Common emojis" = "Emojis comunes";
+
+"Navigate among Zoom popup windows" = "Explorar en ventanas emergentes de Zoom";
+"View the previous 25 video participants in gallery view" = "Ver los 25 participantes de video previos en Gallery View";
+"View the next 25 video participants in gallery view" = "Ver los 25 participantes de video siguientes en Gallery View";
+"Switch to minimal window" = "Cambiar a ventana mínima";
+"Switch to speaker view" = "Cambiar a Speaker View";
+"Switch to gallery view" = "Cambiar a Gallery View";
+"Start/Stop video" = "Comenzar/detener video";
+"Mute/Unmute my audio" = "Desactivar/reactivar mi audio";
+"Mute audio for everyone except host (available only to the host)" = "Desactivar el audio para todos excepto el anfitrión (disponible solo para el anfitrión)";
+"Unmute audio for everyone except host (available only to the host)" = "Activar el audio para todos excepto el anfitrión (disponible solo para el anfitrión)";
+"Start/Stop share screen" = "Comenzar/detener pantalla compartida";
+"Pause/Resume share (available only when you are sharing your screen)" = "Pausar/reanudar función de compartir (disponible solo cuando comparte su pantalla)";
+"Start/Stop local recording" = "Comenzar/detener grabación local";
+"Start/Stop cloud recording" = "Comenzar/detener grabación en la nube";
+"Pause/Resume recording" = "Pausar/reanudar grabación";
+"Enter/Exit full screen mode" = "Ingresar/salir de modo de pantalla completa";
+"Display/Hide chat" = "Mostrar/ocultar chat";
+"Display/Hide manage participants" = "Mostrar/ocultar Administración de participantes";
+"Open the invite window" = "Abrir la ventana Invitar";
+"Keyboard Shortcuts:" = "Atajos del teclado:";
+"Description" = "Descripción";
+"Enable shortcuts even when the Zoom app is not in focus" = "Habilitar atajos aún cuando la aplicación de Zoom no esté en foco";
+
+"Group \"%@\" has been deleted by admin." = "El administrador ha eliminado el grupo \"%@\".";
+"Transfer Admin" = "Transferir administrador";
+"Assign the new group admin" = "Asignar el nuevo administrador del grupo";
+"You are permanently removing all group conversations, files, and other related information. There is no way to recover the information."  = "Está por eliminar de forma permanente todas las conversaciones, archivos y otra información del grupo. No es posible recuperar esta información.";
+
+"Choose the audio conference option" = "Escoger la opción de conferencia de audio";
+
+"Please wait, the meeting host will let you in soon." = "Por favor, espere, el anfitrión le permitirá ingresar pronto.";
+"1 person is waiting" = "1 persona está esperando";
+"%d people are waiting" = "%d personas están esperando";
+"1 participant in the meeting" = "1 participante en la reunión";
+"%d participants in the meeting" = "%d participantes en la reunión";
+"Admit" = "Admitir";
+"See waiting room" = "Ver la sala de espera";
+"%@ has entered the waiting room for this meeting" = "%@ ha ingresado a la sala de espera para esta reunión";
+"%d people have entered the waiting room for this meeting" = "%d personas han ingresado a la sala de espera para esta reunión";
+"Put attendee in Waiting Room on Entry" = "Poner el asistente en la sala de espera en la entrada";
+"Take off hold" = "Quitar de espera";
+"Put in waiting room" = "Poner en la sala de espera";
+"Put on hold" = "Poner en espera";
+"1 person is on hold" = "1 persona está en espera";
+"%d people are on hold"  = "%d personas están en espera";
+
+"Sharing Key or Meeting ID" = "Clave para compartir o ID de la reunión";
+"Please enter a valid sharing key or meeting ID." = "Introduzca una clave para compartir o una ID de la reunión válidas.";
+
+"Stop Live Stream" = "Detener la transmisión en vivo";
+"Live on" = "En vivo en";
+"Preparing..." = "Preparando...";
+"Unable to stream your webinar to %@.\nYou need to restart steaming." = "No se puede transmitir su seminario web a %@.\nTiene que reiniciar la transmisión.";
+"The streaming link has been copied to the clipboard" = "El enlace de la transmisión se ha copiado al portapapeles";
+"Webinar is now streaming live on %@" = "Ahora el seminario web se está transmitiendo en vivo en %@";
+"Copy Streaming Link" = "Copiar el enlace de transmisión";
+"on %@" = "en %@";
+"View Stream on %@" = "Ver la transmisión en %@";
+"Unmute your speaker or increase volume to hear other participants" = "Cancele silenciar su altavoz o aumente el volumen para escuchar a otros participantes";
+"To decrypt the messages, at least one group member must be online." = "Para descifrar los mensajes, al menos un miembro de grupo debe estar conectado.";
+"To decrypt the messages, %@ must be online." = "Para descifrar los mensajes, %@ debe estar conectado.";
+"[Upgrade to the latest version to see this message.]" = "[Actualizar a la última versión para ver este mensaje.]";
+
+"raise hand" = "levantar la mano";
+
+"yes" = "sí";
+
+"no" = "no";
+
+"go slower" = "ir más despacio";
+
+"go faster" = "ir más rápido";
+
+"more" = "más";
+
+"clear all" = "borrar todo";
+
+"dislike" = "no me gusta";
+
+"like" = "me gusta";
+
+"clap" = "aplaudir";
+
+"away" = "alejado";
+
+"need a break" = "necesitar un recreo";
+
+"Clear All Feedback" = "Borrar todos los comentarios";
+
+
+"Record the meeting automatically" = "Grabar la reunión automáticamente";
+
+"Record the meeting automatically on the local computer" = "Grabar la reunión automáticamente en la computadora local";
+
+"Record the meeting automatically in the cloud" = "Grabar la reunión automáticamente en la nube";
+
+"Locally" = "Localmente";
+
+
+"In the cloud" = "En la nube";
+
+
+"To hear others,\nclick the Join Audio button." = "Para poder escuchar a otros,\nhaga clic en el botón de Entrar al audio.";
+
+
+"Click if you want to switch to a different microphone or speaker" = "Haga clic si desea cambiar a un micrófono o parlante diferente";
+
+
+"Add a Personal Note" = "Agregar una Nota personal";
+"Remove Personal Note" = "Eliminar nota personal";
+"Share Screen Options" = "Opciones para compartir pantalla";
+
+
+"Waiting for approval" = "A la espera de aprobación";
+"Once" = "Una vez";
+"Continuously" = "Continuamente";
+"Zoom Room" = "Zoom Room";
+"View Options" = "Ver Opciones";
+
+"Change my status to Offline when I am inactive for %@ minutes" = "Cambiar mi estado a Desconectado cuando esté inactivo durante %@ minutos";
+"Recording..." = "Grabando...";
+"Bounce application icon when I receive a chat message" = "Bounce application icon when I receive a chat message";
+
+"Unmute Myself" = "Silenciarme";
+"You are muted." = "Usted está silenciado.";
+
+"Your login attempt was not successful and you need to log in again. If this occurs multiple times, contact IT support." = "Su intento de inicio de sesión no fue correcto y debe volver a iniciar sesión. Si esto ocurre reiteradas veces, comuníquese con el soporte de TI.";
+
+"Services" = "Servicios";
+"Raise hand/Lower hand" = "Levantar/bajar la mano";
+
+"checked" = "comprobado";
+"status, available" = "estado, disponible";
+"status, busy" = "estado, ocupado";
+"status, offline" = "estado, desconectado";
+
+"Enter %@ on your phone\nto associate your phone call with this computer as one participant." = "Ingrese %@ en su teléfono\npara vincular su llamada telefónica con esta computadora como participante.";
+"Show Dial-in Number" = "Mostrar número de discado por defecto";
+
+"File cannot be uploaded because it can not be found" = "El archivo no se puede subir porque no es posible encontrarlo";
+"File cannot be uploaded because it can not be read" = "El archivo no se puede subir porque no es posible leerlo";
+
+"count" = "conteo";
+"Choose from the list or type to filter" = "Elegir de la lista o escribir para filtrar";
+
+"Try an unlimited Zoom meeting\n" = "Pruebe una reunión ilimitada de Zoom\n";
+"As a Basic user, your free meeting has a time limit of 40 minutes. Zoom is giving you a one-time offer to extend this meeting, Click \"Continue\" to enjoy your unlimited meeting for free. Thanks for choosing Zoom." = "Como usuario básico, su reunión gratuita tiene un límite de tiempo de 40 minutos. Zoom le proporciona una oferta por única vez para extender esta reunión; haga clic en \"Continuar\" para disfrutar de su reunión ilimitada sin cargo. Gracias por elegir a Zoom.";
+"Unable to extend this meeting\n" = "No es posible extender esta reunión\n";
+"Zoom cannot extend your free meeting at this time. Your meeting will end when the duration reaches 40 minutes.\n\n(ERROR : %d)" = "Zoom no puede extender su reunión gratuita en este momento. Su reunión finalizará cuando la duración alcance los 40 minutos.\n\n(ERROR: %d)";
+"This meeting no longer has a time limit" = "Esta reunión ya no tiene un límite de tiempo";
+
+"Touch up my appearance" = "Aplicar filtro de video";
+"Show my connected time" = "Mostrar mi tiempo conectado";
+
+"No one" = "Nadie";
+"Allow attendees to chat with:" = "Permitir que los participantes inicien un chat con:";
+"All panelists and other attendees" = "Todos los panelistas y otros participantes";
+"Host only" = "Solo el anfitrión";
+"Share file in meeting" = "Compartir un archivo en la reunión";
+
+"Multiple participants can share simultaneously" = "Varios participantes pueden compartir de forma simultánea";
+"Multiple panelists can share simultaneously" = "Varios participantes pueden compartir de forma simultánea";
+"One participant can share at a time" = "Un participante puede compartir a la vez";
+"One panelist can share at a time" = "Un participante puede compartir a la vez";
+"How many participants can share at the same time?" = "¿Cuántos participantes pueden compartir al mismo tiempo?";
+"All Participants" = "Todos los participantes";
+"Only Host" = "Solo anfitrión";
+"Who can share?" = "¿Quién puede compartir?";
+"How many panelists can share at the same time?" = "¿Cuántos panelistas pueden compartir al mismo tiempo?";
+"Multiple participants can share simultaneously (dual monitors recommended)" = "Varios participantes pueden compartir de forma simultánea (se recomiendan monitores dobles)";
+"Who can start sharing when someone else is sharing?" = "¿Quién puede comenzar a compartir cuando otro está compartiendo?";
+
+"Pause/Stop Recording" = "Pausar/detener grabación";
+"Resume/Stop Recording" = "Reanudar/detener grabación";
+
+"A new version is available!" = "¡Está disponible una nueva versión!";
+
+"The meeting has been locked by the host" = "La reunión ha sido bloqueada por el anfitrión";
+"You cannot chat with %@ during this meeting" = "No puede iniciar un chat con %@ durante esta reunión";
+"How was your meeting experience?" = "¿Cómo fue su experiencia de reunión?";
+
+"Enable HD" = "Habilitar HD";
+"Enable mirror effect" = "Habilitar el efecto de espejo";
+"LN_Show_Participant_Name_40473" = "Mostrar siempre los nombres de los participantes en sus videos";
+"Turn off my video when joining meeting" = "Apagar mi video al entrar a una reunión";
+"My Video:" = "Mi video:";
+"Meetings:" = "Reuniones:";
+
+"error code" = "código de error";
+"Continue Without Audio" = "Continuar sin audio";
+"Recording will not include audio" = "La grabación no incluirá audio";
+"All panelists and attendees" = "Todos los panelistas y participantes";
+"and all panelists" = "y todos los panelistas";
+"Your text can be seen by panelists and other attendees" = "Los panelistas y otros participantes pueden ver su texto";
+"Login is restricted to email addresses that have the following domains:" = "El inicio de sesión está restringido a direcciones de correo electrónico que tienen los siguientes dominios:";
+"You are not authorized to start the meeting using the credentials you signed in with." = "No está autorizado a iniciar la reunión con las credenciales con las que inició sesión.";
+
+"Jump to chat..." = "Saltar al chat…";
+
+"[Mentioned all]" = "[Mencionó a todos]";
+
+"[Mentioned me]"  = "[Me mencionó]";
+"Image" = "Imágen";
+"File"  = "Archivo";
+"Contents" = "Contenido";
+"Members" = "Miembros";
+"Member" = "Miembro";
+"Private" = "Privado";
+"Block Contact" = "Bloquear contacto";
+"Unblock Contact" = "Desbloquear contacto";
+"Are you sure you want to block this contact?" = "¿Está seguro de que desea bloquear a este contacto?";
+"Are you sure you want to block %@?" = "¿Está seguro de que desea bloquear %@?";
+"%@ will be blocked in your contacts and will not be able to contact you." = "%@ será bloqueado en sus contactos y no podrá contactarlo.";
+"Block" = "Boquear";
+"This meeting now has unlimited minutes." = "Esta reunión ahora tiene minutos ilimitados.";
+"This meeting has been upgraded by the host and now includes unlimited minutes." = "El anfitrión ha actualizado esta reunión y ahora incluye minutos ilimitados.";
+
+"Record a separate audio file for each participant who speaks" = "Grabar pista de audio para cada interlocutor";
+
+"Close Manage Participants Panel" = "Cerrar Panel de administración de participantes";
+"Close Participants Panel" = "Cerrar Panel de participantes";
+"Open Manage Participants Panel" = "Abrir Administrador del panel de participantes";
+"Open Participants Panel" = "Abrir Panel de participantes";
+"Close Chat Panel" = "Cerrar Panel de chat";
+"Open Chat Panel" = "Abrir Panel de chat";
+
+"Gain remote control" = "Obtener el control remoto";
+
+"Phone" = "Teléfono";
+"Contact name or phone number" = "Nombre de contacto o número de teléfono";
+"From: %@" = "De: %@";
+"Your audio has been switched to the connected voice call, and your audio will automatically reconnect back after the end of the voice call." = "Su audio se ha cambiado a la llamada de voz conectada, y se reconectará automáticamente después de que termine la llamada de voz.";
+"End phone call and Start a meeting" = "Finalizar llamada telefónica e Iniciar una reunión";
+"Hold meeting audio and Anwser" = "Poner en espera el audio de la reunión y responder";
+"invites you to a 1 on 1 video call..." = "te invita a una videollamada individual...";
+"invites you to a 1 on 1 voice call..." = "te invita a una llamada de voz individual...";
+"Clear all recents" = "Borrar todos los recientes";
+"Start a video call" = "Iniciar una videollamada";
+"Start a non-video call" = "Iniciar una llamada sin video";
+"Delete call history" = "Eliminar historial de llamadas";
+"Keypad" = "Teclado";
+"Call History" = "Historial de llamadas";
+"Zoom Audio" = "Audio de Zoom";
+"Zoom Video" = "Video de Zoom";
+"unknown" = "desconocido";
+"Close Keypad" = "Cerrar teclado";
+"You have a meeting in progress" = "Tiene una reunión en curso";
+"If you continue to make a call, your audio will be transferred from the meeting to your phone call." = "Si continúa y hace una llamada, su audio se transferirá de la reunión a su llamada telefónica.";
+"You have a phone call in progress" = "Tiene una llamada telefónica en curso";
+"If you continue, your phone call will end and you will join the meeting."  = "Si continúa, su llamada telefónica finalizará y se unirá a la reunión.";
+"If you continue, your phone call will end and you will start the meeting." = "Si continúa, su llamada telefónica finalizará e iniciará la reunión.";
+"Calling %@..." = "Llamando a %@…";
+"Accept" = "Aceptar";
+"Decline" = "Declinar";
+"No Recents" = "No hay recientes";
+"(Internal)" = "(Interno)";
+
+"Call Failed" = "Error en la llamada";
+"End call" = "Finalizar llamada";
+
+"This meeting is for authorized attendees only" = "Esta reunión es solo para participantes autorizados";
+"Click \"Sign In to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "Haga clic en \"Inicie sesión para entrar\" para iniciar sesión en Zoom con una dirección de correo electrónico autorizada para unirse a esta reunión";
+"Click \"Switch Account to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "Haga clic en \"Cambiar de cuenta para entrar\" para iniciar sesión en Zoom con una dirección de correo electrónico autorizada para unirse a esta reunión";
+
+"Gain remote control" = "Obtener el control remoto";
+
+"Assign a participant to type" = "Asignar a participante para escribir";
+"Use a 3rd party CC service" = "Utilizar un servicio de subtítulos de terceros";
+"Copy the URL to your clipboard" = "Copie la dirección en su portapapeles";
+"The URL has been copied to your clipboard" = "La dirección se ha copiado a su portapapeles";
+"LN_CC_Copy_To_3rd_Party_16893" = "Copie este enlace y péguelo en un producto de CC de un tercero";
+
+"Local Recording :" = "Grabación local:";
+"Cloud Recording :" = "Grabación en la nube :";
+"LN_Setting_Record_Manage_On_Web_32812" = "Administrar almacenamiento en la web";
+"Manage..." = "Administrar...";
+"You have %@ of cloud record storage" = "Tiene %@ de almacenamiento de grabación en la nube";
+"%@ used" = "%@ usado";
+
+"Hide meeting controls" = "Ocultar controles de reunión";
+"Show meeting controls" = "Mostrar controles de reunión";
+"Lock Webinar" = "Bloquear seminario web";
+"Unlock Webinar" = "Desbloquear seminario web";
+"No new attendees can join this webinar once locked." = "No pueden entrar nuevos participantes a este seminario web una vez bloqueado.";
+"New attendees can join this webinar once unlocked." = "Los nuevos participantes pueden entrar a este seminario web una vez desbloqueado.";
+"My connected time is %d hour %d minute" = "Mi tiempo conectado es de %d hora %d minuto";
+
+"Zoom will decrypt the message when the key becomes available" = "Zoom desencriptará el mensaje cuando la clave esté disponible.";
+"You cannot call any international phone numbers from this meeting until the host joins." = "No puede llamar a números de teléfono internacionales desde esta reunión hasta que entre el anfitrión.";
+"The number you dialed is not supported" = "El número que marcó no es compatible";
+"The number you dialed to join the meeting is not responding" = "El número que marcó para unirse a la reunión no responde";
+"Current and new participants will be muted" = "Se silenciará a los participantes actuales y nuevos";
+
+"iPhone/iPad via AirPlay" = "iPhone/iPad por AirPlay";
+"iPhone/iPad via Cable" = "iPhone/iPad por cable";
+"Connect your iPhone or iPad to this computer" = "Conectar su iPhone o iPad a esta computadora";
+"When prompted on your iPhone or iPad, select \"Trust\"" = "Cuando se le solicite en su iPhone o iPad, seleccione\"Confío\"";
+
+"Blocked Users:" = "Usuarios bloqueados:";
+"Manage Blocked Users..." = "Administrar usuarios bloqueados...";
+"Blocked Users" = "Usuarios bloqueados";
+"Select users below to unblock:" = "Seleccionar usuarios debajo para desbloquear:";
+"Unblock" = "Desbloquear";
+"Create" = "Crear";
+"Create a New Group" = "Cree un grupo nuevo";
+"Join a Public Group" = "Unirse a un grupo público";
+"Images" = "Imágenes";
+"All Files" = "Todos los archivos";
+"Add to Emojis" = "Añadir un emoji";
+"Invite" = "Invitar";
+"Speaker" = "Altavoz";
+"Microphone" = "Micrófono";
+
+"Previous messages will never be visible to new group members. Do you want to continue?" = "Los mensajes anteriores nunca estarán visibles para los nuevos miembros del grupo. ¿Desea continuar?";
+
+"Your account is not available" = "Su cuenta no está disponible";
+"Your service is affected by a network issue" = "Su servicio está afectado por un problema de red";
+"The call recipient is not available" = "El destinatario de la llamada no está disponible";
+"Your phone has an internal configuration error" = "Su teléfono tiene un error de configuración interno";
+
+"What went wrong?" = "¿Qué salió mal?";
+
+"LN_Disallow_Talk_15291" = "Deshabilitar hablar";
+"LN_Allow_Talk_15291" = "Permitir hablar";
+"LN_Mute_Audio_15291" = "Silenciar";
+"LN_Audio_Settings_15291" = "Configuración del audio";
+"LN_Allow_Talk_Tip_15291" = "El anfitrión está permitiendo que usted hable en el seminario web";
+"LN_Talk_Allowed_15291" = "Se permite hablar";
+"LN_Chat_15291" = "Chatear";
+"LN_Plist_Allow_Attendee_To_15291" = "Permitir que los participantes:";
+"LN_Plist_Attendee_Raise_Hand_15291" = "Levantar la mano";
+"LN_Plist_Attendee_View_Partcipants_Count_15291" = "Ver la cantidad de participantes";
+"LN_Plist_Attendee_Video_Layout_15291" = "Configurar diseño del video para los participantes:";
+"LN_Plist_Follow_Host_View_Mode_15291" = "Seguir modo de visualización del anfitrión";
+"LN_Plist_Active_speaker_view_15291" = "Vista del hablante activo";
+"LN_Plist_Gallery_View_15291" = "Vista de galería";
+"LN_Promote_15291" = "Ascender a panelista";
+"LN_Alert_Unmute_Now_15291" = "Cancelar silenciarme";
+"LN_Alert_Stay_Muted_15291" = "Permanecer silenciado";
+"LN_Alert_Temp_Talk_Title_15291" = "El anfitrión desea que usted cancele silenciar en su micrófono";
+"LN_Alert_Temp_Talk_Error_15291" = "Permitir hablar no está disponible porque %@ está usando una versión anterior de Zoom; tendrá que ascender a %@ a panelista para permitir que hable";
+
+"LN_Plist_Accessibility_Recording_20044" = "Grabando";
+"LN_Plist_Accessibility_CloseCaption_20044" = "Subtitulador";
+"LN_Plist_Accessibility_HandRaised_20044" = "Mano levantada";
+"LN_Plist_Accessibility_Video_On_20044" = "Video encendido";
+"LN_Plist_Accessibility_Video_Off_20044" = "Video apagado";
+"LN_Plist_Accessibility_No_Video_20044" = "No hay video conectado";
+"LN_Plist_Accessibility_Tele_Unmuted_20044" = "Teléfono no silenciado";
+"LN_Plist_Accessibility_Tele_Muted_20044" = "Teléfono silenciado";
+"LN_Plist_Accessibility_VoIP_Unmuted_20044" = "Audio de la computadora no silenciado";
+"LN_Plist_Accessibility_VoIP_Muted_20044" = "Audio de la computadora silenciado";
+"LN_Plist_Accessibility_No_Audio_20044" = "No hay audio conectado";
+"LN_Plist_Accessibility_Feedback_20044" = "Comentarios";
+"LN_Plist_Accessibility_YES_20044" = "Sí";
+"LN_Plist_Accessibility_No_20044" = "No";
+"LN_Plist_Accessibility_Slower_20044" = "Ir más lento";
+"LN_Plist_Accessibility_Faster_20044" = "Ir más rápido";
+"LN_Plist_Accessibility_Like_20044" = "Me gusta";
+"LN_Plist_Accessibility_Dislike_20044" = "No me gusta";
+"LN_Plist_Accessibility_Clap_20044" = "Aplaudir";
+"LN_Plist_Accessibility_Break_20044" = "Necesitar un recreo";
+"LN_Plist_Accessibility_Away_20044" = "Alejado";
+"LN_Plist_Accessibility_Share_Audio_21795" = "Compartir el audio de la computadora";
+
+
+"Select a microphone to always use original sound" = "Seleccionar un micrófono para usar siempre el sonido original";
+"LN_Unread_Message_22128" = "%d Mensajes no leídos";
+"LN_Schedule_Mute_Participants_On_Entry_15154" = "Silenciar a los participantes al entrar";
+
+"Show Zoom menu in menu bar" = "Mostrar menú de Zoom en la barra de menú";
+"Virtual Background" = "Fondo virtual";
+"Guest" = "Invitado";
+
+"LN_Create_Duplicate_Name_Group_22373" = "Ya hay otro grupo usando este nombre. Use otro nombre para este grupo.";
+"LN_Alert_Diable_GoogleFacebook_Login_19082" = "No puede iniciar sesión en su cuenta Zoom con este método. Póngase en contacto con su administrador de IT para recibir instrucciones.";
+
+"LN_Mark_Unread_14489"  = "Marcar como no leído";
+"LN_Mark_As_Read_14489" = "Marcar como leído";
+"LN_Unread_Label_14489" = "No leído";
+"LN_JBH_Login_Label_19439" = "Si usted es el anfitrión, %@ para iniciar esta reunión";
+"LN_JBH_Login_URL_19439"   = "ingresar";
+"LN_JBH_Login_Test_Audio_23405" = "Probar el audio de la computadora";
+"LN_JBH_Login_Test_Speaker_23405" = "Probar mi altavoz";
+"LN_JBH_Login_Recuring_Meeting_23405" = "Esta es una reunión recurrente";
+"LN_JBH_Login_Recuring_Webinar_23405" = "Este es un seminario web recurrente";
+"LN_JBH_Login_Start_23405" = "Iniciar";
+
+"LN_ZOOM-21100_To follow the pointer automatically, choose \"Follow presenter's pointer\" from the menu." = "Para seguir el puntero automáticamente, escoja \"Seguir puntero del presentador\" del menú.";
+"LN_ZOOM-21100_Follow presenter's pointer" = "Seguir puntero del presentador";
+"LN_ZOOM-21100_Don't follow presenter's pointer" = "No seguir puntero del presentador";
+"LN_Giphy_Label_23623" = "Giphy";
+"LN_Giphy_Server_Error_23623" = "Este servicio no está disponible en este momento";
+"LN_Giphy_Net_Error_23623" = "Este servicio no está disponible por un problema en la red";
+"LN_Giphy_No_Matched_23623" = "No se encontraron imágenes que coincidan";
+
+"LN_Emoji_Skin_Tone_Label_23623" = "Tono de piel:";
+
+"LN_Emoji_Cagegory_People_Label_23623" = "Emoticones y personas";
+"LN_Emoji_Cagegory_Nature_Label_23623" = "Animales y naturaleza";
+"LN_Emoji_Cagegory_Food_Label_23623" = "Comida y bebida";
+"LN_Emoji_Cagegory_Activity_Label_23623" = "Actividad";
+"LN_Emoji_Cagegory_Places_Label_23623" = "Viajes y lugares";
+"LN_Emoji_Cagegory_Objects_Label_23623" = "Objetos";
+"LN_Emoji_Cagegory_Symbols_Label_23623" = "Símbolos";
+"LN_Emoji_Cagegory_Flags_Label_23623" = "Banderas";
+"LN_Emoji_Cagegory_Frequently_Label_23623" = "Uso frecuente";
+"LN_Emoji_Cagegory_Custom_Label_23623" = "Personalizar";
+"LN_Emoji_Search_Result_Label_23623" = "Resultados de búsqueda";
+"LN_LinkPreview_Label_23623" = "Incluir Vista previa del enlace";
+
+"LN_You_Delete_File_@_Label_19886" = "Usted eliminó el archivo: %@";
+"LN_@_Delete_File_@_Label_19886" = "%@ eliminó el archivo: %@";
+"LN_Delete_Message_Label_19886" = "Ha eliminado un mensaje";
+"LN_@_Delete_Message_Label_19886" = "%@ eliminó un mensaje";
+
+"Select a microphone to always use original sound" = "Seleccionar un micrófono para usar siempre el sonido original";
+"LN_Schedule_Alternative_Hosts_Label_18144" = "Anfitriones Alternativos:";
+"LN_Schedule_Failed_Incorrect_Alternative_Hosts_Description_18144" = "Los usuarios no se pueden agregar como anfitriones alternativos, dado que no son miembros de la misma cuenta. Elimine a los siguientes usuarios para continuar: ";
+
+
+"LN_Schedule_Input_Alternate_Host_Example_18144" = "Ejemplo:john@company.com;peter@school.edu";
+
+
+"LN_In_Meeting_Label_19901" = "En reunión";
+"LN_In_Zoom_Meeting_Label_19901" = "En una reunión de Zoom";
+"LN_Do_Not_Disturb_19901" = "No molestar";
+"LN_Offline_19901" = "Desconectado";
+"LN_Turn_Off_19901" = "Desactivar";
+"LN_Snooze_Menu_20_Minutes_19901" = "20 minutos";
+"LN_Snooze_Menu_1_Hour_19901" = "1 hora";
+"LN_Snooze_Menu_2_Hours_19901" = "2 horas";
+"LN_Snooze_Menu_4_Hours_19901" = "4 horas";
+"LN_Snooze_Menu_8_Hours_19901" = "8 horas";
+"LN_Time_Period_Label_19901" = "Configurar el período de tiempo";
+"LN_Scheduled_Until_Label_19901" = "Programado hasta";
+"LN_Resume_In_Hour_Minute_19901" = "Reanudar en %lldh %lldm";
+"LN_Resume_In_hour_19901" = "Reanudar en %lldh";
+"LN_Resume_In_Minute_19901" = "Reanudar en %lldm";
+"LN_Resume_In_Seconds_19901" = "Reanudar en %llds";
+"LN_Notification_Settings_19901" = "Configuración de notificaciones";
+"LN_Add_Person_Note_19901" = "Agregar una nota personal";
+"LN_Remove_Person_Note_19901" = "Retirar nota personal";
+"LN_Notifications_Label_19895" = "Notificaciones";
+"LN_Hit_Unread _message_22128" = "——————   Los siguientes son mensajes nuevos   ——————";
+
+"Multi-user chats" = "Chats de usuarios múltiples";
+
+"LN_MUTE_NOTIFICATION_ON_CALL_19895"= "Pausar notificaciones cuando estoy en reunión o con una llamada interna";
+"LN_GROUP_NOTIFY_SETTING_ALL_19895" = "Actividad de todos los tipos";
+"LN_GROUP_NOTIFY_SETTING_MENTION_ 19895" = "Mencionarme a mí o a todos los miembros";
+"LN_GROUP_NOTIFY_SETTING_NOTHING_19895" = "Nada";
+"LN_RECEIVE_PERMISSION_ALLMSG_19895" = "Todos los mensajes";
+"LN_RECEIVE_PERMISSION_PARTMSG_19895" = "Solo menciones o mensajes privados";
+"LN_RECEIVE_PERMISSION_NOTHING_19895" = "Nada";
+"LN_AUTO_NOTIFICATION_TIME_FROM_19895" = "Deshabilitar automáticamente notificaciones de:";
+"LN_RECEIVE_NOTIFICATION_BOUNCE_TIMES_19895" = "Hacer rebotar el ícono de la aplicación cuando recibo un nuevo mensaje";
+"LN_RECEIVE_NOTIFICATION_SHOW_FLOATING_19895" = "Mostrar notificación flotante cuando reciba un nuevo mensaje";
+"LN_RECEIVE_NOTIFICATION_PLAY_SOUND_19895" = "Al recibir un mensaje de chat, reproducir un sonido";
+"LN_GROUP_NOTIFY_SEARCH_TXT_19895" = "Escribir para filtrar";
+
+"LN_Group_Setting_Title_19895" = "Grupos importantes";
+"LN_Instant_Message_Title_19895" = "Mensajería instantánea";
+"LN_Notification_Setting_Title_19895" = "Configuración de Notificaciones";
+"LN_With_Exceptions_Label_19895" = "Con excepciones para";
+"LN_Exception_Group_button_19895" = "Grupos...";
+"LN_Exception_Group_button_small_19895" = "grupos...";
+"LN_Group_Setting_Reset_Button_19895" = "Reestablecer";
+"LN_Import_Groups_Cell_Groups_Label_19895" = "Grupos";
+"LN_Preferred_Notification_Label_19895" = "Su configuración preferida para Notificaciones es";
+"LN_Choose_Exception_Label_19895" = "Elija excepciones para grupos específicos";
+"LN_Setting_Tool_Item_Instant_Messgae_19895" = "Mensajería instantánea";
+"LN_Reset_Setting_Group_Label_19895" = "Se reestablecerán todas las configuraciones personalizadas. ¿Desea continuar?";
+
+"LN_SIP_PWD_Err_Tip_25328" = "Zoom ha detectado que la contraseña ha sido cambiada o es incorrecta. Ingrese la contraseña que estableció para este número de teléfono.";
+"LN_SIP_PWD_PlaceHolder_Tip_25328" = "Ingrese la contraseña interna del teléfono ";
+
+"%@ has been invited." = "%@ ha sido invitado.";
+"LN_Meeting_Live_Stream_TimeOut_18924" = "No se puede transmitir su reunión a %@.\nTiene que reiniciar la transmisión.";
+
+"LN_Meeting_Live_Stream_LiveOn_18924" = "Ahora la reunión se está transmitiendo en directo en %@";
+"LN_MSG_Edited_19883" = "(Editado)";
+
+"LN_Upcoming_Meetings_25955" = "Próximas reuniones";
+"LN_Start_A_New_Meeting_25955" = "Iniciar una nueva reunión";
+"LN_Accessibility_close_window_25955" = "cerrar ventana";
+"LN_View_More_25955" = "Ver más...";
+"LN_START_25955" = "INICIAR";
+
+"LN_ZOOM-26329_Side-by-side Mode" = "Modo lado a lado";
+"LN_ZOOM-26329_Enable participants to see the shared screen alongside either the Speaker View or Gallery View" = "Permita que los participantes vean la pantalla compartida junto a la vista del Altavoz o la vista de la Galería";
+
+"LN_Need_Sign_In_Again_25027" = "Su sesión ha terminado y debe ingresar de nuevo";
+"LN_This_File_Will_Be_Removed_27316" = "Este archivo solo se quitará del grupo - <%@> y no se eliminará de sus Archivos personales";
+"LN_Phone_Service_Not_Avaliable_20377" = "El servicio de teléfono no está disponible";
+"LN_Reset_Confirm_Button_Title_19895" = "Confirmar";
+"LN_Exception_Group_Singal_Title_19895" = "grupo...";
+"LN_Stop_CMR_Warning_25471" = "¿Desea detener la grabación en la nube?";//[Zoom-25471]
+"LN_Stop_CMR_Email_Warning_25471" = "If Yes, you will receive an email notification when the cloud recording is ready";//[Zoom-25471]
+"LN_Share_Desktop_17163" = "Compartir escritorio";
+"LN_Stop_Desktop_17163" = "Detener";
+"LN_Local_17163" = "Local";
+"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "Marcar desde %@ y %d otros países";  // ZOOM-16058
+"LN_Schedule_Selected_Two_DialinCountry_16058" = "Marcar desde %@ y %@";  // ZOOM-16058
+"LN_Schedule_Selected_One_DialinCountry_16058" = "Marcar desde %@";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "Seleccionar país de discado";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "Se enumerarán los números de discado del país seleccionado en el correo electrónico de invitación"; // ZOOM-16058
+"LN_Schedule_EditCountries_Include_Tollfree_Number_16058" = "Incluir números gratuitos"; // ZOOM-16058
+"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "Países seleccionados:"; // ZOOM-16058
+"LN_Schedule_EditCountries_Search_For_Country_16058" = "Buscar un país";  // ZOOM-16058
+"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "No ha seleccionado ningún país. Seleccione al menos un país antes de guardar."; // ZOOM-16058
+"LN_DockMenu_LanguageItem_24821" = "Cambiar de idioma";
+"LN_Switch_Language_Alert_24821" = "Para cambiar el idioma predeterminado utilizado por Zoom para %@, se debe reiniciar el cliente de Zoom.";
+"LN_Switch_Language_Alert_System_24821" = "idioma del sistema";
+"LN_DockMenu_System_LanguageItem_24821" = "Utilizar idioma del sistema";
+"LN_Switch_Language_Alert_Change_24821" = "Cambiar a %@";
+"LN_Switch_Language_Alert_Keep_24821" = "Mantener el uso de %@";     //ZOOM-24821
+"LN_Unable_Detect_Camera_Title_29896" = "Zoom no puede detectar una cámara";
+"LN_Unable_Detect_Camera_Content_29896" = "Asegúrese de que su cámara esté encendida y conectada a su computadora";
+
+"Switch camera" = "Intercambiar cámara";
+"Stop remote control" = "Detener control remoto";
+"LN_IM_Delete_Failed_30533" = "Error al eliminar un mensaje";
+"LN_IM_Receive_Notification_Exception_For_Others_31155" = "Recibir notificaciones de";
+"LN_IM_Notification_Keywords_31155" = "Palabras clave";
+"LN_IM_Notification_Keyword_31155"  = "Palabra clave";
+"LN_IM_Notification_Contacts_31155" = "Contactos";
+"LN_IM_Notification_Contact_31155"  = "Contacto";
+"LN_Notification_Add_Keywords_31155" = "Agregar palabras clave";
+"LN_Notification_Add_Keywords_Description_31155" = "Recibirá notificaciones cuando se mencionen estas palabras clave. Use comas para separar cada palabra clave (las palabras clave no diferencian mayúsculas de minúsculas).";
+"LN_Notification_Search_Contacts_31155" = "Buscar contactos";
+"LN_Notification_Choose_Contacts_31155" = "Elegir siempre recibir notificaciones de mensajes de los siguientes contactos:";
+"LN_Notification_Reset_Exception_Contacts_31155" = "Ya no recibirá notificaciones de los contactos seleccionados. ¿Desea continuar?";
+"LN_Notification_Search_No_Contact_31155" = "No se encontraron contactos. Busque otro nombre.";
+"LN_IM_Notification_Title_%@_In_%@_31106" = "%@ en %@";
+"LN_IM_Notification_Image_31106" = "Le envió una foto.";
+"LN_IM_Notification_Voice_31106" = "Le envió un mensaje de voz.";
+"LN_IM_Notification_File_31106" = "Le envió un archivo.";
+"LN_IM_Notification_Text_31106" = "Le envió un mensaje.";
+"LN_IM_Notification_Encrypted_Text_31106" = "Le envió un mensaje cifrado.";
+"LN_IM_Notification_Group_Image_31106" = "Envió una foto.";
+"LN_IM_Notification_Group_Voice_31106" = "Envió un mensaje de voz.";
+"LN_IM_Notification_Group_File_31106" = "Envió un archivo.";
+"LN_IM_Notification_Group_Text_31106" = "Envió un mensaje.";
+"LN_IM_Notification_Group_Encrypted_Text_31106" = "Envió un mensaje cifrado.";
+"LN_ACCESSIBILITY_Window_will_close_21244" = "Se cerrará la ventana"; //ZOOM-21244
+"LN_Setting_Record_Optimize_28546" = "Optimizar para editor de video de terceros";
+"LN_Setting_Record_Optimize_Info_28546" = "Active esta opción para garantizar la compatibilidad del archivo de grabación creado por Zoom con el software de edición de video que puede utilizar para modificar el archivo de grabación.";
+"LN_Setting_Record_Thumbnails_28544" = "Grabar miniaturas al compartir";
+"LN_Setting_Record_Timestamp_28548" = "Agregue una marca de tiempo a la grabación";
+"LN_Setting_Record_Timestamp_Info_28548" = "Active esta opción para integrar la fecha y la hora de la reunión en curso en la grabación de video.";
+"LN_Select_Record_Path_warning_30336" = "Seleccione la carpeta de su computadora local donde desea que se guarden los archivos grabados";
+"LN_Code_Snippet_Create_Window_Title_31934" = "Crear fragmento de código";
+"LN_Code_Snippet_Create_Button_Title_31934" = "Crear fragmento de código";
+"LN_Code_Snippet_Setting_Title_31934" = "Mostrar botón Fragmento de código";
+"LN_Code_Snippet_Setting_Title_Locked_31934" = "Mostrar botón Fragmento de código (bloqueado por el administrador)";
+"LN_Code_Snippet_Button_Title_31934" = "Código";
+"LN_Code_Snippet_Code_Optional_Title_31934" = "Título (opcional)";
+"LN_Code_Snippet_Create_Button_Try_Title_31934" = "Intentar otra vez";
+"LN_Code_Snippet_Upload_Failed_31934" = "No se pudo realizar la carga. Intente otra vez.";
+"LN_Code_Snippet_Wrap_31934" = "Sobrescribir";
+"LN_Code_Snippet_Tip_31934" = "[Fragmento de código]";
+"LN_Code_Snippet_Notification_Group_31934" = "Envió un fragmento de código";
+"LN_Code_Snippet_Notification_31934" = "Le envió un fragmento de código";
+"LN_Code_Snippet_Download_Title_31934" = "Descargar fragmentos de código";
+"LN_Code_Snippet_View_%ld_Lines_31934" = "Ver %ld líneas más";
+"LN_Code_Snippet_Add_%@_Code_%@_31934" = "Se agregó este fragmento %@: %@";
+"LN_Meeting_StatusView_Can_Control_Title_21500" = "Puede controlar la pantalla de %@"; //[zoom-21500]
+"LN_Temporarily_Unmuted_542" = "Temporalmente no silenciado";
+"LN_Enable_Push_To_Talk_542" = "Presione y mantenga presionada la tecla ESPACIO para reactivar su propio micrófono temporalmente";
+"LN_Mute_Self_Remind_Tip_542" = "Usted está silenciado. Presione Shift+Command+A para cancelar silenciar el micrófono o presione y mantenga presionada la tecla ESPACIO para cancelar silenciar temporalmente.";
+"LN_Unmute_Audio_Button_Tip_542" = "Cancelar silenciar mi audio%@. Puede presionar y mantener presionada la tecla ESPACIO para cancelar silenciar temporalmente.";
+"LN_Unmute_Phone_Button_Tip_542" = "Cancelar silenciar mi teléfono%@. Puede presionar y mantener presionada la tecla ESPACIO para cancelar silenciar temporalmente.";
+"LN_Join_Audio_33542" = "Entrar al audio";
+"LN_Polling_Conflict_32870" = "Usted inició sesión desde otro dispositivo. Su sesión de votación está inactiva.";
+"LN_CopyRight_34145" = "Copyright ©2012-2018 Zoom Video Communications, Inc.";
+"LN_Enable_49_Wall_View_30742" = "Se muestran hasta 49 participantes por página en la vista de galería";
+"LN_49_Wall_View_Tip_30742" = "La CPU en su computadora solo admite 25 participantes por pantalla en la Vista de galería. Consulte el artículo \"Mostrar participantes en Vista de galería\" para ver los requisitos mínimos para usar esta función.";
+"LN_TurnOn_OriginalSound_30742" = "Prender el sonido original";
+"LN_Msg_Removed_%@_33477" = "Los mensajes que envíe y reciba se eliminarán en %@";
+"LN_Changed_Settings_33477" = "Cambiar configuraciones";
+"LN_Or_33477" = "o";
+"LN_Older_%@_Msg_Removed_33477" = "Se han eliminado los mensajes con una antigüedad de %@";
+"LN_Older_%@_Image_Removed_33477" = "Se han eliminado las imágenes con una antigüedad de %@";
+"LN_Older_%@_File_Removed_33477" = "Se han eliminado los archivos con una antigüedad de %@";
+"LN_%ld_Years_33477" = "%ld años";
+"LN_1_Year_33477"   =   "1 año";
+"LN_%ld_Months_33477"= "%ld meses";
+"LN_1_Month_33477"  =   "1 mes";
+"LN_%ld_Days_33477"  = "%ld días";
+"LN_24_Hours_33477"  =  "24 horas";
+"LN_Msg_Learn_More_33477" = "Obtenga más información";
+"LN_Setting_Config_By_Admin_33477" = "Esta configuración es establecida por el administrador.";
+"LN_Download_Code_Tip_33477" = "descargue el paquete de fragmentos de código.";
+"LN_TurnOff_OriginalSound_30742" = "Apagar el sonido original";
+"LN_Recording_Paused_30742" = "Grabación en pausa";
+"LN_Unable_Load_Content_33447" = "No se puede cargar el contenido.";
+"LN_Unable_Connect_Internet_33447" = "No está conectado";
+"LN_Try_Again_33447" = "Intentar otra vez";
+"LN_Waiting_TurnOn_Video_Meeting_35641" = "Su video se activará cuando se inicie la reunión";
+"LN_Waiting_TurnOn_Video_Webinar_35641" = "Su video se activará cuando se inicie el seminario web ";
+
+"LN_Join_WebURL_Title_15122" = "Únase a la reunión desde su navegador";
+"LN_Join_WebURL_Content_15122" = "Haga clic en \"%@\" para unirse a la reunión con funciones limitadas debido a un problema al unirse desde el cliente de Zoom.";
+"LN_Join_WebURL_Button_15122" = "Ingresar desde el navegador";
+"LN_Share_Frame_39044" = "Parte de la pantalla";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "Menú de capturas de pantalla";
+"LN_Acessibilty_ClosedCaptionFontSize_%d_39033" = "%d, tamaño del subtítulo, deslizador";
+"LN_Acessibilty_ClosedCaption_Subtitles_%d_39033" = "Estos son los subtítulos de tamaño de %d puntos";
+"LN_Annotate_AnnotatePanel_21222" = "panel de anotaciones";
+"LN_Annotate_ShapePanel_21222" = "panel de herramientas";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "Menú de capturas de pantalla";
+"LN_Annotate_FormatPanel_21222" = "panel de formato";
+"LN_Annotate_Diamond_21222" = "Diamante";
+"LN_Annotate_DoubleArrow_21222" = "Doble flecha";
+"LN_Annotate_FillRect_21222" = "Completar rectángulo";
+"LN_Annotate_FillOval_21222" = "Completar óvalo";
+"LN_Annotate_StampX_21222" = "Registro X";
+"LN_Annotate_WideCurve_21222" = "Curva amplia";
+"LN_Annotate_ArrowLine_21222" = "Flecha";
+"LN_Annotate_SemiFillRect_21222" = "Rectángulo semicompletado";
+"LN_Annotate_SemiFillOval_21222" = "Óvalo semicompletado";
+"LN_Annotate_StampCheck_21222" = "Comprobar registro";
+"LN_Annotate_ThinCurve_21222" = "Curva cerrada";
+"LN_Annotate_StraightLine_21222" = "Línea recta";
+"LN_Annotate_StrokeRect_21222" = "Rectángulo de desplazamiento";
+"LN_Annotate_StrokeOval_21222" = "Óvalo de desplazamiento";
+"LN_Annotate_StampArrow_21222" = "Flecha de registro";
+"LN_Annotate_Spotlight_21222" = "Reflector";
+"LN_Change_Status_Away_When_InActive_%@_Minutes_40737" = "Cambiar mi estado a Alejado cuando esté inactivo durante %@ minutos";
+"LN_Code_Snippet_Length_Error_40055" = "El tamaño del archivo no puede exceder los 16 KB.";
+"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "Menú de capturas de pantalla";
+"LN_Code_Snippet_Download_Msg_31934" = "Para crear un fragmento de código, descargue el paquete de fragmentos de código. Solo debe descargarlo una vez.";
+"LN_Create_Code_Tip_33477" = "Para crear un fragmento de código,";
+"LN_Meeting_List_Item_Add_Calendar_Help_25869" = "Cuando esté conectado, sus reuniones y seminarios web aparecerán en el cliente de Zoom. También se sincronizará su estado de presencia.";
+"LN_Notification_Keywords_Example_31155" = "Por ejemplo: Zoom, proyecto";
+"LN_Help_String_40539" = "Ayuda";
+"LN_Participants_Raised_Hand_39858" = "participantes levantaron la mano";
+"LN_Raised_Hand_39858" = "levantó/levantaron la mano";
+"LN_Toolbar_Open_Participants_Panel_39047" = "Cerrado, abrir el panel de participantes, %ld participantes";
+"LN_Toolbar_Close_Participants_Panel_39047" = "Abierto, cerrar el panel de participantes, %ld participantes";
+"LN_Toolbar_Open_Manage_Participants_Panel_39047" = "Cerrado, abrir el panel de administración de participantes, %ld participantes";
+"LN_Toolbar_Close_Manage_Participants_Panel_39047" = "Abierto, cerrar el panel de administración de participantes, %ld participantes";
+"LN_I_Am_Fine_37969" = "Estoy bien";
+"LN_Switch_To_Phone_37969" = "Cambiar al teléfono";
+"LN_Dectect_Poor_Audio_Connection_37969" = "Se detectó una conexión de audio deficiente";
+"LN_Participants_Not_Hear_You_37969" = "Los participantes en la reunión pueden tener problema para oír el audio de usted.\nConsidere cambiarse al teléfono.";
+"LN_Request_Remote_Control_Title_37969" = "Está a punto de solicitar control remoto del contenido compartido de %@.";
+"LN_Wait_For_Approval_37969" = "y esperar la aprobación de %@.\n";
+"LN_Remote_Control_Request_37969" = "Solicitar el control remoto";
+"LN_Not_Send_Request_37969" = "si no desea enviar una solicitud.";
+"LN_Request_Remote_Control_37969" = "Solicitar control remoto";
+"LN_Requesting_Remote_Control_Shared_Content_37969" = "%@ está solicitando el control remoto del contenido compartido por usted.";
+"LN_Approve_Request_Alert_37969" = "Si usted aprueba la solicitud, %@ tendrá acceso a todo el contenido compartido por usted. Puede recuperar el control en cualquier momento pulsando donde quiera.";
+"LN_Select_Request_Try_Again_37969" = "Seleccione Solicitar para volver a intentarlo";
+"LN_Try_Again_37969" = "para volver a intentarlo";
+"LN_Declined_Your_Request_37969" = "%@ declinó su solicitud.";
+"LN_Hand_Raised_33393" = "Mano levantada";
+"LN_Hand_Lowered_33393" = "Mano bajada";
+"LN_Hand_Has_Been_Raised_33393" = "se levantó la mano";
+"LN_Hand_Has_Been_Lowered_33393" = "se bajó la mano";
+"LN_Request_37969" = "Solicitar";
+"LN_Select_37969" = "Seleccionar";
+"LN_Decline_37969" = "Declinar";
+"LN_Approve_37969" = "Aprobar";
+"LN_Invite_Room_System_20093" = "Sistema de sala";
+"LN_Setting_Record_During_Sharing_39256" = "Grabar video durante la función de compartir pantallas";
+"LN_Setting_Record_Video_Next_To_Share_39256" = "Coloque el video junto a la pantalla compartida en la grabación";
+"LN_Meeting_QA_Type_Question_40651" = "Escriba su pregunta aquí.";
+"LN_Meeting_QA_Allow_Anonymous_Questions_40651" = "Permitir preguntas anónimas";
+"LN_Meeting_QA_Allow_Attendees_View_40651" = "Permitir que los asistentes vean";
+"LN_Meeting_QA_View_Answered_Questions_40651" = "solo preguntas respondidas";
+"LN_Meeting_QA_View_All_Questions_40651" = "todas las preguntas";
+"LN_Meeting_QA_Allow_Attendees_Upvote_40651" = "Los asistentes pueden votar a favor";
+"LN_Meeting_QA_Allow_Attendees_Comment_40651" = "Los asistentes pueden comentar";
+"LN_Meeting_QA_All_Questions_40651" = "Todas las preguntas";
+"LN_Meeting_QA_My_Questions_40651" = "Mis preguntas";
+"LN_Meeting_QA_Welcome_Title_40651" = "Bienvenido";
+"LN_Meeting_QA_Welcome_Message_40651" = "Siéntase libre de hacerles preguntas al anfitrión y a los panelistas";
+"LN_Meeting_QA_No_Asked_Questions_40651" = "Usted no hizo preguntas";
+"LN_Meeting_QA_Private_Answer_40651" = "Respuesta privada";
+"LN_Meeting_QA_Show_40651" = "Mostrar todo";
+"LN_Meeting_QA_Collapse_40651" = "Comprimir todo";
+"LN_Meeting_QA_Attend_Comment_40651" = "Comentar";
+"LN_Meeting_QA_End_Live_Answer_40651" = "Esta pregunta se respondió en vivo";
+"LN_Meeting_QA_Question_Dismissed_40651" = "Esta pregunta fue descartada";
+"LN_Meeting_QA_Type_Answer_40651" = "Escriba su respuesta";
+"LN_Meeting_QA_My_Question_40651" = "Mi pregunta";
+"LN_Meeting_QA_Reopen_40651" = "Volver a abrir";
+"LN_Meeting_QA_Add_Answer_40651" = "Escriba su respuesta aquí.";
+"LN_Meeting_QA_Add_Comment_40651" = "Escriba su comentario aquí.";
+"LN_Meeting_QA_Unread_Questions_40651" = "Preguntas y respuestas, %ld preguntas sin leer";
+"LN_Accessibility_OpenDefaultBrowser_39412" = "se abre en un navegador predeterminado";
+"LN_Accessibility_Link_39412" = "enlace";
+"LN_Accessibility_VB_Support_39412" = "soporte de fondo virtual";
+"LN_Accessibility_Upcoming_meetings_7432" = "Próximas reuniones";
+"LN_Accessibility_Recorded_meetings_7432" = "Reuniones grabadas";
+"LN_Accessibility_RemoteControlWondow_43656" = "Seleccionado(s)";
+"LN_Plist_Stop_Audio_Share_21795" = "Dejar de compartir el audio";
+"LN_Fit_Share_Audio_21795" = "Está compartiendo el sonido de la computadora";
+"LN_Fit_Viewing_Audio_21795" = "%@ está compartiendo el sonido de la computadora";
+"LN_Share_Sound_Only_21795" = "Solo el sonido de la computadora";
+"LN_Share_Camera_21795" = "Contenido de la segunda cámara";
+"LN_Share_Audio_Error_By_Send_Share_21795" = "No puede compartir el sonido de la computadora mientras otros participantes comparten la pantalla.";
+"LN_Share_Screen_Error_By_Share_Auido_21795" = "Comenzar a compartir pantalla detendrá la función de compartir el sonido de la computadora de los demás. ¿Desea continuar?";
+"LN_Share_Basic_Type_21795" = "Basic";
+"LN_Share_Advance_Type_21795" = "Avanzar";
+"LN_Accessibility_You_Start_Audio_Share_21795" = "Usted ha comenzado a compartir el audio de la computadora";
+"LN_Accessibility_You_Stop_Audio_Share_21795" = "Usted ha dejado de compartir el audio de la computadora";
+"LN_Accessibility_Someone_Start_Aduio_Share_21795" = "%@ ha comenzado a compartir el audio de la computadora";
+"LN_Accessibility_Someone_Stop_Aduio_Share_21795" = "%@ ha dejado de compartir el audio de la computadora";
+"LN_Share_Frame_Tooltip_21795" = "Comparta una parte de la pantalla con una ventana rectangular de tamaño variable";
+"LN_Share_Sound_Tooltip_21795" = "Comparta audio de su computadora sin compartir la pantalla";
+"LN_Share_Camera_Tooltip_21795" = "Comparta contenido de una segunda cámara, por ejemplo, una cámara para documentos";
+"LN_Accessibility_Select_Country_Code_21342" = "Seleccionar código de país";
+"LN_Accessibility_Call_Me_History_21342" = "País del historial Favor llamarme";
+"LN_TranferAmdin_From_You_To_%@_42604" = "Usted ya no es el administrador de este grupo, ahora es %@.";
+"LN_TranferAmdin_From_%@_To_%@_42604" = "%@ ya no es el administrador de este grupo, ahora es %@.";
+"LN_TranferAmdin_From_%@_To_You_42604" = "%@ ya no es el administrador de este grupo, ahora es usted.";
+"LN_Assign_ANewAmdin_42604" = "Asignar un nuevo administrador";
+"LN_Security_NNot_Verified_Label_42898" = "Advertencia de seguridad: Certificado de servidor no confiable";
+"LN_Security_NNot_Verified_Title_42898" = "Zoom";
+"LN_Security_NNot_Verified_Content_42898" = "No puede conectarse a Zoom porque el certificado de seguridad presentado no se pudo verificar. Comuníquese con el Departamento de TI para obtener ayuda.";
+"LN_Security_Not_Private_Content_42898" = "Su conexión no es privada. Es posible que los atacantes estén intentando robar su información personal o financiera de Zoom. \n\nEste servidor no pudo comprobar que se trata de Zoom. Su certificado de seguridad proviene de %@.";
+"LN_Security_Trust_Anyway" = "Confiar de todos modos";
+"LN_Security_Do_Not_Trust" = "No confiar";
+"LN_Testing_Speaker_38961" = "Probando altavoz...";
+"LN_Do_You_Hear_A_Ringtone_38961" = "¿Escucha un tono de llamada?";
+"LN_Tested_All_Speakers_38961" = "Probamos todos sus altavoces";
+"LN_Tested_All_Mic_38961" = "Probamos todos sus micrófonos";
+"LN_Test_Again_38961" = "Probar otra vez";
+"LN_Join_Audio_By_Phone_38961" = "Entrar al audio por teléfono";
+"LN_Testing_38961" = "Probando...";
+"LN_Testing_Microphone_38961" = "Probando micrófono...";
+"LN_Have_%ld_Speakers_Now_Testing_%ld_38961" = "Usted tiene %ld altavoces; ahora está probando el altavoz %ld...";
+"LN_Have_%ld_Mics_Now_Testing_%ld_38961" = "Usted tiene %ld micrófonos; ahora está probando el micrófono %ld...";
+"LN_Speak_And_Pause_Do_You_Hear_Replay_38961" = "Hable y deténgase, ¿escucha una repetición?";
+"LN_Troubleshoot_Speaker_Mic_38961" = "Probar altavoz & micrófono...";
+"LN_Speaker_%ld_38961" = "Altavoz %ld:";
+"LN_Microphone_%ld_38961" = "%ld de micrófono:";
+"LN_Swithch_To_Phone_Audio_38961" = "Cambiar a audio del teléfono";
+"LN_Capture_32093" = "Capturar";
+"LN_Install_AirHost_With_AdminPrivileges_43112" = "Para comenzar a usar AirHost, debe instalarlo con los privilegios de administrador.";
+"LN_Install_CodeSnippet_With_AdminPrivileges_43112" = "Para comenzar a usar el fragmento de código, debe instalarlo con los privilegios de administrador.";
+"LN_Install_ScreenShot_With_AdminPrivileges_43112" = "Para comenzar a usar las capturas de pantalla, debe instalarlas con los privilegios de administrador.";
+"LN_Install_SipCall_With_AdminPrivileges_43112" = "Para comenzar a usar la llamada telefónica, debe instalarla con los privilegios de administrador.";
+"LN_Install_RetainaRes_With_AdminPrivileges_43112" = "Para que la pantalla Retina sea compatible, debe instalarla con los privilegios de administrador.";
+"LN_Copy_link_39867" = "Copiar enlace";
+"LN_Join_meeting_39867" = "Unirse a la reunión";
+"LN_Decrypt_message_39867" = "Zoom desencriptará el mensaje cuando la clave esté disponible.";
+"LN_You_joined_group_39867" = "Usted se ha unido a este chat de grupo";
+"LN_Hide_Self_View_40266" = "Ocultar vista propia";
+"LN_Show_Self_View_40266" = "Mostrar vista propia";
+"LN_Join_With_Computer_Audio_38961" = "Unirse con el audio compartido";
+"LN_Tets_Speaker_And_Mic_38961" = "Probar altavoz y micrófono";
+"LN_Accessibility_Dock_Top_40628" = "la barra de herramientas de uso compartido de pantalla se encuentra en la parte superior de la pantalla, muévala hacia el botón de la parte inferior";
+"LN_Accessibility_Dock_Bottom_40628" = "la barra de herramientas de uso compartido de pantalla se encuentra en la parte inferior de la pantalla, muévala hacia el botón de la parte superior";
+"LN_Remove_Confirm_44293" = "¿Quiere eliminar a %@? El participante no puede volver a unirse a esta reunión.";
+"LN_Expel_By_Host_44293" = "El anfitrión lo ha eliminado de esta reunión.";
+"LN_Join_Error_For_Expel_44293" = "Usted no puede volver a unirse a esta reunión porque fue eliminado previamente por el anfitrión.";
+
+"LN_GDPR_40930_Continue" = "Continuar";
+"LN_GDPR_40930_I Agree" = "Estoy de acuerdo";
+"LN_GDPR_40930_I Disagree" = "Estoy en desacuerdo";
+"LN_GDPR_40930_Leave Meeting" = "Salir de la reunión";
+"LN_GDPR_40930_Privacy Policy" = "Política de privacidad";
+"LN_GDPR_40930_Terms of Service" = "Términos del servicio";
+"LN_GDPR_40930_To use Zoom, you need to agree to the %1$@ and %2$@." = "Para usar Zoom, debe aceptar los %1$@ y las %2$@.";
+"LN_GDPR_40930_You cannot join the meeting until you agree to the %1$@ and %2$@." = "No puede unirse a la reunión hasta que acepte los %1$@ y la %2$@.";
+
+"LN_%@_Meeting_ID_%@_41652" = "%@ ID de la reunión: %@";
+"LN_Meeting_ID_%@_41652" = " ID de la reunión: %@";
+"LN_In_%d_Mins_41652" = "en %d min.";
+"LN_In_1_Min_41652" = "en 1 min.";
+"LN_Now_41652" = "ahora";
+"LN_Remind_%@_Minutes_Before_Upcoming_41652" = "Recordarme %@ minutos antes de mis próximas reuniones.";
+
+"LN_Hide_ChatWnd_When_ScreenShot_32455" = "Ocultar ventana de chat en captura de pantalla";
+"LN_To_32455" = "para";
+"LN_GDPR_40930_SIGNIN_TITLE" = "Estamos actualizando nuestros términos y políticas";
+"LN_GDPR_40930_SIGNIN_DETAIL_%1$@_%2$@" = "Zoom ha actualizado sus términos de servicio y su política de privacidad para brindarle más transparencia con respecto a la información que Zoom reúne, el modo en que la utiliza y el control que usted tiene sobre su información personal. Al continuar usando Zoom, usted acepta los %1$@ y la %2$@ actualizados.";
+

@@ -76,6 +76,7 @@ Asia/Aden;(GMT+03:00) Aden
 Africa/Khartoum;(GMT+03:00) Khartum
 Africa/Djibouti;(GMT+03:00) Dschibuti
 Africa/Mogadishu;(GMT+03:00) Mogadischu
+Europe/Minsk;(GMT+03:00) Minsk
 Asia/Dubai;(GMT+04:00) Dubai
 Asia/Muscat;(GMT+04:00) Maskat
 Asia/Yekaterinburg;(GMT+05:00) Jekaterinburg

@@ -144,10 +144,10 @@
 "LN_Meeting_QA_Open_21381" = "開く";
 "LN_Call_Accepted_35364" = "受信コール － 受け入れられました";
 "LN_Call_Incoming_35364" = "受信コール";
+"LN_Call_Canceled_46215" = "着信 - キャンセル";
 "LN_Mute_On_Entry_Alert_Title_35357" = "入室時に参加者をミュートにする";
 "LN_Mute_On_Entry_Alert_Content_35357" = "全ての新しい参加者はミュートされます";
 "LN_Schedule_OpenICSFile_ForOtherCal_37779" = "デフォルトのカレンダーで開く（.ics）";
-"LN_Hide_ChatWnd_In_Screenshot_38445" = "スクリーンショットでチャットウィンドウを非表示";
 "Meeting Detail" = "ミーティングの詳細";
 "While waiting, please check your audio and video settings" = "お待ちの間に、音声とビデオの設定を確認してください";
 "Topic" = "トピック";
@@ -159,7 +159,7 @@
 
 //
 "Stop Screen Share" = "画面共有の停止";
-"Stop Share"= "共有の停止";
+"Stop Share" = "共有の停止";
 "LN_Share_21795" = "画面の共有";
 "Share Screen" = "画面の共有";
 "Share screen" = "画面の共有";
@@ -253,7 +253,6 @@
 "You are not in the audio conference yet." = "まだ音声会議に参加していません。";
 "Computer Audio Connected" = "コンピューターのオーディオが接続されました";
 "Phone Connected" = "電話が接続されました";
-"Test Computer Mic & Speakers" = "コンピューターのオーディオをテスト";
 "You may have problem hearing the audio from other participants.\nConsider switching to phone." = "他の参加者の音声を聞きにくい可能性があります。\n電話に切り替えることを検討してください。";
 "Total %d phone call-in listener" = "合計 %d 人の電話によるリスナー";
 "Total %d phone call-in listeners" = "合計 %d 人の電話によるリスナー";
@@ -408,7 +407,6 @@
 "Me" = "私";
 "Pin Video" = "ビデオの固定";
 "LN_Unpin_Video_30742" = "ビデオのピン留めを解除";
-"Switch to Active Speaker" = "アクティブなスピーカーに切り替え";
 "Pin video on first screen" = "最初の画面にビデオを固定";
 "LN_Unpin_First_Screen_34308" = "最初の画面からビデオのピン止めを解除";
 "Pin video on second screen" = "2 番目の画面にビデオを固定";
@@ -474,7 +472,6 @@
 "This meeting has been ended by host" = "このミーティングはホストによって終了されました";
 "Do you want to upgrade your account?" = "アカウントをアップグレードしますか?";
 "Do you want to change the host to %@?" = "ホストを %@ に変更しますか? ";
-"Do you want to remove %@?" = "%@ を削除しますか?";
 "No new attendees can join this meeting once locked." = "このミーティングをロックすると、新しい出席者は参加できなくなります。";
 "New attendees can join this meeting once unlocked." = "ロックが解除されると、新規出席者がこのミーティングに参加できるようになります。";
 "You have left this meeting." = "このミーティングから退出しました。";
@@ -551,9 +548,6 @@
 "LN_Clear_All_Drawings_34988" = "すべてのドローイングを消去";
 "LN_Clear_My_Drawings_34988" = "マイドローイングを消去";
 "LN_Clear_Viewers_Drawing_34988" = "ビューアーを消去：ドローイング";
-"Clear All Drawing" = "すべての描画を消去";
-"Clear My Drawing" = "自分の描画を消去";
-"Clear Other's Drawing" = "他のユーザーの描画を消去";
 "Eraser" = "消しゴム";
 "Choose Color" = "色の選択";
 "Color" = "色";
@@ -565,7 +559,7 @@
 "Screen saved." = "画面は保存されました。";
 "Show in Finder" = "Finder に表示";
 
-"Remote Control"= "リモート制御";
+"Remote Control" = "リモート制御";
 "Click to start the remote control of the shared screen" = "クリックして、共有画面のリモート制御を開始";
 "%@ is requesting remote control." = "%@ がリモート制御をリクエストしています。";
 "Request Remote Control" = "リモートコントロールを要求する";
@@ -1099,7 +1093,6 @@
 "Group Name:" = "グループ名";
 "Missed Call" = "不在着信";
 "Incoming Call - Declined" = "着信 - 辞退";
-"Join Audio Conference by Computer" = "コンピューターでオーディオに参加";
 "[You were mentioned] " = "[名前が挙がっています] ";
 "%@ left this group chat" = "%@ がこのグループ チャットを退出しました";
 "You've removed %@ from this group chat" = "%@ をこのグループ チャットから削除しました";
@@ -1949,7 +1942,7 @@
 "(Internal)" = "（内部）";
 
 "Call Failed" = "通話失敗";
-"End call" = "通話を終了";
+"End call" = "終了";
 
 "This meeting is for authorized attendees only" = "このミーティングの対象者は権限のある参加者のみです";
 "Click \"Sign In to Join\" to sign into Zoom with an email address authorized for joining this meeting" = "\"サインインして参加\"をクリックして、このミーティングへの参加の権限があるメールアドレスを使用して Zoom にサインインします。";
@@ -1959,7 +1952,6 @@
 
 "Assign a participant to type" = "参加者をタイプに割り当てる";
 "Use a 3rd party CC service" = "サードパーティの CC サービスを利用する";
-"Copy the URL to your clipboard" = "URL をクリップボードにコピー";
 "The URL has been copied to your clipboard" = "URL がクリップボードにコピーされました。";
 "LN_CC_Copy_To_3rd_Party_16893" = "このリンクをコピーして、サードパーティのCC製品に貼り付けます";
 
@@ -2139,7 +2131,7 @@
 
 "Multi-user chats" = "複数ユーザーのチャット";
 
-"LN_MUTE_NOTIFICATION_ON_CALL_19895"= "ミーティング中または社内通話中には通知を一時停止する";
+"LN_MUTE_NOTIFICATION_ON_CALL_19895" = "ミーティング中または社内通話中には通知を一時停止する";
 "LN_GROUP_NOTIFY_SETTING_ALL_19895" = "全部の種類のアクティビティ";
 "LN_GROUP_NOTIFY_SETTING_MENTION_ 19895" = "私またはメンバー全員をメンション";
 "LN_GROUP_NOTIFY_SETTING_NOTHING_19895" = "なし";
@@ -2194,17 +2186,19 @@
 "LN_Share_Desktop_17163" = "デスクトップを共有する";
 "LN_Stop_Desktop_17163" = "共有の停止";
 "LN_Local_17163" = "ローカル";
-"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "%@と%dの他の国々からダイヤルイン";  // ZOOM-16058
+"LN_Schedule_Selected_Morethan_Two_DialinCountry_16058" = "%@と他の%d国/地域からのダイヤルイン";  // ZOOM-16058
 "LN_Schedule_Selected_Two_DialinCountry_16058" = "%@と%@からダイヤルイン";  // ZOOM-16058
 "LN_Schedule_Selected_One_DialinCountry_16058" = "%@からダイヤルイン";  // ZOOM-16058
-"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "ダイヤルイン国を選択する";  // ZOOM-16058
-"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "選択された国ダイヤルイン番号は招待状メールにリストで掲載されます"; // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_16058" = "グローバルダイアルインの国/地域を選択";  // ZOOM-16058
+"LN_Schedule_EditCountries_Select_Dialincountry_Description_16058" = "選択した国/地域のダイヤルイン番号は招待メールに一覧表示されます"; // ZOOM-16058
 "LN_Schedule_EditCountries_Include_Tollfree_Number_16058" = "フリーダイヤル番号を含める"; // ZOOM-16058
-"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "選択済みの国："; // ZOOM-16058
-"LN_Schedule_EditCountries_Search_For_Country_16058" = "国を検索する";  // ZOOM-16058
-"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "国が選択されていません。保存の前に国を少なくとも1つ選択してください。"; // ZOOM-16058
+"LN_Schedule_EditCountries_Selected_Countries_Label_16058" = "選択した国/地域:"; // ZOOM-16058
+"LN_Schedule_EditCountries_Search_For_Country_16058" = "国/地域の検索";  // ZOOM-16058
+"LN_Schedule_EditCountries_No_Selected_Country_Warning_16058" = "国/地域を選択していません。保存する前に少なくとも国/地域を1つ選択してください。"; // ZOOM-16058
 "LN_DockMenu_LanguageItem_24821" = "言語を切り替える";
 "LN_Switch_Language_Alert_24821" = "Zoomで使用されるデフォルト言語を%@に変更するには、Zoomクライアントを再起動する必要があります。";
+"LN_Meeting_RemoteControl_Select_Which_Screen_To_Control_47315" = "制御する画面を選択する";//[ZOOM-47315]
+"LN_Meeting_FitStatus_Select_Screen_To_Control_47315" = "制御する画面を選択する...";//[ZOOM-47315]
 "LN_Switch_Language_Alert_System_24821" = "システム言語";
 "LN_DockMenu_System_LanguageItem_24821" = "システム言語を使用する";
 "LN_Switch_Language_Alert_Change_24821" = "%@に切り替える";
@@ -2279,7 +2273,7 @@
 "LN_Older_%@_File_Removed_33477" = "%@よりも古いファイルは消去されました";
 "LN_%ld_Years_33477" = "%ld年";
 "LN_1_Year_33477"   =   "1年";
-"LN_%ld_Months_33477"= "%ldか月";
+"LN_%ld_Months_33477" = "%ldか月";
 "LN_1_Month_33477"  =   "1か月";
 "LN_%ld_Days_33477"  = "%ld日";
 "LN_24_Hours_33477"  =  "24時間";
@@ -2332,6 +2326,7 @@
 "LN_Help_String_40539" = "ヘルプ";
 "LN_Participants_Raised_Hand_39858" = "参加者が手を挙げました";
 "LN_Raised_Hand_39858" = "が手を挙げました";
+"LN_Limit_Your_Screen_Share_To_%@_Frames_Per_Second_47718" = "画面共有を%@フレーム毎秒に制限する";//ZOOM-47718
 "LN_Toolbar_Open_Participants_Panel_39047" = "非表示中、参加者パネルを開く、%ld参加者";
 "LN_Toolbar_Close_Participants_Panel_39047" = "表示中、参加者パネルを閉じる、%ld参加者";
 "LN_Toolbar_Open_Manage_Participants_Panel_39047" = "非表示中、参加者を管理パネルを開く、%ld参加者";
@@ -2453,6 +2448,136 @@
 "LN_Remove_Confirm_44293" = "%@を削除しますか？参加者はこのミーティングに再参加できません。";
 "LN_Expel_By_Host_44293" = "ホストはあなたをこのミーティングから削除しました。";
 "LN_Join_Error_For_Expel_44293" = "お客様は以前ホストによって削除されているため、このミーティングに再参加できません。";
+"LN_Audio_Plugin_Restart_Audio_App" = "コンピューターオーディオを共有するには、Zoomオーディオデバイスをインストールしてください。\n\nインストール後にコンピューターの音声の共有を継続するには、メディアプレーヤーなどのオーディオ共有アプリケーションを再起動してください。\n\n";
+"LN_FREE_TRIAL_EXTEND_TITLE_47442" = "ギフトです\n\n";
+"LN_FREE_TRIAL_EXTEND_DETAIL_47442" = "最初のグループミーティングに対する40分間の時間制限を解除しました。";
+"LN_FREE_TRIAL_EXTEND_OK_47442" = "最高!";
+"LN_Email_Sign_In_Disabled_47270" = "電子メールのサインインが無効です。";
+"LN_TryAgain_in_%d_Min_46210" = "誤った試みが一定回数を超えて行われました。%d分経ってからもう一度試みてください。";
+"LN_TryAgain_in_1_Min_46210"  = "誤った試みが一定回数を超えて行われました。1分経ってからもう一度試みてください。";
+"LN_Meeting_Error_Expired_Message_41530" = "ログインセッションは期限切れです。続行するにはもう一度サインインしてください。";
+"LN_Meeting_Error_Expired_Title_41530" = "ミーティングを開始できません";
+"LN_Sign_In_41530" = "サインイン";
+"Type in closed caption here, press Enter key to broadcast" = "ここにクローズドキャプションを入力し、Enterキーを押して放送します";
+"LN_SipCall_AddCall_27110" = "呼び出しの追加";
+"LN_SipCall_Transfer_31431" = "転送";
+"LN_SipCall_Record_37978" = "録音";
+"LN_SipCall_Hold_26674" = "保留";
+"LN_SipCall_OnHold_26674" = "保留中";
+"LN_SipCall_Mute_27110" = "ミュート";
+"LN_SipCall_Unmute_27110" = "ミュート解除";
+"LN_SipCall_AddCall_Tilte_27110" = "呼び出しの追加";
+"LN_AddCall_Button_Title_27110" = "呼び出しの追加";
+"LN_Income_Call_Answer_End_27110" = "終了 &amp; 承認";
+"LN_Income_Call_Answer_Hold_26674" = "保留 &amp; 承認";
+"LN_Multiple_Call_Hold_TiTle_26674" = "保留中";
+"LN_Remind_Multiple_Call_On_Hold_26674" = "電話の呼び出しは保留中です";
+"LN_Remind_Signal_Call_On_Hold_26674" = "電話の呼び出し保留中";
+"LN_Phone_Setting_Number_31438" = "直通番号:";
+"LN_Company_Number_31438" = "企業番号:";
+"LN_Review_Setting_31438" = "設定を確認または変更するには、アクセスしてください";
+"LN_Access_Web_Page_31438" = " マイアカウント(オンライン)";
+"LN_Local_Dial_Area_31438" = "市内通話ダイヤル中:";
+"LN_Area_Code_Label_31438" = "エリアコード:";
+"LN_Local_Call_Prompt_31438" = "最初に国および地域のコードをダイヤルせずに市内通話をかける";
+"LN_Warm_Transfer_Button_31431" = "アシスト\n転送";
+"LN_Blind_Transfer_Button_31431" = "ブラインド転送";
+"LN_Transfer_Label_Title_31431" = "転送先";
+"LN_Tranfer_Change_Button_Title_31431" = "変更";
+"LN_Complete_Transfer_Button_31431" = "転送\n完了";
+"LN_On_Transferring_Txt_31431" = "転送中...";
+"LN_Transfer_Fail_Txt_31431" = "失敗";
+"LN_Sip_Dial_Hold_Status_31365" = "保留中";
+"LN_Setting_Phone_ToolBar_Item_31438" = "電話";
+"LN_Setting_Phone_DirectNum_Txt_31438" = "直通番号:";
+"LN_Setting_Phone_CompanyNum_Txt_31438" = "企業番号:";
+"LN_Setting_Phone_LocalDial_Txt_31438" = "市内通話呼び出し中:";
+"LN_Setting_Phone_AreaCode_Txt_31438" = "エリアコード:";
+"LN_Setting_Phone_LocalCall_Txt_31438" = "最初に国および地域のコードをダイヤルせずに市内通話をかける";
+"LN_Setting_Phone_Review_Profile_31438" = "設定を確認または変更するには、アクセスしてください";
+"LN_Setting_Phone_Account_Online_31438" = "マイアカウント(オンライン)";
+"LN_Setting_Phone_No_DirectNumber_31438" = "未設定";
+"LN_Phone_Network_Unavailible_27110" = "サーバーにアクセスできません";
+"LN_Phone_Register_Account_Error_27110" = "ご利用のアカウントは現在Zoom Cloud Phoneに対応していません。管理者に連絡してください";
+"LN_Phone_Fail_Service_Unvailable_27110" = "サービス利用不可";
+"LN_Phone_Call_Fail_486_Error_27110" = "呼び出し先は話し中です";
+"LN_Phone_Decline_603_Error_27110" = "呼び出し先が呼び出しを拒否しました";
+"LN_CallFrom_Button_Title_31443" = "呼び出し元: ";
+"LN_Segement_Voicemail_31454" = "音声メール";
+"LN_Vcard_Personal_Link_35371" = "パーソナルリンク";
+"LN_Record_CallBack_35371" = "折り返し";
+"LN_Phone_History_Record_35371" = "録音可能";
+"LN_Phone_History_VoiceMail_35371" = "音声メールを残した";
+"LN_Phone_History_RecordPrepare_35371" = "録音準備中...";
+"LN_Phone_History_Delete_Call_35371" = "この通話記録をアカウントから削除しますか?";
+"LN_Phone_History_Menu_Save_48678" = "フォルダーに保存";
+"LN_Phone_History_Menu_Clear_48678" = "削除";
+"LN_Phone_History_Menu_ClearAll_48678" = "すべての通話履歴を削除する";
+"LN_Sip_Call_InvalidNum_Action_Error_27110" = "無効な電話番号";
+"LN_Sip_Call_Server_Error_%ld_27110" = "サーバーエラー(コード: %ld)";
+"LN_Sip_Call_Recording_Download_Fail_48678" = "電話録音のダウンロードに失敗しました。もう一度試みてください";
+"LN_Sip_Call_Transfer_Success_31431" = "転送は無事終了しました";
+"LN_Sip_Call_Transfer_Fail_31431" = "転送失敗";
+"LN_Sip_Call_Start_Recording_Fail_31431" = "録音開始に失敗しました";
+"LN_Sip_Call_Stop_Recording_Fail_31431" = "録音停止に失敗しました";
+"LN_Sip_Call_Hold_Fail_27710" = "保留に失敗しました";
+"LN_Sip_Call_UnHold_Fail_27710" = "保留の解除に失敗しました";
+"LN_Sip_Callout_Fail_27710" = "呼び出し失敗";
+"LN_Phone_History_Recording_Available_48678" = "録音可能";
+"LN_phone_Search_No_Result_27110" = "結果なし";
+"LN_Phone_Call_History_Unknown_27110" = "不明";
+"LN_Vcard_Extension_35371" = "内線";
+"LN_Vcard_DirectNum_35371" = "直通番号";
+"LN_Phone_SDK_Unavailable_27710" = "Zoom Cloud Phoneサービスは現在利用できません";
+"LN_Phone_Audio_Device_Unavailble_27710" = "利用できるオーディオデバイスがありません";
+"LN_Phone_Voicemail_DeleteAll_Record_31454" = "すべての音声メールをアカウントから削除しますか?";
+"LN_Phone_Voicemail_DeleteSingle_Record_31454" = "この音声メールをアカウントから削除しますか?";
+"LN_Phone_Voicemail_Download_Fail_31454" = "音声メールのダウンロードに失敗しました。もう一度試みてください";
+"LN_Phone_Voicemail_SaveLocal_31454" = "フォルダーに保存";
+"LN_Phone_Voicemail_ClearAll_31454" = "すべての音声メールを削除する";
+"LN_Phone_Record_Preparing_37978" = "準備中...";
+"LN_Phone_Record_Stop_37978" = "録音停止";
+"LN_Phone_History_Delete_Call_Inform_48678" = "すべての通話記録がローカル、クラウドおよびすべてのデバイスから削除されます";
+"LN_Phone_History_Clean_All_Log_48678" = "この通話履歴をアカウントから削除しますか?";
+"LN_Phone_History_Clean_All_Inform_48678" = "すべての通話記録がローカル、クラウドおよびすべてのデバイスから削除されます。";
+"LN_Phone_Clean_CallHistory_Footer_35371" = "すべての通話履歴を削除する";
+"LN_Audiooption_CountryName_Country_49437" = "国/地域";
+"LN_Audiooption_CountryName_HongKong_49437" = "中国、香港";
+"LN_Audiooption_CountryName_TaiWan_49437" = "中国、台湾";
+"LN_Audiooption_CountryName_Macau_49437" = "中国、マカオ";
+"LN_Audio_Wizard_Test_Finish_47788" = "スピーカーとマイクは良好です";
+"LN_Join_With_Computer_Audio_47788" = "コンピューターオーディオで接続";
+"LN_Finish_47788" = "終了";
+"LN_New_Folder_Detail_5820" = "新しいフォルダーの名前：";
+"LN_New_Folder_Name_5820" = "名前のないフォルダー";
+"LN_New_Folder_Warning_5820" = "この名前はすでに使用されています。";
+"LN_New_Folder_Cancel_5820" = "キャンセル";
+"LN_New_Folder_Create_5820" = "作成";
+"LN_Phone_Error_String_NumbetNotAvailable_27710" = "呼び出し中の番号は利用できません";
+"LN_Group_MaxAllowed_Failed_%u_50730" = "このチャンネルの最大参加可能数は%u人です。";
+"LN_Phone_Add_Number_Button_48757" = "番号を追加";
+"LN_Phone_Create_New_Contact_48757" = "新しい連絡先を作成する";
+"LN_Phone_First_Name_48757" = "名";
+"LN_Phone_Last_Name_48757" = "姓";
+"LN_Phone_Number_title_48757" = "電話番号";
+"LN_Sip_Contact_Group_Name_48757" = "Zoom電話問い合わせ";
+"LN_Phone_History_Menu_Create_Contact_48757" = "新しい連絡先を作成する";
+"LN_Vcard_Phone_Num_52057" = "個人番号";
+"LN_Schedule_Limitation_BasicUser_Des_45329" = "基本プランでは、総参加者が3人以上のミーティングに40分の時間制限が適用されます。";
+"LN_Schedule_Limitation_BasicUser_UpgradeInfo_45329" = "グループミーティング時間無制限をご要望ですか? 連絡してください";
+"LN_Schedule_Limitation_FreeUser_UpgradeInfo_45329" = "アップグレードしてミーティング時間制限を解除しますか?";
+"LN_Schedule_Limitation_FreeUser_Link_45329" = "プロにアップグレード";
+"LN_Schedule_Limitation_NotShowMeAgain_45329" = "このメッセージを再び表示しない";
+"LN_Audio_Tsp_Both_45801" = "両方";
+"LN_Back_To_Revious_41410" = "前のウィンドウに戻る";
+"LN_Incorrect_Email_Password_41410" = "電子メールまたはパスワードが正しくありません";
+"LN_Signed_Out_Security_Policy_41410" = "％d分間非アクティブになったため、アカウントのセキュリティポリシー上の措置として、ログアウトしました。";
+"LN_Signed_Out_SSO_41410" = "Zoomアカウントからサインアウトしました。Zoomの使用を再開するにはもう一度サインインしてください。";
+"LN_Account_Locked_41410" = "ログイン試行に複数回失敗したため、ご利用のアカウントはロックされています。";
+"LN_43393_Enter new sharing key" = "新しい共有キーを入力する";
+"LN_43393_This step is required for users on a different network for additional security measures." = "この手順は、追加のセキュリティ対策のために別々のネットワーク上にいるユーザーに必要です。";
+"LN_LinkedIn_Loading_35020" = "読み込み中";
+"LN_Plist_LinkedIn_35020" = "LinkedIn";
 
 "LN_GDPR_40930_Continue" = "続ける";
 "LN_GDPR_40930_I Agree" = "同意する";
@@ -2474,4 +2599,14 @@
 "LN_To_32455" = "に";
 "LN_GDPR_40930_SIGNIN_TITLE" = "当社の規約と方針を更新する予定です";
 "LN_GDPR_40930_SIGNIN_DETAIL_%1$@_%2$@" = "Zoomでは、Zoomが収集するデータとその用途を透明化し、お客様ご自身によるご自身の個人データの管理をさらに強化するために、サービス規約と個人情報保護方針を更新させていただきます。Zoomの使用を続けることで、更新された%1$@と%2$@に同意したことになります。";
+
+"LN_Vcrad_Internal_Num_54073" = "内線番号";
+
+"LN_Alert_Auth_Title_57569" = "重要";
+"LN_Alert_Auth_Go_Settings_57569" = "設定へ移動";
+"LN_Alert_Auth_Detail_Camera&Mic_57569" = "システム環境設定のセキュリティとプライバシーでZoomのカメラとマイクへのアクセスを有効にしてください。";
+"LN_Alert_Auth_Detail_Camera_57569" = "システム環境設定のセキュリティとプライバシーでZoomのカメラへのアクセスを有効にします";
+"LN_Alert_Auth_Detail_Mic_57569" = "システム環境設定のセキュリティとプライバシーでZoomのマイクへのアクセスを有効にします";
+"LN_Toolbar_Video_Warning_Tooltip_57569" = "システム環境設定のセキュリティとプライバシーでZoomのカメラへのアクセスを有効にします";
+"LN_Toolbar_Audio_Warning_Tooltip_57569" = "システム環境設定のセキュリティとプライバシーでZoomのマイクへのアクセスを有効にします";
 

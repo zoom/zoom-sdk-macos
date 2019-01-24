@@ -3,12 +3,11 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 8/23/16.
-//  Copyright © 2016 TOTTI. All rights reserved.
+//  Copyright © 2016 zoom.us. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "ZoomSDKErrors.h"
-#import "ZoomSDKBuildType.h"
 
 @interface ZoomSDKDirectShareHandler: NSObject
 /**
@@ -33,11 +32,7 @@
  * @param status: direct share status
  * @param handler: a ZoomSDKDirectShareHandler object only work when status is DirectShareStatus_NeedMeetingIDOrSharingKey or DirectShareStatus_WrongMeetingIDOrSharingKey
  */
-#ifdef BUILD_FOR_ELECTRON
--(void)onDirectShareStatusReceived:(NSNumber*)status DirectShareReceived:(ZoomSDKDirectShareHandler*)handler;
-#else
 -(void)onDirectShareStatusReceived:(DirectShareStatus)status DirectShareReceived:(ZoomSDKDirectShareHandler*)handler;
-#endif
 @end
 
 @interface ZoomSDKDirectShareHelper: NSObject

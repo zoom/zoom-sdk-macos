@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ZoomSDKErrors.h"
-#import "ZoomSDKBuildType.h"
 
 @interface ZoomSDKAccountInfo : NSObject
 {
@@ -63,10 +62,11 @@
 /**
  * @brief Designated login Zoom by sso token.
  * @param ssoToken: user sso login token.
+ * @param rememberMe: set YES if you want to login automatically next time or NO for not.
  * @return ZoomSDKError the function call synchronously and a callback onZoomSDKLogin in delegate asynchronously.
  */
-- (ZoomSDKError)loginSSO:(NSString*)ssoToken;
-
+- (ZoomSDKError)loginSSO:(NSString*)ssoToken NS_DEPRECATED_MAC(1.0, 4.3);
+- (ZoomSDKError)loginSSO:(NSString*)ssoToken RememberMe:(BOOL)rememberMe NS_AVAILABLE_MAC(4.3);
 /**
  * @brief Designated Zoom user logout.
  * @return ZoomSDKError the function call synchronously and a callback onZoomSDKLogout in delegate asynchronously.
@@ -86,15 +86,7 @@
 - (NSString*)getSDKIdentity;
 @end
 
-/**
- * @brief ZoomSDKAuthDelegate
- * An Auth Service will issue the following value when the authorization state changes:
- * @note
- * - ZoomSDKAuthError_Success: Zoom SDK authorizs successfully.
- * - ZoomSDKAuthError_KeyOrSecretWrong: the client key or secret for SDK Auth is wrong.
- * - ZoomSDKAuthError_AccountNotSupport: this client account cannot support Zoom SDK.
- * - ZoomSDKAuthError_AccountNotEnableSDK: this client account does not enable Zoom SDK.
- */
+
 @protocol ZoomSDKAuthDelegate <NSObject>
 
 @required
@@ -104,11 +96,7 @@
  * @param returnValue tell user when the auth state changed.
  *
  */
-#ifdef BUILD_FOR_ELECTRON
-- (void)onZoomSDKAuthReturn:(NSNumber*)returnValue;
-#else
 - (void)onZoomSDKAuthReturn:(ZoomSDKAuthError)returnValue;
-#endif
 
 @optional
 /**
@@ -116,11 +104,8 @@
  * @param loginStatus tell user when the login status.
  *
  */
-#ifdef BUILD_FOR_ELECTRON
-- (void)onZoomSDKLogin:(NSNumber*)loginStatus failReason:(NSString*)reason;
-#else
 - (void)onZoomSDKLogin:(ZoomSDKLoginStatus)loginStatus failReason:(NSString*)reason;
-#endif
+
 /**
  * @brief Designated for Zoom SDK Logout response.
  */
