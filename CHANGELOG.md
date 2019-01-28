@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 2019-01-23
+## 2019-01-23 @ [v4.3.53914.0121](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.53914.0121)
 
 Added
 *	A new refactorized demo project that provides clear instructions on how to implement major features.
@@ -26,7 +26,7 @@ Deprecated
 
 
 
-## 2018-10-29
+## 2018-10-29 @ [v4.1.34180.1026](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.34180.1026)
 
 * Support schedule meeting feature
 * Support custom live stream strings
@@ -36,7 +36,7 @@ Deprecated
 * Support setting audio/video feature
 * Bug fixes
 
-## 2018-9-11
+## 2018-9-11 @ [v4.1.32152.0910](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.32152.0910)
 
 * Support Direct share / Outlook plugin integration / Audio Share
 
@@ -50,7 +50,7 @@ Deprecated
 
 * Bugs fixed
 
-## 2018-8-24
+## 2018-8-24 @ [v4.1.30730.0824](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.30730.0824)
 
 * This release has patch fixes for the last release v4.1.30458.0820.
 * Critical bug fixed - A user can’t select share source by mouse after click share button on main toolbar (with Zoom meeting UI)
@@ -66,7 +66,7 @@ default shows the origin zoom invite window, if you don't want the original acti
 @property(nonatomic, assign)BOOL disableFreeUserOriginAction;
 set YES before start meeting if u don't want popup zoom free user UI and you will receive above callback.
 
-## 2018-8-20
+## 2018-8-20 @ [v4.1.30458.0820](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.30458.0820)
 
 * Custom Meeting UI (support basic meeting function, except for Webinar and Breakout Session)
 
@@ -79,7 +79,7 @@ set YES before start meeting if u don't want popup zoom free user UI and you wil
 
 * Bug fixes
 
-## 2018-07-26
+## 2018-07-26 @ [v4.1.28807.0726](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.28807.0726)
 
 The start meeting logic for API users has changed. Please read below before upgrading to this version.
 
@@ -121,7 +121,7 @@ Login Start Meeting: [meetingService startMeeting...]
 
 5. some bugs fix
 
-## 2018-05-29
+## 2018-05-29 @ [v4.1.25472.0529](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.25472.0529)
 
 ### Added
 
@@ -161,7 +161,7 @@ add new interface for statistic setting
 
 Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
-## 2017-11-02
+## 2017-11-02 @ [v4.1.12430.1102](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.12430.1102)
 
 ### Added
 
@@ -185,7 +185,7 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
 10. bug fix
 
-## 2017-06-19
+## 2017-06-19 @ [v4.0.22051.0122](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.0.22051.0122)
 
 ### Added
 
@@ -250,7 +250,7 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
 11. Bugs fix.
 
-## 2017-01-23
+## 2017-01-23 @ [v3.6.11922.1111](https://github.com/zoom/zoom-sdk-macos/releases/tag/v3.6.11922.1111)
 
 ### Added
 
