@@ -17,7 +17,7 @@ Zoom SDK makes it easy to integrate Zoom with your MacOS applications, and boost
 ## Getting Started
 
 The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-* For detailed instructions, please refer to our documentation website: [https://marketplace.zoom.us/docs/sdk/macos](https://marketplace.zoom.us/docs/sdk/macos);
+* For detailed instructions, please refer to our documentation website: [https://marketplace.zoom.us/docs/sdk/native-sdks/macos](https://marketplace.zoom.us/docs/sdk/native-sdks/macos);
 * If you need support or assistance, please visit our [Zoom Developer Community Forum](https://devforum.zoom.us/);
 
 ### Prerequisites
@@ -50,7 +50,7 @@ Once you have the files ready, please following the instructions to build and ru
 
 ## Documentation
 
-Please visit [[https://marketplace.zoom.us/docs/sdk/macos](https://marketplace.zoom.us/docs/sdk/macos)] for details of each features and functions.
+Please visit [[https://marketplace.zoom.us/docs/sdk/native-sdks/macos](https://marketplace.zoom.us/docs/sdk/native-sdks/macos)] for details of each features and functions.
 
 ## Versioning
 
