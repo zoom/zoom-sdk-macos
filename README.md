@@ -1,5 +1,7 @@
 # Zoom MacOS Software Development Kit (SDK)
 
+>**Currently our Mac OS SDK does not support Xcode 10. Please do not compile and build your application with Xcode 10.**
+
 >**Please be aware that some of our interfaces are deprecated in the latest release, please check out our [CHANGELOG](https://github.com/zoom/zoom-sdk-macos/blob/master/CHANGELOG.md) for more detail**
 
 > Our brand new [Zoom Developer Community Forum](https://devforum.zoom.us/) is now online!!! Check it out! We are here to help! :D
