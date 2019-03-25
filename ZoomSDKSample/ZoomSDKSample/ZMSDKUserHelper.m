@@ -30,6 +30,11 @@
 
 -(void)cleanUp
 {
+    if(_meetingService)
+    {
+        _meetingActionController = [_meetingService getMeetingActionController];
+        _meetingActionController.delegate = nil;
+    }
 }
 - (void)dealloc
 {

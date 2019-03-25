@@ -33,6 +33,22 @@
 {
     [self stopTimer];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    if(_speakerDeviceHelper)
+    {
+        _speakerDeviceHelper.delegate = nil;
+    }
+    if(_microphoneDeviceHelper)
+    {
+        _microphoneDeviceHelper.delegate = nil;
+    }
+    if(_videoDeviceHelper)
+    {
+        _videoDeviceHelper.delegate = nil;
+    }
+    if(_audioSetting)
+    {
+        _audioSetting.delegate = nil;
+    }
 }
 - (void)dealloc
 {

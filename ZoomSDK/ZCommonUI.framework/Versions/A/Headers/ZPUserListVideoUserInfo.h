@@ -66,6 +66,14 @@ enum _userAudioType
     BOOL                                _isVideoCanMutebyHost;
     BOOL                                _isVideoCanUnMutebyHost;
     BOOL                                _isSupportSwitchCamera;
+    unsigned long long                  _raiseHandTimeStamp;
+    BOOL                                _isClientSupportClosedCaption;
+    BOOL                                _canEditClosedCaption;
+    BOOL                                _isClientSupportCohost;
+    BOOL                                _isInSilentMode;
+    BOOL                                _isClientSupportSilentMode;
+    BOOL                                _isGuest;
+
 }
 
 @property (nonatomic, readwrite, assign)int                                     userID;
@@ -92,6 +100,13 @@ enum _userAudioType
 @property (nonatomic, readwrite, assign)BOOL                                    isVideoCanMutebyHost;
 @property (nonatomic, readwrite, assign)BOOL                                    isVideoCanUnMutebyHost;
 @property (nonatomic, readwrite, assign)BOOL                                    isSupportSwitchCamera;
+@property (nonatomic, readwrite, assign)unsigned long long                      raiseHandTimeStamp;
+@property (nonatomic, readwrite, assign)BOOL                                    isClientSupportClosedCaption;
+@property (nonatomic, readwrite, assign)BOOL                                    canEditClosedCaption;
+@property (nonatomic, readwrite, assign)BOOL                                    isClientSupportCohost;
+@property (nonatomic, readwrite, assign)BOOL                                    isInSilentMode;
+@property (nonatomic, readwrite, assign)BOOL                                    isClientSupportSilentMode;
+@property (nonatomic, readwrite, assign)BOOL                                    isGuest;
 
 @end
 

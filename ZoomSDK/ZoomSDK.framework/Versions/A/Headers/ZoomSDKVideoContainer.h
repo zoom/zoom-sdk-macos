@@ -2,12 +2,15 @@
 //  ZoomSDKVideoContainer.h
 //  ZoomSDK
 //
-//  Created by Totti on 25/12/2017.
-//  Copyright © 2017 zoom.us. All rights reserved.
+//  Created by TOTTI on 25/12/2017.
+//  Copyright © 2017 Zoom Video Communications,Inc. All rights reserved.
 //  [Used for Customized UI]
 #import <Foundation/Foundation.h>
 #import "ZoomSDKErrors.h"
 
+ /**   
+  @note This class is available only for custom UI.
+  */ 
 @class  ZoomSDKVideoContainer;
 @interface ZoomSDKVideoElement : NSObject
 {
@@ -21,38 +24,44 @@
 @property(nonatomic, assign)unsigned int userid;
 @property(nonatomic, assign)NSView*  videoView;
 /**
- * @brief create video element object for each user
- * @param rect: video view frame contained in this objcet u want to set
+ * @brief Create object of video elements for each user.
+ * @param rect Frame of video view.
  */
 - (id)initWithFrame:(NSRect)rect;
 /**
- * @brief show video or not,
- * @param show: set YES to show video, set NO to hide the view
+ * @brief Set whether to show video.
+ * @param show YES means displaying video, otherwise not.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)showVideo:(BOOL)show;
 /**
- * @brief get view element type enum: preview/active/normal
+ * @brief Get the type of the video render element: preview/active/normal.
+ * @return The type of the video render element.
  */
 - (VideoRenderElementType)getElementType;
 /**
- * @brief get view data type enum: avatar/video
+ * @brief Get data type of video render: avatar/video.
+ * @return The data type of the video render.
  */
 - (VideoRenderDataType)getDataType;
 /**
- * @brief get NSView object in this element
+ * @brief Get NSView object in the element.  
+ * @return The point of the video view. 
  */
 - (NSView*)getVideoView;
 /**
- * @brief resize video view depends on your requirement
- * @param frame: video view frame contained in this objcet u want to show
+ * @brief Resize the video view according to your requirements.
+ * @param frame Custom frame of video view.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)resize:(NSRect)frame;
 @end
 
 @interface ZoomSDKPreViewVideoElement : ZoomSDKVideoElement
 /**
- * @brief show preview video or not,
- * @param start: set YES to start preview, set NO to stop the preview
+ * @brief Set whether to preview video.
+ * @param start YES means starting preview, otherwise not.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 -(ZoomSDKError)startPreview:(BOOL)start;
 @end
@@ -60,32 +69,34 @@
 
 @interface ZoomSDKActiveVideoElement : ZoomSDKVideoElement
 /**
- * @brief show active video or not,
- * @param start: set YES to start active video view, set NO to stop.
+ * @brief Set whether to display active video.
+ * @param start YES means starting active video, otherwise not.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 -(ZoomSDKError)startActiveView:(BOOL)start;
 @end
 
 @interface ZoomSDKNormalVideoElement : ZoomSDKVideoElement
 /**
- * @brief subscribe this video or not
- * @param subscribe: set YES to show avatar or video view, set NO to show a black view.
+ * @brief Set whether to display user's video. 
+ * @param subscribe YES means to display user's avatar or video, otherwise display a black background.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 -(ZoomSDKError)subscribeVideo:(BOOL)subscribe;
 @end
 
 @protocol ZoomSDKVideoContainerDelegate <NSObject>
 /**
- * @brief callback if any user id changed in this video container
- * @param element: element of the changed user.
- * @param userid: userid of the changed user.
+ * @brief Callback of user ID changes in the video container.
+ * @param element Element of the new user.
+ * @param userid The ID of changed user.
  */
 -(void)onRenderUserChanged:(ZoomSDKVideoElement*)element User:(unsigned int)userid;
 
 /**
- * @brief callback if any data of user changed in this video container
- * @param element: element of the changed user.
- * @param type: current data type of this changed user.
+ * @brief Callback of user data changes in the video container.
+ * @param element Element of the new user.
+ * @param type Data type of the current user.
  */
 -(void)onRenderDataTypeChanged:(ZoomSDKVideoElement*)element DataType:(VideoRenderDataType)type;
 @end
@@ -97,17 +108,20 @@
 }
 @property(nonatomic,assign) id<ZoomSDKVideoContainerDelegate> delegate;
 /**
- * @brief create a video element in this video container
- * @param element: element u want to create.
+ * @brief Create a video element in the video container.
+ * @param element An object of ZoomSDKVideoElement*. 
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 -(ZoomSDKError)createVideoElement:(ZoomSDKVideoElement**)element;
 /**
- * @brief destroy a existed video element in this video container
- * @param element: element u want to destroy.
+ * @brief Destroy an existed video element in the video container.
+ * @param element An object of ZoomSDKVideoElement*.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 -(ZoomSDKError)cleanVideoElement:(ZoomSDKVideoElement*)element;
 /**
- * @brief return a array contains ZoomSDKVideoElement objects.
+ * @brief Get the list of video element.
+ * @return If the function succeeds, it will return an array containing ZoomSDKVideoElement object.
  */
 -(NSArray*)getVideoElementList;
 @end

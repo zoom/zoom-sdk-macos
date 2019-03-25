@@ -12,6 +12,8 @@
 @optional
 - (void)buttonDidClickedWithAlertType:(long)inAlertType buttonTag:(long)inButtonTag;
 
+- (void)alertCancelWithAlertType:(long)inAlertType;
+
 @end
 
 @interface ZPAlert : NSWindow<NSWindowDelegate>

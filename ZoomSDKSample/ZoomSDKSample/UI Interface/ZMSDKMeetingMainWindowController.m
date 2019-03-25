@@ -131,9 +131,12 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     }
     if(_shareSelectWindowCtr)
     {
+        [_shareSelectWindowCtr.window close];
         [_shareSelectWindowCtr release];
         _shareSelectWindowCtr = nil;
     }
+    [self resetInfo];
+    [self.window close];
     [self uninitNotification];
 }
 - (void)dealloc
@@ -341,13 +344,11 @@ const int DEFAULT_Thumbnail_View_Width = 320;
 }
 - (void)onShareButtonClicked:(id)sender
 {
-    if(!_shareSelectWindowCtr)
+    if(_shareSelectWindowCtr)
     {
-        _shareSelectWindowCtr = [[ZMSDKShareSelectWindow alloc] initWithWindowNibName:@"ZMSDKShareSelectWindow"];
-        [_shareSelectWindowCtr setMeetingMainWindowController:self];
+        [_shareSelectWindowCtr.window makeKeyAndOrderFront:nil];
+        [_shareSelectWindowCtr.window center];
     }
-    [_shareSelectWindowCtr.window makeKeyAndOrderFront:nil];
-    [_shareSelectWindowCtr.window center];
 }
 - (void)onAudioButtonClicked:(id)sender
 {
@@ -418,6 +419,12 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     theButton = [self.window.contentView viewWithTag:BUTTON_TAG_ThUMBNAIL_VIEW];
     if(theButton)
         [theButton setHidden:NO];
+    
+    if(!_shareSelectWindowCtr)
+    {
+        _shareSelectWindowCtr = [[ZMSDKShareSelectWindow alloc] init];
+        [_shareSelectWindowCtr setMeetingMainWindowController:self];
+    }
 }
 - (void)showSelf
 {

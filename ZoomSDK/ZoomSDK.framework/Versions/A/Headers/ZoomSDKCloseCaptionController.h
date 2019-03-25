@@ -1,8 +1,8 @@
 //  ZoomSDKCloseCaptionController.h
 //  ZoomSDK
 //
-//  Created by derain on 2018/12/27.
-//  Copyright © 2018年 zoom.us. All rights reserved.
+//  Created by Derain on 2018/12/27.
+//  Copyright © 2018 Zoom Video Communications,Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,23 +10,24 @@
 
 @protocol ZoomSDKCloseCaptionControllerDelegate <NSObject>
 /**
- * @brief Designated for Zoom Meeting notify specific the user's own get close caption privilege.
+ * @brief Callback of getting the privilege of close caption. 
  */
 - (void)onGetCCPrvilege;
 
 /**
- * @brief Designated for Zoom Meeting notify specific the user's own lost close caption privilege.
+ * @brief Callback of losing privilege of close caption. 
  */
 - (void)onLostCCPrvilege;
 
 /**
- * @brief Designated for Zoom Meeting notify specific the user's own receive close caption message.
- * @param inString, the string message that received.
+ * @brief Notify the current user that close caption is received.
+ * @param inString The string of the close caption.
  */
 - (void)onReceiveCCMessageWithString:(NSString*)inString;
 
 /**
- * @brief Designated for Zoom Meeting notify specific the user's own receive close captio realtime message, realtime means receive the string that user is typing.
+ * @brief Notify the current user of realtime message.
+ * @param realtimeMessage The message that is being input.
  */
 - (void)onReceiveCCRealtimeMessage:(NSString *)realtimeMessage;
 @end
@@ -39,79 +40,79 @@
 @property(nonatomic, assign)id<ZoomSDKCloseCaptionControllerDelegate> delegate;
 
 /**
- * @brief This method is used to get whether this meeting has enabled close caption.
- * @return BOOL value to tell client whether this meeting has enabled close caption.
+ * @brief Query if Close Caption is supported in the current meeting.
+ * @return YES means supported, otherwise not.
  */
 - (BOOL)isMeetingSupportCloseCaption;
 
 /**
- * @brief This method is used to get whether user can assign others to send close caption.
- * @return BOOL value to tell client whether this user self can assign others to send close caption.
+ * @brief Query if it is able to assign others to send Close Caption.
+ * @return YES means able, otherwise not.
  */
 - (BOOL)canAssignOthersToSendCC;
 
 /**
- * @brief This method is used to get whether the user can be assigned to send close caption.
- * @param userID, the id of the user that you want to assigne to send close caption
- * @return BOOL value to tell client whether the user can be assigned to send close caption.
+ * @brief Query if the specified user can be assigned to send close caption.
+ * @param userID The ID of user who you want to assign to send close caption
+ * @return YES means able, otherwise not.
  */
 - (BOOL)canBeAssignedToSendCC:(unsigned int)userID;
 
 /**
- * @brief This method is used to get whether the user self can send close caption.
- * @return BOOL value to tell client whether the user self can send close caption..
+ * @brief Query if the current user can send Close Caption.
+ * @return YES means able, otherwise not.
  */
 - (BOOL)canSendClosedCaption;
 
 /**
- * @brief This method is used to get whether the user can save close caption.
- * @return BOOL value to tell client whether the user can save close caption.
+ * @brief Query if user can save Close Caption.
+ * @return YES means able, otherwise not.
  */
 - (BOOL)isCanSaveClosedCaption;
 
 /**
- * @brief This method is used to get whether the third party close caption server is available.
- * @return BOOL value to tell client whether the third party close caption server is available.
+ * @brief Query if the third party close caption server is available.
+ * @return YES means available, otherwise not.
  */
 - (BOOL)is3rdPartCCServerAvailable;
 
 /**
- * @brief This method is used for host to withdraw CC priviledge from user with userID 'userID'.
- * @param userId is the user ID of the user you want to withdraw CC priviledge.
- * @return A ZoomSDKError, ZoomSDKError_Success means success, other will tell failed reason.
+ * @brief This method is used for host to withdraw CC privilege from another user.
+ * @param userId The ID of user that you want to withdraw CC privilege.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)withdrawCCPriviledgeForUser:(unsigned int)userID;
 
 /**
- * @brief This method is used for host to assign CC priviledge to user with userID 'userID'.
- * @param userId is the user ID of the user you want to assign CC priviledge to.
- * @return A ZoomSDKError, ZoomSDKError_Success means success, other will tell failed reason.
+ * @brief This method is used for host to assign CC privilege to another user.
+ * @param userId The ID of user whom you want to assign CC privilege to.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)assignCCPriviledgeTo:(unsigned int)userID;
 
 /**
- * @brief This method is used for the CC priviledger to send CC message.
- * @param ccString is the CC message you want to send.
- * @return A ZoomSDKError, ZoomSDKError_Success means success, other will tell failed reason.
+ * @brief Send CC message.
+ * @param ccString The content of CC.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)sendClosedCaptionMessage:(NSString*)ccString;
 
 /**
- * @brief This method is used for the CC priviledger to save CC history.
- * @return A ZoomSDKError, ZoomSDKError_Success means success, other will tell failed reason.
+ * @brief Save CC.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)saveCCHistory;
 
 /**
- * @brief This method is used for the CC priviledger to get CC history save path.
- * @return A NSString for the CC history save path.
+ * @brief Get the path where the CC is saved.
+ * @return If the function succeeds, it will return a NSString. Otherwise failed.
  */
 - (NSString*)getClosedCaptionHistorySavedPath;
 
 /**
- * @brief This method is used for the CC priviledger to get CC third party url.
- * @param thirdPartyURL, you can get the third party url when pass any NSString variable.
- * @return A ZoomSDKError, ZoomSDKError_Success means success, other will tell failed reason.
+ * @brief Get the third party URL which is used to input CC.
+ * @param thirdPartyURL The URL of the third party service.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)getClosedCaptionUrlFor3rdParty:(NSString**)thirdPartyURL;
 

@@ -180,6 +180,9 @@ message MeetingProto {
   optional string linkedinSalesNavUrl        = 99; // Linkedin Sales Navigator Wedgit URL
   repeated TSPAccountProto tspAccount        = 100; // tsp account info
   optional string selectedTspAccount          = 101; // tsp1 tsp2
+  optional int32 usedUnlimitedMeetingCountForFreeUser = 102; // the used unlimited meeting count for free user to upgrade
+  optional string freeUserUpgradeUrl         = 103; // https://zoom.us/buy
+  optional int32 billedType					 = 104; // billed type 0 for billed annually 1 for billed monthy
 }
 
 message CalloutSIPTrunk {
@@ -304,6 +307,7 @@ message UserProfile {
   optional int32 ewsAccessTokenRefreshInterval = 80;
   optional ZREncryptionInfo zrEncryption = 81; // ZOOM-46999 - Encryption information for zr and zrc communication
   optional string zrSecretKey = 82; // zoom room secret key for multi-share
+  optional string publicEventListUrl = 83; //public event list url
 }
 
 message ZREncryptionInfo {
@@ -327,7 +331,8 @@ message CheckInInfo {
 	optional bool  status  = 1;		// enabled or disabled this function		
   optional int32 timeForPriorCheckIn = 2;    // allow participants to check in {} min prior to meeting start time in seconds
   optional int32 timeForNoCheckInRelease = 3; // release room after {} min of no check in in seconds
-  optional bool  enableNotification = 4; // enabled or disabled check-in notifications on the TV screen
+  optional bool  enableNotification      = 4; // enabled or disabled check-in notifications on the TV screen
+  optional int32 countForReleaseRecurringMeetings = 5; // remove recurring meeting after {} instances
 }
 message BillingStatus{
 	required int32 status = 1; // 0: paid, 1 in freeTrial, 2: Join Only
@@ -394,6 +399,7 @@ message SipPhoneIntegration {
   optional string errorString =               9;
   optional int32 protocol =                   10;//0: UDP, 1: TCP, 2: TLS, default is 0 UDP
   optional int32 registrationExpiry =         11;//Registration Expiry in minutes
+  optional string voiceMail =                 12;
 }
 
 message TrackingField {
@@ -644,6 +650,11 @@ message DeviceInfo {
     optional string serial_number       = 19;
     optional int32  is_iot_device       = 20;  // 0: normal device; 1: IoT device
     optional string app_display_version = 21; //4.1.1 (12345.0525)
+    optional string os_build_number    = 22; //17D47
+}
+
+message MDMDeviceInfo {
+    optional string device_id   = 1;  //mdm device id
 }
 
 message VirtualBackground {
@@ -710,6 +721,9 @@ message MeetingStatusListProto {
     ZONE_FAILOVER = 1; // zone failover event
     MMR_FAILOVER  = 2; // mmr failover event
 	SUBZONE       = 3; // sub zone join/leave event
+	NO_LICENCE    = 4; //onprem licence expired 
+    NO_CC         = 5;    //zc cannot connect CC service
+
   }
   repeated MeetingStatusProto status = 1; // meeting list to sync status
   optional string zc                 = 2; // zc address
@@ -881,6 +895,9 @@ message ZoomPresence {
 	AUDIO_ECHO_TEST             = 29; // value: 0:AEC_NOT_DETERMINE, 1:AEC_LEVEL_BAD,2:AEC_LEVEL_POOR,3:AEC_LEVEL_FAIR,4:AEC_LEVEL_GOOD,5:AEC_LEVEL_EXCELLENT
     MICROPHONE_AUTHORIZATION    = 30; //value: 0 normal, 1 failed
     CAMERA_AUTHORIZATION        = 31; //value: 0 normal, 1 failed
+	DISPLAY_UNPLUGGED			= 32; //value: 0 normal, 1 no tv plugged
+    ZRC_MICROPHONE_ACCESS_STATUS = 33; // 0 Unknown, 1 Not determined yet, 2 Agreed, 3 Declined, ZOOM-56888
+    DEVICE_ASAM_STATUS           = 34; // 0 - in asam, 1 - out of asam
   }
   enum AlertValueType {
     INT_TYPE                 = 1;  
@@ -941,6 +958,7 @@ message Request {
   optional RemoteControlResponseProto rcResponse        = 17; // response for remote control request
   optional CloudPBXCallLog cloudPBXCallLog              = 18; // Cloud PBX call log
   repeated string optionKeys        					= 19; // For API /profile/get, key to retrive the options value from Web, empty for old client
+  optional MDMDeviceInfo mdmDeviceInfo                  = 20; // mdm device info
 }                                                       
                                                         
 message SSODomain {                                     
@@ -965,7 +983,8 @@ message ServerDomain {
   optional string logDomain       = 13; // log.zoom.us, mem log, crash log
   optional string meetingDomain   = 14; // www3.zoom.us
   optional string monitorDomain   = 15; // logfile.zoom.us, monitor user behavior data
-  optional string contactDomain   = 16;	// Private Address book for PBX, contact server domain
+  optional string contactDomain   = 16; // Private Address book for PBX, contact server domain
+  optional string pbxWebDomain    = 17; // pbx web server domain
 }                                                       
 
 //{"notifyZrcDisconnect":true,"notifyDeviceDisconnect":true, "notifyZrHeartbeat":true,"notifyZrcNotCharging":true, "notifyAudioIssue":true ???}
@@ -1044,10 +1063,15 @@ message Response {
   optional int64 supportFeatureOptions					= 51; // Current version Web supported features
   optional string callinBlockNumbers		            = 52; //callin block numbers ZOOM-30911
   optional int32 timeToLive								= 53; // zr pairing code expired time, unit seconds
-  repeated KeyValOption keyValOptions 					= 54; // key: zr_calendars, zr_locations
+  repeated KeyValOption keyValOptions 					= 54; // key: zr_calendars, zr_locations, calendar_parse_json_template
   optional string entCalloutBlockNumbers		        = 55; //enterprice accout's callout block numbers
   optional string rcMessageAttachmentUri 				= 56; // message attachment uri in RC
   optional PBXSyncResponse pbxSyncResponse 				= 57; // return pbx sync record
+  optional Marketplace  marketplace              =58;  //The marketplace related information
+}
+
+message Marketplace {
+	optional string homeUrl = 1;
 }
 
 message SubscribeData {
@@ -1206,6 +1230,7 @@ message RecordingProto {
   optional string video_poster	= 7; // width:           160px, height: 90px  s3://zoomdev-log/cmr/<meeting-number>/<meeting-id>-<meeting_topic>/xxx.jpg
   optional int32  video_width	= 8; // video           size width in px
   optional int32  video_height	= 9; // video           size height in px
+  repeated string zoomfs_file_id = 10; // ZOOM-62569 file id generated by zoom fileserver, keting 2018-11-28
 }                                                       
                                                         
 message RecordMeetingListProto {                        
@@ -1335,6 +1360,7 @@ message AvailableDialinCountry {
 	repeated string countries   		   	   = 2; // all countries
 	repeated string selectedCountries   	   = 3; // selected countries
 	optional bool includeTollfree   		   = 4; // is include tollfree number
+	optional bool enableShowIncludeTollfree    = 5; // enable/disable flag for "Include Toll-free number" option
 }
 message CloudPBX {
   optional string rcSettingsLink =            1; // click to login RC setting page

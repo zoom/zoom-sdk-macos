@@ -3,22 +3,35 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 10/07/2018.
-//  Copyright © 2018 zoom.us. All rights reserved.
+//  Copyright © 2018 Zoom Video Communications,Inc. All rights reserved.
 //
 
 #import "ZoomSDKErrors.h"
-
+/**
+ * @brief ZOOM SDK live stream item.
+ */
 @interface ZoomSDKLiveStreamItem : NSObject
 {
     NSString* _streamURL;
     NSString* _streamURLDesc;
 }
+/**
+ * @brief Get live stream URL.
+ * @return The live stream URL.							   
+ */
 -(NSString*)getLiveStreamURL;
+/**
+ * @brief Get description of live stream URL.
+ * @return The descriptions of live stream URL.
+ */
 -(NSString*)getLiveStreamURLDescription;
 @end
 
 @protocol ZoomSDKLiveStreamHelperDelegate <NSObject>
-
+/**
+ * @brief Callback of that the current live streaming status changes.
+ * @param Status The live streaming status.
+ */
 -(void)onLiveStreamStatusChange:(LiveStreamStatus)status;
 
 @end
@@ -29,48 +42,45 @@
 }
 @property(nonatomic, assign)id<ZoomSDKLiveStreamHelperDelegate> delegate;
 /**
- * @brief This method is used to check if user has priviledge to use live stream.
- * @return ZoomSDKError enum, ZoomSDKError_Success means function call successful, others will return failed reason.
+ * @brief Query if it is able for the user to enable live stream.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 
 - (ZoomSDKError)canStartLiveStream;
 
 /**
- * @brief This method is used to get supported live stream item user can start.
- * @return A NSArray contains ZoomSDKLiveStreamItem object, or return nil when failed.
+ * @brief Get the items of live stream supported by the SDK.
+ * @return If the function succeeds, it will return the items, otherwise failed.
  */
 
 -(NSArray*)getSupportLiveStreamItem;
 
 /**
- * @brief This method is used to start a live stream
- * @param item, the specific ZoomSDKLiveStreamItem object u can get from the above interface
- * @return ZoomSDKError enum, ZoomSDKError_Success means function call successful, others will return failed reason.
+ * @brief Start a live stream.
+ * @param item The item of live stream supported by the SDK.
+ * @return If the function succeeds, it will return the ZoomSDKError_Success, otherwise failed. 
  */
-
 -(ZoomSDKError)startLiveStream:(ZoomSDKLiveStreamItem*)item;
 
 /**
- * @brief This method is used to start a live stream use the URL user defined.
- * @param streamURL, the specific stream url of live stream
- * @param StreamKey, the specific stream key of live stream
- * @param broadcastURL, the specific broadcast url of live stream
- * @return ZoomSDKError enum, ZoomSDKError_Success means function call successful, others will return failed reason.
+ * @brief Start a live stream with the URL customized by user.
+ * @param streamURL The URL of customized live stream.
+ * @param StreamKey The key of customized stream stream.
+ * @param broadcastURL Everyone who uses this link can watch the live broadcast. 
+ * @return If the function succeeds, it will return the ZoomSDKError_Success, otherwise failed.
  */
 -(ZoomSDKError)startLiveStreamByURL:(NSString*)streamURL StreamKey:(NSString*)key BroadcastURL:(NSString*)broadcastURL;
 
 /**
- * @brief This method is used to stop a live stream.
- * @return ZoomSDKError enum, ZoomSDKError_Success means function call successful, others will return failed reason.
+ * @brief Stop a live stream.
+ * @return If the function succeeds, it will return the ZoomSDKError_Success, otherwise failed.
  */
-
 -(ZoomSDKError)stopLiveStream;
 
 /**
- * @brief This method is used to get current live stream status.
- * @return LiveStreamStatus enum,  LiveStreamStatus_InProgress means successful, others will tell the failed reason.
+ * @brief Get the status of current live stream.
+ * @return If the function succeeds, it will return the LiveStreamStatus_InProgress, otherwise failed.
  */
-
 -(LiveStreamStatus)getLiveStreamStatus;
 
 @end

@@ -40,6 +40,8 @@ static ZMSDKDelegateMgr* delegateMgr = nil;
         [_authDelegateArray release];
         _authDelegateArray = nil;
     }
+    _authService = [[ZoomSDK sharedSDK] getAuthService];
+    _authService.delegate = nil;
 }
 - (void)dealloc
 {

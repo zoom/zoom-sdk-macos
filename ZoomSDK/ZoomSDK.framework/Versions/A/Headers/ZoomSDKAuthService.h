@@ -3,7 +3,7 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 7/18/16.
-//  Copyright (c) 2016 Zoom Video Communications, Inc. All rights reserved.
+//  Copyright (c) 2016 Zoom Video Communications,Inc. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
@@ -14,17 +14,23 @@
     ZoomSDKUserType _userType;
     NSString*   _displayName;
 }
+/**
+ * @brief Get user's screen name.
+ * @return If the function succeeds, it will return user's screen name. 
+ */
 - (NSString*) getDisplayName;
+/**
+ * @brief Get the type of user.
+ * @return If the function succeeds, it will return the type of the user,
+ */
 - (ZoomSDKUserType) getSDKUserType;
 @end
 
 @protocol ZoomSDKAuthDelegate;
 /**
- * @brief This class provides support for authorizing Zoom SDK.
- * The Authorization Code Grant requires HTTP request to allow the user to authenticate with Zoom SDK and Authorize your
- * application. Upon successful authorization, the ZoomSDKAuthDelegate will give ZoomSDKAuthError_Success to user by method onZoomSDKAuthReturn.
- * @note Before using Zoom SDK, the client should authorize the Zoom SDK at first. or the function in Zoom
- *   SDK cannot work correctly.
+ * @brief Callback event of ZOOM SDK authorization. 
+ * Authorize Zoom SDK and the custom application with the key/secret before usage. Once authorize successfully, ZoomSDKAuthDelegate will return ZoomSDKAuthError_Success via onZoomSDKAuthReturn.
+ * @note You should authorize ZOOM SDK firstly before using it, or no, it may not work.
  */
 @interface ZoomSDKAuthService : NSObject
 {
@@ -37,51 +43,52 @@
 
 
 /**
- * @brief Designated authorizing Zoom SDK.
- * @param key: your client key, also known as API key.
- * @param secret: your client secret. DO NOT publish this secret.
+ * @brief Authenticate SDK.
+ * @param key The key of your client, also known as API key. 
+ * @param secret The secret of your client. DO NOT publish it.
  * @note If the client key or secret is empty, user will get error:ZoomSDKError_InvalidPrameter directly.
- * @return ZoomSDKError the function call synchronously and a callback in delegate onZoomSDKAuthReturn asynchronously.
+ * @return If the function succeeds, it will return ZoomSDKError_success, meanwhile it will return SDK auth when calling synchronously onZoomSDKAuthReturn. 
  */
 - (ZoomSDKError)sdkAuth:(NSString*)key appSecret:(NSString*)secret;
 
 /**
- * @return A BOOL indicating whether the zoom sdk auth may be valid.
+ * @brief Determine if SDK is authorized.
+ * @return YES means that it is authorized, otherwise failed.
  */
 - (BOOL)isAuthorized;
 
 /**
- * @brief Designated login Zoom by email.
- * @param userName: your user name for login.
- * @param password: your password related to your user name.
- * @param rememberMe: set YES if you want to login automatically next time or NO for not.
- * @return ZoomSDKError the function call synchronously and a callback onZoomSDKLogin in delegate asynchronously.
+ * @brief Login ZOOM with email.
+ * @param userName The email for login.
+ * @param password The password for login.
+ * @param rememberMe Set it to YES so that user can login automatically next time, otherwise not.
+ * @return If the function succeeds, it will return ZoomSDKError_success, meanwhile it will return SDK authentication when calling asynchronously onZoomSDKAuthReturn. 
  */
 - (ZoomSDKError)login:(NSString*)userName Password:(NSString*)password RememberMe:(BOOL)rememberMe;
 
 /**
- * @brief Designated login Zoom by sso token.
- * @param ssoToken: user sso login token.
- * @param rememberMe: set YES if you want to login automatically next time or NO for not.
- * @return ZoomSDKError the function call synchronously and a callback onZoomSDKLogin in delegate asynchronously.
+ * @brief Login ZOOM with SSO token.
+ * @param ssoToken User's token information.
+ * @param rememberMe Set it to YES so that user can login automatically next time, otherwise not.
+ * @return If the function succeeds, it will return ZoomSDKError_success, meanwhile it will call asynchronously onZoomSDKLogin.
  */
 - (ZoomSDKError)loginSSO:(NSString*)ssoToken NS_DEPRECATED_MAC(1.0, 4.3);
 - (ZoomSDKError)loginSSO:(NSString*)ssoToken RememberMe:(BOOL)rememberMe NS_AVAILABLE_MAC(4.3);
 /**
- * @brief Designated Zoom user logout.
- * @return ZoomSDKError the function call synchronously and a callback onZoomSDKLogout in delegate asynchronously.
+ * @brief Logout ZOOM.
+ * @return If the function succeeds, it will return ZoomSDKError_success, meanwhile it will call asynchronously onZoomSDKLogout.
  */
 - (ZoomSDKError)logout;
 
 /**
- * @brief Designated get Zoom login account info.
- * @return ZoomSDKAccountInfo object the function call successfully synchronously.
+ * @brief Get user's account information. 
+ * @return When user logged in, it will return ZoomSDKAccountInfo object if the function calls successfully. Otherwise returns nil.
  */
 - (ZoomSDKAccountInfo*)getAccountInfo;
 
 /**
- * @brief Designated get SDK Identity.
- * @return SDK indentity.
+ * @brief Get SDK identity.
+ * @return The SDK identity.
  */
 - (NSString*)getSDKIdentity;
 @end
@@ -91,28 +98,28 @@
 
 @required
 /**
- * @brief Designated for Zoom SDK Auth response.
- *
- * @param returnValue tell user when the auth state changed.
+ * @brief Specify to get the response of ZOOM SDK authorization. 
+ * @param returnValue Notify user that the authentication status changes.
  *
  */
 - (void)onZoomSDKAuthReturn:(ZoomSDKAuthError)returnValue;
 
 @optional
 /**
- * @brief Designated for Zoom SDK Login response.
- * @param loginStatus tell user when the login status.
+ * @brief Specify to get the response of ZOOM SDK Login. 
+ * @param loginStatus Notify user of login status.
  *
  */
 - (void)onZoomSDKLogin:(ZoomSDKLoginStatus)loginStatus failReason:(NSString*)reason;
 
 /**
- * @brief Designated for Zoom SDK Logout response.
+ * @brief Specify to get the response of ZOOM SDK logout.
  */
 - (void)onZoomSDKLogout;
 
 /**
- * @brief Designated for Zoom SDK identity expired, logined user will be forced logout.
+ * @brief Specify to get the response if ZOOM identity is expired.
+ * @note User will be forced to logout once ZOOM SDK identity expired.
  */
 - (void)onZoomIdentityExpired;
 

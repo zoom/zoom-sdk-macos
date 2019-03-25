@@ -38,6 +38,12 @@
 #import "ZMAXHelper.h"//[Zoom-21232]
 #import "ZMCMenu.h"
 #import "ZMPopupTipWindow.h"
-#import "ZMWindowWidges.h"
 #import "ZMSegmentedControl.h"
-#import "ZMPopController.h"
+#import "ZMStackView.h"
+#import "ZMDrawingView.h"
+#import "ZMWindowWidgets.h"
+#import "ZMBaseWindow.h"
+#import "ZMBlockAlert.h"
+#import "ZMPopoverController.h"
+#import "ZMGiftPanel.h"//ZOOM-47446
+#import "NSDate+Extension.h"

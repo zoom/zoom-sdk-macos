@@ -6,52 +6,40 @@
 "Click to invite participants" = "Click to invite participants";
 "The invitation URL has been copied to the clipboard" = "The invitation URL has been copied to the clipboard";
 
-"%@ invited you to join a meeting." = "%@ invited you to join a meeting.";
-"You invited %@ to join a meeting." = "You invited %@ to join a meeting.";
-
-
 "is calling..." = "is calling...";
+"LN_is_Calling_%@_%d_54635" = "is calling you from %@ (%d)";
+
 "are calling..." = "are calling...";
+"LN_are_Calling_%@_%d_54635" = "are calling you from %@ (%d)";
+
 "are calling you. You are already in this meeting." = "are calling you. You are already in this meeting.";
 "is calling you. You are already in this meeting." = "is calling you. You are already in this meeting.";
-"are calling you. You are already in another meeting, do you want to leave and join this meeting?" = "are calling you. You are already in another meeting, do you want to leave and join this meeting?";
-"is calling you. You are already in another meeting, do you want to leave and join this meeting?" = "is calling you. You are already in another meeting, do you want to leave and join this meeting?";
 
-"came online" = "came online";
-"went offline" = "went offline";
+"are calling you. You are already in another meeting, do you want to leave and join this meeting?" = "are calling you. You are already in another meeting, do you want to leave and join this meeting?";
+"LN_are_Calling_WhenInAnotherMeeting_%@_%d_54635" = "are inviting you to a meeting from %@ (%d). Do you want to leave your current meeting and join this one?";
+
+"is calling you. You are already in another meeting, do you want to leave and join this meeting?" = "is calling you. You are already in another meeting, do you want to leave and join this meeting?";
+"LN_is_Calling_WhenInAnotherMeeting_%@_%d_54635" = "is inviting you to a meeting from %@ (%d). Do you want to leave your current meeting and join this one?";
 
 "Start with video" = "Start with video";
-"Start without video" = "Start without video";
 "Back to Meeting" = "Back to Meeting";
-"Computer audio and video start automatically" = "Computer audio and video start automatically";
 
 "Invite to Meeting" = "Invite to Meeting";
-"Start Video Meeting" = "Start Video Meeting";
 "Video Meeting" = "Video Meeting";
-"View Profile" = "View Profile";
 "Join Meeting..." = "Join Meeting...";
 
 "Log Out" = "Log Out";
-"Log In" = "Log In";
 
-"Facebook IM" = "Facebook IM";
-"Google IM" = "Google IM";
 "IM" = "IM";
 "Chats" = "Chats";
-"Tell Others About Zoom" = "Tell Others About Zoom";
 "Home" = "Home";
 "Meetings" = "Meetings";
 
-"Login..." = "Login...";
 "Connecting..." = "Connecting...";
-"Authenticating..." = "Authenticating...";
-"Negotiating..." = "Negotiating...";
 
 "Cannot get your favorite information, Please check your network connection." = "Cannot get your favorite information, Please check your network connection.";
-"Login to Facebook was cancelled." = "Login to Facebook was cancelled.";
 
 "Sign Up" = "Sign Up";
-"Forgot your password?" = "Forgot your password?";
 
 "General" = "General";
 "Feedback" = "Feedback";
@@ -61,38 +49,29 @@
 "Statistics" = "Statistics";
 "The free disk space is less than 1G. Select another folder or delete some files." = "The free disk space is less than 1G. Select another folder or delete some files.";
 "%.2f GB remaining" = "%.2f GB remaining";
-"Work Email" = "Work Email";
 "Gmail Account" = "Gmail Account";
 "Facebook Account" = "Facebook Account";
 "Single Sign On" = "Single Sign On";
 "Upgrade to Pro" = "Upgrade to Pro";
-"Change Subscription Plan" = "Change Subscription Plan";
-"Capture 720p by default" = "Capture 720p by default";
 
 "1. Go to %@\r\n2. Enter ID: %@" = "1. Go to %@\r\n2. Enter ID: %@";
 "The invitation URL has been copied to Clipboard." = "The invitation URL has been copied to Clipboard.";
 "The invitation Email has been copied to Clipboard." = "The invitation Email has been copied to Clipboard.";
 
-"Version:%@" = "Version:%@";
+"Version:%@" = "Version: %@";
 "Send Feedback" = "Send Feedback";
 "Sending..." = "Sending...";
 "Failed to send your feedback. Please try again later." = "Failed to send your feedback. Please try again later.";
-"Thanks for your feedback!\r\n\r\nYour feedback is very important to us, and we're working hard to improve our service." = "Thanks for your feedback!\r\n\r\nYour feedback is very important to us, and we're working hard to improve our service.";
 
 "Please join Zoom meeting in progress" = "Please join Zoom meeting in progress";
 "Please join my meeting.\r\n%@" = "Please join my meeting.\r\n%@";
 
-"Participant ID: %d   Meeting ID: %@" = "Participant ID: %d   Meeting ID: %@";
-"Participant ID: %d   %d-Minutes Meeting ID: %@" = "Participant ID: %d   %d-Minutes Meeting ID: %@";
 "-Minutes" = "-Minutes";
 "Zoom Meeting ID: %@" = "Zoom Meeting ID: %@";
 "Panelist(%d)  Attendee(%d)" = "Panelist(%d)  Attendee(%d)";
 "Waiting for %s to join..." = "Waiting for %s to join...";
-"Please use the Invite button to invite more people" = "Please use the Invite button to invite more people";
-"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation." = "Your invitees do not need to have Zoom pre-installed to accept your meeting invitation.";
 "URL: " = "URL: ";
 "Invite people to join meeting" = "Invite people to join meeting";
-"Zoom Number: %@" = "Zoom Number: %@";
 "Copy" = "Copy";
 "Meeting ID" = "Meeting ID";
 "Spotlight Video" = "Spotlight Video";
@@ -107,11 +86,8 @@
 //join meeting dialog
 "Join Meeting" = "Join Meeting";
 "Join a Meeting" = "Join a Meeting";
-"Please enter your meeting ID and your name" = "Please enter your meeting ID and your name";
 "Your Name" = "Your Name";
-"Invalid video meeting ID!" = "Invalid video meeting ID!";
 "Please input your screen name here" = "Please input your screen name here";
-"Please enter your name." = "Please enter your name.";
 
 //leave meeting dialog
 "I'd like to give feedback to Zoom" =  "I'd like to give feedback to Zoom";
@@ -119,7 +95,6 @@
 "Do you want to leave this meeting?" = "Do you want to leave this meeting?";
 "End Meeting" = "End Meeting";
 "If you want to keep this meeting open, please assign another Host before you click Leave Meeting." = "If you want to keep this meeting open, please assign another Host before you click Leave Meeting.";
-"\nClick Cancel if you want to keep this meeting open." = "\nClick Cancel if you want to keep this meeting open.";
 "Please enter your feedback here" = "Please enter your feedback here";
 "End Meeting for All" = "End Meeting for All";
 "Join webinar as a panelist" = "Join webinar as a panelist";
@@ -131,28 +106,19 @@
 "Please enter the meeting password" = "Please enter the meeting password";
 "Password" = "Password";
 "Password error!" = "Password error!";
-"Meeting Detail" = "Meeting Detail";
-"While waiting, please check your audio and video settings" = "While waiting, please check your audio and video settings";
 "Topic" = "Topic";
 "Time" = "Time";
 "Date" = "Date";
-"Verifying password..." = "Verifying password...";
-"This is a recurring meeting" = "This is a recurring meeting";
-"Waiting for Host %@" = "Waiting for Host %@";
 
 //
-"Stop Screen Share" = "Stop Screen Share";
 "Stop Share" = "Stop Share";
 "LN_Share_21795" = "Share";
 "Share Screen" = "Share Screen";
 "Share screen" = "Share screen";
 "Share" = "Share";
-"Share a New Window" = "Share a New Window";
 "Participants" = "Participants";
 "Manage Participants" = "Manage Participants";
 "Chat" = "Chat";
-"Chat with All" = "Chat with All";
-"People (%d)" = "People (%d)";
 "End" = "End";
 "Settings" = "Settings";
 "Hide Video Panel" = "Hide Video Panel";
@@ -170,11 +136,8 @@
 "More" = "More";
 "Meeting Information" = "Meeting Information";
 "Meeting" = "Meeting";
-"Put Attendee On Hold" = "Put Attendee On Hold";
-"Stop attendee on hold" = "Stop attendee on hold";
 "You are on hold" = "You are on hold";
 "On Hold" = "On Hold";
-"Stop on-hold" = "Stop on-hold";
 "Raise Hand" = "Raise Hand";
 "Lower Hand" = "Lower Hand";
 "Lower All Hands" = "Lower All Hands";
@@ -189,8 +152,6 @@
 "Success" = "Success";
 "Disconnection Call" = "Disconnection Call";
 "Claim Host" = "Claim Host";
-"Attendee List" = "Attendee List";
-"Allow attendees to view the participant counts" = "Allow attendees to view the participant counts";
 
 
 "Mute All" = "Mute All";
@@ -206,19 +167,14 @@
 "muted" = "muted";
 "Mute Participants On Entry" = "Mute Participants On Entry";
 "Play Enter/Exit Chime" = "Play Enter/Exit Chime";
-"You are muted now. Press Shift+Command+A to unmute your microphone if you want to speak." = "You are muted now. Press Shift+Command+A to unmute your microphone if you want to speak.";
 "You are using the computer audio" = "You are using the computer audio";
 "You are now using your phone for audio in this meeting" = "You are now using your phone for audio in this meeting";
-"Join Teleconference" = "Join Teleconference";
-"Current and new participants will be muted" = "Current and new participants will be muted";
 "All participants are unmuted" = "All participants are unmuted";
 "Allow participants to unmute themselves" = "Allow participants to unmute themselves";
 "You are muted by host" = "You are muted by host";
 "You are unmuted by host" = "You are unmuted by host";
 "The host has muted all participants" = "The host has muted all participants";
 "The host has unmuted all participants" = "The host has unmuted all participants";
-"You are using computer mic & speaker now" = "You are using computer mic & speaker now";
-"You are using phone now" = "You are using phone now";
 "Mute My Audio" = "Mute My Audio";
 "Unmute My Audio" = "Unmute My Audio";
 "Mute My Phone" = "Mute My Phone";
@@ -226,14 +182,10 @@
 "Join Audio Conference via Mic & Speaker" = "Join Audio Conference via Mic & Speaker";
 "Leave Audio Conference" = "Leave Audio Conference";
 "Disconnected" = "Disconnected";
-"Press Command-Shift-A to mute or unmute your audio" = "Press Command-Shift-A to mute or unmute your audio";
 "Audio Options" = "Audio Options";
 "Audio Conference" = "Audio Conference";
 "Audio Settings" = "Audio Settings";
 "Video Settings" = "Video Settings";
-"Use Computer Mic & Speaker" = "Use Computer Mic & Speaker";
-"Use Telephone" = "Use Telephone";
-"You are not in the audio conference yet." = "You are not in the audio conference yet.";
 "Computer Audio Connected" = "Computer Audio Connected";
 "Phone Connected" = "Phone Connected";
 "You may have problem hearing the audio from other participants.\nConsider switching to phone." = "You may have problem hearing the audio from other participants.\nConsider switching to phone.";
@@ -250,16 +202,13 @@
 "on your phone." = "on your phone.";
 "Dial" = "Dial";
 "Toll free" = "Toll Free";
-"(US or Canda only)" = "(US or Canda only)";
 "The number you want us to call you" = "The number you want us to call you";
 "Remember the number on this computer" = "Remember the number on this computer";
 "Failed to disconnect call" = "Failed to disconnect call";
 "Your computer audio is disconnected as we detected an echo." = "Your computer audio is disconnected as we detected an echo.";
 "Follow the instructions below to join audio." = "Follow the instructions below to join audio.";
-"To hear others, please join audio" = "To hear others, please join audio";
 "Phone Call" = "Phone Call";
 "Your audio is connected using Dial In." = "Your audio is connected using Dial In.";
-"Your audio is connected using Call Me." = "Your audio is connected using Call Me.";
 
 //close audio without join audio dialog
 "No Audio" = "No Audio";
@@ -270,7 +219,6 @@
 
 "Start Video" = "Start Video";
 "Stop Video" = "Stop Video";
-"Click to check your video conference options" = "Click to check your video conference options";
 "Host has stopped your video" = "Host has stopped your video";
 "Show Video" = "Show Video";
 "Hide Video" = "Hide Video";
@@ -292,10 +240,8 @@
 "Forbid Record" = "Forbid Record";
 "Make Host" = "Make Host";
 "Remove" = "Remove";
-"Select Window" = "Select Window";
 "Pause" = "Pause";
 "Annotate" = "Annotate";
-"Share Control to" = "Share Control to";
 "Cancel Remote Control" = "Cancel Remote Control";
 "Enable Attendee Annotation" = "Enable Attendee Annotation";
 "Disable Attendee Annotation" = "Disable Attendee Annotation";
@@ -309,11 +255,7 @@
 
 "Double-click to enter full screen mode." = "Double-click to enter full screen mode.";
 "Press ESC or double-click to exit full screen mode" = "Press ESC or double-click to exit full screen mode";
-"Login as Host" = "Login as Host";
 
-"to %@ (privately)" = "to %@ (privately)";
-"from %@ (privately)" = "from %@ (privately)";
-"from %@ to All" = "from %@ to All";
 "Host" = "Host";
 "me" = "me";
 "participant ID" = "participant ID";
@@ -347,24 +289,19 @@
 "ID" = "ID";
 "Your screen sharing is paused" = "Your screen sharing is paused";
 "You are viewing %@'s screen" = "You are viewing %@'s screen";
-"You are viewing %@' screen" = "You are viewing %@' screen";
 "You are controlling %@'s screen" = "You are controlling %@'s screen";
 "'s screen" = "'s screen";
 "Sharing is paused. Bring your shared window to the front" = "Sharing is paused. Bring your shared window to the front";
-"Select a Window to Share" = "Select a Window to Share";
 "Click here to change to window view" = "Click here to change to window view";
 "Click here to change to 1:1 view" = "Click here to change to 1:1 view";
 "Fit to Window" = "Fit to Window";
 "Original Size" = "Original Size";
 "View Mode" = "View Mode";
 "Give Mouse/Keyboard Control to" = "Give Mouse/Keyboard Control to";
-"Choose what you want to share" = "Choose what you want to share";
 "Click to Share Screen" = "Click to Share Screen";
 "Start Share" = "Start Share";
 "This will stop other\'s screen sharing. Do you want to continue?" = "This will stop other\'s screen sharing. Do you want to continue?";
 "Select a window or an application that you want to share" = "Select a window or an application that you want to share";
-"Share Screen with Computer Sound" = "Share Screen with Computer Sound";
-"Share Screen Only" = "Share Screen Only";
 "Screen sharing has failed to start. Please try again later.\n\nError Code: %d" = "Screen sharing has failed to start. Please try again later.\n\nError Code: %d";
 " has started screen sharing.\n\nDouble-click to enter full screen mode." = " has started screen sharing.\n\nDouble-click to enter full screen mode.";
 " has started screen sharing" = " has started screen sharing";
@@ -376,10 +313,6 @@
 "Your are viewing a portion of the shared content; To see the fullimage, select \"Fit to Window\" in the menu." = "Your are viewing a portion of the shared content; To see the fullimage, select \"Fit to Window\" in the menu.";
 "The shared content is fit to your screen. To see the original size, click \"Original size\" in the menu." = "The shared content is fit to your screen. To see the original size, click \"Original size\" in the menu.";
 
-"Share computer audio during screen sharing" = "Share computer audio during screen sharing";
-"Disable computer audio during screen sharing" = "Disable computer audio during screen sharing";
-"Your microphone is muted so others can hear remote audio during screen sharing." = "Your microphone is muted so others can hear remote audio during screen sharing.";
-"Your microphone is muted so you can hear remote audio during screen sharing." = "Your microphone is muted so you can hear remote audio during screen sharing.";
 "Your microphone is unmuted. Screen sharing with remote audio has stopped." = "Your microphone is unmuted. Screen sharing with remote audio has stopped.";
 "You cannot unmute yourself because the host muted you." = "You cannot unmute yourself because the host muted you.";
 "Your speaker is muted for audio sharing. It will recover when audio sharing ends." = "Your speaker is muted for audio sharing. It will recover when audio sharing ends.";
@@ -408,23 +341,14 @@
 "Zoom can't detect the sound from your Microphone %@." = "Zoom can't detect the sound from your Microphone %@.";
 "Your default speaker has changed to %@ and will now be used." = "Your default speaker has changed to %@ and will now be used.";
 
-"Your meeting is scheduled." = "Your meeting is scheduled.";
 "Your recurring meetings are scheduled." = "Your recurring meetings are scheduled.";
-"Your meeting is updated." = "Your meeting is updated.";
 "Your recurring meetings are updated." = "Your recurring meetings are updated.";
-"Please join my scheduled meeting.\r\n%@\r\n\r\n" = "Please join my scheduled meeting.\r\n%@\r\n\r\n";
-"Meeting password: %@\r\n" = "Meeting password: %@\r\n";
-"Meeting time: %@ at %@\r\n" = "Meeting time: %@ at %@\r\n";
-"Meeting time: Recurring\r\n" = "Meeting time: Recurring\r\n";
 "Meeting ID: %@\r\n" = "Meeting ID: %@\r\n";
 "Can't schedule meeting. Please check your network connection and try again." = "Can't schedule meeting. Please check your network connection and try again.";
-"Can't schedule the meeting. Error code : %d" = "Can't schedule the meeting. Error code : %d";
 "Zoom meeting invitation - %@" = "Zoom meeting invitation - %@";
 "Update Meeting Info error for meeting ID: %@, error code: %d." = "Update Meeting Info error for meeting ID: %@, error code: %d.";
 
-"This meeting is scheduled for %@" = "This meeting is scheduled for %@";
 "This Meeting ID is taken. Please choose a different ID." = "This Meeting ID is taken. Please choose a different ID.";
-"Sorry, your request is rejected." = "Sorry, your request is rejected.";
 "Failed to apply Personal Meeting ID. Unknown error." = "Failed to apply Personal Meeting ID. Unknown error.";
 "Failed to apply personal meeting ID. Error code: %d." = "Failed to apply personal meeting ID. Error code: %d.";
 "Can not edit meeting ID while meeting is in progress." = "Can not edit meeting ID while meeting is in progress.";
@@ -434,11 +358,6 @@
 "'s Zoom Meeting" = "'s Zoom Meeting";
 "' Zoom Meeting" = "' Zoom Meeting";
 
-"%@ wants to be able to chat with you. Okay?" = "%@ wants to be able to chat with you. Okay?";
-"Your invitation has been sent successfully." = "Your invitation has been sent successfully.";
-"Your invitation failed to sent." = "Your invitation failed to sent.";
-"%@ will be removed from your IM list." = "%@ will be removed from your IM list.";
-"%@ will be removed from your favorite list." = "%@ will be removed from your favorite list.";
 "Test Speaker" = "Test Speaker";
 "Test Mic" = "Test Mic";
 "Stop" = "Stop";
@@ -447,14 +366,11 @@
 "%@ network bandwidth is low." = "%@ network bandwidth is low.";
 
 "Your free meeting will end in 10 minutes, please upgrade to a paid account at $14.99 per month for unlimited minutes." = "Your free meeting will end in 10 minutes, please upgrade to a paid account at $14.99 per month for unlimited minutes.";
-"Meeting Alert" = "Meeting Alert";
 "This free meeting will end in 10 minutes. The meeting host needs to upgrade to a paid account at $14.99 per month for unlimited minutes." = "This free meeting will end in 10 minutes. The meeting host needs to upgrade to a paid account at $14.99 per month for unlimited minutes.";
 "This meeting will end in %d minutes because the host has not joined" = "This meeting will end in %d minutes because the host has not joined";
 "This free HD meeting has ended. Thank you for choosing Zoom!" = "This free HD meeting has ended. Thank you for choosing Zoom!";
 "The meeting has ended because the host doesn't show up." = "The meeting has ended because the host doesn't show up.";
-"You are removed from this meeting." = "You are removed from this meeting.";
 "This meeting has been ended by host" = "This meeting has been ended by host";
-"Do you want to upgrade your account?" = "Do you want to upgrade your account?";
 "Do you want to change the host to %@?" = "Do you want to change the host to %@?";
 "No new attendees can join this meeting once locked." = "No new attendees can join this meeting once locked.";
 "New attendees can join this meeting once unlocked." = "New attendees can join this meeting once unlocked.";
@@ -475,7 +391,6 @@
 "The recorded file will be converted to mp4 when the meeting ends" = "The recorded file will be converted to mp4 when the meeting ends";
 "You will get an email notification when the cloud recording is ready." = "You will get an email notification when the cloud recording is ready.";
 "Please request record permission from the meeting host." = "Please request record permission from the meeting host.";
-"No speaker is detected for this recording that is in-progress. Please check your speaker settings." = "No speaker is detected for this recording that is in-progress. Please check your speaker settings.";
 "Record to the Cloud" = "Record to the Cloud";
 "Record on this Computer" = "Record on this Computer";
 "Connecting to cloud server..." = "Connecting to cloud server...";
@@ -483,40 +398,22 @@
 "Recording" = "Recording";
 
 //transcode
-"Zoom - Converting the meeting recording" = "Zoom - Converting the meeting recording";
-"You have a recording that needs to be converted before viewing" = "You have a recording that needs to be converted before viewing";
-"You may convert your recording later by double clicking .zoom file located in the recording folder." = "You may convert your recording later by double clicking .zoom file located in the recording folder.";
-"Save my recordings at:" = "Save my recordings at:";
 "Choose a new location..." = "Choose a new location...";
 "Save" = "Save";
-"Transcode will be stopped. Would you like to continue?" = "Transcode will be stopped. Would you like to continue?";
 "Quit" = "Quit";
 "Choose" = "Choose";
 
 //
 "No Upcoming Meetings" = "No Upcoming Meetings";
-"The scheduled meetings will be listed here." = "The scheduled meetings will be listed here.";
-"No Recorded Files" = "No Recorded Files";
-"The recorded files will be listed here." = "The recorded files will be listed here.";
-"No online buddies" = "No online buddies";
-"No Favorite Contacts" = "No Favorite Contacts";
-"Free Account" = "Free Account";
-"Pro Account" = "Pro Account";
-"Corp Account" = "Corp Account";
 "My Profile" = "My Profile";
-"Change My Picture" = "Change My Picture";
 
 //warning
 "All attendees will be muted to hear the remote computer audio." = "All attendees will be muted to hear the remote computer audio.";
 "This action will allow all attendees to unmute themselves. Do you want to continue?" = "This action will allow all attendees to unmute themselves. Do you want to continue?";
-"Your account has been upgraded successfully. Your meeting has no time limitation any more." = "Your account has been upgraded successfully. Your meeting has no time limitation any more.";
-"The meeting host has upgraded to Pro account. This meeting has no time limitation anymore." = "The meeting host has upgraded to Pro account. This meeting has no time limitation anymore.";
 "Host disabled attendee screen sharing." = "Host disabled attendee screen sharing.";
 "Only host can screen share once locked." = "Only host can screen share once locked.";
 "Attendee can now screen share once unlocked" = "Attendee can now screen share once unlocked";
 "You cannot start screen share while the other participant is sharing." = "You cannot start screen share while the other participant is sharing.";
-"Meeting host %@ is not in the meeting, please login as %@ to claim the host role." = "Meeting host %@ is not in the meeting, please login as %@ to claim the host role.";
-"Meeting host is not in the meeting, please login as host to claim the host role" = "Meeting host is not in the meeting, please login as host to claim the host role";
 "Enter new name here:" = "Enter new name here:";
 "Finish registration to join the webinar." = "Finish registration to join the webinar.";
 "Join Webinar" = "Join Webinar";
@@ -530,12 +427,10 @@
 "Highlighter" = "Highlighter";
 "Spotlight" = "Spotlight";
 "Arrow" = "Arrow";
-"Erase All" = "Erase All";
 "LN_Clear_All_Drawings_34988" = "Clear All Drawings";
 "LN_Clear_My_Drawings_34988" = "Clear My Drawings";
 "LN_Clear_Viewers_Drawing_34988" = "Clear Viewers' Drawings";
 "Eraser" = "Eraser";
-"Choose Color" = "Choose Color";
 "Color" = "Color";
 "Draw" = "Draw";
 "Undo" = "Undo";
@@ -547,15 +442,9 @@
 
 "Remote Control" = "Remote Control";
 "Click to start the remote control of the shared screen" = "Click to start the remote control of the shared screen";
-"%@ is requesting remote control." = "%@ is requesting remote control.";
 "Request Remote Control" = "Request Remote Control";
 "Give Up Remote Control" = "Give Up Remote Control";
-"Exit fullscreen will stop your remote control. Do you want to continue?" = "Exit fullscreen will stop your remote control. Do you want to continue?";
-"Forbid remote control" = "Forbid remote control";
-"Allow remote control" = "Allow remote control";
 
-"Switching to gallery view will degrade the recording quality. Do you want to continue?" = "Switching to gallery view will degrade the recording quality. Do you want to continue?";
-"Switching to speaker view will improve the recording quality. Do you want to continue?" = "Switching to speaker view will improve the recording quality. Do you want to continue?";
 "You cannot minimize Zoom when you are recording this meeting." = "You cannot minimize Zoom when you are recording this meeting.";
 "This feature requires 2.0 GHz Dual-Core CPU or higher." = "This feature requires 2.0 GHz Dual-Core CPU or higher.";
 
@@ -564,22 +453,17 @@
 "Screen sharing has stopped as the shared window is closed." = "Screen sharing has stopped as the shared window is closed.";
 "Click Test Speaker to make sure you can hear others" =  "Click Test Speaker to make sure you can hear others";
 "If you can not hear the test sound, select a different speaker" =  "If you can not hear the test sound, select a different speaker";
-"If you can't make your Speaker or Mic work, click Join Teleconference" = "If you can't make your Speaker or Mic work, click Join Teleconference";
 "LN_Invitation_CopiedToClipboard_21232" = "The invitation has been copied to the Clipboard.";
 "%@ is controlling your screen" = "%@ is controlling your screen";
-"Click below to change your picture and name." = "Click below to change your picture and name.";
 
 "Convert" = "Convert";
 
 "Hide thumbnail video" = "Hide thumbnail video";
-"Show active speaker video" = "Show active speaker video";
 "Show small active speaker video" = "Show small active speaker video";
 "Show large active speaker video" = "Show large active speaker video";
 "Show thumbnail video" = "Show thumbnail video";
 "Previous Page" = "Previous Page";
 "Next Page" = "Next Page";
-"Start a Meeting" = "Start a Meeting";
-"Start a Group Meeting" = "Start a Group Meeting";
 "Cannot delete this meeting. Error code: %d." = "Cannot delete this meeting. Error code: %d.";
 
 "Zoom Cloud Meetings" = "Zoom Cloud Meetings";
@@ -615,30 +499,21 @@
 //PT MENUS ENDS
 
 "Zoom Group Chat" = "Zoom Group Chat";
-"Zoom Update" = "Zoom Update";
-"A new version of Zoom is available!" = "A new version of Zoom is available!";
-"A new version of Zoom is available! Please update now." = "A new version of Zoom is available! Please update now.";
-"We also welcome your ideas, requests or comments about Zoom.\nPlease enter your feedback here:" = "We also welcome your ideas, requests or comments about Zoom.\nPlease enter your feedback here:";
-"Zoom is up to date." = "Zoom is up to date.";
 
 //PT About Window starts
 " All rights reserved." = " All rights reserved.";
-" Terms" = " Terms";
 "Privacy Policy" = "Privacy Policy";
 //PT About Window ends
 
 //Q&A
 "You are logged in from another device. Your Q&A session is inactive." = "You are logged in from another device. Your Q&A session is inactive.";
 "Q&A" = "Q&A";
-"Questions and Answers" = "Questions and Answers";
 "Send Anonymously" = "Send anonymously";
 "LN_Meeting_QA_No_Open_Question_21381" = "No open questions";
 "LN_Meeting_QA_No_Answered_Question_21381" = "No answered questions";
 "All" = "All";
 "Answered" = "Answered";
-" answered:" = " answered:";
 "Please input your question" = "Please input your question";
-"Answer by Text" = "Answer by Text";
 "Answer Live" = "Answer live";
 "Submit" = "Submit";
 "Send privately" = "Send privately";
@@ -646,11 +521,8 @@
 "Done" = "Done";
 "Anonymous Attendee" = "Anonymous Attendee";
 "You" = "You";
-" asked:" = " asked:";
-" answered (privately):" = " answered (privately):";
 "You have" = "You have";
 " has" = " has";
-" answered this question live." = " answered this question live.";
 " is going to answer this question live." = " is going to answer this question live.";
 
 //Polling
@@ -680,32 +552,14 @@
 "This will also clear your chat history in this group." = "This will also clear your chat history in this group.";
 "This will also clear your chat history with this user." = "This will also clear your chat history with this user.";
 "Leave" = "Leave";
-"You cleared all past messages." = "You cleared all past messages.";
-"With Video On" = "With Video On";
-"With Video Off" = "With Video Off";
-"Capture Screen" = "Capture Screen";
-"Send Image" = "Send Image";
-"Edit Group" = "Edit Group";
 "Invite others" = "Invite others";
 "Invite Others" = "Invite Others";
 "Clear History" = "Clear History";
-"Leave Group" = "Leave Group";
 "Delete Contact" = "Delete Contact";
-"Remove from Contacts" = "Remove from Contacts";
-"On Desktop" = "On Desktop";
-"On Mobile" = "On Mobile";
 "Desktop" = "Desktop";
 "Mobile" = "Mobile";
 "Away" = "Away";
 "Busy" = "Busy";
-"You have reached the Maximum number of group members" = "You have reached the Maximum number of group members";
-"Group Members" = "Group Members";
-"%@'s group chat" = "%@'s group chat";
-"Save Changes" = "Save Changes";
-"Invite" = "Invite";
-"Create Group" = "Create Group";
-"Can't create a new group, please check your network." = "Can't create a new group, please check your network.";
-"Can't edit the group, please check your network." = "Can't edit the group, please check your network.";
 "Voice Message" = "Voice Message";
 "Your message \"%@\" send failed.   Resend" = "Your message \"%@\" send failed.   Resend";
 "Your message \"%@...\" send failed.   Resend" = "Your message \"%@...\" send failed.   Resend";
@@ -715,31 +569,15 @@
 "%@ is typing..." = "%@ is typing...";
 "Contacts" = "Contacts";
 "No results" = "No results";
-"You have logged in from another device. Messenger is now inactive." = "You have logged in from another device. Messenger is now inactive.";
 "Available" = "Available";
 "(Admin)" = "(Admin)";
-"Not a contact" = "Not a contact";
-"(Invite)" = "(Invite)";
-"Add to Contacts List" = "Add to Contacts List";
-"1 contact request" = "1 contact request";
-"%d contact requests" = "%d contact requests";
 "Your request has been sent successfully!" = "Your request has been sent successfully!";
-"New Group Chat" = "New Group Chat";
-"Favorites" = "Favorites";
-"Company, Phone, and Other Contacts" = "Company, Phone, and Other Contacts";
-"Company and Phone Contacts" = "Company and Phone Contacts";
-"Company and Other Contacts" = "Company and Other Contacts";
 "Company Contacts" = "Company Contacts";
-"Phone and Other Contacts" = "Phone and Other Contacts";
 "Phone Contacts" = "Phone Contacts";
-"Right-click a contact to add to Favorites." = "Right-click a contact to add to Favorites.";
 "Group Meeting" = "Group Meeting";
 "You are about to start a meeting and invite all members of this group to join. Are you sure?" = "You are about to start a meeting and invite all members of this group to join. Are you sure?";
 
 //audio error for record
-"Audio Error" = "Audio Error";
-"No audio is detected. Check audio settings or continue to record with no audio." = "No audio is detected. Check audio settings or continue to record with no audio.";
-"Check Audio" = "Check Audio";
 "Continue Recording" = "Continue Recording";
 
 //add by Ryan for L10;
@@ -752,29 +590,17 @@
 "Switch Account" = "Switch Account";
 "Exit" = "Exit";
 "Check for Updates..." = "Check for Updates...";
-"Please check your network connection. Then click Retry to re-connect." = "Please check your network connection. Then click Retry to re-connect.";
 "Install" = "Install";
-"Manual Update" = "Manual Update";
 "Retry" = "Retry";
-"Downloading file" = "Downloading file";
 "Updating" = "Updating";
-"Thanks for joining a Zoom video call!\n\nYou can login to start your own Zoom video call." = "Thanks for joining a Zoom video call!\n\nYou can login to start your own Zoom video call.";
-"Don't remind me again" = "Don't remind me again";
-"Your invitees do not need to have Zoom pre-installed to accept your meeting invitation" = "Your invitees do not need to have Zoom pre-installed to accept your meeting invitation";
-"Did you know?" = "Did you know?";
 "Later" = "Later";
-"Update now" = "Update now";
-"Release Notes:" = "Release Notes:";
 "Join Video Call" = "Join Video Call";
 "You are already in another meeting. Do you want to leave and then join this one?" = "You are already in another meeting. Do you want to leave and then join this one?";
 "No" = "No";
 "Yes" = "Yes";
 "Camera:" = "Camera:";
-"Always show name on video window" = "Always show name on video window";
 "Update to PRO" = "Update to PRO";
 "Store my recordings at:" = "Store my recordings at:";
-"Choose a location for recorded files when meeting ends" = "Choose a location for recorded files when meeting ends";
-"Open Recordings in Finder" = "Open Recordings in Finder";
 "Select a Speaker" = "Select a Speaker";
 "Select a Microphone" = "Select a Microphone";
 "Output Level:" = "Output Level:";
@@ -782,74 +608,42 @@
 "Input Level:" = "Input Level:";
 "Input Volume:" = "Input Volume:";
 "Please speak to your microphone. If you can not see the volume indicator blinking, select a different mic." = "Please speak to your microphone. If you can not see the volume indicator blinking, select a different mic.";
-"Select Mic" = "Select Mic";
 "Automatically adjust microphone settings" = "Automatically adjust microphone settings";
-"Automatically join audio conference via Mic & Speaker when joining a meeting" = "Automatically join audio conference via Mic & Speaker when joining a meeting";
-"Alert me when friends go online" = "Alert me when friends go online";
-"Alert me when friends go offline" = "Alert me when friends go offline";
-"Pop out the chat window when I receive a chat message" = "Pop out the chat window when I receive a chat message";
-"Show offline contacts" = "Show offline contacts";
-"Enter full screen automatically when viewing screen shared by others" = "Enter full screen automatically when viewing screen shared by others";
-"Maximize Zoom window automatically when viewing screen shared by others" = "Maximize Zoom window automatically when viewing screen shared by others";
-"Play sound when I receive a chat message" = "Play sound when I receive a chat message";
-"Enter full screen automatically when starting or joining a meeting" = "Enter full screen automatically when starting or joining a meeting";
 "Use dual monitors" = "Use dual monitors";
-"Scale to fit my Zoom window when viewing screen shared by others" = "Scale to fit my Zoom window when viewing screen shared by others";
-"Automatically copy Invitation URL to Clipboard after meeting starts" = "Automatically copy Invitation URL to Clipboard after meeting starts";
 "Meeting Option" = "Meeting Option";
-"Instant Message" = "Instant Message";
 "For technical support, please visit " = "For technical support, please visit ";
 "Support." = "Support.";
-"Always use PMI for instant meetings on this computer" = "Always use PMI for instant meetings on this computer";
 "Delete" = "Delete";
 "Start" = "Start";
-"Edit" = "Edit";
 "Play Video" = "Play Video";
 "Play Audio Only" = "Play Audio Only";
-"Accept" = "Accept";
-"Checking for updates..." = "Checking for updates...";
-"What's new?" = "What's new?";
-"Network error!" = "Network error!";
 
 //hard code string
 "Download failed, please try it again" = "Download failed, please try it again";
 "Download failed" = "Download failed";
 "Personal Meeting ID (PMI)" = "Personal Meeting ID (PMI)";
 "Today" = "Today";
-"Recurring - %@" = "Recurring - %@";
-"Topic: %@\n" = "Topic: %@\n";
 "Meeting ID: %@\n" = "Meeting ID: %@\n";
-"Meeting Password: %@\n" = "Meeting Password: %@\n";
 "%@ to %@" = "%@ to %@";
-"Duration: %d minutes" = "Duration: %d minutes";
 "Meeting ID: %@" = "Meeting ID: %@";
-"Meeting Password: %@" = "Meeting Password: %@";
 "Meeting Password:" = "Meeting Password:";
-"New version is available!" = "New version is available!";
-"New version available!" = "New version available!";
 "Last Name" = "Last Name";
 "First Name" = "First Name";
 "Change" = "Change";
 "Enter your own audio conference information" = "Enter your own audio conference information";
 
 //PT Invite Dialog
-"Invite by Email" = "Invite by Email";
 "Choose your email service to send invitation" = "Choose your email service to send invitation";
 "Default Email" = "Default Email";
 "Gmail" = "Gmail";
 "Yahoo Mail" = "Yahoo Mail";
 
-"Facebook Friends" = "Facebook Friends";
-"Facebook Group" = "Facebook Group";
-
-"Invite by Phone" = "Invite by Phone";
 "Calling" = "Calling";
 "Invitee Name:" = "Invitee Name:";
 " Name to be displayed in the meeting" = " Name to be displayed in the meeting";
 "Phone Number:" = "Phone Number:";
 " Input the number you want to call" = " Input the number you want to call";
 
-"Invite a Room System" = "Invite a Room System";
 "Enter the pairing code below" = "Enter the pairing code below";
 "Or Enter the pairing code below" = "Or Enter the pairing code below";
 
@@ -859,45 +653,24 @@
 
 "Call" = "Call";
 
-"From your H.323/SIP Room System" = "From your H.323/SIP Room System";
 "Enter Meeting ID: " = "Enter Meeting ID: ";
 "Enter Meeting Password: " = "Enter Meeting Password: ";
-
-"Google Friends" = "Google Friends";
 //PT Invite Dialog end
 
 
 //PT Login Dialog begin
 "(or" = "(or";
 "Email" = "Email";
-"Email or password error!" = "Email or password error!";
-"Remember me" = "Remember me";
 "Back" = "Back";
 "Or" = "Or";
-"Login with Google" = "Login with Google";
-"Login with Facebook" = "Login with Facebook";
-"Login with SSO" = "Login with SSO";
-
-"Connection Failed." = "Connection Failed.";
 
 "Sign In" = "Sign In";
 
-"To schedule a BBM meeting, you need to upgrade to a paid account. You are still able to join BBM Meeting." = "To schedule a BBM meeting, you need to upgrade to a paid account. You are still able to join BBM Meeting.";
-"Not Now" = "Not Now";
-"Upgrade to BBM Meetings" = "Upgrade to BBM Meetings";
-
 //PT SSO Login Dialog begin
 "Login SSO" = "Login SSO";
-"https://companyname.zoom.us" = "https://companyname.zoom.us";
-"SSO URL:" = "SSO URL:";
-"Enter your company domain" = "Enter your company domain";
 "company domain" = "company domain";
 ".zoom.us" = ".zoom.us";
 "I don't know the company domain" = "I don't know the company domain";
-"Open in default browser" = "Open in default browser";
-"Find company domain by email address" = "Find company domain by email address";
-"Manually enter domain" = "Manually enter domain";
-"No matching domain found" = "No matching domain found";
 "Network error, please try later" = "Network error, please try later";
 //PT SSO Login Dialog end
 
@@ -919,7 +692,6 @@
 "Duration:" = "Duration:";
 "Hr" = "Hr";
 "Min" = "Min";
-"Time Zone:" = "Time Zone:";
 "Please remember to check recurrence or repeat in your calendar invitation to your attendees. " = "Please remember to check recurrence or repeat in your calendar invitation to your attendees. ";
 "Recurring meeting" = "Recurring meeting";
 "Host:" = "Host:";
@@ -941,24 +713,14 @@
 "Schedule For:" = "Schedule For:";
 "Edit Meeting" = "Edit Meeting";
 "Scheduling..." = "Scheduling...";
-"Click the button below to copy the invitation to clipboard." = "Click the button below to copy the invitation to clipboard.";
-"Copy to Clipboard" = "Copy to Clipboard";
 //PT Schedule Dialog end
 
 
 //PT Edit PMI Dialog begin
 "Personal Meeting ID" = "Personal Meeting ID";
-"Your Personal Meeting ID is changed." = "Your Personal Meeting ID is changed.";
-"Upgrade to Pro to change your Personal Meeting ID" = "Upgrade to Pro to change your Personal Meeting ID";
-"Change Your Personal Meeting ID" = "Change Your Personal Meeting ID";
 
-"Choose your 10-digits ID:" = "Choose your 10-digits ID:";
-"* Your Personal Meeting ID cannot start with 0 or 1" = "* Your Personal Meeting ID cannot start with 0 or 1";
 "Apply" = "Apply";
 
-"Your Personal Meeting option is updated." = "Your Personal Meeting option is updated.";
-
-"Only Pro user can customize your favorite personal meeting ID. Would like to upgrade to Pro account?" = "Only Pro user can customize your favorite personal meeting ID. Would like to upgrade to Pro account?";
 //PT Edit PMI Dialog end
 
 
@@ -966,7 +728,6 @@
 
 //add for ZOOM3.5
 "Save Chat" = "Save chat";
-"Chat saved to:" = "Chat saved to:";
 
 //air host
 "Share an iPhone/iPad screen" = "Share an iPhone/iPad screen";
@@ -975,7 +736,6 @@
 "download manually" = "download manually";
 
 //diagnostic
-"Zoom Activity Monitor" = "Zoom Activity Monitor";
 "Item Name" = "Item Name";
 "Frequency" = "Frequency";
 "Latency" = "Latency";
@@ -992,21 +752,15 @@
 "Proxy" = "Proxy";
 "CPU" = "CPU";
 "Memory" = "Memory";
-"Your high CPU usage is affecting the meeting quality" = "Your high CPU usage is affecting the meeting quality";
 "Your internet connection is unstable" = "Your internet connection is unstable";
 
 //Conference Remote Camera Control Window
-"Waiting for %@ to approve your request" = "Waiting for %@ to approve your request";
 "%@ requested to control your camera" = "%@ requested to control your camera";
 "%@ declined your request of camera control" = "%@ declined your request of camera control";
 "Request approved. You can now control %@'s camera." = "Request approved. You can now control %@'s camera.";
 "%@ no longer controls your camera" = "%@ no longer controls your camera";
 
-// for accessibility feature
 "Zoom Logo" = "Zoom Logo";
-"Status Menu" = "Status Menu";
-"Refresh Meeting List" = "Refresh Meeting List";
-"Add Contact" = "Add Contact";
 "button" = "button";
 
 "Auto Answer Group" = "Auto Answer Group";
@@ -1031,7 +785,6 @@
 "Polls" = "Polls";
 "End Poll" = "End Poll";
 "%@ in Progress" = "%@ in Progress";
-"%d of %d voted" = "%d of %d voted";
 "Sharing Poll Results" = "Sharing Poll Results";
 "Stop Sharing" = "Stop Sharing";
 "Quick Poll" = "Quick Poll";
@@ -1049,18 +802,12 @@
 //ZOOM-18526
 
 //Main Window Title
-"Zoom - %@" = "Zoom - %@";
 "Use Personal Meeting ID" = "Use Personal Meeting ID";
 "Zoom" = "Zoom";
-"Always mute microphone when joining meeting" = "Always mute microphone when joining meeting";
-"Always turn off video when joining meeting" = "Always turn off video when joining meeting";
-"(Public to all participants)" = "(Public to all participants)";
-"Topic: %@" = "Topic: %@";
 "Chat saved." = "Chat saved.";
 "Call Out" = "Call Out";
 "Dial In from a H.323/SIP Room System" = "Dial In from a H.323/SIP Room System";
 "Call a H.323/SIP Room System" = "Call a H.323/SIP Room System";
-"Confirm with me when I leave a meeting" = "Confirm with me when I leave a meeting";
 "Hide Non-Video Participants" = "Hide Non-Video Participants";
 "Ask to Start Video" = "Ask to Start Video";
 
@@ -1073,7 +820,6 @@
 //
 "Audio Options..." = "Audio Options...";
 "Video Settings..." = "Video Settings...";
-"Camera (Shift+Command+N to switch)" = "Camera (Shift+Command+N to switch)";
 "Zoom is using an end to end encrypted connection" = "Zoom is using an end to end encrypted connection";
 "Select a Camera" = "Select a Camera";
 "New Share" = "New Share";
@@ -1087,43 +833,23 @@
 "Resume Share" = "Resume Share";
 "Pause Share" = "Pause Share";
 "Meeting Locked" = "Meeting Locked";
-"Show floating notification when I receive a chat message" = "Show floating notification when I receive a chat message";
 "Options" = "Options";
 "Promote" = "Promote";
-"Other Contacts" = "Other Contacts";
 "Meet" = "Meet";
-"Add Other Contacts by Email" = "Add Other Contacts by Email";
 "Meet with Video" = "Meet with Video";
 "Meet without Video" = "Meet without Video";
-"Add to Favorites" = "Add to Favorites";
-"Remove from Favorites" = "Remove from Favorites";
 "Send File" = "Send File";
-"You've created this group chat %@" = "You've created this group chat %@";
-"%@ invited you and %@ to this group chat" = "%@ invited you and %@ to this group chat";
-"%@ invited you to this group chat" = "%@ invited you to this group chat";
 "New Chat" = "New Chat";
 "Start Chat" = "Start Chat";
-"Chat With" = "Chat With";
 "Next" = "Next";
 "Add" = "Add";
 "New Group" = "New Group";
 "Screen sharing has failed to start. Please try again later." = "Screen sharing has failed to start. Please try again later.";
-"Group Name:" = "Group Name:";
 "Missed Call" = "Missed Call";
 "Incoming Call - Declined" = "Incoming Call - Declined";
-"[You were mentioned] " = "[You were mentioned] ";
-"%@ left this group chat" = "%@ left this group chat";
-"You've removed %@ from this group chat" = "You've removed %@ from this group chat";
-"%@ removed you from this group chat" = "%@ removed you from this group chat";
-"%@ removed %@ from this group chat" = "%@ removed %@ from this group chat";
-"You changed the group name to \"%@\"" = "You changed the group name to \"%@\"";
-"%@ changed the group name to \"%@\"" = "%@ changed the group name to \"%@\"";
-"You've invited %@ to this group chat" = "You've invited %@ to this group chat";
-"%@ invited %@ to this group chat" = "%@ invited %@ to this group chat";
 "Choose ONE of the audio conference options" = "Choose ONE of the audio conference options";
 "Request Camera Control" = "Request Camera Control";
 "Give up Camera Control" = "Give up Camera Control";
-"Type and select a person" = "Type and select a person";
 "You can't start your video because the host has stopped it" = "You can't start your video because the host has stopped it";
 "Remember my name for future meetings" = "Remember my name for future meetings";
 "will start video later." = "will start video later.";
@@ -1140,7 +866,6 @@
 "host" = "host";
 "Type message here..." = "Type message here...";
 "Send chat to..." = "Send chat to...";
-"Attendees" = "Attendees";
 "The co-host has asked you to start your video." = "The co-host has asked you to start your video.";
 "Allow Panelist Start Video" = "Allow Panelist Start Video";
 "Promote to Panelist" = "Promote to Panelist";
@@ -1149,33 +874,17 @@
 "Failed to connect to Zoom video conferencing server. If you are behind a firewall, please ask your IT administrator to allow \"*.zoom.us\".  For more information, please visit: https://support.zoom.us/hc/en-us/articles/201362683." = "Failed to connect to Zoom video conferencing server. If you are behind a firewall, please ask your IT administrator to allow \"*.zoom.us\".  For more information, please visit: https://support.zoom.us/hc/en-us/articles/201362683.";
 "Email invitation copied to clipboard" = "Email invitation copied to clipboard";
 "Add a Contact" = "Add a Contact";
-"An email invitation has been sent." = "An email invitation has been sent.";
-"Your request has been sent for approval to:" = "Your request has been sent for approval to:";
-"Email address not signed up with Zoom." = "Email address not signed up with Zoom.";
-"⟨ Back" = "⟨ Back";
-"One email address a time" = "One email address a time";
 "Network error, please try again" = "Network error, please try again";
 "is now your contact." = "is now your contact.";
 "Yesterday" = "Yesterday";
-"System Notification" = "System Notification";
 "requests to add you as a contact" = "requests to add you as a contact";
-"contact request sent  - Waiting for approval" = "contact request sent  - Waiting for approval";
 "accepted your contact request" = "accepted your contact request";
 "declined your contact request" = "declined your contact request";
-"has been added to your contact list" = "has been added to your contact list";
-"contact request sent" = "contact request sent";
-"  - Declined" = "  - Declined";
 "Invited" = "Invited";
 "You won't receive message notifications from this group unless you are mentioned." = "You won't receive message notifications from this group unless you are mentioned.";
-"Enable Message Notifications" = "Enable Message Notifications";
-"Disable Message Notifications" = "Disable Message Notifications";
 
 "Open File" = "Open File";
-"Shared a file in group." = "Shared a file in group.";
-"Shared a file with you." = "Shared a file with you.";
-"Do not prompt joining audio when I join a meeting using 3rd party audio" = "Do not prompt joining audio when I join a meeting using 3rd party audio";
 "You can't start your video because the host has stopped it." = "You can't start your video because the host has stopped it.";
-"Allow attendees to raise hand" = "Allow attendees to raise hand";
 "Don't connect to audio" = "Don't connect to audio";
 "Turn off my video" = "Turn off my video";
 
@@ -1188,10 +897,6 @@
 "All panelists" = "All panelists";
 "(host)" = "(host)";
 "%@ is not in this meeting" = "%@ is not in this meeting";
-"From Me to Everyone" = "From Me to Everyone";
-"From Me to All Panelists" = "From Me to All Panelists";
-"From Me to %@, All Panelists" = "From Me to %@, All Panelists";
-"From Me to %@ (Privately)" = "From Me to %@ (Privately)";
 "From %@ to Everyone" = "From %@ to Everyone";
 "From %@ to All Panelists" = "From %@ to All Panelists";
 "From %@ to Me, All Panelists" = "From %@ to Me, All Panelists";
@@ -1211,9 +916,6 @@
 "to" = "to";
 ", All Panelists" = ", All Panelists";
 
-"Hide Group members" = "Hide Group members";
-"Show Group members" = "Show Group members";
-"Send Email Invitation" = "Send Email Invitation";
 "Host meeting in China" = "Host meeting in China";
 "Only signed-in users can join this meeting" = "Only signed-in users can join this meeting";
 "Only signed-in users with specified domains can join this meeting" = "Only signed-in users with specified domains can join this meeting";
@@ -1264,9 +966,6 @@
 "%@ (not joined)" = "%@ (not joined)";
 "All participants have been assigned to Breakout Rooms." = "All participants have been assigned to Breakout Rooms.";
 "%1$@ in %2$@ asked for help." = "%1$@ in %2$@ asked for help.";
-"Ask Host for Help" = "Ask Host for Help";
-"The host is inviting you to join Breakout Rooms." = "The host is inviting you to join Breakout Rooms.";
-"You have been assigned to a Breakout Room" = "You have been assigned to a Breakout Room";
 "Breakout Rooms will close in %d seconds" = "Breakout Rooms will close in %d seconds";
 "The host has been invited." = "The host has been invited.";
 "The host is currently helping others. Please try again later." = "The host is currently helping others. Please try again later.";
@@ -1276,13 +975,11 @@
 "All participants have been given 60 seconds to leave their Breakout Rooms." = "All participants have been given 60 seconds to leave their Breakout Rooms.";
 "All participants have been invited to join Breakout Rooms." = "All participants have been invited to join Breakout Rooms.";
 "You can join Breakout Rooms from here." = "You can join Breakout Rooms from here.";
-"Allow attendee to raise hand" = "Allow attendee to raise hand";
 "Unassigned" = "Unassigned";
  "The host has opened Breakout Rooms. Please wait to be assigned." =  "The host has opened Breakout Rooms. Please wait to be assigned.";
 
 "Enable Stereo" = "Enable Stereo";
 "this will greatly increase all attendee's CPU usage" = "this will greatly increase all attendee's CPU usage";
-"Allow option for using original sound from microphone in meeting" = "Allow option for using original sound from microphone in meeting";
 "this will turn off audio enhancements such as echo cancellation and noise suppression" = "this will turn off audio enhancements such as echo cancellation and noise suppression";
 
 "This file does not exist." = "This file does not exist.";
@@ -1311,7 +1008,6 @@
 "Record Without Audio" = "Record Without Audio";
 
 "Closed Caption" = "Closed Caption";
-"Type here, press Enter to broadcast" = "Type here, press Enter to broadcast";
 "Closed Caption is available" = "Closed Caption is available";
 "Assign to type Closed Caption" = "Assign to type Closed Caption";
 "Withdraw Closed Caption permission" = "Withdraw Closed Caption permission";
@@ -1326,33 +1022,21 @@
 "I will type" = "I will type";
 
 // add for e2e
-"Add Group" = "Add Group";
 "[This is an encrypted message]" = "[This is an encrypted message]";
 "[Cannot decrypt message]" = "[Cannot decrypt message]";
 "Chat encryption has been enabled for this group, offline members cannot see your messages." = "Chat encryption has been enabled for this group, offline members cannot see your messages.";
-"%@ is using an older version of the Zoom client and cannot see your messages." = "%@ is using an older version of the Zoom client and cannot see your messages.";
-"[Encrypted message]" = "[Encrypted message]";
-"Chat encryption has been enabled for your account." = "Chat encryption has been enabled for your account.";
-"Chat encryption has been enabled according to %@'s account policy." = "Chat encryption has been enabled according to %@'s account policy.";
-"Chat encryption has been enabled for this group." = "Chat encryption has been enabled for this group.";
 "Chat encryption has been enabled for your account so you cannot send messages to a person who is not your contact." = "Chat encryption has been enabled for your account so you cannot send messages to a person who is not your contact.";
 "Chat encryption has been enabled for your account so you cannot send messages in a group without encryption." = "Chat encryption has been enabled for your account so you cannot send messages in a group without encryption.";
-"Chat encryption has been enabled for your account so you need to invite %@ online to start chat." = "Chat encryption has been enabled for your account so you need to invite %@ online to start chat.";
 "Waiting for %@ to get online..." = "Waiting for %@ to get online...";
-"Invite %@ to start chat" = "Invite %@ to start chat";
 "%@ is inviting you to chat." = "%@ is inviting you to chat.";
 "%@ accepted your chat invitation." = "%@ accepted your chat invitation.";
-"You are sending messages too quickly, you need to resend this message." = "You are sending messages too quickly, you need to resend this message.";
-"Already joined by Phone" = "Already joined by Phone";
 "You've been automatically signed out for being inactive %d minutes due to your account security policy." = "You've been automatically signed out for being inactive %d minutes due to your account security policy.";
 
 "Keep telephone connected" = "Keep telephone connected";
 "Start a meeting without video" = "Start a meeting without video";
 "Start a meeting with video" = "Start a meeting with video";
-"View More..." = "View More...";
 "You are about to invite all members of this group to join. Are you sure?" = "You are about to invite all members of this group to join. Are you sure?";
 "You cannot chat with a Zoom Room." = "You cannot chat with a Zoom Room.";
-"Zoom Chat" = "Zoom Chat";
 "Group Chat" = "Group Chat";
 "is already a contact." = "is already a contact.";
 "Room" = "Room";
@@ -1401,7 +1085,6 @@
 "Those participants who can't accept computer restart are not listed" = "Those participants who can't accept computer restart are not listed";
 "Support session is not available to the current participant." = "Support session is not available to the current participant.";
 "Waiting for %@ to approve your request" = "Waiting for %@ to approve your request";
-"Edit Advanced Settings" = "Edit Advanced Settings";
 "Edit My Profile" = "Edit My Profile";
 
 "Sent you a file." = "Sent you a file.";
@@ -1422,23 +1105,14 @@
 " Video " = " Video ";
 " Audio " = " Audio ";
 "Accessibility" = "Accessibility";
-"Video Background" = "Video Background";
-"Fill window" = "Fill window";
 "Fit to window" = "Fit to window";
 "Format" = "Format";
 "Font" = "Font";
 "Line Width" = "Line Width";
-"Spotlight my video when I speak" = "Spotlight my video when I speak";
 "Choose a virtual background" = "Choose a virtual background";
 "Choose a virtual background..." = "Choose a virtual background...";
-"Add Image" = "Add Image";
-"A solid color video background is required. Green color is preferred." = "A solid color video background is required. Green color is preferred.";
 "Manually pick the color of the background if the detected color is not accurate." = "Manually pick the color of the background if the detected color is not accurate.";
 "Pick the color" = "Pick the color";
-"Zoom technology automatically detects the color your video background and replace it with the virtual background image. If the detected color is not accurate, you can manually pick the color from your video background." = "Zoom technology automatically detects the color your video background and replace it with the virtual background image. If the detected color is not accurate, you can manually pick the color from your video background.";
-"Your processor (%@) does not meet our recommended specification for virtual background. Learn more." = "Your processor (%@) does not meet our recommended specification for virtual background. Learn more.";
-"Learn more." = "Learn more.";
-"Enable this feature anyway" = "Enable this feature anyway";
 "Connect Kubi" = "Connect Kubi";
 "Disconnect" = "Disconnect";
 "Security Certificate" = "Security Certificate";
@@ -1451,7 +1125,6 @@
 "Trust" = "Trust";
 "Don't Trust" = "Don't Trust";
 "Original size" = "Original size";
-"16:9 (Widescreen)" = "16:9 (Widescreen)";
 //BO task 1560,1561,1563
 "Broadcast a message to all" = "Broadcast a message to all";
 "From %@ to everyone: %@" = "From %@ to everyone: %@";
@@ -1461,16 +1134,13 @@
 
 "Login to Claim Host" = "Login to Claim Host";
 "Enter the Host Key to claim host role" = "Enter the Host Key to claim host role";
-"Host Key is a 6-digit number" = "Host Key is a 6-digit number";
+"Host Key is a 6-10 digit number" = "Host Key is a 6-10 digit number";
 "OR" = "OR";
 "Verifying Host Key..." = "Verifying Host Key...";
 "The Host Key you entered is invalid." = "The Host Key you entered is invalid.";
 "Please check your network and try again." = "Please check your network and try again.";
 "Because annotation is disabled, your participants need to upgrade to the latest version of Zoom to share their screen." = "Because annotation is disabled, your participants need to upgrade to the latest version of Zoom to share their screen.";
-"Enable Advanced Features" = "Enable Advanced Features";
 "Advanced Features" = "Advanced Features";
-"Hide Myself" = "Hide Myself";
-"Show Myself" = "Show Myself";
 "Others could not hear me" = "Others could not hear me";
 "I could not hear others" = "I could not hear others";
 "Others could not see me" = "Others could not see me";
@@ -1482,15 +1152,10 @@
 "The host is inviting you to join Breakout Room:" = "The host is inviting you to join Breakout Room:";
 "You have been assigned to Breakout Room:" = "You have been assigned to Breakout Room:";
 "Failed to expel attendee. Error code:%d" = "Failed to expel attendee. Error code:%d";
-"Original Ratio" = "Original Ratio";
 
 "Low system resources may affect your audio quality. Try closing some applications to improve performance." = "Low system resources may affect your audio quality. Try closing some applications to improve performance.";
-"Your network connection is unstable which may impact your audio & video quality." = "Your network connection is unstable which may impact your audio & video quality.";
-"Keep me logged in" = "Keep me logged in";
 "Recording Alert" = "Recording Alert";
 "Finish registration to join the meeting." = "Finish registration to join the meeting.";
-//ZOOM-5960 2016-10-10
-"Share screen in Zoom Room" = "Share screen in Zoom Room";
 
 //ZOOM-5997 2016-10-8
 "Close Manage Participants" = "Close Manage Participants";
@@ -1503,19 +1168,8 @@
 "You are sharing your screen..." = "You are sharing your screen...";
 "Stop share" = "Stop share";
 
-//IM related 2016-10-14
-"Are you sure you want to delete this file?" = "Are you sure you want to delete this file?";
 "The file will also be removed from shared groups and chats." = "The file will also be removed from shared groups and chats.";
 "Delete this contact?" = "Delete this contact?";
-"This is a one-way action. The entire message will not be visible to the new members in this group. Continue?" = "This is a one-way action. The entire message will not be visible to the new members in this group. Continue?";
-"All Files" = "All Files";
-"My Personal Files" = "My Personal Files";
-"Upload New Files" = "Upload New Files";
-"Show this group on contacts list" = "Show this group on contacts list";
-"Edit Member" = "Edit Member";
-"New members can access entire message history" = "New members can access entire message history";
-"Chat Topic:" = "Chat Topic:";
-"- Click to open" = "- Click to open";
 "Shared by " = "Shared by ";
 "Shared in " = "Shared in ";
 "Delete from %@" = "Delete from %@";
@@ -1525,93 +1179,33 @@
 "Loading..." = "Loading...";
 "Loading error," = "Loading error,";
 "No content." = "No content.";
-"Jump To" = "Jump To";
 "%@ with " = "%@ with ";
 "Hide Context" = "Hide Context";
-"Show Context" = "Show Context";
 "[Image]" = "[Image]";
 "[Voice Message]" = "[Voice Message]";
 "[File]" = "[File]";
-"Press Enter to search content for:" = "Press Enter to search content for:";
-"Filter by Contacts" = "Filter by Contacts";
-"Filter by Groups & Chats" = "Filter by Groups & Chats";
 "Messages" = "Messages";
-"GROUPS" = "GROUPS";
-"CONTENTS" = "CONTENTS";
-"RECENT CHATS" = "RECENT CHATS";
-"(Public)" = "(Public)";
-"- Room" = "- Room";
-"You can search messages and files in all of your conversations" = "You can search messages and files in all of your conversations";
-"This Chat" = "This Chat";
-"Search files or messages" = "Search files or messages";
-"This Group" = "This Group";
 "Type your message" = "Type your message";
 "has been sent out." = "has been sent out.";
 "failed to send" = "failed to send";
 "is not a supported file format." = "is not a supported file format.";
-"%@ is on an older version of Zoom client and may not be able to see your message." = "%@ is on an older version of Zoom client and may not be able to see your message.";
-"Chat encryption has been enabled for your account, so you need to invite %@ online to start chat." = "Chat encryption has been enabled for your account, so you need to invite %@ online to start chat.";
-"Chat encryption has been enabled for your account , so you need to invite %@ online to start chat." = "Chat encryption has been enabled for your account , so you need to invite %@ online to start chat.";
-"Message content has been encrypted." = "Message content has been encrypted.";
 "Current group chat has enabled E2E encryption and you can't send messages without E2E. Please contact your IT admin for details." = "Current group chat has enabled E2E encryption and you can't send messages without E2E. Please contact your IT admin for details.";
-"Find a member" = "Find a member";
 "Screenshot" = "Screenshot";
 "Zoom is using an end-to-end encrypted connection" = "Zoom is using an end-to-end encrypted connection";
-"Save as..." = "Save as...";
 "@everyone" = "@everyone";
-"You can start end to end chat with %@ now" = "You can start end to end chat with %@ now";
-"Click to hide members" = "Click to hide members";
-"Click to show members" = "Click to show members";
-"Click to hide content" = "Click to hide content";
-"Click to show content" = "Click to show content";
-"The file sent successfully" = "The file sent successfully";
-"Failed to send the file" = "Failed to send the file";
-"Group Settings" = "Group Settings";
-"Chat Settings" = "Chat Settings";
-"Edit Members" = "Edit Members";
 "Leave Chat" = "Leave Chat";
 "Open in new window" = "Open in new window";
 "Merge back to main window" = "Merge back to main window";
-"Select groups to join" = "Select groups to join";
 "Private (Invited members only)" = "Private (Invited members only)";
 "Public (Anyone in your organization can join)" = "Public (Anyone in your organization can join)";
-"Upload files to my Personal Folder" = "Upload files to my Personal Folder";
-"Create or join a group" = "Create or join a group";
-"New chat" = "New chat";
-"Content - All Files" = "Content - All Files";
-"Select groups to join (%d in total)" = "Select groups to join (%d in total)";
-"Group Type:" = "Group Type:";
-"Invite Members:" = "Invite Members:";
-"Members in your organization only" = "Members in your organization only";
-"No available public groups to join." = "No available public groups to join.";
-"You have successfully joined groups:" = "You have successfully joined groups:";
-"Join Failed" = "Join Failed";
-"Share a File" = "Share a File";
+"Members in your organization only" = "Members of your organization only";
 "Share with" = "Share with";
 "Share Error" = "Share Error";
 "%@  cannot be shared." = "%@  cannot be shared.";
-"Uploaded to " = "Uploaded to ";
-"Failed to upload" = "Failed to upload";
-"Failed to download" = "Failed to download";
-"Uploading %d item / downloading %d item" = "Uploading %d item / downloading %d item";
-"%d Uploads / %d downloads complete" = "%d Uploads / %d downloads complete";
-"%d Uploads complete" = "%d Uploads complete";
-"Uploading %d items" = "Uploading %d items";
-"%d Upload complete" = "%d Upload complete";
-"Upload Files to My Personal Folder" = "Upload Files to My Personal Folder";
 "Browse" = "Browse";
-"Share with others" = "Share with others";
-"You can upload up to 5 files at a time." = "You can upload up to 5 files at a time.";
-"Files are private until they are shared in group." = "Files are private until they are shared in group.";
-"Upload Files(%d file selected)" = "Upload Files(%d file selected)";
-"Upload and Share" = "Upload and Share";
-"Type the name here" = "Type the name here";
 "Zoom Rooms" = "Zoom Rooms";
-"You've changed password on web, please login with your new password." = "You've changed password on web, please login with your new password.";
-"requests to add you as a contact - Declined" = "requests to add you as a contact - Declined";
 
-"Share Zoom windows in desktop sharing" = "Share Zoom windows in desktop sharing";
-"The host has another meeting in progress" = "The host has another meeting in progress";
+"The host has another meeting in progress." = "The host has another meeting in progress.";
 
 "Closed Caption history saved" = "Closed Caption history saved";
 "Save closed caption history" = "Save closed caption history";
@@ -1619,17 +1213,13 @@
 "Show history" = "Show history";
 "Closed caption is turned on" = "Closed caption is turned on";
 "Closed Caption - Broadcasting" = "Closed Caption - Broadcasting";
-"Closed Caption Font Size:" = "Closed Caption Font Size:";
 "Small" = "Small";
 "Large" = "Large";
 "Subtitles will look like this." = "Subtitles will look like this.";
 
 //setting
 "Playing"  = "Playing";
-"There seems to be an issue with your speaker, please select a different device and try again." = "There seems to be an issue with your speaker, please select a different device and try again.";
 "Please speak to your microphone." = "Please speak to your microphone.";
-"If you can't hear your voice, select a different microphone." = "If you can't hear your voice, select a different microphone.";
-"Click Test Mic to make sure others can hear you" = "Click Test Mic to make sure others can hear you";
 
 //audio
 "Audio Alert" = "Audio Alert";
@@ -1660,8 +1250,6 @@
 "Coud storage does not have enough space. Please contact host to upgrade plan or remove some old recording files." = "Coud storage does not have enough space. Please contact host to upgrade plan or remove some old recording files.";
 //ZOOM-5534
 
-//ZOOM-5960 2016-10-18
-"Please enter the Meeting ID or enter the Sharing Code displayed on the Zoom meeting room TV screen." = "Please enter the Meeting ID or enter the Sharing Code displayed on the Zoom meeting room TV screen.";
 "Cannot connect to Zoom Rooms. Please enter the meeting ID or select Presentation on iPad controller." = "Cannot connect to Zoom Rooms. Please enter the meeting ID or select Presentation on iPad controller.";
 //ZOOM-5960 2016-10-24
 "Network error, please try later." = "Network error, please try later.";
@@ -1688,11 +1276,6 @@
 
 //ZOOM-7164
 "Please wait. The webinar will begin soon." = "Please wait. The webinar will begin soon.";
-"Allow attendees to ask questions anonymously" = "Allow attendees to ask questions anonymously";
-
-//Invite New UI
-"Invite by Contacts" = "Invite by Contacts";
-"Invite Zoom Rooms" = "Invite Zoom Rooms";
 
 //ZOOM-5602
 "Move focus to next window" = "Move focus to next window";
@@ -1708,10 +1291,7 @@
 "[New notification]" = "[New notification]";
 "Advanced Sharing Options..." = "Advanced Sharing Options...";
 //for menu
-"Advanced Sharing Options" = "Advanced Sharing Options"; 
-//for window title
-"You are the admin of this group. You should transfer admin privileges or delete the group before leaving it." = "You are the admin of this group. You should transfer admin privileges or delete the group before leaving it.";
-"Continue delete" = "Continue delete";
+"Advanced Sharing Options" = "Advanced Sharing Options";
 
 //emoji
 "Save emojis from any chat" = "Save emojis from any chat";
@@ -1721,7 +1301,6 @@
 "Syncing emojis..." = "Syncing emojis...";
 "Delete Selected(%d)" = "Delete Selected(%d)";
 "Delete Selected" = "Delete Selected";
-"Add more emojis here" = "Add more emojis here";
 "Upload emoji" = "Upload emoji";
 "Delete emoji" = "Delete emoji";
 "Edit" = "Edit";
@@ -1757,11 +1336,6 @@
 
 //allow group admin delete group
 "Group \"%@\" has been deleted by admin." = "Group \"%@\" has been deleted by admin.";
-"Transfer Admin" = "Transfer Admin";
-"Assign the new group admin" = "Assign the new group admin";
-"You are permanently removing all group conversations, files, and other related information. There is no way to recover the information." = "You are permanently removing all group conversations, files, and other related information. There is no way to recover the information.";
-
-"Choose the audio conference option" = "Choose the audio conference option";
 
 //waiting list
 "Please wait, the meeting host will let you in soon." = "Please wait, the meeting host will let you in soon.";
@@ -1796,8 +1370,6 @@
 "on %@" = "on %@";
 "View Stream on %@" = "View Stream on %@";
 "Unmute your speaker or increase volume to hear other participants" = "Unmute your speaker or increase volume to hear other participants";
-"To decrypt the messages, at least one group member must be online." = "To decrypt the messages, at least one group member must be online.";
-"To decrypt the messages, %@ must be online." = "To decrypt the messages, %@ must be online.";
 "[Upgrade to the latest version to see this message.]" = "[Upgrade to the latest version to see this message.]";
 //ZOOM-13800
 
@@ -1853,23 +1425,16 @@
 "Share Screen Options" = "Share Screen Options"; 
 //ZOOM-12052
 
-"Waiting for approval" = "Waiting for approval";
 "Once" = "Once";
-"Continuously" = "Continuously";
 "Zoom Room" = "Zoom Room";
 "View Options" = "View Options"; 
 //zoom-7081
-"Change my status to Offline when I am inactive for %@ minutes" = "Change my status to Offline when I am inactive for %@ minutes";
 "Recording..." = "Recording...";
-"Bounce application icon when I receive a chat message" = "Bounce application icon when I receive a chat message";
 
 "Unmute Myself" = "Unmute Myself";
 //ZOOM-10736
 "You are muted." = "You are muted.";
 //ZOOM-10736
-
-"Your login attempt was not successful and you need to log in again. If this occurs multiple times, contact IT support." = "Your login attempt was not successful and you need to log in again. If this occurs multiple times, contact IT support.";
-//ZOOM-13356
 
 "Services" = "Services";
 //ZOOM-13920
@@ -1880,8 +1445,6 @@
 //ZOOM-13176
 "status, available" = "status, available";
 //ZOOM-13176
-"status, busy" = "status, busy";
-//ZOOM-13176
 "status, offline" = "status, offline";
 //ZOOM-13176
 
@@ -1890,9 +1453,6 @@
 "Show Dial-in Number" = "Show Dial-in Number";
 //ZOOM-14880
 
-"File cannot be uploaded because it can not be found" = "File cannot be uploaded because it can not be found";
-//ZOOM-6524
-"File cannot be uploaded because it can not be read" = "File cannot be uploaded because it can not be read";
 //ZOOM-6524
 
 "count" = "count";
@@ -1900,15 +1460,10 @@
 "Choose from the list or type to filter" = "Choose from the list or type to filter";
 //ZOOM-4940
 
-"Try an unlimited Zoom meeting\n" = "Try an unlimited Zoom meeting\n";
-//ZOOM-15607
-"As a Basic user, your free meeting has a time limit of 40 minutes. Zoom is giving you a one-time offer to extend this meeting, Click \"Continue\" to enjoy your unlimited meeting for free. Thanks for choosing Zoom." = "As a Basic user, your free meeting has a time limit of 40 minutes. Zoom is giving you a one-time offer to extend this meeting, Click \"Continue\" to enjoy your unlimited meeting for free. Thanks for choosing Zoom.";
 //ZOOM-15607
 "Unable to extend this meeting\n" = "Unable to extend this meeting\n";
 //ZOOM-15607
 "Zoom cannot extend your free meeting at this time. Your meeting will end when the duration reaches 40 minutes.\n\n(ERROR : %d)" = "Zoom cannot extend your free meeting at this time. Your meeting will end when the duration reaches 40 minutes.\n\n(ERROR : %d)";
-//ZOOM-15607
-"This meeting no longer has a time limit" = "This meeting no longer has a time limit";
 //ZOOM-15607
 
 "Touch up my appearance" = "Touch up my appearance";
@@ -1944,21 +1499,11 @@
 "Pause/Stop Recording" = "Pause/Stop Recording";
 "Resume/Stop Recording" = "Resume/Stop Recording";
 
-"A new version is available!" = "A new version is available!";
-
 "The meeting has been locked by the host" = "The meeting has been locked by the host";
 "You cannot chat with %@ during this meeting" = "You cannot chat with %@ during this meeting";
 "How was your meeting experience?" = "How was your meeting experience?";
 
-"Enable HD" = "Enable HD";
-//ZOOM-16213
-"Enable mirror effect" = "Enable mirror effect";
-//ZOOM-16213
-"LN_Show_Participant_Name_40473" = "Always display participants‘ names on their videos";
-//ZOOM-16213
 "Turn off my video when joining meeting" = "Turn off my video when joining meeting";
-//ZOOM-16213
-"My Video:" = "My Video:";
 //ZOOM-16213
 "Meetings:" = "Meetings:";
 //ZOOM-16213
@@ -1980,11 +1525,7 @@
 "You are not authorized to start the meeting using the credentials you signed in with." = "You are not authorized to start the meeting using the credentials you signed in with.";
 //ZOOM-16131
 
-"Jump to chat..." = "Jump to chat..."; 
-//Zoom-16973
-"[Mentioned all]" = "[Mentioned all]"; 
-//Zoom-16973
-"[Mentioned me]"  = "[Mentioned me]";
+"Jump to..." = "Jump to...";
 "Image" = "Image";
 //Zoom-16973
 "File"  = "File";
@@ -2015,34 +1556,18 @@
 //[Zoom-17617]
 
 "Record a separate audio file for each participant who speaks" = "Record a separate audio file for each participant who speaks";
-//ZOOM-17829
 
-"Close Manage Participants Panel" = "Close Manage Participants Panel";
-//ZOOM-12824
-"Close Participants Panel" = "Close Participants Panel";
-//ZOOM-12824
-"Open Manage Participants Panel" = "Open Manage Participants Panel";
-//ZOOM-12824
-"Open Participants Panel" = "Open Participants Panel";
 //ZOOM-12824
 "Close Chat Panel" = "Close Chat Panel";
 //ZOOM-12824
 "Open Chat Panel" = "Open Chat Panel";
 //ZOOM-12824
 
-"Gain remote control" = "Gain remote control";
-//ZOOM-17003
-
 //sip
 "Phone" = "Phone";
 //ZOOM-14478
-"Contact name or phone number" = "Contact name or phone number";
-//ZOOM-14478
-//"Call" = "Call";
-//ZOOM-14478
-//"Hang Up" = "Hang Up";
-//ZOOM-14478
-//"SIP Dialer" = "SIP Dialer";
+"Contact name or phone number" = "Contact name or Phone number";
+
 //ZOOM-14478
 "From: %@" = "From: %@";
 //ZOOM-14478
@@ -2050,7 +1575,7 @@
 //ZOOM-14478
 "End phone call and Start a meeting" = "End phone call and Start a meeting";
 //ZOOM-14478
-"Hold meeting audio and Anwser" = "Hold meeting audio and Anwser";
+"Hold meeting audio and Anwser" = "Hold Meeting audio & Answer";
 //ZOOM-14478
 "invites you to a 1 on 1 video call..." = "invites you to a 1 on 1 video call...";
 //ZOOM-14478
@@ -2062,11 +1587,9 @@
 //ZOOM-14478
 "Start a non-video call" = "Start a non-video call";
 //ZOOM-14478
-"Delete call history" = "Delete call history";
-//ZOOM-14478
 "Keypad" = "Keypad";
 //ZOOM-14478
-"Call History" = "Call History";
+"Call History" = "History";
 //ZOOM-14478
 "Zoom Audio" = "Zoom Audio";
 //ZOOM-14478
@@ -2155,7 +1678,6 @@
 "My connected time is %d hour %d minute" = "My connected time is %d hour %d minute";
 //[Zoom-18265]
 
-"Zoom will decrypt the message when the key becomes available" = "Zoom will decrypt the message when the key becomes available";
 //zoom-19350
 "You cannot call any international phone numbers from this meeting until the host joins." = "You cannot call any international phone numbers from this meeting until the host joins.";
 //zoom-19350
@@ -2175,14 +1697,10 @@
 "When prompted on your iPhone or iPad, select \"Trust\"" = "When prompted on your iPhone or iPad, select \"Trust\"";
 //[Zoom-16943]
 
-"Blocked Users:" = "Blocked users:";
-"Manage Blocked Users..." = "Manage blocked users...";
 "Blocked Users" = "Blocked users";
 "Select users below to unblock:" = "Select users below to unblock:";
 "Unblock" = "Unblock";
 "Create" = "Create";
-"Create a New Group" = "Create a New Group";
-"Join a Public Group" = "Join a Public Group";
 "Images" = "Images";
 "All Files" = "All Files";
 "Add to Emojis" = "Add to emoji";
@@ -2203,12 +1721,228 @@
 "What went wrong?" = "What went wrong?";
 //Zoom-4744
 
+"Your file send failed.   Resend" = "Your file send failed.   Resend";
+"Your image send failed.   Resend" = "Your image send failed.   Resend";
+"Your voice message send failed.   Resend" = "Your voice message send failed.   Resend";
+"Insufficient space on the disk" = "Insufficient space on the disk";
+"Disk I/O error" = "Disk I/O error";
+"Time out" = "Time out";
+"Can't find file" = "Can't find file";
+"@me" = "@me";
+"Manual" = "Manual";
+"Switch" = "Switch";
+"Separator" = "Separator";
+"Menu" = "Menu";
+
+//videoBundle
+"Copy the URL to your clipboard" = "Copy the URL to your clipboard";
+"Remove this user failed" = "Remove this user failed";
+"Your Email" = "Your Email";
+"Claim hostkey failed" = "Claim hostkey failed";
+"More than 2 participants are sharing,switch will stop all sharings, do you want to continue?" = "More than 2 participants are sharing,switch will stop all sharings, do you want to continue?";
+"Switch to single participant share" = "Switch to single participant share";
+"ok" = "ok";
+"please use the correct version resource bundle" = "please use the correct version resource bundle";
+"Enter Maximize" = "Enter Maximize";
+"Exit Maximize" = "Exit Maximize";
+"everyone" = "everyone";
+"Your message was sent to " = "Your message was sent to ";
+"Type message here" = "Type message here";
+"Chat list" = "Chat list";
+"The file is too big to send" = "The file is too big to send";
+"Invalid file" = "Invalid file";
+"Connection lost" = "Connection lost";
+"Failed to send file" = "Failed to send file";
+"\"%@\" is not a supported file format." = "\"%@\" is not a supported file format.";
+"Select a Camera (⇧⌘N to switch)" = "Select a Camera (⇧⌘N to switch)";
+"Shared Screens" = "Shared Screens";
+"waiting for %@ to control your screen" = "waiting for %@ to control your screen";
+"Participants list" = "Participants list";
+"unknown user" = "unknown user";
+"history meeting menu" = "history meeting menu";
+"Zoom Meeting" = "Zoom Meeting";
+"VideoSharingSwitch" = "VideoSharingSwitch";
+"Close Closed Caption Panel" = "Close Closed Caption Panel";
+"Open Closed Caption Panel" = "Open Closed Caption Panel";
+"Switch to Sharing Content" = "Switch to Sharing Content";
+"color" = "color";
+"line width" = "line width";
+"bold font" = "bold font";
+"italic font" = "italic font";
+"font size" = "font size";
+"No question and anwser" = "No question and answer";
+"Upvote" = "Upvote";
+"Disconnect Kubi" = "Disconnect Kubi";
+"NO" = "NO";
+"Output level:" = "Output level:";
+"Input level:" = "Input level:";
+"Automatically join audio conference via Mic & Speaker when Joining a meeting" = "Automatically join audio conference via Mic & Speaker when Joining a meeting";
+"Already joined by phone" = "Already joined by phone";
+"The number you dialed is not supported." = "The number you dialed is not supported.";
+"joined" = "joined";
+"left" = "left";
+"Camera is in use by another application, please quit any other application that might be using the camera or select another camera in Settings window" = "Camera is in use by another application, please quit any other application that might be using the camera or select another camera in Settings window";
+"Can't start video" = "Can't start video";
+"audio" = "audio";
+"video" = "video";
+"screen share" = "screen share";
+"Your network bandwidth is not sufficient for high quality %@" = "Your network bandwidth is not sufficient for high quality %@";
+"seperator line" = "separator line";
+"The webinar is scheduled for %@." = "The webinar is scheduled for %@.";
+"The meeting is scheduled for %@." = "The meeting is scheduled for %@.";
+"You do not have privilege to start cloud meeting record" = "You do not have privilege to start cloud meeting record";
+"failed to install service" = "failed to install service";
+"Switch to video" = "Switch to video";
+"Show small sharing view" = "Show small sharing view";
+"Show large sharing view" = "Show large sharing view";
+"You have stopped screen share" = "You have stopped screen share";
+"You have started screen share" = "You have started screen share";
+"has started screen share" = "has started screen share";
+"has stopped screen share" = "has stopped screen share";
+
+//sip bundle
+"on hold" = "on hold";
+
+//chat bundle
+"The email address has been registered by another user. Please use a different email." = "The email address has been registered by another user. Please use a different email.";
+"The PMI has been copied to the Clipboard." = "The PMI has been copied to the Clipboard.";
+"LN_ZOOM-50139_Make sure you’re connected to the internet and your connection to Zoom is not blocked by a firewall or proxy. (ERROR CODE: %d)" = "sure you’re connected to the internet and your connection to Zoom is not blocked by a firewall or proxy. (ERROR CODE: %d)";
+"❮ Back" = "❮ Back";
+"Good" = "Good";
+"Bad" = "Bad";
+"Are you sure you want to delete file?" = "Are you sure you want to delete file?";
+"remove this member?" = "remove this member?";
+"The image size exceeds the limit (8MB)." = "The image size exceeds the limit (8MB).";
+"The message is too long, please split it into multiple messages and then try it again." = "The message is too long, please split it into multiple messages and then try it again.";
+"Network error，please try again." = "Network error，please try again.";
+"Saving..." = "Saving...";
+"%@ can not be invited to this internal group" = "%@ can not be invited to this internal group";
+"Your meeting has been updated" = "Your meeting has been updated";
+"Your meeting has been scheduled" = "Your meeting has been scheduled";
+"Optional" = "Optional";
+"Outlook" = "Outlook";
+"video on" = "video on";
+"video off" = "video off";
+"MEETING INVITATION" = "MEETING INVITATION";
+"Change background image" = "Change background image";
+"NOW" = "NOW";
+"starts in 1 min" = "starts in 1 min";
+"starts in %ld mins" = "starts in %ld mins";
+"Blocked" = "Blocked";
+"Enter email address" = "Enter email address";
+"Desktop Available" = "Desktop Available";
+"Mobile Available" = "Mobile Available";
+"Do not disturb" = "Do not disturb";
+"In a meeting" = "In a meeting";
+"In a Zoom meeting" = "In a Zoom meeting";
+"Offline" = "Offline";
+"This name is already in use. Please choose another name." = "This name is already in use. Please choose another name.";
+"Star" = "Star";
+"channel name is empty" = "channel name is empty";
+"channel members is empty" = "channel members is empty";
+"channel ID is empty" = "channel ID is empty";
+"create channel failure,please try again later" = "create channel failure,please try again later";
+"edit channel failure,please try again later" = "edit channel failure,please try again later";
+"leave channel failure,please try again later" = "leave channel failure,please try again later";
+"modify channel name failure,please try again later" = "modify channel name failure,please try again later";
+"modify channel option failure,please try again later" = "modify channel option failure,please try again later";
+"add channel members failure,please try again later" = "add channel members failure,please try again later";
+"remove channel members failure,please try again later" = "remove channel members failure,please try again later";
+"search channel failure,please try again later" = "search channel failure,please try again later";
+"join channel failure,please try again later" = "join channel failure,please try again later";
+"do not have permission" = "do not have permission";
+"assign admin failure,please try again later" = "assign admin failure,please try again later";
+"disband channel failure,please try again later" = "disband channel failure,please try again later";
+"Start chatting by clicking or creating a chat on the left panel." = "Start chatting by clicking or creating a chat on the left panel.";
+"Upload" = "Upload";
+"Code" = "Code";
+"Type message..." = "Type message...";
+"What's on your mind..." = "What's on your mind...";
+"You can not send message in offline status." = "You can not send message in offline status.";
+"You cannot send a message as you are not a member of this group." = "You cannot send a message as you are not a member of this group.";
+"Files" = "Files";
+"To decrypt the messages, %@ must be online and a decryption key must be available." = "To decrypt the messages, %@ must be online and a decryption key must be available.";
+"To decrypt the messages, at least one group member must be online and a decryption key must be available." = "To decrypt the messages, at least one group member must be online and a decryption key must be available.";
+"My Files" = "My Files";
+"Failed to load files" = "Failed to load files";
+"Starred Messages" = "Starred Messages";
+"%ld Members" = "%ld Members";
+"1 member" = "1 member";
+"More Options" = "More Options";
+"Private Channel" = "Private Channel";
+"Leave Channel" = "Leave Channel";
+"Delete Channel" = "Delete Channel";
+"Delete Chat" = "Delete Chat";
+"Add to Contact List" = "Add to Contact List";
+"View All %ld Members" = "View All %ld Members";
+"View All Files" = "View All Files";
+"View All Images" = "View All Images";
+"@all" = "@all";
+"Decrypting…" = "Decrypting…";
+"Jump" = "Jump";
+"Edited %@" = "Edited %@";
+"Failed to send this chat message, click to resend it." = "Failed to send this chat message, click to resend it.";
+"Decrypt this message" = "Decrypt this message";
+"Remove this Contact" = "Remove this Contact";
+"STARRED" = "STARRED";
+"RECENT" = "RECENT";
+"Create a Channel" = "Create a Channel";
+"Join a Channel" = "Join a Channel";
+"99+ new messages" = "99+ new messages";
+"%ld new messages" = "%ld new messages";
+"%ld new message" = "%ld new message";
+"Press to show user profile's menu" = "Press to show user profile's menu";
+"presence online" = "presence online";
+"Presence In Meeting" = "Presence In Meeting";
+"Presence Do not Disturb" = "Presence Do not Disturb";
+"Presence Away" = "Presence Away";
+"Presence Offline" = "Presence Offline";
+"Pro" = "Pro";
+"Basic" = "Basic";
+"%lldh" = "%lldh";
+"%lldh %lldm" = "%lldh %lldm";
+"%lldm" = "%lldm";
+"Recurring" = "Recurring";
+"Refresh" = "Refresh";
+"Show Meeting Invitation" = "Show Meeting Invitation";
+"Hide Meeting Invitation" = "Hide Meeting Invitation";
+"All Filles" = "All Filles";
+"All custom channel notification settings will be reset to default. Would you like to proceed?" = "All custom channel notification settings will be reset to default. Would you like to proceed?";
+"Channels" = "Channels";
+"Enable retina screen sharing" = "Enable retina screen sharing";
+"Show participant videos and screen shared content on separate screens" = "Show participant videos and screen shared content on separate screens";
+"Automatically show screen shared content (left) next to participant videos (right)" = "Automatically show screen shared content (left) next to participant videos (right)";
+"Submit Feedback" = "Submit Feedback";
+"Failed to send your feedback" = "Failed to send your feedback";
+"microphone volume" = "microphone volume";
+"speaker volume" = "speaker volume";
+"status, in meeting" = "status, in meeting";
+"status, do not disturb" = "status, do not disturb";
+"status, Away" = "status, Away";
+"Font Size:" = "Font Size:";
+"closed caption size" = "closed caption size";
+"Shortcut" = "Shortcut";
+"You have been signed out of your Zoom account. Log in again to resume using Zoom." = "You have been signed out of your Zoom account. Log in again to resume using Zoom.";
+"Keep me signed in" = "Keep me signed in";
+"Save As..." = "Save As...";
+"Dividing line" = "Dividing line";
+"Enter members to invite, Search by name" = "Enter members to invite, Search by name";
+"View profile" = "View profile";
+"Start New Meeting" = "Start New Meeting";
+"Schedule Meeting" = "Schedule Meeting";
+"Start New Meeting Options" = "Start New Meeting Options";
+"more meeting option" = "more meeting option";
+"Add to Emoji" = "Add to Emoji";
+"status, Offline" = "status, Offline";
+"Please try again later." = "Please try again later.";
+"Sign in" = "Sign in";
+"Jump to Chat" = "Jump to Chat";
+"The meeting has an unexpected error. Error code : %d" = "The meeting has an unexpected error. Error code : %d";
+
 //new webinar
 "LN_Disallow_Talk_15291" = "Disable talking";
 "LN_Allow_Talk_15291" = "Allow to talk";
-"LN_Mute_Audio_15291" = "Mute";
 "LN_Audio_Settings_15291" = "Audio Settings";
-"LN_Allow_Talk_Tip_15291" = "The host is allowing you to speak in the webinar";
 "LN_Talk_Allowed_15291" = "Talking permitted";
 "LN_Chat_15291" = "Chat";
 "LN_Plist_Allow_Attendee_To_15291" = "Allow attendees to:";
@@ -2223,6 +1957,7 @@
 "LN_Alert_Stay_Muted_15291" = "Stay muted";
 "LN_Alert_Temp_Talk_Title_15291" = "The host would like you to unmute your microphone";
 "LN_Alert_Temp_Talk_Error_15291" = "Allow to talk is not available because %@ is using an older version of Zoom, you need to promote %@ to a panelist to talk";
+"LN_Alert_Switch_And_Unmute_54189" = "Switch to Computer Audio to unmute";
 
 //plist accessibility
 "LN_Plist_Accessibility_Recording_20044" = "Recording";
@@ -2247,10 +1982,8 @@
 "LN_Plist_Accessibility_Break_20044" = "Need a break";
 "LN_Plist_Accessibility_Away_20044" = "Away";
 "LN_Plist_Accessibility_Share_Audio_21795" = "Computer Audio sharing";
+"LN_Plist_Accessibility_Share_Screen_41522" = "Screen sharing";
 
-"Select a microphone to always use original sound" = "Select a microphone to always use original sound";
-//[Zoom-17822]
-"LN_Unread_Message_22128" = "%d Unread messages";
 "LN_Schedule_Mute_Participants_On_Entry_15154" = "Mute participants on entry";
 //ZOOM-15154
 "Show Zoom menu in menu bar" = "Show Zoom menu in menu bar";
@@ -2260,7 +1993,6 @@
 "Guest" = "Guest";
 //[Zoom-20772]
 
-"LN_Create_Duplicate_Name_Group_22373" = "Another group is already using this name. Use a different name for this group.";
 "LN_Alert_Diable_GoogleFacebook_Login_19082" = "You cannot sign into your Zoom account using this method. Contact your IT administrator for instructions.";
 //[zoom-19082]
 
@@ -2303,10 +2035,7 @@
 "LN_Emoji_Cagegory_Frequently_Label_23623" = "Frequently Used";
 "LN_Emoji_Cagegory_Custom_Label_23623" = "Custom";
 "LN_Emoji_Search_Result_Label_23623" = "Search results";
-"LN_LinkPreview_Label_23623" = "Include Link Preview";
 
-"LN_You_Delete_File_@_Label_19886" = "You deleted file: %@";
-"LN_@_Delete_File_@_Label_19886" = "%@ deleted file: %@";
 "LN_Delete_Message_Label_19886" = "You deleted a message";
 "LN_@_Delete_Message_Label_19886" = "%@ deleted a message";
 
@@ -2329,47 +2058,19 @@
 "LN_Snooze_Menu_2_Hours_19901" = "2 hours";
 "LN_Snooze_Menu_4_Hours_19901" = "4 hours";
 "LN_Snooze_Menu_8_Hours_19901" = "8 hours";
-"LN_Time_Period_Label_19901" = "Set the time period";
-"LN_Scheduled_Until_Label_19901" = "Scheduled until";
-"LN_Resume_In_Hour_Minute_19901" = "Resume in %lldh %lldm";
-"LN_Resume_In_hour_19901" = "Resume in %lldh";
-"LN_Resume_In_Minute_19901" = "Resume in %lldm";
-"LN_Resume_In_Seconds_19901" = "Resume in %llds";
-"LN_Notification_Settings_19901" = "Notification settings";
-"LN_Add_Person_Note_19901" = "Add a personal note";
-"LN_Remove_Person_Note_19901" = "Remove personal note";
 "LN_Notifications_Label_19895" = "Notifications";
-"LN_Hit_Unread _message_22128" = "——————   Below are new messages   ——————";
 
-"Multi-user chats" = "Multi-user chats";
-
-"LN_MUTE_NOTIFICATION_ON_CALL_19895" = "Pause notifications while I am in meeting or internal call";
 "LN_GROUP_NOTIFY_SETTING_ALL_19895" = "All messages";
 "LN_GROUP_NOTIFY_SETTING_MENTION_ 19895" = "Mention me or all members";
 "LN_GROUP_NOTIFY_SETTING_NOTHING_19895" = "Nothing";
 "LN_RECEIVE_PERMISSION_ALLMSG_19895" = "All messages";
 "LN_RECEIVE_PERMISSION_PARTMSG_19895" = "Only direct messages and mentions";
 "LN_RECEIVE_PERMISSION_NOTHING_19895" = "Nothing";
-"LN_AUTO_NOTIFICATION_TIME_FROM_19895" = "Automatically disable notifications from:";
-"LN_RECEIVE_NOTIFICATION_BOUNCE_TIMES_19895" = "Bounce application icon when I receive a new message";
-"LN_RECEIVE_NOTIFICATION_SHOW_FLOATING_19895" = "Show floating notification when I receive a new message";
-"LN_RECEIVE_NOTIFICATION_PLAY_SOUND_19895" = "Play sound when I receive a chat message";
-"LN_GROUP_NOTIFY_SEARCH_TXT_19895" = "Search for groups";
 
 "LN_Group_Setting_Title_19895" = "Important Groups";
-"LN_Instant_Message_Title_19895" = "Instant Messaging";
-"LN_Notification_Setting_Title_19895" = "Notification Settings";
-"LN_With_Exceptions_Label_19895" = "With exceptions for";
-"LN_Exception_Group_button_19895" = "Groups...";
-"LN_Exception_Group_button_small_19895" = "groups...";
 "LN_Group_Setting_Reset_Button_19895" = "Reset";
-"LN_Import_Groups_Cell_Groups_Label_19895" = "Groups";
 "LN_Preferred_Notification_Label_19895" = "Your preferred Notifications setting is";
-"LN_Choose_Exception_Label_19895" = "Choose exceptions for specific groups";
-"LN_Setting_Tool_Item_Instant_Messgae_19895" = "Instant Messaging";
-"LN_Reset_Setting_Group_Label_19895" = "All custom group notification settings will be reset to default. Would you like to proceed?";
 "LN_Reset_Confirm_Button_Title_19895" = "Confirm";
-"LN_Exception_Group_Singal_Title_19895" = "group...";
 
 "LN_SIP_PWD_Err_Tip_25328" = "Zoom has detected that the password has been changed or is incorrect. Enter the password you set for this phone number.";
 "LN_SIP_PWD_PlaceHolder_Tip_25328" = "Enter internal phone password ";
@@ -2391,7 +2092,6 @@
 
 "LN_Need_Sign_In_Again_25027" = "Your session has ended and you need to sign in again";
 "LN_This_File_Will_Be_Removed_27316" = "This file will be removed only from the group - <%@> and it will not be deleted from your Personal Files.";
-"LN_Phone_Service_Not_Avaliable_20377" = "Phone service is not avaliable";
 "LN_Stop_CMR_Warning_25471" = "Do you want to stop cloud recording?";//[Zoom-25471]
 "LN_Stop_CMR_Email_Warning_25471" = "If Yes, you will receive an email notification when the cloud recording is ready";//[Zoom-25471]
 
@@ -2426,12 +2126,6 @@
 "Switch camera" = "Switch camera";
 "Stop remote control" = "Stop remote control";
 
-
-
-
-
-"LN_IM_Delete_Failed_30533" = "Fail to delete a message";
-"LN_IM_Receive_Notification_Exception_For_Others_31155" = "Receive Notifications for";
 "LN_IM_Notification_Keywords_31155" = "Keywords";
 "LN_IM_Notification_Keyword_31155"  = "Keyword";
 "LN_IM_Notification_Contacts_31155" = "Contacts";
@@ -2457,19 +2151,16 @@
 "LN_IM_Notification_Group_Text_31106" = "Sent a message.";
 "LN_IM_Notification_Group_Encrypted_Text_31106" = "Sent an encrypted message.";
 
-"LN_ACCESSIBILITY_Window_will_close_21244" = "The window will be closed"; //ZOOM-21244
 "LN_Setting_Record_Optimize_28546" = "Optimize for 3rd party video editor";
-"LN_Setting_Record_Optimize_Info_28546" = "Enable this option to ensure compatibility of the recording file created by Zoom with video editing software you can use to modify the recording file.";
-"LN_Setting_Record_Thumbnails_28544" = "Record thumbnails when sharing";
 "LN_Setting_Record_Timestamp_28548" = "Add a timestamp to the recording";
 "LN_Setting_Record_Timestamp_Info_28548" = "Enable this option to embed the date and time of the actual meeting into the video recording.";
 "LN_Select_Record_Path_warning_30336" = "Select the folder on your local computer where you would like the recorded files to be saved";
 
 "LN_Code_Snippet_Create_Window_Title_31934" = "Create Code Snippet";
+"LN_Code_Snippet_Edit_Window_Title_31934" = "Edit Code Snippet";
 "LN_Code_Snippet_Create_Button_Title_31934" = "Create snippet";
 "LN_Code_Snippet_Setting_Title_31934" = "Show Code Snippet button";
 "LN_Code_Snippet_Setting_Title_Locked_31934" = "Show Code Snippet button (Locked by admin)";
-"LN_Code_Snippet_Button_Title_31934" = "Code";
 "LN_Code_Snippet_Code_Optional_Title_31934" = "Title (optional)";
 "LN_Code_Snippet_Create_Button_Try_Title_31934" = "Try again";
 "LN_Code_Snippet_Upload_Failed_31934" = "Upload was not complete. Try again.";
@@ -2492,11 +2183,11 @@
 
 "LN_Join_Audio_33542" = "Join audio";
 "LN_Polling_Conflict_32870" = "You have logged in from another device. Your polling session is inactive.";
-"LN_CopyRight_34145" = "Copyright ©2012-2018 Zoom Video Communications, Inc.";
+"LN_CopyRight_34145" = "Copyright ©2012-2019 Zoom Video Communications, Inc.";
 
-"LN_Enable_49_Wall_View_30742" = "Display up to 49 participants per screen in Gallery View";
 "LN_49_Wall_View_Tip_30742" = "The CPU on your computer only supports 25 participants per screen in Gallery View. See the article \"Displaying Participants in Gallery View\" for the minimum requirements to use this feature.";
 "LN_TurnOn_OriginalSound_30742" = "Turn on Original Sound";
+"LN_Accessibility_OriginalSound_Option_30742" = "Original Sound Option";
 "LN_Msg_Removed_%@_33477" = "Messages you send and receive will be removed in %@";
 "LN_Changed_Settings_33477" = "Change settings";
 "LN_Or_33477" = "or";
@@ -2525,10 +2216,6 @@
 
 "LN_Waiting_Admit_All_39691" = "Admit all";
 
-"LN_Meeting_List_Item_Add_Calendar_25869" = "Add a calendar";
-"LN_Meeting_List_Item_Add_Calendar_Help_25869" = "When connected, your meetings and webinars will appear on the Zoom Client. Your presence status will also be synced.";
-"LN_MeetingList_Item_Info_Host_25869" = "Host: %@\n";
-
 "LN_Metting_RemoteControl_Abort_Control_28437" = "Abort Control"; //[ZOOM-28437]
 "LN_Metting_RemoteControl_Who_Is_Controlling_28437" =  "(Controlling)" ;//[ZOOM-28437]
 "LN_Metting_RemoteControl_SearchUser_NOResult_28437" = "No result"; //[ZOOM-28437]
@@ -2550,13 +2237,9 @@
 "LN_Join_WebURL_Content_15122" = "Click \"%@\" to join the meeting with limited functionality because of a problem when joining from the Zoom client.";
 "LN_Join_WebURL_Button_15122" = "Join from browser";
 "LN_Share_Frame_39044" = "Portion of Screen";
-"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "Screen Capture Menu";
-"LN_Acessibilty_ClosedCaptionFontSize_%d_39033" = "%d,Closed caption size, slider";
-"LN_Acessibilty_ClosedCaption_Subtitles_%d_39033" = "These are the %d points sized subtitles";
 
 "LN_Annotate_AnnotatePanel_21222" = "annotation panel";
 "LN_Annotate_ShapePanel_21222" = "tool panel";
-"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "Screen Capture Menu";
 "LN_Annotate_FormatPanel_21222" = "format panel";
 "LN_Annotate_Diamond_21222" = "Diamond";
 "LN_Annotate_DoubleArrow_21222" = "Double arrow";
@@ -2575,11 +2258,9 @@
 "LN_Annotate_StampArrow_21222" = "Stamp arrow";
 "LN_Annotate_Spotlight_21222" = "Spotlight";
 
-"LN_Change_Status_Away_When_InActive_%@_Minutes_40737" = "Change my status to Away when I am inactive for %@ minutes";
 "LN_Code_Snippet_Length_Error_40055" = "File size cannot exceed 16KB.";
 //old string
 "LN_Hide_ChatWnd_When_ScreenShot_32455" = "Hide chat window in screenshot";
-"LN_To_32455" = "To";
 "LN_GDPR_40930_SIGNIN_TITLE" = "We are updating our terms and policies";
 "LN_GDPR_40930_SIGNIN_DETAIL_%1$@_%2$@" = "Zoom is updating its Terms of Service and Privacy Policy to provide you with more transparency into the data Zoom collects, how it is used, and the controls you have over your personal data. By continuing to use Zoom, you accept the updated %1$@ and %2$@.";
 "LN_GDPR_40930_To use Zoom, you need to agree to the %1$@ and %2$@." = "To use Zoom, you need to agree to the %1$@ and %2$@.";
@@ -2600,7 +2281,7 @@
 "LN_Help_String_40539" = "Help";
 "LN_Participants_Raised_Hand_39858" = "participants raised hand";
 "LN_Raised_Hand_39858" = "raised hand";
-"LN_Limit_Your_Screen_Share_To_%@_Frames_Per_Second_47718" = "Limit your screen share to %@ frames-per-second";//ZOOM-47718
+"LN_Sharing_Screen_List_Box_44008" = "Sharing screen list box";//ZOOM-44008
 
 "LN_Toolbar_Open_Participants_Panel_39047" = "Closed, open participants panel, %ld participants";
 "LN_Toolbar_Close_Participants_Panel_39047" = "Opened, close participants panel, %ld participants";
@@ -2628,9 +2309,16 @@
 "LN_Select_37969" = "Select";
 "LN_Decline_37969" = "Decline";
 "LN_Approve_37969" = "Approve";
+"LN_Invite_Zoom_Rooms_20093" = "Zoom Rooms";
 "LN_Invite_Room_System_20093" = "Room System";
 "LN_Setting_Record_During_Sharing_39256" = "Record video during screen sharing";
 "LN_Setting_Record_Video_Next_To_Share_39256" = "Place video next to the shared screen in the recording";
+"LN_Setting_WithExceptionForNewIM" = "With exception for";
+"LN_Setting_OnlyPrivateMessagesMentions_NewIM" = "Only private messages or mentions";
+"LN_Setting_PlaySoundWhenReceiveMessage_NewIM" = "Play sound when I receive a new message";
+"LN_Setting_MuteNotificationsWhileInMeeting_NewIM" = "Mute notifications while I am in a meeting or internal call";
+"LN_ReceiveNotificationsFor_NewIM" = "Receive notifications for";
+"LN_Setting_ChangeToAwayWhenInactive_NewIM" = "Change my status to Away when I am inactive for";
 
 "LN_Meeting_QA_Type_Question_40651" = "Type your question here…";
 "LN_Meeting_QA_Allow_Anonymous_Questions_40651" = "Allow anonymous questions";
@@ -2649,7 +2337,6 @@
 "LN_Meeting_QA_Collapse_40651" = "Collapse all";
 "LN_Meeting_QA_Attend_Comment_40651" = "Comment";
 "LN_Meeting_QA_End_Live_Answer_40651" = "This question has been answered live";
-"LN_Meeting_QA_Question_Dismissed_40651" = "This question has been dismissed";
 "LN_Meeting_QA_Type_Answer_40651" = "Type answer";
 "LN_Meeting_QA_My_Question_40651" = "My Question";
 "LN_Meeting_QA_Reopen_40651" = "Reopen";
@@ -2657,13 +2344,8 @@
 "LN_Meeting_QA_Add_Comment_40651" = "Type your comment here…";
 "LN_Meeting_QA_Unread_Questions_40651" = "Q&A, %ld unread questions";
 "LN_Meeting_QA_Open_21381" = "Open";
-"LN_Acessibilty_ScreenCaptureMenu_Btn_21044" = "Screen Capture Menu";
 "LN_Accessibility_OpenDefaultBrowser_39412" = "opens in your default browser";
 "LN_Accessibility_Link_39412" = "link";
-"LN_Accessibility_VB_Support_39412" = "virtual background support";
-
-"LN_Accessibility_Upcoming_meetings_7432" = "Upcoming meetings";
-"LN_Accessibility_Recorded_meetings_7432" = "Recorded meetings";
 
 "LN_Accessibility_RemoteControlWondow_43656" = "Selected";
 
@@ -2680,16 +2362,19 @@
 "LN_Accessibility_You_Stop_Audio_Share_21795" = "You have stopped computer audio share";
 "LN_Accessibility_Someone_Start_Aduio_Share_21795" = "%@ has started computer audio share";
 "LN_Accessibility_Someone_Stop_Aduio_Share_21795" = "%@ has stopped computer audio share";
-"LN_Share_Frame_Tooltip_21795" = "Share a portion of your screen by using a resizeable rectangular window";
+"LN_Share_Frame_Tooltip_21795" = "Share a portion of your screen by using a resizable rectangular window";
 "LN_Share_Sound_Tooltip_21795" = "Share audio from your computer without sharing your screen";
 "LN_Share_Camera_Tooltip_21795" = "Share content from a 2nd camera, e.g. document camera";
 
 "LN_Accessibility_Select_Country_Code_21342" = "Select Country Code";
 "LN_Accessibility_Call_Me_History_21342" = "Call me history country";
 
-"LN_TranferAmdin_From_You_To_%@_42604" = "The admin of this group has been changed from you to %@.";
-"LN_TranferAmdin_From_%@_To_%@_42604" = "The admin of this group has been changed from %@ to %@.";
-"LN_TranferAmdin_From_%@_To_You_42604" = "The admin of this group has been changed from %@ to you.";
+"LN_TranferAmdin_From_You_To_%@_42604" = "The admin of this channel has been changed from you to %@.";
+"LN_TranferAmdin_From_You_ToMUC_%@_42604" = "The admin of this group chat has been changed from you to %@.";
+"LN_TranferAmdin_From_%@_To_%@_42604" = "The admin of this channel has been changed from %@ to %@.";
+"LN_TranferAmdin_From_%@_ToMUC_%@_42604" = "The admin of this group chat has been changed from %@ to %@.";
+"LN_TranferAmdin_From_%@_To_You_42604" = "The admin of this channel has been changed from %@ to you.";
+"LN_TranferAmdin_From_%@_ToMUC_You_42604" = "The admin of this group chat has been changed from %@ to you.";
 "LN_Assign_ANewAmdin_42604" = "Assign a New Admin";
 
 "LN_Security_NNot_Verified_Label_42898" = "Security Warning: Untrusted Server Certificate";
@@ -2714,7 +2399,6 @@
 "LN_Speaker_%ld_38961" = "Speaker %ld:";
 "LN_Microphone_%ld_38961" = "Microphone %ld:";
 "LN_Swithch_To_Phone_Audio_38961" = "Switch to Phone Audio...";
-"LN_Capture_32093" = "Capture";
 
 "LN_Install_AirHost_With_AdminPrivileges_43112" = "To start using AirHost, you need to install with admin privileges.";
 "LN_Install_CodeSnippet_With_AdminPrivileges_43112" = "To start using Code Snippet, you need to install with admin privileges.";
@@ -2726,6 +2410,7 @@
 "LN_Join_meeting_39867" = "Join meeting";
 "LN_Decrypt_message_39867" = "Zoom will decrypt the message when the key becomes available.";
 "LN_You_joined_group_39867" = "You joined this group chat";
+"LN_You_joined_Channel_61519" = "You joined this channel";
 
 "LN_Hide_Self_View_40266" = "Hide Self View";
 "LN_Show_Self_View_40266" = "Show Self View";
@@ -2736,9 +2421,10 @@
 "LN_Accessibility_Dock_Top_40628" = "screen sharing toolbar is on the top of your screen, move it to the bottom, button";
 "LN_Accessibility_Dock_Bottom_40628" = "screen sharing toolbar is on the bottom of your screen, move it to the top, button";
 
-"LN_Remove_Confirm_44293" = "Do you want to remove %@? Participant cannot rejoin this meeting.";
+"LN_Remove_Meeting_User_63820" = "Do you want to remove %@? Once removed, %@ will not be able to rejoin the meeting.";
+"LN_Remove_Webinar_User_63820" = "Do you want to remove %@? Once removed, %@ will not be able to rejoin the webinar.";
+"LN_Remove_Confirm_63820" = "Do you want to remove %@?";
 "LN_Expel_By_Host_44293" = "The host has removed you from this meeting.";
-"LN_Join_Error_For_Expel_44293" = "You are unable to rejoin this meeting because you were previously removed by the host.";
 "LN_Audio_Plugin_Restart_Audio_App" = "To share your computer audio, please install the Zoom audio device.\n\nPlease restart your audio sharing application, such as the media player, after install to continue sharing computer sound.\n\n";
 
 "LN_FREE_TRIAL_EXTEND_TITLE_47442" = "Here's a gift\n\n";
@@ -2746,13 +2432,84 @@
 "LN_FREE_TRIAL_EXTEND_OK_47442" = "Love it!";
 
 "LN_Email_Sign_In_Disabled_47270" = "Your email sign in is disabled.";
-"LN_TryAgain_in_%d_Min_46210" = "You have made too many incorrect attempts. Try again in %d minutes.";
-"LN_TryAgain_in_1_Min_46210"  = "You have made too many incorrect attempts. Try again in 1 minute.";
 
+"LN_Alert_Non_Audio_Title_42201" = "Your audio is not connected.";
+"LN_Alert_Non_Audio_Detail_42201" = "If you’ve dialed in with a phone, enter %@ to link your phone’s audio with this computer.";
+"LN_Alert_Connected_Audio_Title_42201" = "Your audio is connected.";
+"LN_Alert_Connected_Phone_Audio_Detail_42201" = "Your phone’s audio is now linked with this computer.";
+"LN_Alert_Connected_Computer_Audio_Detail_42201" = "You are using computer audio";
+
+"LN_Plist_Stop_Sharing_41522" = "Stop sharing";
+"LN_Tip_Stoped_SomeOne_Share_41522" = "You have stopped %@'s sharing";
+"LN_Tip_Stoped_Share_By_Host_41522" = "The host has stopped your sharing";
+"LN_FitBar_Menu_Stop_Share_41522" = "Stop Participant's Sharing";
+//ZOOM-43259
+//example: "Assign 5 participants into 3 Rooms munually(automatically)"
+"Assign %1$d participants into %2$@ Rooms %3$@" = "Assign %1$d participants into %2$@ Rooms %3$@";
+"A new breakout room had been created, total room count is %d" = "A new breakout room had been created, total room count is %d";
+//example: "Attendee 64 had been moved into Breakout room 5"
+"%@ had been moved into %@" = "%@ has been moved into %@";
+//example: "Attendee 4 and Attendee 6 had exchanged their Rooms"
+"%@ and %@ had exchanged their Rooms" = "%@ and %@ have exchanged Rooms";
+//"Breakout room 5 had been deleted"
+"%@ had been deleted" = "%@ has been deleted";
+"The room had been changed to new name: %@" = "The room has been changed to a new name: %@";
+"%@ had been removed from this room" = "%@ has been removed from this room";
+"%@ had been added into this room" = "%@ has been added into this room";
+"Breakout Rooms assign dialogue. There are %d unassigned and %d assinged attendees" = "Breakout Rooms assign dialogue. There are %d unassigned and %d assigned attendees";
+
+"LN_TryAgain_in_%d_Min_46210" = "You have made too many incorrect attempts. Try again in %d minutes.";
+
+"LN_Hide_Names_of_Annotators_43616" = "Hide Names of Annotators";
+"LN_Show_Names_of_Annotators_43616" = "Show Names of Annotators";
 "LN_Meeting_Error_Expired_Message_41530" = "Your login session has expired. Please sign in again to continue.";
 "LN_Meeting_Error_Expired_Title_41530" = "Meeting cannot be started";
-"LN_Sign_In_41530" = "Sign in";
 "Type in closed caption here, press Enter key to broadcast" = "Type in closed caption here, press Enter key to broadcast";
+
+"LN_Audio_Wizard_Test_Finish_47788" = "Speaker and microphone looks good";
+"LN_Join_With_Computer_Audio_47788" = "Join with Computer audio";
+"LN_Finish_47788" = "Finish";
+
+"LN_DiskFull_Tip_46206" = "Your device is running low on storage. Free up space to avoid interruptions while using Zoom.";
+
+"LN_Audiooption_CountryName_HongKong_49437" = "Hong Kong, China";
+"LN_Audiooption_CountryName_TaiWan_49437" = "Taiwan, China";
+"LN_Audiooption_CountryName_Macau_49437" = "Macau, China";
+
+"LN_A_Gift_41323" = "A gift from Zoom";
+"LN_Another_Gift_41323" = "We are in a giving mood";
+"LN_New_Gift_41323" = "Join Zoom Pro";
+"LN_Out_Time_41323" = "Running out of time?";
+"LN_Third_End_Title_41323" = "Take Your Meetings from Basic to Pro";
+"LN_Will_End_41323" = "Your meeting will end in 10 min";
+"LN_Meeting_End_41323" = "This free Zoom meeting has ended";
+
+"LN_Remove_40Min_Limit_41323" = "Running out of time? We've removed the 40-minute time limit on your group meeting.";
+"LN_Remove_40Min_Limit_Too_41323" = "If you schedule now, we'll remove the 40-minute time limit on your next group meeting, too.";
+"LN_Enjoy_No_Limit_41323" = "Remove the 40-min time limit on all future meetings";
+"LN_Remain_10Min_End_41323" = "This meeting will end in 10 minutes. Upgrade now to remove the 40-minute time limit.";
+"LN_Thank_Choose_Zoom_41323" = "Thank you for choosing Zoom!";
+"LN_Third_End_Content_41323" = "Upgrade to an annual plan to remove the 40-minute time limit when you host future meetings.";
+"LN_Contact_To_Upgrade_41323" = "Contact your IT team to upgrade to Zoom Pro for unlimited group meeting minutes";
+
+"LN_Love_It_41323" = "Love it!";
+"LN_Schedule_Meeting_41323" = "Schedule Now";
+"LN_Upgrade_41323" = "Upgrade";
+"LN_OK_41323" = "OK";
+"LN_Upgrade_Now_41323" = "Upgrade Now";
+
+"LN_New_Folder_Detail_5820" = "Name of new folder:";
+"LN_New_Folder_Name_5820" = "untitled folder";
+"LN_New_Folder_Warning_5820" = "This name is already taken.";
+"LN_New_Folder_Cancel_5820" = "Cancel";
+"LN_New_Folder_Create_5820" = "Create";
+
+"LN_Accessibility_Record_Stop_51783" = "Stop";
+"LN_Accessibility_Record_Pause_51783" = "Pause";
+"LN_Accessibility_Record_Resume_51783" = "Resume";
+
+
+
 
 "LN_SipCall_AddCall_27110" = "Add Call";
 "LN_SipCall_Transfer_31431" = "Transfer";
@@ -2767,15 +2524,6 @@
 "LN_Income_Call_Answer_Hold_26674" = "Hold & Accept";
 "LN_Multiple_Call_Hold_TiTle_26674" = "On Hold";
 "LN_Remind_Multiple_Call_On_Hold_26674" = "phone calls are on hold";
-"LN_Remind_Signal_Call_On_Hold_26674" = "phone call on hold";
-
-"LN_Phone_Setting_Number_31438" = "Direct number  :";
-"LN_Company_Number_31438" = "Company number  :";
-"LN_Review_Setting_31438" = "To review or change your settings, please access";
-"LN_Access_Web_Page_31438" = " my account online";
-"LN_Local_Dial_Area_31438" = "Local dialing :";
-"LN_Area_Code_Label_31438" = "Area  code :";
-"LN_Local_Call_Prompt_31438" = "Dial local calls without dialing country and area code first";
 
 "LN_Warm_Transfer_Button_31431" = "Assisted\nTransfer";
 "LN_Blind_Transfer_Button_31431" = "Blind Transfer";
@@ -2797,7 +2545,7 @@
 
 "LN_Phone_Network_Unavailible_27110" = "Unable access to server";
 "LN_Phone_Register_Account_Error_27110" = "Your account no longer supports Zoom Cloud Phone, please contact your admin";
-"LN_Phone_Fail_Service_Unvailable_27110" = "Service Unavailable";
+"LN_Phone_Fail_Service_Unvailable_27110" = "Zoom Voice is temporarily unavailable.";
 "LN_Phone_Call_Fail_486_Error_27110" = "The peer is busy";
 "LN_Phone_Decline_603_Error_27110" = "The peer has declined your call";
 
@@ -2805,18 +2553,13 @@
 "LN_Segement_Voicemail_31454" = "Voicemail";
 "LN_Vcard_Personal_Link_35371" = "Personal Link";
 "LN_Record_CallBack_35371" = "Call Back";
-"LN_Phone_History_Record_35371" = "Recording available";
-"LN_Phone_History_VoiceMail_35371" = "Left a voicemail";
-"LN_Phone_History_RecordPrepare_35371" = "Recording preparing…";
-"LN_Phone_History_Delete_Call_35371" = "Do you want to delete this call log from your account?";
 "LN_Phone_History_Menu_Save_48678" = "Save to Folder";
-"LN_Phone_History_Menu_Clear_48678" = "Delete";
-"LN_Phone_History_Menu_ClearAll_48678" = "Delete All Call History";
+"LN_Phone_History_Menu_Clear_48678" = "Clear";
+"LN_Phone_History_Menu_ClearAll_48678" = "Clear All Call History";
 "LN_Sip_Call_InvalidNum_Action_Error_27110" = "Invalid phone number";
-"LN_Sip_Call_Server_Error_%ld_27110" = "Server error (code: %ld)";
 "LN_Sip_Call_Recording_Download_Fail_48678" = "Phone Recording failed to download, please retry";
 "LN_Sip_Call_Transfer_Success_31431" = "Transfer completed successfully";
-"LN_Sip_Call_Transfer_Fail_31431" = "Transfer failed";
+"LN_Sip_Call_Transfer_Fail_31431" = "Transfer Failed";
 "LN_Sip_Call_Start_Recording_Fail_31431" = "Start recording failed";
 "LN_Sip_Call_Stop_Recording_Fail_31431" = "Stop recording failed";
 "LN_Sip_Call_Hold_Fail_27710" = "Failed to hold";
@@ -2824,71 +2567,430 @@
 "LN_Sip_Callout_Fail_27710" = "Call Failed";
 "LN_Phone_History_Recording_Available_48678" = "Recording available";
 "LN_phone_Search_No_Result_27110" = "No results";
-"LN_Phone_Call_History_Unknown_27110" = "Unknown";
 "LN_Vcard_Extension_35371" = "Extension";
-"LN_Vcard_DirectNum_35371" = "Direct number";
 "LN_Phone_SDK_Unavailable_27710" = "Zoom Cloud Phone service is unavailable in this moment";
 "LN_Phone_Audio_Device_Unavailble_27710" = "No available audio device";
 "LN_Phone_Voicemail_DeleteAll_Record_31454" = "Do you want to delete all voicemails from your account?";
-"LN_Phone_Voicemail_DeleteSingle_Record_31454" = "Do you want to delete this voicemail from your account ?";
 "LN_Phone_Voicemail_Download_Fail_31454" = "Voicemail failed to download, please retry";
 "LN_Phone_Voicemail_SaveLocal_31454" = "Save to Folder";
-"LN_Phone_Voicemail_ClearAll_31454" = "Delete All Voicemails";
+"LN_Phone_Voicemail_ClearAll_31454" = "Delete All Voicemail";
 "LN_Phone_Record_Preparing_37978" = "Preparing...";
 "LN_Phone_Record_Stop_37978" = "Stop Recording";
-"LN_Phone_History_Delete_Call_Inform_48678" = "All call logs will be deleted locally, on the cloud, and on all your devices";
 "LN_Phone_History_Clean_All_Log_48678" = "Do you want to delete all your call history from your account?";
 "LN_Phone_History_Clean_All_Inform_48678" = "All call logs will be deleted locally, on the cloud, and on all your devices.";
-"LN_Phone_Clean_CallHistory_Footer_35371" = "Delete all call history";
-"LN_Audiooption_CountryName_Country_49437" = "Country/region";
-"LN_Audiooption_CountryName_HongKong_49437" = "Hong Kong, China";
-"LN_Audiooption_CountryName_TaiWan_49437" = "Taiwan, China";
-"LN_Audiooption_CountryName_Macau_49437" = "Macau, China";
-
-"LN_Audio_Wizard_Test_Finish_47788" = "Speaker and microphone looks good";
-"LN_Join_With_Computer_Audio_47788" = "Join with Computer audio";
-"LN_Finish_47788" = "Finish";
-
-"LN_New_Folder_Detail_5820" = "Name of new folder:";
-"LN_New_Folder_Name_5820" = "untitled folder";
-"LN_New_Folder_Warning_5820" = "This name is already taken.";
-"LN_New_Folder_Cancel_5820" = "Cancel";
-"LN_New_Folder_Create_5820" = "Create";
-
 "LN_Phone_Error_String_NumbetNotAvailable_27710" = "The number you calling is not available";
+"LN_Phone_UserInfo_CompanyNum_27710" = "EXTENSION";
+"LN_Phone_UserInfo_DirectNum_27710" = "DIRECT NUMBER";
+"LN_Phone_OnHoldPhone_27710" = "is on hold";
 
-"LN_Group_MaxAllowed_Failed_%u_50730" = "This channel can only have up to %u members.";
+"LN_Phone_UserInfo_DirectNum_L_27710" = "Direct Number";
+"LN_Phone_Accessiblity_MaxVolum_27710" = "maximun volume";
 
-"LN_Phone_Add_Number_Button_48757" = "Add Number";
-"LN_Phone_Create_New_Contact_48757" = "Create New Contact";
-"LN_Phone_First_Name_48757" = "First Name";
-"LN_Phone_Last_Name_48757" = "Last Name";
-"LN_Phone_Number_title_48757" = "Phone Number";
-"LN_Sip_Contact_Group_Name_48757" = "Zoom Phone Contact";
-"LN_Phone_History_Menu_Create_Contact_48757" = "Create New Contact";
-"LN_Vcard_Phone_Num_52057" = "Personal Num";
-"LN_Vcrad_Internal_Num_54073" = "Internal Num";
+"LN_Phone_Accessiblity_CallType_CallIn_27710" = "incoming";
+"LN_Phone_Accessiblity_callType_CallOut_27710" = "outgoing";
+"LN_Phone_Accessiblity_AudioSetting_27710" = "Voice Volume";
+"LN_Phone_Accessiblity_PlayRecording_27710" = "Play";
 
-"LN_Schedule_Limitation_BasicUser_Des_45329" = "Your basic plan has a 40 minutes time limit on meetings with three or more total participants.";
-"LN_Schedule_Limitation_BasicUser_UpgradeInfo_45329" = "Need unlimited group meeting minutes? Contact";
-"LN_Schedule_Limitation_FreeUser_UpgradeInfo_45329" = "Get unlimited meeting minutes by upgrading?";
-"LN_Schedule_Limitation_FreeUser_Link_45329" = "Upgrade to Pro";
-"LN_Schedule_Limitation_NotShowMeAgain_45329" = "Do not show this message again";
+"LN_Phone_PlayVociemail_MenuItem_61400" = "Play Voicemail";
+"LN_Phone_DeleteAllRecordButton_title_61400" = "Delete All";
+"LN_Phone_DeleteAllViewContentString_61400" = "You are permanently deleting all your voicemails. This action cannot be undone.";
+"LN_Phone_ClearAllRecording_61400" = "Delete All Recordings";
+"LN_Phone_ClearAllRecordContentStr_61400" = "You are permanently deleting all your recordings. This action cannot be undone.";
+"LN_Phone_E911_ToolTip_54264" = "E911 Service may be limited or unavailable.";
+"LN_Phone_VociemTranscript_ShowMore_61400" = "Show more";
+"LN_Phone_VociemTranscript_ShowLess_61400" = "Show Less";
+"LN_Phone_NOAudio_tip_Label_64264" = "No microphone is detected. Check if your devices are properly connected.";
+"LN_Phone_OpenSetting_AudioTab_64264" = "Test Speaker & Microphone";
+"LN_Phone_Voicemail_Transcript_61400" = "Unable to transcribe this message";
+"LN_Phone_BlindTransfer_TipLabel_64264" = "Transfer without speaking to the new agent";
+"LN_Phone_Warm_Transfer_64264" = "Warm Transfer";
+"LN_Phone_Warm_Transfer_TipLabel_64264" = "Speak to the new agent before transferring";
+"LN_Phone_Voicemail_MoreButton_ToolTip_61400" = "Play Voicemail";
+"LN_Phone_MultiCall_OnHold_61400" = "Click to see all";
+"LN_Phone_MultiCall_ClickToSwap_61400" = "On Hold - Click to swap";
+"LN_Phone_ShowMyCallerID_title_54271" = "Caller ID";
+"LN_Phone_Transfer_Result_Success_64264" = "Transfer Successful";
+"LN_Phone_MultiCall_OnHold_Hide_61400" = "Click to hide";
+"LN_Phone_ShowMyCallerID_MyExtension_54271" = "Your Extension";
+"LN_Phone_Merge_Call_ToolTip_54271" = "Merge Call";
+"LN_Phone_Transferring_64264" = "Transferring";
+"LN_Sip_Hold_Calls_Title_64264" = "CALLS ON HOLD";
+"LN_Sip_Segement_Tab_61415" = "Tab";
+"LN_Sip_Accessibility_Miss_Calls_61415" = "Missed Call";
+"LN_Sip_Accessibility_Unread_Voicemail_61415" = "unread voicemail";
+"LN_Sip_CallQueue_Calling_for_61415" = "Call for";
+"LN_Sip_Assistant_Transfer_from_61415" = "Transfer from";
+"LN_Sip_DownLoading_VociemailTranscript_61400" = "Processing transcript...";
+"LN_Sip_DownLoading_VociemailTranscript_NetWorkError_61400" = "Transcript download failed";
+"LN_Sip_Multi_Swap_Call_ToolTip_61376" = "Swap Call";
+"LN_Sip_Multi_End_Call_TooTip_61376" = "End Call";
+"LN_Sip_Merge_More_ToolTip_61376" = "More";
+"LN_Sip_Call_Merge_Title_61376" = "Calls merged";
+"LN_Sip_End_Merge_Call_Title_61376" = "Click to End Call";
+"LN_Sip_Click_Merge_Call_Title_61376" = "On Hold - Click to Merge";
+"LN_Sip_Accessibility_pound_62285" = "pound";
+"LN_Sip_Accessibility_Press_Enter_Call_67487" = "press Enter to call";
 
-"LN_Audio_Tsp_Both_45801" = "Both";
 
-"LN_Back_To_Revious_41410" = "Back to previous window";
+
+
+
+
+
+
+
+"LN_Annotate_StampPanel_45810" = "stamp panel";
+"LN_Annotate_StampStar_45810" = "Stamp star";
+"LN_Annotate_StampHeart_45810" = "Stamp heart";
+"LN_Annotate_StampQM_45810" = "Stamp question mark";
+"LN_Annotate_Stamp_45810" = "Stamp";
+
+"LN_Back_To_Revious_41410" = "Back to the previous window";
+"LN_Incorrect_Email_Password_Alert_41410" = "Alert";
 "LN_Incorrect_Email_Password_41410" = "Incorrect email or password";
 "LN_Signed_Out_Security_Policy_41410" = "You've been signed out for being inactive for %d minutes per your account security policy.";
 "LN_Signed_Out_SSO_41410" = "You have been signed out of your Zoom account. Sign in again to resume using Zoom.";
 "LN_Account_Locked_41410" = "Your account has been locked due to multiple failed login attempts.";
 
-"LN_43393_Enter new sharing key" = "Enter new sharing key";
-"LN_43393_This step is required for users on a different network for additional security measures." = "This step is required for users on a different network for additional security measures.";
-
 "LN_LinkedIn_Loading_35020" = "loading";
 "LN_Plist_LinkedIn_35020" = "LinkedIn";
 
+"LN_43393_Enter new sharing key" = "Enter new sharing key";
+"LN_43393_This step is required for users on a different network for additional security measures." = "This step is required for users on a different network for additional security measures.";
+
+"LN_Sign_Up_Free_34670" = "Sign Up Free";
+"LN_Forgot_34670" = "Forgot?";
+"LN_Incorrect_Email_Or_Password_34670" = "Incorrect email or password";
+"LN_No_Matching_Domains_34670" = "No matching domains found";
+"LN_Search_Company_Domain_34670" = "Search company domain";
+"LN_Know_The_Domain_34670" = "I know the company domain";
+"LN_Sign_In_Google_34670" = "Sign In with Google";
+"LN_Sign_In_Facebook_34670" = "Sign In with Facebook";
+"LN_Sign_In_SSO_34670" = "Sign In with SSO";
+"LN_Couldn_Not_Find_Domain_34670" = "We couldn’t find your domain";
+"LN_Company_Domain_34670" = "Your company domain";
+"LN_Company_Email_34670" = "Your company email";
+"LN_Connect_34670" = "Connect";
+"LN_Or_34670" = "or";
+"LN_Signed_From_Another_Device_34670" = "You have been signed out because your account is signed in from another device";
+"LN_Dtmf_Connected_57206" = "(Connected)";
+"LN_Dtmf_Invite_Next_Room_57206" = "Invite Next Room";
+"LN_H323_Hide_Keypad_57206" = "Hide Keypad";
+"LN_H323_Show_Keypad_57206" = "Show Keypad";
+"LN_Dtmf_Done_57206" = "Done";
+"LN_Question_And_Answer_63009" = "Question and Answer";
+"LN_Meeting_QA_Unread_Questions_63009" = "Question and Answer, %ld unread questions";
+"LN_Forgot_Password_61692" = "Forgot password";
+
+"LN_DeviceStorageWarning_NewIM" = "Your device is running low on storage. Free up space to avoid interruptions while using Zoom.";
+"LN_Personal_Note_NewIM" = "PERSONAL NOTE";
+"LN_Phone_NewIM" = "PHONE";
+"LN_Internal_NewIM" = "INTERNAL";
+"LN_Email_NewIM" = "EMAIL";
+"LN_Personal_Link_NewIM" = "PERSONAL LINK";
+"LN_Profile_Info_NewIM" = "Profile Info";
+"LN_Click_Download_NewIM"   = "Click to download";
+"LN_Click_Open_NewIM" = "Click to open";
+"LN_Click_Retry_NewIM" = "Click to retry";
+"LN_Cannot_Send_Msg_NewIM" = "The message could not be sent";
+"LN_No_Image_Content_NewIM" = "No images have been shared. They will appear here for quick access later.";
+"LN_No_File_Content_NewIM" = "No files have been shared. They will appear here for quick access later.";
+"LN_No_StarMessage_Content_NewIM" = "Nothing here yet. Hover over a memorable message and give it a star.";
+
+"LN_Telephone_ComputerAudio_NewIM" = "Telephone and computer audio";
+"LN_ComputerAudio_NewIM" = "Computer audio";
+"LN_Start_with_Video_Off_NewIM" = "Meet with Video";
+"LN_Setting_Record_Optimize_Info_NewIM" = "Generate your local recording video files with a standard format that is compatible with 3rd party video editors. This may increase file size.";
+"LN_Setting_feedback_result_title_NewIM" = "Thanks for your feedback!";
+"LN_Setting_feedback_result_des_NewIM" = "We take all feedback into consideration and we're working hard to deliver happiness to you.";
+"LN_Setting_AddZoomToMenuBar_NewIM" = "Add Zoom to macOS menu bar";
+"LN_Setting_FullScreenStartMeeting_NewIM" = "Enter full screen when starting or joining a meeting";
+"LN_Setting_FullScreenWhenShareStart_NewIM" = "Enter full screen when a participant shares their screen";
+"LN_Setting_MaxWindowWhenShareStart_NewIM" = "Maximize Zoom window when a participant shares their screen";
+"LN_Setting_ScaleToFit_NewIM" = "Scale to fit shared content to Zoom window";
+"LN_Setting_ShowWindowInShare_NewIM" = "Show Zoom windows during screen share";
+"LN_Setting_CopyInvitationOnceMeeting_NewIM" = "Copy invitation URL to clipboard once the meeting starts";
+"LN_Setting_ConfirmBeforeLeaving_NewIM" = "Prompt a confirmation before leaving a meeting";
+"LN_Setting_ShowMeetingDuration_NewIM" = "Show my meeting duration";
+"LN_Setting_Widescreen_60770" = "16:9 (Widescreen)";
+"LN_EnableHD_60770" = "Enable HD";
+"LN_MirrorVideo_Setting_60770" = "Mirror my video";
+"LN_Setting_OriginalRatio_NewIM" = "Original ratio";
+"LN_Setting_AlwaysDisplayParticipant_NewIM" = "Always display participant name on their videos";
+"LN_Setting_VideoOffWhenJoinMeeting_NewIM" = "Turn off my video when joining a meeting";
+"LN_Setting_HideNonVideo_NewIM" = "Hide non-video participants";
+"LN_Setting_SpotlightVideoWhenSpeaking_NewIM" = "Spotlight my video when speaking";
+"LN_Setting_49participants_NewIM" = "Display up to 49 participants per screen in Gallery View";
+"LN_Setting_JoinAudioWhenJoinMeeting_NewIM" = "Join audio by computer when joining a meeting";
+"LN_Setting_MuteWhenJoinMeeting_NewIM" = "Mute microphone when joining a meeting";
+"LN_Setting_EnableStereo_NewIM" = "Enable stereo";
+"LN_Setting_ShowEnableOriginalSound_NewIM" = "Show in-meeting option to \"Enable Original Sound\" from microphone";
+"LN_Setting_DNDFrom_NewIM" = "Do not disturb from:";
+"LN_Setting_RecommendedVideoBackground_NewIM" = "A solid color video background is recommended. Green is preferred.";
+"LN_Setting_VB_DetectsColorTip_NewIM" = "Zoom automatically detects the color of your video background and replaces it with the virtual background image. You can manually pick the background color if the detected color is not acurrate.";
+"LN_Setting_LocationRecording_NewIM" = "Choose a location to save the recording to after the meeting ends";
+"LN_Setting_RecordSeparate_NewIM" = "Record a separate audio file for each participant";
+"LN_Setting_ViewAdvanced_NewIM" = "View Advanced Features";
+"LN_Setting_ChangeSubscription_NewIM" = "Change My Subscription";
+"LN_Setting_PacketLoss_NewIM" = "Packet Loss - Average (Max)";
+"LN_Setting_SubmitFeedback_NewIM" = "Submit Feedback";
+"LN_Setting_FeedBackPlaceHolder_NewIM" = "We appreciate your ideas, comments, and suggestions.";
+"LN_Setting_UnreadTop_NewIM" = "Keep all unread messages on top";
+"LN_Setting_DoNotPrompt3rd_NewIM" = "Do not prompt to join audio when joining a meeting using 3rd party audio";
+"LN_Schedule_UnableConnect_NewIM" = "You are unable to connect to Zoom. Please check your network connection and try again.";
+"LN_Login_UnableConnect_NewIM_56043" = "You are unable to connect to Zoom. Please check your network connection and try again.";
+"LN_Setting_ChannelNotiSeachPlaceHolder_NewIM" = "Search for channels";
+"LN_Setting_ChannelNotiExceptionLabel_NewIM" = "Choose exceptions for specific channels";
+"LN_Setting_UnreadBadgeForChannels_NewIM" = "Show unread message count(     ) for channels";
+"LN_Setting_UnreadMessages_NewIM" = "Unread Messages";
+"LN_Setting_ChooseLocationRecorded_NewIM" = "Choose a location for recorded files when the meeting ends";
+"LN_Setting_RecordAudioTrack_NewIM" = "Record audio track for each speaker";
+"LN_Home_ViewToday_NewIM" = "View Today's Upcoming Meetings";
+"LN_Home_UsePMI_NewIM" = "Use my Personal Meeting ID";
+"LN_Home_StartWithVideo_NewIM" = "Start with video";
+"LN_Home_SwitchToLandscape_NewIM" = "Switch to Landscape View";
+"LN_Home_SwitchToPortrait_NewIM" = "Switch to Portrait View";
+"LN_Home_ViewTodaysUpcomingMeetings_NewIM" = "View today’s upcoming meetings (%lu)";
+"LN_Home_Meetings_NewIM" = "%ld meetings";
+"LN_Home_MeetingsNOW_NewIM" = "%ld meetings NOW";
+"LN_Home_meetingsIn1Min_NewIM" = "%ld meetings in 1 min";
+"LN_Home_meetingsInNMins_NewIM" = "%1$ld meetings in %2$ld mins";
+"LN_Home_View_NewIM" = "View";
+"LN_Home_meeting(s)_NewIM" = "%lu meeting(s) ";
+"LN_Home_Now_NewIM" = "NOW";
+"LN_Home_In1Min_NewIM" = "in 1 min";
+"LN_Home_InNMins_NewIM" = "in %ld mins";
+"LN_Home_TipAddCalendar_NewIM" = "Connect your work or personal calendar to view all upcoming meetings here";
+"LN_Home_NewMeeting_NewIM" = "New Meeting";
+"LN_UpToDate_NewIM" = "You are up to date";
+
+"LN_Help_NewIM" = "Help";
+"LN_CheckForUpdates_NewIM" = "Check for Updates";
+"LN_SignOut_NewIM" = "Sign Out";
+"LN_PMISettings_NewIM" = "PMI Settings";
+"LN_CopyID_NewIM" = "Copy ID";
+"LN_SetATimePeriod_NewIM" = "Set a Time Period";
+"LN_DND_NewIM" = "Do Not Disturb";
+
+"LN_MyNoteSession_Tip1_NewIM" = "This is your personal space";
+"LN_MyNoteSession_Tip2_NewIM" = "Collect ideas, draft messages, or save files and links.";
+
+"LN_StarredSession_Tip1_NewIM" = "Give important messages a ⭐️";
+"LN_StarredSession_Tip2_NewIM" = "This will help you remember to follow up later.";
+
+"LN_SortByUnreadFirst_NewIM" = "Unread first";
+"LN_CreateDuplicateNameGroup_NewIM" = "Another channel is already using this name. Use a different name for this channel.";
+"LN_Settings_TitleChannel_NewIM" = "channel...";
+"LN_Settings_TitleChannels_NewIM" = "channels...";
+"LN_Settings_ViewAdvancedFeatures_NewIM" = "View Advanced Features";
+"LN_SettingS_NoneNotyTip_NewIM" = "You will still receive unread badges(       ) within Zoom";
+
+"LN_MSG_Date_Yesterday_NewIM" = "Yesterday, %@";
+"LN_MSG_Star_Message_NewIM" = "Starred Message";
+"LN_MSG_Unstar_Message_NewIM" = "Unstarred Messages";
+"LN_MSG_TMP_Message_Alread_Add_Contact_NewIM" = "%@ is already your contact.";
+
+"LN_Channels_NewIM" = "Channels";
+"LN_Channel_AllChannel_NewIM" = "All Channels";
+"LN_Channel_Assign_New_Admnin_NewIM" = "Assign a new channel administrator";
+"LN_Channel_Search_members_NewIM" = "Search members";
+"LN_Channel_Delete_Channel_NewIM" = "Delete Channel";
+"LN_Channel_Leave_Channel_NewIM" = "Leave Channel";
+"LN_Channel_Leave_Discussion_NewIM" = "Leave Discussion";
+"LN_Channel_Delete_Discussion_NewIM" = "Delete Discussion";
+"LN_Channel_Leave_Discussion_Info_NewIM" = "If you leave this discussion, you will lose access to all messages and all members will be notified. To rejoin this discussion you will need to be reinvited.";
+"LN_Channel_Leave_PublicChannel_Info_NewIM" = "If you leave the channel, other channel members will be notified and you will stop receiving messages.";
+"LN_Channel_Leave_PrivateChannel_Info_NewIM" = "If you leave this channel, you will lose access to all channel messages and all members will be notified. To rejoin the group, you will need to be reinvited.";
+"LN_Channel_Leave_Channel_Info_NewIM" = "You are the administrator of this channel. Delete the channel for all or assign a new admin before leaving to keep the channel for existing members.";
+
+"LN_Channel_Leave_Discussion_Info_WithAdmin_NewIM" = "You are the administrator of this discussion. Delete the discussion for all or assign a new admin before leaving to keep the discussion for existing members.";
+
+"LN_Channel_Delete_Channel_Info_NewIM" = "You are permanently removing all channel conversations, files, and other related information. There is no way to recover this information.";
+
+"LN_Channel_Delete_Discussion_Info_NewIM" = "You are permanently removing all messages, files, and other related information in this discussion. This action cannot be undone.";
+
+"LN_Channel_NO_PublicRoom_NewIM" = "No public room is available to join.";
+"LN_Channel_Join_Public_A_Channel_NewIM" = "Join a Channel";
+"LN_Channel_Search_Channel_NewIM" = "Search channels";
+"LN_Channel_Invite_Other_To_NewIM" = "Invite others to";
+"LN_Channel_Search_People_NewIM" = "Search people";
+"LN_Channel_Invite_Name_With_Others_NewIM" = "%@, %@ & others";
+"LN_Channel_EditChannel_NewIM" = "Edit Channel";
+"LN_Channel_EditChat_NewIM" = "Edit Chat";
+"LN_Channel_ChannelName_NewIM" = "Channel Name";
+"LN_Channel_EditTopic_NewIM" = "Edit Topic";
+"LN_Channel_TopicName_NewIM" = "Topic Name";
+"LN_Channel_ChannelType_NewIM" = "Group Type";
+"LN_Channel_ChatType_NewIM" = "Chat Type";
+"LN_Channel_ChatName_NewIM" = "Chat Name";
+"LN_Channel_Privacy_NewIM" = "Privacy";
+"LN_Channel_NewMemebers_CanSee_MessageHistory_NewIM" = "New members can see message history";
+"LN_Channel_Search_ByName_NewIM" = "Search by name";
+"LN_Channel_Create_A_Channel_NewIM" = "Create a Channel";
+"LN_Channel_Invite_Members_NewIM" = "Invite Members";
+"LN_Channel_Create_Channel_NewIM" = "Create Channel";
+"LN_Channel_No_Channel_NewIM" = "No Channels";
+"LN_Channel_View_Channel_NewIM" = "View channel info by clicking a channel in the left panel.";
+"LN_Channel_AddChannel_By_Click_NewIM" = "Add a channel by clicking +";
+"LN_Channel_MembersIn_NewIM" = "members in";
+"LN_Channel_EnterNameHere_NewIM" = "Enter name here...";
+"LN_Channel_CreateNamePlaceholder_NewIM" = "e.g. Happy Crew";
+"LN_Channel_EnterChannelName_NewIM" = "Enter channel name";
+"LN_Channel_EnterMemberToInvite_NewIM" = "Enter members to invite, Search by name";
+"LN_Channel_Public_NewIM" = "Public";
+"LN_Channel_PublicChannel_NewIM" = "Public Channel";
+
+"LN_Chat_EditChannel_NewIM" = "Edit Chat";
+
+"LN_Contact_NoBlock_Users_NewIM" = "You have not blocked any users";
+"LN_Contact_unlock_NewIM" = "Unlock";
+"LN_Contact_No_Contacts_NewIM" = "No Contacts";
+"LN_Contact_AddContact_Create_Join_Channel_Tip_NewIM" = "Add Contacts and Create or Join a Channel";
+"LN_Contact_Create_Join_Channel_Tip_NewIM" = "Create or Join a Channel";
+"LN_Contact_Add_Tip_NewIM" = "Add a Contact";
+"LN_Contact_View_Contact_NewIM" = "View contact info by clicking a contact in the left panel.";
+"LN_Contact_AddContact_By_Click_NewIM" = "Add a contact by clicking +";
+"LN_Contact_Remove_Contact_NewIM" = "Remove Contact";
+"LN_Contact_AddOneContact_ErrorTip_NewIM" = "You can only add one contact at a time";
+"LN_Contact_CannotAddSelf_ErrorTip_NewIM" = "You cannot add yourself as a contact";
+"LN_Contact_Internal_NewIM" = "Internal";
+"LN_Contact_DeleteContact_NewIM" = "Delete this contact";
+"LN_Contact_Request_NewIM" = "Contact Requests";
+"LN_Contact_External_Contact_NewIM"  = "External Contacts";
+"LN_Contact_Resend_Invitation_NewIM" = "Resend Invitation";
+"LN_Contact_Ignore_NewIM" = "Ignore";
+"LN_Contact_Pending_NewIM" = "Pending";
+"LN_Contact_Blocked_NewIM" = "Blocked";
+"LN_Contact_SendInvitation_NewIM" = "An invitation has been sent to";
+
+"LN_Starred_NewIM" = "Starred";
+"LN_Starred_StarContact_NewIM" = "Star this Contact";
+"LN_Starred_UnStarContact_NewIM" = "Unstar this Contact";
+"LN_Starred_StarChannel_NewIM" = "Star this Channel";
+"LN_Starred_UnStarChannel_NewIM" = "Unstar this Channel";
+"LN_Starred_StarChat_NewIM" = "Star this Chat";
+"LN_Starred_UnStarChat_NewIM" = "Unstar this Chat";
+
+"LN_File_Share_File_NewIM" = "Share File";
+"LN_File_Search_Files_NewIM" = "Search files";
+"LN_File_AllFile_Shared_NewIM" = "All files shared";
+"LN_File_AllFile_ShareIn_NewIM" = "All files shared in";
+
+"LN_Error_SearchBuddy_Failure_NewIM" = "search buddy failure, please try again later";
+"LN_Error_SearchFail_NewIM" = "Your results failed to load. Try searching again.";
+"LN_Error_NO_File_Matching_NewIM" = "No files found matching";
+
+"LN_Star_Accessbility_NewIM" = "Star";
+
+"LN_Starred_Msgs_NewIM" = "Starred Messages";
+"LN_About_Channel_NewIM" = "About this channel";
+"LN_About_Chat_NewIM" = "About this chat";
+"LN_My_Notes_NewIM" = "My Notes";
+"LN_Push_Notification_NewIM" = "PUSH NOTIFICATIONS";
+"LN_Push_Notification_Lowercase_NewIM" = "Push Notifications";
+"LN_Unread_Msg_Badge_NewIM" =  "UNREAD MESSAGE COUNT";
+"LN_Show_Unread_Badge_NewIM" = "Show unread message count(     )";
+"LN_Invite_Others_NewIM" = "Invite others...";
+
+"LN_Typing_To_Search" = "Start typing to search";
+"LN_No_Messages_Found_NewIM" = "No messages found matching:";
+"LN_No_Files_Found_NewIM" = "No files found matching:";
+"LN_No_Contacts_Found_NewIM" = "No contacts found matching:";
+"LN_Search_Filters_NewIM" = "Filters";
+"LN_Search_Files_NewIM" = "Files";
+"LN_Search_Anyone_NewIM" = "Anyone";
+"LN_Search_All_Chats_NewIM" = "All Chats";
+"LN_Search_Recent_Files_NewIM" = "RECENT FILES";
+"LN_Search_Recent_Contacts_NewIM" = "RECENT CONTACTS AND CHANNELS";
+"LN_Search_Only_In_NewIM" = "Only Search in";
+"LN_Search_Only_In_Chat_NewIM" = "Only Search in chat with";
+"LN_Search_Channel_NewIM" = "channel";
+"LN_Search_In_Messages_NewIM" = "Search in Messages for";
+"LN_Search_In_Files_NewIM" = "Search in Files";
+"LN_Search_In_Files_For_NewIM" = "Search in Files for";
+"LN_Search_More_%lu_Directory_NewIM" = "View %lu more in Directory...";
+"LN_Search_Switch_NewIM" = "Switch";
+"LN_Search_Post_In_NewIM" = "posted in";
+"LN_Search_@ALL_NewIM" = "@all";
+"LN_Search_View_Context_NewIM" = "View Context";
+"LN_Search_Jump_NewIM" = "Jump";
+"LN_Search_In_NewIM" = "in";
+"LN_Search_With_NewIM" = "with";
+"LN_Search_View_In_Finder_NewIM" = "View in Finder";
+"LN_Search_Shared_In_NewIM" = "Shared in";
+"LN_Search_Shared_In_%lu_Channels_NewIM" = "Shared in %lu channels";
+"LN_Search_Shared_Without_Channels_NewIM" = "Shared without channels";
+"LN_Search_Open_Image_NewIM" = "Open Image";
+"LN_Search_Share_File_NewIM" = "Share file";
+"LN_Search_Start_Meeting_NewIM" = "Start meeting";
+"LN_No_Recent_File_NewIM" = "No recent files, start typing to search";
+"LN_Search_Chats_NewIM" = "Search Chats";
+"LN_Search_Contacts_NewIM" = "Search Contacts";
+"LN_Search_Recent_Searches_NewIM" = "RECENT SEARCHES";
+"LN_Search_Search_In_NewIM" = "Search in";
+"LN_Search_Sent_by_NewIM" = "Sent by";
+"LN_Search_Type_NewIM" = "Type";
+
+"LN_Schedule_PMI_Title_NewIM" = "Personal Meeting ID Settings";
+"LN_Schedule_Copy_Title_NewIM" = "Your meeting has been scheduled";
+"LN_Schedule_Copy_PromptInfo_NewIM" = "MEETING INVITATION";
+"LN_Schedule_Main_Title_NewIM" = "Schedule a Meeting";
+"LN_Schedule_Main_MenuTitle_NewIM_28490" = "Schedule Meeting...";
+"LN_ScreenShare_Main_MenuTitle_NewIM_28490" = "Screen Share...";
+"LN_ScreenShare_Main_MenuTitle_NewIM_InSetting_28490" = "Screen Share";
+
+
+"LN_Schedule_Main_TimeZone_NewIM" = "Time Zone";
+"LN_Schedule_PMI_Upgrade_To_Pro_NewIM" = "Upgrade to Pro to change";
+
+"LN_Directory_NewIM" = "Directory";
+
+"LN_HistoryMeetingList_Items_NewIM" = "meetings list history, %ld items";
+"LN_HistoryMeetingList_NewIM" = "meetings list history";
+
+"LN_OnLatestVersionFormat_NewIM" = "You are on the latest version %@.";
+"LN_ReleaseNotes_NewIM" = "Release notes";
+
+"LN_MeetingList_ShowMeetingInvitation_NewIM" = "Show Meeting Invitation";
+"LN_MeetingList_MeetingID_NewIM" = "Meeting ID:";
+"LN_MeetingList_WebinarID_NewIM" = "Webinar ID:";
+"LN_MeetingList_NoMeetingTip_NewIM" = "Your upcoming meetings will show up here";
+"LN_MeetingList_NoRecordedMeetingTitle_NewIM" = "No Recorded Meetings";
+"LN_MeetingList_NoRecordedMeetingTip_NewIM" = "Your recorded meetings will show up here";
+"LN_AddCalendar_NewIM" = "Add a Calendar";
+
+"LN_34295_In Progress (%02d:%02d:%02d)" = "In Progress (%02d:%02d:%02d)";
+"LN_34295_Close breakout room" = "Close breakout room";
+"LN_34295_Close now" = "Close now";
+"LN_34295_Keep breakout rooms open" = "Keep breakout rooms open";
+"LN_34295_Time is up for the %d minute breakout room session. Do you want to close the breakout rooms now?" = "Time is up for the %d minute Breakout Room. Do you want to close all Breakout Rooms now?";
+"LN_34295_All participants have been given %d seconds to leave their Breakout Rooms." = "All participants have been given %d seconds to leave their Breakout Rooms.";
+"LN_34295_Remaining: %02d:%02d:%02d" = "Remaining: %02d:%02d:%02d";
+"LN_34295_Move all participants into breakout rooms automatically" = "Move all participants into breakout rooms automatically";
+"LN_34295_Breakout rooms close automatically after: 100 minutes" = "Breakout rooms close automatically after: 100 minutes";
+"LN_34295_Notify me when time is up" = "Notify me when the time is up";
+"LN_34295_Countdown after closing breakout room" = "Countdown after closing breakout room";
+"LN_34295_Set countdown timer: 100 seconds" = "Set countdown timer: 100 seconds";
+
+"LN_Group_MaxAllowed_Failed_%u_50730" = "This channel can only have up to %u members.";
+
+
+"LN_GroupVideoCallBtn_ToolTip_NewIM"  = "Meet with video";
+"LN_GroupNoVideoCallBtn_ToolTip_NewIM"  = "Meet without video";
+"LN_ShowInfoPannelBtn_ToolTip_NewIM" = "More info";
+"LN_ParticipantBtn_ToolTip_NewIM" = "Member list";
+"LN_StarChannelBtn_ToolTip_NewIM" = "Star Channel";
+"LN_UnStarChannelBtn_ToolTip_NewIM" = "Unstar Channel";
+"LN_StarContactBtn_ToolTip_NewIM" = "Star Contact";
+"LN_UnStarContactBtn_ToolTip_NewIM" = "Unstar Contact";
+"LN_Option_ToolTip_NewIM" = "Option";
+
+"LN_ZOOM-50116_Enable echo cancellation" = "Enable echo cancellation";
+"LN_ZOOM-50116_Disable echo cancellation" = "Disable echo cancellation";
+
+"LN_ZOOM-50139_Unable to connect" = "Unable to connect";
+
+"LN_NotChat_OutsideAccount_NewIM" = "Chats with contacts outside your account are not enabled by your account admin";
 
 "LN_Alert_Auth_Title_57569" = "Important";
 "LN_Alert_Auth_Go_Settings_57569" = "Go To Settings";
@@ -2897,5 +2999,308 @@
 "LN_Alert_Auth_Detail_Mic_57569" = "Enable microphone access for Zoom under Security & Privacy in System Preferences";
 "LN_Toolbar_Video_Warning_Tooltip_57569" = "Enable camera access for Zoom under Security & Privacy in System Preferences";
 "LN_Toolbar_Audio_Warning_Tooltip_57569" = "Enable microphone access for Zoom under Security & Privacy in System Preferences";
-"Options are not available when multiple people can share at the same time" = "Options are not available when multiple people can share at the same time";
 
+"LN_JumpToRecentMsg_NewIM" = "Jump to recent messages";
+
+"LN_ZOOM-43259_%d participants" = "%d participants";
+
+"LN_Accessibility_Status_Host_Meeting_55154" = "You are in the meeting hosted by %@ with %d participants";
+"LN_Accessibility_Status_Host_Webinar_55154" = "You are in the webinar hosted by %@ with %d panelists";
+"LN_Accessibility_Unconnected_Started_55154" = ", you audio is not connected, your video is on";
+"LN_Accessibility_Unconnected_Stopped_55154" = ", your audio is not connected, your video is off";
+"LN_Accessibility_Muted_Started_55154" = ", your audio is muted, your video is on";
+"LN_Accessibility_Muted_Stopped_55154" = ", your audio is muted, your video is off";
+"LN_Accessibility_Unmuted_Started_55154" = ", your audio is unmuted, your video is on";
+"LN_Accessibility_Unmuted_Stopped_55154" = ", your audio is unmuted, your video is off";
+"LN_Accessibility_Meeting_Being_Recored_55154" = ", the meeting is being recorded";
+"LN_Accessibility_Webinar_Being_Recored_55154" = ", the webinar is being recorded";
+"LN_Accessibility_Meeting_Live_On_55154" = ", the meeting is broadcasting live on %@";
+"LN_Accessibility_Webinar_Live_On_55154" = ", the webinar is broadcasting live on %@";
+
+"LN_File_Encrypted_Tip_NewIM" = "This file is encrypted";
+"LN_Say_%1$@_To_%2$@_NewIM" = "Say \"%1$@\" to %2$@";
+"LN_Hi_NewIM" = "Hi 👋";
+"LN_Say_Hi_NewIM" = "Say Hi";
+
+"LN_is_Outgoint_Call_54635" = "Outgoing Call";
+
+"LN_Accessibility_Menu_Item_58425" = "menu item";
+"LN_Accessibility_More_Meeting_Controls_58425" = "More meeting controls, collapsed";
+"LN_Accessibility_More_Managing_Options_58425" = "More options for %@, collapsed";
+"LN_Accessibility_More_Nonverbal_Feedbacks_58425" = "More nonverbal feedback, collapsed";
+"LN_Accessibility_More_managing_Participants_Options_58425" = "More options to manage all participants, collapsed";
+"LN_Accessibility_More_Chat_Options_58425" = "More chat options, collapsed";
+
+"LN_CannotChat_SelfRestrictDomain_58117" = "Chats with contacts outside your account have been disabled by your account administrator.";
+"LN_CannotChat_%@_RestrictDomain_58117" = "Unable to send message. %@ chat has been disabled by their account administrator.";
+"LN_CannotChat_%@'s_RestrictDomain_58117" = "Unable to send message. %@'s chat has been disabled by their account administrator.";
+"LN_CannotChat_NoContact_58117" = "The user does not exist.";
+
+"LN_CannotChat_BlockedBy_%@_62559" = "The message cannot be sent because you have been blocked by %@";
+"LN_CannotEdit_BlockedBy_%@_62559" = "The message cannot be edited because you have been blocked by %@";
+"LN_CannotDelete_BlockedBy_%@_62559" = "The message cannot be deleted because you have been blocked by %@";
+
+"LN_Contact_CannotAdd_RestrictByMe_NewIM" = "Your account has restrictions on adding contacts. Please contact your account administrator for more details.";
+"LN_Contact_CannotAdd_NewIM" = "The user can't be added because their account has domain restrictions on adding contacts.";
+
+
+"LN_Sip_Remote_Hold_53076" = "Remote hold";
+
+//ZOOM-47189
+"LN_Schedule_Public_Event_Tip_47189" = "By checking this option, your meeting will be listed on the public calendar and can be viewed by anyone. We recommend you secure your meeting by adding a password.";
+"LN_Schedule_Check_Public_Event_List_47189" = "Check Public Event List";
+"LN_Schedule_List_On_Public_Calendar_47189" = "List on Public Calendar";
+"LN_Schedule_List_In_The_Public_Event_List_47189" = "List in the Public Event List";
+"LN_Schedule_View_The_List_47189" = "View the List";
+
+"LN_Schedule_Limitation_BasicUser_Des_45329" = "Your basic plan has a 40 minutes time limit on meetings with three or more total participants.";
+"LN_Schedule_Limitation_FreeUser_UpgradeInfo_45329" = "Need unlimited group meeting minutes?";
+"LN_Schedule_Limitation_FreeUser_Link_45329" = "Upgrade to Pro";
+
+"LN_expandable_list_NewIM" = "expandable list";
+"LN_collapsed_NewIM" = "collapsed";
+"LN_expanded_NewIM" = "expanded";
+
+"LN_UnreadBadge_NewIM" = "unread badge";
+"LN_Accessibility_Menu_Button" = "menu button";
+"LN_File_%@_Not_Exist_NewIM" = "This file does not exist. File Path: %@";
+
+"LN_You_65146" = "you";
+
+"LN_Sip_CallLogs_CallBack_61378" = "Call Back";
+
+"LN_HaveGreenScreen_57873" = "I have a green screen";
+"LN_Have_Better_VB_Quality_57873" = "You will have better virtual background quality if you use a green screen.";
+"LN_Download_Aomhost_Prompt_57873" = "To enable smart virtual background, download the smart virtual background package. You only need to download it once.";
+"LN_Install_Aomhost_With_AdminPrivileges_57873" = "To start using smart virtual background, you need to install with admin privileges.";
+"LN_UnsuportSmartVBAlertTitle_57873" = "Computer doesn’t meet requirements";
+"LN_UnsuportSmartVBAlertContent_57873" = "Your Mac OS version needs to be 10.13 or higher and your CPU must have a quad-core or better to use this feature without a green screen background.";
+"LN_UnsuportSmartVBAlertContent_Step_57873" = "Please follow:\n\n1. Prepare a green screen behind you\n2. Select \"I have a green screen\" option";
+
+"LN_Create_Channel_%@_61519" = "You have created this channel %@";
+"LN_Create_MUC_%@_61519" = "You have created this group chat %@";
+
+"LN_%@_Invite_You_And_%@_Channel_61519" = "%@ invited you and %@ to this channel";
+"LN_%@_Invite_You_And_%@_MUC_61519" = "%@ invited you and %@ to this group chat";
+
+"LN_%@_Invite_You_Channel_61519" = "%@ invited you to this channel";
+"LN_%@_Invite_You_MUC_61519" = "%@ invited you to this group chat";
+
+"LN_You_Invite_%@_Channel_61519" = "You have invited %@ to this channel";
+"LN_You_Invite_%@_Muc_61519" = "You have invited %@ to this group chat";
+
+"LN_%@_Join_Channel_61519" = "%@ joined this channel";
+"LN_%@_Join_Muc_61519" = "%@ joined this group chat";
+
+"LN_%@_Invite_%@_Channel_61519" = "%@ invited %@ to this channel";
+"LN_%@_Invite_%@_Muc_61519" = "%@ invited %@ to this group chat";
+
+"LN_You_Remove_%@_From_Channel_61519" = "You have removed %@ from this channel";
+"LN_You_Remove_%@_From_Muc_61519" = "You have removed %@ from this group chat";
+
+"LN_%@_Remove_From_Channel_61519" = "%@ removed you from this channel";
+"LN_%@_Remove_From_Muc_61519" = "%@ removed you from this group chat";
+
+"LN_%@_Left_Channel_61519" = "%@ left this channel";
+"LN_%@_Left_Muc_61519" = "%@ left this group chat";
+
+"LN_%@_Remove_%@_From_Channel_61519" = "%@ removed %@ from this channel";
+"LN_%@_Remove_%@_From_Muc_61519" = "%@ removed %@ from this group chat";
+
+"LN_You_Change_Channel_Name_%@_61519" = "You changed the channel name to \"%@\"";
+"LN_You_Change_Muc_Name_%@_61519" = "You changed the group chat name to \"%@\"";
+
+"LN_%@_Change_Channel_Name_%@_61519" = "%@ changed the channel name to \"%@\"";
+"LN_%@_Change_Muc_Name_%@_61519" = "%@ changed the group chat name to \"%@\"";
+
+"LN_All_Files_61226" = "All Files";
+"LN_Sip_Action_Recording_61378" = "Recording";
+"LN_Sip_Esc_Transfer_61378" = "esc";
+"LN_Sip_Cancel_Transfer_61378"  = "Cancel Transfer";
+"LN_Sip_On_Hold_61378" = "Unhold";
+"LN_Sip_Back_To_Call_61378" = "Back to Call";
+"LN_Sip_History_Menu_Play_Recording_61378" =  "Play Recording";
+"LN_Sip_Search_Click_To_Call_61378" = "Click to Call";
+"LN_Sip_Search_Click_To_Transfer_61378" = "Click to Transfer";
+"LN_Sip_Send_To_Voicemail_62378" = "Send to Voicemail";
+"LN_Sip_Hide_Keypad_62378" = "Hide Keypad";
+"LN_Sip_History_Miss_62378" = "Missed";
+"LN_Sip_History_Pause_62378" = "Pause";
+"LN_Sip_Accessibility_star_62285" = "star";
+"LN_Sip_Accessibility_sharp_62285" = "pound";
+"LN_Sip_Accessibility_drop_call_62285" = "end call";
+"LN_Sip_Accessibility_transfer_62285" = "transfer";
+"LN_Sip_Accessibility_press_dial_62285" = "press call button to dial the phone number";
+"LN_Sip_Accessibility_Call_62285" = "call";
+"LN_Sip_Accessibility_Transfer_62285" = "transfer";
+"LN_Sip_Behavior_Join_Metting" = "Video";
+"LN_Sip_group_Dialpad_62285" = "keypad";
+"LN_Sip_Incoming_Answer_61378" = "Accept";
+"LN_Sip_Incoming_End_Meeting_61378" = "End Meeting & Accept";
+"LN_Sip_Accessibility_History_Miss_62271" = "missed";
+"LN_Sip_Accessibility_History_Cancel_62271" = "canceled";
+"LN_Sip_Accessibility_Clear_Number_62271" = "remove number";
+"LN_Sip_Accessibility_Phone_Miss_Call_62271" = "%ld Missed Calls";
+"LN_Sip_Accessibility_Phone_And_62271" = "and";
+"LN_Sip_Accessibility_Phone_Voice_Mail_62271" = "%ld unread voicemails";
+"LN_Sip_behavior_Audio_61378" = "Audio";
+"LN_Sip_Merge_Call_61376" = "MERGE CALL";
+"LN_Sip_Merged_Call_Menu_Title_61376" = "MERGED CALL";
+
+"LN_Accessibility_Search_Filter_NewIM" = "filter";
+
+"LN_%@'s_Account_Deactivated_62073" = "%@’s account has been deactivated by their account admin";
+"LN_%@_Account_Deactivated_62073" = "%@' account has been deactivated by their account admin";
+"LN_Contact_Deactivated_62073" = "Deactivated";
+"LN_Contact_Terminated_62073" = "Terminated";
+
+"LN_NewVersionAvailable_NewIM" = "A new version is available!";
+"LN_PMI_NewIM" = "My Personal Meeting ID (PMI) ";
+"LN_NonZoomMeeting_NewIM" = "Not a Zoom meeting";
+"LN_Setting_CloseFrontWindow_62993" = "Close the front window";
+
+"LN_Accessibility_LinkButton_NewIM" = "link, open in your default browser";
+
+"LN_VBPerformanceTip_60628" = "Your processor (%@) does not meet our recommended specification for virtual background. Learn more.";
+"LN_VBLearnMore_60628" = "Learn more.";
+"LN_EnableThisFeature_60628" = "Enable this feature anyway";
+"LN_TogglePortraitLandscape_60628" = "Switch to Portrait/Landscape View";
+"LN_ImportantChannels_60628" = "Important Channels";
+"LN_NoUpcomingMeetings_60628" = "No upcoming meetings today";
+"LN_ClosedCaptioning_60628" = "Closed Captioning";
+"LN_MeetingControls_60628" = "Meeting Controls";
+"LN_KeyboardShortcuts_60628" = "Keyboard Shortcuts";
+"LN_MyVideo_60628" = "My Video:";
+
+//ZOOM-61736
+"LN_Accessibility_Edit_The_Meeting_Password_61736" = "edit the meeting password";
+"LN_Accessibility_Country_List_61736" = "country/region list";
+"LN_Accessibility_Selected_Countries_List_61736" = "selected countries/regions list";
+
+"LN_Acessibilty_ClosedCaptionFontSize_%d_39033" = "%d,Closed caption size, slider";
+"LN_Acessibilty_ClosedCaption_Subtitles_%d_39033" = "These are the %d points sized subtitles";
+
+
+"LN_I_AddYou_Contact_61727"    = "I would like to add you as a contact";
+"LN_You_Accept_Request_61727"  = "You accepted this contact request";
+"LN_You_Decline_Request_61727" = "You declined this contact request";
+
+"LN_You_Sent_Request_61727"    = "You sent a contact request";
+"LN_Invitation_Accept_61727"   = "Your invitation has been accepted by this contact";
+"LN_Invitation_Decline_61727"  = "Your invitation has been declined by this contact";
+
+"LN_System_Notification_61234" = "System Notification";
+"LN_System_Notification_Empty_61727" = "Notifications about your contact requests will show up here";
+
+"LN_Sip_Hold_Calls_Title_61378" = "Calls on hold";
+"LN_Channel_been_deleted_%@_61519" = "Channel \"%@\" has been deleted by admin.";
+"LN_You_Removed_from_Channel_Name_%@_61519" = "You have been removed from channel \"%@\".";
+"LN_Messages_In_E2E_Channel_61519" = "Messages in this channel are secured with end-to-end encryption.";
+"LN_Messages_You_Enable_E2E_61519" = "Your messages in this channel are secured with end-to-end encryption.";
+"LN_Messages_In_E2E_1To1_Chat_61519" = "Messages in this chat are secured with end-to-end encryption.";
+
+//ZOOM-53042
+"LN_Schedule_Add_Audio_Water_Mark_ZOOM_53042" = "Add audio watermark that identifies the participants";
+
+"LN_Clear_Chat_History_63356" = "Clear Chat History";
+
+"LN_Clear_Chat_History_Desc_63356" = "You are permanently removing all messages, files, and other related information in this chat. This action cannot be undone.";
+"LN_ZOOM-62295_Allow participants to return to main session at any time" = "Allow participants to return to the main session at any time";
+"LN_ZOOM-62295_Do you want to leave this Breakout Room? If you leave, you cannot return to the main meeting." = "Do you want to leave this Breakout Room? If you leave, you cannot return to the main meeting.";
+"LN_You_Cleared_AllMsg_63356" = "You cleared all past messages.";
+"LN_You_Canot_Send_inMuc_61519" = "You cannot send a message as you are not a member of this channel.";
+
+"LN_MeetingLink_61723" = "Meeting Link:";
+
+"LN_One_Contact_Request_61304" = "new unread contact request";
+"LN_Contact_Request_61304" = "%d unread contact requests";
+"LN_Unread_Request_61304" = "unread requests";
+"LN_Accessibility_Directory_list_61304" = "Directory list";
+"LN_Accessibility_Channels_list_61304" = "Channels list";
+
+"LN_Accessibility_Close_InfoPanel_Btn_60776" = "Close this information panel";
+"LN_Accessibility_Collapse_Pannel_60776" = "collapse this panel";
+//ZOOM-54742
+"LN_Schedule_Error_3070_Msg_ZOOM_54742" = "Enter a start time and duration for your event so that the end time is later than the current time.";
+"LN_Accessibility_MeetOption_60775" = "Meet option";
+"LN_Accessibility_%lu_participants_60775" = "%lu participants";
+"LN_Accessibility_ScreenShotOption_60775" = "screenshot option";
+"LN_Accessibility_EMOJI_60775" = "EMOJI";
+
+"LN_Accessibility_OpenEmailLink_61304" = "open in your default Email application";
+"LN_Messages_Posted_By_%@_61519" = "Posted by %@";
+"LN_Messages_%@_Posted_In_%@_61519" = "%@ posted in %@";
+
+//ZOOM-63646
+"LN_Accessibility_Expand_Advance_Button_63646" = "expand";//"Click to expand the additional meeting options";
+"LN_Accessibility_Collapse_Advance_Button_63646" = "collapse";//"Click to collapse the additional meeting options";
+
+"LN_Accessibility_Dropdown_Button_61896" = "dropdown button";
+"LN_Accessibility_CloseThisChat_61896" = "close this chat";
+"LN_Accessibility_CloseThisChannel_61896" = "close this channel";
+"LN_Accessibility_AvailableOnDesktop_61896" = "available on desktop";
+"LN_Accessibility_AvailableOnMobile_61896" = "available on mobile";
+"LN_Accessibility_%lu_MessagesUnread_61896" = "[%lu] messages unread";
+"LN_Accessibility_atme_61896" = "at me";
+"LN_Accessibility_atall_61896" = "at all";
+"LN_Accessibility_ChatDisplayOption_61896" = "chat display option";
+"LN_Accessibility_ViewProfile_61896" = "view profile";
+//ZOOM-62352
+"LN_Add_New_Chat_Or_Creat_62352" = "New Chat or Channel";
+"LN_Add_An_App_62352" = "Add an App";
+
+"LN_Accessibility_X_Of_M_60995" = "%d of %d";
+
+//ZOOM-63981
+"LN_Schedule_Limitation_%@_Des_63981" = "Your Zoom Basic plan has a 40-minute time limit on meetings with 3 or more participants.\n%@ to enjoy unlimited group meetings.";
+"LN_Schedule_Limitation_Not_Show_Again_63981" = "Do not show this message again";
+"LN_Schedule_Limitation_Upgrade_Now_63981" = "Upgrade now";
+
+"LN_In_Call_Label_64477" = "On a call";
+
+//ZOOM-64653
+"LN_%ld_Attachments_64653" = "%ld ATTACHMENTS";
+"LN_%ld_Attachment_64653" = "%ld ATTACHMENT";
+
+"LN_NewUnreadMsg_61896" = "new unread message";
+
+//ZOOM-53042
+"LN_ManageBlockedUsers_60630" = "Manage blocked users...";
+"LN_LeftSidebarTheme_60630" = "Left sidebar theme:";
+"LN_BounceApplication_Setting_60630" = "Bounce application icon when receiving a new message";
+"LN_ChatSettings_60630" = "Chat Settings";
+"LN_Setting_RemindMe_60630" = "Remind me                  minutes before my upcoming meetings";
+"LN_Setting_LimitScreenShare_60630" = "Limit your screen share to                  frames-per-second";
+
+"LN_Accessibility_Search_results_In_64277" = "Search results in";
+"LN_Accessibility_Search_Open_Channel_64277" = "press Enter to open the channel";
+"LN_Accessibility_Search_Open_Contact_64277" = "press Enter to open the contact";
+"LN_Accessibility_Search_Select_64277" = "press Enter key to select";
+"LN_Accessibility_Search_In_Advance_Search_64277" = "press Enter to view search results in Advance Search";
+"LN_Accessibility_Search_recent_Items_64277" = "recent search items";
+"LN_Accessibility_Search_recent_Item_64277" = "recent search item";
+"LN_Accessibility_Search_Clear_Button" = "Clear the search";
+
+"LN_CheckUpdate_NotRemind" = "Don't remind me again";
+"LN_CheckUpdate_Available" = "Update Available";
+"LN_CheckUpdate_info" = "New version %@ is available. You have %@.";
+"LN_CheckUpdate_Manually_Update" = "Update Available";
+"LN_Close_Current_Chat_Session" = "Close current chat session";
+
+"LN_Accessibility_Selected_60775" = "selected";
+"LN_Accessibility_%ld_Results_60775" = "[%ld] results";
+
+"LN_CloseThisChat_NewIM" = "Close this Chat";
+"LN_CloseThisChannel_NewIM" = "Close this Channel";
+"LN_Audio_Tsp_Both_45801" = "Both";
+
+"LN_LinkPreview_Label_23623" = "Include link preview";
+"LN_Dark_NewIM" = "Dark";
+"LN_Light_NewIM" = "Light";
+"LN_minutes_NewIM" = "minutes";
+"LN_Continuously_NewIM" = "Continuously";
+
+"LN_Accessibility_Search_Delete_67618" = "press Delete to remove it from the history list";
+"LN_Accessibility_One_Unread_Notifications_61896" = "new unread notification";
+"LN_Accessibility_%ld_Unread_Notifications_61896" = "%ld unread notifications";
+"LN_In_Calendar_Event_69117" = "In a calendar event";

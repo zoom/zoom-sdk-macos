@@ -3,18 +3,18 @@
 //  ZoomSDK
 //
 //  Created by Totti on 2018/6/22.
-//  Copyright © 2018 zoom.us. All rights reserved.
+//  Copyright © 2018 Zoom Video Communications,Inc. All rights reserved.
 //  [Used for Customized UI]
 #import "ZoomSDKErrors.h"
 
 @protocol ZoomSDKShareElementDelegate <NSObject>
 /**
- * @brief callback if the user u want to watch share has started send share datea
+ * @brief Callback event of sharer sending data.
  */
 -(void)onShareContentStartReceiving;
 /**
- * @brief callback if the shared user change in this element
- * @param userid: current user id of this element who share
+ * @brief Callback of the user ID changing when sharing.
+ * @param userid The ID of new sharer.
  */
 -(void)onShareSourceUserIDNotify:(unsigned int)userid;
 
@@ -33,23 +33,29 @@
 @property(nonatomic, assign) NSView*  shareView;
 @property(nonatomic, assign) id<ZoomSDKShareElementDelegate> delegate;
 /**
- * @brief create a share element
- * @param frame: share view frame owned by this element
+ * @brief Create a sharing element.
+ * @param frame Frame of sharing view owned by the element.
  */
 - (id)initWithFrame:(NSRect)frame;
 /**
- * @brief resize frame of the share view owned by this element
- * @param frame: share view frame u want to set
+ * @brief Resize the frame of the shared view owned by this element
+ * @param frame The coordinates of _shareview.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)resize:(NSRect)frame;
 /**
- * @brief show the share view
- * @param show: set YES to show or NO to hide
+ * @brief Set whether to show the share view or not.
+ * @param show YES means to show, NO to hide.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)ShowShareRender:(BOOL)show;
 @end
 
 @protocol ZoomSDKShareContainerDelegate <NSObject>
+/**
+ * @brief Callback of that element is destroyed. 
+ * @param element The object of ZoomSDKShareElement.
+ */
 -(void)onShareElementDestroy:(ZoomSDKShareElement*)element;
 @end
 
@@ -59,9 +65,28 @@
     id<ZoomSDKShareContainerDelegate>        _delegate;
 }
 @property(nonatomic, assign)id<ZoomSDKShareContainerDelegate>  delegate;
+/**
+ * @brief Create shared elements.
+ * @param element The pointer to ZoomSDKShareElement object.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
+ */
 -(ZoomSDKError)createShareElement:(ZoomSDKShareElement**)element;
+/**
+ * @brief Clean shared elements.
+ * @param element The pointer to ZoomSDKShareElement object.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
+ */
 -(ZoomSDKError)cleanShareElement:(ZoomSDKShareElement*)element;
+/**
+ * @brief Get an array of shared elements.
+ * @return If the function succeeds, it will return a NSArray containing all sharing elements.
+ */ 
 -(NSArray*)getShareElementArray;
+/**
+ * @brief Get an array of shared elements by user ID.
+ * @param userid The specified user id.
+ * @return If the function succeeds, it will return an object of ZoomSDKShareElement.
+ */
 -(ZoomSDKShareElement*)getShareElementByUserID:(unsigned int)userid;
 
 @end

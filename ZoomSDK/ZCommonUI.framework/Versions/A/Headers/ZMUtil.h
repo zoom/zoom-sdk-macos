@@ -19,6 +19,17 @@
 #define DRGB(r,g,b)     [NSColor colorWithDeviceRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define DRGBA(r,g,b,a)  [NSColor colorWithDeviceRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
+#ifndef IsEmptyString
+#define IsEmptyString(str) (![str isKindOfClass:[NSString class]] || (!str || ![str length]))
+#endif
+
+#ifndef WEAK_SELF
+#define WEAK_SELF __block __typeof(&*self)weakSelf = self;
+#endif
+
+#ifndef ZM_GET_NSERROR
+#define ZM_GET_NSERROR(domain,errorcode,desc) [NSError errorWithDomain:domain code:errorcode userInfo:@{NSLocalizedDescriptionKey:(desc)?(desc):@""}]
+#endif
 
 #define Release_View(x) { if(nil != x) \
                         {\
@@ -77,9 +88,16 @@ typedef enum
 //check if email is valid
 + (BOOL)isValidEmail:(NSString*)inEmail;
 
+
+/**
+ check if Contain Email
+ */
++ (BOOL)isContainEmail:(NSString*)inEmail;
+
 //string width/height
 +(CGFloat)heightForWidth:(CGFloat)inWidth attributeString:(NSAttributedString*)inAttString;
 +(CGFloat)widthForHeight:(CGFloat)inHeight attributeString:(NSAttributedString*)inAttString;
++ (NSString*)clipString:(NSString*)string limitHeight:(CGFloat)limitHeight limitWidth:(CGFloat)limitWidth attribute:(NSDictionary*)attr isMyNote:(BOOL)isMyNote;
 + (NSMutableArray*)parseHTTPURLs:(NSString*)body;
 + (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
 //+ (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;

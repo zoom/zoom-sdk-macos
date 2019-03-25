@@ -18,5 +18,7 @@
 + (ZRScreensUpdateHelper*)sharedHelper;
 - (void)updateScreens;
 - (void)cleanup;
+- (BOOL)didDisplayUnplugged;
+- (void)updateScreensForStartZR;
 
 @end

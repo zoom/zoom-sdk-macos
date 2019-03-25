@@ -19,6 +19,9 @@
 @property(nonatomic, retain) NSTrackingArea* trackingArea;
 @property(nonatomic, assign) id delegate;
 
+- (void)viewWillMoveToWindow:(NSWindow *)newWindow NS_REQUIRES_SUPER;
+- (void)viewDidMoveToWindow NS_REQUIRES_SUPER;
+
 - (void)cleanUp;
 @end
 

@@ -8,35 +8,34 @@
 
 #import <Cocoa/Cocoa.h>
 
-//Zoom SDK Errors
+//ZOOM SDK Errors
 #import <ZoomSDKErrors.h>
 
-//Zoom SDK AuthService
+//ZOOM SDK Authentication Service
 #import <ZoomSDKAuthService.h>
 
-//Zoom SDK MeetingService
+//ZOOM SDK Meeting Service
 #import <ZoomSDKMeetingService.h>
 
-//Zoom SDK SettingsService
+//ZOOM SDK Setting Service
 #import <ZoomSDKSettingService.h>
 
-//Zoom SDK PremeetingService
+//ZOOM SDK Pre-meeting Service
 #import <ZoomSDKPremeetingService.h>
 
-//Zoom SDK NetworkService
+//ZOOM SDK Network Service
 #import <ZoomSDKNetworkService.h>
 
-//Zoom SDK Customized Video UI
+//ZOOM SDK Custom Video UI
 #import <ZoomSDKVideoContainer.h>
 
-//Zoom SDK Customized Share UI
+//ZOOM SDK Custom Share UI
 #import <ZoomSDKShareContainer.h>
 /**
- * The ZoomSDK class is a class that exposes a Zoom API Rest Client.
+ * Initialize the class to acquire all the services. 
  *
- * Access to this class and all other components of the ZoomSDK can be granted by including `<ZoomSDK/ZoomSDK.h>`
- * in your source code.
- * This class provides a class method sharedSDK which provides a preconfigured SDK client
+ * Access to the class and all the other components of the SDK by merging <ZoomSDK/ZoomSDK.h> into source code.
+ * The user can preconfigure SDK client by functions in this class. Before calling initSDK:YES/NO, you should get the object of this class via sharedSDK and call the corresponding functions.
  */
 @interface ZoomSDK : NSObject
 {
@@ -53,77 +52,78 @@
 @property (retain, nonatomic) NSString *zoomDomain;
 @property (assign, nonatomic) BOOL needCustomizedUI;
 /**
- * @brief This method is guaranteed to only instantiate one sharedSDK over the lifetime of an app.
- * @note This client must be configured with your client key and client secret.
- * @return a preconfigured ZoomSDK default client
+ * @brief The sharedSDK will be instantiated only once over the lifespan of the application. Configure the client with the specified key and secret. 
+ * @note Configure the client with the specified key and secret. 
+ * @return A preconfigured ZOOM SDK client. 
  */
 + (ZoomSDK*)sharedSDK;
 
 /**
-* @brief This method is used to init Zoom SDK.
-* @param customizedFlag: YES means use Customized UI, No means use Zoom native UI.
+* @brief This method is used to initialize Zoom SDK.
+* @param customizedFlag YES means Custom UI, No ZOOM original UI.
 */
 - (void)initSDK:(BOOL)customizedFlag;
 /**
- * @brief Sets the Zoom SDK client domain
- * @note the domain should not include protocol "https" or "http", the format is just like "zoom.us" or "www.zoom.us".
- * @param domain: A domain which used as start/join zoom meeting
+ * @brief Set client domain of ZOOM SDK.
+ * @note The format of domain should like "zoom.us" or "www.zoom.us", please do not add the protocol "http" or "https".
+ * @param domain A domain for starting/joining ZOOM meeting. 
  */
 - (void)setZoomDomain:(NSString*)domain;
 /**
- * @brief  get the ZoomSDK default Auth Service
- * @note Auth Service should be called at first, the Zoom SDK can be used after authorizing successfully.
- * @return a preconfigured Auth Service
+ * @brief Get the default authentication service.
+ * @note The ZOOM SDK can not be called unless the authentication service is called successfully. 
+ * @return A preconfigured authentication service.
  */
 - (ZoomSDKAuthService*)getAuthService;
 
 /**
- * @brief get the ZoomSDK default Meeting Service
- * @return a preconfigured Meeting Service
+ * @brief Get the default meeting service.  
+ * @return A preconfigured meeting Service
  */
 - (ZoomSDKMeetingService*)getMeetingService;
 
 /**
- * @brief get the ZoomSDK default Meeting Settings
- * @return a object of Settings Service
+ * @brief Get the default meeting service.  
+ * @return An object of setting service.
  */
 - (ZoomSDKSettingService*)getSettingService;
 
 /**
- * @brief get the ZoomSDK default Premeeting Service
- * @return a object of Settings Service
+ * @brief Get the default pre-meeting service. 
+ * @return An object of pre-meeting Service
  */
 - (ZoomSDKPremeetingService*)getPremeetingService;
 
 /**
- * @brief get the ZoomSDK default Network Service
- * @return a object of Network Service
+ * @brief Get the default Network service.  
+ * @return An object of Network Service
  */
 - (ZoomSDKNetworkService*)getNetworkService;
 
 /**
- * @return the ZoomSDK default Version Number
+ * @brief Get the serial number of SDK version.
+ * @return The default serial number of ZOOM SDK version.
  */
 - (NSString*)getSDKVersionNumber;
 
 /**
- * @brief get the supproted localization lanuguages
- * @param the items in NSArray is the name of the supported lanuguages, which type is NSString.
+ * @brief Get the languages supported by the SDK. 
+ * @return The supported languages.
  */
 - (NSArray*)getLanguageArray;
 
 /**
- * @brief set the language of the app
- * @param preferLanguage: the name the the language, which is get from - (NSMutableArray *)getLanguageArray.
- * @return ZoomSDKError: return value ZoomSDKError_Success means the prefered language is successfully setted.
-    you can call this api when you first call [ZoomSDK sharedSDk] in the app, otherwise you need restart the app to make the prefered Language work.
+ * @brief Set the language of the App.
+ * @param preferLanguage Usually if user does not specify the language, it will follow up the systematical language of the device. 
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed. 
+ * @note You should call the method before calling [[ZoomSDK sharedSDK]initSDK:NO/YES] in the App, or no, you should restart the App once you reset the preferred Language.
  */
 - (ZoomSDKError)setPreferLanguage:(NSString *)preferLanguage;
 
 /**
- * @brief enable default 5M log or not
- * @param enable: YES mean enable default 5M log, NO means doesn't.
- * @note you need call this api before you first call [[ZoomSDK sharedSDK]initSDK:NO/YES] in the app.
+ * @brief Set whether to enable default log of which the capacity is less than 5M.
+ * @param enable YES mean enabled, NO disabled.
+ * @note Call Api firstly before you call [[ZoomSDK sharedSDK]initSDK:NO/YES] in the App.
  */
 - (void)enableDefaultLog:(BOOL)enable;
 @end

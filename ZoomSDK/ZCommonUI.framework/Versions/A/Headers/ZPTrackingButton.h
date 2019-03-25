@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 zoom. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "ZMRichKeyButton.h"
 
-@interface ZPTrackingButton : NSButton
+@interface ZPTrackingButton : ZMRichKeyButton
 {
     BOOL    _hovered;
     NSTrackingArea* _trackingArea;
@@ -18,6 +18,7 @@
 @property(nonatomic, assign) BOOL hovered;
 @property(nonatomic, retain) NSTrackingArea* trackingArea;
 @property(nonatomic, retain) NSString* customTooltip;
+@property SEL hoverAction;
 - (NSRect)getRectInScreen;
 - (void)cleanUp;
 @end

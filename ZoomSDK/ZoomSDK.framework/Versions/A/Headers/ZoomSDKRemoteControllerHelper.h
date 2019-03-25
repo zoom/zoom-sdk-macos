@@ -3,16 +3,16 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 12/07/2018.
-//  Copyright © 2018 zoom.us. All rights reserved.
+//  Copyright © 2018 Zoom Video Communications,Inc. All rights reserved.
 //  [Used for Customized UI]
 
 #import <Foundation/Foundation.h>
 #import "ZoomSDKErrors.h"
 @protocol ZoomSDKRemoteControllerDelegate <NSObject>
 /**
- * @brief Designated for SDK notify the remote control status.
- * @param status the remote controll user's status.
- * @param userID the remote controll user's identity.
+ * @brief Notification of remote control status.
+ * @param status The status of remote control.
+ * @param userID The ID of user who can control others remotely.
  *
  */
 - (void)onRemoteControlStatus:(ZoomSDKRemoteControlStatus)status User:(unsigned int)userID;
@@ -25,80 +25,86 @@
 }
 @property(nonatomic, assign) id<ZoomSDKRemoteControllerDelegate> delegate;
 /**
- * @brief Designated for SDK to check whether u can request remote control of specific user or not.
- * @param userid the user's identity u want request remote controll.
- * @return return ZoomSDKError_Success if u can request remote control the specific user, else means failed.
+ * @brief Determine if it is able for the current user to request to control others remotely.
+ * @param userid The ID of user to be controlled remotely.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)canRequestRemoteControl:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to check whether u have remote controll privilege of specific user or not.
- * @param userid the user's identity u want to check.
- * @return return ZoomSDKError_Success if u have remote controll privilege the specific user, else means failed.
+ * @brief Determine if user has the privilege to control the specified user remotely. 
+ * @param userid The ID of user to be checked.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed. 
  */
 - (ZoomSDKError)haveRemoteControlPrivilege:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to check whether u are now remote controlling specific user's pc or not.
- * @param userid the user's identity u want to check.
- * @return return ZoomSDKError_Success if u are remote controlling the specific user, else mean not.
+ * @brief Determine if the current user is controlling the specified user remotely.
+ * @param userid The ID of user to be checked.
+ * @return If the current user is controlling, it will return ZoomSDKError_Success, otherwise not.
  */
 - (ZoomSDKError)isInRemoteControlling:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to start remote control specific user's pc.
- * @param userid the user's identity u want to start remote controll.
- * @return return ZoomSDKError_Success if u start remote control the specific user successfully, else mean failed.
+ * @brief Start controlling remotely the computer of specified user.
+ * @param userid The ID of user to be controlled remotely. 
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)startRemoteControl:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to stop remote controll specific user's pc, still have the privilege to remote control.
- * @param userid the user's identity u want to stop remote controll.
- * @return return ZoomSDKError_Success if u stop remote control the specific user successfully, else mean failed.
+ * @brief Stop controlling remotely.
+ * @param userid The ID of user who is controlled remotely by the current user. 
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)stopRemoteControl:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to request remote control privilege of specific user
- * @param userid the user's identity u want to request remote control.
- * @return return ZoomSDKError_Success if u request remote control the specific user successfully, else mean failed.
+ * @brief Request to control remotely the specified user.
+ * @param userid The ID of user to be controlled. 
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)requestRemoteControl:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to give up remote controll privilege of specific user
- * @param userid the user's identity u are now remote contolling.
- * @return return ZoomSDKError_Success if u give up remote control the specific user successfully, else mean failed.
+ * @brief Give up controlling remotely the specified user.
+ * @param userid The ID of user having been controlled.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)giveUpRemoteControl:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to give remote control privilege to specific user
- * @param userid the user's identity u want to give remote control privilege to.
- * @return return ZoomSDKError_Success if u give remote control to the specific user successfully, else mean failed.
+ * @brief Give the remote control privilege to the specified user.
+ * @param userid The ID of user that you ask to control yourself remotely.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)giveRemoteControlPrivilegeTo:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to decline remote control request from specific user
- * @param userid the user's identity who want to get your desktop remote control privilege.
- * @return return ZoomSDKError_Success if u decline remote control request from the specific user successfully, else mean failed.
+ * @brief Refuse the request to remote control from the specified user.
+ * @param userid The ID of demander.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)declineRemoteControlRequest:(unsigned int)userid;
 
 /**
- * @brief Designated for SDK to revoke remote control privilege to yourself.
- * @return return ZoomSDKError_Success if u revoke remote control successfully, else mean failed.
+ * @brief Get back the authority of remote control.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)revokeRemoteControl;
 
 /**
- * @brief Designated for SDK to get current remote controller's identity.
- * @param userid a unsigned int pointer.
- * @return return ZoomSDKError_Success if function call successfully and the userid will be assigned the identity of current user, else mean failed.
+ * @brief Get the identity of current controller. 
+ * @param userid The pointer to unsigned int. If the function calls successfully, it will return the user id of current remote controller.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)getCurrentRemoteController:(unsigned int*)userid;
 
+/**
+ * @brief Send remote control action. 
+ * @param theEvent The mouse or keyboard event.
+ * @param shareView The view that you want to control remotely.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
+ */
 - (ZoomSDKError)sendRemoteControlEvent:(NSEvent *)theEvent ShareView:(NSView*)shareView;
 @end

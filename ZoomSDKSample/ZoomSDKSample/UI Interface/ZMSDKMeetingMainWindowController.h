@@ -76,6 +76,6 @@ typedef enum
 - (void)updateInMeetingUI;
 - (void)onSelfShareStart;
 - (void)onSelfShareStop;
-
+- (void)cleanUp;
 @end
 

@@ -20,6 +20,8 @@
 @property(nonatomic, retain, readwrite)ZMSDKUserHelper *userHelper;
 
 + (ZMSDKConfUIMgr*)sharedConfUIMgr;
++ (void)initConfUIMgr;
++ (void)uninitConfUIMgr;
 - (void)createMeetingMainWindow;
 - (ZMSDKUserHelper*)getUserHelper;
 - (ZMSDKMeetingMainWindowController*)getMeetingMainWindowController;

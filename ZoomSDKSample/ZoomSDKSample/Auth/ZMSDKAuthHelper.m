@@ -36,7 +36,7 @@
 
 -(ZoomSDKError)auth:(NSString*)key Secret:(NSString*)secret
 {
-    return [ [[ZoomSDK sharedSDK] getAuthService] sdkAuth:key appSecret:secret];
+    return [[[ZoomSDK sharedSDK] getAuthService] sdkAuth:key appSecret:secret];
 }
 
 -(BOOL)isAuthed
@@ -46,7 +46,7 @@
 
 -(void)onZoomSDKAuthReturn:(ZoomSDKAuthError)returnValue
 {
-    if(ZoomSDKError_Success == returnValue)
+    if(ZoomSDKAuthError_Success == returnValue)
     {
         if([[NSUserDefaults standardUserDefaults] boolForKey:kZMSDKLoginEmailRemember])
         {

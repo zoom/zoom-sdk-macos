@@ -1,8 +1,34 @@
 # CHANGELOG
 
+## 2019-03-25 @ [v4.3.47193.0321]((https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.47193.0321)
+
+**Added**
+
+* Introduce new Zoom meeting UI
+* Add new interfaces to control share viewer’s annotate privilege
+* Add 1080p video support
+* Add new interfaces to customize the sub-tab pages in H323 invite page
+* Add a new interface to open the share select window
+* Add new interfaces to hide the upgrade button in free meeting remain time tooltip view
+* Add a callback to alert the user when the 40-min free meeting is automatically ended
+
+**Changed & Fixed**
+
+* Fix an issue that the setting option ‘always show meeting controls’ does not work
+* Remove unexpected log info in meeting window
+* Refine the meeting window’s title by showing 'Zoom' label on meetings window when using dual mode
+* Fix an issue that the participant side SDK quit automatically without any message if the meeting is locked by the host
+* Fix an issue that the audio status cannot update to other participants
+
+**Deprecated**
+
+* (void)onPaymentReminder
+* Class ZoomSDKUpgradeAccountHelper
+* Enum SDKReminderType
+
 ## 2019-01-23 @ [v4.3.53914.0121](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.53914.0121)
 
-Added
+**Added**
 *	A new refactorized demo project that provides clear instructions on how to implement major features.
 *	Support for multi-share setting
 *	Support for closed caption
@@ -11,14 +37,14 @@ Added
 *	New logging feature that stores logs with the maximum size of 5MB.
 *	A new method to join/start meeting directly via url, such as zoommtg://zoom.us/join?action=....
 
-Changed & Fixed
+**Changed & Fixed**
 *	An issue that the transcode does not work when enable setting of “Choose a location for recorded files when meeting ends”
 *	Audio/Video does not work on Mac OS 10.14
 *	Setting preferred language feature does not work
 *	Waiting for host window does not show when joining a meeting that hasn’t started yet.
 *	Loading tab always displayed when scheduling a meeting twice
 
-Deprecated
+**Deprecated**
 *	- (ZoomSDKError)canStartRecording:(BOOL)isCloud User:(unsigned int)userid NS_DEPRECATED_MAC(4.1, 4.3);
 *	- (ZoomSDKError)canStartRecording:(BOOL)isCloud NS_AVAILABLE_MAC(4.3); in ZoomSDKMeetingRecordController.h
 *	- (ZoomSDKError)loginSSO:(NSString*)ssoToken NS_DEPRECATED_MAC(1.0, 4.3);

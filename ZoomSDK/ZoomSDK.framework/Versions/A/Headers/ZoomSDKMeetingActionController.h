@@ -3,23 +3,26 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 9/1/17.
-//  Copyright © 2017 zoom.us. All rights reserved.
+//  Copyright © 2017 Zoom Video Communications,Inc. All rights reserved.
 //
 #import "ZoomSDKErrors.h"
 
 @interface ZoomSDKMultiToSingleShareConfirmHandler : NSObject
 /**
- * @brief Designated to cancel switch multi-share to single share. All the sharings are remained.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Cancel to switch to single share from multi-share. All the shares are remained.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)cancelSwitch;
 /**
- * @brief Designated to confirm switch multi-share to single share. All the sharings will be stopped.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Confirm to switch to single share from multi-share. All the shares are stopped.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)confirmSwitch;
 @end
 
+/**
+ * @brief ZOOM SDK chat information.
+ */
 @interface ZoomSDKChatInfo : NSObject
 {
     unsigned int _sendID;
@@ -29,55 +32,156 @@
     NSString*    _content;
     time_t       _timestamp;
 }
+/**
+ * @brief Get the user ID of whom sending message.
+ * @return If the function succeeds, the return value is the user ID of sender.
+ */
 - (unsigned int)getSenderUserID;
+/**
+ * @brief Get the screen name of the sender.
+ * @return If the function succeeds, the return value is the screen name.
+ */
 - (NSString*)getSenderDisplayName;
+/**
+ * @brief Get the user ID of whom receiving the message.
+ * @return If the function succeeds, the return value is the user ID.
+ */
 - (unsigned int)getReceiverUserID;
+/**
+ * @brief Get the screen name of receiver.
+ * @return If the function succeeds, the return value is the screen name.
+ */
 - (NSString*)getReceiverDisplayName;
+/**
+ * @brief Get the content of message.
+ * @return If the function succeeds, the return value is the content of message.
+ */
 - (NSString*)getMsgContent;
+/**
+ * @brief Get the timestamps of the current message.
+ * @return If the function succeeds, the return value is the timestamps of the current message. 
+ */
 - (time_t)getTimeStamp;
 @end
-
+/**
+ * @brief ZOOM SDK audio information.
+ */
 @interface ZoomSDKUserAudioStauts : NSObject
 {
     unsigned int _userID;
     ZoomSDKAudioStatus _status;
     ZoomSDKAudioType _type;
 }
+/**
+ * @brief Get the user ID.
+ * @return If the function succeeds, it will return user ID.
+ */
 - (unsigned int)getUserID;
+/**
+ * @brief Get the status of the audio.
+ * @return The audio status.
+ */
 - (ZoomSDKAudioStatus)getStatus;
+/**
+ * @brief Get the audio type of the user.
+ * @return The audio type.
+ */
 - (ZoomSDKAudioType)getType;
 @end
-
+/**
+ * @brief ZOOM SDK Attendee's status in the webinar.
+ */
 @interface ZoomSDKWebinarAttendeeStatus : NSObject
 {
     BOOL _isAttendeeCanTalk;
 }
 @property(nonatomic, assign)BOOL  isAttendeeCanTalk;
 @end
-
+/**
+ * @brief ZOOM SDK user information.
+ */
 @interface ZoomSDKUserInfo :NSObject
 {
     unsigned int _userID;
 }
+/**
+ * @brief Determine if the information corresponds to the current user.
+ * @return YES means that the information corresponds to the current user, otherwise not.
+ */
 - (BOOL)isMySelf;
+/**
+ * @brief Get the username matched with the current user information.
+ * @return The username.
+ */
 - (NSString*)getUserName;
+/**
+ * @brief Get the email matched with the current user information.
+ * @return The email.
+ */
 - (NSString*)getEmail;
+/**
+ * @brief Get the user ID matched with the current user information.
+ * @return The user ID. 
+ */
 - (unsigned int)getUserID;
+/**
+ * @brief Determine whether the member corresponding with the current information is the host or not.
+ * @return YES means host.
+ */
 - (BOOL)isHost;
+/**
+ * @brief Determine the video status of the user specified by the current information.
+ * @return YES means that the video is turned on.
+ */
 - (BOOL)isVideoOn;
+/**
+ * @brief Determine the audio status of the user specified by the current information.
+ * @return YES means that the audio status is muted.
+ */
 - (BOOL)isAudioMuted;
+/**
+ * @brief Get the type of role of the user specified by the current information.
+ * @return The role of the user.
+ */
 - (UserRole)getUserRole;
+/**
+ * @brief Determine whether the user corresponding to the current information joins the meeting by telephone or not.
+ * @return YES indicates that the user joins the meeting by telephone.
+ */
 - (BOOL)isPurePhoneUser;
+/**
+ * @brief Determine if it is able to change the specified user role as the co-host.
+ * @return If the specified user can be the co-host, the return value is YES. Otherwise failed.
+ */
 - (BOOL)canBeCoHost;
+/**
+ * @brief Get the webinar status of the user specified by the current information.
+ * @return The object of ZoomSDKWebinarAttendeeStatus.
+ */
 - (ZoomSDKWebinarAttendeeStatus*)GetWebinarAttendeeStatus;
 @end
-
+/**
+ * @brief Join meeting helper.
+ */
 @interface ZoomSDKJoinMeetingHelper :NSObject
 {
     JoinMeetingReqInfoType   _reqInfoType;
 }
+/**
+ * @brief Get the type of register information.
+ * @return The type of the information.
+ */
 -(JoinMeetingReqInfoType)getReqInfoType;
+/**
+ * @brief Input the password to join meeting.
+ * @param password The meeting password of the meeting.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
 -(ZoomSDKError)inputPassword:(NSString*)password;
+/**
+ * @brief Cancel to join meeting.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.										
+ */
 -(ZoomSDKError)cancel;
 @end
 
@@ -85,97 +189,104 @@
 @protocol ZoomSDKMeetingActionControllerDelegate <NSObject>
 
 /**
- * @brief Designated for Zoom Meeting User Audio status Change notify.
- * @param userAudioStatusArray a array contains ZoomSDKUserAudioStauts elements tell client audio stauts change of each user.
+ * @brief Notification of user's audio status changes. 
+ * @param userAudioStatusArray An array contains ZoomSDKUserAudioStauts elements of each user's audio status.
  *
  */
 - (void)onUserAudioStatusChange:(NSArray*)userAudioStatusArray;
 
 /**
- * @brief Designated for Zoom Meeting User receive chat message notify.
- * @param chatInfo tell client the info of the chat message info user received.
+ * @brief In-meeting users receive the notification of chat messages.
+ * @param chatInfo Chat information received by user.
  *
  */
 - (void)onChatMessageNotification:(ZoomSDKChatInfo*)chatInfo;
 
 /**
- * @brief Designated for Zoom Meeting new user join notify.
- * @param array tell client the joined user array.
+ * @brief Notification of user joins meeting.
+ * @param array Array of users who join meeting. 
  *
  */
 - (void)onUserJoin:(NSArray*)array;
 
 /**
- * @brief Designated for Zoom Meeting user left notify.
- * @param array tell client the left user array.
+ * @brief Notification of user leaves meeting.
+ * @param array Array of users leave meeting. 
  *
  */
 - (void)onUserLeft:(NSArray*)array;
 
 /**
- * @brief Designated for Zoom Meeting notify the specific user info change.
- * @param userID user's identity whose info changed.
+ * @brief Upgrade the information of the specified user.
+ * @param userID The ID of the specified user.
  *
  */
 - (void)onUserInfoUpdate:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify the host change.
- * @param userID user's identity who becomes host.
+ * @brief Notification of host changes.
+ * @param userID User ID of new host.
  *
  */
 - (void)onHostChange:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify the co-host change.
- * @param userID user's identity who becomes co-host.
+ * @brief Notification of co-host changes. 
+ * @param userID User ID of new co-host.
  *
  */
 - (void)onCoHostChange:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify spotlight video user change .
- * @param spotlight YES mean get spotlight No means not.
- * @param userID user's identity whose spotlight status change.
+ * @brief Notification of user whose video is spotlighted changes.
+ * @param spotlight YES means spotlighted, otherwise not.
+ * @param userID The ID of user whose video is currently spotlighted.
  *
  */
 - (void)onSpotlightVideoUserChange:(BOOL)spotlight User:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify specific user video status change.
- * @param videoOn mean specific user video is On or not.
- * @param userID user's identity whose video status change.
+ * @brief Notify that user's video status changes.
+ * @param videoOn YES means that user's video is on, otherwise not.
+ * @param userID The ID of user who video status changes.
  *
  */
 - (void)onVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify specific user raise hand or lower hand status change.
- * @param raise YES mean specific user raise hand ,No means lower hand.
- * @param userID user's identity who raise hand or lower hand.
+ * @brief Notification of user's hand status changes.
+ * @param raise YES means that the specified user raises hand, otherwise, puts hand down.  
+ * @param userID The ID of user whose hand status changes.
  *
  */
 - (void)onLowOrRaiseHandStatusChange:(BOOL)raise UserID:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify join meeting response
- * @param joinMeetingHelper object your received, u can select in put password or not.
+ * @brief Callback event of user joins meeting. 
+ * @param joinMeetingHelper An object for inputing password or canceling to join meeting.
  */
 - (void)onJoinMeetingResponse:(ZoomSDKJoinMeetingHelper*)joinMeetingHelper;
 
 /**
- * @brief Designated for Zoom Meeting notify active speaker change in meeting.
- * @param userID mean active speaker's user identity.
+ * @brief Notification of in-meeting active speaker changes.
+ * @param userID The ID of new active speaker.
  */
 - (void)onActiveSpeakerChanged:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify need user confirm when switch multishare to single share.
- * @param confirmHandle: the object that used to handle the switch multi-share to single share action.
+ * @brief Notify user to confirm or cancel to switch to single share from multi-share.
+ * @param confirmHandle An object used to handle the action to switch to single share from multi-share.
  */
 - (void)onMultiToSingleShareNeedConfirm:(ZoomSDKMultiToSingleShareConfirmHandler*)confirmHandle;
-
+/**
+ * @brief Notify that video of active user changes.
+ * @param userID The user's user ID.						  
+ */
 - (void)onActiveVideoUserChanged:(unsigned int)userID;
+/**
+ * @brief Notify that video of active speaker changes.
+ * @param userID The user's user ID.
+ */
 - (void)onActiveSpeakerVideoUserChanged:(unsigned int)userID;
 @end
 
@@ -187,78 +298,80 @@
 @property(nonatomic, assign) id<ZoomSDKMeetingActionControllerDelegate> delegate;
 
 /**
- * @brief This method is used to get participant list.
- * @return An array contains participant id.
+ * @brief Get the list of participants.
+ * @return An array of participant ID.
  */
 - (NSArray*)getParticipantsList;
 /**
- * @brief This method is used to modify an ongoing meeting.
- * @param cmd, modify the meeting with different command.
- * @param userID, user can modify the himself, set 0, only host can modify other participants,set the userID of the participant to be modified.
- * @param screen, select the specific screen u want to do action with.
- * @return A ZoomSDKError to tell client whether modify meeting successful or not.
+ * @brief Commands in the meeting.
+ * @param cmd The commands in the meeting. 
+ * @param userID The ID of user. Zero(0) means that the current user can control the commands. If it is other participant, it will return the corresponding user ID.
+ * @param screen Specify the screen on which you want to do action.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 - (ZoomSDKError)actionMeetingWithCmd:(ActionMeetingCmd)cmd userID:(unsigned int)userID onScreen:(ScreenType)screen;
 
 /**
- * @brief This method is used to send a chat message.
- * @param content, message content u want to send.
- * @param userID, userID of the user u want to send chat to.
- * @return A ZoomSDKError to tell client whether send message successful or not.
+ * @brief Send a chat message.
+ * @param content The content of message.
+ * @param userID The ID of user who will receive the message. 
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 - (ZoomSDKError)sendChat:(NSString*)content toUser:(unsigned int)userID;
 
 /**
- * @brief This method is used to get user info by the selecetd user.
- * @param userID, userID of the selected user.
- * @return A user info interface when function call successful, or return nil when failed.
+ * @brief Get the information of the specified user. 
+ * @param userID The ID of the specified user. 
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 - (ZoomSDKUserInfo*)getUserByUserID:(unsigned int)userID;
 
 /**
- * @brief This method is used to change user name.
- * @param userID, userID of the selected user whose name u want to change, host can rename attendee, attendee only can rename himself.
- * @param name, new name u want to rename with.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Change user's screen name in the meeting.
+ * @param userID The ID of user whose screen name will be changed. Normal participants can change only their personal screen name while the host/co-host can change all participants' names. 
+ * @param name The new screen name. 
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 - (ZoomSDKError)changeUserName:(unsigned int)userID newName:(NSString*)name;
 
 /**
- * @brief This method is used for making a participant to be a new host or orignal host to recliam host
- * @param userID, the identity of the user, set userid = 0 to reclaim host.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Assign a participant to be a new host, or original host who loose the privilege reclaims to be the host.
+ * @param userID User ID of new host. Zero(0) means that the original host takes back the privilege.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 - (ZoomSDKError)makeHost:(unsigned int)userID;
 
 /**
- * @brief This method is used to mention client can reclaim host or not.
- * @return A BOOL, YES means can reclaim NO means not.
+ * @brief Query if user can claim host(be host) or not. 
+ * @return YES means able, otherwise not.
  */
 - (BOOL)canReclaimHost;
 /**
- * @brief This method is used for participant to claim host by hostkey.
- * @param hostKey, the host key of the meeting host.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Normal participant claims host by host-key.
+ * @param hostKey Host key.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 - (ZoomSDKError)claimHostByKey:(NSString*)hostKey;
 /**
- * @brief This method is used for host to assign cohost to one participant.
- * @param userid, the user id of the participant u want to make cohost.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Assign a user as co-host in meeting. 
+ * @param userid The ID of user to be a co-host. 
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ * @note The co-host cannot be assigned as co-host by himself. And the user should have the power to assign the role.
  */
 -(ZoomSDKError)assignCoHost:(unsigned int)userid;
 
 /**
- * @brief This method is used for host to revoke cohost privilege from a specific participant.
- * @param userid, the user id of the participant u want to make cohost.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Revoke co-host role of another user in meeting.
+ * @param userid The ID of co-host who will loose the co-host privilege. 
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ * @note Only meeting host can run the function.
  */
 -(ZoomSDKError)revokeCoHost:(unsigned int)userid;
 
 /**
- * @brief This method is used for host to set the share type in meeting.
- * @param ZoomSDKShareSettingType, the share setting type u want to set.
- * @return A ZoomSDKError to tell client function call successful or not.
+ * @brief Set sharing types for the host in meeting.
+ * @param ZoomSDKShareSettingType Custom setting types of ZOOM SDK sharing.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 -(ZoomSDKError)setShareSettingType:(ZoomSDKShareSettingType)shareType;
 

@@ -16,21 +16,55 @@ static ZMSDKConfUIMgr* confUIMgr = nil;
 
 - (id)init
 {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        confUIMgr = [super init];
-        self.meetingMainWindowController = [[[ZMSDKMeetingMainWindowController alloc] init] autorelease];
-        self.userHelper = [[[ZMSDKUserHelper alloc] initWithWindowController:_meetingMainWindowController] autorelease];;
-    });
-    return confUIMgr;
+    self = [super init];
+    if (self)
+    {
+        if (!_meetingMainWindowController)
+        {
+            self.meetingMainWindowController = [[ZMSDKMeetingMainWindowController alloc] init];
+        }
+        if (!_userHelper)
+        {
+            self.userHelper = [[ZMSDKUserHelper alloc] initWithWindowController:_meetingMainWindowController];
+        }
+    }
+    return self;
+}
++ (void)initConfUIMgr
+{
+    if ( !confUIMgr ) {
+        confUIMgr = [[ZMSDKConfUIMgr alloc] init];
+    }
+}
++ (void)uninitConfUIMgr
+{
+    if (nil != confUIMgr)
+    {
+        [confUIMgr cleanUp];
+        [confUIMgr release];
+        confUIMgr = nil;
+    }
 }
 + (ZMSDKConfUIMgr*)sharedConfUIMgr
 {
-    return [[self alloc] init];;
+    [ZMSDKConfUIMgr initConfUIMgr];
+    return confUIMgr;
 }
 
 - (void)cleanUp
 {
+    if(_meetingMainWindowController)
+    {
+        [_meetingMainWindowController.window close];
+        [_meetingMainWindowController cleanUp];
+        [_meetingMainWindowController release];
+        _meetingMainWindowController = nil;
+    }
+    if(_userHelper)
+    {
+        [_userHelper release];
+        _userHelper = nil;
+    }
     return;
 }
 
@@ -43,7 +77,7 @@ static ZMSDKConfUIMgr* confUIMgr = nil;
 {
     if (!_meetingMainWindowController)
     {
-        self.meetingMainWindowController = [[[ZMSDKMeetingMainWindowController alloc] init] autorelease];
+        self.meetingMainWindowController = [[ZMSDKMeetingMainWindowController alloc] init];
     }
     [_meetingMainWindowController.window makeKeyAndOrderFront:nil];
     [_meetingMainWindowController showWindow:nil];
@@ -51,6 +85,10 @@ static ZMSDKConfUIMgr* confUIMgr = nil;
 }
 - (ZMSDKUserHelper*)getUserHelper
 {
+    if (!_userHelper)
+    {
+        self.userHelper = [[ZMSDKUserHelper alloc] initWithWindowController:_meetingMainWindowController];
+    }
     return self.userHelper;
 }
 - (ZMSDKMeetingMainWindowController*)getMeetingMainWindowController

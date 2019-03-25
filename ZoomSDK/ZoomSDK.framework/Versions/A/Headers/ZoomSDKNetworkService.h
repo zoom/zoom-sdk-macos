@@ -3,7 +3,7 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 2/28/17.
-//  Copyright © 2017 zoom.us. All rights reserved.
+//  Copyright © 2017 Zoom Video Communications,Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,10 +14,30 @@
     int         _proxyPort;
     NSString*   _proxyDescription;
 }
+/**
+ * @brief Get proxy host.
+ * @return The proxy host.
+ */
 - (NSString*)getProxyHost;
+/**
+ * @brief Get proxy port.
+ * @return The proxy port.						  
+ */
 - (int)getProxyPort;
+/**
+ * @brief Get description of proxy.
+ * @return The proxy description.
+ */
 - (NSString*)getProxyDescription;
+/**
+ * @brief Authentication of proxy.
+ * @param userName Input username for authentication.
+ * @param password Input password for authentication.
+ */
 - (void)proxyAuth:(NSString*)userName password:(NSString*)password;
+/**
+ * @param Cancel authentication of proxy.
+ */
 - (void)cancel;
 @end
 
@@ -28,26 +48,47 @@
     NSString* _certSerialNum;
     NSString* _certFingerprint;
 }
+/**
+ * @brief The certificate is issued to whom.
+ * @return The user to whom the certificate is issued.
+ */
 - (NSString*)getCertIssueTo;
+/**
+ * @brief The certificate is issued by whom.
+ * @return The user by whom the certificate is issued.									  
+ */
 - (NSString*)getCertIssueBy;
+/**
+ * @brief Get serial number of certificate.
+ * @return The serial number of the certificate.
+ */
 - (NSString*)getCertSerialNum;
+/**
+ * @param Get fingerprint of certificate.
+ * @return The fingerprint of the certificate.
+ */
 - (NSString*)getCertFingerprint;
+/**
+ * @brief Trust the certificate.
+ */
 - (void)trust;
+/**
+ * @brief Cancel the certificate.
+ */
 - (void)cancel;
 
 @end
 
 @protocol ZoomSDKNetworkSeviceDelegate <NSObject>
 /**
- * @brief Designated for ZoomSDK network proxy setting call back
- * @param proxyHelper: A ZoomSDKProxySettingHelper object contains proxy info.
- *
+ * @brief The callback will be triggered if the proxy requests to input the username and password.
+ * @param proxyHelper A ZoomSDKProxySettingHelper object containing proxy information. 
  */
 - (void)onProxySettingNotification:(ZoomSDKProxySettingHelper*)proxyHelper;
 
 /**
- * @brief Designated for ZoomSDK network SSL verification setting call back
- * @param sslHelper: A ZoomSDKSSLVerificationHelper object contains ssl verification info.
+ * @brief The callback will be triggered when the SSL needs to be verified.
+ * @param sslHelper A ZoomSDKSSLVerificationHelper object contains SSL verification information. 
  *
  */
 - (void)onSSLCertVerifyNotification:(ZoomSDKSSLVerificationHelper*)sslHelper;

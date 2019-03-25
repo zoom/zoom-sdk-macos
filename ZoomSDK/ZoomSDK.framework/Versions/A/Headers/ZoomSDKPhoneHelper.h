@@ -3,23 +3,23 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 5/19/17.
-//  Copyright © 2017 zoom.us. All rights reserved.
+//  Copyright © 2017 Zoom Video Communications,Inc. All rights reserved.
 //
 
 #import "ZoomSDKErrors.h"
 
 @protocol ZoomSDKPhoneHelperDelegate <NSObject>
 /**
- * @brief Invite callout user status callback.
- * @param status: phone status 
- * @param reason: if status = PhoneStatus_Failed, reason will be assigned the failed reason.
+ * @brief Notify the callout status changes by inviting the specified user to join the meeting.
+ * @param status The enum of PhoneStatus.
+ * @param reason The reason for the failure to invite user by phone.
  */
 -(void)onInviteCalloutUserStatus:(PhoneStatus)status FailedReason:(PhoneFailedReason)reason;
 
 /**
- * @brief telephone user callback.
- * @param status: phone status
- * @param reason: if status = PhoneStatus_Failed, reason will be assigned the failed reason.
+ * @brief Notify the callout status changes by dialing out to Call Me.
+ * @param status The enum of PhoneStatus.
+ * @param reason The reason for the failure to invite user by phone.
  */
 -(void)onCallMeStatus:(PhoneStatus)status FailedReason:(PhoneFailedReason)reason;
 @end
@@ -30,8 +30,20 @@
     NSString* _countryName;
     NSString* _countryCode;
 }
+/**
+ * @brief Get the ID of country where user can dial in.
+ * @return The ID of country.
+ */
 -(NSString*)getCountryID;
+/**
+ * @brief Get the name of country.
+ * @return The name of country.
+ */
 -(NSString*)getCountryName;
+/**
+ * @brief Get the code of country.
+ * @return The code of country.
+ */
 -(NSString*)getCountryCode;
 @end
 
@@ -44,11 +56,35 @@
     NSString* _displayNumber;
     CallInNumberType _type;
 }
+/**
+ * @brief Get the ID of country from which user calls in.
+ * @return The country ID.
+ */
 -(NSString*) getID;
+/**
+ * @brief The code of country from where user calls in.
+ * @return The code of country. 
+ */
 -(NSString*) getCode;
+/**
+ * @brief Get the name of country from where user calls in.
+ * @return The name of country.	 
+ */
 -(NSString*) getName;
+/** 
+ * @brief Get the number for dialing in.
+ * @return The number for dialing in.
+ */
 -(NSString*) getNumber;
+/**
+ * @brief Get the display name of the country.
+ * @return The display name of the country.
+ */
 -(NSString*) getDisplayNumber;
+/**
+ * @brief Get the number type for dialing in.
+ * @return The number type.
+ */
 -(CallInNumberType) getType;
 @end
 
@@ -59,67 +95,67 @@
 }
 @property(nonatomic, assign)id<ZoomSDKPhoneHelperDelegate> delegate;
 /**
- * @brief Get client support phone callout or not.
- * @return BOOL value to tell client support phone callout or not.
+ * @brief Determine if the user account supports to call out. 
+ * @return YES means that client supports the feature of phone callout, otherwise not.
  */
 -(BOOL)isSupportPhone;
 
 /**
- * @brief Get client callout country info.
- * @return A NSArray contains the callout country info.
+ * @brief Get the list of the countries which support to call out.
+ * @return An NSArray contains ZoomSDKPhoneSupportCountryInfoList objects of all countries supporting to call out.  Otherwise nil.
  */
 -(NSArray*)getSupportCountryInfo;
 
 /**
- * @brief This method is used to invite callout user.
- * @param userName: callout user name
- * @param number: callout phone number
- * @param countryCode: callout user's country code
- * @return A ZoomSDKError to tell client invite callout user successfully or not.
+ * @brief Invite the specified user to join the meeting by calling out.
+ * @param userName User name to be displayed in the meeting.
+ * @param number The phone number of destination.
+ * @param countryCode The country code of the specified user must be in the support list. 
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed. 
  */
 -(ZoomSDKError)inviteCalloutUser:(NSString*)userName PhoneNumber:(NSString*)number CountryCode:(NSString*)countryCode;
 
 /**
- * @brief This method is used to cancel callout action.
- * @return A ZoomSDKError to tell client invite cancel callout user successfully or not.
+ * @brief Cancel the invitation that is being called out by phone.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 -(ZoomSDKError)cancelCalloutUser;
 
 /**
- * @brief This method is used to get invite callout user status.
- * @return A PhoneStatus to tell client detail status of callout user.
+ * @brief Get the status of the invited user by calling out.
+ * @return If the function succeeds, the return value is the current callout process.
  */
 -(PhoneStatus)getInviteCalloutUserStatus;
 
 /**
- * @brief This method is call telephone user for audio service.
- * @param number: my phone number
- * @param countryCode: my country code
- * @return A ZoomSDKError to tell client call me successfully or not.
+ * @brief Invite myself to join audio to the meeting by phone. 
+ * @param number The phone number of the device.
+ * @param countryCode The country code.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise failed. 
  */
 -(ZoomSDKError)callMe:(NSString*)number CountryCode:(NSString*)countryCode;
 
 /**
- * @brief This method is hangup call me.
- * @return A ZoomSDKError to tell client hangup successfully or not.
+ * @brief Cancel the current CALL ME action.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise failed.
  */
 -(ZoomSDKError)hangUp;
 
 /**
- * @brief This method is used to get my telephone status.
- * @return A PhoneStatus to tell client detail status of my telephone.
+ * @brief Get the status of myself by CALL ME.
+ * @return If the function succeeds, the return value is the process of the invitation by CALL ME. 
  */
 -(PhoneStatus)getCallMeStatus;
 
 /**
- * @brief This method is used to get participant ID to join current meeting.
- * @return A unsigned int value of participant ID.
+ * @brief Get my participant ID to join meeting by calling in.  
+ * @return If the function succeeds, the return value is the ID of participant.
  */
 -(unsigned int)getCallInParticipantID;
 
 /**
-* @brief This method is used to get call in number for current meeting.
-* @return A array contains ZoomSDKCallInPhoneNumInfo objects.
+* @brief Get the information of number that user can call in to join meeting.
+* @return If the function succeeds, it will return an array of ZoomSDKCallInPhoneNumInfo objects.
 */
 -(NSArray*)getCallInNumberInfo;
 

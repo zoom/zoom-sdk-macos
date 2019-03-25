@@ -16,9 +16,9 @@
 
 @interface NSView (ZMAccessibility)
 
-@property (nonatomic, retain) IBOutlet NSView * preferPreviousKeyView;
-@property (nonatomic, retain) IBOutlet NSView * preferNextKeyView;
+//@property (nonatomic, retain) IBOutlet NSView * preferPreviousKeyView;
+//@property (nonatomic, retain) IBOutlet NSView * preferNextKeyView;
 
-- (void)setPreferCanBecomeKeyView:(BOOL)canBecomeKeyView;
+//- (void)setPreferCanBecomeKeyView:(BOOL)canBecomeKeyView;
 
 @end

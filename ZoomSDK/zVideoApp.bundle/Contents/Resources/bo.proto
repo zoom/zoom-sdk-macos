@@ -37,4 +37,12 @@ message BOListProto
 	required BOControlProto ControlStatus = 2;
 	required uint32	WaitSeconds			  = 3; //wait seconds when stopping
 	required uint32 NameIndex			  = 4; //current name index (breakout session 1, breakout session 2, ...)
+	
+	optional uint32 IsAutoJoinEnabled	= 5;
+	optional uint32 IsBackToMainSessionEnabled = 6;
+	
+	optional uint32 IsTimerEnabled = 7;
+	optional uint32 IsTimerAutoEndEnabled = 8;	//auto or manual end when timer end
+	optional uint32 TimerDuration = 9;	//BO schedule duration, in seconds
+	optional uint32 StartTimeOnMMR = 10; //BO start time, in seconds
 }

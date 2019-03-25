@@ -3,82 +3,87 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 8/4/17.
-//  Copyright © 2017 zoom.us. All rights reserved.
+//  Copyright © 2017 Zoom Video Communications,Inc. All rights reserved.
 //
 #import "ZoomSDKErrors.h"
 @interface ZoomSDKMeetingConfiguration :NSObject
 {
-    //app ID for share
+    //The APP to be shared.
     CGDirectDisplayID  _displayAppID;
-    //monitor ID for share
+    //The monitor ID.
     CGDirectDisplayID  _monitorID;
-    //floatVideo position
+    //The location of float video.
     NSPoint            _floatVideoPoint;
-    //sharing ToolBar Visible
+    //The visibility of toolbar when sharing.
     BOOL               _shareToolBarVisible;
-    // main toolbar visible
+    //The visibility of main toolbar in the meeting. 
     BOOL               _mainToolBarVisible;
-    //main video position
+    //The location of main interface of meeting.
     NSPoint            _mainVideoPoint;
-    //waiting for host window visible
+    //The visibility of the window of waiting for the host.
     BOOL               _jbhWindowVisible;
-    //mute on entry
+    //Attendees join the meeting with audio muted.
     BOOL               _enableMuteOnEntry;
-    //play chime or not
+    //Play chime when user joins/leaves meeting
     BOOL               _enableChime;
-    //direct share desktop or not
+    //Query whether to share screen or not.
     BOOL               _isDirectShareDesktop;
-    //Enable auto adjust the volume of the speaker when you join audio
+    //Enable auto-adjust the speaker volume when joining meeting.
     BOOL               _enableAutoAdjustSpeakerVolume;
-    //Enable auto adjust the volume of the mic when you join audio.
+    //Enable auto-adjust the microphone volume.
     BOOL                _enableAutoAdjustMicVolume;
-    //Hide Meeting Info on Main window title
+    //Hide the meeting information on main window.
     BOOL                _hideMainWindowMeetingInfo;
-    //new meeting number u want to set
+    //The meeting ID customized by user and it is displayed on the title bar of meeting. 
     unsigned int        _newMeetingID;
-    //disable join meeting popup wrong password window
+    //Hide the prompt dialog of wrong password.
     BOOL                _disablePopupWrongPasswordWindow;
-    //Auto adjust speaker volume when join audio after meeting launched
+    //Auto-adjust speaker volume when joining meeting.  
     BOOL                _autoAdjustSpeakerVolumeWhenJoinAudio;
-    //Auto adjust mic volume when join audio after meeting launched
+    //Auto adjust microphone volume when joining meeting.  
     BOOL                _autoAdjustMicVolumeWhenJoinAudio;
-    //disable end other meeting alert u start meeting when u have a meeting aleady in progress
+    //Disable the alert to end another ongoing meeting.
     BOOL                _disableEndOtherMeetingAlert;
-    //disable join meeting popup input password window
+    //Disable the prompt dialog to input password.
     BOOL                _disableInputPasswordWindow;
-    //disable double click to EnterFull screen
+    //Disable the feature to enter full screen by double click.
     BOOL                _disableDoubleClickToFullScreen;
-    //hide thumbnail video
+    //Hide the window of thumbnail video.
     BOOL                _hideThumbnailVideoWindow;
-    //huawei security app name
+    //Huawei security APP name. 
     NSString*           _securityAppName;
-    //disable rename in meeting
+    //Disable to rename in meeting
     BOOL                _disableRenameInMeeting;
-    //disable share button origin click action
+    //Disable ZOOM original actions of clicking share button.
     BOOL                _disableShareButtonClickOriginAction;
-    //disable meeting toolbar invite button origin click action, default is no
+    //Disable ZOOM original actions of clicking toolbar invite button.
     BOOL                _disableToolbarInviteButtonClickOriginAction;
-    //need prefill webinar Join Info
+    //Input meeting information in advance when user joins webinar.
     BOOL                _needPrefillWebinarJoinInfo;
-    //hide leave/end meeting confirm window
+    //Hide the confirm dialog of user leaves/ends meeting.
     BOOL                _hideLeaveMeetingWindow;
-    //disable participants button origin click action
+    //Disable ZOOM original actions of clicking button participants.
     BOOL                _disableParticipantButtonClickOriginAction;
-    //JD hide full phone number for pure call in user
-    BOOL _hideFullPhoneNumber4PureCallinUser;
-    //hide telephone in audio info window
-    BOOL _hideTelephoneInAudiowWindow;
-    //hide call me in audio info window
-    BOOL _hideCallMeInAudioWindow;
-    //JD add an option to disable Multi-Share
+    //Hide the Full Phone Number of purely Call-in User.
+    BOOL                _hideFullPhoneNumber4PureCallinUser;
+    //Hide the window of phone dialing in.
+    BOOL                _hideTelephoneInAudiowWindow;
+    //Hide the window of CALL ME.
+    BOOL                _hideCallMeInAudioWindow;
+    //Forbid multi-participants sharing at the same time.
     BOOL                _forceDisableMultiShare;
-    //enable global shortcuts in confui
+    //Set whether to enable global shortcuts in configuration.
     BOOL                _enableGlobalShortcuts;
+	//Disable custom live stream.
     BOOL                _disableCustomLiveStreamAction;
-    //diable free user payment Reminder
+    //Set whether to disable ZOOM original reminder action for free user.
     BOOL                _disableFreeUserOriginAction;
-    //disable free meeting remain time notify in confui
+    //Disable the ZOOM original notification of remaining time for meeting organized by free user.
     BOOL                _disableFreeMeetingRemainTimeNotify;
+	//Hide the h323 call in tab on invite window.
+    BOOL                _hideInviteInMeetingH323CallInTab;
+	//Hide the h323 call out tab on invite window.
+    BOOL                _hideInviteInMeetingH323CallOutTab;
 }
 @property(nonatomic, assign)CGDirectDisplayID displayAppID;
 @property(nonatomic, assign)CGDirectDisplayID monitorID;
@@ -114,25 +119,31 @@
 @property(nonatomic, assign)BOOL disableCustomLiveStreamAction;
 @property(nonatomic, assign)BOOL disableFreeUserOriginAction;
 @property(nonatomic, assign)BOOL disableFreeMeetingRemainTimeNotify;
+@property(nonatomic, assign)BOOL hideInviteInMeetingH323CallInTab;
+@property(nonatomic, assign)BOOL hideInviteInMeetingH323CallOutTab;
 
 - (ZoomSDKError)prefillWebinarUserName:(NSString*)userName Email:(NSString*)email;
 - (ZoomSDKError)hideSDKButtons:(BOOL)hide ButtonType:(SDKButton)button;
 
 /**
- @note
- @param modify Set YES if u want to change meeting number of window title
- @meetingnumber  specific number you want to replace
- set newMeetingNum = 0 if u want to hide the window title just show Zoom, set else num to replace.
+ @brief Change the title of window in the meeting.
+ @param modify Set it to YES to modify the meeting number displayed on the title of window. 
+ @param meetingnumber Custom meeting number. 
+ @note If you want to show the default meeting number, set newMeetingNum = 0. Otherwise set other number to replace it.
  */
 - (ZoomSDKError)modifyWindowTitle:(BOOL)modify NewMeetingNum:(unsigned int)meetingnumber;
 
 /**
- @note need both input the videoDSCP and audioDSCP if u want to modify.
- @param videoDSCP Set int value if u want to change Video DSCP
- @param audioDSCP Set int value if u want to change Audio DSCP
+ @brief Modify the DSCP of audio and video.
+ @param videoDSCP Video values in the meeting.
+ @param audioDSCP Audio values in the meeting.
+ @note It is necessary to input both values of the videoDSCP and audioDSCP if you want to modify.
  */
 - (ZoomSDKError)modifyVideoDSCP:(int)videoDSCP AudioDSCP:(int)audioDSCP;
 
+/**
+ @brief Reset all properties in this class.
+ */
 - (void)reset;
 
 @end

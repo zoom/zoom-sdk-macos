@@ -3,14 +3,16 @@
 //  ZoomSDK
 //
 //  Created by TOTTI on 8/4/17.
-//  Copyright © 2017 zoom.us. All rights reserved.
+//  Copyright © 2017 Zoom Video Communications,Inc. All rights reserved.
 //
 
 #import "ZoomSDKErrors.h"
 #import "ZoomSDKCustomizedAnnotationCtr.h"
 #import "ZoomSDKShareContainer.h"
 #import "ZoomSDKRemoteControllerHelper.h"
-
+/**
+ * @brief ZOOM UI annotation class.
+ */
 @interface ZoomSDKAnnotationController :NSObject
 - (BOOL)isAnnotationDisable;
 - (ZoomSDKError)setTool:(AnnotationToolType)type onScreen:(ScreenType)screen;
@@ -22,7 +24,9 @@
 
 @end
 
-
+/**
+ * @brief ZOOM share source class.
+ */
 @interface ZoomSDKShareSource :NSObject
 {
     unsigned int _userID;
@@ -37,26 +41,32 @@
 - (unsigned int)getUserID;
 @end
 
+/**
+ * @brief ZOOM share information class.
+ */
 @interface ZoomSDKShareInfo: NSObject
 {
     ZoomSDKShareContentType  _shareType;
-    CGWindowID    _windowID; //Only usefully to _shareType = ZoomSDKShareContentType_AS or ZoomSDKShareContentType_WB
-    CGDirectDisplayID  _displayID; //Only useful to _shareType = ZoomSDKShareContentType_DS;
+    CGWindowID    _windowID; //Specify the APP that user wants to share. Available only for _shareType = ZoomSDKShareContentType_AS or ZoomSDKShareContentType_WB.
+    CGDirectDisplayID  _displayID; //Specify the device screen on which that user wants to share the content. Available only for _shareType = ZoomSDKShareContentType_DS.
 }
 - (ZoomSDKShareContentType) getShareType;
 /**
- * @brief Designated for get share window ID when meeting is sharing application.
- * @param windowID: A pointer of CGWindowID, if function call successfully it will return the shared app window id.
+ * @brief Get the window ID of the shared APP.
+ * @param windowID A pointer to CGWindowID.
  */
 - (ZoomSDKError)getWindowID:(CGWindowID*)windowID;
  /**
- * @brief Designated for get monitor display ID when meeting is sharing destop.
- * @param displayID: A pointer of CGDirectDisplayID, if function call successfully it will return the shared monitor display ID.
+ * @brief Get the display ID on which that user wants to share the content. 
+ * @param displayID A pointer of CGDirectDisplayID.
  */
 - (ZoomSDKError)getDisplayID:(CGDirectDisplayID*)displayID;
 
 @end
 
+ /**
+  * @brief ZOOM SDK split screen information class.
+  */
 @interface ZoomSDKSplitScreenInfo : NSObject
 {
     BOOL _isInSplitScreenMode;
@@ -67,29 +77,43 @@
 -(BOOL)isSupportSplitScreenMode;
 @end
 
+/**
+ * @brief Callback of annotation events.
+ */
 @protocol ZoomSDKASControllerDelegate <NSObject>
 @optional
 /**
- * @brief Designated for Zoom Meeting notify the sharing status.
- * @param status the sharing user's status.
- * @param userID the sharing user's identity.
+ * @brief Notification of the sharing status in the meeting.
+ * @param status The sharing status.
+ * @param userID The ID of user who is sharing.
  *
  */
 - (void)onSharingStatus:(ZoomSDKShareStatus)status User:(unsigned int)userID;
 
 /**
- * @brief Designated for Zoom Meeting notify the share is locked by host or not
- * @param shareLocked YES mean share is locked by host, NO means not locked.
+ * @brief Notification if the share is locked by host/co-host. 
+ * @param shareLocked YES means the share is locked, otherwise not.
  */
 - (void)onShareStatusLocked:(BOOL)shareLocked;
 
 /**
- * @brief Designated for Zoom Meeting notify the share content is changed by new share start.
- * @param shareInfo include share content type and window ID or monitor ID.
+ * @brief Notification of shared content is changed.
+ * @param shareInfo The shared content, including window ID and monitor ID. 
  */
 - (void)onShareContentChanged:(ZoomSDKShareInfo*)shareInfo;
+
+/**
+ * @brief Designated for Zoom Meeting notify the sharing user's has changed the viewer's annotation privilage.
+ * @param isSupportAnnotation YES means the share source user enable viewer do annotate, otherwise not.
+ * @param userID The user id that is sharing.
+ */
+- (void)onAnnotationSupportPropertyChanged:(BOOL)isSupportAnnotation shareSourceUserID:(unsigned int)userID;
 @end
 
+
+/**
+ @brief ZOOM share controller.
+ */
 @interface ZoomSDKASController : NSObject
 {
     id<ZoomSDKASControllerDelegate> _delegate;
@@ -100,167 +124,199 @@
 }
 @property(nonatomic, assign)id<ZoomSDKASControllerDelegate> delegate;
 /**
- * @brief This method is used to start share application.
- * @param shareAppWindow, the app window u want to share.
- * @return A ZoomSDKError to tell client whether start app share successful or not.
+ * @brief Start to share application. 
+ * @param shareAppWindow The App window to be shared.
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)startAppShare:(CGWindowID)windowID;
 
 /**
- * @brief This method is used to select one monitor to share screen.
- * @param monitorID, the indentity of the monitor u want to share.
- * @return A ZoomSDKError to tell client whether start monitor share successful or not.
+ * @brief Start to share desktop.
+ * @param monitorID The ID of the monitor that you want to display the shared content.
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)startMonitorShare:(CGDirectDisplayID)monitorID;
 
 /**
- * @brief This method is used to stop current share.
- * @return A ZoomSDKError to tell client whether stop current share successful or not.
+ * @brief Stop the current share.
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)stopShare;
 
 /**
- * @brief This method is used to get userid list user who is sharing.
- * @return A NSArray contain the userid of all users who are sharing.
+ * @brief Get the ID of users who are sharing. 
+ * @return A NSArray of userID of all users who are sharing.
  */
 - (NSArray*)getShareSourceList;
 
 /**
- * @brief This method is used to get sharesource info by the specific userid.
- * @param userID, userID of the selected user.
- * @return ZoomSDKShareSource object when function call successful, or return nil when failed.
+ * @brief Choose the shared source with the specified user ID.
+ * @param userID The ID of user who is sharing.
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKShareSource*)getShareSourcebyUserId:(unsigned int)userID;
 
 /**
- * @brief This method is used to get sharesource info by the specific userid.
- * @param userID, userID of the sharing user u want to view.
- * @param screen, select a screen u want to view in if u support dual mode.
- * @return ZoomSDKShareSource object when function call successful, or return nil when failed.
+ * @brief View the user's shared content on the screen by the specified user ID.
+ * @param userID The ID of user that you want to view the shared content.
+ * @param screen Select the screen where you want to view the shared content if you have more than one screen. 
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)viewShare:(unsigned int) userID onScreen:(ScreenType)screen;
 
 /**
- * @brief This method is used to judge whether user self can start share or not.
- * @return A BOOL to tell client can share or not.
+ * @brief Determine if it is able for user to start sharing. 
+ * @return If the function succeeds, it will return YES, otherwise not.
  */
 - (BOOL)canStartShare;
 
 /**
- * @brief This method is used to judge whether this meeting's share is locked by host or not.
- * @return A BOOL to tell client meeting's share is locked or not.
+ * @brief Determine if the share is locked by the host/co-host. 
+ * @return If the function succeeds, it will return YES, otherwise not.
  */
 - (BOOL)isShareLocked;
 
 /**
- * @brief This method is used to get annotation controller.
- * @return A annotataion controller interface when function call successful, or return nil when failed.
+ * @brief Get the controller of annotation tools.
+ * @return The object of ZoomSDKAnnotationController. 
  */
 - (ZoomSDKAnnotationController*)getAnnotationController;
 
 /**
- * @brief This method is used to get customized annotation controller.
- * @return A customized annotataion controller interface when function call successful, or return nil when failed.
+ * @brief Get the controller of annotation tools used in user custom interface mode.
+ * @return The object of ZoomSDKCustomizedAnnotationCtr. 
  */
 - (ZoomSDKCustomizedAnnotationCtr*)getCustomizedAnnotationCtr;
 
 /**
- * @brief This method is used to get customized share render container.
- * @return A ZoomSDKShareContainer object when function call successful, or return nil when failed.
+ * @brief Get custom share container. 
+ * @return If the function succeeds, it will return the object of ZoomSDKShareContainer, otherwise not.
  */
 - (ZoomSDKShareContainer*)getShareContainer;
 
 /**
- * @brief This method is used to get remote controller helper.
- * @return A ZoomSDKRemoteControllerHelper object when function call successful, or return nil when failed.
+ * @brief Get the class object of ZoomSDKRemoteControllerHelper.
+ * @return If the function succeeds, it will return the object of ZoomSDKRemoteControllerHelper, otherwise not. 
  */
 - (ZoomSDKRemoteControllerHelper*)getRemoteControllerHelper;
 
 /**
- * @brief This method is used to start annotation.
- * @param position, the position of annotation first show.
- * @param screen, which screen u want to start annotation.
- * @return A ZoomSDKError to tell client whether start annotation share successful or not.
+ * @brief Start annotation.
+ * @param position The position of annotation toolbar. 
+ * @param screen Specify the view where you want to place the annotation toolbar. 
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)startAnnotation:(NSPoint)position onScreen:(ScreenType)screen;
 
 /**
- * @brief This method is used to stop annotation.
- * @param screen, which screen u want to stop annotation.
- * @return A ZoomSDKError to tell client whether stop annotation share successful or not.
+ * @brief Stop annotation.
+ * @param screen Specify the view on which you want to stop annotating. 
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)stopAnnotation:(ScreenType)screen;
 
 /**
- * @brief This method is used to get remote controller userid
- * @param userID, input a unsigned it pointer.
- * @return A ZoomSDKError to tell client whether send message successful or not, if success, the userID value will be assigned to the remote controller userid.
+ * @brief Get the user ID of current remote controller. 
+ * @param userID The ID of user who can remotely control others.
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)getCurrentRemoteController:(unsigned int*)userID;
 
 /**
- * @brief This method is used to get screen split mode info when watch somebody's share
+ * @brief Get the information of split screen when viewing the share in the meeting.
  */
-
 - (ZoomSDKSplitScreenInfo*)getCurrentSplitScreenModeInfo;
 
 /**
- * @brief This method is used to switch to split screen mode.
- * @param switchTo, YES means use side by side mode, NO means not to switch.
+ * @brief Switch to split screen mode, which means that the shared content and the video are separated in different column, the video won't cover the shared content.
+ * @param switchTo YES means to enable side by side mode, otherwise not.
  */
 -(ZoomSDKError)switchSplitScreenMode:(BOOL)switchTo;
 
 /**
- * @brief This method is used to clean up ascontroller
+ * @brief Clean up as-controller object.
  */
 - (void)cleanUp;
 
 /**
- * @brief This method is used to start share whiteboard.
- * @return A ZoomSDKError to tell client whether start whiteboard share successful or not.
+ * @brief Share white-board.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)startWhiteBoardShare;
 
 /**
- * @brief This method is used to start share part frame of screen.
- * @return A ZoomSDKError to tell client whether start frame share successful or not.
+ * @brief Start sharing a portion of screen by a frame. User can resize the shared range during sharing.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)startFrameShare;
 
 /**
- * @brief This method is used to start share audio.
- * @return A ZoomSDKError to tell client whether start audio share successful or not.
+ * @brief Share audio.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 - (ZoomSDKError)startAudioShare;
 
 /**
- * @brief This method is used to share camera.
- * @param deviceID, the camera's device ID.
- * @param window, which window u want to show camera content. if use zoom ui, set window param to be nil.
- * @return A ZoomSDKError to tell client whether share camera successful or not.
+ * @brief Share camera.
+ * @param deviceID The ID of camera to be shared.
+ * @param window The view on which you want to show camera content. If you want to user ZOOM UI, set it to nil. 
+ * @return If the function succeeds, it will return ZoomSDKError_succuss, otherwise not.
  */
 - (ZoomSDKError)startShareCamera:(NSString*)deviceID displayWindow:(NSWindow*)window;
 
 /**
- * @brief This method is used to judge whether user self can start share whiteboard or not.
- * @return A BOOL to tell client can share whiteboard or not.
+ * @brief Determine if user can share white-board.
+ * @return If the function succeeds, it will return YES, otherwise not.
  */
 - (BOOL)isAbleToShareWhiteBoard;
 /**
- * @brief This method is used to judge whether user self can start share frame or not.
- * @return A BOOL to tell client can share frame or not.
+ * @brief Determine if user can share a potion of screen.
+ * @return If the function succeeds, it will return YES, otherwise not.
  */
 - (BOOL)isAbleToShareFrame;
 /**
- * @brief This method is used to judge whether user self can start share computer audio or not.
- * @return A BOOL to tell client can share computer audio or not.
+ * @brief Determine if user can share computer audio.
+ * @return If the function succeeds, it will return YES, otherwise not.
  */
 - (BOOL)isAbleToShareComputerAudio;
 /**
- * @brief This method is used to judge whether user self can start share camera or not.
- * @return A BOOL to tell client can share camera or not.
+ * @brief Determine if user can share camera.
+ * @return If the function succeeds, it will return YES, otherwise not.
  */
 - (BOOL)isAbleToShareCamera;
+
+/**
+ * @brief This method is used for the sharing user to disable/enable viewer's privilege of annotation.
+ * @param screenType Select the screen where you want to operate on.
+ * @param disable YES means disable viewer's annotation privilege, NO means enable.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)disableViewerAnnotation:(ScreenType)screenType disable:(BOOL)disable;
+
+/**
+ * @brief Determine whether the viewer's annotate privilege is locked.
+ * @param screenType Select the screen where you want to operate on.
+ * @param locked A point to A BOOL, if function call successfully, the value of 'locked' means whether viewer's annotate privilege is locked, YES means viewer's annotate privilege is locked.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)isViewerAnnotationLocked:(ScreenType)screenType isLocked:(BOOL*)locked;
+
+/**
+ * @brief Determine if it is able for user to disable viewer's annotation privilege.
+ * @param screenType Select the screen where you want to operate on.
+ * @param canDisable A point to A BOOL, if function call successfully, the value of 'canDisable' means whether the user can disable viewer's annotation, YES means can disable, NO means cannot.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)canDisableViewerAnnotation:(ScreenType)screenType canDisabled:(BOOL*)canDisable;
+
+/**
+ * @brief Determine if it is able for user to do annotation.
+ * @param screenType Select the screen where you want to operate on.
+ * @param canAnnotate A point to A BOOL, if function call successfully, the value of 'canAnnotate' means whether the user can do annotation, YES means can do annotation, NO means cannot.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)canDoAnnotation:(ScreenType)screenType canAnnotate:(BOOL*)canAnnotate;
+
 @end
 
 

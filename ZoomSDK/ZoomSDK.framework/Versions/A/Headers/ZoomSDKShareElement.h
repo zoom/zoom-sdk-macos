@@ -2,8 +2,8 @@
 //  ZoomSDKShareRender.h
 //  ZoomSDK
 //
-//  Created by Totti on 19/01/2018.
-//  Copyright © 2018 zoom.us. All rights reserved.
+//  Created by TOTTI on 19/01/2018.
+//  Copyright © 2018 Zoom Video Communications,Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,12 +11,12 @@
 
 @protocol ZoomSDKShareElementDelegate <NSObject>
 /**
- * @brief callback if the user u want to watch share has started send share datea
+ * @brief Callback event of sharer starts to send data.
  */
 -(void)onShareContentStartReceiving;
 /**
- * @brief callback if the shared user change in this element
- * @param userid: current user id of this element who share
+ * @brief Callback of the sharer changing.
+ * @param userid The ID of the new sharer. 
  */
 -(void)onShareSourceUserIDNotify:(unsigned int)userid;
 
@@ -35,20 +35,22 @@
 @property(nonatomic, assign) NSView*  shareView;
 @property(nonatomic, assign) id<ZoomSDKShareElementDelegate> delegate;
 /**
- * @brief create a share element
- * @param frame: share view frame owned by this element
+ * @brief Create a share element.
+ * @param frame The coordinates of _shareView.
  */
 - (id)initWithFrame:(NSRect)frame;
 /**
- * @brief resize frame of the share view owned by this element
- * @param frame: share view frame u want to set
+ * @brief Resize the frame of the share view owned by this element
+ * @param frame The coordinates of _shareView.
  */
 - (ZoomSDKError)resize:(NSRect)frame;
 /**
- * @brief show the share view
- * @param show: set YES to show or NO to hide
+ * @brief Set whether to show the share view or not.
+ * @param show YES means to show, NO to hide.
  */
 - (ZoomSDKError)ShowShareRender:(BOOL)show;
-
+/**
+ * @brief Clean up and reset the sharing element.
+ */
 - (void)cleanUp;
 @end

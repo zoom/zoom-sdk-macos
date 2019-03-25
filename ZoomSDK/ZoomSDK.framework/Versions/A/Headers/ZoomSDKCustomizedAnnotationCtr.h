@@ -2,8 +2,8 @@
 //  ZoomSDKCustomizedAnnotationCtr.h
 //  ZoomSDK
 //
-//  Created by Totti on 2018/6/15.
-//  Copyright © 2018 zoom.us. All rights reserved.
+//  Created by TOTTI on 2018/6/15.
+//  Copyright © 2018 Zoom Video Communications,Inc. All rights reserved.
 //  [Used for Customized UI]
 #import "ZoomSDKErrors.h"
 
@@ -16,6 +16,10 @@ typedef struct{
 }Color;
 
 @protocol ZoomSDKCustomizedAnnotationDelegate <NSObject>
+/**
+ * @brief Callback of that annotation tools change.
+ * @param tool Specify the tool to annotate.
+ */
 - (void) onAnnotationToolChanged:(AnnotationToolType)tool;
 @end
 
@@ -26,80 +30,88 @@ typedef struct{
 }
 @property(nonatomic, assign)id<ZoomSDKCustomizedAnnotationDelegate> delegate;
 /**
- * @brief This method is used to check whether can clear annotation
- * @param clearType, the specific clear method u want to clear.
- * @return A ZoomSDKError enum, ZoomSDKError_Success means can clear, others will tell failure reason.
+ * @brief Query if it is able to clear annotations.
+ * @param clearType Specify the ways to clear annotations.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)canClear:(AnnotationClearType)clearType;
 /**
- * @brief This method is used to clear annotation
- * @param clearType, the specific clear method u want to clear.
- * @return A ZoomSDKError enum, ZoomSDKError_Success means clear successfully, others will tell failure reason.
+ * @brief Clear annotations.
+ * @param clearType Specify the way to clear annotations.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)clear:(AnnotationClearType)clearType;
 /**
- * @brief This method is used to set annotation tool
- * @param toolType, the specific tool type u want to use.
- * @return A ZoomSDKError enum, ZoomSDKError_Success means set tool successfully, others will tell failure reason.
+ * @brief Set annotation tools.
+ * @param toolType Specify the tool type to clear annotations.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)setTool:(AnnotationToolType)toolType;
 /**
- * @brief This method is used to get current annotation tool type u use
- * @param toolType, a point of AnnotationToolType.
- * @return A ZoomSDKError enum, ZoomSDKError_Success means get tool type successfully, others will tell failure reason.
+ * @brief Get the current annotation tool type.
+ * @param toolType The type of annotation tools.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)getCurrentTool:(AnnotationToolType*)toolType;
 /**
- * @brief This method is used to set annotation color
- * @param red, red color value
- * @param green, green color value
- * @param blue, blue color value
- * @return A ZoomSDKError enum, ZoomSDKError_Success means set color successfully, others will tell failure reason.
+ * @brief Set the colors of annotation tools.
+ * @param color The structural object of Color.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)setColor:(Color)color;
 /**
- * @brief This method is used to get current annotation color u use
- * @param toolType, a point of Color.
- * @return A ZoomSDKError enum, ZoomSDKError_Success means get color successfully, others will tell failure reason.
+ * @brief Get the color of the current annotation tools.
+ * @param color The pointer to the object of color.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)getCurrentColor:(Color*)color;
 /**
- * @brief This method is used to set annotation line width
- * @param lineWidth, red color value
- * @return A ZoomSDKError enum, ZoomSDKError_Success means set color successfully, others will tell failure reason.
+ * @brief Set the line width of annotation tools.
+ * @param lineWidth Specify the line width to annotate.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)setLineWidth:(long)lineWidth;
 /**
- * @brief This method is used to get current annotation line width u use
- * @param lineWidth, a point of long.
- * @return A ZoomSDKError enum, ZoomSDKError_Success means get line width successfully, others will tell failure reason.
+ * @brief Get the line width of the current annotation tool.
+ * @param lineWidth The pointer to the object of long.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)getCurrentLineWidth:(long*)lineWidth;
 /**
- * @brief This method is used to recall the behavior u annotate before
- * @return A ZoomSDKError enum, ZoomSDKError_Success means undo successfully, others will tell failure reason.
+ * @brief Undo the last annotation.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)undo;
 /**
- * @brief This method is used to do same behavior as u annotate before
- * @return A ZoomSDKError enum, ZoomSDKError_Success means redo successfully, others will tell failure reason.
+ * @brief Redo the annotation having been deleted. 
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)redo;
 /**
- * @brief This method is used to know whether user can save snapshot or not
- * @return A ZoomSDKError enum, ZoomSDKError_Success means have ability to save snapshot, others will tell failure reason.
+ * @brief Determine if it is enabled to save the snapshot.
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)canSaveSnapshot;
 /**
- * @brief This method is used to save annotation snapshot
- * @return A ZoomSDKError enum, ZoomSDKError_Success means save snapshot successfully, others will tell failure reason.
+ * @brief Save the snapshot in the specified path.
+ * @param snapShotName Name of the snapshot.  
+ * @return If the function succeeds, the return value is ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)saveSnapshot:(NSString*)snapShotName;
 
 @end
 
 @protocol ZoomSDKCustomizedAnnotationCtrlDelegate <NSObject>
+/**
+ * @brief Notification of clearing up annotations in the meeting.
+ * @param annotation The object of ZoomSDKCustomizedAnnotation.
+ */
 - (void)onAnnotationCleanUp:(ZoomSDKCustomizedAnnotation*)annotation;
+/**
+ * @brief Notify annotation status changes.
+ * @param element The pointer to ZoomSDKShareElement.
+ * @param status Annotation status.
+ */
 - (void)onAnnotationStatusChanged:(ZoomSDKShareElement*)element Status:(AnnotationStatus)status;
 @end
 
@@ -110,6 +122,17 @@ typedef struct{
 }
 @property(nonatomic, assign) id<ZoomSDKCustomizedAnnotationCtrlDelegate> delegate;
 
+/**
+ * @brief Create custom annotation.
+ * @param annotation Specify the annotation that you want to create.
+ * @param element The pointer to ZoomSDKShareElement.						  
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
+ */  
 -(ZoomSDKError)createCustomizedAnnotation:(ZoomSDKCustomizedAnnotation**)annotation ShareElement:(ZoomSDKShareElement*)element;
+/**
+ * @brief Destroy custom annotations.
+ * @param annotation Specify the annotation that you want to destroy.
+ * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
+ */
 -(ZoomSDKError)cleanCustomizedAnnatation:(ZoomSDKCustomizedAnnotation*)annotation;
 @end

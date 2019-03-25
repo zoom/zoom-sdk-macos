@@ -23,6 +23,8 @@
     self = [super init];
     if(self)
     {
+        if([ZMSDKCommonHelper sharedInstance].isUseCutomizeUI)
+            [ZMSDKConfUIMgr initConfUIMgr];
         _meetingService = [[ZoomSDK sharedSDK] getMeetingService];
         _meetingService.delegate = self;
         _mainWindowController = mainWindowController;
@@ -33,6 +35,8 @@
 
 -(void)cleanUp
 {
+    _meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    _meetingService.delegate = nil;
 }
 - (void)dealloc
 {
@@ -103,17 +107,14 @@
             {
                 [_mainWindowController.loginWindowController showSelf];
             }
-            [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] resetInfo];
-            [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] close];
-            
+            [ZMSDKConfUIMgr uninitConfUIMgr];
         }
             break;
         case ZoomSDKMeetingStatus_Ended:
         {
             if([ZMSDKCommonHelper sharedInstance].isUseCutomizeUI)
             {
-                [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] resetInfo];
-                [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] close];
+                [ZMSDKConfUIMgr uninitConfUIMgr];
             }
             if([ZMSDKCommonHelper sharedInstance].hasLogin)
             {

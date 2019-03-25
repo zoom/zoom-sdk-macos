@@ -38,17 +38,12 @@
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     [nc removeObserver:self];
 }
--(void)initNotification
-{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowWillClose:) name:NSWindowWillCloseNotification object:nil];
-}
 
 - (id)init
 {
-    self = [super init];
+    self = [super initWithWindowNibName:@"ZMSDKShareSelectWindow" owner:self];
     if(self)
     {
-        [self initNotification];
         [self initUI];
         _screenArray = [[NSMutableArray alloc] initWithCapacity:0];
         return self;
@@ -57,6 +52,13 @@
 }
 - (void)cleanUp
 {
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    if(meetingService)
+    {
+        asController = [meetingService getASController];
+        asController.delegate = nil;
+    }
+    
     if (_shareElement)
     {
         NSView* shareView = [_shareElement shareView];
