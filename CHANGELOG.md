@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 2019-03-25 @ [v4.3.47193.0321]((https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.47193.0321)
+## 2019-03-25 @ [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321)
 
 **Added**
 
@@ -26,7 +26,7 @@
 * Class ZoomSDKUpgradeAccountHelper
 * Enum SDKReminderType
 
-## 2019-01-23 @ [v4.3.53914.0121](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.53914.0121)
+## 2019-01-23 @ [v4.3.0.53914.0121](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.0.53914.0121)
 
 **Added**
 *	A new refactorized demo project that provides clear instructions on how to implement major features.
