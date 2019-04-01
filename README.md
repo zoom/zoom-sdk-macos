@@ -1,11 +1,26 @@
 # Zoom MacOS Software Development Kit (SDK)
+<div align="center">
+<img src="https://s3.amazonaws.com/user-content.stoplight.io/8987/1541013063688" width="400px" max-height="400px" style="margin:auto;"/>
+</div>
 
->**Currently our Mac OS SDK does not support Xcode 10. Please do not compile and build your application with Xcode 10.**
+## Latest SDK Notifications
+1. **Variable Name Changes**: Since [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321), we have renamed the term "APP" to "SDK" in our demo to avoid confusion between the term "API" and "APP".
+2. **Currently our Mac OS SDK does not support Xcode 10. Please do not compile and build your application with Xcode 10.**
+3. Please be aware that some of our interfaces are deprecated in the latest release, please check out our [CHANGELOG](https://github.com/zoom/zoom-sdk-macos/blob/master/CHANGELOG.md) for more detail
+4. Our brand new [Zoom Developer Community Forum](https://devforum.zoom.us/) is now online!!! Check it out! We are here to help! :D
 
->**Please be aware that some of our interfaces are deprecated in the latest release, please check out our [CHANGELOG](https://github.com/zoom/zoom-sdk-macos/blob/master/CHANGELOG.md) for more detail**
+## Full Documentation && Community Support
+You can find the full Zoom MacOS SDK documentation and the community support forum here:
+<div align="center">
+   <a target="_blank" href="https://marketplace.zoom.us/docs/sdk/native-sdks/macos" style="text-decoration:none">
+   <img src="https://s3-us-west-1.amazonaws.com/sdk.zoom.us/Doc-button.png" width="350px" max-height="350px" style="margin:1vh 1vw;"/>
+   </a>
+   <a target="_blank" href="https://devforum.zoom.us/c/desktop-sdk" style="text-decoration:none">
+   <img src="https://s3-us-west-1.amazonaws.com/sdk.zoom.us/Forum-button.png" width="350px" max-height="350px" style="margin:1vh 1vw;"/>
+   </a>
+</div>
 
-> Our brand new [Zoom Developer Community Forum](https://devforum.zoom.us/) is now online!!! Check it out! We are here to help! :D
-
+## What is Zoom Mac SDK?
 Zoom SDK makes it easy to integrate Zoom with your MacOS applications, and boosts up your applications with the power of Zoom.
 
 * **Easy to use**: Our SDK is built to be easy to use. Just import the libraries, call a few functions, and we will take care all video conferencing related stuffs for you.
