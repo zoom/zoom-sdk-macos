@@ -5,7 +5,9 @@
 
 ## Latest SDK Notifications
 1. **Variable Name Changes**: Since [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321), we have renamed the term "APP" to "SDK" in our demo to avoid confusion between the term "API" and "APP".
-2. **Currently our Mac OS SDK does not support Xcode 10. Please do not compile and build your application with Xcode 10.**
+2. **Unfortunately, our Mac OS SDK does not support Xcode 10 at this point. Please do not compile and build your application with Xcode 10. We are working on the Xcode 10 support and it is a priority for us. Pardon the inconvenience. Until then, please use Xcode 9 and here are the options for installing or using Xcode 9:**
+   * [Working with multiple versions of Xcode](https://medium.com/@hacknicity/working-with-multiple-versions-of-xcode-e331c01aa6bc).  Make sure to follow instructions carefully, before launching for the first time.
+   * Use a [hosted service](https://support.macincloud.com/support/solutions/articles/8000042681-how-to-utilize-a-different-xcode-version-for-build-process-on-mac) supporting [many versions of Xcode](https://support.macincloud.com/support/solutions/articles/8000023177-versions-of-tools-and-applications-on-vsts-agent-plan-servers-).
 3. Please be aware that some of our interfaces are deprecated in the latest release, please check out our [CHANGELOG](https://github.com/zoom/zoom-sdk-macos/blob/master/CHANGELOG.md) for more detail
 4. Our brand new [Zoom Developer Community Forum](https://devforum.zoom.us/) is now online!!! Check it out! We are here to help! :D
 
