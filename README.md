@@ -64,7 +64,7 @@ Clone or download a copy of our SDK files from GitHub. After you unzipped the fi
 ├── [ZoomSDKSample] <-- demo app is inside
 └── version.txt
 ```
-Once you have the files ready, please following the instructions to build and run your demo app: [https://marketplace.zoom.us/docs/sdk/macos#getting-started-with-the-mac-sdk](https://marketplace.zoom.us/docs/sdk/macos#getting-started-with-the-mac-sdk).
+Once you have the files ready, please following the instructions to build and run your demo app: [https://marketplace.zoom.us/docs/sdk/native-sdks/macos](https://marketplace.zoom.us/docs/sdk/native-sdks/macos).
 
 
 ## Documentation
