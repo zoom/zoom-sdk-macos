@@ -205,7 +205,7 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
 7. add support for webinar join window info prefill
 
-8. for code refactor details, please visit : https://developer.zoom.us/docs/macos/mac-sdk-refactor-details/
+8. for code refactor details, please visit : https://marketplace.zoom.us/docs/sdk/native-sdks/macos
 
 9. add support to hide each individual button on fitbar during sharing.
 
