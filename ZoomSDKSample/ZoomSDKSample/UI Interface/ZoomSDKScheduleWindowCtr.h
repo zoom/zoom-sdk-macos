@@ -22,6 +22,9 @@
     IBOutlet NSTextField*   _topic;
     IBOutlet NSDatePicker*  _time;
     IBOutlet NSTextField*   _duration;
+    IBOutlet NSTextField*   _timeStartLabel;
+    IBOutlet NSTextField*   _timeDurationLabel;
+    IBOutlet NSTextField*   _timeMinsLabel;
     IBOutlet NSButton*      _recurring;
     IBOutlet NSButton*      _hostVideoOn;
     IBOutlet NSButton*      _hostVideoOff;
@@ -48,11 +51,7 @@
     IBOutlet NSTextField*   _schedule4Users;
     IBOutlet NSButton*      _scheduleEditButton;
     ZoomSDKScheduleMeetingItem*  _scheduleMeetingItem;
-    ZoomSDKMeetingItem*          _meetingItem;
-    IMeetingDateOption*          _date;
-    IMeetingAudioOption*         _audio;
-    IMeetingVideoOption*         _video;
-    IMeetingConfigOption*        _config;
+    ZoomSDKScheduleMeetingItem*  _editMeetingItem;
     ScheduleMeetingAudioOption*  _audioOption;
     ScheduleMeetingDateOption*   _dateOption;
     ScheduleMeetingVideoOption*  _videoOption;
@@ -76,4 +75,5 @@
 -(IBAction)onAutoRecordClick:(id)sender;
 -(IBAction)onRecordTypeClick:(id)sender;
 -(IBAction)onScheduleEditMeeting:(id)sender;
+- (void)showWindow:(id)sender;
 @end

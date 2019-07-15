@@ -31,6 +31,9 @@ typedef BOOL(^ZMHMenuItemBackgroundDrawer)(NSRect bounds, NSRect dirtyRect, BOOL
 @property (copy, nonatomic, nullable) NSImage *image;
 @property (copy, nonatomic, nullable) NSImage *alternateImage;
 
+@property (nonatomic, retain) NSColor *titleColor;
+@property (nonatomic, retain) NSColor *highlightTitleColor;
+
 @property (nonatomic, assign) NSInteger tag;
 
 @property (nullable, assign) id target;
@@ -61,6 +64,9 @@ typedef BOOL(^ZMHMenuItemBackgroundDrawer)(NSRect bounds, NSRect dirtyRect, BOOL
 - (BOOL)locationInFrame:(NSPoint)location from:(NSView *)aView;
 //- (void)viewReceivedMouseDown;
 - (void)viewReceivedMouseUp;
+
+- (void)adjustToFixedWidth:(float)width;
+
 @property (assign, nonatomic) BOOL selected;
 
 @end

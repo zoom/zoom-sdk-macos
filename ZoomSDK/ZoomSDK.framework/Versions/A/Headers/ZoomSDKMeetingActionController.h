@@ -342,6 +342,45 @@
 - (ZoomSDKError)makeHost:(unsigned int)userID;
 
 /**
+ * @brief Make the specified user to raise hand or lower hand.
+ * @param raise YES means to raise hand, NO means lower hand for this specified user.
+ * @param userid User ID of the user to be modified.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)raiseHand:(BOOL)raise UserID:(unsigned int)userid;
+
+/**
+ * @brief Remove the specified user from meeting.
+ * @param userid User ID of the user to be modified.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)expelUser:(unsigned int)userid;
+
+/**
+ * @brief Start or stop the cloud recording.
+ * @param start YES means to start, NO means stop.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)startCMR:(BOOL)start;
+
+/**
+ * @brief Get the meeting UI display type.
+ * @param type Select the screen where you want to operate on.
+ * @param bFullScreen A point to A BOOL, if the function call successfully, the value of 'bFullScreen' means whether the specified screen is in full screen mode.
+  * @param meetingUIType A point to A MeetingUIType, if the function call successfully, the value of 'meetingUIType' means the meeting UI display type.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)getMeetingUIType:(ScreenType)type isFullScreen:(BOOL*)bFullScreen meetingUIType:(MeetingUIType*)meetingUIType;
+
+/**
+ * @brief Allow or disallow the specified user to local recording.
+ * @param allow YES means allow, NO means disallow.
+ * @param userid User ID of the user to be modified.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)allowLocalRecord:(BOOL)allow UserID:(unsigned int)userid;
+
+/**
  * @brief Query if user can claim host(be host) or not. 
  * @return YES means able, otherwise not.
  */
@@ -369,10 +408,55 @@
 -(ZoomSDKError)revokeCoHost:(unsigned int)userid;
 
 /**
- * @brief Set sharing types for the host in meeting.
+ * @brief Set sharing types for the host or co-host in meeting.
  * @param ZoomSDKShareSettingType Custom setting types of ZOOM SDK sharing.
  * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
  */
 -(ZoomSDKError)setShareSettingType:(ZoomSDKShareSettingType)shareType;
 
+/**
+ * @brief Get the sharing types for the host or co-host in meeting.
+ * @param ZoomSDKShareSettingType Custom setting types of ZOOM SDK sharing.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)getShareSettingType:(ZoomSDKShareSettingType*)type;
+
+/**
+ * @brief Determine if user's original sound is enabled.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isUseOriginalSoundOn;
+
+/**
+ * @brief Set to output original sound of mic in meeting.
+ * @param enable YES means using original sound, No disabling.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise failed.
+ */
+- (ZoomSDKError)enableUseOriginalSound:(BOOL)enable;
+
+/**
+ * @brief Determine if the meeting supports user's original sound.
+ * @return YES means supported, otherwise not.
+ */
+- (BOOL)isSupportUseOriginalSound;
+
+/**
+ * @brief Swap to show sharing screen or video.
+ * @param share YES means swap to sharing screen, NO means swap to video.
+ * @return  If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ * @note Only available for Zoom native ui mode.
+ */
+- (ZoomSDKError)swapToShowShareViewOrVideo:(BOOL)share;
+
+/**
+ * @brief Determine if the user can swap to show sharing screen or video now.
+ * @return YES means can, otherwise not.
+ */
+- (BOOL)canSwapToShowShareViewOrVideo;
+
+/**
+ * @brief Determine if the meeting is displaying the sharing screen now.
+ * @return YES means is showing sharing screen, NO means is showing video.
+ */
+- (BOOL)isDisplayingShareViewOrVideo;
 @end

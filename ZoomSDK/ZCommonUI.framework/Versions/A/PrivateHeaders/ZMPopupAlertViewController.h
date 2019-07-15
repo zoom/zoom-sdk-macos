@@ -7,7 +7,7 @@
 //
 
 #import "ZMBaseViewController.h"
-#import <ZCommonUI/NSView+Create.h>
+#import "NSView+Create.h"
 
 typedef enum : NSUInteger {
     ZMPopupAlertConfirm,
@@ -21,6 +21,8 @@ typedef enum : NSUInteger {
 @property (nonatomic,copy) NSString *contentString;
 
 @property (nonatomic,copy) NSString *confirmTitle;
+
+@property (nonatomic,copy) NSAttributedString *contentAttributedString;
 
 @property (nonatomic,assign) ZMButtonStyle confirmButtonStyle;
 

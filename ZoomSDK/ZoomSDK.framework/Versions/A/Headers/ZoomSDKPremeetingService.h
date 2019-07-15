@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "ZoomSDKErrors.h"
 
+typedef enum{
+    ScheduleComponent_UpgradeAccountTipForFreeUser,
+}ScheduleComponent;
+
+
 @interface ZoomSDKDirectShareHandler: NSObject
 /**
  * @brief Input meeting number to share the screen directly. 
@@ -156,7 +161,7 @@
  */
 - (NSArray*)getSelectedDialinCountry;
 /**
- * @brief Set if the toll-free numbers are enabled in the call-in number list.
+ * @brief Query if the toll-free numbers are enabled in the call-in number list.
  * @return YES means that the toll-free numbers are enabled.
  */
 - (BOOL)enableIncludeTollFreeNum;
@@ -264,13 +269,13 @@
  */
 -(BOOL)enableHostInChina:(BOOL*)canModify;
 /**
- * @brief Set whether to enable the feature that only signed user can join meeting.
+ * @brief Query if the feature is enabled that only signed user can join meeting.
  * @param canModify The pointer to Bool. YES means that the meeting supports ONLY SIGNED USER CAN JOIN meeting. 
  * @return YES means that ONLY SIGNED USER CAN JOIN meeting, otherwise not.
  */
 -(BOOL)enableOnlySignedUserJoin:(BOOL*)canModify;
 /**
- * @brief Set whether to enable the feature that only the user in specified domain can join meeting.
+ * @brief Query if the feature is enabled that only the user in specified domain can join meeting.
  * @param canModify The pointer to Bool. YES means that the meeting supports to allow users in special domain to join meeting.
  * @return YES means enabled the feature of only special domain user can join, otherwise not.
  */
@@ -281,7 +286,7 @@
  */
 -(NSString*)getSpecialDomains;
 /**
- * @brief Set whether to enable the feature to record meeting automatically.
+ * @brief Query if the feature is enabled to record meeting automatically.
  * @param supportRecordType The pointer to int. If the function calls successfully, the value of supportRecordType will be the sum of all the supported recording types.
  * @return YES means enabled the feature of auto-record, otherwise not.
  */
@@ -420,6 +425,23 @@
  * @return If the function succeeds, it will return the meeting unique ID.
  */
 -(long long)getMeetingUniqueID;
+/**
+ * @brief Get the content of the email to invite the users to join the meeting.
+ * @return If the function succeeds, it will return the email contents.
+ */
+-(NSString*)getInviteEmailContent;
+/**
+ * @brief Get the URL to invite the users to join the meeting.
+ * @return If the function succeeds, it will return the join meeting URL.
+ */
+-(NSString*)getJoinMeetingUrl;
+
+/**
+ * @brief Get the meeting number.
+ * @return If the function succeeds, it will return the meeting number.
+ */
+-(long long)getMeetingNumber;
+
 @end
 
 @protocol ZoomSDKPremeetingServiceDelegate;
@@ -440,6 +462,13 @@
  */
 - (ZoomSDKScheduleMeetingItem*)createScheduleMeetingItem;
 
+/**
+ * @brief Create an object of ZoomSDKScheduleMeetingItem for edit meeting.
+ * @param meetingUniqueID The unique ID of meeting to be edited.
+ * @return If the function succeeds, it will return the object of ZoomSDKScheduleMeetingItem.
+ */
+- (ZoomSDKScheduleMeetingItem*)createEditMeetingItemWithMeetingID:(long long)meetingUniqueID;
+
  /**
  * @brief Destroy the object of ZoomSDKScheduleMeetingItem.
  * @param meetingItem The object of ZoomSDKScheduleMeetingItem that you created by Api of createScheduleMeetingItem.
@@ -455,7 +484,7 @@
 
 /**
  * @brief Edit the specified meeting.
- * @param meetingItem The object of ZoomSDKScheduleMeetingItem that you created by Api of createScheduleMeetingItem.
+ * @param meetingItem The object of ZoomSDKScheduleMeetingItem that you created by Api of createEditMeetingItemWithMeetingID.
  * @param meetingUniqueID The unique ID of meeting to be edited.
  * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed. 
  */
@@ -487,7 +516,7 @@
  * @param show One(1) means display the window, zero(0) not.  
  * @param window If the function succeeds, it will return a window object to schedule/edit meeting.
  * @param meetingUniqueID The ID of the specified meeting to be edited. 
- * @return If the function succeeds, it will return a ZoomSDKMeetingItem object. Otherwise failed. 
+ * @return If the function succeeds, it will return a ZoomSDKError_Success. Otherwise failed.
  */
 - (ZoomSDKError)showScheduleEditMeetingWindow:(BOOL)show Window:(NSWindow**)window MeetingID:(long long)meetingUniqueID;
 
@@ -538,6 +567,14 @@
  * @return If the function succeeds, it will return a ZoomSDKDirectShareHelper object.
  */
 - (ZoomSDKDirectShareHelper*)getDirectShareHelper;
+
+/**
+ * @brief Hide schedule window components.
+ * @param component An enumeration of components for schedule window.
+ * @param hide YES means to hide, NO to show.
+ * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed.
+ */
+- (void)hideScheduleComponent:(ScheduleComponent)component hide:(BOOL)hide;
 @end
 
 

@@ -19,6 +19,7 @@
 + (NSImage *)resBundleImageForResource:(NSString *)resName ofType:(NSString *)typeName;
 + (NSImage*)getAvatarByPath:(NSString*)inPath;
 + (NSImage *)getImageByName:(NSString*)resName;//[Zoom-33534]
++ (NSString *)getImagePathByImage:(NSImage*)inImage; //ZOOM-71195
 
 + (NSString *)resolveImagePath:(NSString *)imagePath;
 + (NSString*)localizedString:(NSString *)theKey;
@@ -26,4 +27,8 @@
 + (void)cleanUp;
 + (NSString*)localizedEnString:(NSString *)theKey value:(NSString*)value;
 
+#ifdef BUILD_FOR_SDK
++ (void)setCustomLocalizationFileName:(NSString*)fileName;
++ (NSString*)getLocalizationFileName;
+#endif
 @end

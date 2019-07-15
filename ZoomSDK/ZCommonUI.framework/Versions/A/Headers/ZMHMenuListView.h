@@ -26,6 +26,9 @@
 
 @property (readonly) ZMHMenuItem *selectedItem;
 
+- (instancetype)initWithMaxListSize:(NSSize)size;
+- (void)searchByKey:(NSString*)key;
+
 @end
 
 @protocol ZMHMenuListViewDelegate <NSObject>

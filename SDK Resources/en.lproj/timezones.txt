@@ -37,7 +37,7 @@ America/Santiago;(GMT-04:00) Santiago
 America/Guyana;(GMT-4:00) Guyana
 America/St_Johns;(GMT-03:30) Newfoundland and Labrador
 America/Montevideo;(GMT-03:30) Montevideo
-America/Araguaina;(GMT-03:00) Brasilia
+America/Araguaina;(GMT-03:00) Recife
 America/Argentina/Buenos_Aires;(GMT-03:00) Buenos Aires, Georgetown
 America/Godthab;(GMT-03:00) Greenland
 America/Sao_Paulo;(GMT-03:00) Sao Paulo

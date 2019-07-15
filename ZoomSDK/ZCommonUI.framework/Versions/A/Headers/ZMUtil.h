@@ -23,6 +23,14 @@
 #define IsEmptyString(str) (![str isKindOfClass:[NSString class]] || (!str || ![str length]))
 #endif
 
+#ifndef IsFloatEqualToZero
+#define IsFloatEqualToZero(num) (fabs(num) < 0.0000001)
+#endif
+
+#ifndef IsFloatEqualOrLessThanZero
+#define IsFloatEqualOrLessThanZero(num) ((num) < 0.0000001)
+#endif
+
 #ifndef WEAK_SELF
 #define WEAK_SELF __block __typeof(&*self)weakSelf = self;
 #endif
@@ -100,7 +108,6 @@ typedef enum
 + (NSString*)clipString:(NSString*)string limitHeight:(CGFloat)limitHeight limitWidth:(CGFloat)limitWidth attribute:(NSDictionary*)attr isMyNote:(BOOL)isMyNote;
 + (NSMutableArray*)parseHTTPURLs:(NSString*)body;
 + (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
-//+ (NSArray*)parseURLs:(NSMutableAttributedString*)inMsg;
 
 #pragma mark - window level
 + (NSInteger)getNormalWindowLevel;//0
@@ -110,4 +117,10 @@ typedef enum
 + (NSInteger)getPopUpMenuLevel;//101
 
 + (NSInteger)getSystemVersion;
+
++ (NSData*)getPicPreviewDateWithPath:(NSString*)filePath;
++ (NSString *)getFileIntegrationTypeString:(NSInteger)fileIntegrationType defaultRetString:(NSString*)ret;
++ (NSComparisonResult)compareVersionString:(NSString*)string1 with:(NSString*)string2;//ZOOM-68189
++ (BOOL)recreateSymbolicLinkForLib:(NSString*)libName inPath:(NSString*)path error:(NSError **)error;//ZOOM-68189
+
 @end

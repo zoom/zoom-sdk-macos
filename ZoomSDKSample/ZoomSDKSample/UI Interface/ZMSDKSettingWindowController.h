@@ -97,5 +97,5 @@
 
 
 - (void)relayoutWindowPosition;
-
+- (void)showWindow:(id)sender;
 @end

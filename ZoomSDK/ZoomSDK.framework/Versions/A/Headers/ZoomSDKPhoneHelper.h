@@ -77,8 +77,8 @@
  */
 -(NSString*) getNumber;
 /**
- * @brief Get the display name of the country.
- * @return The display name of the country.
+ * @brief Get the display number of the country.
+ * @return The display number of the country.
  */
 -(NSString*) getDisplayNumber;
 /**

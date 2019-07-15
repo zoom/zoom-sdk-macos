@@ -10,7 +10,7 @@
 #import "ZMBase.h"
 
 @class ZMHMenu, ZMHMenuItem, ZMHMenuListView;
-@interface ZMHMenuWindow : NSPanel
+@interface ZMHMenuWindow : NSPanel <NSTextFieldDelegate>
 {
     BOOL _loaded;
     ZMHMenu *_menu;
@@ -21,8 +21,11 @@
 @property (retain) ZMHMenuListView *menuListView;
 @property (retain, readonly) ZMHMenuItem * representedItem;
 @property NSRectCorner preferredAnchorConner;
+@property (assign) NSSize maxListSize;
+@property (assign) BOOL hasSearchField;
 
 - (instancetype)initWithMenu:(ZMHMenu *)menu representedItem:(ZMHMenuItem *)item;
+- (instancetype)initWithMenu:(ZMHMenu *)menu representedItem:(ZMHMenuItem *)item maxSize:(NSSize)maxSize;
 - (BOOL)isDescendantOf:(ZMHMenuWindow *)window;
 
 - (void)show;

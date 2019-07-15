@@ -5,7 +5,6 @@ __ZN11ZoomSDKPTUI8setPTAPIEP11ISBPTAppAPI
 __ZN11ZoomSDKPTUIC1Ev
 .objc_class_name_PTTranscodeLauncher
 _OBJC_CLASS_$_ZMInviteMgr
-_OBJC_CLASS_$_ZPLogHelperImp
 _OBJC_CLASS_$_ZPPTMediaHelper
 _OBJC_CLASS_$_ZMSettingVideoPreviewView
 _OBJC_CLASS_$_ZMPTAlertMgr

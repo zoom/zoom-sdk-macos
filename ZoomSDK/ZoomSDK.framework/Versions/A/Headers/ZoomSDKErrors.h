@@ -86,9 +86,9 @@ typedef enum{
     ActionMeetingCmd_DeclineRemoteControlRequest,
 	//Get back the authority of remote control.
     ActionMeetingCmd_RevokeRemoteControl,
-    //Lock the share, available only for the host/co-host. Once locked, only host/co-host can share.
+    //Lock the share, available only for the host/co-host. Once locked, only host/co-host can share, this is unsupported from v4.4.
     ActionMeetingCmd_LockShare,
-	//Unlock the share, available only for the host/co-host.
+	//Unlock the share, available only for the host/co-host, this is unsupported from v4.4.
     ActionMeetingCmd_UnlockShare,
     //Put all participants' hands down, available only for the host/co-host.     
     ActionMeetingCmd_LowerAllHands,
@@ -247,6 +247,10 @@ typedef enum{
     ZoomSDKError_NoPermission,
 	//There is no recording in process.
     ZoomSDKError_NoRecordingInProgress,
+    //Api calls are too frequent.
+    ZoomSDKError_TooFrequentCall,
+    //unsupported feature
+    ZoomSDKError_UnSupportedFeature,
 	//Unknown error.
     ZoomSDKError_UnKnow,
 }ZoomSDKError;
@@ -263,8 +267,12 @@ typedef enum {
     ZoomSDKAuthError_AccountNotSupport = 2,
     //Client account does not enable SDK
     ZoomSDKAuthError_AccountNotEnableSDK = 3,
+    //Auth timeout
+    ZoomSDKAuthError_Timeout = 4,
+    //Network issue
+    ZoomSDKAuthError_NetworkIssue = 5,
     //Unknown error
-    ZoomSDKAuthError_Unknown = 4,
+    ZoomSDKAuthError_Unknown = 6,
 }ZoomSDKAuthError;
 
 /**
@@ -379,7 +387,7 @@ typedef enum {
     ZoomSDKMeetingStatus_Disconnecting    = 4,
     //Reconnecting meeting server status.
     ZoomSDKMeetingStatus_Reconnecting     = 5,
-    //Failed to connect the meeting server.
+    //Join/Start meeting failed.
     ZoomSDKMeetingStatus_Failed           = 6,
     //Meeting ends.
     ZoomSDKMeetingStatus_Ended            = 7,
@@ -767,6 +775,10 @@ typedef enum
     ClaimHostButton,
 	//Upgarde button of free meeting remain time tooltip view.
     UpgradeButtonInFreeMeetingRemainTimeTooltip,
+    //Video button: manage in-meeting video of the current user.
+    ToolBarVideoButton,
+    //Swap share and video button: swap to display share or video.
+    SwapShareContentAndVideoButton,
 }SDKButton;
 
 /**
@@ -912,7 +924,7 @@ typedef enum{
  * @brief Enumeration of sharing modes.
  */
 typedef enum{
-	//View the shared content in full screen mode.
+	//The mode of shared content adaptive pattern in the view.
     ViewShareMode_FullFill,
 	//Letterbox. It is the practice of transferring film shot in a widescreen aspect ratio to standard-width video formats while preserving the film's original aspect ratio. 
     ViewShareMode_LetterBox,
@@ -1084,4 +1096,17 @@ typedef enum{
     ShareSettingType_AnyoneCanGrab = 2,
 	//Multi participant can share at a moment.
     ShareSettingType_MutiShare = 3,
+    ShareSettingType_None = 4,
 }ZoomSDKShareSettingType;
+
+/**
+ *@brief Enumerations of General setting about share
+ */
+typedef enum {
+    //when user share screen will enter full screen
+    shareSettingCmd_enterFullScreen,
+    //when user to share screen will enter max window
+    shareSettingCmd_enterMaxWindow,
+    //when user user side to side mode
+    shareSettingCmd_sideToSideMode,
+}shareSettingCmd;

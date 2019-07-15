@@ -90,4 +90,21 @@
  */
 - (ZoomSDKError)cancelCallOutH323;
 
+/**
+ * @brief This method is used to invite others to meeting by default email.
+ * @return If the function succeeds, it will return ZoomSDKError_success. Otherwise failed.
+ */
+- (ZoomSDKError)inviteToMeetingByDefaultMail;
+
+/**
+ * @brief This method is used to invite others to meeting by gmail.
+ * @return If the function succeeds, it will return ZoomSDKError_success. Otherwise failed.
+ */
+- (ZoomSDKError)inviteToMeetingByGmail;
+
+/**
+ * @brief This method is used to invite others to meeting by Yahoo mail.
+ * @return If the function succeeds, it will return ZoomSDKError_success. Otherwise failed.
+ */
+- (ZoomSDKError)inviteToMeetingByYahooMail;
 @end

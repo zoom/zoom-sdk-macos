@@ -698,4 +698,10 @@
             break;
     }
 }
+- (void)showWindow:(id)sender
+{
+    [self updateAudioTab];
+    [self updateVideoTab];
+    [self relayoutWindowPosition];
+}
 @end

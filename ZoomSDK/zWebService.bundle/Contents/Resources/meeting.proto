@@ -183,7 +183,18 @@ message MeetingProto {
   optional int32 usedUnlimitedMeetingCountForFreeUser = 102; // the used unlimited meeting count for free user to upgrade
   optional string freeUserUpgradeUrl         = 103; // https://zoom.us/buy
   optional int32 billedType					 = 104; // billed type 0 for billed annually 1 for billed monthy
+  optional int32 isRegistrationMeeting         = 105; //  1-Yes  0-NO  default value is 0
+  optional string registrationUrl              = 106;
+  optional string registrationEmail            = 107;
+  optional int32 isReturnInvitation			   = 108; // 1-Yes 0-NO default value is 0;
+  optional ExtendMeetingType newExtType = 109; // extend meeting type for PMI, Webinar,
+  optional string tgBridgeId                 = 110; // USTB EUTB. Tg bridge for each host,ZOOM-66757
+  optional string launchDropboxShareInMeetingUrl = 111;    // DEPRECATED!! dropbox share in meeting url for launch
+  optional FileIntegrationList shareFileInMeetingIntegrations = 112; //ZOOM-64503 deep link to share from dropbox
+  repeated KeyValOption launchExtParameters = 115; // ZOOM-75897 Add dropbox file id to the share url - initiated from Dropbox surface 
 }
+
+
 
 message CalloutSIPTrunk {
   optional string name                       = 1;
@@ -222,6 +233,18 @@ message UserGroup {
 message BrandingInfo {  
   optional string backgroundImgUrl = 1;
   optional string zrpBackgroundImgUrl = 2;
+}
+
+message FileIntegration {
+  required string type = 1; // dropbox, sharepoint, box, gdrive, onedrive
+  required string name = 2; // Dropbox, Microsoft SharePoint, Box, Google Drive, One Drive
+  optional string icon = 3;
+  optional int32 techType = 4; // 1 for previewLink
+}
+
+message FileIntegrationList {
+  required string launchUrl          = 1;
+  repeated FileIntegration instances = 2;
 }
 
 message UserProfile {
@@ -308,6 +331,11 @@ message UserProfile {
   optional ZREncryptionInfo zrEncryption = 81; // ZOOM-46999 - Encryption information for zr and zrc communication
   optional string zrSecretKey = 82; // zoom room secret key for multi-share
   optional string publicEventListUrl = 83; //public event list url
+  optional int32 userRegistrationType = 84; // ZOOM-44755 - Web API: Client can schedule meeting with "Registration"  0-disable 1-enable
+  optional FileIntegrationList shareFileInChatIntegrations = 85; // ZOOM-71079 Web Integration-File storage integrations (Dropbox)
+  optional FileIntegrationList saveFileInChatIntegrations  = 86; // ZOOM-71079 Web Integration-File storage integrations (Dropbox)
+  optional ZREncryptionInfo zrEncForDirectShare          = 90;  // return aesKey, aesIV to client for direct share encryption
+  optional bool isZRSupportEncForDirectShare             = 91;  // return whether zr support direct share encryption
 }
 
 message ZREncryptionInfo {
@@ -400,6 +428,7 @@ message SipPhoneIntegration {
   optional int32 protocol =                   10;//0: UDP, 1: TCP, 2: TLS, default is 0 UDP
   optional int32 registrationExpiry =         11;//Registration Expiry in minutes
   optional string voiceMail =                 12;
+  optional int32 dtmfPayloadType =            13;
 }
 
 message TrackingField {
@@ -572,6 +601,7 @@ message ChangedField {
 
 message RestartZRREQ {
     optional bool restart                      = 1;
+    optional int32 delay_time                  = 2; // add for delay restart, unit is seconds.
 }
 message LeaveMeetingREQ {
     optional bool leave_meeting                = 1;
@@ -931,6 +961,7 @@ message AlternativeHost {
   optional string lastName = 4;
   optional string picUrl = 5;
   optional int64 pmi = 6; // PMI meeting number
+  optional AvailableDialinCountry availableDialinCountry= 7;
 }
 
 message ColocationRegion {
@@ -959,6 +990,7 @@ message Request {
   optional CloudPBXCallLog cloudPBXCallLog              = 18; // Cloud PBX call log
   repeated string optionKeys        					= 19; // For API /profile/get, key to retrive the options value from Web, empty for old client
   optional MDMDeviceInfo mdmDeviceInfo                  = 20; // mdm device info
+  repeated string userIds                               = 21; // can hold user id as parameter
 }                                                       
                                                         
 message SSODomain {                                     
@@ -1068,6 +1100,8 @@ message Response {
   optional string rcMessageAttachmentUri 				= 56; // message attachment uri in RC
   optional PBXSyncResponse pbxSyncResponse 				= 57; // return pbx sync record
   optional Marketplace  marketplace              =58;  //The marketplace related information
+  repeated string optionKeys                            = 59; // for client callback identify, e.g:/profile/get api
+  optional string zpnsNotifyUrl                           = 60;  //web push zpns notify url,except zr
 }
 
 message Marketplace {
@@ -1216,6 +1250,9 @@ message LaunchConfParameter
 	                                                    
 	optional int32  prev_phone_id = 65;     
 	repeated LCPRecordItem appRecords = 66;            //app records, key-value-section structure.           
+	optional string launchapp = 67;						//Dropbox Integration,web browser name such as chrome|firefox|safari or app name
+	optional string launchapptitle = 68;				//Dropbox Integration,the title of the web page
+	optional string meetingNonce = 69;					// ZOOM-75897 used for getting ext parameters for monitor log case, when request conf/j
 }                                                       
 //                                                      
 /////////////////////////////                           
@@ -1455,4 +1492,6 @@ message SplashPageForWaitingRoom {
   optional string contentTitle                 = 2;    // title for page content
   optional string contentData                  = 3;    // page content 
   optional string imagePath                    = 4;    // image path
+  optional string ssoVanityUrl                 = 5;    // ZOOM-86210 : sso vanity url for non-login guest participant to login IM
+  optional int32  options                      = 6;    // ZOOM-86210 : waiting room options
 }

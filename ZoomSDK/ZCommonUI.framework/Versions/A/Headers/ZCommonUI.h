@@ -47,3 +47,4 @@
 #import "ZMPopoverController.h"
 #import "ZMGiftPanel.h"//ZOOM-47446
 #import "NSDate+Extension.h"
+#import "ZMAlertObject.h"

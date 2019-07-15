@@ -9,28 +9,28 @@
 #import <Cocoa/Cocoa.h>
 
 //ZOOM SDK Errors
-#import <ZoomSDKErrors.h>
+#import "ZoomSDKErrors.h"
 
 //ZOOM SDK Authentication Service
-#import <ZoomSDKAuthService.h>
+#import "ZoomSDKAuthService.h"
 
 //ZOOM SDK Meeting Service
-#import <ZoomSDKMeetingService.h>
+#import "ZoomSDKMeetingService.h"
 
 //ZOOM SDK Setting Service
-#import <ZoomSDKSettingService.h>
+#import "ZoomSDKSettingService.h"
 
 //ZOOM SDK Pre-meeting Service
-#import <ZoomSDKPremeetingService.h>
+#import "ZoomSDKPremeetingService.h"
 
 //ZOOM SDK Network Service
-#import <ZoomSDKNetworkService.h>
+#import "ZoomSDKNetworkService.h"
 
 //ZOOM SDK Custom Video UI
-#import <ZoomSDKVideoContainer.h>
+#import "ZoomSDKVideoContainer.h"
 
 //ZOOM SDK Custom Share UI
-#import <ZoomSDKShareContainer.h>
+#import "ZoomSDKShareContainer.h"
 /**
  * Initialize the class to acquire all the services. 
  *
@@ -123,9 +123,18 @@
 /**
  * @brief Set whether to enable default log of which the capacity is less than 5M.
  * @param enable YES mean enabled, NO disabled.
+ * @param size The size of the log file, the unit is MB. The size of log file is between 1 to 50M.
  * @note Call Api firstly before you call [[ZoomSDK sharedSDK]initSDK:NO/YES] in the App.
  */
-- (void)enableDefaultLog:(BOOL)enable;
+- (void)enableDefaultLog:(BOOL)enable NS_DEPRECATED_MAC(4.1, 4.3);
+- (void)enableDefaultLog:(BOOL)enable fileSize:(unsigned int)size NS_AVAILABLE_MAC(4.4);
+
+/**
+ * @brief Set custom localizable string file name.
+ * @param fileName Specify the localizable string file name.
+ */
+- (void)setCustomLocalizationFileName:(NSString*)fileName;
+
 @end
 
 

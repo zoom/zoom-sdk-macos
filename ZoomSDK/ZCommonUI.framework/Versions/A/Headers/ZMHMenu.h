@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)menuWillShow:(ZMHMenu *)menu;
 - (void)menuWillClose:(ZMHMenu *)menu;
 - (void)menuDidClosed:(ZMHMenu *)menu;
+- (void)menu:(ZMHMenu *)menu willShowSubWindowWithItem:(ZMHMenuItem *)item;//ZOOM-43362
 
 @end
 
@@ -48,7 +49,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign) BOOL costMouseEventWhenClose;//!< 'event == nil', Default is YES. (Deprecated)
 
-@property (retain) id representedObject;
+@property (assign) NSSize maxSize;
+
+@property (assign) BOOL enableSearch;
+
+@property (nullable,retain) id representedObject;
 
 @property (copy) NSDictionary *shadowParameters;
 

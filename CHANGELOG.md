@@ -1,10 +1,188 @@
 # CHANGELOG
 
+## 2019-07-15 @ [v4.4.55130.0712](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.55130.0712)
+
+**Added**
+
+* Add a new interface for setting general and recording items
+  * `- (ZoomSDKError)enableShowOriginalSoundOptionInMeetingUI:(BOOL)enable;`
+  * `- (BOOL)isShowOriginalSoundOptionInMeetingUIOn;`
+  * `- (BOOL)isSupportShowOriginalSoundOptionInMeetingUI;`
+  * `- (ZoomSDKError)enableEchoCancellation:(BOOL)enable;`
+  * `- (BOOL)isEchoCancellationOn;`
+  * `- (BOOL)isSupportEchoCancellation;`
+  * `- (BOOL)isEnableChooseRecordingPathWhenMeetingEnd;`
+  * `- (ZoomSDKError)chooseRecordingPathWhenMeetingEnd:(BOOL)enable;`
+  * `- (BOOL)isEnableRecordAudioForEveryAttendeeIndividually;`
+  * `- (ZoomSDKError)recordAudioForEveryAttendeeIndividually:(BOOL)enable;`
+  * `- (BOOL)isEnableOptimizeFor3PartyVideoEditor;`
+  * `- (ZoomSDKError)OptimizeFor3PartyVideoEditor:(BOOL)enable;`
+  * `- (BOOL)isEnableAddTimestampForRecording;`
+  * `- (ZoomSDKError)addTimestampForRecording:(BOOL)enable;`
+  * `- (BOOL)isEnableRecordDuringScreenSharing;`
+  * `- (ZoomSDKError)recordDuringScreenSharing:(BOOL)enable;`
+  * `- (BOOL)isEnableDisplayVideoNextToShareContentsInRecordingFile;`
+  * `- (ZoomSDKError)displayVideoNextToShareContentsInRecordingFile:(BOOL)enable;`
+  * `- (BOOL)canGetCloudRecordingStorageInfo;`
+  * `- (ZoomSDKError)getCloudRecordingStorageInfo;`
+  * `- (BOOL)canGetRecordingManagementURL;`
+  * `- (NSString*)getRecordingManagementURL;`
+  * `-(ZoomSDKError)enableSetShareScreen:(BOOL)enable  SettingCmd:(shareSettingCmd)shareCmd;`
+  * `-(BOOL)isEnableToSettingShare:(shareSettingCmd)sharingCmd;`
+  * `- (BOOL)isShowLockMeetingTime;`
+  * `-(ZoomSDKError)enableToShowMeetingTime:(BOOL)enable;`
+  * `- (int)getLimitFPSValue;`
+  * `- (ZoomSDKError)setLimitFPSValue:(int)value;`
+  * `- (BOOL)isEnableToSetLimitFPS;`
+  * `- (ZoomSDKError)setEnableLimitFPS:(BOOL)enable;`
+  * `- (BOOL)isEnableCopyInviteURL;`
+  * `- (ZoomSDKError)setCopyMeetingInviteURL:(BOOL)enable;`
+  * `- (BOOL)isEnableConfirmLeavingMeeting;`
+  * `- (ZoomSDKError)setConfirmLeavingMeeting:(BOOL)enable;`
+* Add a new interface to customize the log size
+  * `- (void)enableDefaultLog:(BOOL)enable fileSize:(unsigned int)size`
+* Add a new interface to show/hide the video button on meeting toolbar
+  * `enum SDKButton of ToolBarVideoButton`
+* Add new error codes for auth failure due to overtime and network issue
+  * `ZoomSDKAuthError_Timeout`
+  * `ZoomSDKAuthError_NetworkIssue`
+* Add a new interface to get the meeting number for a specific meeting
+  * `-(long long)getMeetingNumber`
+* Add a new interface to switch between active video view and share content view
+  * `- (ZoomSDKError)swapToShowShareViewOrVideo:(BOOL)share;`
+  * `- (BOOL)canSwapToShowShareViewOrVideo;`
+  * `- (BOOL)isDisplayingShareViewOrVideo;`
+  * `enum SDKButton of SwapShareContentAndVideoButton`
+* Add a new interface to get share setting type
+  * `- (ZoomSDKError)getShareSettingType:(ZoomSDKShareSettingType*)type`
+* Add a new interface to email contents and join meeting URL for a scheduled meeting
+  * `-(NSString*)getInviteEmailContent`
+  * `-(NSString*)getJoinMeetingUrl`
+* Add a new interface to specify the file name of the localizable string resource files
+  * `- (void)setCustomLocalizationFileName:(NSString*)fileName`
+* Add a new interface to invite others into the meeting via emails
+  * `- (ZoomSDKError)inviteToMeetingByDefaultMail;`
+  * `- (ZoomSDKError)inviteToMeetingByGmail;`
+  * `- (ZoomSDKError)inviteToMeetingByYahooMail`
+* Add a new interface to disable the viewer’s ability to annotate in custom UI
+  * `- (ZoomSDKError)disableViewerAnnotation:(ZoomSDKCustomizedAnnotation*)annotation disable:(BOOL)disable;`
+  * `- (ZoomSDKError)isViewerAnnotationLocked:(ZoomSDKCustomizedAnnotation*)annotation isLocked:(BOOL*)locked;`
+  * `- (ZoomSDKError)canDisableViewerAnnotation:(ZoomSDKCustomizedAnnotation*)annotation canDisabled:(BOOL*)canDisable;`
+  * `- (ZoomSDKError)canDoAnnotation:(ZoomSDKCustomizedAnnotation*)annotation canAnnotate:(BOOL*)canAnnotate;`
+  * `- (void)onAnnotationSupportPropertyChangedForCustom:(BOOL)isSupportAnnotation shareSourceUserID:(unsigned int)userID`
+* Add a new interface to hide upgrade account tip in the schedule window
+  * `- (void)hideScheduleComponent:(ScheduleComponent)component hide:(BOOL)hide`
+
+
+**Changed & Fixed**
+
+* Fixed an issue that hiding the sharing toolbar and thumbnail video window does not work
+* Fixed an issue that sometimes the SDK crashes when calling the join meeting API in auth callback delegate
+  * `- (void)onZoomSDKAuthReturn:(ZoomSDKAuthError)returnValue`
+* Fixed an issue that cannot set meeting configs while editing a meeting in custom UI mode.
+
+**Deprecated**
+
+* Remove: ActionMeetingCmd_LockShare/ActionMeetingCmd_UnlockShare
+* - (void)enableDefaultLog:(BOOL)enable in ZoomSDK.h
+* - (ZoomSDKError)enableUseOriginalSound:(BOOL)enable in ZoomSDKSettingService.h
+* - (BOOL)isSupportUseOriginalSound in ZoomSDKSettingService.h
+* - (BOOL)isUseOriginalSoundOn in ZoomSDKSettingService.h
+
+
 ## 2019-03-25 @ [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321)
 
 **Added**
 
-* Introduce new Zoom meeting UI
+* Introduce new Zoom meeting UI## 2019-07-15 @ []()
+
+Added
+
+* Add a new interface for setting general and recording items
+** - (ZoomSDKError)enableShowOriginalSoundOptionInMeetingUI:(BOOL)enable;
+** - (BOOL)isShowOriginalSoundOptionInMeetingUIOn;
+** - (BOOL)isSupportShowOriginalSoundOptionInMeetingUI;
+** - (ZoomSDKError)enableEchoCancellation:(BOOL)enable;
+** - (BOOL)isEchoCancellationOn;
+** - (BOOL)isSupportEchoCancellation;
+** - (BOOL)isEnableChooseRecordingPathWhenMeetingEnd;
+** - (ZoomSDKError)chooseRecordingPathWhenMeetingEnd:(BOOL)enable;
+** - (BOOL)isEnableRecordAudioForEveryAttendeeIndividually;
+** - (ZoomSDKError)recordAudioForEveryAttendeeIndividually:(BOOL)enable;
+** - (BOOL)isEnableOptimizeFor3PartyVideoEditor;
+** - (ZoomSDKError)OptimizeFor3PartyVideoEditor:(BOOL)enable;
+** - (BOOL)isEnableAddTimestampForRecording;
+** - (ZoomSDKError)addTimestampForRecording:(BOOL)enable;
+** - (BOOL)isEnableRecordDuringScreenSharing;
+** - (ZoomSDKError)recordDuringScreenSharing:(BOOL)enable;
+** - (BOOL)isEnableDisplayVideoNextToShareContentsInRecordingFile;
+** - (ZoomSDKError)displayVideoNextToShareContentsInRecordingFile:(BOOL)enable;
+** - (BOOL)canGetCloudRecordingStorageInfo;
+** - (ZoomSDKError)getCloudRecordingStorageInfo;
+** - (BOOL)canGetRecordingManagementURL;
+** - (NSString*)getRecordingManagementURL;
+** -(ZoomSDKError)enableSetShareScreen:(BOOL)enable  SettingCmd:(shareSettingCmd)shareCmd;
+** -(BOOL)isEnableToSettingShare:(shareSettingCmd)sharingCmd;
+** - (BOOL)isShowLockMeetingTime;
+** -(ZoomSDKError)enableToShowMeetingTime:(BOOL)enable;
+** - (int)getLimitFPSValue;
+** - (ZoomSDKError)setLimitFPSValue:(int)value;
+** - (BOOL)isEnableToSetLimitFPS;
+** - (ZoomSDKError)setEnableLimitFPS:(BOOL)enable;
+** - (BOOL)isEnableCopyInviteURL;
+** - (ZoomSDKError)setCopyMeetingInviteURL:(BOOL)enable;
+** - (BOOL)isEnableConfirmLeavingMeeting;
+** - (ZoomSDKError)setConfirmLeavingMeeting:(BOOL)enable;
+* Add a new interface to customize the log size
+** - (void)enableDefaultLog:(BOOL)enable fileSize:(unsigned int)size
+* Add a new interface to show/hide the video button on meeting toolbar
+** enum SDKButton of ToolBarVideoButton
+* Add new error codes for auth failure due to overtime and network issue
+** ZoomSDKAuthError_Timeout
+** ZoomSDKAuthError_NetworkIssue
+* Add a new interface to get the meeting number for a specific meeting
+** -(long long)getMeetingNumber
+* Add a new interface to switch between active video view and share content view
+** - (ZoomSDKError)swapToShowShareViewOrVideo:(BOOL)share;
+** - (BOOL)canSwapToShowShareViewOrVideo;
+** - (BOOL)isDisplayingShareViewOrVideo;
+** enum SDKButton of SwapShareContentAndVideoButton
+* Add a new interface to get share setting type
+** - (ZoomSDKError)getShareSettingType:(ZoomSDKShareSettingType*)type
+* Add a new interface to email contents and join meeting URL for a scheduled meeting
+** -(NSString*)getInviteEmailContent
+** -(NSString*)getJoinMeetingUrl
+* Add a new interface to specify the file name of the localizable string resource files
+** - (void)setCustomLocalizationFileName:(NSString*)fileName
+* Add a new interface to invite others into the meeting via emails
+** - (ZoomSDKError)inviteToMeetingByDefaultMail;
+** - (ZoomSDKError)inviteToMeetingByGmail;
+** - (ZoomSDKError)inviteToMeetingByYahooMail
+* Add a new interface to disable the viewer’s ability to annotate in custom UI
+** - (ZoomSDKError)disableViewerAnnotation:(ZoomSDKCustomizedAnnotation*)annotation disable:(BOOL)disable;
+** - (ZoomSDKError)isViewerAnnotationLocked:(ZoomSDKCustomizedAnnotation*)annotation isLocked:(BOOL*)locked;
+** - (ZoomSDKError)canDisableViewerAnnotation:(ZoomSDKCustomizedAnnotation*)annotation canDisabled:(BOOL*)canDisable;
+** - (ZoomSDKError)canDoAnnotation:(ZoomSDKCustomizedAnnotation*)annotation canAnnotate:(BOOL*)canAnnotate;
+** - (void)onAnnotationSupportPropertyChangedForCustom:(BOOL)isSupportAnnotation shareSourceUserID:(unsigned int)userID
+* Add a new interface to hide upgrade account tip in the schedule window
+** - (void)hideScheduleComponent:(ScheduleComponent)component hide:(BOOL)hide
+
+
+Changed & Fixed
+
+* Fixed an issue that hiding the sharing toolbar and thumbnail video window does not work
+* Fixed an issue that sometimes the SDK crashes when calling the join meeting API in auth callback delegate
+** - (void)onZoomSDKAuthReturn:(ZoomSDKAuthError)returnValue
+* Fixed an issue that cannot set meeting configs while editing a meeting in custom UI mode.
+
+Deprecated
+
+* Remove: ActionMeetingCmd_LockShare/ActionMeetingCmd_UnlockShare
+* - (void)enableDefaultLog:(BOOL)enable in ZoomSDK.h
+* - (ZoomSDKError)enableUseOriginalSound:(BOOL)enable in ZoomSDKSettingService.h
+* - (BOOL)isSupportUseOriginalSound in ZoomSDKSettingService.h
+* - (BOOL)isUseOriginalSoundOn in ZoomSDKSettingService.h
+
 * Add new interfaces to control share viewer’s annotate privilege
 * Add 1080p video support
 * Add new interfaces to customize the sub-tab pages in H323 invite page

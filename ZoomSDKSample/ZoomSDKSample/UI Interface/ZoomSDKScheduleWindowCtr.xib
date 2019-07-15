@@ -33,6 +33,9 @@
                 <outlet property="_specialDomains" destination="aHl-ui-el3" id="NYA-J2-Wb2"/>
                 <outlet property="_tele" destination="WuS-IO-WF5" id="Nw3-9q-ZDL"/>
                 <outlet property="_time" destination="Jc1-yD-IMK" id="grR-Xe-yHs"/>
+                <outlet property="_timeDurationLabel" destination="BeP-bo-E9M" id="vqR-gC-Whi"/>
+                <outlet property="_timeMinsLabel" destination="7A0-NP-pYs" id="3GW-L5-HSp"/>
+                <outlet property="_timeStartLabel" destination="nJq-9V-sdA" id="EkP-bF-8dk"/>
                 <outlet property="_topic" destination="5Sc-8n-cJi" id="RhK-Iw-POI"/>
                 <outlet property="_usePMI" destination="OV7-mM-fwF" id="SMh-7c-lVt"/>
                 <outlet property="_voip" destination="gF8-R2-FQa" id="Uxl-Wy-wQS"/>

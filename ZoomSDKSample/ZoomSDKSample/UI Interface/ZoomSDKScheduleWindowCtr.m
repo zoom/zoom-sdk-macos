@@ -27,49 +27,68 @@
 -(void)awakeFromNib
 {
     self.window.level = NSPopUpMenuWindowLevel;
-    _scheduleMeetingItem = [[[ZoomSDK sharedSDK] getPremeetingService] createScheduleMeetingItem];
-    _configOption = [_scheduleMeetingItem configOption];
-    _dateOption = [_scheduleMeetingItem dateOption];
-    _videoOption = [_scheduleMeetingItem videoOption];
-    _audioOption = [_scheduleMeetingItem audioOption];
-    
-    if(!_scheduleMeetingItem)
-        return;
-    NSDate *now = [NSDate date];
-    NSDate *startDate = [self getMeetingStartDateFromDate:now];
+    if (_meetingUniqueID)
+    {
+        _editMeetingItem = [[[ZoomSDK sharedSDK] getPremeetingService] createEditMeetingItemWithMeetingID:_meetingUniqueID];
+        _configOption = [_editMeetingItem configOption];
+        _dateOption = [_editMeetingItem dateOption];
+        _videoOption = [_editMeetingItem videoOption];
+        _audioOption = [_editMeetingItem audioOption];
+    }
+    else
+    {
+        _scheduleMeetingItem = [[[ZoomSDK sharedSDK] getPremeetingService] createScheduleMeetingItem];
+        _configOption = [_scheduleMeetingItem configOption];
+        _dateOption = [_scheduleMeetingItem dateOption];
+        _videoOption = [_scheduleMeetingItem videoOption];
+        _audioOption = [_scheduleMeetingItem audioOption];
+    }
+    [self updateUI];
+}
+- (void)windowDidLoad {
+    [super windowDidLoad];
+    [self updateUI];
+    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
 
-    [_time setTimeZone:[NSTimeZone localTimeZone]];
-    [_time setDateValue:startDate];
-    
-    if (_meetingUniqueID) {
-        _meetingItem = [[[ZoomSDK sharedSDK] getPremeetingService] getMeetingItem:_meetingUniqueID];
-        if (_meetingItem) {
-            _config = [_meetingItem getConfigOption];
-            _date = [_meetingItem getDateOption];
-            _video = [_meetingItem getVideoOption];
-            _audio = [_meetingItem getAudioOption];
-        }
+- (void)updateUI
+{
+    if (_meetingUniqueID)
+    {
         _scheduleEditButton.title = @"Edit";
         self.window.title = @"Edit Meeting";
-        time_t startTime = [_date getMeetingStartTime];
+        time_t startTime = [_dateOption getMeetingStartTime];
         [_time setDateValue:[NSDate dateWithTimeIntervalSince1970:startTime]];
-        [_duration setStringValue:[NSString stringWithFormat:@"%d", [_date getMeetingDuration]]];
-    }else{
-        _config = [_scheduleMeetingItem configOption];
-        _date = [_scheduleMeetingItem dateOption];
-        _video = [_scheduleMeetingItem videoOption];
-        _audio = [_scheduleMeetingItem audioOption];
+        [_duration setStringValue:[NSString stringWithFormat:@"%d", [_dateOption getMeetingDuration]]];
+        if([_dateOption isRecurringMeeting])
+        {
+            [_time setHidden:YES];
+            [_duration setHidden:YES];
+            [_timeStartLabel setHidden:YES];
+            [_timeDurationLabel setHidden:YES];
+            [_timeMinsLabel setHidden:YES];
+        }
+    }
+    else
+    {
         _scheduleEditButton.title = @"Schedule";
         self.window.title = @"Schedule Meeting";
         [_duration setStringValue:@"60"];
     }
-    NSString* meetingTopic = [_config getMeetingTopic];
+    
+    NSDate *now = [NSDate date];
+    NSDate *startDate = [self getMeetingStartDateFromDate:now];
+    
+    [_time setTimeZone:[NSTimeZone localTimeZone]];
+    [_time setDateValue:startDate];
+    
+    NSString* meetingTopic = [_configOption getMeetingTopic];
     [_topic setStringValue:meetingTopic];
-    BOOL isRecurring = [_date isRecurringMeeting];
+    BOOL isRecurring = [_dateOption isRecurringMeeting];
     [_recurring setState:isRecurring? NSOnState: NSOffState];
-   
-    BOOL isHostVideoOn = [_video isHostVideoOn];
-    BOOL isAttendeeVideoOn = [_video isParticipantVideoOn];
+    
+    BOOL isHostVideoOn = [_videoOption isHostVideoOn];
+    BOOL isAttendeeVideoOn = [_videoOption isParticipantVideoOn];
     if(isHostVideoOn)
     {
         [_hostVideoOn setState:NSOnState];
@@ -87,7 +106,7 @@
         [_attendeeVideoOff setState:NSOnState];
     }
     int supportAudioType = 0;
-    ScheduleMeetingAudioType type = [_audio getScheduleMeetingAudioType:&supportAudioType];
+    ScheduleMeetingAudioType type = [_audioOption getScheduleMeetingAudioType:&supportAudioType];
     if (!(supportAudioType&ScheduleMeetingAudioType_3rd)) {
         [_3rd setHidden:YES];
     }
@@ -135,8 +154,8 @@
         }
             break;
     }
-    NSArray* availableCountry = [_audio getAvailableDialinCountry];
-    NSArray* selectedCountry = [_audio getSelectedDialinCountry];
+    NSArray* availableCountry = [_audioOption getAvailableDialinCountry];
+    NSArray* selectedCountry = [_audioOption getSelectedDialinCountry];
     NSString* countryString =@"";
     NSString* selectedCountryString = @"";
     if([availableCountry count] > 0)
@@ -152,19 +171,23 @@
             selectedCountryString = [selectedCountryString stringByAppendingString:country];
         }
     }
-    BOOL isRequiredPassword = [_config enableRequiredPassword];
+    BOOL isRequiredPassword = [_configOption enableRequiredPassword];
     [_requiredPassword setState:isRequiredPassword? NSOnState: NSOffState];
     if (_requiredPassword.state != NSOnState) {
         [_password setHidden:YES];
     }
-    BOOL jbh = [_config enableJBH];
+    else
+    {
+        [_password setStringValue:[_configOption getMeetingPassword]];
+    }
+    BOOL jbh = [_configOption enableJBH];
     [_enableJBH setState:jbh? NSOnState: NSOffState];
-    BOOL muteOnEntry = [_config enableMuteOnEntry];
+    BOOL muteOnEntry = [_configOption enableMuteOnEntry];
     [_muteOnEntry setState:muteOnEntry? NSOnState: NSOffState];
-    BOOL pmi = [_config enableUsePMI];
+    BOOL pmi = [_configOption enableUsePMI];
     [_usePMI setState:pmi? NSOnState: NSOffState];
     BOOL canShow = NO;
-    BOOL isHostInChina = [_config enableHostInChina:&canShow];
+    BOOL isHostInChina = [_configOption enableHostInChina:&canShow];
     if(canShow)
     {
         [_hostInChina setHidden:NO];
@@ -173,7 +196,7 @@
     }else{
         [_hostInChina setHidden:YES];
     }
-    BOOL onlySignedUserJoin = [_config enableOnlySignedUserJoin:&canShow];
+    BOOL onlySignedUserJoin = [_configOption enableOnlySignedUserJoin:&canShow];
     if(canShow)
     {
         [_onlySignedInUser setHidden:NO];
@@ -181,8 +204,8 @@
     }else{
         [_onlySignedInUser setHidden:YES];
     }
-    BOOL enableSpecialDom = [_config enableSpecialDomainUserJoin:&canShow];
-    NSString* specialDomains = [_config getSpecialDomains];
+    BOOL enableSpecialDom = [_configOption enableSpecialDomainUserJoin:&canShow];
+    NSString* specialDomains = [_configOption getSpecialDomains];
     if(canShow)
     {
         [_onlySignedInSpecialUser setHidden:NO];
@@ -190,7 +213,7 @@
         if ([_onlySignedInSpecialUser state] != NSOffState) {
             [_specialDomains setHidden:NO];
             if(specialDomains)
-               [_specialDomains setStringValue:specialDomains];
+                [_specialDomains setStringValue:specialDomains];
         }else{
             [_specialDomains setHidden:YES];
         }
@@ -199,7 +222,7 @@
         [_specialDomains setHidden:YES];
     }
     int recordType = 0;
-    BOOL isAutoRecord = [_config enableAutoRecord:&recordType];
+    BOOL isAutoRecord = [_configOption enableAutoRecord:&recordType];
     if(!recordType)
     {
         [_autoRecord setHidden:YES];
@@ -219,7 +242,7 @@
             }else{
                 [_cloudRecord setHidden:NO];
             }
-            ScheduleMeetingRecordType type = [_config getMeetingRecordType];
+            ScheduleMeetingRecordType type = [_configOption getMeetingRecordType];
             switch (type) {
                 case ScheduleMeetingRecordType_Cloud:
                     [_localRecord setState:NSOffState];
@@ -238,7 +261,7 @@
             [_cloudRecord setHidden:YES];
         }
     }
-    NSArray* scheduleUser = [_config getScheduleForUser:&canShow];
+    NSArray* scheduleUser = [_configOption getScheduleForUser:&canShow];
     if(canShow)
     {
         NSString* schedule4 = @"";
@@ -254,19 +277,28 @@
     }else{
         [_schedule4Users setHidden:YES];
     }
-    
 }
-- (void)windowDidLoad {
-    [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-}
-
 #pragma mark - IBAction
 
 -(IBAction)onRecurringClick:(id)sender
 {
     [_dateOption enableRecurringMeeting:(_recurring.state == NSOnState)];
+    if(_recurring.state == NSOnState)
+    {
+        [_time setHidden:YES];
+        [_duration setHidden:YES];
+        [_timeStartLabel setHidden:YES];
+        [_timeDurationLabel setHidden:YES];
+        [_timeMinsLabel setHidden:YES];
+    }
+    else
+    {
+        [_time setHidden:NO];
+        [_duration setHidden:NO];
+        [_timeStartLabel setHidden:NO];
+        [_timeDurationLabel setHidden:NO];
+        [_timeMinsLabel setHidden:NO];
+    }
 }
 -(IBAction)onHostVideo:(id)sender
 {
@@ -325,7 +357,7 @@
 {
     [_configOption setEnableAutoRecord:(_autoRecord.state == NSOnState)];
     int recordType = 0;
-    BOOL isAutoRecord = [_config enableAutoRecord:&recordType];
+    BOOL isAutoRecord = [_configOption enableAutoRecord:&recordType];
     if (_autoRecord.state == NSOnState) {
         if(!(recordType&ScheduleMeetingRecordType_Local))
         {
@@ -339,7 +371,7 @@
         }else{
             [_cloudRecord setHidden:NO];
         }
-        ScheduleMeetingRecordType type = [_config getMeetingRecordType];
+        ScheduleMeetingRecordType type = [_configOption getMeetingRecordType];
         switch (type) {
             case ScheduleMeetingRecordType_Cloud:
                 [_localRecord setState:NSOffState];
@@ -412,7 +444,7 @@
             [_configOption selectScheduleForUser:userArray];
     }
     if (_meetingUniqueID) {
-        [[[ZoomSDK sharedSDK] getPremeetingService] editMeeting:_scheduleMeetingItem MeetingUniqueID:_meetingUniqueID];
+        [[[ZoomSDK sharedSDK] getPremeetingService] editMeeting:_editMeetingItem MeetingUniqueID:_meetingUniqueID];
     }else{
          [[[ZoomSDK sharedSDK] getPremeetingService] scheduleMeeting:_scheduleMeetingItem];
     }
@@ -434,8 +466,14 @@
 
 - (void)dealloc
 {
-    [[[ZoomSDK sharedSDK] getPremeetingService] destoryScheduleMeetingItem:_scheduleMeetingItem];
+    if(_scheduleMeetingItem)
+        [[[ZoomSDK sharedSDK] getPremeetingService] destoryScheduleMeetingItem:_scheduleMeetingItem];
+    if(_editMeetingItem)
+        [[[ZoomSDK sharedSDK] getPremeetingService] destoryScheduleMeetingItem:_editMeetingItem];
     [super dealloc];
 }
-
+- (void)showWindow:(id)sender
+{
+    [self updateUI];
+}
 @end

@@ -325,7 +325,7 @@ typedef enum{
  * @param enable YES means using original sound, No disabling.
  * @return If the function succeeds, it will return ZoomSDKError_success, otherwise failed.
  */
-- (ZoomSDKError)enableUseOriginalSound:(BOOL)enable;
+- (ZoomSDKError)enableUseOriginalSound:(BOOL)enable NS_DEPRECATED_MAC(4.1, 4.3);
 
 
 /**
@@ -403,17 +403,56 @@ typedef enum{
  * @brief Determine if the meeting supports user's original sound. 
  * @return YES means supported, otherwise not.  
  */
-- (BOOL)isSupportUseOriginalSound;
+- (BOOL)isSupportUseOriginalSound NS_DEPRECATED_MAC(4.1, 4.3);
 /**
  * @brief Determine if user's original sound is enabled.  
  * @return YES means enabled, otherwise not.
  */
-- (BOOL)isUseOriginalSoundOn;
+- (BOOL)isUseOriginalSoundOn NS_DEPRECATED_MAC(4.1, 4.3);
 /**
  * @brief Set whether to enable the feature that attendee can speak by pressing the Spacebar when he is muted.
  * @return YES means enabled, otherwise not.
  */
 - (BOOL)isTemporarilyUnmuteOn;
+
+
+/**
+ * @brief Enable show original sound option in meeting UI.
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)enableShowOriginalSoundOptionInMeetingUI:(BOOL)enable;
+
+/**
+ * @brief Determine if show original sound option in meeting UI is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isShowOriginalSoundOptionInMeetingUIOn;
+
+/**
+ * @brief Determine if the meeting supports show original sound option in meeting UI.
+ * @return YES means supported, otherwise not.
+ */
+- (BOOL)isSupportShowOriginalSoundOptionInMeetingUI;
+
+/**
+ * @brief Enable echo cancellation.
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)enableEchoCancellation:(BOOL)enable;
+
+/**
+ * @brief Determine if echo cancellation is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEchoCancellationOn;
+
+/**
+ * @brief Determine if the meeting supports echo cancellation.
+ * @return YES means supported, otherwise not.
+ */
+- (BOOL)isSupportEchoCancellation;
 
 @end
 
@@ -553,7 +592,22 @@ typedef enum{
 
 @end
 
+@protocol ZoomSDKSettingRecordDelegate <NSObject>
+@optional
+/**
+ * @brief Notify of cloud recording storage info.
+ * @param totalSize The total size of cloud recording storage.
+ * @param usedSize The used size of cloud recording storage.
+ * @param allowExceedStorage YES means allow exceed storge, NO not.
+ */
+- (void)onNotifyCloudRecordingStorageInfo:(long long)totalSize usedSize:(long long)usedSize isAllowExceedStorage:(BOOL)allowExceedStorage;
+@end
+
 @interface ZoomSDKRecordSetting: NSObject
+{
+    id<ZoomSDKSettingRecordDelegate>       _delegate;
+}
+@property(nonatomic, assign)id<ZoomSDKSettingRecordDelegate> delegate;
 /**
  * @brief Set the path for saving the meeting recording file. 
  * @param path The path for saving the meeting recording file.
@@ -567,6 +621,109 @@ typedef enum{
  * @return If the function succeeds, it will return ZoomSDKError_Success. Otherwise failed. 
  */
 - (NSString*)getRecordingPath;
+
+/**
+ * @brief Determine if choose recording path when meeting ended is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableChooseRecordingPathWhenMeetingEnd;
+
+/**
+ * @brief Enable or disable choose recording path when meeting ended.
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)chooseRecordingPathWhenMeetingEnd:(BOOL)enable;
+
+/**
+ * @brief Determine if record audio for every attendee individually is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableRecordAudioForEveryAttendeeIndividually;
+
+/**
+ * @brief Enable or disable record audio for every attendee individually.
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)recordAudioForEveryAttendeeIndividually:(BOOL)enable;
+
+/**
+ * @brief Determine if optimize for third party video editor is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableOptimizeFor3PartyVideoEditor;
+
+/**
+ * @brief Enable or diable optimize for third party video editor.
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)OptimizeFor3PartyVideoEditor:(BOOL)enable;
+
+/**
+ * @brief Determine if add timestamp for recording is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableAddTimestampForRecording;
+
+/**
+ * @brief Enable or disable add timestamp for recordin.
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)addTimestampForRecording:(BOOL)enable;
+
+/**
+ * @brief Determine if recording during screen sharing is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableRecordDuringScreenSharing;
+
+/**
+ * @brief Enable or disable record during screen sharing .
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)recordDuringScreenSharing:(BOOL)enable;
+
+/**
+ * @brief Determine if display video next to share contents in recording file is enabled or not.
+ * @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableDisplayVideoNextToShareContentsInRecordingFile;
+
+/**
+ * @brief Enable or disable display video next to share contents in recording file.
+ * @param enable YES means enabled, NO disabled.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ */
+- (ZoomSDKError)displayVideoNextToShareContentsInRecordingFile:(BOOL)enable;
+
+/**
+ * @brief Determine if the user have privilige to get cloud recording storage info.
+ * @return YES means can get info, otherwise not.
+ */
+- (BOOL)canGetCloudRecordingStorageInfo;
+
+/**
+ * @brief Call to get cloud recording storage info if the user has the privilige to get cloud recording storage info.
+ * @return If the function succeeds, it will return ZoomSDKError_success, otherwise not.
+ * @note The cloud recording storage info will be notified to user through delegate ZoomSDKSettingRecordDelegate when you have call this api successfully.
+ */
+- (ZoomSDKError)getCloudRecordingStorageInfo;
+
+/**
+ * @brief Determine if the user have privilige to get cloud recording management URL.
+ * @return YES means can get url, otherwise not.
+ */
+- (BOOL)canGetRecordingManagementURL;
+
+/**
+ * @brief Call to get cloud recording management URL if the user has the privilige to get cloud recording management URL.
+ * @return If the function succeeds, it will return the cloud recording management URL, otherwise nil.
+ */
+- (NSString*)getRecordingManagementURL;
 @end
 
 @interface ZoomSDKGeneralSetting: NSObject
@@ -605,6 +762,83 @@ typedef enum{
  * @return A ZoomSDKError to tell client whether function call successfully or not.
  */
 - (ZoomSDKError)setCustomURL:(SDKURLType)urlType urlString:(NSString*)urlString;
+
+/**
+ *@brief Enable or disable meeting settings by command.
+ *@param Enable YES means to enable, otherwise not.
+ *@param ShareCmd is a enumeration to set different share screen
+ *@return If the function is success will return ZoomSDKError_Success.othereise fail
+ */
+-(ZoomSDKError)enableSetShareScreen:(BOOL)enable  SettingCmd:(shareSettingCmd)shareCmd;
+
+/**
+ *@brief Get the setting item current status
+ *@param SharingCmd is a enumeration
+ *@return  If return YES is enable otherwise is not enable
+ */
+-(BOOL)isEnableToSettingShare:(shareSettingCmd)sharingCmd;
+
+/**
+ *@brief  Get the current status of show meeting time
+ *@return If return Yes is means show meeting time
+ */
+- (BOOL)isShowLockMeetingTime;
+
+/**
+ *@brief Enable or disenable to set show meeting time
+ *@param enable YES is means show meeting time otherwise is hidden
+ *@return If the function is success will return ZoomSDKError_Success.othereise fail
+ */
+-(ZoomSDKError)enableToShowMeetingTime:(BOOL)enable;
+
+/**
+ *@brief  get current FPS value
+ *@return the fps value
+ */
+- (int)getLimitFPSValue;
+
+/**
+ *@brief  set the value of fps limit
+ *@param value is a number of user to set
+ */
+- (ZoomSDKError)setLimitFPSValue:(int)value;
+
+/**
+ *@brief  Enable  to set limited fps
+ *@return Return YES is enable otherwise is not
+ */
+- (BOOL)isEnableToSetLimitFPS;
+
+/**
+ *@brief Enable or disenable to set Limit fps value
+ *@param enable Yes means to set otherwise is not
+ */
+- (ZoomSDKError)setEnableLimitFPS:(BOOL)enable;
+
+/**
+ @brief  Determine if can copy invite url after start meeting.
+ @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableCopyInviteURL;
+
+/**
+ @brief  to set meeting invite url can copy
+ @param enable YES means can copy otherwise not
+ @return If the function is success will return ZoomSDKError_Success.othereise fail
+ */
+- (ZoomSDKError)setCopyMeetingInviteURL:(BOOL)enable;
+/**
+ @brief  Determine if can comfire when leaving meeting.
+ @return YES means enabled, otherwise not.
+ */
+- (BOOL)isEnableConfirmLeavingMeeting;
+
+/**
+ @brief to set confirm when user leaving meeting
+ @param enable Yes means will confirm when user leaving meeting
+ @return If the function is success will return ZoomSDKError_Success.othereise fail
+ */
+- (ZoomSDKError)setConfirmLeavingMeeting:(BOOL)enable;
 @end
 
 @interface ZoomSDKStatisticsSetting: NSObject

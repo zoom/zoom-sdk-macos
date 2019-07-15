@@ -113,6 +113,13 @@ typedef struct{
  * @param status Annotation status.
  */
 - (void)onAnnotationStatusChanged:(ZoomSDKShareElement*)element Status:(AnnotationStatus)status;
+
+/**
+ * @brief Designated for Zoom Meeting notify the sharing user's has changed the viewer's annotation privilage.
+ * @param isSupportAnnotation YES means the share source user enable viewer do annotate, otherwise not.
+ * @param userID The user id that is sharing.
+ */
+- (void)onAnnotationSupportPropertyChangedForCustom:(BOOL)isSupportAnnotation shareSourceUserID:(unsigned int)userID;
 @end
 
 
@@ -135,4 +142,36 @@ typedef struct{
  * @return If the function succeeds, it will return ZoomSDKError_Success, otherwise failed.
  */
 -(ZoomSDKError)cleanCustomizedAnnatation:(ZoomSDKCustomizedAnnotation*)annotation;
+
+/**
+ * @brief This method is used for the sharing user to disable/enable viewer's privilege of annotation.
+ * @param annotation Specify the annotation that you want to operate on.
+ * @param disable YES means disable viewer's annotation privilege, NO means enable.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)disableViewerAnnotation:(ZoomSDKCustomizedAnnotation*)annotation disable:(BOOL)disable;
+
+/**
+ * @brief Determine whether the viewer's annotate privilege is locked.
+ * @param annotation Specify the annotation that you want to operate on.
+ * @param locked A point to A BOOL, if function call successfully, the value of 'locked' means whether viewer's annotate privilege is locked, YES means viewer's annotate privilege is locked.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)isViewerAnnotationLocked:(ZoomSDKCustomizedAnnotation*)annotation isLocked:(BOOL*)locked;
+
+/**
+ * @brief Determine if it is able for user to disable viewer's annotation privilege.
+ * @param annotation Specify the annotation that you want to operate on.
+ * @param canDisable A point to A BOOL, if function call successfully, the value of 'canDisable' means whether the user can disable viewer's annotation, YES means can disable, NO means cannot.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)canDisableViewerAnnotation:(ZoomSDKCustomizedAnnotation*)annotation canDisabled:(BOOL*)canDisable;
+
+/**
+ * @brief Determine if it is able for user to do annotation.
+ * @param annotation Specify the annotation that you want to operate on.
+ * @param canAnnotate A point to A BOOL, if function call successfully, the value of 'canAnnotate' means whether the user can do annotation, YES means can do annotation, NO means cannot.
+ * @return A ZoomSDKError to tell client function call successful or not.
+ */
+- (ZoomSDKError)canDoAnnotation:(ZoomSDKCustomizedAnnotation*)annotation canAnnotate:(BOOL*)canAnnotate;
 @end
