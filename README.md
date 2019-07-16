@@ -3,6 +3,8 @@
 <img src="https://s3.amazonaws.com/user-content.stoplight.io/8987/1541013063688" width="400px" max-height="400px" style="margin:auto;"/>
 </div>
 
+> ********** **NOTE: Currently our Mac SDK only support Xcode 9. Please see below for more info.** **********
+
 ## Latest SDK Notifications
 1. **Variable Name Changes**: Since [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321), we have renamed the term "APP" to "SDK" in our demo to avoid confusion between the term "API" and "APP".
 2. **Unfortunately, our Mac OS SDK does not support Xcode 10 at this point. Please do not compile and build your application with Xcode 10. We are working on the Xcode 10 support and it is a priority for us. Pardon the inconvenience. Until then, please use Xcode 9 and here are the options for installing or using Xcode 9:**
