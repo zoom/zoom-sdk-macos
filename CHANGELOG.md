@@ -1,5 +1,32 @@
 # CHANGELOG
 
+## 2019-09-04 @ [v4.4.55968.0904](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.55968.0904)
+
+## Added
+*  Add a new callback to notify attendees when the host is requesting to enable the microphone
+* `- (void)onHostAskUnmute` in ZoomSDKMeetingActionControllerDelegate
+*  Add a new interface to disable the warning alerts/popups for status "Bad Network" and "System Busy"
+* property `hideMeetingStaticBadNetWorkWaring` and `hideMeetingStaticSystemBusyWaring` in ZoomSDKMeetingConfiguration.h
+*  Add a new interface to hide the "switch camera" button in meeting window when sharing camera
+* property `hideSwitchCameraButton` in ZoomSDKMeetingConfiguration.h
+*  Add a new interface to switch share to next camera when sharing the camera
+* `- (ZoomSDKError)switchToShareNextCamera` and `- (BOOL)canSwitchToShareNextCamera` in ZoomSDKASController.h
+*  Add a new interface to hide the "Chat" button in Zoom UI
+* `- (ZoomSDKError)hideSDKButtons:(BOOL)hide ButtonType:(SDKButton)button` with param button is `ChatButton`
+*  Add new interface to allow user to disable the auto opening Finder window after recording a meeting
+* property `disableOpenRecordFileWhenMeetingEnd` in ZoomSDKMeetingConfiguration.h
+
+
+## Changed & Fixed
+*   Fixed an issue that the annotation feature shows up when sharing camera
+*  Fixed an issue that the callback `onHostAskUnmute` is not triggered when the host unmutes a participant
+*  Fixed an issue that the user who is sharing content cannot clear the annotation
+*  Fixed an issue that the host cannot grant or revoke the participant's local recording privilege
+*  Optimized the callbacks to handle the scenario when a device has multiple mics or speakers and switching among the microphones or speaker devices
+* `- (void)onSelectedMicDeviceChanged` and `- (void)onSelectedSpeakerDeviceChanged` in ZoomSDKSettingAudioDeviceDelegate
+*  Optimized the callbacks to handle the scenario when changing the default camera in Settings
+* `- (void)onSelectedCameraChanged:(NSString*)deviceID` in ZoomSDKSettingVideoDelegate
+
 ## 2019-07-15 @ [v4.4.55130.0712](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.55130.0712)
 
 **Added**
