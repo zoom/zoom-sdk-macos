@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## 2019-11-04 @ [v4.4.56627.1029](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.56627.1029)
+
+## Added
+* Add a new interface for ‘back to meeting’
+  * `- (ZoomSDKError)backToMeeting` in `ZoomSDKMeetingUIController.h`
+* Add a new interface for user to hide the “show keypad” button
+  * Property `hideShowKeypadButton` in `ZoomSDKMeetingConfiguration.h`
+* Add a new meeting status callback for user to join/leave breakout room meeting
+  * `ZoomSDKMeetingStatus_Join_Breakout_Room` and `ZoomSDKMeetingStatus_Leave_Breakout_Room` in `ZoomSDKMeetingStatus`
+* Add a new interface for the user to hide each setting item
+  * `- (void)hideSettingComponent:(SettingComponent)component hide:(BOOL)hide` in  `ZoomSDKSettingService.h`
+* Add a new interface for user to hide the “Copy URL” and the "Copy Invitation" button on the invite window
+  * Property `hideCopyURLButtonWhenInviteOthers` in ZoomSDKMeetingConfiguration.h
+  * Property `hideCopyInvitationButtonWhenInviteOthers` in ZoomSDKMeetingConfiguration.h
+* Add a new interface for user to hide the items in the chat menu
+  * Property `hideChatItemInMeeting` in ZoomSDKMeetingConfiguration.h
+* Add a new interface for user to hide the items in remote control menu
+  * Property `hideRemoteControlItemOnMoreMenu` in ZoomSDKMeetingConfiguration.h
+* Add a new interface for the user to hide the Q&A button and the Polling button
+  * `- (ZoomSDKError)hideSDKButtons:(BOOL)hide ButtonType:(SDKButton)button` with param `button` is `ToolBarQandAButton` and `ToolBarPollingButton` in ZoomSDKMeetingConfiguration.h
+* Add a new interface to config external proxy
+  * `- (ZoomSDKError)ConfigureProxy:(ZoomSDKProxySettings)settings` in ZoomSDKNetworkService.h
+* Refactoring the logic of hiding the account tab and the feedback tab on the setting window by default
+
+
+## Changed & Fixed
+* Fixed an issue that the “Reclaim host” button displays unexpectedly
+
 ## 2019-09-04 @ [v4.4.55968.0904](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.55968.0904)
 
 ## Added
