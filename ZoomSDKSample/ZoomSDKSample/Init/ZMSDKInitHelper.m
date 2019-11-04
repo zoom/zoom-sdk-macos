@@ -26,6 +26,12 @@ static  ZMSDKInitHelper *initHelper = nil;
 +(void)initSDK:(BOOL)useCustomizedUI
 {
     ZoomSDK* sdk = [ZoomSDK sharedSDK];
+   /* NSString *localeIdentifier = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
+    if(localeIdentifier && [localeIdentifier.uppercaseString isEqualToString:@"CN"])
+        [[ZoomSDK sharedSDK] setAppLocale:ZoomSDKLocale_CN];
+    else
+        [[ZoomSDK sharedSDK] setAppLocale:ZoomSDKLocale_Def];*/
+    
     [sdk initSDK:useCustomizedUI];
     [ZMSDKCommonHelper sharedInstance].isUseCutomizeUI = useCustomizedUI;
 }
