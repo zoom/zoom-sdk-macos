@@ -124,10 +124,27 @@
     [ZMSDKInitHelper setDomain:_setDomainTextField.stringValue];
     [self switchToAuthTab];
 }
+
+- (IBAction)onAuthWithJwtTokenClick:(id)sender {
+    
+    if (_chooseAuthJWTToken.state == NSOnState) {
+        [_sdkKeyTextField setPlaceholderString:@"JWT Token"];
+        [_sdkSecretTextField setHidden:YES];
+    }else{
+        [_sdkKeyTextField  setPlaceholderString:@"sdk key"];
+        [_sdkSecretTextField setHidden:NO];
+    }
+}
+
 - (IBAction)onAuthClicked:(id)sender
 {
     //[_authHelper auth:kZoomSDKKey Secret:kZoomSDKSecret];
-    [_authHelper auth:_sdkKeyTextField.stringValue Secret:_sdkSecretTextField.stringValue];
+    if (_chooseAuthJWTToken.state == NSOnState) {
+        
+        [_authHelper newAuth:_sdkKeyTextField.stringValue];
+    }else{
+        [_authHelper auth:_sdkKeyTextField.stringValue Secret:_sdkSecretTextField.stringValue];
+    }
 }
 - (IBAction)onEmailLoginClicked:(id)sender
 {

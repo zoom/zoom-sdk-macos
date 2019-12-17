@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## 2019-12-16 @ [v4.4.57220.1210](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.57220.1210)
+
+## Added:
+* Add new interfaces for SDK initialization with JWT token.
+   * The interface `- (ZoomSDKError)sdkAuth:(ZoomSDKAuthContext)jwttoken`
+   * The callback `- (void)onZoomAuthIdentityExpired` in  `zoomSDKAuthService.h`
+* Add new interfaces for the Q&A feature in webinar.
+     * The interfaces in `ZoomSDKQAController.h`.
+* Add new callbacks for the event when the audio button/menu is clicked
+   * Property `disableAudioButtonClickOriginAction` in `ZoomSDKMeetingConfiguration.h`
+   * The callback `-(void)onAudioButtonClicked:(unsigned int)userid audioSession:(ZoomSDKAudioAction)info` in `ZoomSDKMeetingUIController.h`.
+   * Property `disableAudioSettingMenuButtonClickOriginAction` in `ZoomSDKMeetingConfiguration.h`
+   * The callback `-(void)onAudioSettingMenuButtonClicked` in `ZoomSDKMeetingUIController.h`.
+* Add a new interface to hide the window of save recording path
+   * Property `hideChooseSaveRecordingFilePathWindow` in `ZoomSDKMeetingConfiguration.h`.
+* Add a new interface to access virtual background.
+   * Add a object `ZoomSDKVirtualBackgroundSetting`  in `ZoomSDKSettingService.h`
+* Add a new interface to disable the show join meeting window.
+   * Property `hideLoadingWindow` in `ZoomSDKMeetingConfiguration.h` .
+
+## Changed & Fixed:
+* Fixed an issue that the H.323 callout returns incorrect status in the callback.
+* Fixed an issue that the meeting restarts for a few times after pressing the end meeting button.
+* Fixed an issue that the computer audio is not working while screen sharing.
+* Fixed an issue that the progress indicator stays at 0 when clicking 'Save' button for the first time.
+
 ## 2019-11-04 @ [v4.4.56627.1029](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.56627.1029)
 
 ## Added

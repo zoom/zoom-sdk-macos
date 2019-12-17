@@ -32,6 +32,7 @@
     IBOutlet NSTextField* _sdkKeyTextField;
     IBOutlet NSTextField* _sdkSecretTextField;
     IBOutlet NSButton* _authButton;
+    IBOutlet NSButton *_chooseAuthJWTToken;
     
     //loading
     IBOutlet NSProgressIndicator* _loadingProgressIndicator;

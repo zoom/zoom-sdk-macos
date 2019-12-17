@@ -39,6 +39,15 @@
     return [[[ZoomSDK sharedSDK] getAuthService] sdkAuth:key appSecret:secret];
 }
 
+-(ZoomSDKError)newAuth:(NSString *)jwtToken
+{
+    if (!jwtToken || jwtToken.length == 0) {
+        return ZoomSDKError_InvalidPrameter;
+    }
+    ZoomSDKAuthContext content = {jwtToken};
+    return [[[ZoomSDK sharedSDK] getAuthService] sdkAuth:content];
+}
+
 -(BOOL)isAuthed
 {
     return [_auth isAuthorized];
@@ -84,4 +93,8 @@
     }
 }
 
+-(void)onZoomAuthIdentityExpired
+{
+    
+}
 @end

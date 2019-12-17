@@ -75,6 +75,11 @@ Once you have the files ready, please following the instructions to build and ru
 
 Please visit [[https://marketplace.zoom.us/docs/sdk/native-sdks/macos](https://marketplace.zoom.us/docs/sdk/native-sdks/macos)] for details of each features and functions.
 
+## SDK Reference
+
+You may find the SDK interface reference at [https://marketplace.zoom.us/docs/sdk/native-sdks/macos/sdk-reference](https://marketplace.zoom.us/docs/sdk/native-sdks/macos/sdk-reference).
+If you would like to get a local copy of the SDK reference, you may [download it here](https://github.com/zoom/zoom-sdk-macos/archive/gh-pages.zip).
+
 ## Versioning
 
 For the versions available, see the [tags on this repository](https://github.com/zoom/zoom-sdk-macos/tags).

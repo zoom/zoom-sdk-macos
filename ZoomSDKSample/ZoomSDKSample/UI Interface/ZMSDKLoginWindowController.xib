@@ -12,6 +12,7 @@
                 <outlet property="_authButton" destination="PHB-fN-8HD" id="X6w-H4-IES"/>
                 <outlet property="_authLogoImageView" destination="Ijn-dx-a8q" id="VJh-PO-qpa"/>
                 <outlet property="_baseTabView" destination="90h-lg-Nv9" id="0bC-bl-Wgc"/>
+                <outlet property="_chooseAuthJWTToken" destination="0Lx-p0-qGh" id="ism-EV-LIY"/>
                 <outlet property="_connectFailedTextField" destination="Qvh-oz-Yhy" id="Qtf-45-Duc"/>
                 <outlet property="_domainLogoImageView" destination="01H-aH-sVp" id="Rzy-qN-HWG"/>
                 <outlet property="_emailLoginButton" destination="8KU-uw-VJy" id="eHs-q8-Ocz"/>
@@ -133,7 +134,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" misplaced="YES" id="PHB-fN-8HD">
-                                            <rect key="frame" x="339" y="97" width="74" height="32"/>
+                                            <rect key="frame" x="368" y="93" width="74" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Auth" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jNp-fb-1LL">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -141,6 +142,17 @@
                                             </buttonCell>
                                             <connections>
                                                 <action selector="onAuthClicked:" target="-2" id="9Mh-hW-Scs"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" misplaced="YES" id="0Lx-p0-qGh">
+                                            <rect key="frame" x="202" y="102" width="147" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Auth with JWT token" bezelStyle="regularSquare" imagePosition="left" inset="2" id="cbA-cP-YcS">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="onAuthWithJwtTokenClick:" target="-2" id="iXa-1N-b0T"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -315,8 +327,8 @@
                                                                 <rect key="frame" x="131" y="5" width="320" height="107"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <clipView key="contentView" id="jDH-gh-CCI">
-                                                                    <rect key="frame" x="1" y="1" width="303" height="105"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <rect key="frame" x="1" y="1" width="318" height="105"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="UxQ-QU-WRG">
                                                                             <rect key="frame" x="0.0" y="0.0" width="303" height="105"/>
@@ -329,12 +341,12 @@
                                                                     </subviews>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </clipView>
-                                                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="xwz-qm-XSr">
+                                                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="xwz-qm-XSr">
                                                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                 </scroller>
-                                                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="qq5-GR-7yC">
-                                                                    <rect key="frame" x="304" y="1" width="15" height="105"/>
+                                                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="qq5-GR-7yC">
+                                                                    <rect key="frame" x="303" y="1" width="16" height="105"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                 </scroller>
                                                             </scrollView>

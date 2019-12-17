@@ -17,6 +17,7 @@
 -(id)initWithWindowController:(ZMSDKLoginWindowController*)loginWindowController;
 //interface
 -(ZoomSDKError)auth:(NSString*)key Secret:(NSString*)secret;
+-(ZoomSDKError)newAuth:(NSString *)jwtToken;
 -(BOOL)isAuthed;
 
 //callback
