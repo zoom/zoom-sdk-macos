@@ -39,6 +39,39 @@ HMACSHA256(
 ```
 You do not need to secret base64 encoded your signature. Once the JWT token is generated, please do not reveal it or publish it. **It is highly recommended to handle your SDK key and secret and generate JWT in a backend server to be consumed by your application. Do not generate JWT in a production application.**
 
+## 2020-02-10 @ [v4.6.15088.0210](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.6.15088.0210)
+
+## Added:
+* **Add support for Xcode 10.**
+* Add new features in Zoom default UI
+  * Allow Call-In Attendees to unmute in the webinar
+  * Closed captioning in breakout sessions
+  * Fully minimize toolbar when screen sharing
+  * Notification when no sound is detected from the microphone
+  * Annotation enhancements
+  * Do not disturb automatically enabled when screen sharing
+  * Reduced volume for entering/exiting chime
+  * Rename meeting hosted with personal meeting ID
+  * Rename webinar attendees
+  * Send a message to participants in a waiting room
+  * Merge participant's video and Audio
+  * Option to select keyboard layout during remote control
+  * Advanced noise suppression
+  * View all participants' video in gallery view while screen sharing
+  * Enable/Disable dual monitor mode in meeting
+  * Virtual background selection within video preview
+  * Meeting reactions
+  * View other participant's audio status
+* Add support for the Korean language.
+* Add a new recording status `Recording_Pause` in `RecordingStatus`.
+* Add a new interface to set support the dark mode. (Available for MacOS 10.14 and above)
+ * `- (ZoomSDKError)setSupportDarkModel:(BOOL)isSupport` in `ZoomSDK.h`
+* Enhanced the struct type `ZoomSDKAuthContext` in `ZoomSDKAuthService.h` for ARC
+  * The interface `- (ZoomSDKError)sdkAuth:(ZoomSDKAuthContext *)jwttoken` has changed in `ZoomSDKAuthService.h`
+* Enhanced the struct type `ZoomSDKProxySettings` in `ZoomSDKNetworkService.h` for ARC
+  * The interface `- (ZoomSDKError)ConfigureProxy:(ZoomSDKProxySettings*)settings` has changed in `ZoomSDKNetworkService.h`
+
+
 ## 2019-12-16 @ [v4.4.57220.1210](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.57220.1210)
 
 ## Added:

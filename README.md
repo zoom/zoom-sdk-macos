@@ -3,13 +3,11 @@
 <img src="https://s3.amazonaws.com/user-content.stoplight.io/8987/1541013063688" width="400px" max-height="400px" style="margin:auto;"/>
 </div>
 
-> ********** **NOTE: Currently our Mac SDK only support Xcode 9. Please see below for more info.** **********
-
 ## Latest SDK Notifications
 1. Due to the enhanced security requirements added in Mac OS 10.14, if you are planning to use Mac OS SDK in Mac OS 10.14 or above, please add **Camera** and **Microphone** privacy settings in your `.plist` file.
 
 2. **Variable Name Changes**: Since [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321), we have renamed the term "APP" to "SDK" in our demo to avoid confusion between the term "API" and "APP".
-3. **Unfortunately, our Mac OS SDK does not support Xcode 10 at this point. Please do not compile and build your application with Xcode 10. We are working on the Xcode 10 support and it is a priority for us. Pardon the inconvenience. Until then, please use Xcode 9 and here are the options for installing or using Xcode 9:**
+3. **Unfortunately, our Mac OS SDK does not support Xcode 11 at this point. Please do not compile and build your application with Xcode 11. We are working on the Xcode 11 support and it is a priority for us. Pardon the inconvenience. Until then, please use Xcode 10 and here are the options for installing or using Xcode 10:**
    * [Working with multiple versions of Xcode](https://medium.com/@hacknicity/working-with-multiple-versions-of-xcode-e331c01aa6bc).  Make sure to follow instructions carefully, before launching for the first time.
    * Use a [hosted service](https://support.macincloud.com/support/solutions/articles/8000042681-how-to-utilize-a-different-xcode-version-for-build-process-on-mac) supporting [many versions of Xcode](https://support.macincloud.com/support/solutions/articles/8000023177-versions-of-tools-and-applications-on-vsts-agent-plan-servers-).
 4. Please be aware that some of our interfaces are deprecated in the latest release, please check out our [CHANGELOG](https://github.com/zoom/zoom-sdk-macos/blob/master/CHANGELOG.md) for more detail

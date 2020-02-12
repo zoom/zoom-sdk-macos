@@ -333,7 +333,7 @@
         ZoomSDKSettingService* setting = [[ZoomSDK sharedSDK] getSettingService];
         [[setting getGeneralSetting] hideSettingComponent:SettingComponent_AdvancedFeatureButton hide:YES];
         [[setting getGeneralSetting] hideSettingComponent:SettingComponent_AdvancedFeatureTab hide:YES];
-        
+
         ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
         ZoomSDKMeetingUIController* controller = [meetingService getMeetingUIController];
         [controller showMeetingComponent:MeetingComponent_Setting window:nil show:YES InPanel:YES frame:NSZeroRect];
