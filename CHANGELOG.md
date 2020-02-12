@@ -71,6 +71,8 @@ You do not need to secret base64 encoded your signature. Once the JWT token is g
 * Enhanced the struct type `ZoomSDKProxySettings` in `ZoomSDKNetworkService.h` for ARC
   * The interface `- (ZoomSDKError)ConfigureProxy:(ZoomSDKProxySettings*)settings` has changed in `ZoomSDKNetworkService.h`
 
+## Changed & Fixed:
+* Enhanced security and upgraded OpenSSL to 1.0.2u.
 
 ## 2019-12-16 @ [v4.4.57220.1210](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.57220.1210)
 
