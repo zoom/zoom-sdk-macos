@@ -21,6 +21,7 @@
     [self.loginWindowCtrl.window makeKeyAndOrderFront:nil];
     [self.loginWindowCtrl.window center];
     [_logOutMenuItem setHidden:YES];
+    [[ZoomSDK sharedSDK] setSupportDarkModel:YES];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {

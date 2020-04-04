@@ -91,6 +91,8 @@ Please refer to our [CHANGELOG](https://github.com/zoom/zoom-sdk-macos/blob/mast
 * 1️⃣ `SDK_Transcode.app`, `airhost.app`, and `aomhost.app` must be rebuilt with support for the Hardened Runtime...
   * When you are deploying your app with Zoom macos SDK, please don't forget to re-sign the frameworks in `ZoomSDK`. Append your own credentials onto the frameworks and try again.
 * Please visit our [Zoom Developer Community Forum](https://devforum.zoom.us/) for further assistance.
+* :two: `Unexpeceted service error: build aborted due to an internal error: unable to write manifest to ....: No such file or directory`
+* Please change the Project settings at: File -> Project Settings -> Build Systems -> Legacy Build System and try again.
 
 ## Support
 

@@ -47,7 +47,6 @@
     ZoomSDKAuthContext *content = [[[ZoomSDKAuthContext alloc] init] autorelease];
     content.jwtToken = jwtToken;
     return [[[ZoomSDK sharedSDK] getAuthService] sdkAuth:content];
-
 }
 
 -(BOOL)isAuthed

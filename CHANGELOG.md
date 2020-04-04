@@ -39,7 +39,41 @@ HMACSHA256(
 ```
 You do not need to secret base64 encoded your signature. Once the JWT token is generated, please do not reveal it or publish it. **It is highly recommended to handle your SDK key and secret and generate JWT in a backend server to be consumed by your application. Do not generate JWT in a production application.**
 
-## 2020-02-10 @ [v4.6.15088.0210](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.6.15088.0210)
+## 2020-04-04 @ [v4.6.15798.0403](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.6.15798.0403)
+
+## Added:
+* Add new interfaces for customizing [breakout room](https://support.zoom.us/hc/en-us/articles/206476093-Getting-Started-with-Breakout-Rooms)
+  * Interfaces can be found in `ZoomSDKNewBreakoutRoomController.h`
+* Add new interfaces and options for schedule meeting
+ * The interfaces are in `ZoomSDKPremeetingService.h`
+* Add new callbacks for breakout room button events
+  * The property `disableBreakoutRoomsButtonClickOriginAction` in `ZoomSDKMeetingConfiguration.h`.
+  * The callback `-(void)onBreakoutRoomsButtonClick` in `ZoomSDKMeetingUIController.h`
+* Add new tips when the screen sharing feature does not have the proper privilege granted
+* Add a new interface to check whether a user is talking or not
+  * The interface `- (BOOL)isTalking` in `ZoomSDKMeetingActionController.h`
+* Add a new callback for the events when the active audio of a user has changed
+  * The interface `- (void)onUserActiveAudioChanage:(NSArray *)useridArray` in  `ZoomSDKMeetingActionController.h`.
+* Add a new interface to hide the Reaction button
+  * Added enumeration element `ToolBarReactionsButton`
+* Add a new interface to hide the meeting info button
+  * The property `hideMeetingInfoButtonOnVideo` in `ZoomSDKMeetingConfiguration.h`.
+* Add support for [hardened Runtime](https://developer.apple.com/documentation/security/hardened_runtime) for macOS app notarization
+* Add new interfaces for the `Limit FPS when share` feature
+ * The interface `- (ZoomSDKError)setLimitedFPSValue:(ZoomSDKFPSValue)value` in `ZoomSDKSettingService.h`.
+
+
+## Changed & Fixed:
+* Enhanced the experience when screen recording permission is not granted on MacOS 10.15
+* Fixed the UNC link issue
+* Fixed an issue that the meeting configuration does not apply while reconnecting
+* Fixed an issue that the Virtual Background is not available for non-login user
+* Fixed an issue that the feature "Push to talk / Hold space key to speak" cannot be disabled
+* Fixed an issue that certain features could still be available via short-cuts even if the corresponding button has hidden
+* Fixed an issue that user could not join a meeting with vanityID
+* Fixed an issue that the user could not mute himself/herself using `actionMeetingWithCmd`
+
+## 2020-02-10 @ v4.6.15088.0210
 
 ## Added:
 * **Add support for Xcode 10.**
@@ -74,7 +108,7 @@ You do not need to secret base64 encoded your signature. Once the JWT token is g
 ## Changed & Fixed:
 * Enhanced security and upgraded OpenSSL to 1.0.2u.
 
-## 2019-12-16 @ [v4.4.57220.1210](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.57220.1210)
+## 2019-12-16 @ v4.4.57220.1210
 
 ## Added:
 * Add new interfaces for SDK initialization with JWT token.
@@ -100,7 +134,7 @@ You do not need to secret base64 encoded your signature. Once the JWT token is g
 * Fixed an issue that the computer audio is not working while screen sharing.
 * Fixed an issue that the progress indicator stays at 0 when clicking 'Save' button for the first time.
 
-## 2019-11-04 @ [v4.4.56627.1029](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.56627.1029)
+## 2019-11-04 @ v4.4.56627.1029
 
 ## Added
 * Add a new interface for ‘back to meeting’
@@ -128,7 +162,7 @@ You do not need to secret base64 encoded your signature. Once the JWT token is g
 ## Changed & Fixed
 * Fixed an issue that the “Reclaim host” button displays unexpectedly
 
-## 2019-09-04 @ [v4.4.55968.0904](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.55968.0904)
+## 2019-09-04 @ v4.4.55968.0904
 
 ## Added
 *  Add a new callback to notify attendees when the host is requesting to enable the microphone
@@ -155,7 +189,7 @@ You do not need to secret base64 encoded your signature. Once the JWT token is g
 *  Optimized the callbacks to handle the scenario when changing the default camera in Settings
 * `- (void)onSelectedCameraChanged:(NSString*)deviceID` in ZoomSDKSettingVideoDelegate
 
-## 2019-07-15 @ [v4.4.55130.0712](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.4.55130.0712)
+## 2019-07-15 @ v4.4.55130.0712
 
 **Added**
 
@@ -245,7 +279,7 @@ You do not need to secret base64 encoded your signature. Once the JWT token is g
 * - (BOOL)isUseOriginalSoundOn in ZoomSDKSettingService.h
 
 
-## 2019-03-25 @ [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321)
+## 2019-03-25 @ v4.3.1.47193.0321
 
 **Added**
 
@@ -359,7 +393,7 @@ Deprecated
 * Class ZoomSDKUpgradeAccountHelper
 * Enum SDKReminderType
 
-## 2019-01-23 @ [v4.3.0.53914.0121](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.0.53914.0121)
+## 2019-01-23 @ v4.3.0.53914.0121
 
 **Added**
 *	A new refactorized demo project that provides clear instructions on how to implement major features.
@@ -385,7 +419,7 @@ Deprecated
 
 
 
-## 2018-10-29 @ [v4.1.34180.1026](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.34180.1026)
+## 2018-10-29 @ v4.1.34180.1026
 
 * Support schedule meeting feature
 * Support custom live stream strings
@@ -395,7 +429,7 @@ Deprecated
 * Support setting audio/video feature
 * Bug fixes
 
-## 2018-9-11 @ [v4.1.32152.0910](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.32152.0910)
+## 2018-9-11 @ v4.1.32152.0910
 
 * Support Direct share / Outlook plugin integration / Audio Share
 
@@ -409,7 +443,7 @@ Deprecated
 
 * Bugs fixed
 
-## 2018-8-24 @ [v4.1.30730.0824](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.30730.0824)
+## 2018-8-24 @ v4.1.30730.0824
 
 * This release has patch fixes for the last release v4.1.30458.0820.
 * Critical bug fixed - A user can’t select share source by mouse after click share button on main toolbar (with Zoom meeting UI)
@@ -425,7 +459,7 @@ default shows the origin zoom invite window, if you don't want the original acti
 @property(nonatomic, assign)BOOL disableFreeUserOriginAction;
 set YES before start meeting if u don't want popup zoom free user UI and you will receive above callback.
 
-## 2018-8-20 @ [v4.1.30458.0820](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.30458.0820)
+## 2018-8-20 @ v4.1.30458.0820
 
 * Custom Meeting UI (support basic meeting function, except for Webinar and Breakout Session)
 
@@ -438,7 +472,7 @@ set YES before start meeting if u don't want popup zoom free user UI and you wil
 
 * Bug fixes
 
-## 2018-07-26 @ [v4.1.28807.0726](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.28807.0726)
+## 2018-07-26 @ v4.1.28807.0726
 
 The start meeting logic for API users has changed. Please read below before upgrading to this version.
 
@@ -480,7 +514,7 @@ Login Start Meeting: [meetingService startMeeting...]
 
 5. some bugs fix
 
-## 2018-05-29 @ [v4.1.25472.0529](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.25472.0529)
+## 2018-05-29 @ v4.1.25472.0529
 
 ### Added
 
@@ -520,7 +554,7 @@ add new interface for statistic setting
 
 Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
-## 2017-11-02 @ [v4.1.12430.1102](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.1.12430.1102)
+## 2017-11-02 @ v4.1.12430.1102
 
 ### Added
 
@@ -544,7 +578,7 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
 10. bug fix
 
-## 2017-06-19 @ [v4.0.22051.0122](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.0.22051.0122)
+## 2017-06-19 @ v4.0.22051.0122
 
 ### Added
 
@@ -609,7 +643,7 @@ Please refer to Interface_change_4.1.25472.0529.docx for more details.
 
 11. Bugs fix.
 
-## 2017-01-23 @ [v3.6.11922.1111](https://github.com/zoom/zoom-sdk-macos/releases/tag/v3.6.11922.1111)
+## 2017-01-23 @ v3.6.11922.1111
 
 ### Added
 
