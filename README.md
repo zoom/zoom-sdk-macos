@@ -3,12 +3,13 @@
 <img src="https://s3.amazonaws.com/user-content.stoplight.io/8987/1541013063688" width="400px" max-height="400px" style="margin:auto;"/>
 </div>
 
+## :rotating_light: Announcement :rotating_light:
+The Client SDK hereby introduced the **AES 256-bit GCM encryption** as addressed in our [90-Day Security Plan](https://blog.zoom.us/wordpress/2020/04/22/zoom-hits-milestone-on-90-day-security-plan-releases-zoom-5-0/) to **our SDK version 4.6.21666.0427**. Please note that: This AES 256-bit GCM encryption is **backward INCOMPATIBLE, which means the older version of SDK will NOT be able to join a meeting with GCM encryption enabled,** and as mentioned in the [90-Day Security Plan](https://blog.zoom.us/wordpress/2020/04/22/zoom-hits-milestone-on-90-day-security-plan-releases-zoom-5-0/), **the system-wide account enablement of AES 256-bit GCM encryption will take place on May 30, 2020**. Please plan to upgrade your SDK accordingly, and we will soon take away the older version of SDK that are not compatible with GCM encryption. Thank you!
+
 ## Latest SDK Notifications
 1. When you are deploying your app with Zoom macos SDK, please don't forget to re-sign the frameworks in `ZoomSDK` and please don't re-sign the files in `Plugins`. 
 2. Due to the enhanced security requirements added in Mac OS 10.14, if you are planning to use Mac OS SDK in Mac OS 10.14 or above, please add **Camera** and **Microphone** privacy settings in your `.plist` file.
-
-3. **Variable Name Changes**: Since [v4.3.1.47193.0321](https://github.com/zoom/zoom-sdk-macos/releases/tag/v4.3.1.47193.0321), we have renamed the term "APP" to "SDK" in our demo to avoid confusion between the term "API" and "APP".
-4. **Unfortunately, our Mac OS SDK does not support Xcode 11 at this point. Please do not compile and build your application with Xcode 11. We are working on the Xcode 11 support and it is a priority for us. Pardon the inconvenience. Until then, please use Xcode 10 and here are the options for installing or using Xcode 10:**
+3. **Unfortunately, our Mac OS SDK does not support Xcode 11 at this point. Please do not compile and build your application with Xcode 11. We are working on the Xcode 11 support and it is a priority for us. Pardon the inconvenience. Until then, please use Xcode 10 and here are the options for installing or using Xcode 10:**
    * [Working with multiple versions of Xcode](https://medium.com/@hacknicity/working-with-multiple-versions-of-xcode-e331c01aa6bc).  Make sure to follow instructions carefully, before launching for the first time.
    * Use a [hosted service](https://support.macincloud.com/support/solutions/articles/8000042681-how-to-utilize-a-different-xcode-version-for-build-process-on-mac) supporting [many versions of Xcode](https://support.macincloud.com/support/solutions/articles/8000023177-versions-of-tools-and-applications-on-vsts-agent-plan-servers-).
 5. Please be aware that some of our interfaces are deprecated in the latest release, please check out our [CHANGELOG](https://github.com/zoom/zoom-sdk-macos/blob/master/CHANGELOG.md) for more detail
@@ -73,6 +74,25 @@ Once you have the files ready, please following the instructions to build and ru
 ## Documentation
 
 Please visit [[https://marketplace.zoom.us/docs/sdk/native-sdks/macos](https://marketplace.zoom.us/docs/sdk/native-sdks/macos)] for details of each features and functions.
+
+## Navigating SDK sample files
+
+The following table provides the link to the implementation of each features in our demo app:
+
+| UI mode            | Feature                                                      | Corresponding sample files                                   |
+| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Essential features | SDK Initialization & Authentication                          | * [ZMSDKInitHelper.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/Init/ZMSDKInitHelper.m) <br />* [ZMSDKAuthHelper.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/Auth/ZMSDKAuthHelper.m) |
+|                    | Authenticate with Zoom REST API and start a meeting as API user | * [ZMSDKRestAPILogin.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/Login/ZMSDKRestAPILogin.m) <br />* [ZMSDKApiMeetingInterface.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/StartJoinMeeting/ZMSDKApiMeetingInterface.m) |
+|                    | Login with email & password                                  | * [ZMSDKEmailLogin.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/Login/ZMSDKEmailLogin.m) <br />* [ZMSDKDelegateMgr.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/ZMSDKDelegateMgr.m) |
+|                    | Login with SSO token                                         | * [ZMSDKSSOLogin.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/Login/ZMSDKSSOLogin.m) <br />* [ZMSDKDelegateMgr.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/ZMSDKDelegateMgr.m) |
+|                    | Start an instant meeting(For Logged-in user)                 | * [ZMSDKEmailMeetingInterface.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/StartJoinMeeting/ZMSDKEmailMeetingInterface.m) <br />* [ZMSDKSSOMeetingInterface.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/StartJoinMeeting/ZMSDKSSOMeetingInterface.m) |
+|                    | Join a meeting                                               | * [ZMSDKJoinOnly.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/Login/ZMSDKJoinOnly.m) |
+|                    | Schedule a meeting (For logged-in user)                      | * [ZMSDKScheduleWindowCtr.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/UI%20Interface/ZoomSDKScheduleWindowCtr.m) |
+|                    | Settings                                                     | * [ZMSDKSettingWindowController.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/UI%20Interface/ZMSDKSettingWindowController.m) |
+| Custom UI          | Video view                                                   | * [ZMSDKMeetingMainWindowController.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/UI%20Interface/ZMSDKMeetingMainWindowController.m) |
+|                    | Thumbnail View                                               | * [ZMSDKThumbnailView.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/UI%20Interface/ZMSDKThumbnailView.m) <br />* [ZMSDKThumbnailVideoItemView.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/ZMSDKThumbnailVideoItemView.m) |
+|                    | Share View                                                   | * [ZMSDKShareSelectWindow.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/UI%20Interface/ZMSDKShareSelectWindow.m) |
+|                    | Panelist View                                                | * [ZMSDKHCPanelistsView.m](https://github.com/zoom/zoom-sdk-macos/blob/master/ZoomSDKSample/ZoomSDKSample/UI%20Interface/ZMSDKHCPanelistsView.m) |
 
 ## SDK Reference
 
