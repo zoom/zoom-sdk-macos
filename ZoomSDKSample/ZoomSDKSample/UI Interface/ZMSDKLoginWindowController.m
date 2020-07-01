@@ -17,10 +17,7 @@
 #import "ZMSDKCommonHelper.h"
 
 #define kZoomSDKDomain      @""
-#define kZoomSDKKey         @""
-#define kZoomSDKSecret      @""
-#define kZoomSDKAPIKey      @""
-#define kZoomSDKAPISecret   @""
+
 
 @interface ZMSDKLoginWindowController ()
 
@@ -125,25 +122,12 @@
     [self switchToAuthTab];
 }
 
-- (IBAction)onAuthWithJwtTokenClick:(id)sender {
-    
-    if (_chooseAuthJWTToken.state == NSOnState) {
-        [_sdkKeyTextField setPlaceholderString:@"JWT Token"];
-        [_sdkSecretTextField setHidden:YES];
-    }else{
-        [_sdkKeyTextField  setPlaceholderString:@"sdk key"];
-        [_sdkSecretTextField setHidden:NO];
-    }
-}
 
 - (IBAction)onAuthClicked:(id)sender
 {
-    //[_authHelper auth:kZoomSDKKey Secret:kZoomSDKSecret];
-    if (_chooseAuthJWTToken.state == NSOnState) {
+    if (_sdkKeyTextField.stringValue.length > 0) {
         
         [_authHelper newAuth:_sdkKeyTextField.stringValue];
-    }else{
-        [_authHelper auth:_sdkKeyTextField.stringValue Secret:_sdkSecretTextField.stringValue];
     }
 }
 - (IBAction)onEmailLoginClicked:(id)sender
@@ -186,27 +170,9 @@
     [self switchToLoginTab];
 }
 
-- (IBAction)onGetAccessToken:(id)sender
-{
-    _responseLabel.stringValue = @"Access Token:";
-    //_responseView.string =  [_restAPIHelper getAccessToken:kZoomSDKAPIKey Secret:kZoomSDKAPISecret ExpiredTime:@"1111111111111"];
-    [_restAPIHelper getAccessToken:_keyField.stringValue Secret:_secretField.stringValue ExpiredTime:_expiredTimeField.stringValue];
-}
-
-- (IBAction)onGetToken:(id)sender
-{
-    _responseLabel.stringValue = @"Token:";
-    _responseView.string = [_restAPIHelper getToken:_responseView.string UserID:_userIDField.stringValue];
-}
-
-- (IBAction)onGetZAK:(id)sender
-{
-    _responseLabel.stringValue = @"ZAK:";
-    _responseView.string = [_restAPIHelper getZAK:_responseView.string UserID:_userIDField.stringValue];
-}
 - (IBAction)onApiLogin:(id)sender
 {
-    [_restAPIHelper loginRestApiWithUserID:_userIDField.stringValue];
+    [_restAPIHelper loginRestApiWithUserID:_userIDField.stringValue zak:_zakString.stringValue];
 }
 
 - (void)switchToConnectingTab
@@ -240,7 +206,17 @@
 {
     _errorMessageTextField.stringValue = error;
 }
-
+- (void)removeEmailLoginTab
+{
+    NSTabViewItem* emailItem = nil;
+    for(NSTabViewItem* item in _loginTabView.tabViewItems)
+    {
+        if([item.identifier isEqualToString:@"email login"])
+            emailItem = item;
+    }
+    if(emailItem && [emailItem.identifier isEqualToString:@"email login"])
+        [_loginTabView removeTabViewItem:emailItem];
+}
 - (void)createMainWindow
 {
     if (self.mainWindowController)
@@ -258,10 +234,14 @@
 - (void)updateUIWithLoginStatus:(BOOL)hasLogin
 {
     [ZMSDKCommonHelper sharedInstance].hasLogin = hasLogin;
-    if (_emailRememerMeButton.state == NSOnState && [ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_Email)
+    BOOL isEmailLoginEnabled = NO;
+    if([[[ZoomSDK sharedSDK] getAuthService] isEmailLoginEnabled:&isEmailLoginEnabled] == ZoomSDKError_Success && isEmailLoginEnabled)
     {
-        [[NSUserDefaults standardUserDefaults] setBool:hasLogin forKey:kZMSDKLoginEmailRemember];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        if (_emailRememerMeButton.state == NSOnState && [ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_Email)
+        {
+            [[NSUserDefaults standardUserDefaults] setBool:hasLogin forKey:kZMSDKLoginEmailRemember];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
     }
     else if(_ssoRememerMeButton.state == NSOnState && [ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_SSO)
     {

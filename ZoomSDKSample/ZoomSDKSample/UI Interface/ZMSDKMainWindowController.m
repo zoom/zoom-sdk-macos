@@ -19,16 +19,14 @@
 @implementation ZMSDKAPIUserInfo: NSObject
 @synthesize userID = _userID;
 @synthesize zak = _zak;
-@synthesize userToken = _userToken;
 
-- (id)initWithUserID:(NSString*)userID zak:(NSString*)zak userToken:(NSString*)userToken
+- (id)initWithUserID:(NSString*)userID zak:(NSString*)zak
 {
     self = [super init];
     if(self)
     {
-        _userID = userID;
-        _zak = zak;
-        _userToken = userToken;
+        self.userID = userID;
+        self.zak = zak;
         return self;
     }
     return nil;
@@ -37,7 +35,6 @@
 {
     _userID = nil;
     _zak = nil;
-    _userToken = nil;
 }
 -(void)dealloc
 {
@@ -153,7 +150,7 @@
         [_startAudioMeetingButton setEnabled:YES];
         [_joinMeetingButton setEnabled:YES];
         [_settingButton setEnabled:YES];
-        if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_API)
+        if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_WithoutLogin)
             [_scheduleMeetingButton setEnabled:NO];
         else
             [_scheduleMeetingButton setEnabled:YES];
@@ -254,7 +251,7 @@
 
 - (void)updateScheduleButton
 {
-    if ([ZMSDKCommonHelper sharedInstance].hasLogin && [ZMSDKCommonHelper sharedInstance].loginType != ZMSDKLoginType_API) {
+    if ([ZMSDKCommonHelper sharedInstance].hasLogin && [ZMSDKCommonHelper sharedInstance].loginType != ZMSDKLoginType_WithoutLogin) {
         [_scheduleMeetingButton setEnabled:YES];
     } else {
         [_scheduleMeetingButton setEnabled:NO];
@@ -279,7 +276,7 @@
     {
         [_ssoMeetingInterface startVideoMeetingForSSOUser];
     }
-    if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_API && [ZMSDKCommonHelper sharedInstance].hasLogin)
+    if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_WithoutLogin && [ZMSDKCommonHelper sharedInstance].hasLogin)
     {
         [_apiMeetingInterface startVideoMeetingForApiUser];
     }
@@ -294,7 +291,7 @@
     {
         [_ssoMeetingInterface startAudioMeetingForSSOUser];
     }
-    if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_API && [ZMSDKCommonHelper sharedInstance].hasLogin)
+    if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_WithoutLogin && [ZMSDKCommonHelper sharedInstance].hasLogin)
     {
         [_apiMeetingInterface startAudioMeetingForApiUser];
     }
@@ -350,7 +347,7 @@
             [_startVideoMeetingButton setEnabled:NO];
             [_startAudioMeetingButton setEnabled:NO];
             [_joinMeetingButton setEnabled:NO];
-            if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_API || ![ZMSDKCommonHelper sharedInstance].hasLogin)
+            if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_WithoutLogin || ![ZMSDKCommonHelper sharedInstance].hasLogin)
                 [_scheduleMeetingButton setEnabled:NO];
             else
                 [_scheduleMeetingButton setEnabled:YES];
@@ -361,7 +358,7 @@
             [_startVideoMeetingButton setEnabled:NO];
             [_startAudioMeetingButton setEnabled:NO];
             [_joinMeetingButton setEnabled:NO];
-            if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_API || ![ZMSDKCommonHelper sharedInstance].hasLogin)
+            if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_WithoutLogin || ![ZMSDKCommonHelper sharedInstance].hasLogin)
                 [_scheduleMeetingButton setEnabled:NO];
             else
                 [_scheduleMeetingButton setEnabled:YES];
@@ -378,7 +375,7 @@
             {
                 [_startVideoMeetingButton setEnabled:YES];
                 [_startAudioMeetingButton setEnabled:YES];
-                if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_API)
+                if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_WithoutLogin)
                     [_scheduleMeetingButton setEnabled:NO];
                 else
                     [_scheduleMeetingButton setEnabled:YES];
@@ -398,8 +395,8 @@
     }
 }
 
-- (void)initApiUserInfoWithID:(NSString*)userID zak:(NSString*)zak userToken:(NSString*)userToken
+- (void)initApiUserInfoWithID:(NSString*)userID zak:(NSString*)zak
 {
-    _apiUserInfo = [[ZMSDKAPIUserInfo alloc] initWithUserID:userID zak:zak userToken:userToken];
+    _apiUserInfo = [[ZMSDKAPIUserInfo alloc] initWithUserID:userID zak:zak];
 }
 @end

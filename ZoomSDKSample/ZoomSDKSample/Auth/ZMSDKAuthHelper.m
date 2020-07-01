@@ -34,10 +34,6 @@
     [super dealloc];
 }
 
--(ZoomSDKError)auth:(NSString*)key Secret:(NSString*)secret
-{
-    return [[[ZoomSDK sharedSDK] getAuthService] sdkAuth:key appSecret:secret];
-}
 
 -(ZoomSDKError)newAuth:(NSString *)jwtToken
 {
@@ -58,14 +54,19 @@
 {
     if(ZoomSDKAuthError_Success == returnValue)
     {
+        BOOL isEmailLoginEnabled = NO;
+        if(([[[ZoomSDK sharedSDK] getAuthService] isEmailLoginEnabled:&isEmailLoginEnabled] == ZoomSDKError_Success) && !isEmailLoginEnabled)
+        {
+            [_loginController removeEmailLoginTab];
+        }
         if([[NSUserDefaults standardUserDefaults] boolForKey:kZMSDKLoginEmailRemember])
         {
-            [_loginController switchToConnectingTab];
+            [_loginController switchToLoginTab];
             [ZMSDKCommonHelper sharedInstance].loginType = ZMSDKLoginType_Email;
         }
         else if([[NSUserDefaults standardUserDefaults] boolForKey:kZMSDKLoginSSORemember])
         {
-            [_loginController switchToConnectingTab];
+            [_loginController switchToLoginTab];
              [ZMSDKCommonHelper sharedInstance].loginType = ZMSDKLoginType_SSO;
         }
         else

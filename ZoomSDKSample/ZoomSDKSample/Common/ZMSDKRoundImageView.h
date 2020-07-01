@@ -14,7 +14,6 @@
     NSImage*                                _image;
     int                                     _messageNumber;
     BOOL                                    _isRound;
-    id                                      _actionID;
     int                                     _radius;
     BOOL                                    _notCompressSize;
     float                                   _alpha;
@@ -23,7 +22,6 @@
 @property (nonatomic, readwrite, retain) NSImage* image;
 @property (nonatomic, readwrite, assign) int messageNumber;
 @property (nonatomic, readwrite, assign) BOOL isRound;
-@property (nonatomic, readwrite, assign) id actionID;
 @property (nonatomic, readwrite, assign) int radius;
 @property (assign) BOOL notCompressSize;
 @property (assign) float alpha;

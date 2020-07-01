@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -40,14 +40,13 @@
                 <outlet property="_stopTestSpeakerButton" destination="slb-Ol-Qax" id="JAY-Ad-bFY"/>
                 <outlet property="_touchUpAppearanceButton" destination="A8q-dg-Eq7" id="wdR-Ok-H5w"/>
                 <outlet property="_turnOffVideoButton" destination="R3n-3f-vUk" id="ENd-8Z-f4U"/>
-                <outlet property="_useOriginalSoundButton" destination="sqK-D1-XDa" id="R1y-Yh-4eF"/>
                 <outlet property="_videoView" destination="Dvq-a1-g47" id="43V-fR-eWE"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="Setting" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+        <window title="Setting" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="600" height="600"/>
@@ -56,7 +55,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <tabView misplaced="YES" id="vv0-3y-Csi">
+                    <tabView id="vv0-3y-Csi">
                         <rect key="frame" x="-7" y="-10" width="614" height="616"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
@@ -66,11 +65,11 @@
                                     <rect key="frame" x="10" y="33" width="594" height="570"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView misplaced="YES" id="CyZ-x5-Oy6">
+                                        <customView id="CyZ-x5-Oy6">
                                             <rect key="frame" x="10" y="10" width="580" height="580"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <subviews>
-                                                <button verticalHuggingPriority="750" misplaced="YES" id="ekh-ex-x4T">
+                                                <button verticalHuggingPriority="750" id="ekh-ex-x4T">
                                                     <rect key="frame" x="371" y="507" width="171" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Start Test Speaker" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LMa-lG-2g1">
@@ -81,7 +80,7 @@
                                                         <action selector="clickStartTestSpeakerButton:" target="-2" id="YAa-WS-4ng"/>
                                                     </connections>
                                                 </button>
-                                                <button verticalHuggingPriority="750" misplaced="YES" id="slb-Ol-Qax">
+                                                <button verticalHuggingPriority="750" id="slb-Ol-Qax">
                                                     <rect key="frame" x="372" y="481" width="170" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Stop Test Speaker" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yAG-Aq-HPA">
@@ -92,7 +91,7 @@
                                                         <action selector="clickStopTestSpeakerButton:" target="-2" id="kHo-xG-Mzq"/>
                                                     </connections>
                                                 </button>
-                                                <button verticalHuggingPriority="750" misplaced="YES" id="RQV-vF-jE0">
+                                                <button verticalHuggingPriority="750" id="RQV-vF-jE0">
                                                     <rect key="frame" x="370" y="362" width="172" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Start Record Mic" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tp8-wU-Nvs">
@@ -103,7 +102,7 @@
                                                         <action selector="clickStartRecordMicButton:" target="-2" id="RDh-8U-4lK"/>
                                                     </connections>
                                                 </button>
-                                                <button verticalHuggingPriority="750" misplaced="YES" id="A8o-T7-qSq">
+                                                <button verticalHuggingPriority="750" id="A8o-T7-qSq">
                                                     <rect key="frame" x="371" y="310" width="171" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Play Recored Mic" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J2Y-LC-O6u">
@@ -114,7 +113,7 @@
                                                         <action selector="clickPlayRecordedMicButton:" target="-2" id="1ma-lq-tEQ"/>
                                                     </connections>
                                                 </button>
-                                                <popUpButton verticalHuggingPriority="750" misplaced="YES" id="6Uv-8o-79U">
+                                                <popUpButton verticalHuggingPriority="750" id="6Uv-8o-79U">
                                                     <rect key="frame" x="115" y="510" width="220" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="PpE-d6-nd0" id="OFc-Uh-BPn">
@@ -132,7 +131,7 @@
                                                         <action selector="clickSpaekerListMenu:" target="-2" id="G0J-Pm-IyL"/>
                                                     </connections>
                                                 </popUpButton>
-                                                <button verticalHuggingPriority="750" misplaced="YES" id="lTB-iN-pLS">
+                                                <button verticalHuggingPriority="750" id="lTB-iN-pLS">
                                                     <rect key="frame" x="371" y="336" width="171" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Stop Record Mic" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="R16-nC-Ky6">
@@ -143,7 +142,7 @@
                                                         <action selector="clickStopRecordMicButton:" target="-2" id="SQd-nw-6Km"/>
                                                     </connections>
                                                 </button>
-                                                <popUpButton verticalHuggingPriority="750" misplaced="YES" id="26N-TM-73i">
+                                                <popUpButton verticalHuggingPriority="750" id="26N-TM-73i">
                                                     <rect key="frame" x="115" y="326" width="220" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="wo5-5s-b6s" id="p5c-OY-XRE">
@@ -161,7 +160,7 @@
                                                         <action selector="clickMicListMenu:" target="-2" id="Gog-a7-y84"/>
                                                     </connections>
                                                 </popUpButton>
-                                                <button verticalHuggingPriority="750" misplaced="YES" id="QI3-Px-SDX">
+                                                <button verticalHuggingPriority="750" id="QI3-Px-SDX">
                                                     <rect key="frame" x="371" y="284" width="171" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Stop Play Recorded Mic" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jDe-Id-xil">
@@ -172,7 +171,7 @@
                                                         <action selector="clickStopPlayRecordedMicButton:" target="-2" id="y2T-eL-GUJ"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="GlY-Dh-YkB">
+                                                <button id="GlY-Dh-YkB">
                                                     <rect key="frame" x="27" y="185" width="198" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="Join audio when join meeting" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="LGh-ed-qei">
@@ -183,7 +182,7 @@
                                                         <action selector="clickJoinAudioWhenJoinMeetingButton:" target="-2" id="Yrb-u2-Yqk"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="55I-Fo-hna">
+                                                <button id="55I-Fo-hna">
                                                     <rect key="frame" x="27" y="163" width="192" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="mute Mic when join meeting" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="TDC-5B-kLC">
@@ -194,8 +193,8 @@
                                                         <action selector="clickMuteMicWhenJoinMeetingButton:" target="-2" id="aCv-83-jlR"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="Qfe-yR-ExO">
-                                                    <rect key="frame" x="27" y="73" width="307" height="18"/>
+                                                <button id="Qfe-yR-ExO">
+                                                    <rect key="frame" x="27" y="94" width="307" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="press and hold SPACE key to teporarily unmute" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="mjk-oV-VnN">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -205,7 +204,7 @@
                                                         <action selector="clickEnableTemporarilyUnmuteButton:" target="-2" id="qD5-st-x4J"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="Rtq-Dz-Mz8">
+                                                <button id="Rtq-Dz-Mz8">
                                                     <rect key="frame" x="27" y="141" width="105" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="enable stereo" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="HnF-LJ-9cJ">
@@ -216,19 +215,8 @@
                                                         <action selector="clickEnableStereoButton:" target="-2" id="50w-jL-VvM"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="sqK-D1-XDa">
-                                                    <rect key="frame" x="27" y="119" width="211" height="18"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <buttonCell key="cell" type="check" title="using original sound in meeting" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="nBL-ON-WIh">
-                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                        <font key="font" metaFont="system"/>
-                                                    </buttonCell>
-                                                    <connections>
-                                                        <action selector="clickUseOriginalSoundButton:" target="-2" id="8Wt-uV-SXQ"/>
-                                                    </connections>
-                                                </button>
-                                                <button misplaced="YES" id="Zke-K0-Gqt">
-                                                    <rect key="frame" x="27" y="96" width="493" height="18"/>
+                                                <button id="Zke-K0-Gqt">
+                                                    <rect key="frame" x="27" y="117" width="493" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="do not prompt joining audio dialog when i join a meeting using 3rd party audio" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="YG7-xE-nEq">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -238,7 +226,7 @@
                                                         <action selector="clickDiablePromptJoinAudioDialogButton:" target="-2" id="0vd-cy-IzT"/>
                                                     </connections>
                                                 </button>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="Vh9-yf-wrQ">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Vh9-yf-wrQ">
                                                     <rect key="frame" x="28" y="516" width="58" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Speaker:" id="i5C-b2-tJb">
@@ -247,7 +235,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="WXQ-9l-Svo">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="WXQ-9l-Svo">
                                                     <rect key="frame" x="28" y="295" width="53" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume:" id="Aqc-9d-VFe">
@@ -256,7 +244,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="eXW-AY-man">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="eXW-AY-man">
                                                     <rect key="frame" x="28" y="449" width="40" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Level:" id="7gZ-ok-nIa">
@@ -265,7 +253,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="KuL-Bz-Qiv">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="KuL-Bz-Qiv">
                                                     <rect key="frame" x="28" y="481" width="53" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume:" id="HTT-n0-Va1">
@@ -274,7 +262,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <button misplaced="YES" id="Dg2-X1-Kxf">
+                                                <button id="Dg2-X1-Kxf">
                                                     <rect key="frame" x="374" y="261" width="170" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="Automatically adjust mic" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vht-jF-LUg">
@@ -285,12 +273,12 @@
                                                         <action selector="clickAutoAdjustMicButton:" target="-2" id="1JS-ux-q14"/>
                                                     </connections>
                                                 </button>
-                                                <levelIndicator verticalHuggingPriority="750" misplaced="YES" id="wTl-wm-j3X">
+                                                <levelIndicator verticalHuggingPriority="750" id="wTl-wm-j3X">
                                                     <rect key="frame" x="117" y="262" width="210" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <levelIndicatorCell key="cell" alignment="left" doubleValue="2" maxValue="10" warningValue="10" criticalValue="10" id="cX6-8m-3qA"/>
                                                 </levelIndicator>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="NlN-Ux-MlA">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="NlN-Ux-MlA">
                                                     <rect key="frame" x="28" y="262" width="40" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Level:" id="C3i-zp-7UP">
@@ -299,12 +287,12 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <levelIndicator verticalHuggingPriority="750" misplaced="YES" id="iZT-bt-tbT">
+                                                <levelIndicator verticalHuggingPriority="750" id="iZT-bt-tbT">
                                                     <rect key="frame" x="117" y="449" width="216" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <levelIndicatorCell key="cell" alignment="left" doubleValue="2" maxValue="10" warningValue="10" criticalValue="10" id="fkP-ue-0Pg"/>
                                                 </levelIndicator>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="lT6-sx-53u">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lT6-sx-53u">
                                                     <rect key="frame" x="23" y="332" width="88" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Microphpone:" id="BLW-kb-KNG">
@@ -313,7 +301,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <slider verticalHuggingPriority="750" misplaced="YES" id="aeW-hb-vWh">
+                                                <slider verticalHuggingPriority="750" id="aeW-hb-vWh">
                                                     <rect key="frame" x="115" y="479" width="219" height="19"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="tcD-Hi-3fc"/>
@@ -321,7 +309,7 @@
                                                         <action selector="clickSpeakerVolumeSliderButton:" target="-2" id="7k5-bg-fVY"/>
                                                     </connections>
                                                 </slider>
-                                                <slider verticalHuggingPriority="750" misplaced="YES" id="FkY-x2-qkI">
+                                                <slider verticalHuggingPriority="750" id="FkY-x2-qkI">
                                                     <rect key="frame" x="115" y="292" width="219" height="19"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="n8f-fS-xtb"/>
@@ -339,11 +327,11 @@
                                     <rect key="frame" x="10" y="33" width="594" height="570"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView misplaced="YES" id="Dvq-a1-g47">
+                                        <customView id="Dvq-a1-g47">
                                             <rect key="frame" x="10" y="10" width="580" height="580"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <subviews>
-                                                <popUpButton verticalHuggingPriority="750" misplaced="YES" id="zZS-1R-0K2">
+                                                <popUpButton verticalHuggingPriority="750" id="zZS-1R-0K2">
                                                     <rect key="frame" x="126" y="514" width="234" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="EyR-pi-vP1" id="HDa-he-yrY">
@@ -361,7 +349,7 @@
                                                         <action selector="clickCameraListMenu:" target="-2" id="cg6-QU-2cb"/>
                                                     </connections>
                                                 </popUpButton>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="60n-5Y-hBA">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="60n-5Y-hBA">
                                                     <rect key="frame" x="54" y="521" width="55" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Camera:" id="qTQ-Hf-1tS">
@@ -370,7 +358,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="5qF-Wh-NfS">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="5qF-Wh-NfS">
                                                     <rect key="frame" x="54" y="445" width="43" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Video:" id="S1w-M9-4GE">
@@ -379,7 +367,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="6Ib-I0-QkP">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="6Ib-I0-QkP">
                                                     <rect key="frame" x="54" y="363" width="64" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Meetings:" id="Oh0-Lf-gjE">
@@ -388,7 +376,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <button misplaced="YES" id="PxR-Uu-GwR">
+                                                <button id="PxR-Uu-GwR">
                                                     <rect key="frame" x="126" y="445" width="86" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="Enable HD" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Dp8-vo-Gvn">
@@ -399,7 +387,7 @@
                                                         <action selector="clickEnableHDButton:" target="-2" id="iFj-aG-hkO"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="VvW-Px-gew">
+                                                <button id="VvW-Px-gew">
                                                     <rect key="frame" x="126" y="423" width="143" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="Enable mirror effect" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="SXP-ta-uRA">
@@ -410,7 +398,7 @@
                                                         <action selector="clickEnableMirrorEffectButton:" target="-2" id="JXU-93-XhP"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="A8q-dg-Eq7">
+                                                <button id="A8q-dg-Eq7">
                                                     <rect key="frame" x="126" y="402" width="175" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="Touch up my appearance" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="DUg-SL-L6h">
@@ -421,7 +409,7 @@
                                                         <action selector="clickTouchUpAppearanceButton:" target="-2" id="RWg-lT-eUQ"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="Ue8-K9-bYs">
+                                                <button id="Ue8-K9-bYs">
                                                     <rect key="frame" x="126" y="363" width="233" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="diaplay participant name on videos" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="22o-gQ-N8J">
@@ -432,7 +420,7 @@
                                                         <action selector="clickDisplayParticipantNameButton:" target="-2" id="muj-6R-YJQ"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="R3n-3f-vUk">
+                                                <button id="R3n-3f-vUk">
                                                     <rect key="frame" x="126" y="341" width="218" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="turn off video when join meeting" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="O1B-Gq-dWd">
@@ -443,7 +431,7 @@
                                                         <action selector="clickTurnOffVideoButton:" target="-2" id="2yI-3w-3ol"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="gfA-g7-AvS">
+                                                <button id="gfA-g7-AvS">
                                                     <rect key="frame" x="126" y="318" width="144" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="hide non-video user" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="23F-je-eRU">
@@ -454,7 +442,7 @@
                                                         <action selector="clickHideNoVideoUserButton:" target="-2" id="d5j-pY-6gy"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="yvq-px-CWx">
+                                                <button id="yvq-px-CWx">
                                                     <rect key="frame" x="126" y="295" width="217" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="spotlight my video when I speak" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="P1s-Cg-IZw">
@@ -465,7 +453,7 @@
                                                         <action selector="clickSpotlightMyVideButton:" target="-2" id="rVW-ig-7DH"/>
                                                     </connections>
                                                 </button>
-                                                <button misplaced="YES" id="QP8-Yf-Lyy">
+                                                <button id="QP8-Yf-Lyy">
                                                     <rect key="frame" x="126" y="273" width="355" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="check" title="display up to 49 participants per screen in Gallery view" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="SqL-D3-RyV">
@@ -476,7 +464,7 @@
                                                         <action selector="clickDisplayUpTo49ParticPerScreenButton:" target="-2" id="XKu-XS-ME5"/>
                                                     </connections>
                                                 </button>
-                                                <matrix verticalHuggingPriority="750" misplaced="YES" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="U8K-gu-9Ql">
+                                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="U8K-gu-9Ql">
                                                     <rect key="frame" x="128" y="491" width="248" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

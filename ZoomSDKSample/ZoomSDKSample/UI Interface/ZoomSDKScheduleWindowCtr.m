@@ -83,7 +83,10 @@
     [_time setDateValue:startDate];
     
     NSString* meetingTopic = [_configOption getMeetingTopic];
-    [_topic setStringValue:meetingTopic];
+    if (meetingTopic != nil) {
+        [_topic setStringValue:meetingTopic];
+    }
+    
     BOOL isRecurring = [_dateOption isRecurringMeeting];
     [_recurring setState:isRecurring? NSOnState: NSOffState];
     
@@ -185,7 +188,11 @@
     BOOL muteOnEntry = [_configOption enableMuteOnEntry];
     [_muteOnEntry setState:muteOnEntry? NSOnState: NSOffState];
     BOOL pmi = [_configOption enableUsePMI];
-    [_usePMI setState:pmi? NSOnState: NSOffState];
+    if ([[[ZoomSDK sharedSDK] getPremeetingService] isDisabledPMI]) {
+        [_usePMI setHidden:YES];
+    }else{
+        [_usePMI setState:pmi? NSOnState: NSOffState];
+    }
     BOOL canShow = NO;
     BOOL isHostInChina = [_configOption enableHostInChina:&canShow];
     if(canShow)
@@ -262,7 +269,7 @@
         }
     }
     NSArray* scheduleUser = [_configOption getScheduleForUser:&canShow];
-    if(canShow)
+    if(canShow && _usePMI.state == NSOffState)
     {
         NSString* schedule4 = @"";
         [_schedule4Users setHidden:NO];

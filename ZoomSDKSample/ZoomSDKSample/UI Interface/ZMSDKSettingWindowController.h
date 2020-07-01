@@ -34,7 +34,6 @@
     IBOutlet NSButton*           _joinAudioWhenJoinMeetingButton;
     IBOutlet NSButton*           _muteMicWhenJoinMeetingButton;
     IBOutlet NSButton*           _enableStereoButton;
-    IBOutlet NSButton*           _useOriginalSoundButton;
     IBOutlet NSButton*           _diablePromptJoinAudioDialogButton;
     IBOutlet NSButton*           _enableTemporarilyUnmuteButton;
     
@@ -76,7 +75,6 @@
 -(IBAction)clickJoinAudioWhenJoinMeetingButton:(id)sender;
 -(IBAction)clickMuteMicWhenJoinMeetingButton:(id)sender;
 -(IBAction)clickEnableStereoButton:(id)sender;
--(IBAction)clickUseOriginalSoundButton:(id)sender;
 -(IBAction)clickDiablePromptJoinAudioDialogButton:(id)sender;
 -(IBAction)clickEnableTemporarilyUnmuteButton:(id)sender;
 -(IBAction)clickMiceVolumeSliderButton:(id)sender;

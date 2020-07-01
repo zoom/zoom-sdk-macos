@@ -30,9 +30,7 @@
     //auth
     IBOutlet NSImageView* _authLogoImageView;
     IBOutlet NSTextField* _sdkKeyTextField;
-    IBOutlet NSTextField* _sdkSecretTextField;
     IBOutlet NSButton* _authButton;
-    IBOutlet NSButton *_chooseAuthJWTToken;
     
     //loading
     IBOutlet NSProgressIndicator* _loadingProgressIndicator;
@@ -53,12 +51,8 @@
     IBOutlet NSButton* _emailRememerMeButton;
     IBOutlet NSButton* _emailLoginButton;
     //rest api login
-    IBOutlet NSTextField* _keyField;
-    IBOutlet NSTextField* _secretField;
-    IBOutlet NSTextField* _expiredTimeField;
+    IBOutlet NSTextField* _zakString;
     IBOutlet NSTextField* _userIDField;
-    IBOutlet NSTextField* _responseLabel;
-    IBOutlet NSTextView*  _responseView;
 
     //sso login
     IBOutlet NSImageView* ssoLoginLogoImageView;
@@ -95,9 +89,6 @@
 - (IBAction)onSSOLoginClicked:(id)sender;
 - (IBAction)onJoinOnlyClicked:(id)sender;
 - (IBAction)onErrorBackClicked:(id)sender;
-- (IBAction)onGetAccessToken:(id)sender;
-- (IBAction)onGetToken:(id)sender;
-- (IBAction)onGetZAK:(id)sender;
 - (IBAction)onApiLogin:(id)sender;
 - (void)showSelf;
 - (void)switchToConnectingTab;
@@ -106,6 +97,7 @@
 - (void)switchToAuthTab;
 - (void)switchToDomainTab;
 - (void)showErrorMessage:(NSString*)error;
+- (void)removeEmailLoginTab;
 
 - (void)createMainWindow;
 - (void)logOut;

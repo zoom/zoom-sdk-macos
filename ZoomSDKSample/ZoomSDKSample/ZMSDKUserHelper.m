@@ -87,10 +87,7 @@
 {
     [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] onUserVideoStatusChange:videoOn UserID:userID];
 }
-- (void)onActiveSpeakerChanged:(unsigned int)userID
-{
-    return;
-}
+
 - (void)onUserAudioStatusChange:(NSArray*)userAudioStatusArray
 {
     [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] onUserAudioStatusChange:userAudioStatusArray];

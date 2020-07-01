@@ -84,7 +84,7 @@
         {
             [_mainWindowController.ssoMeetingInterface joinMeetingForSSOUser:_meetingNumberTextField.stringValue displayName:_displayNameTextField.stringValue password:_meetingPswTextField.stringValue];
         }
-        else if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_API)
+        else if([ZMSDKCommonHelper sharedInstance].loginType == ZMSDKLoginType_WithoutLogin)
         {
             [_mainWindowController.apiMeetingInterface joinMeetingForApiUser:_meetingNumberTextField.stringValue displayName:_displayNameTextField.stringValue password:_meetingPswTextField.stringValue];
         }

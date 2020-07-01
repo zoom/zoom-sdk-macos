@@ -108,7 +108,8 @@
     if(self.superview)
         theRect = [self.superview convertRect:theRect toView:nil];
     if(self.window)
-        theRect.origin = [self.window convertBaseToScreen:theRect.origin];
+        theRect.origin = [self.window convertRectToScreen:theRect].origin;
+    
     
     float yPos = theRect.origin.y-30;
     NSScreen* theScreen = self.window.screen;

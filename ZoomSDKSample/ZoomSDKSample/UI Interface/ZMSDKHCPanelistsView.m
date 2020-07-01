@@ -125,7 +125,24 @@ static CGFloat const Panelist_Row_Height = 40.0f;
 {
     return;
 }
-
+- (void)initUserListArray
+{
+    NSArray* userList = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getParticipantsList];
+    if(!_panelistUserArray)
+        return;
+    if(_panelistUserArray.count > 0)
+    {
+        [_panelistUserArray removeAllObjects];
+    }
+    if(userList && userList.count > 0)
+    {
+        for(NSNumber* userID in userList)
+        {
+            [_panelistUserArray addObject:userID];
+        }
+        [_panelistTableView reloadData];
+    }
+}
 - (void)onUserJoin:(unsigned int)userID
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF == %@", [NSNumber numberWithUnsignedInt:userID]];
@@ -151,7 +168,7 @@ static CGFloat const Panelist_Row_Height = 40.0f;
 
 - (void)resetInfo
 {
-    if(_panelistUserArray)
+    if(_panelistUserArray && _panelistUserArray.count > 0)
     {
         [_panelistUserArray removeAllObjects];
         [_panelistTableView reloadData];

@@ -313,7 +313,42 @@
         [self relayoutThumbnailVideoUI];
     }
 }
-
+- (void)initThumbnialUserListArray
+{
+    NSArray* userList = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getParticipantsList];
+    if(!_thumbnailVideoArray)
+    {
+        _thumbnailVideoArray = [[NSMutableArray alloc] init];
+    }
+    if(_thumbnailVideoArray.count > 0)
+    {
+        [_thumbnailVideoArray removeAllObjects];
+    }
+    if(!_displayVideoArray)
+    {
+        _displayVideoArray = [[NSMutableArray alloc] init];
+    }
+    if(_displayVideoArray.count > 0)
+    {
+        [_displayVideoArray removeAllObjects];
+    }
+    
+    if(userList && userList.count > 0)
+    {
+        for(NSNumber* userID in userList)
+        {
+            ZMSDKThumbnailVideoItemView* thumbnailVideoView= [[ZMSDKThumbnailVideoItemView alloc] initWithFrame:NSMakeRect(0, 0, self.frame.size.width, 200) userID:userID.unsignedIntValue];
+            [_thumbnailVideoArray addObject:thumbnailVideoView];
+            
+            if(_displayVideoArray.count < 3)
+            {
+                ZMSDKThumbnailVideoItemView* thumbnailDisplayVideoView= [[ZMSDKThumbnailVideoItemView alloc] initWithFrame:NSMakeRect(0, 0, self.frame.size.width, 200) userID:userID.unsignedIntValue];
+                [_displayVideoArray addObject:thumbnailDisplayVideoView];
+            }
+        }
+        [self relayoutThumbnailVideoUI];
+    }
+}
 - (void)resetInfo
 {
     if(_thumbnailVideoArray)

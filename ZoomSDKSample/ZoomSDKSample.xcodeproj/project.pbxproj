@@ -95,6 +95,10 @@
 		5D8F8EC4222402330020F8E6 /* timezones.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5D8F8EC2222402330020F8E6 /* timezones.txt */; };
 		5D8F8ECE222402C80020F8E6 /* SDK_Transcode.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 5D38E0A0221BF5C500957333 /* SDK_Transcode.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5D8F8ECF222402D50020F8E6 /* ZoomSDKVideoUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 5D38E0A1221BF5C500957333 /* ZoomSDKVideoUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8497312E24728B8A00380580 /* CptHost.app in Resources */ = {isa = PBXBuildFile; fileRef = 8497312C24728B8A00380580 /* CptHost.app */; };
+		8497312F24728B8A00380580 /* mphost.app in Resources */ = {isa = PBXBuildFile; fileRef = 8497312D24728B8A00380580 /* mphost.app */; };
+		8497313224728BB400380580 /* CptHost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 8497312C24728B8A00380580 /* CptHost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8497313324728BB400380580 /* mphost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 8497312D24728B8A00380580 /* mphost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		970CBE321E36F25000B1D255 /* airhost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 970CBE301E36F24200B1D255 /* airhost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		971725FA1D3F618A00D5C72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 971725F91D3F618A00D5C72D /* main.m */; };
 		972215FB1DD06C5100C74CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971725FB1D3F618A00D5C72D /* Assets.xcassets */; };
@@ -138,6 +142,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8497313224728BB400380580 /* CptHost.app in Copy Files */,
+				8497313324728BB400380580 /* mphost.app in Copy Files */,
 				5D76FA542238D56700870DD9 /* aomagent.bundle in Copy Files */,
 				5D76FA552238D56700870DD9 /* aomhost.app in Copy Files */,
 				5D8F8ECF222402D50020F8E6 /* ZoomSDKVideoUI.framework in Copy Files */,
@@ -314,6 +320,8 @@
 		5D8F8ECB222402540020F8E6 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text; name = "pt-PT"; path = "SDK Resources/pt-PT.lproj/timezones.txt"; sourceTree = "<group>"; };
 		5D8F8ECC222402580020F8E6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru; path = "SDK Resources/ru.lproj/timezones.txt"; sourceTree = "<group>"; };
 		5D8F8ECD2224025B0020F8E6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text; name = es; path = "SDK Resources/es.lproj/timezones.txt"; sourceTree = "<group>"; };
+		8497312C24728B8A00380580 /* CptHost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = CptHost.app; path = ZoomSDK/CptHost.app; sourceTree = "<group>"; };
+		8497312D24728B8A00380580 /* mphost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = mphost.app; path = ZoomSDK/mphost.app; sourceTree = "<group>"; };
 		970CBE301E36F24200B1D255 /* airhost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = airhost.app; path = ZoomSDK/airhost.app; sourceTree = "<group>"; };
 		971725F21D3F618A00D5C72D /* ZoomSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971725F91D3F618A00D5C72D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -710,6 +718,8 @@
 		971C0DDA1D40964C0083AD9B /* Framworks */ = {
 			isa = PBXGroup;
 			children = (
+				8497312C24728B8A00380580 /* CptHost.app */,
+				8497312D24728B8A00380580 /* mphost.app */,
 				5D76FA512238D56600870DD9 /* aomagent.bundle */,
 				5D76FA532238D56700870DD9 /* aomhost.app */,
 				5D38E0A0221BF5C500957333 /* SDK_Transcode.app */,
@@ -786,6 +796,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -847,6 +858,7 @@
 				5D38E02B221BEDBD00957333 /* btn_presentshare_normal.png in Resources */,
 				5D38E027221BEDBD00957333 /* toolbar_share_press.png in Resources */,
 				5D38E00D221BEDBD00957333 /* plistArrowTop.png in Resources */,
+				8497312F24728B8A00380580 /* mphost.app in Resources */,
 				5D38E030221BEDBD00957333 /* toolbar_unmute_tele_press.png in Resources */,
 				5D38DFDA221BEC9C00957333 /* ZMSDKMeetingMainWindowController.xib in Resources */,
 				5D38E00C221BEDBD00957333 /* toolbar_unmute_voip_normal.png in Resources */,
@@ -857,6 +869,7 @@
 				972215FC1DD06C5100C74CE6 /* MainMenu.xib in Resources */,
 				5D38E06A221BEFE400957333 /* ZMSDKShareSelectWindow.xib in Resources */,
 				5D38E071221BF04700957333 /* ZMSDKSettingWindowController.xib in Resources */,
+				8497312E24728B8A00380580 /* CptHost.app in Resources */,
 				5D38E00F221BEDBD00957333 /* btn_startshare_normal@2x.png in Resources */,
 				5D38E02A221BEDBD00957333 /* btn_startshare_normal.png in Resources */,
 				5D38E010221BEDBD00957333 /* toolbar_share_stop.png in Resources */,
@@ -1005,7 +1018,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -1044,7 +1057,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/Bin/Mac/";
@@ -1069,7 +1082,7 @@
 				INFOPLIST_FILE = ZoomSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ZoomSDK";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = zoom.us.ZoomSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1095,7 +1108,7 @@
 				INFOPLIST_FILE = ZoomSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ZoomSDK";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = zoom.us.ZoomSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;

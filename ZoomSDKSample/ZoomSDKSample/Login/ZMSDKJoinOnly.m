@@ -36,7 +36,22 @@
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     [_loginWindowController createMainWindow];
     [_loginWindowController.mainWindowController.window close];
-    ZoomSDKError ret = [meetingService joinMeeting:ZoomSDKUserType_APIUser toke4enfrocelogin:nil webinarToken:nil participantId:nil meetingNumber:meetingNumber displayName:userName password:pwd isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
+    
+    ZoomSDKJoinMeetingElements *joinParams = [[[ZoomSDKJoinMeetingElements alloc] init] autorelease];
+    joinParams.userType = ZoomSDKUserType_WithoutLogin;
+    joinParams.webinarToken = nil;
+    joinParams.participantId = nil;
+    joinParams.meetingNumber = meetingNumber.longLongValue;
+    joinParams.displayName = userName;
+    joinParams.password = pwd;
+    joinParams.isDirectShare = NO;
+    joinParams.displayID = 0;
+    joinParams.isNoVideo = NO;
+    joinParams.isNoAuido = NO;
+    joinParams.vanityID = nil;
+    joinParams.zak = nil;
+
+    ZoomSDKError ret = [meetingService joinMeeting:joinParams];
     return ret;
 }
 

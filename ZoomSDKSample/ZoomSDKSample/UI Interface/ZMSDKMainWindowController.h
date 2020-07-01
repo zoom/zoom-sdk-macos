@@ -43,11 +43,9 @@ enum {
 {
     NSString*   _userID;
     NSString*   _zak;
-    NSString*   _userToken;
 }
-@property (nonatomic, retain, readwrite) NSString*    userID;
-@property (nonatomic, retain, readwrite) NSString*    zak;
-@property (nonatomic, retain, readwrite) NSString*    userToken;
+@property (nonatomic, copy, readwrite) NSString*    userID;
+@property (nonatomic, copy, readwrite) NSString*    zak;
 
 @end
 
@@ -93,5 +91,5 @@ enum {
 - (void)cleanUp;
 - (void)updateUI;
 - (void)updateMainWindowUIWithMeetingStatus:(ZoomSDKMeetingStatus)status;
-- (void)initApiUserInfoWithID:(NSString*)userID zak:(NSString*)zak userToken:(NSString*)userToken;
+- (void)initApiUserInfoWithID:(NSString*)userID zak:(NSString*)zak;
 @end

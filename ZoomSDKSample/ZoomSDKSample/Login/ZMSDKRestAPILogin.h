@@ -14,8 +14,5 @@
 }
 @property(nonatomic, assign, readwrite)ZMSDKLoginWindowController* loginWindowCtrl;
 -(id)initWithWindowController:(ZMSDKLoginWindowController*)loginWindowController;
--(NSString*)getAccessToken:(NSString*)key Secret:(NSString*)secret ExpiredTime:(NSString*)expiredTime;
--(NSString*)getToken:(NSString*)accessToken UserID:(NSString*)userid;
--(NSString*)getZAK:(NSString*)accessToken UserID:(NSString*)userid;
--(void)loginRestApiWithUserID:(NSString*)userID;
+-(void)loginRestApiWithUserID:(NSString*)userID zak:(NSString*)zak;
 @end

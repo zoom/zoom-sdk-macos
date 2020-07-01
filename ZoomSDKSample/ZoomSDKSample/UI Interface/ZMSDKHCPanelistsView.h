@@ -13,7 +13,7 @@
     NSTableView*          _panelistTableView;
     NSMutableArray*       _panelistUserArray;//All user array
 }
-
+- (void)initUserListArray;
 - (void)onUserJoin:(unsigned int)userID;
 - (void)onUserleft:(unsigned int)userID;
 - (void)resetInfo;

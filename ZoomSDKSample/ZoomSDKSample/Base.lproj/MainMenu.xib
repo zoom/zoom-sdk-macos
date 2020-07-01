@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -15,7 +15,6 @@
         <customObject id="Voe-Tx-rLC" customClass="SDKAppDelegate">
             <connections>
                 <outlet property="_logOutMenuItem" destination="xY6-Wk-SKm" id="sj7-dZ-QJV"/>
-                <outlet property="_settingMenuItem" destination="fax-qY-TMH" id="Rjz-ZT-Uxm"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -33,11 +32,7 @@
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                             <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
-                            <menuItem title="Setting" keyEquivalent="s" identifier="setting" id="fax-qY-TMH" userLabel="Setting">
-                                <connections>
-                                    <action selector="onShowCustomizedSetting:" target="Voe-Tx-rLC" id="SsL-ym-T83"/>
-                                </connections>
-                            </menuItem>
+                            <menuItem title="Setting" keyEquivalent="s" identifier="setting" id="fax-qY-TMH" userLabel="Setting"/>
                             <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                             <menuItem title="Services" id="NMo-om-nkz">
                                 <modifierMask key="keyEquivalentModifierMask"/>

@@ -13,7 +13,7 @@
 typedef enum{
     ZMSDKLoginType_None,
     ZMSDKLoginType_Email,
-    ZMSDKLoginType_API,
+    ZMSDKLoginType_WithoutLogin,
     ZMSDKLoginType_SSO,
 } ZMSDKLoginType;
 

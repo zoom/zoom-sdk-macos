@@ -39,6 +39,54 @@ HMACSHA256(
 ```
 You do not need to secret base64 encoded your signature. Once the JWT token is generated, please do not reveal it or publish it. **It is highly recommended to handle your SDK key and secret and generate JWT in a backend server to be consumed by your application. Do not generate JWT in a production application.**
 
+## 2020-06-30 @ v5.0.24433.0616
+
+## Added:
+* Upgraded Zoom default UI to match Zoom client 5.0.
+* Added a new interface to modify the 'meeting topic' in the 'meeting information' page.
+  * `- (ZoomSDKError)setMeetingTopicOnMeetingInfo:(NSString *)topic" on ZoomSDKMeetingActionController.h`
+* Added new options to hide the share button.
+  * Added new enumeration value `ToolBarShareButton`
+* Added new interfaces to pause/resume the recording.
+  * `-(ZoomSDKError)pauseCloudRecording;`
+  * `-(ZoomSDKError)resumeCloudRecording;`
+  * `-(ZoomSDKError)pauseLocalRecording;`
+  * `-(ZoomSDKError)resumeLocalRecording;`
+* Added a new callback for the event when the username has changed
+  * `-(void)onUserNameChanged:(unsigned int)userid  userName:(NSString *)userName;`
+* Added new interfaces related to setting 'Always show video preview when joining a video meeting' feature.
+  * `- (BOOL)showVideoPreviewWhenJoinMeeting;`
+  * `- (ZoomSDKError)isShowVideoPreviewWhenJoinMeeting:(BOOL)isShow;`
+* Added new interfaces to check whether the PMI option is enabled on the account.
+  * `- (BOOL)isDisabledPMI.`
+* Added new meeting fail reason
+  * `ZoomSDKMeetingError_RegisterWebinarDeniedEmail`
+* Added a new interface to get audio status and audio type
+  * `- (ZoomSDKAudioStatus)getAudioStatus;`
+  * `- (ZoomSDKAudioType)getAudioType;`
+* Added new interfaces for switching between float video view to other views.
+  * `- (ZoomSDKError)switchFloatVideoToMinimizeMode;`
+  * `- (ZoomSDKError)switchFloatVideoToWallMode;`
+
+## Changed & Fixed:
+
+* Updated the `ZoomAudioDevice.driver` and removed `ZoomAudioDevice.kext`
+* Redefine the start/join meeting interfaces
+  * `-(ZoomSDKError)startMeeting:(ZoomSDKStartMeetingElements *)context;`
+  * `-(ZoomSDKError)startMeetingWithZAK:(ZoomSDKStartMeetingUseZakElements *)context;`
+  * `-(ZoomSDKError)joinMeeting:(ZoomSDKJoinMeetingElements *)context;`
+* Fixed an issue that the share toolbar does not present for the remote controller.
+* Fixed an issue that the host/co-host cannot mute/unmute others.
+* Fixed an issue that the change user name interface does not work as expected.
+* Fixed an issue that the user ID returns in the audio status callback are incorrect.
+* Fixed an issue that the "remember me" option is not working
+* Temporary remove the "Unmute all" interfaces.
+
+## Deprecated
+* `- (BOOL)isAudioMuted`
+* `- (ZoomSDKError)minimizeShareFloatVideoWindow:(BOOL)bMin`
+* `- (ZoomSDKError)modifyWindowTitle:(BOOL)modify NewMeetingNum:(unsigned int)meetingnumber`
+
 ## 2020-04-27 @ v4.6.21666.0427
 
 ## Added:

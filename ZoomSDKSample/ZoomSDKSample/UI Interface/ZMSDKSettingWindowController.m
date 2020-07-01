@@ -88,8 +88,6 @@
     [_muteMicWhenJoinMeetingButton setState:[audioSetting isMuteMicWhenJoinMeetingOn]];
     [_enableStereoButton setHidden:![audioSetting isSupportStereo]];
     [_enableStereoButton setState:[audioSetting isEnableStereoOn]];
-    [_useOriginalSoundButton setHidden:![audioSetting isSupportUseOriginalSound]];
-    [_useOriginalSoundButton setState:[audioSetting isUseOriginalSoundOn]];
     [_diablePromptJoinAudioDialogButton setHidden:![audioSetting isSupportPromptJoinAudioDialogWhenUse3rdPartyAudio]];
     [_diablePromptJoinAudioDialogButton setState:[audioSetting isPromptJoinAudioDialogWhenUse3rdPartyAudioDiable]];
     [_enableTemporarilyUnmuteButton setState:[audioSetting isTemporarilyUnmuteOn]];
@@ -143,8 +141,6 @@
     [_muteMicWhenJoinMeetingButton setState:[audioSetting isMuteMicWhenJoinMeetingOn]];
     [_enableStereoButton setHidden:![audioSetting isSupportStereo]];
     [_enableStereoButton setState:[audioSetting isEnableStereoOn]];
-    [_useOriginalSoundButton setHidden:![audioSetting isSupportUseOriginalSound]];
-    [_useOriginalSoundButton setState:[audioSetting isUseOriginalSoundOn]];
     [_diablePromptJoinAudioDialogButton setHidden:![audioSetting isSupportPromptJoinAudioDialogWhenUse3rdPartyAudio]];
     [_diablePromptJoinAudioDialogButton setState:[audioSetting isPromptJoinAudioDialogWhenUse3rdPartyAudioDiable]];
     [_enableTemporarilyUnmuteButton setState:[audioSetting isTemporarilyUnmuteOn]];
@@ -401,11 +397,7 @@
     BOOL isOn = _enableStereoButton.state;
     [_audioSetting enableStero:isOn];
 }
--(IBAction)clickUseOriginalSoundButton:(id)sender
-{
-    BOOL isOn = _useOriginalSoundButton.state;
-    [_audioSetting enableUseOriginalSound:isOn];
-}
+
 -(IBAction)clickDiablePromptJoinAudioDialogButton:(id)sender
 {
     BOOL isOn = _diablePromptJoinAudioDialogButton.state;

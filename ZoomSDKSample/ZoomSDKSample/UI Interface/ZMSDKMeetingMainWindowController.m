@@ -404,6 +404,14 @@ const int DEFAULT_Thumbnail_View_Width = 320;
 
 -(void)updateInMeetingUI
 {
+    NSArray* userList = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getParticipantsList];
+    for (NSNumber* userID in userList)
+    {
+        ZoomSDKUserInfo* userInfo = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getUserByUserID:userID.unsignedIntValue];
+        if([userInfo isMySelf])
+            self.mySelfUserInfo = userInfo;
+    }
+    
     ZMSDKButton* theButton = [self.window.contentView viewWithTag:BUTTON_TAG_AUDIO];
     if(theButton)
        [theButton setHidden:NO];
@@ -425,6 +433,10 @@ const int DEFAULT_Thumbnail_View_Width = 320;
         _shareSelectWindowCtr = [[ZMSDKShareSelectWindow alloc] init];
         [_shareSelectWindowCtr setMeetingMainWindowController:self];
     }
+    [_panelistUserView initUserListArray];
+    [_thumbnailView initThumbnialUserListArray];
+    [self updateToolbarAudioButton];
+    [self updateToolbarVideoButton];
 }
 - (void)showSelf
 {
@@ -561,6 +573,63 @@ const int DEFAULT_Thumbnail_View_Width = 320;
             [self updateToolbarAudioButtonsWithAudioType:type audioStatus:status];
         }
         NSLog(@"userID %d status:%d type:%d", userID, status, type);
+    }
+}
+- (void)updateToolbarAudioButton
+{
+    if(self.mySelfUserInfo)
+    {
+        ZoomSDKAudioType audioType = [self.mySelfUserInfo getAudioType];
+        ZoomSDKAudioStatus audioStatus = [self.mySelfUserInfo getAudioStatus];
+        switch (audioStatus)
+        {
+            case ZoomSDKAudioStatus_Muted:
+            case ZoomSDKAudioStatus_MutedByHost:
+            case ZoomSDKAudioStatus_MutedAllByHost:
+            {
+                _audioStatus = Audio_Status_Muted;
+            }
+                break;
+            case ZoomSDKAudioStatus_UnMuted:
+            case ZoomSDKAudioStatus_UnMutedByHost:
+            case ZoomSDKAudioStatus_UnMutedAllByHost:
+            {
+                _audioStatus = Audio_Status_UnMuted;
+            }
+                break;
+            case ZoomSDKAudioStatus_None:
+            {
+                _audioStatus = Audio_Status_No;
+            }
+                break;
+            default:
+                break;
+        }
+        [self updateToolbarAudioButtonsWithAudioType:audioType audioStatus:audioStatus];
+        NSLog(@"my self audio status:%d type:%d", audioStatus, audioType);
+    }
+}
+- (void)updateToolbarVideoButton
+{
+    ZMSDKButton* theButton = [self.window.contentView viewWithTag:BUTTON_TAG_VIDEO];
+    if(theButton && !theButton.isHidden)
+    {
+        if(self.mySelfUserInfo)
+        {
+            BOOL isVideoOn = [self.mySelfUserInfo isVideoOn];
+            if(!isVideoOn)
+            {
+                theButton.title = @"Start Video";
+                theButton.image = [NSImage imageNamed:@"toolbar_start_video_normal"];
+                theButton.pressImage = [NSImage imageNamed:@"toolbar_start_video_press"];
+            }
+            else
+            {
+                theButton.title = @"Stop Video";
+                theButton.image = [NSImage imageNamed:@"toolbar_stop_video_normal"];
+                theButton.pressImage = [NSImage imageNamed:@"toolbar_stop_video_press"];
+            }
+        }
     }
 }
 - (void)onUserVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID

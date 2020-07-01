@@ -161,11 +161,6 @@
     
 }
 
-- (void)onPaymentReminder:(ZoomSDKUpgradeAccountHelper*)upgradeHelper
-{
-    
-}
-
 - (void)onFreeMeetingRemainTime:(unsigned int)seconds
 {
     

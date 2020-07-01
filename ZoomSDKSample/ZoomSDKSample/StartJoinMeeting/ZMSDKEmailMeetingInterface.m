@@ -33,7 +33,17 @@
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     if (meetingService)
     {
-        ZoomSDKError ret = [meetingService startMeeting:ZoomSDKUserType_ZoomUser userID:nil userToken:nil displayName:nil meetingNumber:0 isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
+        ZoomSDKStartMeetingElements *joinParams = [[[ZoomSDKStartMeetingElements alloc] init] autorelease];
+        joinParams.userType = ZoomSDKUserType_ZoomUser;
+        joinParams.userId = nil;
+        joinParams.displayName = nil;
+        joinParams.meetingNumber = 0;
+        joinParams.isDirectShare = NO;
+        joinParams.displayID = 0;
+        joinParams.isNoVideo = NO;
+        joinParams.isNoAuido = NO;
+        joinParams.vanityID = nil;
+        ZoomSDKError ret = [meetingService startMeeting:joinParams];
         return ret;
     }
     return ZoomSDKError_Failed;
@@ -43,7 +53,17 @@
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     if (meetingService)
     {
-        ZoomSDKError ret = [meetingService startMeeting:ZoomSDKUserType_ZoomUser userID:nil userToken:nil displayName:nil meetingNumber:0 isDirectShare:NO sharedApp:0 isVideoOff:YES isAuidoOff:NO vanityID:nil];
+        ZoomSDKStartMeetingElements *joinParams = [[[ZoomSDKStartMeetingElements alloc] init] autorelease];
+        joinParams.userType = ZoomSDKUserType_ZoomUser;
+        joinParams.userId = nil;
+        joinParams.displayName = nil;
+        joinParams.meetingNumber = 0;
+        joinParams.isDirectShare = NO;
+        joinParams.displayID = 0;
+        joinParams.isNoVideo = YES;
+        joinParams.isNoAuido = NO;
+        joinParams.vanityID = nil;
+        ZoomSDKError ret = [meetingService startMeeting:joinParams];
         return ret;
     }
     return ZoomSDKError_Failed;
@@ -53,7 +73,19 @@
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     if (meetingService && meetingNumber.length > 0)
     {
-        ZoomSDKError ret = [meetingService joinMeeting:ZoomSDKUserType_ZoomUser toke4enfrocelogin:nil webinarToken:nil participantId:@"" meetingNumber:meetingNumber displayName:name password:psw isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
+        ZoomSDKJoinMeetingElements *joinParams = [[[ZoomSDKJoinMeetingElements alloc] init] autorelease];
+        joinParams.userType = ZoomSDKUserType_ZoomUser;
+        joinParams.webinarToken = nil;
+        joinParams.participantId = nil;
+        joinParams.meetingNumber = meetingNumber.longLongValue;
+        joinParams.displayName = name;
+        joinParams.password = psw;
+        joinParams.isDirectShare = NO;
+        joinParams.displayID = 0;
+        joinParams.isNoVideo = NO;
+        joinParams.isNoAuido = NO;
+        joinParams.vanityID = nil;
+        ZoomSDKError ret = [meetingService joinMeeting:joinParams];
         return ret;
     }
     return ZoomSDKError_Failed;

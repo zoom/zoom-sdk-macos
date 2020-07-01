@@ -87,6 +87,7 @@ const int kZMSDKBaseViewThinFrameOffset = 0;
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self cleanup];
     [super dealloc];
 }
 

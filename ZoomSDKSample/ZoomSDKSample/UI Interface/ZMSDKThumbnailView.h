@@ -27,4 +27,5 @@
 - (void)onUserVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID;
 - (void)resetInfo;
 - (void)setMeetingMainWindowController:(ZMSDKMeetingMainWindowController*)meetingMainWindowController;
+- (void)initThumbnialUserListArray;
 @end

@@ -38,7 +38,18 @@
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     if (meetingService && _mainWindowController.apiUserInfo)
     {
-        ZoomSDKError ret = [meetingService startMeetingWithZAK:_mainWindowController.apiUserInfo.zak userType:SDKUserType_APIUser userID:_mainWindowController.apiUserInfo.userID userToken:_mainWindowController.apiUserInfo.userToken displayName:@"ee" meetingNumber:0 isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
+        ZoomSDKStartMeetingUseZakElements *params = [[[ZoomSDKStartMeetingUseZakElements alloc] init] autorelease];
+        params.zak = _mainWindowController.apiUserInfo.zak;
+        params.userType = ZoomSDKUserType_WithoutLogin;
+        params.userId = _mainWindowController.apiUserInfo.userID;
+        params.displayName = @"ee";
+        params.meetingNumber = 0;
+        params.isDirectShare = NO;
+        params.displayID = 0;
+        params.isNoVideo = NO;
+        params.isNoAuido = NO;
+        params.vanityID = nil;
+        ZoomSDKError ret = [meetingService startMeetingWithZAK:params];
         return ret;
     }
     return ZoomSDKError_Failed;
@@ -48,7 +59,18 @@
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     if (meetingService && _mainWindowController.apiUserInfo)
     {
-        ZoomSDKError ret = [meetingService startMeetingWithZAK:_mainWindowController.apiUserInfo.zak userType:SDKUserType_APIUser userID:_mainWindowController.apiUserInfo.userID userToken:_mainWindowController.apiUserInfo.userToken displayName:@"tt" meetingNumber:0 isDirectShare:NO sharedApp:0 isVideoOff:YES isAuidoOff:NO vanityID:nil];
+        ZoomSDKStartMeetingUseZakElements *params = [[[ZoomSDKStartMeetingUseZakElements alloc] init] autorelease];
+        params.zak = _mainWindowController.apiUserInfo.zak;
+        params.userType = ZoomSDKUserType_WithoutLogin;
+        params.userId = _mainWindowController.apiUserInfo.userID;
+        params.displayName = @"ee";
+        params.meetingNumber = 0;
+        params.isDirectShare = NO;
+        params.displayID = 0;
+        params.isNoVideo = YES;
+        params.isNoAuido = NO;
+        params.vanityID = nil;
+        ZoomSDKError ret = [meetingService startMeetingWithZAK:params];
         return ret;
     }
     return ZoomSDKError_Failed;
@@ -58,7 +80,19 @@
     ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
     if (meetingService && meetingNumber.length > 0)
     {
-        ZoomSDKError ret = [meetingService joinMeeting:ZoomSDKUserType_APIUser toke4enfrocelogin:nil webinarToken:nil participantId:nil meetingNumber:meetingNumber displayName:name password:psw isDirectShare:NO sharedApp:0 isVideoOff:NO isAuidoOff:NO vanityID:nil];
+        ZoomSDKJoinMeetingElements *joinParams = [[[ZoomSDKJoinMeetingElements alloc] init] autorelease];
+        joinParams.userType = ZoomSDKUserType_WithoutLogin;
+        joinParams.webinarToken = nil;
+        joinParams.participantId = nil;
+        joinParams.meetingNumber = meetingNumber.longLongValue;
+        joinParams.displayName = name;
+        joinParams.password = psw;
+        joinParams.isDirectShare = NO;
+        joinParams.displayID = 0;
+        joinParams.isNoVideo = NO;
+        joinParams.isNoAuido = NO;
+        joinParams.vanityID = nil;
+        ZoomSDKError ret = [meetingService joinMeeting:joinParams];
         return ret;
     }
     return ZoomSDKError_Failed;

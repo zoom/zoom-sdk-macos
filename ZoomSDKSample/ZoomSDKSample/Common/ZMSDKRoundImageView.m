@@ -15,7 +15,6 @@
 @synthesize image = _image;
 @synthesize messageNumber = _messageNumber;
 @synthesize isRound = _isRound;
-@synthesize actionID = _actionID;
 @synthesize radius = _radius;
 @synthesize notCompressSize = _notCompressSize;
 @synthesize alpha = _alpha;
@@ -122,7 +121,7 @@
 
 - (void)cleanup
 {
-    _actionID = nil;
+    
 }
 
 - (void)dealloc
@@ -141,9 +140,7 @@
 
 - (void)mouseDown:(NSEvent *)theEvent
 {
-    if (_actionID && [_actionID respondsToSelector:@selector(mouseClicked)])
-        [_actionID performSelector:@selector(mouseClicked)];
-    else if (self.superview)
+   if (self.superview)
         [self.superview mouseDown:theEvent];
 }
 
