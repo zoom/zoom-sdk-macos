@@ -32,7 +32,7 @@ var searchData=
   ['enablespecialdomainuserjoin_3a',['enableSpecialDomainUserJoin:',['../interface_i_meeting_config_option.html#a8955ba16fe2b31175d93f03d25603f78',1,'IMeetingConfigOption']]],
   ['enablestero_3a',['enableStero:',['../interface_zoom_s_d_k_audio_setting.html#a08e09a460a3e89410f3bf16dcf7ff015',1,'ZoomSDKAudioSetting']]],
   ['enabletoshowmeetingtime_3a',['enableToShowMeetingTime:',['../interface_zoom_s_d_k_general_setting.html#a067220e4708990b6bd296658509a8e93',1,'ZoomSDKGeneralSetting']]],
-  ['enableuseoriginalsound_3a',['enableUseOriginalSound:',['../interface_zoom_s_d_k_meeting_action_controller.html#afdbfb31f641fccf0b0e14df042494e96',1,'ZoomSDKMeetingActionController::enableUseOriginalSound:()'],['../interface_zoom_s_d_k_audio_setting.html#ac78d99ff4b1e00eded019df6ff0b03f3',1,'ZoomSDKAudioSetting::enableUseOriginalSound:()']]],
+  ['enableuseoriginalsound_3a',['enableUseOriginalSound:',['../interface_zoom_s_d_k_meeting_action_controller.html#afdbfb31f641fccf0b0e14df042494e96',1,'ZoomSDKMeetingActionController']]],
   ['enableusepmi',['enableUsePMI',['../interface_i_meeting_config_option.html#a040bf2dee3d21204bc1cc5570bbef7bd',1,'IMeetingConfigOption']]],
   ['enablewaitingroomonentry_3a',['enableWaitingRoomOnEntry:',['../interface_zoom_s_d_k_waiting_room_controller.html#a3e5594f62ff20516028ee84f770c529b',1,'ZoomSDKWaitingRoomController']]],
   ['enablewaitingrooms',['enableWaitingRooms',['../interface_i_meeting_config_option.html#a8f7466896cfc57907c21ebadd57fcab5',1,'IMeetingConfigOption']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['zak',['zak',['../interface_zoom_s_d_k_start_meeting_use_zak_elements.html#a3e262c4d103ec330498e18f311cab657',1,'ZoomSDKStartMeetingUseZakElements::zak()'],['../interface_zoom_s_d_k_join_meeting_elements.html#a8a93c24e7dfcdb764388b037a731b009',1,'ZoomSDKJoinMeetingElements::zak()']]],
   ['zoomsdk',['ZoomSDK',['../interface_zoom_s_d_k.html',1,'']]],
   ['zoomsdkaccountinfo',['ZoomSDKAccountInfo',['../interface_zoom_s_d_k_account_info.html',1,'']]],
   ['zoomsdkactivevideoelement',['ZoomSDKActiveVideoElement',['../interface_zoom_s_d_k_active_video_element.html',1,'']]],
@@ -39,6 +40,7 @@ var searchData=
   ['zoomsdkgeneralsetting',['ZoomSDKGeneralSetting',['../interface_zoom_s_d_k_general_setting.html',1,'']]],
   ['zoomsdkh323helper',['ZoomSDKH323Helper',['../interface_zoom_s_d_k_h323_helper.html',1,'']]],
   ['zoomsdkh323helperdelegate_20_2dp',['ZoomSDKH323HelperDelegate -p',['../protocol_zoom_s_d_k_h323_helper_delegate_01-p.html',1,'']]],
+  ['zoomsdkjoinmeetingelements',['ZoomSDKJoinMeetingElements',['../interface_zoom_s_d_k_join_meeting_elements.html',1,'']]],
   ['zoomsdkjoinmeetinghelper',['ZoomSDKJoinMeetingHelper',['../interface_zoom_s_d_k_join_meeting_helper.html',1,'']]],
   ['zoomsdklivestreamhelper',['ZoomSDKLiveStreamHelper',['../interface_zoom_s_d_k_live_stream_helper.html',1,'']]],
   ['zoomsdklivestreamhelperdelegate_20_2dp',['ZoomSDKLiveStreamHelperDelegate -p',['../protocol_zoom_s_d_k_live_stream_helper_delegate_01-p.html',1,'']]],
@@ -101,8 +103,9 @@ var searchData=
   ['zoomsdksharesource',['ZoomSDKShareSource',['../interface_zoom_s_d_k_share_source.html',1,'']]],
   ['zoomsdksplitscreeninfo',['ZoomSDKSplitScreenInfo',['../interface_zoom_s_d_k_split_screen_info.html',1,'']]],
   ['zoomsdksslverificationhelper',['ZoomSDKSSLVerificationHelper',['../interface_zoom_s_d_k_s_s_l_verification_helper.html',1,'']]],
+  ['zoomsdkstartmeetingelements',['ZoomSDKStartMeetingElements',['../interface_zoom_s_d_k_start_meeting_elements.html',1,'']]],
+  ['zoomsdkstartmeetingusezakelements',['ZoomSDKStartMeetingUseZakElements',['../interface_zoom_s_d_k_start_meeting_use_zak_elements.html',1,'']]],
   ['zoomsdkstatisticssetting',['ZoomSDKStatisticsSetting',['../interface_zoom_s_d_k_statistics_setting.html',1,'']]],
-  ['zoomsdkupgradeaccounthelper',['ZoomSDKUpgradeAccountHelper',['../interface_zoom_s_d_k_upgrade_account_helper.html',1,'']]],
   ['zoomsdkuseraudiostauts',['ZoomSDKUserAudioStauts',['../interface_zoom_s_d_k_user_audio_stauts.html',1,'']]],
   ['zoomsdkuserinfo',['ZoomSDKUserInfo',['../interface_zoom_s_d_k_user_info.html',1,'']]],
   ['zoomsdkverifysmsverificationcodecontroller',['ZoomSDKVerifySMSVerificationCodeController',['../interface_zoom_s_d_k_verify_s_m_s_verification_code_controller.html',1,'']]],

@@ -113,9 +113,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a39ee517f0a0d9217e3f385aac6a3362a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#a39ee517f0a0d9217e3f385aac6a3362a">onJoinMeetingResponse:</a></td></tr>
 <tr class="memdesc:a39ee517f0a0d9217e3f385aac6a3362a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback event of user joins meeting.  <a href="#a39ee517f0a0d9217e3f385aac6a3362a">More...</a><br /></td></tr>
 <tr class="separator:a39ee517f0a0d9217e3f385aac6a3362a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b404ec0f418f16cfd8e53c34f33a97"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#a71b404ec0f418f16cfd8e53c34f33a97">onActiveSpeakerChanged:</a></td></tr>
-<tr class="memdesc:a71b404ec0f418f16cfd8e53c34f33a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification of in-meeting active speaker changes.  <a href="#a71b404ec0f418f16cfd8e53c34f33a97">More...</a><br /></td></tr>
-<tr class="separator:a71b404ec0f418f16cfd8e53c34f33a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8f523f32916b3ca04bc767e53faf8b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#ada8f523f32916b3ca04bc767e53faf8b">onActiveSpeakerChanged:</a></td></tr>
+<tr class="memdesc:ada8f523f32916b3ca04bc767e53faf8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification of in-meeting active speaker changes.  <a href="#ada8f523f32916b3ca04bc767e53faf8b">More...</a><br /></td></tr>
+<tr class="separator:ada8f523f32916b3ca04bc767e53faf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a844a9e467af7b44323123a34038c4efd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#a844a9e467af7b44323123a34038c4efd">onMultiToSingleShareNeedConfirm:</a></td></tr>
 <tr class="memdesc:a844a9e467af7b44323123a34038c4efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify user to confirm or cancel to switch to single share from multi-share.  <a href="#a844a9e467af7b44323123a34038c4efd">More...</a><br /></td></tr>
 <tr class="separator:a844a9e467af7b44323123a34038c4efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,10 +132,13 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a80ce42f1290b31a5d517838bbab676f5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#a80ce42f1290b31a5d517838bbab676f5">onUserActiveAudioChanage:</a></td></tr>
 <tr class="memdesc:a80ce42f1290b31a5d517838bbab676f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification of in-meeting active speakers.  <a href="#a80ce42f1290b31a5d517838bbab676f5">More...</a><br /></td></tr>
 <tr class="separator:a80ce42f1290b31a5d517838bbab676f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5e8cd96d1c9287e2102875cb8aeaa9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#aef5e8cd96d1c9287e2102875cb8aeaa9">onUserNameChanged:userName:</a></td></tr>
+<tr class="memdesc:aef5e8cd96d1c9287e2102875cb8aeaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification of user name chanaged.  <a href="#aef5e8cd96d1c9287e2102875cb8aeaa9">More...</a><br /></td></tr>
+<tr class="separator:aef5e8cd96d1c9287e2102875cb8aeaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
-<a id="a71b404ec0f418f16cfd8e53c34f33a97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71b404ec0f418f16cfd8e53c34f33a97">&#9670;&nbsp;</a></span>onActiveSpeakerChanged:()</h2>
+<a id="ada8f523f32916b3ca04bc767e53faf8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8f523f32916b3ca04bc767e53faf8b">&#9670;&nbsp;</a></span>onActiveSpeakerChanged:()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,9 +146,19 @@ Instance Methods</h2></td></tr>
         <tr>
           <td class="memname">- (void ZoomSDKMeetingActionControllerDelegate) onActiveSpeakerChanged: </td>
           <td></td>
-          <td class="paramtype">(unsigned int)&#160;</td>
-          <td class="paramname"><em>userID</em></td>
+          <td class="paramtype">(4.)&#160;</td>
+          <td class="paramname"><em>1</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">(4.6)&#160;</td>
+          <td class="paramname"><em>NS_DEPRECATED_MAC</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,6 +170,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>This api is deprecated, you can use ‘- (void)<a class="el" href="protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#a80ce42f1290b31a5d517838bbab676f5" title="Notification of in-meeting active speakers. ">onUserActiveAudioChanage:</a>useridArray’ instead. </dd></dl>
 
 </div>
 </div>
@@ -541,6 +555,43 @@ Instance Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">array</td><td>Array of users leave meeting. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef5e8cd96d1c9287e2102875cb8aeaa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5e8cd96d1c9287e2102875cb8aeaa9">&#9670;&nbsp;</a></span>onUserNameChanged:userName:()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void ZoomSDKMeetingActionControllerDelegate) onUserNameChanged: </td>
+          <td></td>
+          <td class="paramtype">(unsigned int)&#160;</td>
+          <td class="paramname"><em>userid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">userName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>userName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notification of user name chanaged. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userid</td><td>The user's user ID. </td></tr>
+    <tr><td class="paramname">userName</td><td>The user screen name. </td></tr>
   </table>
   </dd>
 </dl>

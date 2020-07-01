@@ -114,6 +114,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a2f976874efa9e53b9a30736835537929"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_zoom_s_d_k_auth_service.html#a2f976874efa9e53b9a30736835537929">getSDKIdentity</a></td></tr>
 <tr class="memdesc:a2f976874efa9e53b9a30736835537929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SDK identity.  <a href="#a2f976874efa9e53b9a30736835537929">More...</a><br /></td></tr>
 <tr class="separator:a2f976874efa9e53b9a30736835537929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77552baf21b0c36786423fc1838dbb67"><td class="memItemLeft" align="right" valign="top">(ZoomSDKError)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_zoom_s_d_k_auth_service.html#a77552baf21b0c36786423fc1838dbb67">isEmailLoginEnabled:</a></td></tr>
+<tr class="memdesc:a77552baf21b0c36786423fc1838dbb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if email login mode is enabled.  <a href="#a77552baf21b0c36786423fc1838dbb67">More...</a><br /></td></tr>
+<tr class="separator:a77552baf21b0c36786423fc1838dbb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -191,6 +194,28 @@ id&lt; ZoomSDKAuthDelegate &gt;&#160;</td><td class="memItemRight" valign="botto
 
 <p>Determine if SDK is authorized. </p>
 <dl class="section return"><dt>Returns</dt><dd>YES means that it is authorized, otherwise failed. </dd></dl>
+
+</div>
+</div>
+<a id="a77552baf21b0c36786423fc1838dbb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77552baf21b0c36786423fc1838dbb67">&#9670;&nbsp;</a></span>isEmailLoginEnabled:()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (ZoomSDKError) isEmailLoginEnabled: </td>
+          <td></td>
+          <td class="paramtype">(BOOL *)&#160;</td>
+          <td class="paramname"><em>isEnabled</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if email login mode is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>If the function succeeds, otherwise not. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You should call this APIs after you have receive callback of auth success event. </dd></dl>
 
 </div>
 </div>

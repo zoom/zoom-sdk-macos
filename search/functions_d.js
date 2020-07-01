@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['onactivespeakerchanged_3a',['onActiveSpeakerChanged:',['../protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#a71b404ec0f418f16cfd8e53c34f33a97',1,'ZoomSDKMeetingActionControllerDelegate -p']]],
+  ['onactivespeakerchanged_3a',['onActiveSpeakerChanged:',['../protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#ada8f523f32916b3ca04bc767e53faf8b',1,'ZoomSDKMeetingActionControllerDelegate -p']]],
   ['onactivespeakervideouserchanged_3a',['onActiveSpeakerVideoUserChanged:',['../protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#ac3ab3ecdc7aa2c20eabebc4725fd04a4',1,'ZoomSDKMeetingActionControllerDelegate -p']]],
   ['onactivevideouserchanged_3a',['onActiveVideoUserChanged:',['../protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#a798283e23fe73b78dfc4054f726e9e90',1,'ZoomSDKMeetingActionControllerDelegate -p']]],
   ['onaddanswer_3aissuccess_3a',['onAddAnswer:isSuccess:',['../protocol_zoom_s_d_k_q_a_controller_delegate_01-p.html#a11dac16c47f98be6d207ec7f16a76db3',1,'ZoomSDKQAControllerDelegate -p']]],
@@ -84,7 +84,6 @@ var searchData=
   ['onoutlookpluginschedulemeetingrequest',['onOutlookPluginScheduleMeetingRequest',['../protocol_zoom_s_d_k_outlook_plugin_delegate_01-p.html#a51e7f9216d2b98995d276332fbd59ef4',1,'ZoomSDKOutlookPluginDelegate -p']]],
   ['onpaircoderesult_3ameetingnumber_3a',['onPairCodeResult:MeetingNumber:',['../protocol_zoom_s_d_k_h323_helper_delegate_01-p.html#a013478bec4df93dd571f526cd1b64b00',1,'ZoomSDKH323HelperDelegate -p']]],
   ['onparticipantbuttonclicked',['onParticipantButtonClicked',['../protocol_zoom_s_d_k_meeting_u_i_controller_delegate_01-p.html#a30dce7dba991e9753a83b9ce05eccb94',1,'ZoomSDKMeetingUIControllerDelegate -p']]],
-  ['onpaymentreminder_3a',['onPaymentReminder:',['../protocol_zoom_s_d_k_meeting_service_delegate_01-p.html#a8cf56ac4b35d5c76ed5debe0d2815bbc',1,'ZoomSDKMeetingServiceDelegate -p']]],
   ['onpromoteattendee2panelistresultnoti_3a',['onPromoteAttendee2PanelistResultNoti:',['../protocol_zoom_s_d_k_webinar_controller_delegate_01-p.html#a8fae95c37fbfa71756eae0f7fd9aa4b4',1,'ZoomSDKWebinarControllerDelegate -p']]],
   ['onproxysettingnotification_3a',['onProxySettingNotification:',['../protocol_zoom_s_d_k_network_sevice_delegate_01-p.html#acbe0b1d9bb1a167fc2e01784b6a3f631',1,'ZoomSDKNetworkSeviceDelegate -p']]],
   ['onqaconnectstatus_3a',['onQAConnectStatus:',['../protocol_zoom_s_d_k_q_a_controller_delegate_01-p.html#aabbe18e8233dc40668330b2bb1e5e85b',1,'ZoomSDKQAControllerDelegate -p']]],
@@ -148,6 +147,7 @@ var searchData=
   ['onuserleft_3a',['onUserLeft:',['../protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#ad3454bf01293fef3d2d9ee6cc85f3b81',1,'ZoomSDKMeetingActionControllerDelegate -p']]],
   ['onuserleftwaitingroom_3a',['onUserLeftWaitingRoom:',['../protocol_zoom_s_d_k_waiting_room_delegate_01-p.html#a15f72bcc1c86b756c87f87eebf545bcd',1,'ZoomSDKWaitingRoomDelegate -p']]],
   ['onuserlivingreply_3a',['onUserLivingReply:',['../protocol_zoom_s_d_k_q_a_controller_delegate_01-p.html#a89175e36958b9ca0d405773e8c1b25f5',1,'ZoomSDKQAControllerDelegate -p']]],
+  ['onusernamechanged_3ausername_3a',['onUserNameChanged:userName:',['../protocol_zoom_s_d_k_meeting_action_controller_delegate_01-p.html#aef5e8cd96d1c9287e2102875cb8aeaa9',1,'ZoomSDKMeetingActionControllerDelegate -p']]],
   ['onvbimagediddownloaded',['onVBImageDidDownloaded',['../protocol_zoom_s_d_k_virtual_background_setting_delegate_01-p.html#aafca51d2d00e96153f4f3dbc05765ac9',1,'ZoomSDKVirtualBackgroundSettingDelegate -p']]],
   ['onverifysmsverificationcoderesult_3a',['onVerifySMSVerificationCodeResult:',['../protocol_zoom_s_d_k_real_name_authentication_delegate_01-p.html#a6d8bdb7be585436c9efa81016507c195',1,'ZoomSDKRealNameAuthenticationDelegate -p']]],
   ['onvideocaptureoriginalsizeor16to9_3a',['onVideoCaptureOriginalSizeOr16To9:',['../interface_zoom_s_d_k_video_setting.html#af1cd3fb70b869de034479867ae13e52a',1,'ZoomSDKVideoSetting']]],

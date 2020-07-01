@@ -88,9 +88,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:ad14a9ea834da62cc172ab8d0bbb3755e"><td class="memItemLeft" align="right" valign="top"><a id="ad14a9ea834da62cc172ab8d0bbb3755e"></a>
 (ZoomSDKError)&#160;</td><td class="memItemRight" valign="bottom">- <b>hideSDKButtons:ButtonType:</b></td></tr>
 <tr class="separator:ad14a9ea834da62cc172ab8d0bbb3755e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae251580c5284c1ec7543e3aa0e87b88d"><td class="memItemLeft" align="right" valign="top">(ZoomSDKError)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_zoom_s_d_k_meeting_configuration.html#ae251580c5284c1ec7543e3aa0e87b88d">modifyWindowTitle:NewMeetingNum:</a></td></tr>
-<tr class="memdesc:ae251580c5284c1ec7543e3aa0e87b88d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the title of window in the meeting.  <a href="#ae251580c5284c1ec7543e3aa0e87b88d">More...</a><br /></td></tr>
-<tr class="separator:ae251580c5284c1ec7543e3aa0e87b88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18acdb50b4bfdd91fcc318ca3bcfaa8"><td class="memItemLeft" align="right" valign="top">(ZoomSDKError)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_zoom_s_d_k_meeting_configuration.html#aa18acdb50b4bfdd91fcc318ca3bcfaa8">modifyWindowTitle:NewMeetingNum:</a></td></tr>
+<tr class="memdesc:aa18acdb50b4bfdd91fcc318ca3bcfaa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the title of window in the meeting.  <a href="#aa18acdb50b4bfdd91fcc318ca3bcfaa8">More...</a><br /></td></tr>
+<tr class="separator:aa18acdb50b4bfdd91fcc318ca3bcfaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ba1d2164ae11e73182c74ecfd70139"><td class="memItemLeft" align="right" valign="top">(ZoomSDKError)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_zoom_s_d_k_meeting_configuration.html#ac0ba1d2164ae11e73182c74ecfd70139">modifyVideoDSCP:AudioDSCP:</a></td></tr>
 <tr class="memdesc:ac0ba1d2164ae11e73182c74ecfd70139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the DSCP of audio and video.  <a href="#ac0ba1d2164ae11e73182c74ecfd70139">More...</a><br /></td></tr>
 <tr class="separator:ac0ba1d2164ae11e73182c74ecfd70139"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +179,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_disableToolbarInvite
 <tr class="memitem:a1c445dc7c2b6929ed9d594c6c74f25e6"><td class="memItemLeft" align="right" valign="top"><a id="a1c445dc7c2b6929ed9d594c6c74f25e6"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_needPrefillWebinarJoinInfo</b></td></tr>
 <tr class="separator:a1c445dc7c2b6929ed9d594c6c74f25e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79f84cbbecd69fbb4e0ba0c8f673921"><td class="memItemLeft" align="right" valign="top"><a id="ab79f84cbbecd69fbb4e0ba0c8f673921"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_hideRegisterWebinarInfoWindow</b></td></tr>
+<tr class="separator:ab79f84cbbecd69fbb4e0ba0c8f673921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6617ea757b35e841d45106dcf4e44ad3"><td class="memItemLeft" align="right" valign="top"><a id="a6617ea757b35e841d45106dcf4e44ad3"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_hideLeaveMeetingWindow</b></td></tr>
 <tr class="separator:a6617ea757b35e841d45106dcf4e44ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +263,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_disableBreakoutRooms
 <tr class="memitem:a02b0a6fe406588fb5edea0224bb7f943"><td class="memItemLeft" align="right" valign="top"><a id="a02b0a6fe406588fb5edea0224bb7f943"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_hideMeetingInfoButtonOnVideo</b></td></tr>
 <tr class="separator:a02b0a6fe406588fb5edea0224bb7f943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7f8cd1924fcd102af8b451f6a31603"><td class="memItemLeft" align="right" valign="top"><a id="a7f7f8cd1924fcd102af8b451f6a31603"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_hideInvitButtonOnHCWindow</b></td></tr>
+<tr class="separator:a7f7f8cd1924fcd102af8b451f6a31603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -335,6 +341,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>disableToolbarInviteB
 <tr class="memitem:a715dea1ca0d22be82dbd13d01a7c61bb"><td class="memItemLeft" align="right" valign="top"><a id="a715dea1ca0d22be82dbd13d01a7c61bb"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>needPrefillWebinarJoinInfo</b></td></tr>
 <tr class="separator:a715dea1ca0d22be82dbd13d01a7c61bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125b02e62dfab1631fa8d83e6421eaaa"><td class="memItemLeft" align="right" valign="top"><a id="a125b02e62dfab1631fa8d83e6421eaaa"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>hideRegisterWebinarInfoWindow</b></td></tr>
+<tr class="separator:a125b02e62dfab1631fa8d83e6421eaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c88b076fc6ad4e570ea30f4c08bb417"><td class="memItemLeft" align="right" valign="top"><a id="a0c88b076fc6ad4e570ea30f4c08bb417"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>hideLeaveMeetingWindow</b></td></tr>
 <tr class="separator:a0c88b076fc6ad4e570ea30f4c08bb417"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,6 +425,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>disableBreakoutRoomsB
 <tr class="memitem:a12709f95769caf1c438ad502140f415b"><td class="memItemLeft" align="right" valign="top"><a id="a12709f95769caf1c438ad502140f415b"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>hideMeetingInfoButtonOnVideo</b></td></tr>
 <tr class="separator:a12709f95769caf1c438ad502140f415b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476df9f1416e69c79d511dc2fdf6cb85"><td class="memItemLeft" align="right" valign="top"><a id="a476df9f1416e69c79d511dc2fdf6cb85"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>hideInvitButtonOnHCWindow</b></td></tr>
+<tr class="separator:a476df9f1416e69c79d511dc2fdf6cb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
 <a id="ac0ba1d2164ae11e73182c74ecfd70139"></a>
@@ -456,8 +468,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>hideMeetingInfoButton
 
 </div>
 </div>
-<a id="ae251580c5284c1ec7543e3aa0e87b88d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae251580c5284c1ec7543e3aa0e87b88d">&#9670;&nbsp;</a></span>modifyWindowTitle:NewMeetingNum:()</h2>
+<a id="aa18acdb50b4bfdd91fcc318ca3bcfaa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18acdb50b4bfdd91fcc318ca3bcfaa8">&#9670;&nbsp;</a></span>modifyWindowTitle:NewMeetingNum:()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,8 +483,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>hideMeetingInfoButton
         <tr>
           <td class="paramkey">NewMeetingNum:</td>
           <td></td>
-          <td class="paramtype">(unsigned int)&#160;</td>
-          <td class="paramname"><em>meetingnumber</em>&#160;</td>
+          <td class="paramtype">(1.)&#160;</td>
+          <td class="paramname"><em>0</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(4.6)&#160;</td>
+          <td class="paramname"><em>NS_DEPRECATED_MAC</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

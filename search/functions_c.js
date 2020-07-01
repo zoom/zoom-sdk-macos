@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ns_5fdeprecated_5fmac',['NS_DEPRECATED_MAC',['../interface_zoom_s_d_k_audio_setting.html#af5a4729ad09bf08495c164799bd94283',1,'ZoomSDKAudioSetting::NS_DEPRECATED_MAC()'],['../interface_zoom_s_d_k_audio_setting.html#af5a4729ad09bf08495c164799bd94283',1,'ZoomSDKAudioSetting::NS_DEPRECATED_MAC()']]]
+  ['ns_5fdeprecated_5fmac',['NS_DEPRECATED_MAC',['../interface_zoom_s_d_k_user_info.html#aacff4b51e54e39d12190585b398dda0c',1,'ZoomSDKUserInfo']]]
 ];
