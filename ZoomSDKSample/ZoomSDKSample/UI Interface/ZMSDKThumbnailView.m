@@ -280,7 +280,7 @@
     }
     [self updateArrowButton];
 }
-- (void)onUserVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID
+- (void)onUserVideoStatusChange:(ZoomSDKVideoStatus)videoStatus UserID:(unsigned int)userID
 {
     BOOL hasExist = NO;
     for(ZMSDKThumbnailVideoItemView* thumbnailVideoView in _thumbnailVideoArray)

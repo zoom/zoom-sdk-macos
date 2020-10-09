@@ -21,11 +21,11 @@ static ZMSDKConfUIMgr* confUIMgr = nil;
     {
         if (!_meetingMainWindowController)
         {
-            self.meetingMainWindowController = [[ZMSDKMeetingMainWindowController alloc] init];
+            _meetingMainWindowController = [[ZMSDKMeetingMainWindowController alloc] init];
         }
         if (!_userHelper)
         {
-            self.userHelper = [[ZMSDKUserHelper alloc] initWithWindowController:_meetingMainWindowController];
+            _userHelper = [[ZMSDKUserHelper alloc] initWithWindowController:_meetingMainWindowController];
         }
     }
     return self;
@@ -77,7 +77,7 @@ static ZMSDKConfUIMgr* confUIMgr = nil;
 {
     if (!_meetingMainWindowController)
     {
-        self.meetingMainWindowController = [[ZMSDKMeetingMainWindowController alloc] init];
+        _meetingMainWindowController = [[ZMSDKMeetingMainWindowController alloc] init];
     }
     [_meetingMainWindowController.window makeKeyAndOrderFront:nil];
     [_meetingMainWindowController showWindow:nil];
@@ -87,7 +87,7 @@ static ZMSDKConfUIMgr* confUIMgr = nil;
 {
     if (!_userHelper)
     {
-        self.userHelper = [[ZMSDKUserHelper alloc] initWithWindowController:_meetingMainWindowController];
+        _userHelper = [[ZMSDKUserHelper alloc] initWithWindowController:_meetingMainWindowController];
     }
     return self.userHelper;
 }
@@ -100,13 +100,15 @@ static ZMSDKConfUIMgr* confUIMgr = nil;
     NSDictionary* sv = [NSDictionary dictionaryWithContentsOfFile:@"/System/Library/CoreServices/SystemVersion.plist"];
     NSString* versionString = [sv objectForKey:@"ProductVersion"];
     NSArray* array = [versionString componentsSeparatedByString:@"."];
+    if(!array)
+        return 0;
     if (array.count > 1)
     {
         versionString = [array objectAtIndex:1];
         int value = [versionString intValue];
         return value;
     }
-    
     return 0;
 }
+
 @end

@@ -38,7 +38,6 @@
 		5D38E016221BEDBD00957333 /* toolbar_mute_voip_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DFEE221BEDBB00957333 /* toolbar_mute_voip_press.png */; };
 		5D38E017221BEDBD00957333 /* btn_joinmeeting_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DFEF221BEDBB00957333 /* btn_joinmeeting_normal@2x.png */; };
 		5D38E018221BEDBD00957333 /* share_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DFF0221BEDBB00957333 /* share_camera.png */; };
-		5D38E019221BEDBD00957333 /* btn_presentshare_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DFF1221BEDBB00957333 /* btn_presentshare_normal@2x.png */; };
 		5D38E01A221BEDBD00957333 /* toolbar_mute_voip_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DFF2221BEDBB00957333 /* toolbar_mute_voip_normal.png */; };
 		5D38E01B221BEDBD00957333 /* btn_startvideo_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DFF3221BEDBB00957333 /* btn_startvideo_normal.png */; };
 		5D38E01C221BEDBD00957333 /* btn_unpresentshare_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DFF4221BEDBB00957333 /* btn_unpresentshare_normal@2x.png */; };
@@ -56,7 +55,7 @@
 		5D38E028221BEDBD00957333 /* ZoomLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E000221BEDBC00957333 /* ZoomLogo.png */; };
 		5D38E029221BEDBD00957333 /* btn_schedule_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E001221BEDBC00957333 /* btn_schedule_normal.png */; };
 		5D38E02A221BEDBD00957333 /* btn_startshare_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E002221BEDBC00957333 /* btn_startshare_normal.png */; };
-		5D38E02B221BEDBD00957333 /* btn_presentshare_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E003221BEDBC00957333 /* btn_presentshare_normal.png */; };
+		5D38E02B221BEDBD00957333 /* btn_leave_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E003221BEDBC00957333 /* btn_leave_normal.png */; };
 		5D38E02C221BEDBD00957333 /* toolbar_participant_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E004221BEDBC00957333 /* toolbar_participant_press.png */; };
 		5D38E02D221BEDBD00957333 /* share_audio.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E005221BEDBC00957333 /* share_audio.png */; };
 		5D38E02E221BEDBD00957333 /* toolbar_mute_tele_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E006221BEDBC00957333 /* toolbar_mute_tele_press.png */; };
@@ -89,30 +88,29 @@
 		5D38E07B221BF0A300957333 /* SDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D38E078221BF0A200957333 /* SDKAppDelegate.m */; };
 		5D38E07C221BF0A300957333 /* ZPLogo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E079221BF0A300957333 /* ZPLogo.icns */; };
 		5D38E085221BF1F100957333 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E087221BF1F100957333 /* Localizable.strings */; };
-		5D38E0A2221BF5C500957333 /* SDK_Transcode.app in Resources */ = {isa = PBXBuildFile; fileRef = 5D38E0A0221BF5C500957333 /* SDK_Transcode.app */; };
 		5D76FA542238D56700870DD9 /* aomagent.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 5D76FA512238D56600870DD9 /* aomagent.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D76FA552238D56700870DD9 /* aomhost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 5D76FA532238D56700870DD9 /* aomhost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5D8F8EC4222402330020F8E6 /* timezones.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5D8F8EC2222402330020F8E6 /* timezones.txt */; };
 		5D8F8ECE222402C80020F8E6 /* SDK_Transcode.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 5D38E0A0221BF5C500957333 /* SDK_Transcode.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5D8F8ECF222402D50020F8E6 /* ZoomSDKVideoUI.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 5D38E0A1221BF5C500957333 /* ZoomSDKVideoUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8497312E24728B8A00380580 /* CptHost.app in Resources */ = {isa = PBXBuildFile; fileRef = 8497312C24728B8A00380580 /* CptHost.app */; };
-		8497312F24728B8A00380580 /* mphost.app in Resources */ = {isa = PBXBuildFile; fileRef = 8497312D24728B8A00380580 /* mphost.app */; };
+		846C9F4A24F604490072E520 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 846C9F4724F604480072E520 /* libcrypto.dylib */; };
+		846C9F4B24F604490072E520 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 846C9F4824F604480072E520 /* libssl.dylib */; };
+		846C9F5124F604810072E520 /* libcrypto.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 846C9F4724F604480072E520 /* libcrypto.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		846C9F5224F604810072E520 /* libssl.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 846C9F4824F604480072E520 /* libssl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		846C9F5424F6048F0072E520 /* viperex.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 846C9F4D24F6045C0072E520 /* viperex.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		846C9F5524F6048F0072E520 /* capHost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 846C9F4924F604490072E520 /* capHost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8497313224728BB400380580 /* CptHost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 8497312C24728B8A00380580 /* CptHost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8497313324728BB400380580 /* mphost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 8497312D24728B8A00380580 /* mphost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		970CBE321E36F25000B1D255 /* airhost.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 970CBE301E36F24200B1D255 /* airhost.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		971725FA1D3F618A00D5C72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 971725F91D3F618A00D5C72D /* main.m */; };
 		972215FB1DD06C5100C74CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971725FB1D3F618A00D5C72D /* Assets.xcassets */; };
 		972215FC1DD06C5100C74CE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971725FD1D3F618A00D5C72D /* MainMenu.xib */; };
-		9729ED131DD5AF7200DB188D /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9729ECF81DD5AF7200DB188D /* libcrypto.1.0.0.dylib */; };
-		9729ED141DD5AF7200DB188D /* libssl.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9729ECF91DD5AF7200DB188D /* libssl.1.0.0.dylib */; };
 		9729ED241DD5AF7200DB188D /* ZoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9729ED091DD5AF7200DB188D /* ZoomSDK.framework */; };
 		9729EDF61DD5B9A900DB188D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9717274E1D3F702800D5C72D /* Cocoa.framework */; };
 		9729EDF71DD5B9C600DB188D /* annoter.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECF31DD5AF7100DB188D /* annoter.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EDF81DD5B9C600DB188D /* asproxy.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECF41DD5AF7100DB188D /* asproxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EDF91DD5B9C600DB188D /* cmmlib.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECF51DD5AF7100DB188D /* cmmlib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EDFB1DD5B9C600DB188D /* faac.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECF71DD5AF7100DB188D /* faac.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9729EDFC1DD5B9C600DB188D /* libcrypto.1.0.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECF81DD5AF7200DB188D /* libcrypto.1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9729EDFD1DD5B9C600DB188D /* libssl.1.0.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECF91DD5AF7200DB188D /* libssl.1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		9729EDFE1DD5B9C600DB188D /* mcm.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECFA1DD5AF7200DB188D /* mcm.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EDFF1DD5B9C600DB188D /* nydus.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECFB1DD5AF7200DB188D /* nydus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9729EE001DD5B9C600DB188D /* protobuf.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9729ECFC1DD5AF7200DB188D /* protobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -142,6 +140,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				846C9F5424F6048F0072E520 /* viperex.bundle in Copy Files */,
+				846C9F5524F6048F0072E520 /* capHost.app in Copy Files */,
 				8497313224728BB400380580 /* CptHost.app in Copy Files */,
 				8497313324728BB400380580 /* mphost.app in Copy Files */,
 				5D76FA542238D56700870DD9 /* aomagent.bundle in Copy Files */,
@@ -150,13 +150,13 @@
 				5D8F8ECE222402C80020F8E6 /* SDK_Transcode.app in Copy Files */,
 				97FF5F0620B80B8E00C36776 /* curl64.framework in Copy Files */,
 				9756C51C1FEBAF0A00609247 /* ZoomSDKChatUI.framework in Copy Files */,
+				846C9F5224F604810072E520 /* libssl.dylib in Copy Files */,
 				970CBE321E36F25000B1D255 /* airhost.app in Copy Files */,
+				846C9F5124F604810072E520 /* libcrypto.dylib in Copy Files */,
 				9729EDF71DD5B9C600DB188D /* annoter.bundle in Copy Files */,
 				9729EDF81DD5B9C600DB188D /* asproxy.framework in Copy Files */,
 				9729EDF91DD5B9C600DB188D /* cmmlib.framework in Copy Files */,
 				9729EDFB1DD5B9C600DB188D /* faac.bundle in Copy Files */,
-				9729EDFC1DD5B9C600DB188D /* libcrypto.1.0.0.dylib in Copy Files */,
-				9729EDFD1DD5B9C600DB188D /* libssl.1.0.0.dylib in Copy Files */,
 				9729EDFE1DD5B9C600DB188D /* mcm.bundle in Copy Files */,
 				9729EDFF1DD5B9C600DB188D /* nydus.framework in Copy Files */,
 				9729EE001DD5B9C600DB188D /* protobuf.framework in Copy Files */,
@@ -223,7 +223,6 @@
 		5D38DFEE221BEDBB00957333 /* toolbar_mute_voip_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar_mute_voip_press.png; path = "Image Resource/toolbar_mute_voip_press.png"; sourceTree = "<group>"; };
 		5D38DFEF221BEDBB00957333 /* btn_joinmeeting_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_joinmeeting_normal@2x.png"; path = "Image Resource/btn_joinmeeting_normal@2x.png"; sourceTree = "<group>"; };
 		5D38DFF0221BEDBB00957333 /* share_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_camera.png; path = "Image Resource/share_camera.png"; sourceTree = "<group>"; };
-		5D38DFF1221BEDBB00957333 /* btn_presentshare_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_presentshare_normal@2x.png"; path = "Image Resource/btn_presentshare_normal@2x.png"; sourceTree = "<group>"; };
 		5D38DFF2221BEDBB00957333 /* toolbar_mute_voip_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar_mute_voip_normal.png; path = "Image Resource/toolbar_mute_voip_normal.png"; sourceTree = "<group>"; };
 		5D38DFF3221BEDBB00957333 /* btn_startvideo_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_startvideo_normal.png; path = "Image Resource/btn_startvideo_normal.png"; sourceTree = "<group>"; };
 		5D38DFF4221BEDBB00957333 /* btn_unpresentshare_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_unpresentshare_normal@2x.png"; path = "Image Resource/btn_unpresentshare_normal@2x.png"; sourceTree = "<group>"; };
@@ -241,7 +240,7 @@
 		5D38E000221BEDBC00957333 /* ZoomLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ZoomLogo.png; path = "Image Resource/ZoomLogo.png"; sourceTree = "<group>"; };
 		5D38E001221BEDBC00957333 /* btn_schedule_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_schedule_normal.png; path = "Image Resource/btn_schedule_normal.png"; sourceTree = "<group>"; };
 		5D38E002221BEDBC00957333 /* btn_startshare_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_startshare_normal.png; path = "Image Resource/btn_startshare_normal.png"; sourceTree = "<group>"; };
-		5D38E003221BEDBC00957333 /* btn_presentshare_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_presentshare_normal.png; path = "Image Resource/btn_presentshare_normal.png"; sourceTree = "<group>"; };
+		5D38E003221BEDBC00957333 /* btn_leave_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_leave_normal.png; path = "Image Resource/btn_leave_normal.png"; sourceTree = "<group>"; };
 		5D38E004221BEDBC00957333 /* toolbar_participant_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar_participant_press.png; path = "Image Resource/toolbar_participant_press.png"; sourceTree = "<group>"; };
 		5D38E005221BEDBC00957333 /* share_audio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_audio.png; path = "Image Resource/share_audio.png"; sourceTree = "<group>"; };
 		5D38E006221BEDBC00957333 /* toolbar_mute_tele_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar_mute_tele_press.png; path = "Image Resource/toolbar_mute_tele_press.png"; sourceTree = "<group>"; };
@@ -307,7 +306,6 @@
 		5D38E090221BF28700957333 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5D38E0A0221BF5C500957333 /* SDK_Transcode.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = SDK_Transcode.app; path = ZoomSDK/SDK_Transcode.app; sourceTree = "<group>"; };
 		5D38E0A1221BF5C500957333 /* ZoomSDKVideoUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZoomSDKVideoUI.framework; path = ZoomSDK/ZoomSDKVideoUI.framework; sourceTree = "<group>"; };
-		5D38E0A4221BF5E700957333 /* zoomsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zoomsdk.xcodeproj; path = ../../zoomsdk.xcodeproj; sourceTree = "<group>"; };
 		5D76FA512238D56600870DD9 /* aomagent.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = aomagent.bundle; path = ZoomSDK/aomagent.bundle; sourceTree = "<group>"; };
 		5D76FA532238D56700870DD9 /* aomhost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = aomhost.app; path = ZoomSDK/aomhost.app; sourceTree = "<group>"; };
 		5D8F8EC3222402330020F8E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text; name = en; path = "SDK Resources/en.lproj/timezones.txt"; sourceTree = "<group>"; };
@@ -320,6 +318,12 @@
 		5D8F8ECB222402540020F8E6 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text; name = "pt-PT"; path = "SDK Resources/pt-PT.lproj/timezones.txt"; sourceTree = "<group>"; };
 		5D8F8ECC222402580020F8E6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru; path = "SDK Resources/ru.lproj/timezones.txt"; sourceTree = "<group>"; };
 		5D8F8ECD2224025B0020F8E6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text; name = es; path = "SDK Resources/es.lproj/timezones.txt"; sourceTree = "<group>"; };
+		840F22F2251DD35800F42652 /* ko-KR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ko-KR"; path = "ko-KR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		840F22F3251DD36400F42652 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		846C9F4724F604480072E520 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = ZoomSDK/libcrypto.dylib; sourceTree = "<group>"; };
+		846C9F4824F604480072E520 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = ZoomSDK/libssl.dylib; sourceTree = "<group>"; };
+		846C9F4924F604490072E520 /* capHost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = capHost.app; path = ZoomSDK/capHost.app; sourceTree = "<group>"; };
+		846C9F4D24F6045C0072E520 /* viperex.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = viperex.bundle; path = ZoomSDK/viperex.bundle; sourceTree = "<group>"; };
 		8497312C24728B8A00380580 /* CptHost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = CptHost.app; path = ZoomSDK/CptHost.app; sourceTree = "<group>"; };
 		8497312D24728B8A00380580 /* mphost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = mphost.app; path = ZoomSDK/mphost.app; sourceTree = "<group>"; };
 		970CBE301E36F24200B1D255 /* airhost.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = airhost.app; path = ZoomSDK/airhost.app; sourceTree = "<group>"; };
@@ -333,8 +337,6 @@
 		9729ECF41DD5AF7100DB188D /* asproxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = asproxy.framework; path = ZoomSDK/asproxy.framework; sourceTree = "<group>"; };
 		9729ECF51DD5AF7100DB188D /* cmmlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cmmlib.framework; path = ZoomSDK/cmmlib.framework; sourceTree = "<group>"; };
 		9729ECF71DD5AF7100DB188D /* faac.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = faac.bundle; path = ZoomSDK/faac.bundle; sourceTree = "<group>"; };
-		9729ECF81DD5AF7200DB188D /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = ZoomSDK/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
-		9729ECF91DD5AF7200DB188D /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.0.0.dylib; path = ZoomSDK/libssl.1.0.0.dylib; sourceTree = "<group>"; };
 		9729ECFA1DD5AF7200DB188D /* mcm.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mcm.bundle; path = ZoomSDK/mcm.bundle; sourceTree = "<group>"; };
 		9729ECFB1DD5AF7200DB188D /* nydus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nydus.framework; path = ZoomSDK/nydus.framework; sourceTree = "<group>"; };
 		9729ECFC1DD5AF7200DB188D /* protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = protobuf.framework; path = ZoomSDK/protobuf.framework; sourceTree = "<group>"; };
@@ -363,9 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9729EDF61DD5B9A900DB188D /* Cocoa.framework in Frameworks */,
-				9729ED141DD5AF7200DB188D /* libssl.1.0.0.dylib in Frameworks */,
-				9729ED131DD5AF7200DB188D /* libcrypto.1.0.0.dylib in Frameworks */,
 				9729ED241DD5AF7200DB188D /* ZoomSDK.framework in Frameworks */,
+				846C9F4A24F604490072E520 /* libcrypto.dylib in Frameworks */,
+				846C9F4B24F604490072E520 /* libssl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,8 +401,7 @@
 			children = (
 				5D38DFE6221BEDBA00957333 /* btn_joinmeeting_normal.png */,
 				5D38DFEF221BEDBB00957333 /* btn_joinmeeting_normal@2x.png */,
-				5D38E003221BEDBC00957333 /* btn_presentshare_normal.png */,
-				5D38DFF1221BEDBB00957333 /* btn_presentshare_normal@2x.png */,
+				5D38E003221BEDBC00957333 /* btn_leave_normal.png */,
 				5D38E001221BEDBC00957333 /* btn_schedule_normal.png */,
 				5D38DFE3221BEDBA00957333 /* btn_schedule_normal@2x.png */,
 				5D38DFE2221BEDBA00957333 /* btn_setting_normal.png */,
@@ -642,13 +643,6 @@
 			name = how_to_auth_sdk;
 			sourceTree = "<group>";
 		};
-		5D38E0A5221BF5E700957333 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5DC402AB221BEA7700A7554F /* Commom */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,7 +663,6 @@
 		971725E91D3F618A00D5C72D = {
 			isa = PBXGroup;
 			children = (
-				5D38E0A4221BF5E700957333 /* zoomsdk.xcodeproj */,
 				971C0DDA1D40964C0083AD9B /* Framworks */,
 				971725F41D3F618A00D5C72D /* ZoomSDKSample */,
 				971725F31D3F618A00D5C72D /* Products */,
@@ -718,6 +711,10 @@
 		971C0DDA1D40964C0083AD9B /* Framworks */ = {
 			isa = PBXGroup;
 			children = (
+				846C9F4D24F6045C0072E520 /* viperex.bundle */,
+				846C9F4924F604490072E520 /* capHost.app */,
+				846C9F4724F604480072E520 /* libcrypto.dylib */,
+				846C9F4824F604480072E520 /* libssl.dylib */,
 				8497312C24728B8A00380580 /* CptHost.app */,
 				8497312D24728B8A00380580 /* mphost.app */,
 				5D76FA512238D56600870DD9 /* aomagent.bundle */,
@@ -731,8 +728,6 @@
 				9729ECF41DD5AF7100DB188D /* asproxy.framework */,
 				9729ECF51DD5AF7100DB188D /* cmmlib.framework */,
 				9729ECF71DD5AF7100DB188D /* faac.bundle */,
-				9729ECF81DD5AF7200DB188D /* libcrypto.1.0.0.dylib */,
-				9729ECF91DD5AF7200DB188D /* libssl.1.0.0.dylib */,
 				9729ECFA1DD5AF7200DB188D /* mcm.bundle */,
 				9729ECFB1DD5AF7200DB188D /* nydus.framework */,
 				9729ECFC1DD5AF7200DB188D /* protobuf.framework */,
@@ -808,16 +803,12 @@
 				"pt-PT",
 				ru,
 				es,
+				"ko-KR",
+				vi,
 			);
 			mainGroup = 971725E91D3F618A00D5C72D;
 			productRefGroup = 971725F31D3F618A00D5C72D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 5D38E0A5221BF5E700957333 /* Products */;
-					ProjectRef = 5D38E0A4221BF5E700957333 /* zoomsdk.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				971725F11D3F618A00D5C72D /* ZoomSDKSample */,
@@ -838,7 +829,6 @@
 				5D38E025221BEDBD00957333 /* toolbar_share_normal.png in Resources */,
 				5D38E01D221BEDBD00957333 /* share_whiteboard.png in Resources */,
 				5D38E00E221BEDBD00957333 /* btn_joinmeeting_normal.png in Resources */,
-				5D38E019221BEDBD00957333 /* btn_presentshare_normal@2x.png in Resources */,
 				5D38E085221BF1F100957333 /* Localizable.strings in Resources */,
 				5D38E026221BEDBD00957333 /* btn_unpresentshare_normal.png in Resources */,
 				5D8F8EC4222402330020F8E6 /* timezones.txt in Resources */,
@@ -854,11 +844,9 @@
 				5D38E011221BEDBD00957333 /* plistArrowBottom.png in Resources */,
 				5D38E01C221BEDBD00957333 /* btn_unpresentshare_normal@2x.png in Resources */,
 				5D38E022221BEDBD00957333 /* toolbar_participant_normal.png in Resources */,
-				5D38E0A2221BF5C500957333 /* SDK_Transcode.app in Resources */,
-				5D38E02B221BEDBD00957333 /* btn_presentshare_normal.png in Resources */,
+				5D38E02B221BEDBD00957333 /* btn_leave_normal.png in Resources */,
 				5D38E027221BEDBD00957333 /* toolbar_share_press.png in Resources */,
 				5D38E00D221BEDBD00957333 /* plistArrowTop.png in Resources */,
-				8497312F24728B8A00380580 /* mphost.app in Resources */,
 				5D38E030221BEDBD00957333 /* toolbar_unmute_tele_press.png in Resources */,
 				5D38DFDA221BEC9C00957333 /* ZMSDKMeetingMainWindowController.xib in Resources */,
 				5D38E00C221BEDBD00957333 /* toolbar_unmute_voip_normal.png in Resources */,
@@ -869,7 +857,6 @@
 				972215FC1DD06C5100C74CE6 /* MainMenu.xib in Resources */,
 				5D38E06A221BEFE400957333 /* ZMSDKShareSelectWindow.xib in Resources */,
 				5D38E071221BF04700957333 /* ZMSDKSettingWindowController.xib in Resources */,
-				8497312E24728B8A00380580 /* CptHost.app in Resources */,
 				5D38E00F221BEDBD00957333 /* btn_startshare_normal@2x.png in Resources */,
 				5D38E02A221BEDBD00957333 /* btn_startshare_normal.png in Resources */,
 				5D38E010221BEDBD00957333 /* toolbar_share_stop.png in Resources */,
@@ -948,6 +935,8 @@
 				5D38E08E221BF26A00957333 /* pt-PT */,
 				5D38E08F221BF27A00957333 /* ru */,
 				5D38E090221BF28700957333 /* es */,
+				840F22F2251DD35800F42652 /* ko-KR */,
+				840F22F3251DD36400F42652 /* vi */,
 			);
 			name = Localizable.strings;
 			path = "SDK Resources";

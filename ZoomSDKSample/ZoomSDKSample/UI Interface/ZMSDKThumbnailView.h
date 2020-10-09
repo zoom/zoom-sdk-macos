@@ -24,7 +24,7 @@
 - (void)onUserJoin:(unsigned int)userID;
 - (void)onUserleft:(unsigned int)userID;
 
-- (void)onUserVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID;
+- (void)onUserVideoStatusChange:(ZoomSDKVideoStatus)videoStatus UserID:(unsigned int)userID;
 - (void)resetInfo;
 - (void)setMeetingMainWindowController:(ZMSDKMeetingMainWindowController*)meetingMainWindowController;
 - (void)initThumbnialUserListArray;

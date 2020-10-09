@@ -136,6 +136,36 @@
                     break;
             }
         }
+            break;
+        case ZoomSDKMeetingStatus_Disconnecting:
+        {
+            [ZMSDKConfUIMgr uninitConfUIMgr];
+        }
+            break;
+        case ZoomSDKMeetingStatus_Reconnecting:
+        {
+            if([ZMSDKCommonHelper sharedInstance].isUseCutomizeUI)
+            {
+                [ZMSDKConfUIMgr uninitConfUIMgr];
+                if([ZMSDKCommonHelper sharedInstance].hasLogin)
+                {
+                    [_mainWindowController showWindow:nil];
+                }
+                else
+                {
+                    [_mainWindowController.loginWindowController showSelf];
+                }
+            }
+        }
+            break;
+        case ZoomSDKMeetingStatus_InWaitingRoom:
+        {
+            if([ZMSDKCommonHelper sharedInstance].isUseCutomizeUI)
+            {
+                [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] updateUIInWaitingRoom];
+            }
+        }
+            break;
         default:
         {
             
@@ -144,7 +174,6 @@
     }
     [_mainWindowController updateMainWindowUIWithMeetingStatus:state];
 }
-
 - (void)onWaitMeetingSessionKey:(NSData*)key
 {
     NSLog(@"Huawei Session key:%@", key);

@@ -13,8 +13,8 @@
 
 @interface ZMSDKConfUIMgr : NSObject
 {
-    ZMSDKMeetingMainWindowController* _meetingMainWindowController;
-    ZMSDKUserHelper* _userHelper;
+    ZMSDKMeetingMainWindowController*   _meetingMainWindowController;
+    ZMSDKUserHelper*                    _userHelper;
 }
 @property(nonatomic, retain, readwrite)ZMSDKMeetingMainWindowController *meetingMainWindowController;
 @property(nonatomic, retain, readwrite)ZMSDKUserHelper *userHelper;

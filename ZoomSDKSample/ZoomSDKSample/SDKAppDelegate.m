@@ -17,7 +17,7 @@
 #pragma mark - app delegate
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
-    self.loginWindowCtrl = [[ZMSDKLoginWindowController alloc] init];
+    loginWindowCtrl = [[ZMSDKLoginWindowController alloc] init];
     [self.loginWindowCtrl.window makeKeyAndOrderFront:nil];
     [self.loginWindowCtrl.window center];
     [_logOutMenuItem setHidden:YES];
@@ -38,9 +38,9 @@
 
 -(void)cleanUp
 {
-    if (self.loginWindowCtrl) {
-        [self.loginWindowCtrl release];
-        self.loginWindowCtrl = nil;
+    if (loginWindowCtrl) {
+        [loginWindowCtrl release];
+        loginWindowCtrl = nil;
     }
 }
 //for pipe error

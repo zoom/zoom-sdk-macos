@@ -50,44 +50,44 @@
 }
 - (void)initHelper
 {
-    self.authHelper = [[ZMSDKAuthHelper alloc] initWithWindowController:self];
-    self.restAPIHelper = [[ZMSDKRestAPILogin alloc] initWithWindowController:self];
-    self.emailLoginHelper = [[ZMSDKEmailLogin alloc] initWithWindowController:self];
-    self.ssoLoginHelper = [[ZMSDKSSOLogin alloc] initWithWindowController:self];
-    self.joinOnlyHelper = [[ZMSDKJoinOnly alloc] initWithWindowController:self];
+    _authHelper = [[ZMSDKAuthHelper alloc] initWithWindowController:self];
+    _restAPIHelper = [[ZMSDKRestAPILogin alloc] initWithWindowController:self];
+    _emailLoginHelper = [[ZMSDKEmailLogin alloc] initWithWindowController:self];
+    _ssoLoginHelper = [[ZMSDKSSOLogin alloc] initWithWindowController:self];
+    _joinOnlyHelper = [[ZMSDKJoinOnly alloc] initWithWindowController:self];
 }
 
 - (void)cleanUp
 {
-    if (self.mainWindowController)
+    if (_mainWindowController)
     {
-        [self.mainWindowController cleanUp];
-        [self.mainWindowController release];
-        self.mainWindowController = nil;
+        [_mainWindowController cleanUp];
+        [_mainWindowController release];
+        _mainWindowController = nil;
     }
-    if(self.authHelper)
+    if(_authHelper)
     {
-        [self.authHelper release];
-        self.authHelper = nil;
+        [_authHelper release];
+        _authHelper = nil;
     }
-    if (self.restAPIHelper) {
-        [self.restAPIHelper release];
-        self.restAPIHelper = nil;
+    if (_restAPIHelper) {
+        [_restAPIHelper release];
+        _restAPIHelper = nil;
     }
-    if(self.emailLoginHelper)
+    if(_emailLoginHelper)
     {
-        [self.emailLoginHelper release];
-        self.emailLoginHelper = nil;
+        [_emailLoginHelper release];
+        _emailLoginHelper = nil;
     }
-    if(self.ssoLoginHelper)
+    if(_ssoLoginHelper)
     {
-        [self.ssoLoginHelper release];
-        self.ssoLoginHelper = nil;
+        [_ssoLoginHelper release];
+        _ssoLoginHelper = nil;
     }
-    if(self.joinOnlyHelper)
+    if(_joinOnlyHelper)
     {
-        [self.joinOnlyHelper release];
-        self.joinOnlyHelper = nil;
+        [_joinOnlyHelper release];
+        _joinOnlyHelper = nil;
     }
     [self close];
 }

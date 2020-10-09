@@ -24,7 +24,7 @@ Please follow this template to compose your payload for SDK initialization:
 {
 	       "appKey": "string", // Your SDK key
          "iat": long, // access token issue timestamp
-         "exp": long, // access token expire timestamp
+         "exp": long, // access token expire timestamp, max: iat + 2 days
          "tokenExp": long // token expire timestamp, MIN:30 minutes
 }
 ```
@@ -38,6 +38,56 @@ HMACSHA256(
 )
 ```
 You do not need to secret base64 encoded your signature. Once the JWT token is generated, please do not reveal it or publish it. **It is highly recommended to handle your SDK key and secret and generate JWT in a backend server to be consumed by your application. Do not generate JWT in a production application.**
+
+## 2020-10-09 @ v5.2.41735.0929
+
+## Added
+* Upgraded Zoom default UI to match Zoom client 5.2.1.
+* Added a new callback for the event when the host has asked to start the video.
+  * `- (void)onHostAskStartVideo` in `ZoomSDKMeetingActionController.h`
+* Added a new callback to redirect the leave button action on the toolbar.
+  * `- (void)onClickLeaveMeeting:(unsigned int)participantID` in `ZoomSDKMeetingUIController.h`
+* Added a new interface isH323User to check whether the user is an H.323 user.
+  * `- (BOOL)isH323User` in  `ZoomSDKMeetingActionController.h`
+* Added a new callback for the event when the user is being asked to mute/unmute the video by the host/co-host.
+  * `- (void)onVideoStatusChange:(ZoomSDKVideoStatus)videoStatus UserID:(unsigned int)userID` in `ZoomSDKMeetingActionController.h`
+* Added a new interfaces to get participant ID.
+  * `- (NSString *)getParticipantID` in `ZoomSDKMeetingActionController.h`.
+* Added Vietnamese and Italian language support.
+* Added a new interface for the feature "Allow participants to rename Themselves"
+  * `-(BOOL)isParticipantsRenameAllowed`
+  * `- (ZoomSDKError)allowParticipantsToRename:(BOOL)allow` in `ZoomSDKMeetingActionController.h`
+* Added a new interface for the feature "Allow participants to share screen".
+  * `- (ZoomSDKError)allowParticipantsToShare:(BOOL)allow`
+  * `-(BOOL)isParticipantsShareAllowed` in `ZoomSDKMeetingActionController.h`.
+* Added a new interface for the feature "Allow participants to chat"
+  * `-(BOOL)isParticipantsChatAllowed`
+  * `- (ZoomSDKError)allowParticipantsToChat:(BOOL)allow` in `ZoomSDKMeetingActionController.h`
+* Added new interfaces and callbacks to delete questions and answers in the webinar Q&A.
+  * `-(ZoomSDKError)deleteQuestion:(NSString *)questionID`
+  * `-(void)onDeleteQuestions:(NSArray *)questions`
+  * `-(ZoomSDKError)deleteAnswer:(NSString *)answerID`
+  * `-(void)onDeleteAnswers:(NSArray *)answer` in `ZoomSDKQAController.h` file
+* Refactored the callback event for waiting room user to receive a chat message
+  * `-(ZoomSDKChatMessageType)getChatMessageType` in `ZoomSDKMeetingActionController.h`
+* Added a new interface to allow user to set the suppress background noise level.
+   * `- (ZoomSDKSuppressBackgroundNoiseLevel)getSuppressBackgroundNoiseLevel” and `
+   * `- (ZoomSDKError)setSuppressBackgroundNoise:(ZoomSDKSuppressBackgroundNoiseLevel)level` in `ZoomSDKSettingService.h`
+
+## Changed & Fixed
+* Refined the hide claim host button.
+* Refined the breakout room interfaces
+  * In `ZoomSDKNewBreakoutRoomController.h `file.
+* Fixed an issue that unable to receive the meeting status "Reconnecting".
+* Fixed an issue that unable to receive the meeting status "InWaitingRoom"
+* Fixed an issue that the watermark is shown in the incorrect position after resizing the video view size.
+* Fixed an issue that the cloud recording cannot be stopped.
+* Fixed an issue that the user is not able to join the meeting again after join the meeting failed.
+* Fixed an issue that the app crashes when the H.323's IP address is not standard format.
+* Fixed an issue that the password dialog is not able to exit in Custom UI mode.
+* Fixed an issue that the virtual background does not apply on the video when starting a meeting twice.
+* Fixed an issue that the free meeting alert is showing incorrectly.
+* Fixed an issue that the video sometimes freezes in Custom UI.
 
 ## 2020-06-30 @ v5.0.24433.0616
 

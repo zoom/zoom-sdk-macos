@@ -35,8 +35,6 @@
     {
         ZoomSDKStartMeetingElements *joinParams = [[[ZoomSDKStartMeetingElements alloc] init] autorelease];
         joinParams.userType = ZoomSDKUserType_ZoomUser;
-        joinParams.userId = nil;
-        joinParams.displayName = nil;
         joinParams.meetingNumber = 0;
         joinParams.isDirectShare = NO;
         joinParams.displayID = 0;
@@ -55,8 +53,6 @@
     {
         ZoomSDKStartMeetingElements *joinParams = [[[ZoomSDKStartMeetingElements alloc] init] autorelease];
         joinParams.userType = ZoomSDKUserType_ZoomUser;
-        joinParams.userId = nil;
-        joinParams.displayName = nil;
         joinParams.meetingNumber = 0;
         joinParams.isDirectShare = NO;
         joinParams.displayID = 0;

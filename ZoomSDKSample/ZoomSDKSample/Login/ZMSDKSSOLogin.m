@@ -60,8 +60,6 @@
 /**********ZoomSDKAuthDelegate***********/
 - (void)onZoomSDKLogin:(ZoomSDKLoginStatus)loginStatus failReason:(NSString*)reason
 {
-    if([ZMSDKCommonHelper sharedInstance].loginType != ZMSDKLoginType_SSO)
-        return;
     switch (loginStatus)
     {
         case ZoomSDKLoginStatus_Processing:
@@ -73,6 +71,7 @@
         {
             [_loginWindowController createMainWindow];
             [ZMSDKCommonHelper sharedInstance].hasLogin = YES;
+            [ZMSDKCommonHelper sharedInstance].loginType = ZMSDKLoginType_SSO;
             [_loginWindowController updateUIWithLoginStatus:YES];
             [_loginWindowController.window close];
             [_loginWindowController.mainWindowController updateUI];

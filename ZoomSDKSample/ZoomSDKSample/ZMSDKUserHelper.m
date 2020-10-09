@@ -83,9 +83,9 @@
 {
     return;
 }
-- (void)onVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID
+- (void)onVideoStatusChange:(ZoomSDKVideoStatus)videoStatus UserID:(unsigned int)userID
 {
-    [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] onUserVideoStatusChange:videoOn UserID:userID];
+    [[[ZMSDKConfUIMgr sharedConfUIMgr] getMeetingMainWindowController] onUserVideoStatusChange:videoStatus UserID:userID];
 }
 
 - (void)onUserAudioStatusChange:(NSArray*)userAudioStatusArray

@@ -23,6 +23,7 @@ enum MeetiongToolbarButtonTags
     BUTTON_TAG_PARTICIPANT,
     BUTTON_TAG_STOP_SHARE,
     BUTTON_TAG_ThUMBNAIL_VIEW,
+    BUTTON_TAG_LEAVE_MEETING,
 };
 
 typedef enum
@@ -70,12 +71,13 @@ typedef enum
 
 - (void)onUserJoin:(unsigned int)userID;
 - (void)onUserleft:(unsigned int)userID;
-- (void)onUserVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID;
+- (void)onUserVideoStatusChange:(ZoomSDKVideoStatus)videoStatus UserID:(unsigned int)userID;
 - (void)onUserAudioStatusChange:(NSArray*)userAudioStatusArray;
 - (void)resetInfo;
 - (void)updateInMeetingUI;
 - (void)onSelfShareStart;
 - (void)onSelfShareStop;
+- (void)updateUIInWaitingRoom;
 - (void)cleanUp;
 @end
 

@@ -11,7 +11,7 @@
 @interface ShareContentView : NSView
 {
     unsigned int _userid;
-    NSView*      _shareview;
+    NSView*      _shareView;
 }
 @property(nonatomic, retain) NSView* shareView;
 @property(nonatomic, assign) unsigned int userid;

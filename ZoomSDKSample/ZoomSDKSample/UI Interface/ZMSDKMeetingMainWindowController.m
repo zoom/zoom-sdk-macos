@@ -76,6 +76,7 @@ const int DEFAULT_Thumbnail_View_Width = 320;
 {
     ZoomSDKActiveVideoElement* _activeUserVideo;
     ZMSDKShareSelectWindow*    _shareSelectWindowCtr;
+    ZoomSDKPreViewVideoElement* _preViewVideoItem;
 }
 @end
 
@@ -86,8 +87,6 @@ const int DEFAULT_Thumbnail_View_Width = 320;
 
 - (void)windowDidLoad {
     [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 -(void)awakeFromNib
 {
@@ -100,26 +99,79 @@ const int DEFAULT_Thumbnail_View_Width = 320;
 }
 -(void)initNotification
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowWillClose:) name:NSWindowWillCloseNotification object:nil];
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowWillClose:) name:NSWindowWillCloseNotification object:nil];
 }
 
 - (id)init
 {
-    //self = [super initWithWindow:self.meetingMainWindow];
     self = [super init];
     if(self)
     {
         _meetingMainWindow = [[NSWindow alloc] initWithContentRect:NSMakeRect(0, 0, 1100, 700) styleMask:NSWindowStyleMaskTitled|NSWindowStyleMaskClosable backing:NSBackingStoreBuffered defer:NO];
         self.window = _meetingMainWindow;
-        
+        _preViewVideoItem = nil;
+        _activeUserVideo = nil;
         [self initNotification];
         [self initUI];
         return self;
     }
     return nil;
 }
+- (void)updateUIInWaitingRoom
+{
+    if(_preViewVideoItem)
+    {
+        [_preViewVideoItem startPreview:NO];
+        ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+        [videoContainer cleanVideoElement:_preViewVideoItem];
+        NSView* videoview = [_preViewVideoItem getVideoView];
+        [videoview removeFromSuperview];
+        [_preViewVideoItem release];
+        _preViewVideoItem = nil;
+    }
+    if(_activeUserVideo)
+    {
+        ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+        [videoContainer cleanVideoElement:_activeUserVideo];
+        NSView* videoview = [_activeUserVideo getVideoView];
+        [videoview removeFromSuperview];
+        [_activeUserVideo release];
+        _activeUserVideo = nil;
+    }
+    if(_shareSelectWindowCtr)
+    {
+        [_shareSelectWindowCtr.window close];
+        [_shareSelectWindowCtr release];
+        _shareSelectWindowCtr = nil;
+    }
+    [self resetInfo];
+    
+    NSTextView* textView = [[NSTextView alloc] initWithFrame:NSMakeRect(0, self.window.contentView.frame.size.height/2, self.window.contentView.frame.size.width, 80)];
+    textView.selectable = NO;
+    textView.editable = NO;
+    [textView setDrawsBackground:YES];
+    textView.backgroundColor = [NSColor redColor];
+    textView.textColor = [NSColor whiteColor];
+    textView.font = [NSFont systemFontOfSize:18];
+    [[textView textContainer] setContainerSize:NSMakeSize(0, FLT_MAX)];
+    [[textView textContainer] setLineFragmentPadding:2];
+    [textView setMinSize:NSMakeSize(0.0, 0)];
+    [textView setMaxSize:NSMakeSize(0, MAXFLOAT)];
+    textView.string = @"You are in waiting room now, please wait for host to allow you in meeting.";
+    [self.window.contentView addSubview:textView];
+}
 - (void)cleanUp
 {
+    if(_preViewVideoItem)
+    {
+        [_preViewVideoItem startPreview:NO];
+        ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+        [videoContainer cleanVideoElement:_preViewVideoItem];
+        NSView* videoview = [_preViewVideoItem getVideoView];
+        [videoview removeFromSuperview];
+        [_preViewVideoItem release];
+        _preViewVideoItem = nil;
+    }
     if(_activeUserVideo)
     {
         ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
@@ -155,20 +207,17 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     
     _thumbnailView = [[ZMSDKThumbnailView alloc] initWithFrame:NSMakeRect(self.window.contentView.frame.size.width - DEFAULT_Thumbnail_View_Width, self.window.contentView.frame.origin.y, DEFAULT_Thumbnail_View_Width, self.window.contentView.frame.size.height)];
     [_thumbnailView setMeetingMainWindowController:self];
-    
-    [self initActiveVideoUserView];
-    [self initButtons];
 }
 - (void)initButtons
 {
     
-    float xpos = self.window.contentView.frame.size.width/2;
+    float xpos = self.window.contentView.frame.size.width/2 - 50;
     float xposLeft = xpos;
     float xposRight = xpos;
     float yPos = 2;
     float width = 80;
     float height = DEFAULT_Toolbar_Button_height;
-    float margin = 30;
+    float margin = 20;
     ZMSDKButton* theButton = nil;
     
     ZMSDKBackgroundView* toolbarBackgroundView = [[ZMSDKBackgroundView alloc] initWithFrame:NSMakeRect(0, 0, self.window.frame.size.width, height + yPos)];
@@ -288,6 +337,26 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     xposRight += width + margin;
     
     theButton = [[ZMSDKButton alloc] initWithFrame:NSMakeRect(xposRight, yPos, width, height)];
+    theButton.tag = BUTTON_TAG_LEAVE_MEETING;
+    theButton.title = @"Leave Meeting";
+    theButton.image = [NSImage imageNamed:@"btn_leave_normal"];
+    theButton.pressImage = [NSImage imageNamed:@"btn_leave_normal"];
+    theButton.titleColor = titleColor;
+    theButton.pressTitleColor = pressTitleColor;
+    theButton.font = theFont;
+    theButton.hoverBackgroundColor = hoverBgColor;
+    theButton.pressBackgoundColor = pressBgColor;
+    theButton.imagePosition = NSImageAbove;
+    theButton.autoresizingMask = NSViewMinXMargin|NSViewMaxXMargin;
+    [theButton setTarget:self];
+    [theButton setAction:@selector(onLeaveMeetingButtonClicked:)];
+    [theButton setHidden:YES];
+    [self.window.contentView addSubview:theButton];
+    [theButton release];
+    theButton = nil;
+    xposRight += width + margin;
+    
+    theButton = [[ZMSDKButton alloc] initWithFrame:NSMakeRect(xposRight, yPos, width, height)];
     theButton.tag = BUTTON_TAG_STOP_SHARE;
     theButton.title = @"Stop Share";
     theButton.image = [NSImage imageNamed:@"toolbar_share_stop"];
@@ -305,8 +374,13 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     [self.window.contentView addSubview:theButton];
     [theButton release];
     theButton = nil;
+    xposRight += width + margin;
 }
-
+- (void)onLeaveMeetingButtonClicked:(id)sender
+{
+    ZoomSDKMeetingService* meetingService = [[ZoomSDK sharedSDK] getMeetingService];
+    [meetingService leaveMeetingWithCmd:(LeaveMeetingCmd_End)];
+}
 - (void)onThumbnailButtonClicked:(id)sender
 {
     NSRect rect = self.window.contentView.frame;
@@ -404,6 +478,9 @@ const int DEFAULT_Thumbnail_View_Width = 320;
 
 -(void)updateInMeetingUI
 {
+    [self cleanUpPreViewVideo];
+    [self initActiveVideoUserView];
+    [self initButtons];
     NSArray* userList = [[[[ZoomSDK sharedSDK] getMeetingService] getMeetingActionController] getParticipantsList];
     for (NSNumber* userID in userList)
     {
@@ -425,6 +502,9 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     if(theButton)
         [theButton setHidden:NO];
     theButton = [self.window.contentView viewWithTag:BUTTON_TAG_ThUMBNAIL_VIEW];
+    if(theButton)
+        [theButton setHidden:NO];
+    theButton = [self.window.contentView viewWithTag:BUTTON_TAG_LEAVE_MEETING];
     if(theButton)
         [theButton setHidden:NO];
     
@@ -450,7 +530,14 @@ const int DEFAULT_Thumbnail_View_Width = 320;
 }
 - (void)updateUI
 {
-    return;
+    if(!_preViewVideoItem)
+    {
+        _preViewVideoItem = [[ZoomSDKPreViewVideoElement alloc] initWithFrame:self.window.contentView.frame];
+        ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+        [videoContainer createVideoElement:&_preViewVideoItem];
+        [self.window.contentView addSubview:[_preViewVideoItem getVideoView]];
+    }
+    [_preViewVideoItem startPreview:YES];
 }
 
 - (void)onUserJoin:(unsigned int)userID
@@ -469,6 +556,19 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     }
 }
 
+- (void)cleanUpPreViewVideo
+{
+    if(_preViewVideoItem)
+    {
+        [_preViewVideoItem startPreview:NO];
+        ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+        [videoContainer cleanVideoElement:_preViewVideoItem];
+        NSView* videoview = [_preViewVideoItem getVideoView];
+        [videoview removeFromSuperview];
+        [_preViewVideoItem release];
+        _preViewVideoItem = nil;
+    }
+}
 - (void)onUserleft:(unsigned int)userID
 {
     [_panelistUserView onUserleft:userID];
@@ -497,6 +597,16 @@ const int DEFAULT_Thumbnail_View_Width = 320;
         [_activeUserVideo release];
         _activeUserVideo = nil;
     }
+    if(_preViewVideoItem)
+    {
+        [_preViewVideoItem startPreview:NO];
+        ZoomSDKVideoContainer* videoContainer = [[[ZoomSDK sharedSDK] getMeetingService] getVideoContainer];
+        [videoContainer cleanVideoElement:_preViewVideoItem];
+        NSView* videoview = [_preViewVideoItem getVideoView];
+        [videoview removeFromSuperview];
+        [_preViewVideoItem release];
+        _preViewVideoItem = nil;
+    }
     [_panelistUserView resetInfo];
     [_panelistUserView setHidden:YES];
     
@@ -513,6 +623,9 @@ const int DEFAULT_Thumbnail_View_Width = 320;
     if(theButton)
         [theButton setHidden:YES];
     theButton = [self.window.contentView viewWithTag:BUTTON_TAG_ThUMBNAIL_VIEW];
+    if(theButton)
+        [theButton setHidden:YES];
+    theButton = [self.window.contentView viewWithTag:BUTTON_TAG_LEAVE_MEETING];
     if(theButton)
         [theButton setHidden:YES];
 }
@@ -632,9 +745,9 @@ const int DEFAULT_Thumbnail_View_Width = 320;
         }
     }
 }
-- (void)onUserVideoStatusChange:(BOOL)videoOn UserID:(unsigned int)userID
+- (void)onUserVideoStatusChange:(ZoomSDKVideoStatus)videoStatus UserID:(unsigned int)userID
 {
-    [_thumbnailView onUserVideoStatusChange:videoOn UserID:userID];
+    [_thumbnailView onUserVideoStatusChange:videoStatus UserID:userID];
     ZMSDKButton* theButton = [self.window.contentView viewWithTag:BUTTON_TAG_VIDEO];
     if(theButton && !theButton.isHidden)
     {
@@ -642,7 +755,7 @@ const int DEFAULT_Thumbnail_View_Width = 320;
         if([userInfo isMySelf])
         {
             self.mySelfUserInfo = userInfo;
-            if(!videoOn)
+            if(videoStatus != ZoomSDKVideoStatus_On)
             {
                 theButton.title = @"Start Video";
                 theButton.image = [NSImage imageNamed:@"toolbar_start_video_normal"];
