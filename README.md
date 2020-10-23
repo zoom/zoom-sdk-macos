@@ -46,7 +46,7 @@ You can find the full Zoom MacOS SDK documentation and the community support for
 Zoom SDK makes it easy to integrate Zoom with your MacOS applications, and boosts up your applications with the power of Zoom.
 
 * **Easy to use**: Our SDK is built to be easy to use. Just import the libraries, call a few functions, and we will take care all video conferencing related stuffs for you.
-* **Localizable**: Our SDK naturally supports 7 major languages, and you can add more to grow your applications internationally.
+* **Localizable**: Our SDK naturally supports [multiple major languages](https://support.zoom.us/hc/en-us/articles/209982306-Change-your-language-on-Zoom), and you can add more to grow your applications internationally.
 * **Custom Meeting UI**: If you want to add your own decorations to your Zoom meeting rooms, try our Custom UI feature to make your meeting room special.
 
 ## Disclaimer
@@ -67,6 +67,9 @@ Before you try out our SDK, you would need the following to get started:
   * Once you have your Zoom Account, sign up for a 60-days free trial at [https://marketplace.zoom.us/](https://marketplace.zoom.us/)
 * **A device with Mac OS**:
   * OS: MacOS 10.6 or later.
+  * Xcode 10
+
+**Note**: macOS SDK does not support publishing to Apple mac Store
 
 
 ### Installing
@@ -86,6 +89,43 @@ Clone or download a copy of our SDK files from GitHub. After you unzipped the fi
 ```
 Once you have the files ready, please following the instructions to build and run your demo app: [https://marketplace.zoom.us/docs/sdk/native-sdks/macos](https://marketplace.zoom.us/docs/sdk/native-sdks/macos).
 
+### Initializing SDK with JWT token
+When initializing the SDK, you will need to compose a JWT token using your SDK key & secret.
+
+* How to compose JWT token for SDK initialization
+
+You may generate your JWT token using the online tool https://jwt.io/. **It is highly recommended to generate your JWT token in your backend server.**
+
+JWT is generated with three core parts: Header, Payload, and Signature. When combined, these parts are separated by a period to form a token: aaaaa.bbbbb.cccc.
+
+Please follow this template to compose your payload for SDK initialization:
+
+** Header
+```
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+```
+** Payload
+```
+{
+         "appKey": "string",     // Your SDK key
+         "iat": long,   // access token issue timestamp (unit: second)
+         "exp": long,  // access token expire timestamp, MAX: iat + 2 days (unit: second)
+         "tokenExp": long // token expire timestamp, MIN:iat + 30 minutes (unit: second)
+}
+```
+**The minimum value of `tokenExp` should be at least 30 minutes, otherwise, SDK will reject the authentication request.**
+** Signature
+```
+HMACSHA256(
+  base64UrlEncode(header) + "." +
+  base64UrlEncode(payload),
+  "Your SDK secret here"
+)
+```
+You do not need to secret base64 encoded your signature. Once the JWT token is generated, please do not reveal it or publish it. **It is highly recommended to handle your SDK key and secret and generate JWT in a backend server to be consumed by your application. Do not generate JWT in a production application.**
 
 ## Documentation
 
