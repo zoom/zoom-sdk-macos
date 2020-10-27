@@ -180,7 +180,7 @@ var searchData=
   ['getsharesettingtype_3a_316',['getShareSettingType:',['../interface_zoom_s_d_k_meeting_action_controller.html#a84d51287548436d8e280d103d5093ff9',1,'ZoomSDKMeetingActionController']]],
   ['getsharesourcebyuserid_3a_317',['getShareSourcebyUserId:',['../interface_zoom_s_d_k_a_s_controller.html#ad7e07fbd6ef225c8583b0da89941ce11',1,'ZoomSDKASController']]],
   ['getsharesourcelist_318',['getShareSourceList',['../interface_zoom_s_d_k_a_s_controller.html#a0af630b5112df43e1d5a9978788370d4',1,'ZoomSDKASController']]],
-  ['getsourceid_319',['getSourceID',['../interface_zoom_s_d_k_y_u_v_raw_data_i420.html#a6bb62280cb9f82c34b1dbaaf05a4ddde',1,'ZoomSDKYUVRawDataI420::getSourceID()'],['../class_y_u_v_raw_data_i420.html#a049083350a611d36d288e2f7d6a9ed46',1,'YUVRawDataI420::GetSourceID()']]],
+  ['getsourceid_319',['GetSourceID',['../class_y_u_v_raw_data_i420.html#a049083350a611d36d288e2f7d6a9ed46',1,'YUVRawDataI420::GetSourceID()'],['../interface_zoom_s_d_k_y_u_v_raw_data_i420.html#a6bb62280cb9f82c34b1dbaaf05a4ddde',1,'ZoomSDKYUVRawDataI420::getSourceID()']]],
   ['getspecialdomains_320',['getSpecialDomains',['../interface_i_meeting_config_option.html#a1677f7e1afe59a9a23ea16652e0d9e2e',1,'IMeetingConfigOption']]],
   ['getstatisticssetting_321',['getStatisticsSetting',['../interface_zoom_s_d_k_setting_service.html#a16936902d4518163ae88d600d589aff1',1,'ZoomSDKSettingService']]],
   ['getstatus_322',['getStatus',['../interface_zoom_s_d_k_user_audio_stauts.html#a79ff9d8a23d4ff670043dd959e5bb13f',1,'ZoomSDKUserAudioStauts']]],

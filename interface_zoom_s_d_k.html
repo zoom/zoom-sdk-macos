@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mac SDK: ZoomSDK Class Reference</title>
+<title>Zoom SDK: ZoomSDK Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="zoomlogo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Mac SDK
+   <div id="projectname">Zoom SDK
    </div>
   </td>
  </tr>
@@ -135,6 +135,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:aa0dc89f07851058bee861c213c7348df"><td class="memItemLeft" align="right" valign="top">(ZoomSDKError)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_zoom_s_d_k.html#aa0dc89f07851058bee861c213c7348df">setSupportDarkModel:</a></td></tr>
 <tr class="memdesc:aa0dc89f07851058bee861c213c7348df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set support dark model to the app.  <a href="interface_zoom_s_d_k.html#aa0dc89f07851058bee861c213c7348df">More...</a><br /></td></tr>
 <tr class="separator:aa0dc89f07851058bee861c213c7348df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e95119f287e8727ddb5c8a97719b73"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_zoom_s_d_k.html#a56e95119f287e8727ddb5c8a97719b73">setTeamIdentifier:</a></td></tr>
+<tr class="memdesc:a56e95119f287e8727ddb5c8a97719b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set identifier of team.  <a href="interface_zoom_s_d_k.html#a56e95119f287e8727ddb5c8a97719b73">More...</a><br /></td></tr>
+<tr class="separator:a56e95119f287e8727ddb5c8a97719b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -538,6 +541,33 @@ Call Api firstly before you call [[<a class="el" href="interface_zoom_s_d_k.html
 
 </div>
 </div>
+<a id="a56e95119f287e8727ddb5c8a97719b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e95119f287e8727ddb5c8a97719b73">&#9670;&nbsp;</a></span>setTeamIdentifier:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setTeamIdentifier: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>identifier</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set identifier of team. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">identifier</td><td>Subject.OU value of the signing certificate, zoom will verify the certificate before loading. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>After you re-sign the SDK, you should call this interface to set the identifier of signature. You should call the method before calling [[<a class="el" href="interface_zoom_s_d_k.html">ZoomSDK</a> sharedSDK]initSDK:NO/YES] in the App. </dd></dl>
+
+</div>
+</div>
 <a id="ac5f411795d60a84962437f990472d7ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5f411795d60a84962437f990472d7ea">&#9670;&nbsp;</a></span>setZoomDomain:</h2>
 
@@ -624,7 +654,7 @@ Call Api firstly before you call [[<a class="el" href="interface_zoom_s_d_k.html
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Mac SDK/<a class="el" href="_zoom_s_d_k_8h_source.html">ZoomSDK.h</a></li>
+<li><a class="el" href="_zoom_s_d_k_8h_source.html">ZoomSDK.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
