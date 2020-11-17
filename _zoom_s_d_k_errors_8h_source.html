@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zoom SDK: ZoomSDKErrors.h Source File</title>
+<title>Mac SDK: ZoomSDKErrors.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="zoomlogo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Zoom SDK
+   <div id="projectname">Mac SDK
    </div>
   </td>
  </tr>
@@ -1268,6 +1268,56 @@ $(function() {
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    ZoomSDKSuppressBackgroundNoiseLevel_Medium,</div>
 <div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;    ZoomSDKSuppressBackgroundNoiseLevel_High,</div>
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;}ZoomSDKSuppressBackgroundNoiseLevel;</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160; </div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;{</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;    <span class="comment">//Screen capture mode is auto.</span></div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    ZoomSDKScreenCaptureMode_Auto,</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    <span class="comment">//Screen capture mode is legacy.</span></div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    ZoomSDKScreenCaptureMode_Legacy,</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;    <span class="comment">//Screen capture mode is copy with window filter.</span></div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    ZoomSDKScreenCaptureMode_GPU_Copy_Filter,</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    <span class="comment">//Screen capture mode is advanced copy with window filter.</span></div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;    ZoomSDKScreenCaptureMode_ADA_Copy_Filter,</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    <span class="comment">//Screen capture mode is advanced copy without window filter.</span></div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;    ZoomSDKScreenCaptureMode_ADA_Copy_Without_Filter,</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;}ZoomSDKScreenCaptureMode;</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160; </div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;{</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;    <span class="comment">//Light adaption is none.</span></div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;    ZoomSDKSettingVideoLightAdaptionModel_None,</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;    <span class="comment">//Light adaption by auto.</span></div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;    ZoomSDKSettingVideoLightAdaptionModel_Auto,</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    <span class="comment">//Light adaption by manual.</span></div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;    ZoomSDKSettingVideoLightAdaptionModel_Manual,</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;}ZoomSDKSettingVideoLightAdaptionModel;</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160; </div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;{</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    ZoomSDKSettingVBVideoError_None = 0,</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    ZoomSDKSettingVBVideoError_UnknowFormat,</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;    ZoomSDKSettingVBVideoError_ResolutionBig,</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;    ZoomSDKSettingVBVideoError_ResolutionHigh720P,</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;    ZoomSDKSettingVBVideoError_ResolutionLow,</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;    ZoomSDKSettingVBVideoError_PlayError,</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    ZoomSDKSettingVBVideoError_OpenError,</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;}ZoomSDKSettingVBVideoError;</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160; </div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;{</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;    ZoomSDKVideoEffectType_None = 0,</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;    ZoomSDKVideoEffectType_Filter = 1,</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;    ZoomSDKVideoEffectType_Frame = 2,</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;    ZoomSDKVideoEffectType_Sticker = 4,</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;}ZoomSDKVideoEffectType;</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160; </div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;{</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;    ZoomSDKUIAppearance_System,</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    ZoomSDKUIAppearance_Light,</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    ZoomSDKUIAppearance_Dark,</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;}ZoomSDKUIAppearance;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

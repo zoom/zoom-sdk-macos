@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zoom SDK: Class Members</title>
+<title>Mac SDK: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="zoomlogo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Zoom SDK
+   <div id="projectname">Mac SDK
    </div>
   </td>
  </tr>
@@ -67,6 +67,12 @@ $(function() {
 <h3><a id="index_g"></a>- g -</h3><ul>
 <li>getAccountInfo
 : <a class="el" href="interface_zoom_s_d_k_auth_service.html#aef583c10feb0a00e53d6e62e54dafd4e">ZoomSDKAuthService</a>
+</li>
+<li>getAllInterpreterList
+: <a class="el" href="interface_zoom_s_d_k_interpretation_controller.html#a13f615de56324592f9d014bde8a1414f">ZoomSDKInterpretationController</a>
+</li>
+<li>getAllLanguageList
+: <a class="el" href="interface_zoom_s_d_k_interpretation_controller.html#a009f9f928c58a364d9583eb103a0000a">ZoomSDKInterpretationController</a>
 </li>
 <li>getAllQuestionList
 : <a class="el" href="interface_zoom_s_d_k_q_a_controller.html#a48693588c53720d2c21c39c1d2424628">ZoomSDKQAController</a>
@@ -128,11 +134,14 @@ $(function() {
 <li>getAvailableDialinCountry
 : <a class="el" href="interface_i_meeting_audio_option.html#aa941fa520e12b2b11a8003acbda00838">IMeetingAudioOption</a>
 </li>
+<li>getAvailableLanguageList
+: <a class="el" href="interface_zoom_s_d_k_interpretation_controller.html#a6f16b1d74262964c5bf30c2c6c13b826">ZoomSDKInterpretationController</a>
+</li>
+<li>getBeautyFaceValue
+: <a class="el" href="interface_zoom_s_d_k_video_setting.html#a897d3671e7cd9ce2d7905d2a1b115b36">ZoomSDKVideoSetting</a>
+</li>
 <li>getBGImageList
 : <a class="el" href="interface_zoom_s_d_k_virtual_background_setting.html#af465c81808a0c519b178eec9595e0e63">ZoomSDKVirtualBackgroundSetting</a>
-</li>
-<li>getBID
-: <a class="el" href="interface_zoom_s_d_k_breakout_rooms_info.html#a296cbb462889d887afe2a7186ed30376">ZoomSDKBreakoutRoomsInfo</a>
 </li>
 <li>getBOID
 : <a class="el" href="interface_zoom_s_d_k_b_o_meeting_info.html#a530c2f54e9328dbb32ef89dd3368b6dd">ZoomSDKBOMeetingInfo</a>
@@ -175,10 +184,7 @@ $(function() {
 : <a class="el" href="interface_zoom_s_d_k_meeting_service.html#a7a55d4705afd307f0371b15c043e0750">ZoomSDKMeetingService</a>
 </li>
 <li>getBreakoutRoomsInfo:
-: <a class="el" href="interface_zoom_s_d_k_breakout_rooms_controller.html#a2a81a98dd095f8268107bd70970d11af">ZoomSDKBreakoutRoomsController</a>
-</li>
-<li>getBreakoutRoomsName
-: <a class="el" href="interface_zoom_s_d_k_breakout_rooms_info.html#af0c0e1007415f77fb8050fa76c7ad68b">ZoomSDKBreakoutRoomsInfo</a>
+: <a class="el" href="interface_zoom_s_d_k_breakout_rooms_controller.html#a0b608baf09f96f8ab81e32d6c687f8c7">ZoomSDKBreakoutRoomsController</a>
 </li>
 <li>getBuffer
 : <a class="el" href="interface_zoom_s_d_k_audio_raw_data.html#ac89f2474ba012cc8d7449a68cace3708">ZoomSDKAudioRawData</a>
@@ -346,13 +352,33 @@ $(function() {
 : <a class="el" href="interface_zoom_s_d_k_call_in_phone_num_info.html#a620f508ac051af5cadef1d832fe8d5af">ZoomSDKCallInPhoneNumInfo</a>
 </li>
 <li>getImageFilePath
-: <a class="el" href="interface_zoom_s_d_k_virtual_b_g_image_info.html#a6f0711c4fe34999990e5d8c565cf9607">ZoomSDKVirtualBGImageInfo</a>
+: <a class="el" href="interface_zoom_s_d_k_video_filter_item_info.html#a99745735ebc78debb5448691e5924d45">ZoomSDKVideoFilterItemInfo</a>
+, <a class="el" href="interface_zoom_s_d_k_virtual_b_g_image_info.html#a6f0711c4fe34999990e5d8c565cf9607">ZoomSDKVirtualBGImageInfo</a>
 </li>
 <li>getImageName
-: <a class="el" href="interface_zoom_s_d_k_virtual_b_g_image_info.html#a6dceaacd3fa6b01bdd95fcc4660bbaca">ZoomSDKVirtualBGImageInfo</a>
+: <a class="el" href="interface_zoom_s_d_k_video_filter_item_info.html#aa490208466d871e9e56511627a84a6e9">ZoomSDKVideoFilterItemInfo</a>
+, <a class="el" href="interface_zoom_s_d_k_virtual_b_g_image_info.html#a6dceaacd3fa6b01bdd95fcc4660bbaca">ZoomSDKVirtualBGImageInfo</a>
+</li>
+<li>getIndex
+: <a class="el" href="interface_zoom_s_d_k_video_filter_item_info.html#a47f61b9942e3952a9bcf809740b2bf74">ZoomSDKVideoFilterItemInfo</a>
+</li>
+<li>getInterpretationController
+: <a class="el" href="interface_zoom_s_d_k_meeting_service.html#aeb6eab905df29e70a59f82f628d2a67d">ZoomSDKMeetingService</a>
+</li>
+<li>getInterpretationLanguageByID:
+: <a class="el" href="interface_zoom_s_d_k_interpretation_controller.html#a5f2c6f078eed0929b756a1d0b58a7bcb">ZoomSDKInterpretationController</a>
+</li>
+<li>getInterpreterActiveLanguage
+: <a class="el" href="interface_zoom_s_d_k_user_info.html#a0a5a4c4ce978e807bc96a08cb086488a">ZoomSDKUserInfo</a>
+</li>
+<li>getInterpreterActiveLanID
+: <a class="el" href="interface_zoom_s_d_k_interpretation_controller.html#a89e31b5b582a945833e4698e37f98ced">ZoomSDKInterpretationController</a>
 </li>
 <li>getInterpreterInfoList
 : <a class="el" href="interface_i_meeting_config_option.html#a5fae8a36692d9e4bc99100b9cf204bd5">IMeetingConfigOption</a>
+</li>
+<li>getInterpreterLans:languageID2:
+: <a class="el" href="interface_zoom_s_d_k_interpretation_controller.html#ab70bacc26d487cc25b074e3d51983005">ZoomSDKInterpretationController</a>
 </li>
 <li>getInviteCalloutUserStatus
 : <a class="el" href="interface_zoom_s_d_k_phone_helper.html#ade930d6902885ee7221fd19fc1f83613">ZoomSDKPhoneHelper</a>
@@ -364,15 +390,39 @@ $(function() {
 : <a class="el" href="interface_zoom_s_d_k_audio_statistics_info.html#ae01ac29f3a872f0cc385168c3d79b6b9">ZoomSDKAudioStatisticsInfo</a>
 , <a class="el" href="interface_zoom_s_d_k_video_a_s_statistics_info.html#a3355e17f38773ade18f7969f728ba7cb">ZoomSDKVideoASStatisticsInfo</a>
 </li>
+<li>getJoinedLanguageID
+: <a class="el" href="interface_zoom_s_d_k_interpretation_controller.html#a2eec93fff1a26674c51c4e4e846db8b0">ZoomSDKInterpretationController</a>
+</li>
 <li>getJoinMeetingUrl
 : <a class="el" href="interface_zoom_s_d_k_meeting_item.html#a4c09bfeb7914c6e20e783f7f9ceb37f7">ZoomSDKMeetingItem</a>
 </li>
+<li>getLanguageAbbreviations
+: <a class="el" href="interface_zoom_s_d_k_interpretation_language_info.html#ad8465a3aa3a579680c0ed30f776a9a47">ZoomSDKInterpretationLanguageInfo</a>
+</li>
 <li>getLanguageArray
-: <a class="el" href="interface_zoom_s_d_k.html#aba7c748ddb0063d9f05f75ea2fc6585b">ZoomSDK</a>
+: <a class="el" href="interface_zoom_s_d_k_init_params.html#a804781940e86aeb1bae9662747fb072b">ZoomSDKInitParams</a>
+</li>
+<li>getLanguageID
+: <a class="el" href="interface_zoom_s_d_k_interpretation_language_info.html#a54a9bd9aca02deb761b9e677ae872da0">ZoomSDKInterpretationLanguageInfo</a>
+</li>
+<li>getLanguageID1
+: <a class="el" href="interface_zoom_s_d_k_interpreter.html#aa6d399ca107cc37705098823d8ace3e1">ZoomSDKInterpreter</a>
+</li>
+<li>getLanguageID2
+: <a class="el" href="interface_zoom_s_d_k_interpreter.html#a596d4924e04f056dae87f238123cb0cc">ZoomSDKInterpreter</a>
+</li>
+<li>getLanguageName
+: <a class="el" href="interface_zoom_s_d_k_interpretation_language_info.html#a3468bec0b8230a11feab25f89da5013d">ZoomSDKInterpretationLanguageInfo</a>
 </li>
 <li>getLatency:
 : <a class="el" href="interface_zoom_s_d_k_audio_statistics_info.html#a868e1bc1e56650e09a2548172fb3a5f2">ZoomSDKAudioStatisticsInfo</a>
 , <a class="el" href="interface_zoom_s_d_k_video_a_s_statistics_info.html#a3268e935a92b94d506a99f4177ec318b">ZoomSDKVideoASStatisticsInfo</a>
+</li>
+<li>getLightAdaptionManualValue:
+: <a class="el" href="interface_zoom_s_d_k_video_setting.html#a1d4c73473b202e5c6eb758af8f393f22">ZoomSDKVideoSetting</a>
+</li>
+<li>getLightAdjustModel:
+: <a class="el" href="interface_zoom_s_d_k_video_setting.html#a787f4c74055db6a94bf1c02ab0cd5a47">ZoomSDKVideoSetting</a>
 </li>
 <li>getLimitFPSValue
 : <a class="el" href="interface_zoom_s_d_k_general_setting.html#ad533893275c07b0922361f310aad6235">ZoomSDKGeneralSetting</a>
@@ -556,6 +606,12 @@ $(function() {
 <li>getResolution:
 : <a class="el" href="interface_zoom_s_d_k_video_a_s_statistics_info.html#a46ba584ee7f06705822b1649e77faa83">ZoomSDKVideoASStatisticsInfo</a>
 </li>
+<li>getRingSpkDeviceList
+: <a class="el" href="interface_zoom_s_d_k_audio_setting.html#a8899ad153eb5e6b32296fc6bc3617a7f">ZoomSDKAudioSetting</a>
+</li>
+<li>getRingSpkVolume
+: <a class="el" href="interface_zoom_s_d_k_audio_setting.html#a8fdd4b8184ec3bcef4426ee7178a5b31">ZoomSDKAudioSetting</a>
+</li>
 <li>getRoomH323DeviceArray
 : <a class="el" href="interface_zoom_s_d_k_h323_helper.html#a82353ad87a76feb0b2513c1230991d9e">ZoomSDKH323Helper</a>
 </li>
@@ -577,6 +633,9 @@ $(function() {
 </li>
 <li>getScheduleMeetingAudioType:
 : <a class="el" href="interface_i_meeting_audio_option.html#adadbcfe7297701fe945ee107c0a64366">IMeetingAudioOption</a>
+</li>
+<li>getScreenCaptureMode:
+: <a class="el" href="interface_zoom_s_d_k_share_screen_setting.html#a0de80a203f8202c65242b09826a294a3">ZoomSDKShareScreenSetting</a>
 </li>
 <li>getSDKIdentity
 : <a class="el" href="interface_zoom_s_d_k_auth_service.html#a2f976874efa9e53b9a30736835537929">ZoomSDKAuthService</a>
@@ -627,6 +686,9 @@ $(function() {
 </li>
 <li>getShareElementByUserID:
 : <a class="el" href="interface_zoom_s_d_k_share_container.html#a5a9cd46384f3fbfb446b3b9194f08fa4">ZoomSDKShareContainer</a>
+</li>
+<li>getShareScreenSetting
+: <a class="el" href="interface_zoom_s_d_k_setting_service.html#ad6ef67d0cfb041a72f316dcbef91672e">ZoomSDKSettingService</a>
 </li>
 <li>getShareSettingType:
 : <a class="el" href="interface_zoom_s_d_k_meeting_action_controller.html#a84d51287548436d8e280d103d5093ff9">ZoomSDKMeetingActionController</a>
@@ -690,6 +752,7 @@ $(function() {
 <li>getType
 : <a class="el" href="interface_zoom_s_d_k_call_in_phone_num_info.html#ab1037b8179390bda7be5f110349eac9d">ZoomSDKCallInPhoneNumInfo</a>
 , <a class="el" href="interface_zoom_s_d_k_user_audio_stauts.html#a5deb21e5263333d8293f4cd4cf345920">ZoomSDKUserAudioStauts</a>
+, <a class="el" href="interface_zoom_s_d_k_video_filter_item_info.html#ab2332cd64e1976b707a73671b79d1639">ZoomSDKVideoFilterItemInfo</a>
 </li>
 <li>getUBuffer
 : <a class="el" href="interface_zoom_s_d_k_y_u_v_raw_data_i420.html#a7f8ed80d45582772bac2b2db6b0ac118">ZoomSDKYUVRawDataI420</a>
@@ -707,7 +770,8 @@ $(function() {
 : <a class="el" href="interface_zoom_s_d_k_meeting_action_controller.html#a44bbb34b9d9f8a197aa3170fc26365bc">ZoomSDKMeetingActionController</a>
 </li>
 <li>getUserID
-: <a class="el" href="interface_zoom_s_d_k_renderer.html#aa55f5465bb868fc322377ded3d70d0b7">ZoomSDKRenderer</a>
+: <a class="el" href="interface_zoom_s_d_k_interpreter.html#ac56d4827f4a7e8dc33848c472c3d9e8d">ZoomSDKInterpreter</a>
+, <a class="el" href="interface_zoom_s_d_k_renderer.html#aa55f5465bb868fc322377ded3d70d0b7">ZoomSDKRenderer</a>
 , <a class="el" href="interface_zoom_s_d_k_user_audio_stauts.html#a93db98777d63efb9413ab25c8d745e6a">ZoomSDKUserAudioStauts</a>
 , <a class="el" href="interface_zoom_s_d_k_user_info.html#a5123b16ac5911ada62ffce930402b7bc">ZoomSDKUserInfo</a>
 </li>
@@ -746,6 +810,9 @@ $(function() {
 </li>
 <li>getVideoElementList
 : <a class="el" href="interface_zoom_s_d_k_video_container.html#ad98a9940d91d45f5f7a9c92f40245b8f">ZoomSDKVideoContainer</a>
+</li>
+<li>getVideoFilterItemList
+: <a class="el" href="interface_zoom_s_d_k_virtual_background_setting.html#af0e8b5f557458d77a8e0f7d57c401b63">ZoomSDKVirtualBackgroundSetting</a>
 </li>
 <li>getVideoOption
 : <a class="el" href="interface_zoom_s_d_k_meeting_item.html#af65403c853823ba42daed245f0cf3624">ZoomSDKMeetingItem</a>

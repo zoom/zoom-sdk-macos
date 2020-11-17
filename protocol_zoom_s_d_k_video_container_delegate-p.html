@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zoom SDK: &lt;ZoomSDKVideoContainerDelegate&gt; Protocol Reference</title>
+<title>Mac SDK: &lt;ZoomSDKVideoContainerDelegate&gt; Protocol Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="zoomlogo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Zoom SDK
+   <div id="projectname">Mac SDK
    </div>
   </td>
  </tr>
@@ -84,8 +84,48 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:ab1f1a9d7a01d602e82e7875c7a9ec571"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_video_container_delegate-p.html#ab1f1a9d7a01d602e82e7875c7a9ec571">onRenderDataTypeChanged:DataType:</a></td></tr>
 <tr class="memdesc:ab1f1a9d7a01d602e82e7875c7a9ec571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of user data changes in the video container.  <a href="protocol_zoom_s_d_k_video_container_delegate-p.html#ab1f1a9d7a01d602e82e7875c7a9ec571">More...</a><br /></td></tr>
 <tr class="separator:ab1f1a9d7a01d602e82e7875c7a9ec571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9410628e29cf95aaf841c15078d887e6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_zoom_s_d_k_video_container_delegate-p.html#a9410628e29cf95aaf841c15078d887e6">onCustomVideoSubscribeFail:error:</a></td></tr>
+<tr class="memdesc:a9410628e29cf95aaf841c15078d887e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback of user's subscription failed.  <a href="protocol_zoom_s_d_k_video_container_delegate-p.html#a9410628e29cf95aaf841c15078d887e6">More...</a><br /></td></tr>
+<tr class="separator:a9410628e29cf95aaf841c15078d887e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
+<a id="a9410628e29cf95aaf841c15078d887e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9410628e29cf95aaf841c15078d887e6">&#9670;&nbsp;</a></span>onCustomVideoSubscribeFail:error:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onCustomVideoSubscribeFail: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_zoom_s_d_k_video_element.html">ZoomSDKVideoElement</a> *)&#160;</td>
+          <td class="paramname"><em>element</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback of user's subscription failed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The point of element to the user. </td></tr>
+    <tr><td class="paramname">error</td><td>The error of the failed reason. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab1f1a9d7a01d602e82e7875c7a9ec571"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1f1a9d7a01d602e82e7875c7a9ec571">&#9670;&nbsp;</a></span>onRenderDataTypeChanged:DataType:</h2>
 
