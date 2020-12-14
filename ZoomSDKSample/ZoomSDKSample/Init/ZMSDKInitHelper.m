@@ -25,15 +25,19 @@ static  ZMSDKInitHelper *initHelper = nil;
 
 +(void)initSDK:(BOOL)useCustomizedUI
 {
-    ZoomSDK* sdk = [ZoomSDK sharedSDK];
    /* NSString *localeIdentifier = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
     if(localeIdentifier && [localeIdentifier.uppercaseString isEqualToString:@"CN"])
         [[ZoomSDK sharedSDK] setAppLocale:ZoomSDKLocale_CN];
     else
         [[ZoomSDK sharedSDK] setAppLocale:ZoomSDKLocale_Def];*/
     
-    [sdk initSDK:useCustomizedUI];
+    ZoomSDKInitParams* params = [[ZoomSDKInitParams alloc] init];
+    params.needCustomizedUI = useCustomizedUI;
+    params.teamIdentifier = nil;
+    [[ZoomSDK sharedSDK] initSDKWithParams:params];
     [ZMSDKCommonHelper sharedInstance].isUseCutomizeUI = useCustomizedUI;
+    [params release];
+    params = nil;
 }
 
 +(void)setDomain:(NSString*)domain

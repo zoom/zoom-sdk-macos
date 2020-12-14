@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/ConfJoinByID.nib</key>
 		<data>
-		fX5eGhBYFbbtV4zIgvdh7JoQF78=
+		Q9k6EWWpJmzXj1p5ovX/12pWnjE=
 		</data>
 		<key>Resources/FullScreenTipWindow.nib</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		tvYKXuhYUThyEF+j+Q++QwuNt/o=
+		W2+X8DCzFLic8/0KGRQcOjvtQnI=
 		</data>
 		<key>Resources/LaunchPollWindow.nib</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Resources/ZMCameraControlInfoWindow.nib</key>
 		<data>
-		cYXvYg+CzBdsPf1LP0Cj8Z3jdGM=
+		HrxbRKkwW0j+X0kSGo0eixVI6yg=
 		</data>
 		<key>Resources/ZMClaimHostWindowController.nib</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Resources/ZMSecurityFileCollectionItem.nib</key>
 		<data>
-		Zpr27fQTAKDOTe5217gIyIhlJi4=
+		YrREyAoGG3+nWidmlyMKuShLZ2g=
 		</data>
 		<key>Resources/ZMShareCameraWindowController.nib</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Resources/ZPMuteAllWindowController.nib</key>
 		<data>
-		8i9L7txqzZyxG3ekfC2JQeYInME=
+		5DWlliYWE8ObUNHXhprY2V9QnX0=
 		</data>
 		<key>Resources/ZPShareSelectCollectionViewItem.nib</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Resources/ZoomSDKVideoUI.def</key>
 		<data>
-		iOrk/umdQovaygjsOvxNqzPDbZU=
+		+RUBWirkXP+hsrKAIe0TW+s9JJs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fX5eGhBYFbbtV4zIgvdh7JoQF78=
+			Q9k6EWWpJmzXj1p5ovX/12pWnjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			s5hJ/2F8uAYMZ4LOf9OfhYKRGVAFQlgumumiIs5SXZ4=
+			jeBbdS0OsN8LXTItD1NfhrMb/nVaQRV7U9ncJSe/EcA=
 			</data>
 		</dict>
 		<key>Resources/FullScreenTipWindow.nib</key>
@@ -184,11 +184,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tvYKXuhYUThyEF+j+Q++QwuNt/o=
+			W2+X8DCzFLic8/0KGRQcOjvtQnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			I4+EQ/W+fqvYhiBeex+gHBYmT+oKESRG0cxo+i1qpic=
+			rz2iJegBeOKTCLJWFyuUM9Y5NONG8uaLriSSMQMUyFM=
 			</data>
 		</dict>
 		<key>Resources/LaunchPollWindow.nib</key>
@@ -305,11 +305,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cYXvYg+CzBdsPf1LP0Cj8Z3jdGM=
+			HrxbRKkwW0j+X0kSGo0eixVI6yg=
 			</data>
 			<key>hash2</key>
 			<data>
-			1mWTbgtHKlQEpIb5GQ0EvmQJwMXFm9tOMEG5gVt1P5M=
+			BQlMU7+KvkSoBDJqR+JTKvIwU+8JOHI/RC8ExYVFCUU=
 			</data>
 		</dict>
 		<key>Resources/ZMClaimHostWindowController.nib</key>
@@ -448,11 +448,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zpr27fQTAKDOTe5217gIyIhlJi4=
+			YrREyAoGG3+nWidmlyMKuShLZ2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			5wCQxzKQIZn8EF2n5A4NKUCrxxtIiyv2kx9XJd1gfxE=
+			bodLWl8fd+oCs8Sri2nNrXSdqF0q0QUF3q5A3OrFez0=
 			</data>
 		</dict>
 		<key>Resources/ZMShareCameraWindowController.nib</key>
@@ -514,11 +514,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8i9L7txqzZyxG3ekfC2JQeYInME=
+			5DWlliYWE8ObUNHXhprY2V9QnX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			QTWbpd/fOcxROBANxiVKzG+Q8i/CK5IRfnbXIwZjE6M=
+			i2tWhrb9PxxSrj10RflSLn/r+GrkA72BwTX1slyg6dc=
 			</data>
 		</dict>
 		<key>Resources/ZPShareSelectCollectionViewItem.nib</key>
@@ -536,11 +536,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iOrk/umdQovaygjsOvxNqzPDbZU=
+			+RUBWirkXP+hsrKAIe0TW+s9JJs=
 			</data>
 			<key>hash2</key>
 			<data>
-			qCaPPt8Pul6XfEI4/Ln8eBnzQctWLpgnXdkN+V4YJGI=
+			9BlsnT+AEBaYwhoeaVpUoHURavTtBKuX7n7w4RWuq1k=
 			</data>
 		</dict>
 	</dict>

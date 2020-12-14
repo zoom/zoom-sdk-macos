@@ -39,6 +39,70 @@ HMACSHA256(
 ```
 You do not need to secret base64 encoded your signature. Once the JWT token is generated, please do not reveal it or publish it. **It is highly recommended to handle your SDK key and secret and generate JWT in a backend server to be consumed by your application. Do not generate JWT in a production application.**
 
+## 2020-11-17 @ v5.2.42037.1112
+
+## Added:
+* Added new feature for supporting language interpreters within meetings. For more information regarding this feature, please visit https://support.zoom.us/hc/en-us/articles/360034919791-Language-interpretation-in-meetings-and-webinars  
+  * The interface in `ZoomSDKInterpretationController.h`
+
+* Added new interfaces to add/remove a video file as the virtual background.
+  * `- (ZoomSDKError)addBGVideo:(NSString*)filePath;`
+  * `- (ZoomSDKError)removeBGVideo:(NSString*)filePath;`
+  * `- (BOOL)isSupportSmartVirtualBackgroundVideo;`
+  * `- (BOOL)isSupportGreenVirtualBackgroundVideo;`
+  * `- (BOOL)isAllowAddNewVBItem;`
+  * `- (BOOL)isAllowRemoveVBItem;`
+  * `- (void)onVBVideoUploadedResult:(BOOL)success failedError:(ZoomSDKSettingVBVideoError)error;`
+
+* Added a new interface to allow user to use the video filter feature.
+ * `- (BOOL)isVideoFilterEnabled;`
+ * `- (BOOL)isSupportVideoFilter;`
+ * `- (NSArray*)getVideoFilterItemList;`
+ * `- (ZoomSDKError)useVideoFilterItem:(ZoomSDKVideoEffectType)type index:(int)index;`
+ * `- (void)onVideoFilterItemDataDownloaded:(ZoomSDKVideoEffectType)type index:(int)index;`
+ * `- (void)onVideoFilterItemDataNeedPrepare:(ZoomSDKVideoEffectType)type index:(int)index;`
+ * `- (void)onVideoFilterItemDataReady:(BOOL)ready type:(ZoomSDKVideoEffectType)type index:(int)index;`
+
+* Added new interfaces to configure video settings.
+ * `-(int)getBeautyFaceValue;`
+ * `-(ZoomSDKError)setBeautyFaceValue:(int)value;`
+ * `-(ZoomSDKSettingVideoLightAdaptionModel)getLightAdjustModel:(BOOL*)isDisabled;`
+ * `-(ZoomSDKError)setLightAdaptionModel:(ZoomSDKSettingVideoLightAdaptionModel)model LightAdaptionManualValue:(int)value;`
+ * `-(int)getLightAdaptionManualValue:(BOOL*)isDisabled;`
+ * `-(BOOL)isHardwareAccelerationForVideoReceiveOn:(BOOL*)isDisabled;`
+ * `-(ZoomSDKError)enableHardwareAccelerationForVideoReceive:(BOOL)enable;`
+ * `-(BOOL)isTemporalDeNoiseOn:(BOOL*)isDisabled;`
+ * `-(ZoomSDKError)enableTemporalDeNoise:(BOOL)enable;`
+
+* Added new interfaces to use separate audio device to play ringtone simultaneously
+ * `-(BOOL)isAlwaysUseSeparateRingSpkOn:(BOOL*)isDisabled;`
+ * `-(ZoomSDKError)enableAlwaysUseSeparateRingSpk:(BOOL)enable;`
+ * `-(NSArray *)getRingSpkDeviceList;`
+ * `-(float)getRingSpkVolume;`
+ * `-(ZoomSDKError)setRingSpkVolume:(float)value;`
+ * `-(ZoomSDKError)setRingSpkDevice:(NSString*)deviceId;`
+
+* Added new callback to notify the end-user that their video subscription failed when using Custom Meeting UI
+ * `-(void)onCustomVideoSubscribeFail:(ZoomSDKVideoElement*)element error:(int)error;`
+
+* Added a new interface for a button in the floating video view.
+ * `- (ZoomSDKError)pagingToPreOrNextViewWhenSharing:(BOOL)nextPage` in `ZoomSDKMeetingUIController.h` file.
+
+* Added a new interface for SDK initialization.
+ * `- (ZoomSDKError)initSDKWithParams:(ZoomSDKInitParams*)initParams`
+
+* Added a new interface to change the app's appearance
+ * `- (ZoomSDKError)setUIAppearance:(ZoomSDKUIAppearance)appearance;`
+
+* Removed the watermark by default. If you wish to retain the Zoom watermark, please contact us via developersupport@zoom.us.
+
+## Changed && Fixed:
+* Fixed an issue that the attendee can still hear chime when a participant joins the meeting even though the corresponding setting is disabled.
+* Fixed an issue that the `carStartShare` method returns an incorrect result.
+
+## Deprecated
+* `-(void)initSDK:(BOOL)customizedFlag`
+
 ## 2020-10-26 @ v5.2.41751.1026
 
 ## Changed & Fixed
